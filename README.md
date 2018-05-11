@@ -12,4 +12,10 @@ cd tutorial-src
 npm run build
 ```
 
-which generates generate `tutorial-output/` and `_guides/tutorial.md`
+which generates generate `tutorial-output/` and `_guides/tutorial.md`. 
+
+Quick build and run command: 
+
+```sh
+cd tutorial-src/ && npm run build && cd .. && bundle exec jekyll serve
+```

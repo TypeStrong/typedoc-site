@@ -346,7 +346,7 @@ You can also configure TypeDoc tool to ignore all entities that are not public o
 
 Instead of passing all configuration as command line arguments, you can create a `typedocconfig.js` or `typedocconfig.ts` file (the name is not important) with the configuration properties in it and then call `typedoc --options ./typedocconfig.ts`. Example of `typedocconfig.ts` file: 
 
-```javascript
+```typescript
 module.exports = {
   src: [
     './src/index.ts',
@@ -359,11 +359,21 @@ module.exports = {
   excludeProtected: true,
   excludeExternals: true,
   readme: 'README.md',
-  name: 'javascript-documentation-examples-events-001',
+  name: 'my-cool-project',
   ignoreCompilerErrors: true,
   plugin: 'typedoc-plugin-respect-name-tag',
   listInvalidSymbolLinks: true,
 };
+```
+
+Since configuration is declared as JavaScript / TypeScript file it's easy to implement extends. For example, this configuration extends previous one and will use [typedoc-plugin-markdown](https://github.com/tgreyjs/typedoc-plugin-markdown) to generate Markdown output: 
+
+```typescript
+module.exports = {
+  ... require('./typedoc.ts'),
+  theme: 'markdown',
+  out: '../tutorial-output/md',
+}; 
 ```
 
 ## Plugins
@@ -379,6 +389,10 @@ npm install --save-dev typedoc-plugin-markdown
 Installed plugins are loaded automatically by typedoc tool so installing a plugin is all you need to do in order to use it. In other words, after installing a plugin, `typedoc` tool will load them out of the box when executed so you don't have to do anything special. If you want to prevent plugins to execute or execute just one plugin from all currently installed you use the `--plugin` plugin option: 
 
 `--plugin` -  Specify the npm plugins that should be loaded. Omit to load all installed plugins, set to 'none' to load no plugins.
+
+In the particular case of this plugin, as indicated in its documentation [its documentation](https://github.com/tgreyjs/typedoc-plugin-markdown) we must use `--theme markdown` to generate Markdown output. But that's it, as easif before we don't need to use `--plugin` since it's loaded automatically.  
+
+See generated markdown output for this tutorial code: {{link url="md/README.md"}}
 
 
 

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>javascript-documentation-examples-events-001</title>
+	<title>TypeDoc tutorial</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
@@ -22,7 +22,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">javascript-documentation-examples-events-001</a>
+					<a href="index.html" class="title">TypeDoc tutorial</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -54,7 +54,7 @@
 					<a href="globals.html">Globals</a>
 				</li>
 			</ul>
-			<h1> javascript-documentation-examples-events-001</h1>
+			<h1> TypeDoc tutorial</h1>
 		</div>
 	</div>
 </header>
@@ -62,14 +62,18 @@
 	<div class="row">
 		<div class="col-8 col-content">
 			<div class="tsd-panel tsd-typography">
-				<h1 id="tutorial">Tutorial</h1>
+				<h1 id="typedoc-tutorial">TypeDoc Tutorial</h1>
 				<ul>
-					<li><a href="https://cancerberosgx.github.io/javascript-documentation-examples/examples/typedoc-tutorial-basic/docs/docco/src/index.html">TypeDoc Tutorial</a></li>
-					<li><a href="https://cancerberosgx.github.io/javascript-documentation-examples/examples/typedoc-tutorial-basic/docs/tutorial.md">Tutorial markdown output</a></li>
-					<li>The api docs generated from the <a href="https://cancerberosgx.github.io/javascript-documentation-examples/examples/typedoc-tutorial-basic/docs/tutorial.md">typedoc-tutorial-basic</a></li>
+					<li><a href="http://typedoc.org/guides/tutorial/">TypeDoc Tutorial</a></li>
+					<li><a href="http://typedoc.org/guides/tutorial-output/">Tutorial html output</a></li>
+					<li><a href="http://typedoc.org/guides/tutorial-output/md/README.md">Tutorial markdown output</a></li>
 				</ul>
-				<h1 id="todo-">TODO:</h1>
-				<p>markdown template : This works fine and is active: <a href="https://github.com/tgreyjs/typedoc-plugin-markdown">https://github.com/tgreyjs/typedoc-plugin-markdown</a></p>
+				<h1 id="building">Building</h1>
+				<p>Since the tutorial shows examples typedoc output it needs to generate a .ts file and compile it with typedoc. The tutorials sources then are in src/tutorial.hbs (handlebars). This file is compiled like this: </p>
+				<pre><code class="lang-sh"><span class="hljs-built_in">cd</span> tutorial-src
+npm run build
+</code></pre>
+				<p>which generates generate <code>tutorial-output/</code> and _guides/tutorial.md`</p>
 			</div>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">

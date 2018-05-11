@@ -1,8 +1,8 @@
-# Tutorial
+# TypeDoc Tutorial
 
  * [TypeDoc Tutorial](http://typedoc.org/guides/tutorial/)
- * [Tutorial markdown output](http://typedoc.org/guides/tutorial-output/)
- * The api docs generated from the [typedoc-tutorial-basic](https://cancerberosgx.github.io/javascript-documentation-examples/examples/typedoc-tutorial-basic/docs/tutorial.md)
+ * [Tutorial html output](http://typedoc.org/guides/tutorial-output/)
+ * [Tutorial markdown output](http://typedoc.org/guides/tutorial-output/md/README.md)
 
 # Building
 

@@ -26,7 +26,7 @@ registerHelper('text', (options) => {
 
 
 const linkHelperImplementation = (link: string, label?: string, linkPrefix: string= config.linkPrefix) => {
-  const url = link.includes('.html') ? link : link + '.html';
+  const url = (link.includes('.html')||link.includes('.md')) ? link : link + '.html';
   return `[${label || link}](${linkPrefix}/${url})`;
 };
 registerHelper('link', (options) => {

@@ -5,7 +5,7 @@ module.exports = {
   mode: 'file',
   includeDeclarations: true,
   tsconfig: 'tsconfig.json',
-  out: './tutorial-output',
+  out: '../tutorial-output',
   excludePrivate: true,
   excludeProtected: true,
   excludeExternals: true,
