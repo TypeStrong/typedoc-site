@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "module": "commonjs",
+    "target": "es2016",
+    "lib": ["es6"],
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "baseUrl": "src"
+  },
+  "exclude": [
+    "node_modules",
+    "build",
+    "scripts",
+    "acceptance-tests",
+    "webpack",
+    "jest",
+    "src/setupTests.ts",
+    "docs",
+    "types",
+    "typedoc.ts"
+  ]
+}
