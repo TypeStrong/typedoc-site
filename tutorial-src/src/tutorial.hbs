@@ -1,0 +1,392 @@
+---
+layout: 'guide'
+title: 'Tutorial'
+menuOrder: 5
+---
+
+
+
+{{#text}}
+
+# TypeDoc Tutorial
+
+In this tutorial you will learn how to document your [TypeScript](https://www.typescriptlang.org/) 
+projects using [TypeDoc](http://typedoc.org/), a tool that will extract descriptions from your TypeScript 
+source comments and generate a well organized and pretty HTML documentation. 
+
+It is required that you know the basics of TypeScript, but besides that, this tutorial will start from scratch. 
+
+
+
+{{/text}}{{#text}}
+## Table of Contents
+
+<div id="generated-toc"></div>
+
+
+
+{{/text}}{{#text}}
+## TypeDoc Introduction
+
+TypeDoc is an API documentation generator for TypeScript projects, similar 
+to [jsdoc](http://usejsdoc.org/) or [javadoc](https://en.wikipedia.org/wiki/Javadoc).
+
+Basically, you add documentation comments directly to your source code, right alongside the code itself. The TypeDoc tool will scan your source code and generate an HTML documentation website for you.
+
+In general you will be documenting entities like classes, interfaces, methods, functions, etc. 
+
+Although configurable, TypeDoc will generate documentation of everything in your source, even things that are not documented like their names, types and relationships. 
+
+Unlike JsDoc, with TypeDoc you only take care of descriptions and you never document types, names or member modifiers: that information is already in the TypeScript code!
+
+
+
+
+
+{{/text}}{{#text}}
+## Descriptions
+
+For adding a description to some entity in the code you must use special comments that must be placed immediately *before* the code being documented. 
+
+Each comment must start with a `/**` sequence in order to be recognized by TypeDoc. Comments beginning with `//`, `/*`, `/***`, or more than 3 stars will be ignored. Example: 
+
+{{/text}}{{#code link="classes/fruit"}}
+/** The sweet and fleshy product of a tree or other plant. */
+class Fruit {
+
+}
+{{/code}}{{#text}}
+
+TypeDoc will format descriptions with markdown, in concrete it uses the [Marked](https://github.com/chjj/marked) markdown parser and [HighlightJS](https://github.com/isagalaev/highlight.js) to highlight code blocks within markdown sections. In the following example, notice how we use markdown to write multiple paragraphs, bold text and an example code snippet:
+
+{{/text}}{{#code link="globals.html#minify"}}
+/**
+ * Responsible of minify given string containing JavaScript code. By default it uses the foo-bar minimization algorithm. 
+ * 
+ * **Warning: if you don't specify an output in the configuration your input file will be overridden !**
+ * 
+ * Basic usage example: 
+ * 
+ * ```ts
+ * import {minify} from 'foobar-minify';
+ * const config = {
+ *   input: readFileSync('dist/awesome-app.js'), 
+ *   output: createWriteStream('dist/awesome-app.min.js')
+ * }
+ *   minify(config);
+ * ```
+ */
+function minify(){}
+{{/code}}{{#text}}
+
+
+
+
+{{/text}}{{#text}}
+## Classes and Interfaces
+
+In the following example we focus only on classes and interfaces, later we will see [properties](#properties) and [methods](#methods-and-functions) documentation in detail. It declares an interface which is [generic](https://www.typescriptlang.org/docs/handbook/generics.html) and a class implementing it.
+
+{{/text}}{{#code}}
+/**
+ * A shape is the form of an object or its external boundary, outline
+ * @param U The unit used to measure the properties of this type of shape
+ */
+interface Shape<U extends Unit > {
+  area():number;
+}
+interface Unit {}
+interface Centimeter extends Unit {} 
+/**
+ * The Shape implementation used in Foo component to represent Bar
+ */
+class MyCustomRectangle implements Shape<Centimeter> {
+  private side:number;
+  public area():number {
+    return this.side*this.side;
+  }
+}
+{{/code}}{{#text}}
+
+This is the output of the interface: {{link url="interfaces/shape"}} and this is the output of the class: {{link url="classes/mycustomrectangle"}}
+
+Some details about what we just did:
+ 
+ * We used the double star comment (`/**`) just before the interface declaration
+ * The first line of the comment is the interface description
+ * We documented the interface's generic type `U` using the expression `@param U` followed by its description. 
+
+
+### Classes vs interfaces in documentation
+
+If you are working with interfaces (hiding implementation details from your users), then you should **only document interfaces instead of classes**. 
+
+Document classes only to give details about the implementation, if that's what you want, but **make sure you don't repeat information that's already in the interface**
+
+Otherwise, if you don't work with interfaces, you can instruct typescript with the following options in `tsconfig.json` so it automatically generates .d.ts files with interfaces and the typedoc comments from the classes in your `.ts` files:
+
+```json
+  "compilerOptions": {
+    ...
+    "declaration": true,
+    "removeComments": true,
+    ...
+  }
+```
+
+After that you configure typedoc tool to extract documentation from generated `.d.ts` files as shown [in the configuration section](#configuration)
+
+
+
+
+
+{{/text}}{{#text}}
+## Properties
+
+
+
+
+
+
+{{/text}}{{#text}}
+## Methods and Functions
+
+Methods and Functions could be the most complex parts of document, because thy imply parameters and return values. For these, you will be using two annotations: `@param` and `@return` or `@returns` respectively. 
+
+Because documenting methods and functions is the same thing, here we will say just "methods" but everything applies to both. 
+
+The syntax of a method or function TypeDoc comment is as follows: first the method description and then the rest. The order of parameters is not important.
+
+**Tip**: As everything in TypeDoc, parameters and return value descriptions are optional - for example if you dont document one parameter its documentation will be still generated with its name and type. This is very useful specially when you use types and give meaningful names so their meaning so obvious than a description is not necessary. 
+
+Let's go straight to an example that shows a lot of combinations regarding this:
+
+{{/text}}{{#code}}
+import { Stream } from 'stream';
+class File {
+  public constructor(fs:number) {} // constructor, no docs
+  /**
+   * Creates a new file in given path and given content
+   * @param path absolute path of the file to create
+   * @param content content of the new file or empty file if nothing given
+   * @param T Exercitation enim qui id dolore eiusmod consectetur ex dolore.
+   * @return Velit labore nostrud qui sint pariatur aute deserunt laboris tempor ex amet.
+   */
+  public static create<T>(path: string, content?: string | Stream, 
+    permissions: string = '666'): T {
+    return null;
+  }
+  /**
+   * Internal method used by foobar
+   * @param interval how often file is read in the polling
+   * @param predicate polling will end when true
+   */
+  private poll(interval:number, predicate: () => boolean):void {}
+}
+
+/**
+ * List children of given folder
+ * @param options.force force read operation  even if files are busy
+ * @param options.recursive list all files recursively
+ * @return if given path points to a folder returns a list of direct children Files,. Returns null otherwise
+ */
+function listFiles(path: String, 
+  options?: {force:boolean, recursive:boolean}):File[] {
+  return null;
+} 
+{{/code}}{{#text}}
+
+Notes: 
+
+ * The class `File` defines a constructor which is not documented but the output still is generated: {{link url="classes/file.html#constructor"}}
+ * The static method `create` that is generic and has a parameter `permissions` with a default value. Notice how we document the generic type `T` using `@param` : {{link url="classes/file.html#create"}}
+ * And last but not least, the function `listFiles` which shows how to document the complex parameter object `options`: {{link url="globals.html#listfiles"}}
+
+**Important** As you can see, we have static and private methods and also mandatory, optional and default parameters. We don't document any of this information since is already defined in TypeScript and TypeDoc will automatically generate it.
+
+
+TODO
+ * overrides
+{{/text}}{{#text}}
+## Modules
+
+TODO
+
+
+
+
+
+{{/text}}{{#text}}
+## Events
+
+TODO
+
+
+
+
+
+
+
+{{/text}}{{#text}}
+## Referencing
+
+When we are describing an entity sometimes we want to reference another entity. For example, when describing the method `Wind.blow()` I want to write a link that points to the class `Ocean` so users can quickly navigate while reading its description. That's what we call referencing. 
+
+With TypeDoc is very easy to achieve this, you just put the name of the referenced entity between double squared brackets. In the previous example would be [[Ocean]].
+
+### Absolute vs. relative references
+
+You can reference any entity that has a comment like classes, interfaces, methods, functions, properties, etc. You cannot reference a method parameter because it doesn't contain its own comment: the parameter description is inside a method or function comment. 
+
+Also take in account that a name can be repeated, for example, two classes can contain methods with the same name, or two modules contain classes with the same name. In those cases, the closest entity will takes precedence if we need to reference the external reference we need to use absolute names. Example:
+
+{{/text}}{{#code}}
+interface Car {
+  /** 
+   * Once started the engine will turn off only when the 
+   * car travel all the [[Route.size]]
+   */
+  engine:Engine
+  size: number
+  /** 
+   * Put in march this cart by turning on its [[engine]] 
+   */
+  start()
+}
+interface Route {
+  size:number[][]
+}
+interface Engine{}
+{{/code}}{{#text}}
+
+Notes:
+ 
+ * In `start` method's description, we just used `[[engine]]` since that property is in the same class: {{link url="interfaces/car.html#start"}}
+ * But in `engine` property description, for referencing the `Route`'s `size` property, we needed to use its absolute name `Route.size` since `Car` already has a property with that name: {{link url="interfaces/car.html#engine"}}
+
+
+### Check for broken references
+
+if you use a lot of references, you can run the command line tool with the `--listInvalidSymbolLinks` argument: 
+
+```
+ --listInvalidSymbolLinks  Emits a list of broken symbol [[navigation]] links after documentation generation
+```
+
+
+
+
+
+
+
+
+{{/text}}{{#text}}
+## Ignoring things
+
+
+If we don't want some class method or other entity to appear at all in TypeDoc output we use the `@hidden` tag. 
+
+**Important**: Put `@hidden` at the very top of the comment related to the entity you want to ignore. 
+
+You can ignore any entity that can be documented with its own comment, for example classes, methods, properties, etc. But you can't ignore parameters or return values because these doesn't have its own comment. 
+
+In the following example, the output will only contain `method2()` but not `method1()``: 
+
+{{/text}}{{#code link="interfaces/somethingsareignored"}}
+interface SomeThingsAreIgnored {
+  /**
+   * @hidden
+   * this comment should be ignored
+   * 
+   */
+  method1():Promise<void>;
+  /**
+   * this comment shouldn't be ignored
+   */
+  method2():string;
+}
+{{/code}}{{#text}}
+
+The following example makes TypeDoc to ignore the whole class: 
+
+{{/text}}{{#code link="classes/classtotallyignored"}}
+/** @hidden */
+export class ClassTotallyIgnored {
+  color:string;
+}
+{{/code}}{{#text}}
+
+
+
+### Filter non public or non exported entities globally
+
+You can also configure TypeDoc tool to ignore all entities that are not public or all entities that are not exported. For that you must use the configuration options: 
+
+```sh
+--exclude                 Define patterns for excluded files when specifying paths.
+--excludeExternals        Prevent externally resolved TypeScript files from being documented.
+--excludeNotExported      Prevent symbols that are not exported from being documented.
+--excludePrivate          Ignores private variables and methods
+--excludeProtected        Ignores non exported things
+```
+  
+
+
+
+
+
+
+
+{{/text}}{{#text}}
+## Configuration
+
+ * all options should be in http://typedoc.org/guides/usage/
+
+### Configuration files
+
+Instead of passing all configuration as command line arguments, you can create a `typedocconfig.js` or `typedocconfig.ts` file (the name is not important) with the configuration properties in it and then call `typedoc --options ./typedocconfig.ts`. Example of `typedocconfig.ts` file: 
+
+```javascript
+module.exports = {
+  src: [
+    './src/index.ts',
+  ],
+  mode: 'file',
+  includeDeclarations: true,
+  tsconfig: 'tsconfig.json',
+  out: './tutorial-output',
+  excludePrivate: true,
+  excludeProtected: true,
+  excludeExternals: true,
+  readme: 'README.md',
+  name: 'javascript-documentation-examples-events-001',
+  ignoreCompilerErrors: true,
+  plugin: 'typedoc-plugin-respect-name-tag',
+  listInvalidSymbolLinks: true,
+};
+```
+
+## Plugins
+
+Typedoc is an extensible framework which support easy implementation of plugins that can analyze and transform the input, AST or output. Plugins can extend TypeDoc in several ways, from supporting new tags, parsing comments differently, to generating output in different formats, etc. We will detail how to install and use a TypeDoc plugin, in this case [typedoc-plugin-markdown](https://github.com/tgreyjs/typedoc-plugin-markdown) which allow typedoc tool to generate markdown output instead of HTML. 
+
+Install the plugin: 
+
+```sh
+npm install --save-dev typedoc-plugin-markdown
+```
+
+Installed plugins are loaded automatically by typedoc tool so installing a plugin is all you need to do in order to use it. In other words, after installing a plugin, `typedoc` tool will load them out of the box when executed so you don't have to do anything special. If you want to prevent plugins to execute or execute just one plugin from all currently installed you use the `--plugin` plugin option: 
+
+`--plugin` -  Specify the npm plugins that should be loaded. Omit to load all installed plugins, set to 'none' to load no plugins.
+
+
+
+
+{{/text}}{{#text}}
+<script src="https://cancerberosgx.github.io/raphaeljs-tutorial/generated_toc.js"></script>
+<style>
+h1, h2, h3, h4, h5, h6{
+  text-transform: none;
+}</style>
+{{/text}}

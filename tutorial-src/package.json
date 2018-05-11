@@ -1,0 +1,34 @@
+{
+  "name": "typedoc-tutorial-basic",
+  "version": "1.0.0",
+  "description": "demonstrate why is much better to represent events by enforcing the @name tag using the [typedoc-plugin-respect-name-tag plugin",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run doc-tutorial-md && npm run doc-tutorial-output && npm run doc-tutorial-output-md",
+    "doc-tutorial-md": "ts-node src/build.ts --outputType markdown --linkPrefix=../../tutorial-output --markdownOutoutFile=../_guides/tutorial.md",
+    "doc-tutorial-output": "typedoc --options typedoc.ts",
+    "doc-tutorial-output-md": "typedoc --options typedoc-md.ts"
+  },
+  "keywords": [
+    "typedoc",
+    "typescript",
+    "documentation",
+    "jsdoc",
+    "JavaScript"
+  ],
+  "private": true,
+  "author": "Sebastián Gurin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^9.6.5",
+    "handlebars": "^4.0.11",
+    "minimist": "^1.2.0",
+    "ts-node": "^6.0.0",
+    "tslint": "^5.9.1",
+    "tslint-config-airbnb": "^5.8.0",
+    "typedoc": "^0.11.1",
+    "typedoc-plugin-markdown": "^1.1.8",
+    "typescript": "^2.8.3"
+  },
+  "dependencies": {}
+}
