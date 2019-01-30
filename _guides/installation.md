@@ -70,7 +70,7 @@ Head over to our [api documentation](/api/) to learn more about the exposed api.
 
 Some great folks out there have created plugins so you can run TypeDoc with your favorite task runner.
 There are plugins available for Grunt and Gulp, both of them can be easily installed using ``npm``. Both
-plugins accept the same options as the cli application, see [usage](/guides/usage.html).
+plugins accept the same options as the cli application, see [usage](/guides/usage).
 
 
 ### Grunt
