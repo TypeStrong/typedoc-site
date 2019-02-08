@@ -1,6 +1,6 @@
 title: typedoc-site
 description: > # this means to ignore newlines until "baseurl:"
-  TypeDoc official site.
+  A documentation generator for TypeScript projects.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "typedoc.org" # the base hostname & protocol for your site
 
@@ -11,6 +11,9 @@ collections:
 
 # Build settings
 markdown: kramdown
+
+plugins:
+  - jekyll-redirect-from
 
 sass:
   style: compressed
