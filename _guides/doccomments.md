@@ -10,10 +10,55 @@ TypeDoc runs the TypeScript compiler and extracts type information from the gene
 Therefore you don't have to include additional metadata within your comments, TypeScript specific elements
 like classes, enumerations or property types and access modifiers will be automatically detected.
 
-All comments are parsed as markdown. TypeDoc uses the [Marked](<https://github.com/chjj/marked>) markdown parser
-and [HighlightJS](<https://github.com/isagalaev/highlight.js>) to highlight code blocks within markdown sections.
-Additionally you can link to other classes, members or functions using double square brackets.
+## Comment Parsing
 
+### Markdown
+
+All comments are parsed as markdown. TypeDoc uses the [Marked](<https://github.com/chjj/marked>) markdown parser
+to convert comments to HTML.
+
+```typescript
+/**
+ * This comment _supports_ [Markdown](https://marked.js.org/)
+ */
+export class DocumentMe {}
+```
+
+### Code Blocks
+
+TypeDoc supports code blocks in markdown and uses [HighlightJS](<https://github.com/isagalaev/highlight.js>)
+to provide syntax hightlighting. HighlightJS will autodetect the language for code blocks, however
+you can also explicitly specify the language.
+
+```typescript
+/**
+ * Codeblocks are great for examples
+ * 
+ * ```
+ * <my-custom-element>Highlight JS will autodetect the language</my-custom-element>
+ * ```
+ * 
+ * ```typescript
+ * // Or you can specify the language explicitly
+ * const instance = new MyClass();
+ * ```
+ */
+export class MyClass {}
+```
+
+### Symbol References
+
+You can link to other classes, members or functions using double square brackets.
+
+```typescript
+/**
+ * See the [[Foo]] interface for more details.
+ */
+export class Bar implements Foo {}
+
+/** More details */
+interface Foo {}
+```
 
 ## Supported tags
 
@@ -21,13 +66,42 @@ TypeDoc supports a specific set of tags. Many JSDoc tags are not supported becau
 compiler can infer the information directly from code. TypeDoc renders any unsupported tags in a
 list in the documentation, so they are not lost.
 
+When writing documentation for function signatures, you don't have to repeat yourself. TypeDoc automatically
+copies comments and tags of the function implementation to its signatures for you. Of course you can still
+overwrite them if you wish to.
+
 The documentation generator currently understands the following doc comment tags:
 
 ### ```@param <param name>```
-Documents a parameter for the subsequent method
+Documents a parameter for the subsequent method specified by the param name. The JSDoc param type 
+is not necessary because it will be read from the TypeScript types.
+
+```typescript
+/**
+ * @param text  Comment for parameter ´text´.
+ */
+function doSomething(target: any, text: string): number;
+```
+
+### ```@typeparam <param name>```
+Documents a generic type parameter for the subsequent symbol specified by the param name.
+
+```typescript
+/**
+ * @typeparam T  Comment for type `T`.
+ */
+function doSomething<T>(target: T, text: string): number;
+```
 
 ### ```@return(s)```
 Documents the return of the subsequent method
+
+```
+/**
+ * @returns      Comment for special return value.
+ */
+function doSomething(target: any, value: number): number;
+```
 
 ### ```@event```
 Documents events triggered by the subsequent method
@@ -35,34 +109,14 @@ Documents events triggered by the subsequent method
 ### ```@hidden and @ignore```
 Keeps the subsequent code from being documented.
 
-
-## Function signatures
-
-When writing documentation for function signatures, you don't have to repeat yourself. TypeDoc automatically
-copies comments and tags of the function implementation to its signatures for you. Of course you can still
-overwrite them if you wish to.
-
-```typescript
-/**
- * @param text  Comment for parameter ´text´.
- */
-function doSomething(target:any, text:string):number;
-
-/**
- * @param value  Comment for parameter ´value´.
- * @returns      Comment for special return value.
- */
-function doSomething(target:any, value:number):number;
-
-/**
- * Comment for method ´doSomething´.
- * @param target  Comment for parameter ´target´.
- * @returns       Comment for return value.
- */
-function doSomething(target:any, arg:any):number {
-    return 0;
-}
 ```
+/**
+ * @ignore
+ */
+function doSomething(target: any, value: number): number;
+```
+
+
 
 
 ## Namespaces
@@ -101,5 +155,5 @@ ensure that the first declaration also has as doc comment.
 /**
  * This is a doc comment for "someVar".
  */
-var someVar:string = "value";
+var someVar: string = "value";
 ```
