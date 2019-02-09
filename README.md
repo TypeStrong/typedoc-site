@@ -14,7 +14,7 @@ menuOrder: 1
 ```
 
 ## Running Jekyll locally
-You can run Jekyll on a computer with Ruby 2.1 or higher installed and the `bundle` gem.
+You can run Jekyll on a computer with Ruby 2.5 or higher installed and the `bundle` gem.
 
 ```bash
 bundle install

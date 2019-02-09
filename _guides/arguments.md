@@ -10,7 +10,7 @@ redirect_from:
 # Arguments
 TypeDoc accepts most of the command line arguments that the TypeScript compiler accepts. All
 arguments that are passed in without a flag will be parsed as input files. TypeDoc accepts
-directories as input files.
+directories as input files. To view all TypeDoc's options use the `--help` option.
 
 To create documentation for an entire project via the CLI you can type:
 
@@ -19,14 +19,25 @@ $ typedoc --out path/to/documentation/ path/to/typescript/project/
 ```
 
 ### Help
+
 ```bash
 $ typedoc --help
 ```
+
 The help command will print the following listing of available commands.
 
-```bash
+```
 {% include help_output.txt %}
 ```
+
+### options
+
+```bash
+$ typedoc --options <filename>
+```
+
+Specify a js option file that should be loaded. If not specified TypeDoc will look for 'typedoc.json' in the current directory.
+
 
 ### out
 
@@ -36,6 +47,20 @@ $ typedoc --out <path/to/documentation/>
 
 Specifies the location the documentation should be written to.
 
+### json
+
+```bash
+$ typedoc --json <path/to/out-file.json/>
+```
+
+Specifies the location to output a JSON file containing all of the reflection data.
+
+### mode
+```bash
+$ typedoc --mode <file|modules>
+```
+
+Specifies the output mode the project is used to be compiled with.
 
 ### name
 
@@ -54,41 +79,28 @@ $ typedoc --readme <path/to/readme|none>
 
 Path to the readme file that should be displayed on the index page. Pass none to disable the index page and start the documentation on the globals page.
 
-
-### module
-
-```bash
-$ typedoc --module <commonjs or amd>
-```
-
-Specify module code generation: "commonjs" or "amd"
-
-
-### target
-
-```bash
-$ typedoc --target <ES3 or ES5>
-```
-
-Specify ECMAScript target version: "ES3" (default), or "ES5"
-
-
 ### exclude
 
 ```bash
 $ typedoc --exclude <pattern>
 ```
 
-Exclude files by the given pattern when a path is provided as source
+Exclude files by the given pattern when a path is provided as source. Supports [minimatch](https://github.com/isaacs/minimatch) 
+patterns. In `typedoc.json` configuration files, this option accepts an array of patterns.
+
+#### Example
+```bash
+$ typedoc --exclude "**/*+(index|.spec|.e2e).ts" 
+```
 
 
 ### theme
 
 ```bash
-$ typedoc --theme <path/to/theme>
+$ typedoc --theme <default|minimal|path/to/theme>
 ```
 
-Specify the path to the theme that should be used
+Specify the path to the theme that should be used. TypeDoc includes the `default` and `minimal` themes.
 
 
 ### includeDeclarations
@@ -116,6 +128,13 @@ $ typedoc --excludeExternals
 
 Prevent externally resolved TypeScript files from being documented.
 
+### externalPattern
+
+```bash
+$ typedoc --externalPattern <pattern>
+```
+
+Define a pattern for files that should be considered being external.
 
 ### gaID
 
@@ -136,8 +155,24 @@ Set the site name for Google Analytics. Defaults to `auto`.
 
 
 ### hideGenerator
+
 ```bash
 $ typedoc --hideGenerator
 ```
 
 Do not print the TypeDoc link at the end of the page.
+
+### gitRevision
+
+```bash
+$ typedoc --gitRevision <revision|branch>
+```
+
+Use specified revision or branch instead of the last revision for linking to GitHub source files.
+
+### ignoreCompilerErrors
+```bash
+$ typedoc --ignoreCompilerErrors 
+```
+
+Generates documentation, even if the project does not TypeScript compile.
