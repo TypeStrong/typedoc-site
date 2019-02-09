@@ -70,25 +70,21 @@
 				</blockquote>
 				<p><a href="https://travis-ci.org/TypeStrong/typedoc"><img src="https://travis-ci.org/TypeStrong/typedoc.svg?branch=master" alt="Build Status"></a>
 					<a href="http://badge.fury.io/js/typedoc"><img src="https://badge.fury.io/js/typedoc.svg" alt="NPM Version"></a>
-					<a href="https://gitter.im/TypeStrong/typedoc?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/TypeStrong/typedoc.svg" alt="Chat on Gitter"></a>
-				<a href="https://greenkeeper.io/"><img src="https://badges.greenkeeper.io/TypeStrong/typedoc.svg" alt="Greenkeeper Enabled"></a></p>
+				<a href="https://gitter.im/TypeStrong/typedoc?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge"><img src="https://badges.gitter.im/TypeStrong/typedoc.svg" alt="Chat on Gitter"></a></p>
 				<h2 id="installation">Installation</h2>
 				<p>TypeDoc runs on Node.js and is available as an NPM package. You can install TypeDoc
 				in your project&#39;s directory as usual:</p>
-				<pre><code class="lang-bash">$ npm install typedoc --save-dev
-</code></pre>
+				<pre><code class="language-bash">$ npm install typedoc --save-dev</code></pre>
 				<p>Like the TypeScript compiler, TypeDoc comes with a binary that can be called from anywhere
 				if you install TypeDoc as a global module. The name of the executable is <code>typedoc</code>.</p>
-				<pre><code class="lang-bash">$ npm install typedoc --global
-$ typedoc
-</code></pre>
+				<pre><code class="language-bash">$ npm install typedoc --global
+$ typedoc</code></pre>
 				<h2 id="usage">Usage</h2>
 				<h3 id="shell">Shell</h3>
 				<p>TypeDoc accepts most of the command line arguments that the TypeScript compiler accepts. One major
 					difference is the fact that one may pass an entire directory instead of individual files to the documentation
 				generator. So in order to create a documentation for an entire project you simply type:</p>
-				<pre><code class="lang-bash">$ typedoc --out path/to/documentation/ path/to/typescript/project/
-</code></pre>
+				<pre><code class="language-bash">$ typedoc --out path/to/documentation/ path/to/typescript/project/</code></pre>
 				<h3 id="important-note">Important note</h3>
 				<p>Starting with version 0.2, TypeDoc no longer can predict whether files should be treated as modules
 					or whether the project should be compiled into one big namespace. You must specify the <code>mode</code> argument
@@ -127,6 +123,8 @@ $ typedoc
 					Specify module code generation: &quot;commonjs&quot;, &quot;amd&quot;, &quot;system&quot; or &quot;umd&quot;.</li>
 					<li><code>--target &lt;ES3, ES5, or ES6&gt;</code><br>
 					Specify ECMAScript target version: &quot;ES3&quot; (default), &quot;ES5&quot; or &quot;ES6&quot;</li>
+					<li><code>--tsconfig &lt;path/to/tsconfig.json&gt;</code><br>
+					Specify a typescript config file that should be loaded. If not specified TypeDoc will look for &#39;tsconfig.json&#39; in the current directory.</li>
 				</ul>
 				<h4 id="theming">Theming</h4>
 				<ul>
@@ -173,17 +171,20 @@ $ typedoc
 				<a href="https://www.npmjs.com/package/typedoc-webpack-plugin">https://www.npmjs.com/package/typedoc-webpack-plugin</a></p>
 				<h3 id="gulp">Gulp</h3>
 				<p>There is a plugin available to run TypeDoc with Gulp created by Rogier Schouten. You can find it on NPM:<br>
-				<a href="https://www.npmjs.org/package/gulp-typedoc/">https://www.npmjs.org/package/gulp-typedoc/</a></p>
+				<a href="https://www.npmjs.com/package/gulp-typedoc/">https://www.npmjs.com/package/gulp-typedoc/</a></p>
 				<h3 id="grunt">Grunt</h3>
 				<p>There is a plugin available to run TypeDoc with Grunt created by Bart van der Schoor. You can find it on NPM:<br>
-				<a href="https://www.npmjs.org/package/grunt-typedoc">https://www.npmjs.org/package/grunt-typedoc</a></p>
+				<a href="https://www.npmjs.com/package/grunt-typedoc">https://www.npmjs.com/package/grunt-typedoc</a></p>
 				<h2 id="plugins">Plugins</h2>
 				<ul>
 					<li><a href="https://github.com/christopherthielen/typedoc-plugin-external-module-name">External Module Name</a> - Set the name of TypeDoc external modules</li>
 					<li><a href="https://github.com/gdelmas/typedoc-plugin-sourcefile-url">Sourcefile URL</a> - Set custom source file URL links</li>
 					<li><a href="https://github.com/christopherthielen/typedoc-plugin-internal-external">Internal/External Module</a> - Explicitly mark modules as <code>@internal</code> or <code>@external</code></li>
 					<li><a href="https://github.com/christopherthielen/typedoc-plugin-single-line-tags">Single Line Tags</a> - Process certain <code>@tags</code> as single lines</li>
+					<li><a href="https://github.com/IgniteUI/typedoc-plugin-localization">Localization</a> - Generate documentation for different languages</li>
 				</ul>
+				<p>A list of all published Typedoc plugins can be found on NPM:<br>
+				<a href="https://www.npmjs.com/search?q=keywords:typedocplugin">https://www.npmjs.com/search?q=keywords:typedocplugin</a></p>
 				<h2 id="advanced-guides-and-docs">Advanced guides and docs</h2>
 				<p>Visit our homepage for advanced guides and an extensive API documentation:<br>
 				<a href="http://typedoc.org">http://typedoc.org</a></p>
@@ -191,9 +192,10 @@ $ typedoc
 				<p>This project is maintained by a community of developers. Contributions are welcome and appreciated.
 					You can find TypeDoc on GitHub; feel free to start an issue or create a pull requests:<br>
 				<a href="https://github.com/TypeStrong/typedoc">https://github.com/TypeStrong/typedoc</a></p>
+				<p>For more information, read the <a href="https://github.com/TypeStrong/typedoc/blob/master/CONTRIBUTING.md">contribution guide</a>.</p>
 				<h2 id="license">License</h2>
 				<p>Copyright (c) 2015 <a href="http://typedoc.org">Sebastian Lenz</a>.<br>
-					Copyright (c) 2016-2017 <a href="https://github.com/TypeStrong/typedoc/graphs/contributors">TypeDoc Contributors</a>.<br>
+					Copyright (c) 2016-2018 <a href="https://github.com/TypeStrong/typedoc/graphs/contributors">TypeDoc Contributors</a>.<br>
 				Licensed under the Apache License 2.0.</p>
 			</div>
 		</div>
@@ -514,6 +516,9 @@ $ typedoc
 						<a href="classes/reflectioncategory.html" class="tsd-kind-icon">Reflection<wbr>Category</a>
 					</li>
 					<li class=" tsd-kind-class">
+						<a href="classes/reflectionflags.html" class="tsd-kind-icon">Reflection<wbr>Flags</a>
+					</li>
+					<li class=" tsd-kind-class">
 						<a href="classes/reflectiongroup.html" class="tsd-kind-icon">Reflection<wbr>Group</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -540,7 +545,7 @@ $ typedoc
 					<li class=" tsd-kind-class">
 						<a href="classes/rendererevent.html" class="tsd-kind-icon">Renderer<wbr>Event</a>
 					</li>
-					<li class=" tsd-kind-class tsd-is-not-exported">
+					<li class=" tsd-kind-class">
 						<a href="classes/repository.html" class="tsd-kind-icon">Repository</a>
 					</li>
 					<li class=" tsd-kind-class">
@@ -694,7 +699,16 @@ $ typedoc
 						<a href="classes/variablestatementconverter.html" class="tsd-kind-icon">Variable<wbr>Statement<wbr>Converter</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/commandlineoption.html" class="tsd-kind-icon">Command<wbr>Line<wbr>Option</a>
+						<a href="interfaces/commandlineoptionbase.html" class="tsd-kind-icon">Command<wbr>Line<wbr>Option<wbr>Base</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/commandlineoptionofcustomtype.html" class="tsd-kind-icon">Command<wbr>Line<wbr>Option<wbr>OfCustom<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/commandlineoptionoflisttype.html" class="tsd-kind-icon">Command<wbr>Line<wbr>Option<wbr>OfList<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="interfaces/commandlineoptionofprimitivetype.html" class="tsd-kind-icon">Command<wbr>Line<wbr>Option<wbr>OfPrimitive<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
 						<a href="interfaces/commentcontainer.html" class="tsd-kind-icon">Comment<wbr>Container</a>
@@ -808,9 +822,6 @@ $ typedoc
 						<a href="interfaces/reflectioncontainer.html" class="tsd-kind-icon">Reflection<wbr>Container</a>
 					</li>
 					<li class=" tsd-kind-interface">
-						<a href="interfaces/reflectionflags.html" class="tsd-kind-icon">Reflection<wbr>Flags</a>
-					</li>
-					<li class=" tsd-kind-interface">
 						<a href="interfaces/reflectionflagsobject.html" class="tsd-kind-icon">Reflection<wbr>Flags<wbr>Object</a>
 					</li>
 					<li class=" tsd-kind-interface">
@@ -847,6 +858,9 @@ $ typedoc
 						<a href="interfaces/traversecallback.html" class="tsd-kind-icon">Traverse<wbr>Callback</a>
 					</li>
 					<li class=" tsd-kind-interface">
+						<a href="interfaces/tsconfigonlyoption.html" class="tsd-kind-icon">Ts<wbr>Config<wbr>Only<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-interface">
 						<a href="interfaces/typecontainer.html" class="tsd-kind-icon">Type<wbr>Container</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-has-type-parameter">
@@ -865,10 +879,16 @@ $ typedoc
 						<a href="interfaces/typetypeconverter.html" class="tsd-kind-icon">Type<wbr>Type<wbr>Converter</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
+						<a href="globals.html#commandlineoption" class="tsd-kind-icon">Command<wbr>Line<wbr>Option</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#intersectionunion" class="tsd-kind-icon">Intersection<wbr>Union</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#charactercodes" class="tsd-kind-icon">Character<wbr>Codes</a>
+					</li>
+					<li class=" tsd-kind-variable">
+						<a href="globals.html#dummy_application_owner" class="tsd-kind-icon">DUMMY_<wbr>APPLICATION_<wbr>OWNER</a>
 					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#diagnostics" class="tsd-kind-icon">Diagnostics</a>
@@ -897,17 +917,23 @@ $ typedoc
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="globals.html#nonstatickinds" class="tsd-kind-icon">non<wbr>Static<wbr>Kinds</a>
 					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#nonstaticmergekinds" class="tsd-kind-icon">non<wbr>Static<wbr>Merge<wbr>Kinds</a>
+					</li>
 					<li class=" tsd-kind-variable">
 						<a href="globals.html#optiondeclarations" class="tsd-kind-icon">option<wbr>Declarations</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
-						<a href="globals.html#prefered" class="tsd-kind-icon">prefered</a>
+						<a href="globals.html#preferred" class="tsd-kind-icon">preferred</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="globals.html#relevantflags" class="tsd-kind-icon">relevant<wbr>Flags</a>
 					</li>
 					<li class=" tsd-kind-variable tsd-is-not-exported">
 						<a href="globals.html#tsany" class="tsd-kind-icon">tsany</a>
+					</li>
+					<li class=" tsd-kind-variable tsd-is-not-exported">
+						<a href="globals.html#unix" class="tsd-kind-icon">unix</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#option" class="tsd-kind-icon">Option</a>
@@ -937,6 +963,9 @@ $ typedoc
 						<a href="globals.html#createdeclaration" class="tsd-kind-icon">create<wbr>Declaration</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="globals.html#createminimatch" class="tsd-kind-icon">create<wbr>Minimatch</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="globals.html#createparameter" class="tsd-kind-icon">create<wbr>Parameter</a>
 					</li>
 					<li class=" tsd-kind-function">
@@ -964,13 +993,13 @@ $ typedoc
 						<a href="globals.html#extractsignaturetype" class="tsd-kind-icon">extract<wbr>Signature<wbr>Type</a>
 					</li>
 					<li class=" tsd-kind-function">
-						<a href="globals.html#getclassextendsheritageclauseelement" class="tsd-kind-icon">get<wbr>Class<wbr>Extends<wbr>Heritage<wbr>Clause<wbr>Element</a>
-					</li>
-					<li class=" tsd-kind-function">
 						<a href="globals.html#getclassimplementsheritageclauseelements" class="tsd-kind-icon">get<wbr>Class<wbr>Implements<wbr>Heritage<wbr>Clause<wbr>Elements</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#getdirectorypath" class="tsd-kind-icon">get<wbr>Directory<wbr>Path</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="globals.html#geteffectivebasetypenode" class="tsd-kind-icon">get<wbr>Effective<wbr>Base<wbr>Type<wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#getinterfacebasetypenodes" class="tsd-kind-icon">get<wbr>Interface<wbr>Base<wbr>Type<wbr>Nodes</a>
