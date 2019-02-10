@@ -96,10 +96,10 @@
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-inherited">
+						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><a href="markdownevent.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="markdownevent.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -133,31 +133,32 @@
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Markdown<wbr>Event<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="markdownevent.html" class="tsd-signature-type">MarkdownEvent</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Markdown<wbr>Event<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, originalText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, parsedText<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="markdownevent.html" class="tsd-signature-type">MarkdownEvent</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
-								<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#constructor">constructor</a></p>
+								<p>Overrides <a href="event.html">Event</a>.<a href="event.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/events.ts#L257">utils/events.ts:257</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/output/events.ts#L171">output/events.ts:171</a></li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Create a new Event instance.</p>
-								</div>
-							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>name: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>originalText: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>parsedText: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <a href="markdownevent.html" class="tsd-signature-type">MarkdownEvent</a></h4>
@@ -173,7 +174,7 @@
 					<div class="tsd-signature tsd-kind-icon">PARSE<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;parseMarkdown&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/output/events.ts#L165">output/events.ts:165</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/output/events.ts#L171">output/events.ts:171</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -191,7 +192,7 @@
 					<div class="tsd-signature tsd-kind-icon">original<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/output/events.ts#L154">output/events.ts:154</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/output/events.ts#L160">output/events.ts:160</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -206,7 +207,7 @@
 					<div class="tsd-signature tsd-kind-icon">parsed<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/output/events.ts#L159">output/events.ts:159</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/output/events.ts#L165">output/events.ts:165</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -229,7 +230,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#isdefaultprevented">isDefaultPrevented</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/events.ts#L297">utils/events.ts:297</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L302">utils/events.ts:302</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -252,7 +253,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#ispropagationstopped">isPropagationStopped</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/events.ts#L290">utils/events.ts:290</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L295">utils/events.ts:295</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -275,7 +276,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#name">name</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/events.ts#L283">utils/events.ts:283</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L288">utils/events.ts:288</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -301,7 +302,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#preventdefault">preventDefault</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/events.ts#L276">utils/events.ts:276</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L281">utils/events.ts:281</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -324,7 +325,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="event.html">Event</a>.<a href="event.html#stoppropagation">stopPropagation</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/events.ts#L269">utils/events.ts:269</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L274">utils/events.ts:274</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -353,7 +354,7 @@
 					<li class="current tsd-kind-class">
 						<a href="markdownevent.html" class="tsd-kind-icon">Markdown<wbr>Event</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 								<a href="markdownevent.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-event tsd-parent-kind-class tsd-is-static">

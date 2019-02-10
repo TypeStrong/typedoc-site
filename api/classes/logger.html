@@ -71,7 +71,7 @@
 					<div class="lead">
 						<p>A logger that will not produce any output.</p>
 					</div>
-					<p>This logger also serves as the ase calls of other loggers as it implements
+					<p>This logger also serves as the base class of other loggers as it implements
 					all the required utility functions.</p>
 				</div>
 			</section>
@@ -128,7 +128,7 @@
 					<div class="tsd-signature tsd-kind-icon">error<wbr>Count<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L25">utils/loggers.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L25">utils/loggers.ts:25</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -150,7 +150,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L130">utils/loggers.ts:130</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L130">utils/loggers.ts:130</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -181,7 +181,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L119">utils/loggers.ts:119</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L119">utils/loggers.ts:119</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -212,7 +212,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L97">utils/loggers.ts:97</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L97">utils/loggers.ts:97</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -249,7 +249,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L30">utils/loggers.ts:30</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L30">utils/loggers.ts:30</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -265,13 +265,13 @@
 					<a name="log" class="tsd-anchor"></a>
 					<h3>log</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, level<span class="tsd-signature-symbol">?: </span><a href="../enums/loglevel.html" class="tsd-signature-type">LogLevel</a>, newLine<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">log<span class="tsd-signature-symbol">(</span>message<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, level<span class="tsd-signature-symbol">?: </span><a href="../enums/loglevel.html" class="tsd-signature-type">LogLevel</a>, newLine<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L108">utils/loggers.ts:108</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L108">utils/loggers.ts:108</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -294,7 +294,7 @@
 									</div>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> newLine: <span class="tsd-signature-type">boolean</span></h5>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> newLine: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></h5>
 									<div class="tsd-comment tsd-typography">
 										<p>Should the logger print a trailing whitespace?</p>
 									</div>
@@ -314,7 +314,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L37">utils/loggers.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L37">utils/loggers.ts:37</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -336,7 +336,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L67">utils/loggers.ts:67</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L67">utils/loggers.ts:67</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -373,7 +373,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L77">utils/loggers.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L77">utils/loggers.ts:77</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -410,7 +410,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L87">utils/loggers.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L87">utils/loggers.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -447,7 +447,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L47">utils/loggers.ts:47</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L47">utils/loggers.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -484,7 +484,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/utils/loggers.ts#L57">utils/loggers.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/loggers.ts#L57">utils/loggers.ts:57</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

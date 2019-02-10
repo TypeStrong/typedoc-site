@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>CommandLineOption | TypeDoc Documentation</title>
+	<title>CommandLineOptionBase | TypeDoc Documentation</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="commandlineoption.html">CommandLineOption</a>
+					<a href="commandlineoptionbase.html">CommandLineOptionBase</a>
 				</li>
 			</ul>
-			<h1>Interface CommandLineOption</h1>
+			<h1>Interface CommandLineOptionBase</h1>
 		</div>
 	</div>
 </header>
@@ -71,14 +71,28 @@
 					<div class="lead">
 						<p>Command line options</p>
 					</div>
-					<p><a href="https://github.com/Microsoft/TypeScript/blob/v2.1.4/src/compiler/types.ts#L3344">https://github.com/Microsoft/TypeScript/blob/v2.1.4/src/compiler/types.ts#L3344</a></p>
+					<p><a href="https://github.com/Microsoft/TypeScript/blob/v2.1.4/src/compiler/types.ts#L3310">https://github.com/Microsoft/TypeScript/blob/v2.1.4/src/compiler/types.ts#L3310</a></p>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">CommandLineOption</span>
+						<span class="target">CommandLineOptionBase</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<a href="commandlineoptionofprimitivetype.html" class="tsd-signature-type">CommandLineOptionOfPrimitiveType</a>
+							</li>
+							<li>
+								<a href="commandlineoptionofcustomtype.html" class="tsd-signature-type">CommandLineOptionOfCustomType</a>
+							</li>
+							<li>
+								<a href="tsconfigonlyoption.html" class="tsd-signature-type">TsConfigOnlyOption</a>
+							</li>
+							<li>
+								<a href="commandlineoptionoflisttype.html" class="tsd-signature-type">CommandLineOptionOfListType</a>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -89,11 +103,14 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoption.html#description" class="tsd-kind-icon">description</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoption.html#name" class="tsd-kind-icon">name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoption.html#paramtype" class="tsd-kind-icon">param<wbr>Type</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoption.html#shortname" class="tsd-kind-icon">short<wbr>Name</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoption.html#type" class="tsd-kind-icon">type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoptionbase.html#description" class="tsd-kind-icon">description</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoptionbase.html#experimental" class="tsd-kind-icon">experimental</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoptionbase.html#isfilepath" class="tsd-kind-icon">is<wbr>File<wbr>Path</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoptionbase.html#istsconfigonly" class="tsd-kind-icon">isTSConfig<wbr>Only</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoptionbase.html#name" class="tsd-kind-icon">name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoptionbase.html#paramtype" class="tsd-kind-icon">param<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoptionbase.html#shortname" class="tsd-kind-icon">short<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="commandlineoptionbase.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,13 +120,58 @@
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="description" class="tsd-anchor"></a>
-					<h3>description</h3>
-					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <a href="diagnosticsenumvalue.html" class="tsd-signature-type">DiagnosticsEnumValue</a></div>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> description</h3>
+					<div class="tsd-signature tsd-kind-icon">description<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ts.DiagnosticMessage</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/ts-internal.ts#L139">ts-internal.ts:139</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/ts-internal.ts#L152">ts-internal.ts:152</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The message describing what the command line switch does</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="experimental" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> experimental</h3>
+					<div class="tsd-signature tsd-kind-icon">experimental<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/ts-internal.ts#L157">ts-internal.ts:157</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="isfilepath" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> is<wbr>File<wbr>Path</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>File<wbr>Path<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/ts-internal.ts#L144">ts-internal.ts:144</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>True if option value is a path or fileName</p>
+						</div>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="istsconfigonly" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> isTSConfig<wbr>Only</h3>
+					<div class="tsd-signature tsd-kind-icon">isTSConfig<wbr>Only<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">false</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">true</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/ts-internal.ts#L161">ts-internal.ts:161</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>True if option can only be specified via tsconfig.json file</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="name" class="tsd-anchor"></a>
@@ -117,39 +179,54 @@
 					<div class="tsd-signature tsd-kind-icon">name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/ts-internal.ts#L136">ts-internal.ts:136</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/ts-internal.ts#L136">ts-internal.ts:136</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="paramtype" class="tsd-anchor"></a>
-					<h3>param<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">param<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="diagnosticsenumvalue.html" class="tsd-signature-type">DiagnosticsEnumValue</a></div>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> param<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">param<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ts.DiagnosticMessage</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/ts-internal.ts#L140">ts-internal.ts:140</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/ts-internal.ts#L156">ts-internal.ts:156</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name to be used for a non-boolean option&#39;s parameter</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="shortname" class="tsd-anchor"></a>
-					<h3>short<wbr>Name</h3>
-					<div class="tsd-signature tsd-kind-icon">short<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<h3><span class="tsd-flag ts-flagOptional">Optional</span> short<wbr>Name</h3>
+					<div class="tsd-signature tsd-kind-icon">short<wbr>Name<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/ts-internal.ts#L138">ts-internal.ts:138</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/ts-internal.ts#L148">ts-internal.ts:148</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>A short mnemonic for convenience - for instance, &#39;h&#39; can be used in place of &#39;help&#39;</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
 					<a name="type" class="tsd-anchor"></a>
 					<h3>type</h3>
-					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"string"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"number"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"boolean"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"object"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">"list"</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/3581d04/src/lib/ts-internal.ts#L137">ts-internal.ts:137</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/ts-internal.ts#L140">ts-internal.ts:140</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>a value of a primitive type, or an object literal mapping named values to actual values</p>
+						</div>
+					</div>
 				</section>
 			</section>
 		</div>
@@ -166,22 +243,31 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-interface">
-						<a href="commandlineoption.html" class="tsd-kind-icon">Command<wbr>Line<wbr>Option</a>
+						<a href="commandlineoptionbase.html" class="tsd-kind-icon">Command<wbr>Line<wbr>Option<wbr>Base</a>
 						<ul>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="commandlineoption.html#description" class="tsd-kind-icon">description</a>
+								<a href="commandlineoptionbase.html#description" class="tsd-kind-icon">description</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="commandlineoption.html#name" class="tsd-kind-icon">name</a>
+								<a href="commandlineoptionbase.html#experimental" class="tsd-kind-icon">experimental</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="commandlineoption.html#paramtype" class="tsd-kind-icon">param<wbr>Type</a>
+								<a href="commandlineoptionbase.html#isfilepath" class="tsd-kind-icon">is<wbr>File<wbr>Path</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="commandlineoption.html#shortname" class="tsd-kind-icon">short<wbr>Name</a>
+								<a href="commandlineoptionbase.html#istsconfigonly" class="tsd-kind-icon">isTSConfig<wbr>Only</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="commandlineoption.html#type" class="tsd-kind-icon">type</a>
+								<a href="commandlineoptionbase.html#name" class="tsd-kind-icon">name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="commandlineoptionbase.html#paramtype" class="tsd-kind-icon">param<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="commandlineoptionbase.html#shortname" class="tsd-kind-icon">short<wbr>Name</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="commandlineoptionbase.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
