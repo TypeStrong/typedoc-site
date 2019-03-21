@@ -136,6 +136,38 @@ $ typedoc --externalPattern <pattern>
 
 Define a pattern for files that should be considered being external.
 
+### categorizeByGroup
+
+```bash
+$ typedoc --categorizeByGroup=false
+```
+
+This flag categorizes reflections by group (within properties, methods, etc).
+To allow methods and properties of the same category to be grouped together, set this flag to false.
+Defaults to true
+
+### defaultCategory
+
+```bash
+$ typedoc --defaultCategory="Category Name"
+```
+
+Sets the name for the default category (which is used when some elements of the page are categorized).
+Defaults to 'Other'
+
+### categoryOrder
+
+```json
+{
+  "categoryOrder": ["Category Name", "Other Category", "*"]
+}
+```
+
+Array option (available via json configuration) which allows overriding the order categories display in. A string of `*` indicates where categories that are not in the list should appear.
+
+By default, categories are displayed alphabetically. If unknown categories are found, they will be listed at the end by default.
+
+
 ### gaID
 
 ```bash
