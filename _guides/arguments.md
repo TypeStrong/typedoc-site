@@ -85,12 +85,12 @@ Path to the readme file that should be displayed on the index page. Pass none to
 $ typedoc --exclude <pattern>
 ```
 
-Exclude files by the given pattern when a path is provided as source. Supports [minimatch](https://github.com/isaacs/minimatch) 
+Exclude files by the given pattern when a path is provided as source. Supports [minimatch](https://github.com/isaacs/minimatch)
 patterns. In `typedoc.json` configuration files, this option accepts an array of patterns.
 
 #### Example
 ```bash
-$ typedoc --exclude "**/*+(index|.spec|.e2e).ts" 
+$ typedoc --exclude "**/*+(index|.spec|.e2e).ts"
 ```
 
 
@@ -110,16 +110,6 @@ $ typedoc --includeDeclarations
 ```
 
 Turn on parsing of .d.ts declaration files.
-
-
-### externalPattern
-
-```bash
-$ typedoc --externalPattern <pattern>
-```
-
-Define a pattern for files that should be considered being external.
-
 
 ### excludeExternals
 ```bash
@@ -172,7 +162,7 @@ Use specified revision or branch instead of the last revision for linking to Git
 
 ### ignoreCompilerErrors
 ```bash
-$ typedoc --ignoreCompilerErrors 
+$ typedoc --ignoreCompilerErrors
 ```
 
 Generates documentation, even if the project does not TypeScript compile.
