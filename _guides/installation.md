@@ -46,9 +46,9 @@ Using TypeScript 3.1.1 from /Users/aciccarello/Documents/code/typedoc/typedoc/no
 
 ### Global CLI installation
 
-Like the TypeScript compiler or any other NPM module that has an executable, TypeDoc's executable can be called from anywhere, if you
-install TypeDoc as a global module, but this is not the preferred approach because each project may have differeing version requirements; you may eventually run into the problem
-of one project breaking when you update global TypeDoc for a new project, because the old project worked with a specific version of TypeDoc.
+Like the TypeScript compiler or any other NPM module that has an executable, TypeDoc's executable can be called from anywhere if you
+install TypeDoc as a global module. Note that this is not the preferred approach in the event that different projects need different versions of TypeDoc. If you follow the global approach, you may eventually run into the problem
+of one project breaking when you update the global TypeDoc while making a new project, because the old project may only work with a previous version of TypeDoc.
 
 If you still want to follow the global approach, run:
 
