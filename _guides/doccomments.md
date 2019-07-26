@@ -116,8 +116,16 @@ Keeps the subsequent code from being documented.
 function doSomething(target: any, value: number): number;
 ```
 
+### ```@category```
+Allows grouping reflections on a page
 
-
+```
+/**
+ * Regular description
+ *
+ * @category Category Name
+ */
+funtion doSomething() {}
 
 ## Namespaces
 
