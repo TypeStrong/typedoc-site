@@ -106,8 +106,12 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="categoryplugin.html#categorizebygroup" class="tsd-kind-icon">categorize<wbr>ByGroup</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="categoryplugin.html#categoryorder" class="tsd-kind-icon">category<wbr>Order</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="categoryplugin.html#componentname" class="tsd-kind-icon">component<wbr>Name</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="categoryplugin.html#defaultcategory" class="tsd-kind-icon">default<wbr>Category</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="categoryplugin.html#weights" class="tsd-kind-icon">WEIGHTS</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="categoryplugin.html#defaultcategory-1" class="tsd-kind-icon">default<wbr>Category</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section tsd-is-inherited">
@@ -121,12 +125,16 @@
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected"><a href="categoryplugin.html#bubble" class="tsd-kind-icon">bubble</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="categoryplugin.html#categorize" class="tsd-kind-icon">categorize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="categoryplugin.html#getoptiondeclarations" class="tsd-kind-icon">get<wbr>Option<wbr>Declarations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="categoryplugin.html#groupcategorize" class="tsd-kind-icon">group<wbr>Categorize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="categoryplugin.html#initialize" class="tsd-kind-icon">initialize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="categoryplugin.html#listento" class="tsd-kind-icon">listen<wbr>To</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="categoryplugin.html#listentoonce" class="tsd-kind-icon">listen<wbr>ToOnce</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="categoryplugin.html#lumpcategorize" class="tsd-kind-icon">lump<wbr>Categorize</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="categoryplugin.html#off" class="tsd-kind-icon">off</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="categoryplugin.html#on" class="tsd-kind-icon">on</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="categoryplugin.html#onbegin" class="tsd-kind-icon">on<wbr>Begin</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="categoryplugin.html#onendresolve" class="tsd-kind-icon">on<wbr>End<wbr>Resolve</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="categoryplugin.html#onresolve" class="tsd-kind-icon">on<wbr>Resolve</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="categoryplugin.html#once" class="tsd-kind-icon">once</a></li>
@@ -134,7 +142,6 @@
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="categoryplugin.html#trigger" class="tsd-kind-icon">trigger</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="categoryplugin.html#getcategory" class="tsd-kind-icon">get<wbr>Category</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="categoryplugin.html#getreflectioncategories" class="tsd-kind-icon">get<wbr>Reflection<wbr>Categories</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="categoryplugin.html#sortcallback" class="tsd-kind-icon">sort<wbr>Callback</a></li>
 								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><a href="categoryplugin.html#sortcatcallback" class="tsd-kind-icon">sort<wbr>Cat<wbr>Callback</a></li>
 							</ul>
 						</section>
@@ -154,7 +161,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/component.ts#L144">utils/component.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L144">utils/component.ts:144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -175,6 +182,26 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="categorizebygroup" class="tsd-anchor"></a>
+					<h3>categorize<wbr>ByGroup</h3>
+					<div class="tsd-signature tsd-kind-icon">categorize<wbr>ByGroup<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L38">converter/plugins/CategoryPlugin.ts:38</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="categoryorder" class="tsd-anchor"></a>
+					<h3>category<wbr>Order</h3>
+					<div class="tsd-signature tsd-kind-icon">category<wbr>Order<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L30">converter/plugins/CategoryPlugin.ts:30</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="componentname" class="tsd-anchor"></a>
 					<h3>component<wbr>Name</h3>
@@ -182,7 +209,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#componentname">componentName</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/component.ts#L139">utils/component.ts:139</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L139">utils/component.ts:139</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -191,20 +218,35 @@
 						</div>
 					</div>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="defaultcategory" class="tsd-anchor"></a>
+					<h3>default<wbr>Category</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L23">converter/plugins/CategoryPlugin.ts:23</a></li>
+						</ul>
+					</aside>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
 					<a name="weights" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> WEIGHTS</h3>
 					<div class="tsd-signature tsd-kind-icon">WEIGHTS<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> =&nbsp;[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/converter/plugins/CategoryPlugin.ts#L19">converter/plugins/CategoryPlugin.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L42">converter/plugins/CategoryPlugin.ts:42</a></li>
 						</ul>
 					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Define the sort order of categories. By default, sort alphabetically.</p>
-						</div>
-					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-static">
+					<a name="defaultcategory-1" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagStatic">Static</span> default<wbr>Category</h3>
+					<div class="tsd-signature tsd-kind-icon">default<wbr>Category<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;Other&quot;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L41">converter/plugins/CategoryPlugin.ts:41</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group tsd-is-inherited">
@@ -220,7 +262,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#application">application</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/component.ts#L180">utils/component.ts:180</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L180">utils/component.ts:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -243,7 +285,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#owner">owner</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/component.ts#L189">utils/component.ts:189</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L189">utils/component.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -269,7 +311,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#bubble">bubble</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/component.ts#L160">utils/component.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L160">utils/component.ts:160</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -285,6 +327,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="categorize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> categorize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">categorize<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="containerreflection.html" class="tsd-signature-type">ContainerReflection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L92">converter/plugins/CategoryPlugin.ts:92</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <a href="containerreflection.html" class="tsd-signature-type">ContainerReflection</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="getoptiondeclarations" class="tsd-anchor"></a>
 					<h3>get<wbr>Option<wbr>Declarations</h3>
@@ -296,7 +361,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#getoptiondeclarations">getOptionDeclarations</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/component.ts#L173">utils/component.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L173">utils/component.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -305,6 +370,29 @@
 								</div>
 							</div>
 							<h4 class="tsd-returns-title">Returns <a href="../interfaces/declarationoption.html" class="tsd-signature-type">DeclarationOption</a><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="groupcategorize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> group<wbr>Categorize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">group<wbr>Categorize<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="containerreflection.html" class="tsd-signature-type">ContainerReflection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L100">converter/plugins/CategoryPlugin.ts:100</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <a href="containerreflection.html" class="tsd-signature-type">ContainerReflection</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -319,7 +407,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/converter/plugins/CategoryPlugin.ts#L24">converter/plugins/CategoryPlugin.ts:24</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L47">converter/plugins/CategoryPlugin.ts:47</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -342,7 +430,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#listento">listenTo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L407">utils/events.ts:407</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L407">utils/events.ts:407</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -383,7 +471,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#listentoonce">listenToOnce</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L436">utils/events.ts:436</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L436">utils/events.ts:436</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -406,7 +494,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#listentoonce">listenToOnce</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L437">utils/events.ts:437</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L437">utils/events.ts:437</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -428,6 +516,29 @@
 						</li>
 					</ul>
 				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="lumpcategorize" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> lump<wbr>Categorize</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">lump<wbr>Categorize<span class="tsd-signature-symbol">(</span>obj<span class="tsd-signature-symbol">: </span><a href="containerreflection.html" class="tsd-signature-type">ContainerReflection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L115">converter/plugins/CategoryPlugin.ts:115</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>obj: <a href="containerreflection.html" class="tsd-signature-type">ContainerReflection</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="off" class="tsd-anchor"></a>
 					<h3>off</h3>
@@ -441,7 +552,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L386">utils/events.ts:386</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L386">utils/events.ts:386</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -458,7 +569,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L387">utils/events.ts:387</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L387">utils/events.ts:387</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -476,7 +587,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L388">utils/events.ts:388</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L388">utils/events.ts:388</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -508,7 +619,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L341">utils/events.ts:341</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L341">utils/events.ts:341</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -532,7 +643,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L342">utils/events.ts:342</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L342">utils/events.ts:342</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -556,7 +667,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L343">utils/events.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L343">utils/events.ts:343</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -579,6 +690,37 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="onbegin" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>Begin</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">on<wbr>Begin<span class="tsd-signature-symbol">(</span>context<span class="tsd-signature-symbol">: </span><a href="context.html" class="tsd-signature-type">Context</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L60">converter/plugins/CategoryPlugin.ts:60</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Triggered when the converter begins converting a project.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>context: <a href="context.html" class="tsd-signature-type">Context</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The context object describing the current state the converter is in.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
 					<a name="onendresolve" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> on<wbr>End<wbr>Resolve</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
@@ -588,7 +730,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/converter/plugins/CategoryPlugin.ts#L54">converter/plugins/CategoryPlugin.ts:54</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L87">converter/plugins/CategoryPlugin.ts:87</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -619,7 +761,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/converter/plugins/CategoryPlugin.ts#L37">converter/plugins/CategoryPlugin.ts:37</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L76">converter/plugins/CategoryPlugin.ts:76</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -658,7 +800,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L372">utils/events.ts:372</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L372">utils/events.ts:372</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -684,7 +826,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L373">utils/events.ts:373</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L373">utils/events.ts:373</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -717,7 +859,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#stoplistening">stopListening</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L448">utils/events.ts:448</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L448">utils/events.ts:448</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -753,7 +895,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#trigger">trigger</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/utils/events.ts#L480">utils/events.ts:480</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L480">utils/events.ts:480</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -787,7 +929,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/converter/plugins/CategoryPlugin.ts#L118">converter/plugins/CategoryPlugin.ts:118</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L168">converter/plugins/CategoryPlugin.ts:168</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -819,7 +961,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/converter/plugins/CategoryPlugin.ts#L87">converter/plugins/CategoryPlugin.ts:87</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L134">converter/plugins/CategoryPlugin.ts:134</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -842,44 +984,6 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
-					<a name="sortcallback" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagStatic">Static</span> sort<wbr>Callback</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
-						<li class="tsd-signature tsd-kind-icon">sort<wbr>Callback<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><a href="reflection.html" class="tsd-signature-type">Reflection</a>, b<span class="tsd-signature-symbol">: </span><a href="reflection.html" class="tsd-signature-type">Reflection</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/converter/plugins/CategoryPlugin.ts#L140">converter/plugins/CategoryPlugin.ts:140</a></li>
-								</ul>
-							</aside>
-							<div class="tsd-comment tsd-typography">
-								<div class="lead">
-									<p>Callback used to sort reflections by name.</p>
-								</div>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>a: <a href="reflection.html" class="tsd-signature-type">Reflection</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The left reflection to sort.</p>
-									</div>
-								</li>
-								<li>
-									<h5>b: <a href="reflection.html" class="tsd-signature-type">Reflection</a></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>The right reflection to sort.</p>
-									</div>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
-							<p>The sorting weight.</p>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-static">
 					<a name="sortcatcallback" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagStatic">Static</span> sort<wbr>Cat<wbr>Callback</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-static">
@@ -889,7 +993,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/4c2e236/src/lib/converter/plugins/CategoryPlugin.ts#L151">converter/plugins/CategoryPlugin.ts:151</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/converter/plugins/CategoryPlugin.ts#L203">converter/plugins/CategoryPlugin.ts:203</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -937,11 +1041,23 @@
 							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited">
 								<a href="categoryplugin.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="categoryplugin.html#categorizebygroup" class="tsd-kind-icon">categorize<wbr>ByGroup</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="categoryplugin.html#categoryorder" class="tsd-kind-icon">category<wbr>Order</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 								<a href="categoryplugin.html#componentname" class="tsd-kind-icon">component<wbr>Name</a>
 							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="categoryplugin.html#defaultcategory" class="tsd-kind-icon">default<wbr>Category</a>
+							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
 								<a href="categoryplugin.html#weights" class="tsd-kind-icon">WEIGHTS</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-static">
+								<a href="categoryplugin.html#defaultcategory-1" class="tsd-kind-icon">default<wbr>Category</a>
 							</li>
 							<li class=" tsd-kind-get-signature tsd-parent-kind-class tsd-is-inherited">
 								<a href="categoryplugin.html#application" class="tsd-kind-icon">application</a>
@@ -952,8 +1068,14 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-protected">
 								<a href="categoryplugin.html#bubble" class="tsd-kind-icon">bubble</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="categoryplugin.html#categorize" class="tsd-kind-icon">categorize</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="categoryplugin.html#getoptiondeclarations" class="tsd-kind-icon">get<wbr>Option<wbr>Declarations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="categoryplugin.html#groupcategorize" class="tsd-kind-icon">group<wbr>Categorize</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 								<a href="categoryplugin.html#initialize" class="tsd-kind-icon">initialize</a>
@@ -964,11 +1086,17 @@
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="categoryplugin.html#listentoonce" class="tsd-kind-icon">listen<wbr>ToOnce</a>
 							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="categoryplugin.html#lumpcategorize" class="tsd-kind-icon">lump<wbr>Categorize</a>
+							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="categoryplugin.html#off" class="tsd-kind-icon">off</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 								<a href="categoryplugin.html#on" class="tsd-kind-icon">on</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="categoryplugin.html#onbegin" class="tsd-kind-icon">on<wbr>Begin</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
 								<a href="categoryplugin.html#onendresolve" class="tsd-kind-icon">on<wbr>End<wbr>Resolve</a>
@@ -990,9 +1118,6 @@
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="categoryplugin.html#getreflectioncategories" class="tsd-kind-icon">get<wbr>Reflection<wbr>Categories</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
-								<a href="categoryplugin.html#sortcallback" class="tsd-kind-icon">sort<wbr>Callback</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-static">
 								<a href="categoryplugin.html#sortcatcallback" class="tsd-kind-icon">sort<wbr>Cat<wbr>Callback</a>
@@ -1018,6 +1143,7 @@
 				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
 				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+				<li class="tsd-kind-type-alias tsd-has-type-parameter"><span class="tsd-kind-icon">Type alias with type parameter</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
@@ -1066,7 +1192,7 @@
 	</div>
 </footer>
 <div class="container tsd-generator">
-	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
 </div>
 <div class="overlay"></div>
 <script src="../assets/js/main.js"></script>
