@@ -2,6 +2,9 @@ Usage:
  typedoc --mode modules --out path/to/documentation path/to/sourcefiles
 
 TypeDoc options:
+ --categorizeByGroup       Specifies whether categorization will be done at the group level.
+ --categoryOrder           Specifies the order in which categories appear. * indicates the relative order for categories not in the list.
+ --defaultCategory         Specifies the default category for reflections without a category.
  --disableOutputCheck      Should TypeDoc disable the testing and cleaning of the output directory?
  --entryPoint              Specifies the fully qualified name of the root symbol. Defaults to global namespace.
  --exclude                 Define patterns for excluded files when specifying paths.
