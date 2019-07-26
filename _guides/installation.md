@@ -24,36 +24,45 @@ Installing TypeDoc is available as a node package. Using ``npm`` ensures that al
 dependencies are setup correctly. You can choose to either install locally to your project or
 globally to the CLI.
 
+### Local installation (preferred)
+
+If you want to use TypeDoc from your command line in a project, use the API in your project code, or TypeDoc in an npm script, a local installation is the recommended approach. First install TypeDoc locally in your project:
+
+```bash
+$ npm install typedoc --save-dev
+```
+
+By saving TypeDoc to the project `package.json` file with the previous command,
+anyone who runs `npm install` on the project will have typedoc installed at the specific version required for the project.
+
+The name of TypeDoc's executable is ``typedoc``. To verify that it works, you can now invoke the CLI in your project using `npx` (`npx` is a tool bundled with `npm`), passing TypeDoc the ``--version`` argurment:
+
+```bash
+$ npx typedoc --version
+
+TypeDoc 0.13.0
+Using TypeScript 3.1.1 from /Users/aciccarello/Documents/code/typedoc/typedoc/node_modules/typescript/lib
+```
 
 ### Global CLI installation
 
-If you want to use TypeDoc from your command line, global installation is the preferred way of installing it:
+Like the TypeScript compiler or any other NPM module that has an executable, TypeDoc's executable can be called from anywhere if you
+install TypeDoc as a global module. Note that this is not the preferred approach in the event that different projects need different versions of TypeDoc. If you follow the global approach, you may eventually run into the problem
+of one project breaking when you update the global TypeDoc while making a new project, because the old project may only work with a previous version of TypeDoc.
+
+If you still want to follow the global approach, run:
 
 ```bash
-$ npm install --global typedoc
+$ npm install typedoc --global
 ```
 
-Like the TypeScript compiler, TypeDoc comes with a binary that can be called from anywhere if you
-install TypeDoc as a global module. The name of the executable is ``typedoc``. To verify everything
-is setup correctly, you can run TypeDoc with the ``--version`` argurment. It should output something like the following:
+To verify that it works globally, now you can run it without `npx`, even outside your project:
 
 ```bash
 $ typedoc --version
 
 TypeDoc 0.13.0
 Using TypeScript 3.1.1 from /Users/aciccarello/Documents/code/typedoc/typedoc/node_modules/typescript/lib
-```
-
-
-### Local installation
-
-If you want to use TypeDoc as a node module within your project or as an npm script, you can
-install it as a local module. This is recommended for uses such as integrating it with your build process.
-By saving to the project `package.json` file,
-anyone who runs `npm install` on the project will have typedoc installed.
-
-```bash
-$ npm install --save-dev typedoc
 ```
 
 ## Command line interface
