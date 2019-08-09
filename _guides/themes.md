@@ -35,7 +35,7 @@ TypeDoc ships with two themes so you can start creating docs right out of the bo
 
 Creating a custom theme in TypeDoc is pretty easy. Basically you copy the  [default theme directory](https://github.com/TypeStrong/typedoc-default-themes/tree/master/src/default) (from which all themes extend from) and update the parts you want to change.
 
-Then simply run `--themes` and pass it the path to the directory
+Then pass a path to the theme to typedoc using the `--theme` option
 
 ```bash
 $ typedoc --out path/to/documentation/ --theme path/to/custom-theme path/to/typescript/project/
