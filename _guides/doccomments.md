@@ -60,6 +60,9 @@ export class Bar implements Foo {}
 interface Foo {}
 ```
 
+The text shown for a link can be specified after a pipe (`|`) character: `... the [[Foo|Foo interface]] ...`.
+Links are also supported using [JSDoc style links](https://jsdoc.app/tags-inline-link.html), ie `{@link Foo}`.
+
 ## Supported tags
 
 TypeDoc supports a specific set of tags. Many JSDoc tags are not supported because the TypeScript
