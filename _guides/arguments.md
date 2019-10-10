@@ -198,3 +198,19 @@ $ typedoc --ignoreCompilerErrors
 ```
 
 Generates documentation, even if the project does not TypeScript compile.
+
+### toc
+```bash
+$ typedoc --toc EntryClass,ImportantInterface
+```
+
+```json
+{
+  "toc": [
+    "EntryClass",
+    "ImportantInterface"
+  ]
+}
+```
+
+Overrides the "globals" navigation sidebar to only include the types provided in the "toc" whitelist.  This is useful in large projects where there may be an unwieldy number of Globals in the sidebar.
