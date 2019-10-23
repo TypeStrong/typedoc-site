@@ -50,4 +50,6 @@ This is the basic directory structure of a theme, only the assets directory is m
     - index.hbs        // Optional. Home page template
     - reflection.hbs   // Optional. Definition page template
   - theme.js           // Optional. JavaScript class of the theme
+  + helpers            // Optional. Custom Handlebars helpers
+    - helper.js        // See [Github issue](https://github.com/TypeStrong/typedoc/issues/154#issuecomment-224483571) for example
 ```
