@@ -15,7 +15,7 @@ If you have [npm installed](https://www.npmjs.com/get-npm), start using typedoc 
 npm install --global typedoc
 
 #Execute typedoc on your project
-typedoc --out docs /src
+typedoc --out docs src
 ```
 
 For more advanced usage and configuration guides, see the [installation guide](./guides/installation).

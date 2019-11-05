@@ -71,7 +71,7 @@ with flags are considered input files or directories. Use either the ``--out`` o
 arguments to define the format and destination of your documentation.
 
 ```bash
-typedoc --out docs /src
+typedoc --out docs src
 ```
 
 ### JSON Configuration
