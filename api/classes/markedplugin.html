@@ -77,14 +77,14 @@
 						code blocks within markdown sections. Additionally this plugin allows to link to other symbols
 					using double angle brackets.</p>
 					<p>You can use the markdown helper anywhere in the templates to convert content to html:</p>
-					<pre><code class="language-handlebars"><span class="xml"></span><span class="hljs-template-tag">{{#<span class="hljs-name">markdown</span>}}</span><span class="xml"></span><span class="hljs-template-variable">{{{comment.text}}</span><span class="xml">}</span><span class="hljs-template-tag">{{/<span class="hljs-name">markdown</span>}}</span><span class="xml"></span></code></pre>
+					<pre><code class="language-handlebars"><span class="hljs-template-tag">{{#<span class="hljs-name">markdown</span>}}</span><span class="hljs-template-variable">{{{comment.text}}}</span><span class="hljs-template-tag">{{/<span class="hljs-name">markdown</span>}}</span></code></pre>
 					<p>The compact helper removes all newlines of its content:</p>
-					<pre><code class="language-handlebars"><span class="xml"></span><span class="hljs-template-tag">{{#<span class="hljs-name">compact</span>}}</span><span class="xml">
+					<pre><code class="language-handlebars"><span class="hljs-template-tag">{{#<span class="hljs-name">compact</span>}}</span><span class="xml">
   Compact
   this
-</span><span class="hljs-template-tag">{{/<span class="hljs-name">compact</span>}}</span><span class="xml"></span></code></pre>
+</span><span class="hljs-template-tag">{{/<span class="hljs-name">compact</span>}}</span></code></pre>
 					<p>The relativeURL helper simply transforms an absolute url into a relative url:</p>
-					<pre><code class="language-handlebars"><span class="xml"></span><span class="hljs-template-tag">{{#<span class="hljs-name">relativeURL</span> url}}</span><span class="xml"></span></code></pre>
+					<pre><code class="language-handlebars"><span class="hljs-template-tag">{{#<span class="hljs-name">relativeURL</span> url}}</span></code></pre>
 				</div>
 			</section>
 			<section class="tsd-panel tsd-hierarchy">
@@ -175,7 +175,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#constructor">constructor</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L144">utils/component.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/component.ts#L144">src/lib/utils/component.ts:144</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -203,7 +203,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#componentname">componentName</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L139">utils/component.ts:139</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/component.ts#L139">src/lib/utils/component.ts:139</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -218,7 +218,7 @@
 					<div class="tsd-signature tsd-kind-icon">include<wbr>Pattern<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/\[\[include:([^\]]+?)\]\]/g</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L83">output/plugins/MarkedPlugin.ts:83</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L83">src/lib/output/plugins/MarkedPlugin.ts:83</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -233,7 +233,7 @@
 					<div class="tsd-signature tsd-kind-icon">include<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L61">output/plugins/MarkedPlugin.ts:61</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L61">src/lib/output/plugins/MarkedPlugin.ts:61</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -243,7 +243,7 @@
 					<div class="tsd-signature tsd-kind-icon">includes<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L73">output/plugins/MarkedPlugin.ts:73</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L73">src/lib/output/plugins/MarkedPlugin.ts:73</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -258,7 +258,7 @@
 					<div class="tsd-signature tsd-kind-icon">media<wbr>Directory<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L78">output/plugins/MarkedPlugin.ts:78</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L78">src/lib/output/plugins/MarkedPlugin.ts:78</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -273,7 +273,7 @@
 					<div class="tsd-signature tsd-kind-icon">media<wbr>Pattern<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">RegExp</span><span class="tsd-signature-symbol"> =&nbsp;/media:\/\/([^ &quot;\)\]\}]+)/g</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L88">output/plugins/MarkedPlugin.ts:88</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L88">src/lib/output/plugins/MarkedPlugin.ts:88</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -288,7 +288,7 @@
 					<div class="tsd-signature tsd-kind-icon">media<wbr>Source<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L68">output/plugins/MarkedPlugin.ts:68</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L68">src/lib/output/plugins/MarkedPlugin.ts:68</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -299,7 +299,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="contextawarerenderercomponent.html">ContextAwareRendererComponent</a>.<a href="contextawarerenderercomponent.html#project">project</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/components.ts#L19">output/components.ts:19</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/components.ts#L19">src/lib/output/components.ts:19</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -315,7 +315,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="contextawarerenderercomponent.html">ContextAwareRendererComponent</a>.<a href="contextawarerenderercomponent.html#reflection">reflection</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/components.ts#L24">output/components.ts:24</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/components.ts#L24">src/lib/output/components.ts:24</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -331,7 +331,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from <a href="contextawarerenderercomponent.html">ContextAwareRendererComponent</a>.<a href="contextawarerenderercomponent.html#urlprefix">urlPrefix</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/components.ts#L35">output/components.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/components.ts#L35">src/lib/output/components.ts:35</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -354,7 +354,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#application">application</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L180">utils/component.ts:180</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/component.ts#L180">src/lib/utils/component.ts:180</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -377,7 +377,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#owner">owner</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L189">utils/component.ts:189</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/component.ts#L189">src/lib/utils/component.ts:189</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -403,7 +403,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#bubble">bubble</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L160">utils/component.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/component.ts#L160">src/lib/utils/component.ts:160</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -429,7 +429,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L114">output/plugins/MarkedPlugin.ts:114</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L114">src/lib/output/plugins/MarkedPlugin.ts:114</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -468,7 +468,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="abstractcomponent.html">AbstractComponent</a>.<a href="abstractcomponent.html#getoptiondeclarations">getOptionDeclarations</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/component.ts#L173">utils/component.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/component.ts#L173">src/lib/utils/component.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -491,7 +491,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="contextawarerenderercomponent.html">ContextAwareRendererComponent</a>.<a href="contextawarerenderercomponent.html#getrelativeurl">getRelativeUrl</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/components.ts#L55">output/components.ts:55</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/components.ts#L55">src/lib/output/components.ts:55</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -524,7 +524,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="contextawarerenderercomponent.html">ContextAwareRendererComponent</a>.<a href="contextawarerenderercomponent.html#initialize">initialize</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L93">output/plugins/MarkedPlugin.ts:93</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L93">src/lib/output/plugins/MarkedPlugin.ts:93</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -547,7 +547,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#listento">listenTo</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L407">utils/events.ts:407</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L407">src/lib/utils/events.ts:407</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -588,7 +588,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#listentoonce">listenToOnce</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L436">utils/events.ts:436</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L436">src/lib/utils/events.ts:436</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -611,7 +611,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#listentoonce">listenToOnce</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L437">utils/events.ts:437</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L437">src/lib/utils/events.ts:437</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -646,7 +646,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L386">utils/events.ts:386</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L386">src/lib/utils/events.ts:386</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -663,7 +663,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L387">utils/events.ts:387</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L387">src/lib/utils/events.ts:387</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -681,7 +681,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#off">off</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L388">utils/events.ts:388</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L388">src/lib/utils/events.ts:388</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -713,7 +713,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L341">utils/events.ts:341</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L341">src/lib/utils/events.ts:341</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -737,7 +737,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L342">utils/events.ts:342</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L342">src/lib/utils/events.ts:342</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -761,7 +761,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#on">on</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L343">utils/events.ts:343</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L343">src/lib/utils/events.ts:343</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -794,7 +794,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="contextawarerenderercomponent.html">ContextAwareRendererComponent</a>.<a href="contextawarerenderercomponent.html#onbeginpage">onBeginPage</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/components.ts#L78">output/components.ts:78</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/components.ts#L78">src/lib/output/components.ts:78</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -826,7 +826,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides <a href="contextawarerenderercomponent.html">ContextAwareRendererComponent</a>.<a href="contextawarerenderercomponent.html#onbeginrenderer">onBeginRenderer</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L173">output/plugins/MarkedPlugin.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L173">src/lib/output/plugins/MarkedPlugin.ts:173</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -857,7 +857,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L203">output/plugins/MarkedPlugin.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L203">src/lib/output/plugins/MarkedPlugin.ts:203</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -889,7 +889,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L372">utils/events.ts:372</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L372">src/lib/utils/events.ts:372</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -915,7 +915,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#once">once</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L373">utils/events.ts:373</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L373">src/lib/utils/events.ts:373</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -947,7 +947,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/output/plugins/MarkedPlugin.ts#L134">output/plugins/MarkedPlugin.ts:134</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/output/plugins/MarkedPlugin.ts#L134">src/lib/output/plugins/MarkedPlugin.ts:134</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -986,7 +986,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#stoplistening">stopListening</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L448">utils/events.ts:448</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L448">src/lib/utils/events.ts:448</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1022,7 +1022,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from <a href="eventdispatcher.html">EventDispatcher</a>.<a href="eventdispatcher.html#trigger">trigger</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/73a13dd/src/lib/utils/events.ts#L480">utils/events.ts:480</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/fb2aaca/src/lib/utils/events.ts#L480">src/lib/utils/events.ts:480</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

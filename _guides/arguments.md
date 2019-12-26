@@ -69,7 +69,7 @@ $ typedoc --name <Documentation title>
 ```
 
 Set the name of the project that will be used in the header of the template.
-
+The name defaults to the package name and current version according to your package.json.
 
 ### readme
 

@@ -33,11 +33,11 @@ you can also explicitly specify the language.
 ```typescript
 /**
  * Codeblocks are great for examples
- * 
+ *
  * ```
  * <my-custom-element>Highlight JS will autodetect the language</my-custom-element>
  * ```
- * 
+ *
  * ```typescript
  * // Or you can specify the language explicitly
  * const instance = new MyClass();
@@ -76,7 +76,7 @@ overwrite them if you wish to.
 The documentation generator currently understands the following doc comment tags:
 
 ### ```@param <param name>```
-Documents a parameter for the subsequent method specified by the param name. The JSDoc param type 
+Documents a parameter for the subsequent method specified by the param name. The JSDoc param type
 is not necessary because it will be read from the TypeScript types.
 
 ```typescript
@@ -156,16 +156,37 @@ namespace MyModule { }
 
 ## Files
 
+A doc comment describing a file must be placed before any code in the file.
+It should be annotated with the `@packageDocumentation` tag so that TypeDoc knows that it is intended to be documentation for the file itself.
+
 The first doc comment within a file is used as the doc comment of a file. However, you must
 ensure that the first declaration also has as doc comment.
 
 ```typescript
+// file1.ts
 /**
- * This is a doc comment for a file
+ * This is the doc comment for file1.ts
+ * @packageDocumentation
  */
 
 /**
  * This is a doc comment for "someVar".
  */
-var someVar: string = "value";
+const someVar = "value";
+
+// file2.ts
+/**
+ * This is *not* a doc comment for the file, it is a doc comment for the import.
+ * Include the packageDocumentation tag to mark it as a file comment.
+ */
+import * as lib from 'lib'
+
+// file3.ts (legacy)
+/**
+ * File doc comment for file3.ts
+ */
+/**
+ * dummy comment so that TypeDoc does not associate the comment with the import
+ */
+import * as lib from 'lib'
 ```
