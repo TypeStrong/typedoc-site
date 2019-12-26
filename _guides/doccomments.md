@@ -159,9 +159,6 @@ namespace MyModule { }
 A doc comment describing a file must be placed before any code in the file.
 It should be annotated with the `@packageDocumentation` tag so that TypeDoc knows that it is intended to be documentation for the file itself.
 
-The first doc comment within a file is used as the doc comment of a file. However, you must
-ensure that the first declaration also has as doc comment.
-
 ```typescript
 // file1.ts
 /**
@@ -181,7 +178,7 @@ const someVar = "value";
  */
 import * as lib from 'lib'
 
-// file3.ts (legacy)
+// file3.ts (legacy, prefer @packageDocumentation)
 /**
  * File doc comment for file3.ts
  */
