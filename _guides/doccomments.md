@@ -119,6 +119,15 @@ Keeps the subsequent code from being documented.
 function doSomething(target: any, value: number): number;
 ```
 
+### ```@internal```
+Marks the following code as internal.
+If the TypeScript `--stripInternal` compiler flag is passed, TypeDoc will not document the given code.
+
+```typescript
+/** @internal */
+export const secret = 1122;
+```
+
 ### ```@category```
 Allows grouping reflections on a page
 

@@ -6,16 +6,7 @@ menuOrder: 1
 
 # Installation
 
-<ul class="toc">
-<li><a href="#installation">Installation</a></li>
-<li><a href="#command-line-interface">Command line interface</a></li>
-<li><a href="#node-module">Node Module</a></li>
-<li><a href="#third-party-tools">Third-Party Tools</a></li>
-</ul>
-
-## Installation
-
-### Requirements
+## Requirements
 
 TypeDoc requires [Node.js](http://nodejs.org/) to be installed on your system. If you haven't done that already, head
 over to their site and follow their install instructions.
@@ -24,7 +15,7 @@ Installing TypeDoc is available as a node package. Using ``npm`` ensures that al
 dependencies are setup correctly. You can choose to either install locally to your project or
 globally to the CLI.
 
-### Local installation (preferred)
+## Local installation (preferred)
 
 If you want to use TypeDoc from your command line in a project, use the API in your project code, or TypeDoc in an npm script, a local installation is the recommended approach. First install TypeDoc locally in your project:
 
@@ -44,7 +35,7 @@ TypeDoc 0.13.0
 Using TypeScript 3.1.1 from /Users/aciccarello/Documents/code/typedoc/typedoc/node_modules/typescript/lib
 ```
 
-### Global CLI installation
+## Global CLI installation
 
 Like the TypeScript compiler or any other NPM module that has an executable, TypeDoc's executable can be called from anywhere if you
 install TypeDoc as a global module. Note that this is not the preferred approach in the event that different projects need different versions of TypeDoc. If you follow the global approach, you may eventually run into the problem

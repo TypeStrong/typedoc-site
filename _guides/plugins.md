@@ -6,7 +6,7 @@ menuOrder: 5
 
 # Plugins
 TypeDoc supports plugins using the ``--plugin`` flag. There are a number of community developed
-plugins availble for installation on npm. Some suggested plugins include:
+plugins available for installation on npm. Some suggested plugins include:
 
 * [Markdown](https://github.com/tgreyuk/typedoc-plugin-markdown) Render documentation as markdown
 * [External Module Name](https://github.com/christopherthielen/typedoc-plugin-external-module-name) - Set the name of TypeDoc external modules

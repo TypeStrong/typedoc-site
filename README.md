@@ -1,12 +1,12 @@
 # TypeDoc homepage
-Holds the contents of http://typedoc.org.
+Holds the contents of https://typedoc.org.
 GitHub pages renders the website from the `gh-pages` branch using [Jekyll](https://jekyllrb.com/).
 
 ## Reporting Issues
 Please report issues to the [TypeStrong/typedoc](https://github.com/TypeStrong/typedoc) repo for better visibility.
 
 ## Writing guides
-Guides are stored in the `_guides/` directory and written in Markdown. Each file should contain the following header section for Jekyl with an appropriate title and menu order.
+Guides are stored in the `_guides/` directory and written in Markdown. Each file should contain the following header section for Jekyll with an appropriate title and menu order.
 
 ```
 ---
