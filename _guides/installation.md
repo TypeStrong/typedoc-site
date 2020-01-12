@@ -99,8 +99,14 @@ the node module and build the documentation yourself.
 ```javascript
 const TypeDoc = require('typedoc');
 
-const app = new TypeDoc.Application({
-    mode:   'Modules',
+const app = new TypeDoc.Application();
+
+// If you want TypeDoc to load tsconfig.json / typedoc.json files
+app.options.addReader(new TypeDoc.TSConfigReader());
+app.options.addReader(new TypeDoc.TypeDocReader());
+
+app.bootstrap({
+    mode: 'modules',
     logger: 'none',
     target: 'ES5',
     module: 'CommonJS',
