@@ -70,6 +70,7 @@ $ typedoc --includeDeclarations
 ```
 
 Turns on parsing of .d.ts declaration files. Defaults to false.
+If you enable this, you should almost certainly also turn on `--excludeExternals` to avoid documenting lib files.
 
 ### entryPoint
 
