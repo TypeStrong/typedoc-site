@@ -29,6 +29,15 @@ $ typedoc --options <filename>
 ```
 
 Specify a json option file that should be loaded. If not specified TypeDoc will look for `typedoc.json` and `typedoc.js` in the current directory.
+The JSON file should return an object whose keys are the option names. For example:
+
+```json
+{
+  "inputFiles": ["./src"],
+  "mode": "modules",
+  "out": "doc"
+}
+```
 
 
 ### tsconfig
