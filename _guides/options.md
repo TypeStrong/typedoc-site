@@ -203,6 +203,14 @@ $ typedoc --name <Documentation title>
 Set the name of the project that will be used in the header of the template.
 The name defaults to the package name and current version according to your package.json.
 
+### includeVersion
+```bash
+$ typedoc --name "Name" --includeVersion
+```
+
+Adds the package version to the project's name.
+In this case, if the project was on version 1.2.3 according to `package.json`, this would generate documentation called "Name - v1.2.3"
+
 ### readme
 
 ```bash
