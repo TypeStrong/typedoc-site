@@ -48,20 +48,36 @@ export class MyClass {}
 
 ### Symbol References
 
-You can link to other classes, members or functions using double square brackets.
+You can link to other classes, members or functions using double square brackets or an inline link tag.
 
 ```typescript
 /**
- * See the [[Foo]] interface for more details.
+ * Standard links:
+ * {@link Foo} or {@linkplain Foo} or [[Foo]]
+ *
+ * Code links: (Puts Foo inside <code> tags)
+ * {@linkcode Foo} or [[`Foo`]]
  */
 export class Bar implements Foo {}
 
 /** More details */
-interface Foo {}
+interface Foo {
+    member: boolean;
+}
 ```
 
-The text shown for a link can be specified after a pipe (`|`) character: `... the [[Foo|Foo interface]] ...`.
-Links are also supported using [JSDoc style links](https://jsdoc.app/tags-inline-link.html), ie `{@link Foo}`.
+Links may also specify their link text by including a pipe (`|`) character after the name.
+
+```typescript
+/**
+ * The {@link Foo | Foo interface}
+ * The [[Foo | Foo interface]]
+ */
+```
+
+Links are resolved by looking at child reflections, then at adjacent reflections, then at parent reflections.
+If a name contains a dot (`.`), each part of the name will be treated as the name of a reflection.
+For example, to link to the `member` property of `Foo`, you can use `{@link Foo.member}`.
 
 ## Supported tags
 

@@ -67,10 +67,25 @@ Specifies the initial input files to be passed to TypeScript. The `--inputFiles`
 ### mode
 
 ```bash
-$ typedoc --mode <file|modules>
+$ typedoc --mode <file|modules|library>
 ```
 
-Specifies how the project should be converted. If your project does not use modules (`--module none` when compiling) then this should be set to `file`. Otherwise, it should be set to `modules`, where declarations will be scoped by their source file. Defaults to `modules`.
+Specifies how the project should be converted.
+
+<dl>
+  <dt><code>--mode file</code></dt>
+  <dd>Treat all input files as global, should only be used for projects which have module set to none in their tsconfig.json.</dd>
+
+  <dt><code>--mode modules</code></dt>
+  <dd>Document each file in the project as its own module, most useful for projects generating documentation for internal use.</dd>
+
+  <dt><code>--mode library</code></dt>
+  <dd>
+    Document each expanded input file as an entry point to a library, resolving all exports of that file as belonging to that library.
+    <br>
+    If a directory is specified as an input file, all files within that directory and child directories will be treated as an entry point.
+  </dd>
+</dl>
 
 ### includeDeclarations
 
