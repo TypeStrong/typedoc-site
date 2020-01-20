@@ -279,6 +279,16 @@ $ typedoc --gitRevision <revision|branch>
 
 Use specified revision or branch instead of the last revision for linking to GitHub source files.
 
+### gitRemote
+
+```bash
+$ typedoc --gitRemote <remote>
+```
+
+Use the specified git remote instead of `origin` for linking to GitHub source files.
+You can use `git remote` to view a list of valid remotes.
+If you are updating documentation for a forked package, you probably want to pass `--gitRemote upstream`.
+
 ### gaID
 
 ```bash
