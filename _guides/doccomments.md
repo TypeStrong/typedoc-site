@@ -137,7 +137,7 @@ Allows grouping reflections on a page
  *
  * @category Category Name
  */
-funtion doSomething() {}
+function doSomething() {}
 ```
 
 ## Namespaces
