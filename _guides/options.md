@@ -211,6 +211,14 @@ $ typedoc --name "Name" --includeVersion
 Adds the package version to the project's name.
 In this case, if the project was on version 1.2.3 according to `package.json`, this would generate documentation called "Name - v1.2.3"
 
+### excludeTags
+```bash
+$ typedoc --excludeTags apidefine
+```
+
+Specify tags that should be removed from doc comments when parsing.
+Useful if your project uses [apiDoc](https://apidocjs.com/) for documenting RESTful web APIs.
+
 ### readme
 
 ```bash
