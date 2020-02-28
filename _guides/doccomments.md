@@ -53,6 +53,7 @@ You can link to other classes, members or functions using double square brackets
 ```typescript
 /**
  * See the [[Foo]] interface for more details.
+ * Or create a code link: [[`Foo`]]
  */
 export class Bar implements Foo {}
 
