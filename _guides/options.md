@@ -79,7 +79,7 @@ Specifies how the project should be converted.
   <dt><code>--mode modules</code></dt>
   <dd>Document each file in the project as its own module, most useful for projects generating documentation for internal use.</dd>
 
-  <dt><code>--mode library</code></dt>
+  <dt><code>--mode library (WIP - See [#1184](https://github.com/TypeStrong/typedoc/pull/1184))</code></dt>
   <dd>
     Document each expanded input file as an entry point to a library, resolving all exports of that file as belonging to that library.
     <br>
@@ -225,6 +225,13 @@ $ typedoc --name "Name" --includeVersion
 
 Adds the package version to the project's name.
 In this case, if the project was on version 1.2.3 according to `package.json`, this would generate documentation called "Name - v1.2.3"
+
+### disableSources
+```bash
+$ typedoc --disableSources
+```
+
+Disables the defined in text describing where a reflection was created.
 
 ### readme
 
