@@ -27,15 +27,15 @@ export class DocumentMe {}
 ### Code Blocks
 
 TypeDoc supports code blocks in markdown and uses [HighlightJS](<https://github.com/isagalaev/highlight.js>)
-to provide syntax hightlighting. HighlightJS will autodetect the language for code blocks, however
+to provide syntax highlighting. HighlightJS will auto detect the language for code blocks, however
 you can also explicitly specify the language.
 
 ```typescript
 /**
- * Codeblocks are great for examples
+ * Code blocks are great for examples
  *
  * ```
- * <my-custom-element>Highlight JS will autodetect the language</my-custom-element>
+ * <my-custom-element>Highlight JS will auto detect the language</my-custom-element>
  * ```
  *
  * ```typescript
@@ -102,12 +102,14 @@ is not necessary because it will be read from the TypeScript types.
 function doSomething(target: any, text: string): number;
 ```
 
-### ```@typeparam <param name>```
+### ```@typeParam <param name>```
 Documents a generic type parameter for the subsequent symbol specified by the param name.
 
 ```typescript
 /**
- * @typeparam T  Comment for type `T`.
+ * @typeParam T  Comment for type `T`.
+ * You may also use the template tag.
+ * @template T comment for type `T`.
  */
 function doSomething<T>(target: T, text: string): number;
 ```
@@ -153,13 +155,13 @@ Allows grouping reflections on a page
  *
  * @category Category Name
  */
-funtion doSomething() {}
+function doSomething() {}
 ```
 
 ## Namespaces
 
 Namespaces (previously referred to as "modules") can be commented like any other elements in TypeScript. As namespaces can be defined in multiple
-files, TypeDoc selects the longest comment by default. One may override this behaviour with the special
+files, TypeDoc selects the longest comment by default. One may override this behavior with the special
 `@preferred` comment tag.
 
 ```typescript

@@ -233,6 +233,14 @@ $ typedoc --disableSources
 
 Disables the defined in text describing where a reflection was created.
 
+### excludeTags
+```bash
+$ typedoc --excludeTags apidefine
+```
+
+Specify tags that should be removed from doc comments when parsing.
+Useful if your project uses [apiDoc](https://apidocjs.com/) for documenting RESTful web APIs.
+
 ### readme
 
 ```bash
