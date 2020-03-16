@@ -79,7 +79,7 @@ Specifies how the project should be converted.
   <dt><code>--mode modules</code></dt>
   <dd>Document each file in the project as its own module, most useful for projects generating documentation for internal use.</dd>
 
-  <dt><code>--mode library (WIP - See [#1184](https://github.com/TypeStrong/typedoc/pull/1184))</code></dt>
+  <dt><code>--mode library</code>(WIP - See [#1184](https://github.com/TypeStrong/typedoc/pull/1184))</dt>
   <dd>
     Document each expanded input file as an entry point to a library, resolving all exports of that file as belonging to that library.
     <br>
