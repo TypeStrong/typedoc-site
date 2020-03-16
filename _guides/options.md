@@ -67,10 +67,25 @@ Specifies the initial input files to be passed to TypeScript. The `--inputFiles`
 ### mode
 
 ```bash
-$ typedoc --mode <file|modules>
+$ typedoc --mode <file|modules|library>
 ```
 
-Specifies how the project should be converted. If your project does not use modules (`--module none` when compiling) then this should be set to `file`. Otherwise, it should be set to `modules`, where declarations will be scoped by their source file. Defaults to `modules`.
+Specifies how the project should be converted.
+
+<dl>
+  <dt><code>--mode file</code></dt>
+  <dd>Treat all input files as global, should only be used for projects which have module set to none in their tsconfig.json.</dd>
+
+  <dt><code>--mode modules</code></dt>
+  <dd>Document each file in the project as its own module, most useful for projects generating documentation for internal use.</dd>
+
+  <dt><code>--mode library (WIP - See [#1184](https://github.com/TypeStrong/typedoc/pull/1184))</code></dt>
+  <dd>
+    Document each expanded input file as an entry point to a library, resolving all exports of that file as belonging to that library.
+    <br>
+    If a directory is specified as an input file, all files within that directory and child directories will be treated as an entry point.
+  </dd>
+</dl>
 
 ### includeDeclarations
 
@@ -211,6 +226,13 @@ $ typedoc --name "Name" --includeVersion
 Adds the package version to the project's name.
 In this case, if the project was on version 1.2.3 according to `package.json`, this would generate documentation called "Name - v1.2.3"
 
+### disableSources
+```bash
+$ typedoc --disableSources
+```
+
+Disables the defined in text describing where a reflection was created.
+
 ### excludeTags
 ```bash
 $ typedoc --excludeTags apidefine
@@ -271,6 +293,16 @@ $ typedoc --gitRevision <revision|branch>
 ```
 
 Use specified revision or branch instead of the last revision for linking to GitHub source files.
+
+### gitRemote
+
+```bash
+$ typedoc --gitRemote <remote>
+```
+
+Use the specified git remote instead of `origin` for linking to GitHub source files.
+You can use `git remote` to view a list of valid remotes.
+If you are updating documentation for a forked package, you probably want to pass `--gitRemote upstream`.
 
 ### gaID
 

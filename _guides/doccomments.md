@@ -27,15 +27,15 @@ export class DocumentMe {}
 ### Code Blocks
 
 TypeDoc supports code blocks in markdown and uses [HighlightJS](<https://github.com/isagalaev/highlight.js>)
-to provide syntax hightlighting. HighlightJS will autodetect the language for code blocks, however
+to provide syntax highlighting. HighlightJS will auto detect the language for code blocks, however
 you can also explicitly specify the language.
 
 ```typescript
 /**
- * Codeblocks are great for examples
+ * Code blocks are great for examples
  *
  * ```
- * <my-custom-element>Highlight JS will autodetect the language</my-custom-element>
+ * <my-custom-element>Highlight JS will auto detect the language</my-custom-element>
  * ```
  *
  * ```typescript
@@ -48,21 +48,36 @@ export class MyClass {}
 
 ### Symbol References
 
-You can link to other classes, members or functions using double square brackets.
+You can link to other classes, members or functions using double square brackets or an inline link tag.
 
 ```typescript
 /**
- * See the [[Foo]] interface for more details.
- * Or create a code link: [[`Foo`]]
+ * Standard links:
+ * {@link Foo} or {@linkplain Foo} or [[Foo]]
+ *
+ * Code links: (Puts Foo inside <code> tags)
+ * {@linkcode Foo} or [[`Foo`]]
  */
 export class Bar implements Foo {}
 
 /** More details */
-interface Foo {}
+interface Foo {
+    member: boolean;
+}
 ```
 
-The text shown for a link can be specified after a pipe (`|`) character: `... the [[Foo|Foo interface]] ...`.
-Links are also supported using [JSDoc style links](https://jsdoc.app/tags-inline-link.html), ie `{@link Foo}`.
+Links may also specify their link text by including a pipe (`|`) character after the name.
+
+```typescript
+/**
+ * The {@link Foo | Foo interface}
+ * The [[Foo | Foo interface]]
+ */
+```
+
+Links are resolved by looking at child reflections, then at adjacent reflections, then at parent reflections.
+If a name contains a dot (`.`), each part of the name will be treated as the name of a reflection.
+For example, to link to the `member` property of `Foo`, you can use `{@link Foo.member}`.
 
 ## Supported tags
 
@@ -87,12 +102,14 @@ is not necessary because it will be read from the TypeScript types.
 function doSomething(target: any, text: string): number;
 ```
 
-### ```@typeparam <param name>```
+### ```@typeParam <param name>```
 Documents a generic type parameter for the subsequent symbol specified by the param name.
 
 ```typescript
 /**
- * @typeparam T  Comment for type `T`.
+ * @typeParam T  Comment for type `T`.
+ * You may also use the template tag.
+ * @template T comment for type `T`.
  */
 function doSomething<T>(target: T, text: string): number;
 ```
@@ -144,7 +161,7 @@ function doSomething() {}
 ## Namespaces
 
 Namespaces (previously referred to as "modules") can be commented like any other elements in TypeScript. As namespaces can be defined in multiple
-files, TypeDoc selects the longest comment by default. One may override this behaviour with the special
+files, TypeDoc selects the longest comment by default. One may override this behavior with the special
 `@preferred` comment tag.
 
 ```typescript
