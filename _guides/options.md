@@ -67,7 +67,7 @@ Specifies the initial input files to be passed to TypeScript. The `--inputFiles`
 ### mode
 
 ```bash
-$ typedoc --mode <file|modules|library>
+$ typedoc --mode <file|modules>
 ```
 
 Specifies how the project should be converted.
@@ -79,7 +79,7 @@ Specifies how the project should be converted.
   <dt><code>--mode modules</code></dt>
   <dd>Document each file in the project as its own module, most useful for projects generating documentation for internal use.</dd>
 
-  <dt><code>--mode library</code>(WIP - See <a href="https://github.com/TypeStrong/typedoc/pull/1184">#1184</a>)</dt>
+  <dt><code>--mode library</code><strong>(WIP - See <a href="https://github.com/TypeStrong/typedoc/pull/1184">#1184</a>)</strong></dt>
   <dd>
     Document each expanded input file as an entry point to a library, resolving all exports of that file as belonging to that library.
     <br>
