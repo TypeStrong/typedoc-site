@@ -154,6 +154,14 @@ $ typedoc --excludeProtected
 
 Removes protected class members from the generated documentation. Defaults to false.
 
+### stripInternal
+
+```bash
+$ typedoc --stripInternal
+```
+
+Removes members annotated with the `@internal` comment recognized by TypeScript.
+
 ### ignoreCompilerErrors
 ```bash
 $ typedoc --ignoreCompilerErrors
@@ -402,5 +410,3 @@ $ typedoc --listInvalidSymbolLinks
 ```
 
 Tells TypeDoc to report any `[[symbol name]]` links that are broken.
-
-
