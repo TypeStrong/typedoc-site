@@ -51,6 +51,13 @@ Project
             - slices
 ```
 
+This structure can be used to determine the fully qualified name of each
+reflection. The fully qualified name of a reflection is the name of the
+reflection and all its parents, joined with `.`; that is, the fully qualified
+name of the `seeds` property is `"index".Apple.seeds`. You can use the fully
+qualified name to link to symbols defined in other source files without relying
+on the slow fourth step of the algorithm used to resolve links.
+
 Say `{@link Apple.seeds}` is included in the doc comment for `slices`.
 TypeDoc will use the following process to resolve the link:
 
