@@ -77,7 +77,8 @@ Links may also specify their link text by including a pipe (`|`) character after
 
 Links are resolved by looking at child reflections, then at adjacent reflections, then at parent reflections.
 If a name contains a dot (`.`), each part of the name will be treated as the name of a reflection.
-For example, to link to the `member` property of `Foo`, you can use `{@link Foo.member}`.
+For example, to link to the `member` property of `Foo`, you can use `{@link Foo.member}`. For more details
+on link resolution see the [Link Resolution](https://typedoc.org/guides/linkresolution/) guide.
 
 ## Supported tags
 

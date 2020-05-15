@@ -1,7 +1,7 @@
 ---
 layout: 'guide'
 title: 'Themes'
-menuOrder: 4
+menuOrder: 5
 ---
 
 # Themes
@@ -34,8 +34,8 @@ TypeDoc ships with two themes so you can start creating docs right out of the bo
 ## Custom themes
 
 Creating a custom theme in TypeDoc is pretty easy. Basically you create a directory and overwrite the
-components of the [``default`` theme](https://github.com/TypeStrong/typedoc-default-themes/tree/master/src/default) 
-you want to change. All themes extend the default theme, so you only have to change the parts that don't 
+components of the [``default`` theme](https://github.com/TypeStrong/typedoc-default-themes/tree/master/src/default)
+you want to change. All themes extend the default theme, so you only have to change the parts that don't
 fit your needs.
 
 This is the basic directory structure of a theme, only the assets directory is mandatory:

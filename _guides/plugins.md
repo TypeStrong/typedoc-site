@@ -1,7 +1,7 @@
 ---
 layout: 'guide'
 title: 'Plugins'
-menuOrder: 5
+menuOrder: 6
 ---
 
 # Plugins
