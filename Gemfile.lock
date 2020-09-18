@@ -250,6 +250,7 @@ DEPENDENCIES
   github-pages
   jekyll-redirect-from
   minima
+  rouge
 
 RUBY VERSION
    ruby 2.6.5p114

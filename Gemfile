@@ -21,6 +21,9 @@ gem "minima"
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 gem "github-pages", group: :jekyll_plugins
 
+# Syntax highlighter for the website.
+gem "rouge"
+
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem 'jekyll-redirect-from'
