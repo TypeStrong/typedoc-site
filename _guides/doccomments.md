@@ -118,7 +118,7 @@ function doSomething<T>(target: T, text: string): number;
 ### ```@return(s)```
 Documents the return of the subsequent method
 
-```
+```ts
 /**
  * @returns      Comment for special return value.
  */
@@ -131,7 +131,7 @@ Documents events triggered by the subsequent method
 ### ```@hidden and @ignore```
 Keeps the subsequent code from being documented.
 
-```
+```ts
 /**
  * @ignore
  */
@@ -150,7 +150,7 @@ export const secret = 1122;
 ### ```@category```
 Allows grouping reflections on a page
 
-```
+```ts
 /**
  * Regular description
  *

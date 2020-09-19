@@ -12,6 +12,9 @@ collections:
 # Build settings
 markdown: kramdown
 
+# Syntax highlighter
+highlighter: rouge
+
 plugins:
   - jekyll-redirect-from
 
