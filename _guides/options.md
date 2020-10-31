@@ -79,11 +79,13 @@ Specifies how the project should be converted.
   <dt><code>--mode modules</code></dt>
   <dd>Document each file in the project as its own module, most useful for projects generating documentation for internal use.</dd>
 
-  <dt><code>--mode library</code><strong>(WIP - See <a href="https://github.com/TypeStrong/typedoc/pull/1184">#1184</a>)</strong></dt>
+  <dt>"library mode" <strong>(WIP - See <a href="https://github.com/TypeStrong/typedoc/issues/1364">#1364</a>)</strong></dt>
   <dd>
     Document each expanded input file as an entry point to a library, resolving all exports of that file as belonging to that library.
     <br>
     If a directory is specified as an input file, all files within that directory and child directories will be treated as an entry point.
+    <br>
+    Available as a beta with `npm i typedoc@beta`
   </dd>
 </dl>
 
