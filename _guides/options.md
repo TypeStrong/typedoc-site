@@ -365,6 +365,21 @@ $ typedoc --disableOutputCheck
 
 Disables checking and clearing of the output directory specified with `--out`.
 
+### markedOptions
+
+Specifies the options that are forwarded to [Marked](https://marked.js.org) the markdown parser used by TypeDoc.
+By default TypeDoc overrides the default values used by Marked with the ones shown in the example below.
+
+```json
+{
+  "markedOptions": {
+    "mangle": false
+  }
+}
+```
+
+Go to the [options section](https://marked.js.org/using_advanced#options) on the Marked site for a full list of available options.
+
 ## General Options
 
 Options which don't fit elsewhere.
