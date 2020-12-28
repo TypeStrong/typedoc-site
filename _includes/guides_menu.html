@@ -1,6 +1,6 @@
 <nav class="navigation">
   <ul>
-    {% for guide in collections.guide %}
+    {% for guide in collections.sorted_guides %}
       <li {% if page.url == guide.url %}class="selected"{% endif %}>
         <a href="{{ guide.url }}" {% if page.url == guide.url %}class="current"{% endif %}>{{ guide.data.title }}</a>
       </li>

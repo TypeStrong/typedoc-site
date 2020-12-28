@@ -12,6 +12,12 @@ module.exports = function (el) {
 
   el.setLibrary("md", markdownIt({ html: true }).use(markdownItAnchor));
 
+  el.addCollection("sorted_guides", function (collection) {
+    const items = collection.getFilteredByTag("guide");
+    items.sort((a, b) => a.data.menuOrder - b.data.menuOrder);
+    return items;
+  });
+
   return {
     dir: {
       layouts: "_layouts",

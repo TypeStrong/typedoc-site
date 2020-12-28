@@ -106,23 +106,6 @@ $ typedoc --excludeProtected
 
 Removes protected class members from the generated documentation. Defaults to false.
 
-### stripInternal
-
-```bash
-$ typedoc --stripInternal
-```
-
-Removes members annotated with the `@internal` comment recognized by TypeScript.
-
-### ignoreCompilerErrors
-
-```bash
-$ typedoc --ignoreCompilerErrors
-```
-
-Generate documentation even if the project has TypeScript errors.
-If you only generate docs after a successful build, enabling this option will provide performance benefits.
-
 ### media
 
 ```bash
@@ -325,7 +308,7 @@ Options which don't fit elsewhere.
 $ typedoc --help
 ```
 
-Print all available options, along with a short description.
+Print all available options, along with a short description. Also prints a list of supported highlighting languages.
 
 ### version
 
@@ -334,6 +317,14 @@ $ typedoc --version
 ```
 
 Prints TypeDoc's version.
+
+### showConfig
+
+```bash
+$ typedoc --showConfig
+```
+
+Print TypeDoc's config and exit. Useful for debugging what options have been loaded.
 
 ### plugin
 
@@ -350,6 +341,19 @@ $ typedoc --logger <none|Function>
 ```
 
 Specifies the logger to write output to. When using TypeDoc programmatically, a function may be specified that will be called with the log message. By default, logs to the console. `none` may be passed to disable logging.
+
+### logLevel
+
+```bash
+$ typedoc --logLevel Verbose
+```
+
+Specifies the log level to be printed to the console. Defaults to `Info`. The available levels are:
+
+- Verbose - Print all log messages, may include debugging information intended for TypeDoc developers
+- Info - Print informational log messages along with warning and error messages
+- Warn - Print warning and error messages
+- Error - Print only error messages
 
 ### listInvalidSymbolLinks
 

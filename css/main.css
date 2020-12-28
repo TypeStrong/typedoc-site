@@ -740,7 +740,9 @@ header nav a:hover {
 
 .toc-container {
   position: sticky;
-  top: 1rem;
+  top: 0;
+  max-height: 100vh;
+  overflow-y: auto;
 }
 .toc-container ol {
   list-style: none;

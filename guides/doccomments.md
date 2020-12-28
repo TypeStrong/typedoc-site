@@ -156,7 +156,7 @@ export const secret = 1122;
 
 ### `@category`
 
-Allows grouping reflections on a page
+Allows grouping reflections on a page. The `--categorizeByGroup`, `--defaultCategory`, and `--categoryOrder` allow more granular control.
 
 ```ts
 /**
@@ -169,7 +169,7 @@ function doSomething() {}
 
 ## Namespaces
 
-Namespaces (previously referred to as "modules") can be commented like any other elements in TypeScript. As namespaces can be defined in multiple
+Namespaces can be commented like any other elements in TypeScript. As namespaces can be defined in multiple
 files, TypeDoc selects the longest comment by default. One may override this behavior with the special
 `@preferred` comment tag.
 
