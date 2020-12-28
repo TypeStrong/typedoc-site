@@ -34,3 +34,9 @@ npm i
 npm run build
 node bin/typedoc --options ../typedoc.json
 ```
+
+If new options have been added since the last update, run the following to update the typedoc.json schema:
+
+```bash
+node typedoc/scripts/generate_options_schema.js _site/schema.json
+```
