@@ -133,6 +133,7 @@ $ typedoc --out <path/to/documentation/>
 ```
 
 Specifies the location the html documentation should be written to.
+The HTML output produced by running TypeDoc on itself can be seen at [/api](/api).
 
 ### json
 
@@ -141,6 +142,7 @@ $ typedoc --json <path/to/out-file.json>
 ```
 
 Specifies the location to output a JSON file containing all of the reflection data.
+An example of the JSON output from running TypeDoc on itself can be seen at [/api/docs.json](/api/docs.json).
 
 ### theme
 

@@ -32,5 +32,5 @@ To regenerate the `_site/api/` folder, clone the typedoc repo here, and then run
 cd typedoc
 npm i
 npm run build
-node bin/typedoc --out ../_site/api --name "TypeDoc Documentation" --excludeExternals src/index.ts
+node bin/typedoc --options ../typedoc.json
 ```
