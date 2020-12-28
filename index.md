@@ -10,14 +10,16 @@ model. It is extensible and supports a variety of configurations. Available as a
 
 ## Quick Start
 
-If you have [npm installed](https://www.npmjs.com/get-npm), start using typedoc with the following commands.
+See the API tab for TypeDoc's API documentation, rendered with TypeDoc.
+
+If you have [npm installed](https://www.npmjs.com/get-npm), start using TypeDoc with the following commands.
 
 ```bash
-# Install the global CLI
-npm install --global typedoc
+# Install
+npm install typedoc
 
-#Execute typedoc on your project
-typedoc --out docs src
+# Execute typedoc on your project
+npx typedoc src/index.ts
 ```
 
 For more advanced usage and configuration guides, see the [installation guide](./guides/installation).
