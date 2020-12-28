@@ -151,6 +151,21 @@ $ typedoc --theme <default|minimal|path/to/theme>
 Specify the path to the theme that should be used.
 TypeDoc includes the `default` and `minimal` themes, which may be specified without the full path to the theme.
 
+### markedOptions
+
+Specifies the options that are forwarded to [Marked](https://marked.js.org) when parsing doc comments.
+By default TypeDoc overrides the default values used by Marked with the ones shown below:
+
+```json
+{
+  "markedOptions": {
+    "mangle": false
+  }
+}
+```
+
+See the [options section](https://marked.js.org/using_advanced#options) on the Marked site for a full list of available options.
+
 ### name
 
 ```bash
