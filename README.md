@@ -23,5 +23,14 @@ menuOrder: 1
 
 ```bash
 npm i
-npm run build --watch
+npm run build --serve
+```
+
+To regenerate the `_site/api/` folder, clone the typedoc repo here, and then run:
+
+```bash
+cd typedoc
+npm i
+npm run build
+node bin/typedoc --out ../_site/api --name "TypeDoc Documentation" --excludeExternals src/index.ts
 ```

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Themes | TypeDoc</title>
+    <meta name="description" property="og:description" content="" />
+    <meta name="keywords" content="TypeScript documentation generator javascript open source" />
+    <meta property="og:title" content="Themes">
+    <meta property="og:url" content="/guides/themes/">
+    <meta property="og:site_name" content="TypeDoc Documentation Generator">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Code+Pro:400,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" >
+    <script src="/scripts/toc.js" defer></script>
+</head>
+
+
+  <body>
+    <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/installation">Guides</a></li>
+               	<li><a href="/api/">API</a></li>
+                <li><a href="https://github.com/TypeStrong/typedoc">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <section class="content" id="content">
+      
+<div class="container main">
+  <div class="row">
+    <div class="col-sm-2">
+      <nav class="navigation">
+  <ul>
+    
+      <li >
+        <a href="/guides/installation/" >Installation</a>
+      </li>
+    
+      <li >
+        <a href="/guides/options/" >Options</a>
+      </li>
+    
+      <li >
+        <a href="/guides/doccomments/" >Doc Comments</a>
+      </li>
+    
+      <li >
+        <a href="/guides/link-resolution/" >Link Resolution</a>
+      </li>
+    
+      <li class="selected">
+        <a href="/guides/themes/" class="current">Themes</a>
+      </li>
+    
+      <li >
+        <a href="/guides/plugins/" >Plugins</a>
+      </li>
+    
+      <li >
+        <a href="/guides/development/" >Development</a>
+      </li>
+    
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-sm-7 typography">
+      <h1 id="themes">Themes</h1>
+<p>Themes allow you to change the look and feel of the generated documentation. You can use one of the included
+themes, modify them to suit your needs or create a fully custom theme. The <code>--theme</code> parameter allows you to
+select a theme when creating a documentation:</p>
+<pre class="language-bash"><code class="language-bash">$ typedoc --theme <span class="token operator">&lt;</span>default<span class="token operator">|</span>minimal<span class="token operator">|</span>path/to/theme<span class="token operator">></span></code></pre>
+<p>You must supply a path to a valid theme directory or a name of a built-in theme. If you don't supply the
+<code>--theme</code> parameter, the theme <code>default</code> will be used.</p>
+<h2 id="built-in-themes">Built-in themes</h2>
+<p>TypeDoc ships with two themes so you can start creating docs right out of the box:</p>
+<ul>
+<li>
+<p><code>default</code> - This is the standard theme used by TypeDoc. It is intended to be used with medium to large
+projects. It creates a single html file for each module, class, interface and enumeration in your project.
+It supports filtering the displayed members by different criteria and it includes a simpled search.</p>
+</li>
+<li>
+<p><code>minimal</code> - This theme is intended to be used with smaller projects. It is ultra portable as it renders
+the entire documentation into one big html file including all required assets like stylesheets or images.
+Like the default theme, it supports filtering the displayed members by different criteria.</p>
+</li>
+</ul>
+<h2 id="custom-themes">Custom themes</h2>
+<p>Creating a custom theme in TypeDoc is pretty easy. Basically you create a directory and overwrite the
+components of the <a href="https://github.com/TypeStrong/typedoc-default-themes/tree/master/src/default"><code>default</code> theme</a>
+you want to change. All themes extend the default theme, so you only have to change the parts that don't
+fit your needs.</p>
+<p>This is the basic directory structure of a theme, only the assets directory is mandatory:</p>
+<pre><code>+ my-theme             // Root directory of your theme
+  + assets             // Static assets like *.css or *.js files
+  + layouts            // Optional. Layout templates
+    - default.hbs      // Optional. Default layout template
+  + partials           // Optional. Partials to be used by Handlebar
+  + templates          // Optional. Page templates
+    - index.hbs        // Optional. Home page template
+    - reflection.hbs   // Optional. Definition page template
+  - theme.js           // Optional. JavaScript class of the theme
+  + helpers            // Optional. Custom Handlebars helpers
+    - helper.js        // See [Github issue](https://github.com/TypeStrong/typedoc/issues/154#issuecomment-224483571) for example
+</code></pre>
+
+    </div>
+    <div class="col-sm-3 toc-container"></div>
+  </div>
+</div>
+
+    </section>
+
+    <footer>
+</footer>
+
+  </body>
+</html>

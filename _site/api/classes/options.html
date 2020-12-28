@@ -1,0 +1,1071 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Options | TypeDoc Documentation</title>
+	<meta name="description" content="Documentation for TypeDoc Documentation">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../assets/css/main.css">
+	<script async src="../assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="../assets/js/search.json" data-base="..">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="../index.html" class="title">TypeDoc Documentation</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="../modules.html">TypeDoc Documentation</a>
+				</li>
+				<li>
+					<a href="options.html">Options</a>
+				</li>
+			</ul>
+			<h1>Class Options</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>Maintains a collection of option declarations split into TypeDoc options
+							and TypeScript options. Ensures options are of the correct type for calling
+						code.</p>
+					</div>
+					<a href="#option-discovery" id="option-discovery" style="color: inherit; text-decoration: none;">
+						<h3>Option Discovery</h3>
+					</a>
+					<p>Since plugins commonly add custom options, and TypeDoc does not permit options which have
+						not been declared to be set, options must be read twice. The first time options are read,
+						a noop logger is passed so that any errors are ignored. Then, after loading plugins, options
+					are read again, this time with the logger specified by the application.</p>
+					<p>Options are read in a specific order.</p>
+					<ol>
+						<li>argv (0) - Must be read first since it should change the files read when
+						passing --options or --tsconfig.</li>
+						<li>typedoc-json (100) - Read next so that it can specify the tsconfig.json file to read.</li>
+						<li>tsconfig-json (200) - Last config file reader, cannot specify the typedoc.json file to read.</li>
+						<li>argv (300) - Read argv again since any options set there should override those set in config
+						files.</li>
+					</ol>
+				</div>
+			</section>
+			<section class="tsd-panel tsd-hierarchy">
+				<h3>Hierarchy</h3>
+				<ul class="tsd-hierarchy">
+					<li>
+						<span class="target">Options</span>
+					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel-group tsd-index-group">
+				<h2>Index</h2>
+				<section class="tsd-panel tsd-index-panel">
+					<div class="tsd-index-content">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="options.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section tsd-is-private tsd-is-private-protected">
+							<h3>Properties</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="options.html#_compileroptions" class="tsd-kind-icon">_compiler<wbr>Options</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="options.html#_declarations" class="tsd-kind-icon">_declarations</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="options.html#_filenames" class="tsd-kind-icon">_file<wbr>Names</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="options.html#_logger" class="tsd-kind-icon">_logger</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="options.html#_projectreferences" class="tsd-kind-icon">_project<wbr>References</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="options.html#_readers" class="tsd-kind-icon">_readers</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><a href="options.html#_values" class="tsd-kind-icon">_values</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="options.html#adddeclaration" class="tsd-kind-icon">add<wbr>Declaration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#adddeclarations" class="tsd-kind-icon">add<wbr>Declarations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#adddefaultdeclarations" class="tsd-kind-icon">add<wbr>Default<wbr>Declarations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#addreader" class="tsd-kind-icon">add<wbr>Reader</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#getcompileroptions" class="tsd-kind-icon">get<wbr>Compiler<wbr>Options</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#getdeclaration" class="tsd-kind-icon">get<wbr>Declaration</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#getdeclarations" class="tsd-kind-icon">get<wbr>Declarations</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="options.html#getdefaultoptionvalue" class="tsd-kind-icon">get<wbr>Default<wbr>Option<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#getfilenames" class="tsd-kind-icon">get<wbr>File<wbr>Names</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#getprojectreferences" class="tsd-kind-icon">get<wbr>Project<wbr>References</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#getrawvalues" class="tsd-kind-icon">get<wbr>Raw<wbr>Values</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="options.html#getvalue" class="tsd-kind-icon">get<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#isdefault" class="tsd-kind-icon">is<wbr>Default</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#read" class="tsd-kind-icon">read</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#removedeclarationbyname" class="tsd-kind-icon">remove<wbr>Declaration<wbr>ByName</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#removereaderbyname" class="tsd-kind-icon">remove<wbr>Reader<wbr>ByName</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#reset" class="tsd-kind-icon">reset</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#setcompileroptions" class="tsd-kind-icon">set<wbr>Compiler<wbr>Options</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="options.html#setlogger" class="tsd-kind-icon">set<wbr>Logger</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><a href="options.html#setoptionvaluetodefault" class="tsd-kind-icon">set<wbr>Option<wbr>Value<wbr>ToDefault</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter"><a href="options.html#setvalue" class="tsd-kind-icon">set<wbr>Value</a></li>
+							</ul>
+						</section>
+					</div>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Options<span class="tsd-signature-symbol">(</span>logger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Logger</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="options.html" class="tsd-signature-type">Options</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L84">src/lib/utils/options/options.ts:84</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>logger: <span class="tsd-signature-type">Logger</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="options.html" class="tsd-signature-type">Options</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group tsd-is-private tsd-is-private-protected">
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_compileroptions" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _compiler<wbr>Options</h3>
+					<div class="tsd-signature tsd-kind-icon">_compiler<wbr>Options<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ts.CompilerOptions</span><span class="tsd-signature-symbol"> = {}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L81">src/lib/utils/options/options.ts:81</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_declarations" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _declarations</h3>
+					<div class="tsd-signature tsd-kind-icon">_declarations<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/stringdeclarationoption.html" class="tsd-signature-type">StringDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/numberdeclarationoption.html" class="tsd-signature-type">NumberDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/booleandeclarationoption.html" class="tsd-signature-type">BooleanDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mixeddeclarationoption.html" class="tsd-signature-type">MixedDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mapdeclarationoption.html" class="tsd-signature-type">MapDeclarationOption</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/arraydeclarationoption.html" class="tsd-signature-type">ArrayDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = new Map&lt;string, Readonly&lt;DeclarationOption&gt;&gt;()</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L79">src/lib/utils/options/options.ts:79</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_filenames" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _file<wbr>Names</h3>
+					<div class="tsd-signature tsd-kind-icon">_file<wbr>Names<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L82">src/lib/utils/options/options.ts:82</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_logger" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _logger</h3>
+					<div class="tsd-signature tsd-kind-icon">_logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Logger</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L84">src/lib/utils/options/options.ts:84</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_projectreferences" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _project<wbr>References</h3>
+					<div class="tsd-signature tsd-kind-icon">_project<wbr>References<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">ts.ProjectReference</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L83">src/lib/utils/options/options.ts:83</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_readers" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _readers</h3>
+					<div class="tsd-signature tsd-kind-icon">_readers<span class="tsd-signature-symbol">:</span> <a href="../interfaces/optionsreader.html" class="tsd-signature-type">OptionsReader</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = []</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L78">src/lib/utils/options/options.ts:78</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-private">
+					<a name="_values" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> _values</h3>
+					<div class="tsd-signature tsd-kind-icon">_values<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> = {}</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L80">src/lib/utils/options/options.ts:80</a></li>
+						</ul>
+					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="adddeclaration" class="tsd-anchor"></a>
+					<h3>add<wbr>Declaration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Declaration&lt;K&gt;<span class="tsd-signature-symbol">(</span>declaration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><a href="../modules.html#keytodeclaration" class="tsd-signature-type">KeyToDeclaration</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Declaration<span class="tsd-signature-symbol">(</span>declaration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L144">src/lib/utils/options/options.ts:144</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds an option declaration to the container with extra type checking to ensure that
+									the runtime type is consistent with the declared type.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;logger&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;options&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tsconfig&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;entryPoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;exclude&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;externalPattern&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeExternals&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludePrivate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeProtected&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeNotDocumented&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disableSources&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;includes&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;media&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;out&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;json&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;theme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;name&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;includeVersion&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeTags&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;readme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;defaultCategory&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;categoryOrder&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;categorizeByGroup&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gitRevision&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gitRemote&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gaID&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gaSite&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;hideGenerator&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;toc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disableOutputCheck&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;help&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;version&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;showConfig&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;plugin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;logLevel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;listInvalidSymbolLinks&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;markedOptions&quot;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>declaration: <span class="tsd-signature-symbol">{ </span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> }</span><span class="tsd-signature-symbol"> &amp; </span><a href="../modules.html#keytodeclaration" class="tsd-signature-type">KeyToDeclaration</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The option declaration that should be added.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L152">src/lib/utils/options/options.ts:152</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds an option declaration to the container.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>declaration: <span class="tsd-signature-type">never</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The option declaration that should be added.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="adddeclarations" class="tsd-anchor"></a>
+					<h3>add<wbr>Declarations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Declarations<span class="tsd-signature-symbol">(</span>declarations<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><a href="../modules.html#declarationoption" class="tsd-signature-type">DeclarationOption</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L177">src/lib/utils/options/options.ts:177</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds the given declarations to the container</p>
+								</div>
+								<dl class="tsd-comment-tags">
+									<dt>privateremarks</dt>
+									<dd><p>This function explicitly provides a way out of the strict typing enforced
+											by <a href="options.html#adddeclaration">addDeclaration</a>. It should only be used with careful validation
+										of the declaration map. Internally, it is only used for adding TS options</p>
+									</dd>
+								</dl>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>declarations: <span class="tsd-signature-symbol">readonly </span><a href="../modules.html#declarationoption" class="tsd-signature-type">DeclarationOption</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="adddefaultdeclarations" class="tsd-anchor"></a>
+					<h3>add<wbr>Default<wbr>Declarations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Default<wbr>Declarations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L101">src/lib/utils/options/options.ts:101</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds the option declarations declared by the TypeDoc and all supported TypeScript declarations.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="addreader" class="tsd-anchor"></a>
+					<h3>add<wbr>Reader</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Reader<span class="tsd-signature-symbol">(</span>reader<span class="tsd-signature-symbol">: </span><a href="../interfaces/optionsreader.html" class="tsd-signature-type">OptionsReader</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L121">src/lib/utils/options/options.ts:121</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Adds an option reader that will be used to read configuration values
+									from the command line, configuration files, or other locations.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>reader: <a href="../interfaces/optionsreader.html" class="tsd-signature-type">OptionsReader</a></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getcompileroptions" class="tsd-anchor"></a>
+					<h3>get<wbr>Compiler<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Compiler<wbr>Options<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CompilerOptions</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L276">src/lib/utils/options/options.ts:276</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the set compiler options.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">CompilerOptions</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdeclaration" class="tsd-anchor"></a>
+					<h3>get<wbr>Declaration</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Declaration<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/stringdeclarationoption.html" class="tsd-signature-type">StringDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/numberdeclarationoption.html" class="tsd-signature-type">NumberDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/booleandeclarationoption.html" class="tsd-signature-type">BooleanDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mixeddeclarationoption.html" class="tsd-signature-type">MixedDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mapdeclarationoption.html" class="tsd-signature-type">MapDeclarationOption</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/arraydeclarationoption.html" class="tsd-signature-type">ArrayDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L201">src/lib/utils/options/options.ts:201</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a declaration by one of its names.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/stringdeclarationoption.html" class="tsd-signature-type">StringDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/numberdeclarationoption.html" class="tsd-signature-type">NumberDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/booleandeclarationoption.html" class="tsd-signature-type">BooleanDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mixeddeclarationoption.html" class="tsd-signature-type">MixedDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mapdeclarationoption.html" class="tsd-signature-type">MapDeclarationOption</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/arraydeclarationoption.html" class="tsd-signature-type">ArrayDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getdeclarations" class="tsd-anchor"></a>
+					<h3>get<wbr>Declarations</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Declarations<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/stringdeclarationoption.html" class="tsd-signature-type">StringDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/numberdeclarationoption.html" class="tsd-signature-type">NumberDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/booleandeclarationoption.html" class="tsd-signature-type">BooleanDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mixeddeclarationoption.html" class="tsd-signature-type">MixedDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mapdeclarationoption.html" class="tsd-signature-type">MapDeclarationOption</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/arraydeclarationoption.html" class="tsd-signature-type">ArrayDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L208">src/lib/utils/options/options.ts:208</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets all declared options.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">(</span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/stringdeclarationoption.html" class="tsd-signature-type">StringDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/numberdeclarationoption.html" class="tsd-signature-type">NumberDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/booleandeclarationoption.html" class="tsd-signature-type">BooleanDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mixeddeclarationoption.html" class="tsd-signature-type">MixedDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mapdeclarationoption.html" class="tsd-signature-type">MapDeclarationOption</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/arraydeclarationoption.html" class="tsd-signature-type">ArrayDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="getdefaultoptionvalue" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> get<wbr>Default<wbr>Option<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Default<wbr>Option<wbr>Value<span class="tsd-signature-symbol">(</span>declaration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/stringdeclarationoption.html" class="tsd-signature-type">StringDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/numberdeclarationoption.html" class="tsd-signature-type">NumberDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/booleandeclarationoption.html" class="tsd-signature-type">BooleanDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mixeddeclarationoption.html" class="tsd-signature-type">MixedDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mapdeclarationoption.html" class="tsd-signature-type">MapDeclarationOption</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/arraydeclarationoption.html" class="tsd-signature-type">ArrayDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L319">src/lib/utils/options/options.ts:319</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>declaration: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/stringdeclarationoption.html" class="tsd-signature-type">StringDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/numberdeclarationoption.html" class="tsd-signature-type">NumberDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/booleandeclarationoption.html" class="tsd-signature-type">BooleanDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mixeddeclarationoption.html" class="tsd-signature-type">MixedDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mapdeclarationoption.html" class="tsd-signature-type">MapDeclarationOption</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/arraydeclarationoption.html" class="tsd-signature-type">ArrayDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getfilenames" class="tsd-anchor"></a>
+					<h3>get<wbr>File<wbr>Names</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>File<wbr>Names<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L283">src/lib/utils/options/options.ts:283</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the file names discovered through reading a tsconfig file.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getprojectreferences" class="tsd-anchor"></a>
+					<h3>get<wbr>Project<wbr>References</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Project<wbr>References<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">ProjectReference</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L290">src/lib/utils/options/options.ts:290</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets the project references - used in solution style tsconfig setups.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">ProjectReference</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="getrawvalues" class="tsd-anchor"></a>
+					<h3>get<wbr>Raw<wbr>Values</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Raw<wbr>Values<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#typedocoptions" class="tsd-signature-type">TypeDocOptions</a><span class="tsd-signature-symbol">&gt;</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L229">src/lib/utils/options/options.ts:229</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets all of the TypeDoc option values defined in this option container.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#typedocoptions" class="tsd-signature-type">TypeDocOptions</a><span class="tsd-signature-symbol">&gt;</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="getvalue" class="tsd-anchor"></a>
+					<h3>get<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Value&lt;K&gt;<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TypeDocOptionValues</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Value<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">unknown</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L237">src/lib/utils/options/options.ts:237</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Gets a value for the given option key, throwing if the option has not been declared.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;logger&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;options&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tsconfig&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;entryPoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;exclude&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;externalPattern&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeExternals&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludePrivate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeProtected&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeNotDocumented&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disableSources&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;includes&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;media&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;out&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;json&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;theme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;name&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;includeVersion&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeTags&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;readme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;defaultCategory&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;categoryOrder&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;categorizeByGroup&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gitRevision&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gitRemote&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gaID&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gaSite&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;hideGenerator&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;toc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disableOutputCheck&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;help&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;version&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;showConfig&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;plugin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;logLevel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;listInvalidSymbolLinks&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;markedOptions&quot;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">K</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">TypeDocOptionValues</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L238">src/lib/utils/options/options.ts:238</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">never</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">unknown</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="isdefault" class="tsd-anchor"></a>
+					<h3>is<wbr>Default</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Default<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;logger&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;options&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tsconfig&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;entryPoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;exclude&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;externalPattern&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeExternals&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludePrivate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeProtected&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeNotDocumented&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disableSources&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;includes&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;media&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;out&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;json&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;theme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;name&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;includeVersion&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeTags&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;readme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;defaultCategory&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;categoryOrder&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;categorizeByGroup&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gitRevision&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gitRemote&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gaID&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gaSite&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;hideGenerator&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;toc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disableOutputCheck&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;help&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;version&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;showConfig&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;plugin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;logLevel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;listInvalidSymbolLinks&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;markedOptions&quot;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Default<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L216">src/lib/utils/options/options.ts:216</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Checks if the given option&#39;s value is deeply strict equal to the default.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">&quot;logger&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;options&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tsconfig&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;entryPoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;exclude&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;externalPattern&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeExternals&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludePrivate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeProtected&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeNotDocumented&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disableSources&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;includes&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;media&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;out&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;json&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;theme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;name&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;includeVersion&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeTags&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;readme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;defaultCategory&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;categoryOrder&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;categorizeByGroup&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gitRevision&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gitRemote&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gaID&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gaSite&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;hideGenerator&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;toc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disableOutputCheck&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;help&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;version&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;showConfig&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;plugin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;logLevel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;listInvalidSymbolLinks&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;markedOptions&quot;</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L217">src/lib/utils/options/options.ts:217</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">never</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="read" class="tsd-anchor"></a>
+					<h3>read</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">read<span class="tsd-signature-symbol">(</span>logger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Logger</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L133">src/lib/utils/options/options.ts:133</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>logger: <span class="tsd-signature-type">Logger</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removedeclarationbyname" class="tsd-anchor"></a>
+					<h3>remove<wbr>Declaration<wbr>ByName</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Declaration<wbr>ByName<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L189">src/lib/utils/options/options.ts:189</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes a declared option.
+										WARNING: This is probably a bad idea. If you do this you will probably cause a crash
+									when code assumes that an option that it declared still exists.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="removereaderbyname" class="tsd-anchor"></a>
+					<h3>remove<wbr>Reader<wbr>ByName</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Reader<wbr>ByName<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L129">src/lib/utils/options/options.ts:129</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Removes all readers of a given name.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="reset" class="tsd-anchor"></a>
+					<h3>reset</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">reset<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L108">src/lib/utils/options/options.ts:108</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Resets the option bag to all default values.</p>
+								</div>
+							</div>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setcompileroptions" class="tsd-anchor"></a>
+					<h3>set<wbr>Compiler<wbr>Options</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Compiler<wbr>Options<span class="tsd-signature-symbol">(</span>fileNames<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span>, options<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CompilerOptions</span>, projectReferences<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">ProjectReference</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L297">src/lib/utils/options/options.ts:297</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the compiler options that will be used to get a TS program.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>fileNames: <span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>options: <span class="tsd-signature-type">CompilerOptions</span></h5>
+								</li>
+								<li>
+									<h5>projectReferences: <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-symbol">readonly </span><span class="tsd-signature-type">ProjectReference</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="setlogger" class="tsd-anchor"></a>
+					<h3>set<wbr>Logger</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Logger<span class="tsd-signature-symbol">(</span>logger<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Logger</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L94">src/lib/utils/options/options.ts:94</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the logger used when an option declaration fails to be added.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>logger: <span class="tsd-signature-type">Logger</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-private">
+					<a name="setoptionvaluetodefault" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagPrivate">Private</span> set<wbr>Option<wbr>Value<wbr>ToDefault</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Option<wbr>Value<wbr>ToDefault<span class="tsd-signature-symbol">(</span>declaration<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/stringdeclarationoption.html" class="tsd-signature-type">StringDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/numberdeclarationoption.html" class="tsd-signature-type">NumberDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/booleandeclarationoption.html" class="tsd-signature-type">BooleanDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mixeddeclarationoption.html" class="tsd-signature-type">MixedDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mapdeclarationoption.html" class="tsd-signature-type">MapDeclarationOption</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/arraydeclarationoption.html" class="tsd-signature-type">ArrayDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L311">src/lib/utils/options/options.ts:311</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the value of a given option to its default value.</p>
+								</div>
+							</div>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>declaration: <span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/stringdeclarationoption.html" class="tsd-signature-type">StringDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/numberdeclarationoption.html" class="tsd-signature-type">NumberDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/booleandeclarationoption.html" class="tsd-signature-type">BooleanDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mixeddeclarationoption.html" class="tsd-signature-type">MixedDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/mapdeclarationoption.html" class="tsd-signature-type">MapDeclarationOption</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">unknown</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Readonly</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/arraydeclarationoption.html" class="tsd-signature-type">ArrayDeclarationOption</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>The option whose value should be reset.</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+					<a name="setvalue" class="tsd-anchor"></a>
+					<h3>set<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Value&lt;K&gt;<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, value<span class="tsd-signature-symbol">: </span><a href="../modules.html#typedocoptions" class="tsd-signature-type">TypeDocOptions</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+						<li class="tsd-signature tsd-kind-icon">set<wbr>Value<span class="tsd-signature-symbol">(</span>name<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">never</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">never</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L253">src/lib/utils/options/options.ts:253</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Sets the given declared option. Throws if setting the option fails.</p>
+								</div>
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">&quot;logger&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;options&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tsconfig&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;entryPoints&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;exclude&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;externalPattern&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeExternals&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludePrivate&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeProtected&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeNotDocumented&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disableSources&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;includes&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;media&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;out&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;json&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;theme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;name&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;includeVersion&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;excludeTags&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;readme&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;defaultCategory&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;categoryOrder&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;categorizeByGroup&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gitRevision&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gitRemote&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gaID&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;gaSite&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;hideGenerator&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;toc&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;disableOutputCheck&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;help&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;version&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;showConfig&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;plugin&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;logLevel&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;listInvalidSymbolLinks&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;markedOptions&quot;</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">K</span></h5>
+								</li>
+								<li>
+									<h5>value: <a href="../modules.html#typedocoptions" class="tsd-signature-type">TypeDocOptions</a><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/f2a5dbc9/src/lib/utils/options/options.ts#L257">src/lib/utils/options/options.ts:257</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>name: <span class="tsd-signature-type">never</span></h5>
+								</li>
+								<li>
+									<h5>value: <span class="tsd-signature-type">never</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="../modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
+						<a href="options.html" class="tsd-kind-icon">Options</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="options.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="options.html#_compileroptions" class="tsd-kind-icon">_compiler<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="options.html#_declarations" class="tsd-kind-icon">_declarations</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="options.html#_filenames" class="tsd-kind-icon">_file<wbr>Names</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="options.html#_logger" class="tsd-kind-icon">_logger</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="options.html#_projectreferences" class="tsd-kind-icon">_project<wbr>References</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="options.html#_readers" class="tsd-kind-icon">_readers</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-private">
+								<a href="options.html#_values" class="tsd-kind-icon">_values</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="options.html#adddeclaration" class="tsd-kind-icon">add<wbr>Declaration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#adddeclarations" class="tsd-kind-icon">add<wbr>Declarations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#adddefaultdeclarations" class="tsd-kind-icon">add<wbr>Default<wbr>Declarations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#addreader" class="tsd-kind-icon">add<wbr>Reader</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#getcompileroptions" class="tsd-kind-icon">get<wbr>Compiler<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#getdeclaration" class="tsd-kind-icon">get<wbr>Declaration</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#getdeclarations" class="tsd-kind-icon">get<wbr>Declarations</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="options.html#getdefaultoptionvalue" class="tsd-kind-icon">get<wbr>Default<wbr>Option<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#getfilenames" class="tsd-kind-icon">get<wbr>File<wbr>Names</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#getprojectreferences" class="tsd-kind-icon">get<wbr>Project<wbr>References</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#getrawvalues" class="tsd-kind-icon">get<wbr>Raw<wbr>Values</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="options.html#getvalue" class="tsd-kind-icon">get<wbr>Value</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#isdefault" class="tsd-kind-icon">is<wbr>Default</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#read" class="tsd-kind-icon">read</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#removedeclarationbyname" class="tsd-kind-icon">remove<wbr>Declaration<wbr>ByName</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#removereaderbyname" class="tsd-kind-icon">remove<wbr>Reader<wbr>ByName</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#reset" class="tsd-kind-icon">reset</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#setcompileroptions" class="tsd-kind-icon">set<wbr>Compiler<wbr>Options</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="options.html#setlogger" class="tsd-kind-icon">set<wbr>Logger</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-private">
+								<a href="options.html#setoptionvaluetodefault" class="tsd-kind-icon">set<wbr>Option<wbr>Value<wbr>ToDefault</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-has-type-parameter">
+								<a href="options.html#setvalue" class="tsd-kind-icon">set<wbr>Value</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="after-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

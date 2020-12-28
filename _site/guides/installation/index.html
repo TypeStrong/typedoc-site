@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Installation | TypeDoc</title>
+    <meta name="description" property="og:description" content="" />
+    <meta name="keywords" content="TypeScript documentation generator javascript open source" />
+    <meta property="og:title" content="Installation">
+    <meta property="og:url" content="/guides/installation/">
+    <meta property="og:site_name" content="TypeDoc Documentation Generator">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Code+Pro:400,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" >
+    <script src="/scripts/toc.js" defer></script>
+</head>
+
+
+  <body>
+    <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/installation">Guides</a></li>
+               	<li><a href="/api/">API</a></li>
+                <li><a href="https://github.com/TypeStrong/typedoc">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <section class="content" id="content">
+      
+<div class="container main">
+  <div class="row">
+    <div class="col-sm-2">
+      <nav class="navigation">
+  <ul>
+    
+      <li class="selected">
+        <a href="/guides/installation/" class="current">Installation</a>
+      </li>
+    
+      <li >
+        <a href="/guides/options/" >Options</a>
+      </li>
+    
+      <li >
+        <a href="/guides/doccomments/" >Doc Comments</a>
+      </li>
+    
+      <li >
+        <a href="/guides/link-resolution/" >Link Resolution</a>
+      </li>
+    
+      <li >
+        <a href="/guides/themes/" >Themes</a>
+      </li>
+    
+      <li >
+        <a href="/guides/plugins/" >Plugins</a>
+      </li>
+    
+      <li >
+        <a href="/guides/development/" >Development</a>
+      </li>
+    
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-sm-7 typography">
+      <h1 id="installation">Installation</h1>
+<h2 id="requirements">Requirements</h2>
+<p>TypeDoc requires <a href="http://nodejs.org/">Node.js</a> to be installed on your system. If you haven't done that already, head
+over to their site and follow their install instructions.</p>
+<p>Installing TypeDoc is available as a node package. Using <code>npm</code> ensures that all relevant
+dependencies are setup correctly. You can choose to either install locally to your project or
+globally to the CLI.</p>
+<h2 id="local-installation-(preferred)">Local installation (preferred)</h2>
+<p>If you want to use TypeDoc from your command line in a project, use the API in your project code, or TypeDoc in an npm script, a local installation is the recommended approach. First install TypeDoc locally in your project:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> typedoc --save-dev</code></pre>
+<p>By saving TypeDoc to the project <code>package.json</code> file with the previous command,
+anyone who runs <code>npm install</code> on the project will have typedoc installed at the specific version required for the project.</p>
+<p>The name of TypeDoc's executable is <code>typedoc</code>. To verify that it works, you can now invoke the CLI in your project using <code>npx</code> (<code>npx</code> is a tool bundled with <code>npm</code>), passing TypeDoc the <code>--version</code> argument:</p>
+<pre class="language-bash"><code class="language-bash">$ npx typedoc --version<br><br>TypeDoc <span class="token number">0.20</span>.0<br>Using TypeScript <span class="token number">4.1</span>.2 from /home/gerrit/typedoc/node_modules/typescript/lib</code></pre>
+<h2 id="command-line-interface">Command line interface</h2>
+<p>The CLI can be used both from your terminal or from npm scripts. All arguments that are not passed
+with flags are parsed as entry points. Use either the <code>--out</code> or <code>--json</code>
+arguments to define the format and destination of your documentation.</p>
+<pre class="language-bash"><code class="language-bash">typedoc --out docs src/index.ts</code></pre>
+<h3 id="json-configuration">JSON Configuration</h3>
+<p>Instead of passing all arguments via the command line, the CLI also supports reading TypeDoc configuration from json files.</p>
+<h3 id="typedoc.json">typedoc.json</h3>
+<p>When running typedoc from the CLI, you can define any option except the entry files in a json file named <code>typedoc.json</code>.</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"entryPoints"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"src/index.ts"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token property">"out"</span><span class="token operator">:</span> <span class="token string">"docs"</span><br><span class="token punctuation">}</span></code></pre>
+<h3 id="tsconfig.json">tsconfig.json</h3>
+<p>TypeDoc options can be defined withing an existing <code>tsconfig.json</code> file. Use a <code>typedocOptions</code> section to define
+options as a json model.</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"compilerOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"normalTypeScriptOptions"</span><span class="token operator">:</span> <span class="token string">"here"</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token property">"typedocOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"entryPoints"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"src/index.ts"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>    <span class="token property">"out"</span><span class="token operator">:</span> <span class="token string">"docs"</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<h2 id="node-module">Node module</h2>
+<p>If you would like dynamic configuration or would like to run typedoc without using the CLI, import
+the node module and build the documentation yourself.</p>
+<pre class="language-javascript"><code class="language-javascript"><span class="token keyword">const</span> TypeDoc <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"typedoc"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token keyword">async</span> <span class="token keyword">function</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">const</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TypeDoc<span class="token punctuation">.</span>Application</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token comment">// If you want TypeDoc to load tsconfig.json / typedoc.json files</span><br>  app<span class="token punctuation">.</span>options<span class="token punctuation">.</span><span class="token function">addReader</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">TypeDoc<span class="token punctuation">.</span>TSConfigReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  app<span class="token punctuation">.</span>options<span class="token punctuation">.</span><span class="token function">addReader</span><span class="token punctuation">(</span><span class="token keyword">new</span> <span class="token class-name">TypeDoc<span class="token punctuation">.</span>TypeDocReader</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  app<span class="token punctuation">.</span><span class="token function">bootstrap</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>    <span class="token comment">// typedoc options here</span><br>    entryPoints<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"src/index.ts"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token keyword">const</span> project <span class="token operator">=</span> app<span class="token punctuation">.</span><span class="token function">convert</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  <span class="token keyword">if</span> <span class="token punctuation">(</span>project<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token comment">// Project may not have converted correctly</span><br>    <span class="token keyword">const</span> outputDir <span class="token operator">=</span> <span class="token string">"docs"</span><span class="token punctuation">;</span><br><br>    <span class="token comment">// Rendered docs</span><br>    <span class="token keyword">await</span> app<span class="token punctuation">.</span><span class="token function">generateDocs</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> outputDir<span class="token punctuation">)</span><span class="token punctuation">;</span><br>    <span class="token comment">// Alternatively generate JSON output</span><br>    <span class="token keyword">await</span> app<span class="token punctuation">.</span><span class="token function">generateJson</span><span class="token punctuation">(</span>project<span class="token punctuation">,</span> outputDir <span class="token operator">+</span> <span class="token string">"/documentation.json"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span><br><br><span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span>console<span class="token punctuation">.</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h2 id="third-party-tools">Third-Party Tools</h2>
+<p>Some great folks out there have created plugins so you can run TypeDoc with your favorite task runner.
+Plugins are available for Grunt, Gulp, and Webpack. All of them can be installed using <code>npm</code>.</p>
+<h3 id="grunt">Grunt</h3>
+<dl class="specs">
+    <dt>Name</dt><dd>grunt-typedoc</dd>
+    <dt>Website</dt><dd><a href="https://www.npmjs.org/package/grunt-typedoc/">https://www.npmjs.org/package/grunt-typedoc/</a></dd>
+    <dt>Author</dt><dd><a href="https://github.com/Bartvds">Bart van der Schoor</a></dd>
+</dl>
+<p>You can install the plugin with the following command:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> --save-dev grunt-typedoc</code></pre>
+<p>Update the following snippet with your configuration and add it to your <code>gruntfile.js</code> file:</p>
+<pre class="language-js"><code class="language-js">grunt<span class="token punctuation">.</span><span class="token function">loadNpmTasks</span><span class="token punctuation">(</span><span class="token string">"grunt-typedoc"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>grunt<span class="token punctuation">.</span><span class="token function">initConfig</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>  typedoc<span class="token operator">:</span> <span class="token punctuation">{</span><br>    build<span class="token operator">:</span> <span class="token punctuation">{</span><br>      options<span class="token operator">:</span> <span class="token punctuation">{</span><br>        out<span class="token operator">:</span> <span class="token string">"docs/"</span><span class="token punctuation">,</span><br>        name<span class="token operator">:</span> <span class="token string">"My project title"</span><span class="token punctuation">,</span><br>      <span class="token punctuation">}</span><span class="token punctuation">,</span><br>      src<span class="token operator">:</span> <span class="token string">"src/**/*"</span><span class="token punctuation">,</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id="gulp">Gulp</h3>
+<dl class="specs">
+    <dt>Name</dt><dd>gulp-typedoc</dd>
+    <dt>Website</dt><dd><a href="https://www.npmjs.org/package/gulp-typedoc/">https://www.npmjs.org/package/gulp-typedoc/</a></dd>
+    <dt>Author</dt><dd><a href="https://github.com/rogierschouten">Rogier Schouten</a></dd>
+</dl>
+<p>You can install the plugin with the following command:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> --save-dev gulp-typedoc</code></pre>
+<p>Update the following snippet with your configuration and add it to your <code>gulpfile.js</code> file:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> typedoc <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"gulp-typedoc"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>gulp<span class="token punctuation">.</span><span class="token function">task</span><span class="token punctuation">(</span><span class="token string">"typedoc"</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">return</span> gulp<span class="token punctuation">.</span><span class="token function">src</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string">"src/**/*.ts"</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span><br>    <span class="token function">typedoc</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>      out<span class="token operator">:</span> <span class="token string">"docs/"</span><span class="token punctuation">,</span><br>      name<span class="token operator">:</span> <span class="token string">"My project title"</span><span class="token punctuation">,</span><br>    <span class="token punctuation">}</span><span class="token punctuation">)</span><br>  <span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+<h3 id="webpack">Webpack</h3>
+<dl class="specs">
+    <dt>Name</dt><dd>typedoc-webpack-plugin</dd>
+    <dt>Website</dt><dd><a href="https://www.npmjs.com/package/typedoc-webpack-plugin">https://www.npmjs.com/package/typedoc-webpack-plugin</a></dd>
+    <dt>Author</dt><dd><a href="https://github.com/timsawyer">Tim Sawyer</a></dd>
+</dl>
+<p>You can install the plugin with the following command:</p>
+<pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> typedoc-webpack-plugin --save-dev</code></pre>
+<p>Update the following snippet with your configuration and add it to your Webpack config file:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">var</span> TypedocWebpackPlugin <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"typedoc-webpack-plugin"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br><span class="token comment">// add to webpack plugins</span><br>plugins<span class="token operator">:</span> <span class="token punctuation">[</span><br>  <span class="token keyword">new</span> <span class="token class-name">TypedocWebpackPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>    theme<span class="token operator">:</span> <span class="token string">"./typedoc-theme/"</span><span class="token punctuation">,</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span><br><span class="token punctuation">]</span><span class="token punctuation">;</span></code></pre>
+
+    </div>
+    <div class="col-sm-3 toc-container"></div>
+  </div>
+</div>
+
+    </section>
+
+    <footer>
+</footer>
+
+  </body>
+</html>

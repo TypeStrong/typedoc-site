@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Link Resolution | TypeDoc</title>
+    <meta name="description" property="og:description" content="" />
+    <meta name="keywords" content="TypeScript documentation generator javascript open source" />
+    <meta property="og:title" content="Link Resolution">
+    <meta property="og:url" content="/guides/link-resolution/">
+    <meta property="og:site_name" content="TypeDoc Documentation Generator">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Code+Pro:400,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" >
+    <script src="/scripts/toc.js" defer></script>
+</head>
+
+
+  <body>
+    <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/installation">Guides</a></li>
+               	<li><a href="/api/">API</a></li>
+                <li><a href="https://github.com/TypeStrong/typedoc">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <section class="content" id="content">
+      
+<div class="container main">
+  <div class="row">
+    <div class="col-sm-2">
+      <nav class="navigation">
+  <ul>
+    
+      <li >
+        <a href="/guides/installation/" >Installation</a>
+      </li>
+    
+      <li >
+        <a href="/guides/options/" >Options</a>
+      </li>
+    
+      <li >
+        <a href="/guides/doccomments/" >Doc Comments</a>
+      </li>
+    
+      <li class="selected">
+        <a href="/guides/link-resolution/" class="current">Link Resolution</a>
+      </li>
+    
+      <li >
+        <a href="/guides/themes/" >Themes</a>
+      </li>
+    
+      <li >
+        <a href="/guides/plugins/" >Plugins</a>
+      </li>
+    
+      <li >
+        <a href="/guides/development/" >Development</a>
+      </li>
+    
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-sm-7 typography">
+      <h1 id="link-resolution">Link Resolution</h1>
+<p>When a link is specified with <code>{@link Apple.seeds}</code> or
+<code>{@link Apple.seeds | link text}</code>, TypeDoc takes several steps to determine
+where to find <code>Apple.seeds</code>.</p>
+<ol>
+<li>Check for the provided name within the current reflection's children.</li>
+<li>Check for the provided name within the parent reflection's children.</li>
+<li>Recurse, checking the parent's parent... up to the root project reflection.</li>
+<li>Check for the provided name in a global list of <em>all</em> reflections.<br>
+<em>Note: Step four will likely be changing in the future for performance reasons. If at all possible, do not rely on its behavior.</em></li>
+</ol>
+<p>This can be most easily understood with an example.</p>
+<pre class="language-ts"><code class="language-ts"><span class="token comment">// index.ts</span><br><span class="token comment">/**<br> * @packageDocumentation<br> * Module comment<br> */</span><br><br><span class="token comment">/** Apple class comment */</span><br><span class="token keyword">class</span> <span class="token class-name">Apple</span> <span class="token punctuation">{</span><br>  <span class="token comment">/** seeds property comment */</span><br>  seeds <span class="token operator">=</span> <span class="token number">16</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token comment">/** Orange class comment */</span><br><span class="token keyword">class</span> <span class="token class-name">Orange</span> <span class="token punctuation">{</span><br>  <span class="token comment">/** slices property comment */</span><br>  slices <span class="token operator">=</span> <span class="token number">8</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>When converted, this code will be converted into an internal structure which
+resembles the following (Note: In <code>file</code> mode, this structure will be missing
+the top level <code>&quot;index&quot;</code> node, and multiple files will be merged into one.):</p>
+<pre class="language-yaml"><code class="language-yaml">Project<br><span class="token punctuation">-</span> "index" &lt;<span class="token punctuation">-</span><span class="token punctuation">-</span> Links in the @packageDocumentation comment start resolution here<br><span class="token punctuation">-</span> Apple &lt;<span class="token punctuation">-</span><span class="token punctuation">-</span> Links in the Apple class comment start resolution here<br><span class="token punctuation">-</span> seeds &lt;<span class="token punctuation">-</span><span class="token punctuation">-</span> Links in the seeds class comment start resolution here<br><span class="token punctuation">-</span> Orange<br><span class="token punctuation">-</span> slices</code></pre>
+<p>This structure can be used to determine the fully qualified name of each
+reflection. The fully qualified name of a reflection is the name of the
+reflection and all its parents, joined with <code>.</code>; that is, the fully qualified
+name of the <code>seeds</code> property is <code>&quot;index&quot;.Apple.seeds</code>. You can use the fully
+qualified name to link to symbols defined in other source files without relying
+on the slow fourth step of the algorithm used to resolve links.</p>
+<p>Say <code>{@link Apple.seeds}</code> is included in the doc comment for <code>slices</code>.
+TypeDoc will use the following process to resolve the link:</p>
+<ol>
+<li>Check <code>slices</code> members for elements named <code>Apple</code>, find none.</li>
+<li>Check <code>Orange</code> members for elements named <code>Apple</code>, find none.</li>
+<li>Check <code>&quot;index&quot;</code> members for elements named <code>Apple</code>, find <code>Apple</code>.
+<ol>
+<li>Recurse, looking for <code>[&quot;seeds&quot;]</code>, starting from <code>Apple</code></li>
+<li>Check <code>Apple</code> members for elements named <code>seeds</code>, find <code>Apple.seeds</code></li>
+<li>Since this was the last element of the array, return <code>Apple.seeds</code></li>
+</ol>
+</li>
+</ol>
+<p>If <code>{@link Apple.seeds}</code> was included in the doc comment for <code>Apple</code>, TypeDoc
+would take the following steps:</p>
+<ol>
+<li>Check <code>Apple</code> members for elements named <code>Apple</code>, find none.</li>
+<li>Check <code>&quot;index&quot;</code> members for <code>Apple</code>, find the <code>Apple</code> class.
+<ol>
+<li>Recurse, looking for <code>[&quot;seeds&quot;]</code>, starting from <code>Apple</code>.</li>
+<li>Check <code>Apple</code> members for elements named <code>seeds</code>, find <code>Apple.seeds</code></li>
+<li>Since this was the last element of the array, return <code>Apple.seeds</code></li>
+</ol>
+</li>
+</ol>
+<p>Note that due to step four in the algorithm presented above, it is possible
+for the <code>seeds</code> property on <code>Apple</code> to link directly to <code>slices</code> on <code>Orange</code>
+with <code>{@link seeds}</code>. This is generally a bad idea. First, it is not obvious
+to developers reading the comment which <code>seeds</code> is being referenced. Second,
+if there are multiple reflections named <code>seeds</code>, TypeDoc's behavior when
+resolving the link is undefined. Any reflection named <code>seeds</code> may be linked.</p>
+
+    </div>
+    <div class="col-sm-3 toc-container"></div>
+  </div>
+</div>
+
+    </section>
+
+    <footer>
+</footer>
+
+  </body>
+</html>
