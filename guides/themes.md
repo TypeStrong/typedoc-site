@@ -2,7 +2,7 @@
 layout: "guide"
 tags: guide
 title: "Themes"
-menuOrder: 5
+menuOrder: 9
 ---
 
 # Themes

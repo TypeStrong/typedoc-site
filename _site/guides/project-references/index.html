@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Project References | TypeDoc</title>
+    <meta name="description" property="og:description" content="" />
+    <meta name="keywords" content="TypeScript documentation generator javascript open source" />
+    <meta property="og:title" content="Project References">
+    <meta property="og:url" content="/guides/project-references/">
+    <meta property="og:site_name" content="TypeDoc Documentation Generator">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700|Source+Code+Pro:400,700" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.22.0/themes/prism.min.css" integrity="sha512-tN7Ec6zAFaVSG3TpNAKtk4DOHNpSwKHxxrsiw4GHKESGPs5njn/0sMCUMl2svV4wo4BK/rCP7juYz+zx+l6oeQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="shortcut icon" href="/favicon.ico" >
+    <script src="/scripts/toc.js" defer></script>
+</head>
+
+
+  <body>
+    <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/installation">Guides</a></li>
+               	<li><a href="/api/">API</a></li>
+                <li><a href="https://github.com/TypeStrong/typedoc">GitHub</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <section class="content" id="content">
+      
+<div class="container main">
+  <div class="row">
+    <div class="col-sm-2">
+      <nav class="navigation">
+  <ul>
+    
+      <li >
+        <a href="/guides/installation/" >Installation</a>
+      </li>
+    
+      <li >
+        <a href="/guides/options/" >Options</a>
+      </li>
+    
+      <li >
+        <a href="/guides/doccomments/" >Doc Comments</a>
+      </li>
+    
+      <li >
+        <a href="/guides/link-resolution/" >Link Resolution</a>
+      </li>
+    
+      <li class="selected">
+        <a href="/guides/project-references/" class="current">Project References</a>
+      </li>
+    
+      <li >
+        <a href="/guides/themes/" >Themes</a>
+      </li>
+    
+      <li >
+        <a href="/guides/plugins/" >Plugins</a>
+      </li>
+    
+      <li >
+        <a href="/guides/development/" >Development</a>
+      </li>
+    
+  </ul>
+</nav>
+
+    </div>
+    <div class="col-sm-7 typography">
+      <h1 id="project-references">Project References</h1>
+<p>As of 0.20, TypeDoc has limited support for TypeScript projects using project references and solution style tsconfig files.
+This support is limited since TypeDoc is currently unable to:</p>
+<ol>
+<li>Resolve type reference links between projects</li>
+<li>Properly link files to GitHub if they are in a child project of the root project.</li>
+</ol>
+<h2 id="how-it-works">How it works</h2>
+<p>For the most part, project reference support should <em>just work</em>, however if you have a tsconfig containing <code>&quot;files&quot;: []</code>,
+the output might not quite match what you expect.</p>
+<p>When given a solution style tsconfig whose program contains no files, TypeDoc will check for project references and create
+a program for each referenced project. Then, to find each entry point requested for documentation, it will check each of the
+programs in the order they are declared in the tsconfig file. If a file is present in multiple programs, only the file in
+the first program will be used.</p>
+<p>As an example, in the <a href="https://github.com/berickson1/project-references-demo/tree/typedoc">project-references-demo</a> project,
+<code>npx typedoc zoo/zoo.ts animals/index.ts</code> will result in documentation where the createZoo function returns <code>Array&lt;Dog&gt;</code>,
+but <code>Dog</code> is not linked, even though animals/index.ts exports it. The cause of this is that the root tsconfig looks like this:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"files"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token property">"references"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>    <span class="token punctuation">{</span><br>      <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"./core"</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token punctuation">{</span><br>      <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"./animals"</span><br>    <span class="token punctuation">}</span><span class="token punctuation">,</span><br>    <span class="token punctuation">{</span><br>      <span class="token property">"path"</span><span class="token operator">:</span> <span class="token string">"./zoo"</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<p>When TypeDoc looks for the entry points, it finds animals/index.ts in the second listed program before looking at ./zoo, while
+the <code>Dog</code> type used in <code>createZoo</code> is from the third program. TypeDoc relies on TypeScript to link types, so is unable to resolve
+types across programs, resulting in a broken link.</p>
+<p>There are a couple possible fixes for this:</p>
+<ol>
+<li>Specify the &quot;largest&quot; projects first - if the tsconfig specified ./zoo first, then TypeDoc would find ./animals/index.ts in
+the zoo project, and links would work.</li>
+<li>Specify the tsconfig only for the root project expected to contain all symbols
+<code>npx typedoc --tsconfig zoo/tsconfig.json zoo/zoo.ts animals/index.ts</code> works as expected.
+This is usually the better solution since it allows TypeDoc to skip creating any unnecessary projects, making the type checking
+potentially significantly faster.</li>
+</ol>
+
+    </div>
+    <div class="col-sm-3 toc-container"></div>
+  </div>
+</div>
+
+    </section>
+
+    <footer>
+</footer>
+
+  </body>
+</html>

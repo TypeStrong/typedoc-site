@@ -2,7 +2,7 @@
 layout: "guide"
 tags: guide
 title: "Plugins"
-menuOrder: 6
+menuOrder: 10
 ---
 
 # Plugins
