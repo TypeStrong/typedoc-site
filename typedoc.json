@@ -1,7 +1,0 @@
-{
-    "out": "../_site/api",
-    "json": "../_site/api/docs.json",
-    "name": "TypeDoc Documentation",
-    "excludeExternals": true,
-    "entryPoints": ["src/index.ts"]
-}
