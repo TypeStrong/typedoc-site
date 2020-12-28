@@ -1,9 +1,8 @@
 <nav class="navigation">
   <ul>
-    {% assign sorted_guides = (site.guides | sort: 'menuOrder') %}
-    {% for guide in sorted_guides %}
+    {% for guide in collections.guide %}
       <li {% if page.url == guide.url %}class="selected"{% endif %}>
-        <a href="{{ guide.url }}" {% if page.url == guide.url %}class="current"{% endif %}>{{ guide.title }}</a>
+        <a href="{{ guide.url }}" {% if page.url == guide.url %}class="current"{% endif %}>{{ guide.data.title }}</a>
       </li>
     {% endfor %}
   </ul>

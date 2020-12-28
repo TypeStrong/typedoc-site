@@ -8,10 +8,8 @@ layout: default
       {% include guides_menu.html %}
     </div>
     <div class="col-sm-7 typography">
-      {% include anchor_headings.html html=content anchorBody="#" beforeHeading=true anchorClass="header-link" %}
+      {{ content }}
     </div>
-    <div class="col-sm-3 toc-container">
-      {% include toc.html html=content class="toc" anchor_class="toc-entry" %}
-    </div>
+    <div class="col-sm-3 toc-container"></div>
   </div>
 </div>

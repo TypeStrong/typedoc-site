@@ -1,6 +1,6 @@
 ---
 layout: home
-title: 'Home'
+title: "Home"
 ---
 
 <p class="lead">
@@ -9,7 +9,9 @@ model. It is extensible and supports a variety of configurations. Available as a
 </p>
 
 ## Quick Start
+
 If you have [npm installed](https://www.npmjs.com/get-npm), start using typedoc with the following commands.
+
 ```bash
 # Install the global CLI
 npm install --global typedoc
