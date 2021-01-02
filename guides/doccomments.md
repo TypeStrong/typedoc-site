@@ -194,11 +194,14 @@ namespace MyModule {}
 A doc comment describing a file must be placed before any code in the file.
 It should be annotated with the `@packageDocumentation` tag so that TypeDoc knows that it is intended to be documentation for the file itself.
 
+If TypeDoc guesses a module's name incorrectly, you can override it with the `@module` tag.
+
 ```typescript
 // file1.ts
 /**
  * This is the doc comment for file1.ts
  * @packageDocumentation
+ * @module my-module
  */
 
 /**
