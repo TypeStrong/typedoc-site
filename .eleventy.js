@@ -7,6 +7,7 @@ module.exports = function (el) {
   el.addPassthroughCopy("css");
   el.addPassthroughCopy("scripts");
   el.addPassthroughCopy("images");
+  el.addPassthroughCopy("CNAME");
 
   el.addPlugin(syntaxHighlight);
 
