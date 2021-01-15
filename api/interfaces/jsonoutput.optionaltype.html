@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Comment | TypeDoc Documentation</title>
+	<title>OptionalType | TypeDoc Documentation</title>
 	<meta name="description" content="Documentation for TypeDoc Documentation">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../modules/jsonoutput.html">JSONOutput</a>
 				</li>
 				<li>
-					<a href="jsonoutput.comment.html">Comment</a>
+					<a href="jsonoutput.optionaltype.html">OptionalType</a>
 				</li>
 			</ul>
-			<h1>Interface Comment</h1>
+			<h1>Interface OptionalType</h1>
 		</div>
 	</div>
 </header>
@@ -70,10 +70,13 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="tsd-signature-type">Partial</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M.Comment</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;shortText&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;text&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;returns&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;tags&quot;</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span>
+						<a href="jsonoutput.type.html" class="tsd-signature-type" data-tsd-kind="Interface">Type</a>
+					</li>
+					<li>
+						<span class="tsd-signature-type">S</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">M.OptionalType</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">&quot;type&quot;</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">&quot;elementType&quot;</span><span class="tsd-signature-symbol">&gt;</span>
 						<ul class="tsd-hierarchy">
 							<li>
-								<span class="target">Comment</span>
+								<span class="target">OptionalType</span>
 							</li>
 						</ul>
 					</li>
@@ -86,10 +89,8 @@
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jsonoutput.comment.html#returns" class="tsd-kind-icon">returns</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jsonoutput.comment.html#shorttext" class="tsd-kind-icon">short<wbr>Text</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jsonoutput.comment.html#tags" class="tsd-kind-icon">tags</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jsonoutput.comment.html#text" class="tsd-kind-icon">text</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jsonoutput.optionaltype.html#elementtype" class="tsd-kind-icon">element<wbr>Type</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="jsonoutput.optionaltype.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
@@ -98,63 +99,32 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="returns" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagOptional">Optional</span> returns</h3>
-					<div class="tsd-signature tsd-kind-icon">returns<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="elementtype" class="tsd-anchor"></a>
+					<h3>element<wbr>Type</h3>
+					<div class="tsd-signature tsd-kind-icon">element<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../modules/jsonoutput.html#sometype" class="tsd-signature-type" data-tsd-kind="Type alias">SomeType</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/b85eada3/src/lib/models/comments/comment.ts#L25">src/lib/models/comments/comment.ts:25</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/b85eada3/src/lib/models/types/optional.ts#L16">src/lib/models/types/optional.ts:16</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The text of the <code>@returns</code> tag if present.</p>
+							<p>The type of the rest array elements.</p>
 						</div>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="shorttext" class="tsd-anchor"></a>
-					<h3>short<wbr>Text</h3>
-					<div class="tsd-signature tsd-kind-icon">short<wbr>Text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
+					<a name="type" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">&quot;optional&quot;</span><span class="tsd-signature-symbol"> = &quot;optional&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/b85eada3/src/lib/models/comments/comment.ts#L15">src/lib/models/comments/comment.ts:15</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/b85eada3/src/lib/models/types/optional.ts#L21">src/lib/models/types/optional.ts:21</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>The abstract of the comment. TypeDoc interprets the first paragraph of a comment
-							as the abstract.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="tags" class="tsd-anchor"></a>
-					<h3>tags</h3>
-					<div class="tsd-signature tsd-kind-icon">tags<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><a href="jsonoutput.commenttag.html" class="tsd-signature-type" data-tsd-kind="Interface">CommentTag</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> = ...</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/b85eada3/src/lib/models/comments/comment.ts#L30">src/lib/models/comments/comment.ts:30</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>All associated tags.</p>
-						</div>
-					</div>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
-					<a name="text" class="tsd-anchor"></a>
-					<h3>text</h3>
-					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">undefined</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/b85eada3/src/lib/models/comments/comment.ts#L20">src/lib/models/comments/comment.ts:20</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>The full body text of the comment. Excludes the <a href="jsonoutput.comment.html#shorttext">shortText</a>.</p>
+							<p>The type name identifier.</p>
 						</div>
 					</div>
 				</section>
@@ -179,27 +149,9 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="jsonoutput.arraytype.html" class="tsd-kind-icon">Array<wbr>Type</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
+					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="jsonoutput.comment.html" class="tsd-kind-icon">Comment</a>
-						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="jsonoutput.comment.html#returns" class="tsd-kind-icon">returns</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="jsonoutput.comment.html#shorttext" class="tsd-kind-icon">short<wbr>Text</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="jsonoutput.comment.html#tags" class="tsd-kind-icon">tags</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-interface">
-								<a href="jsonoutput.comment.html#text" class="tsd-kind-icon">text</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="jsonoutput.commenttag.html" class="tsd-kind-icon">Comment<wbr>Tag</a>
 					</li>
@@ -236,9 +188,21 @@
 					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="jsonoutput.namedtuplemembertype.html" class="tsd-kind-icon">Named<wbr>Tuple<wbr>Member<wbr>Type</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="jsonoutput.optionaltype.html" class="tsd-kind-icon">Optional<wbr>Type</a>
+						<ul>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="jsonoutput.optionaltype.html#elementtype" class="tsd-kind-icon">element<wbr>Type</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="jsonoutput.optionaltype.html#type" class="tsd-kind-icon">type</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
 						<a href="jsonoutput.parameterreflection.html" class="tsd-kind-icon">Parameter<wbr>Reflection</a>
 					</li>
