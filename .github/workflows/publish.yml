@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+      - name: Fix remote
+        run: git remote set-url origin git@github.com:TypeStrong/typedoc-site.git
       - name: Set up Node
         uses: actions/setup-node@v1
         with:
@@ -21,7 +23,6 @@ jobs:
         run: |
           git config --global user.email "typedoc@gerritbirkeland.com"
           git config --global user.name "TypeDoc Bot"
-          git config core.sshCommand "ssh -i ~/.ssh/id_rsa"
           mkdir -p ~/.ssh
           echo "${{ secrets.BOT_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 0600 ~/.ssh/id_rsa
