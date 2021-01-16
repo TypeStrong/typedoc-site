@@ -21,6 +21,7 @@ jobs:
         run: |
           mkdir -p ~/.ssh
           echo "$BOT_SSH_KEY" > ~/.ssh/id_rsa
+          chmod 0600 ~/.ssh/id_rsa
       - name: Rebuild /api
         run: |
           test -f typedoc || git clone git@github.com:TypeStrong/typedoc.git
