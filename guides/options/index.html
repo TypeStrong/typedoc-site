@@ -121,6 +121,9 @@ This option will <strong>only</strong> be used to filter entry points specified 
 <h3 id="excludeprotected">excludeProtected</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --excludeProtected</code></pre>
 <p>Removes protected class members from the generated documentation. Defaults to false.</p>
+<h3 id="excludeinternal">excludeInternal</h3>
+<pre class="language-bash"><code class="language-bash">$ typedoc --excludeInternal</code></pre>
+<p>Removes symbols annotated with the <code>@internal</code> doc tag. Defaults to true if the stripInternal compiler option is set to true, otherwise defaults to false.</p>
 <h3 id="media">media</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --media <span class="token operator">&lt;</span>path/to/media/<span class="token operator">></span></code></pre>
 <p>Specifies a media directory that will be copied to the output file. Media can be linked to with <code>media://file.jpg</code> in doc comments.</p>
