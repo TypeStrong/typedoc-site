@@ -147,7 +147,7 @@ function doSomething(target: any, value: number): number;
 ### `@internal`
 
 Marks the following code as internal.
-If the TypeScript `--stripInternal` compiler flag is passed, TypeDoc will not document the given code.
+If the `--excludeExternal` option is passed, TypeDoc will not document the given code.
 
 ```typescript
 /** @internal */
