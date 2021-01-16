@@ -19,6 +19,8 @@ jobs:
         run: npm ci
       - name: Set up auth
         run: |
+          git config --global user.email "typedoc@gerritbirkeland.com"
+          git config --global user.name "TypeDoc Bot"
           mkdir -p ~/.ssh
           echo "${{ secrets.BOT_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 0600 ~/.ssh/id_rsa
