@@ -17,6 +17,10 @@ jobs:
           node-version: "14"
       - name: Install
         run: npm ci
+      - name: Set up auth
+        run: |
+          mkdir -p ~/.ssh
+          echo "$BOT_SSH_KEY" > ~/.ssh/id_rsa
       - name: Rebuild /api
         run: |
           test -f typedoc || git clone git@github.com:TypeStrong/typedoc.git
