@@ -1,0 +1,35 @@
+name: Publish
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: "0 12 * * *"
+jobs:
+  publish-site:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Set up Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "14"
+      - name: Install
+        run: npm ci
+      - name: Rebuild /api
+        run: |
+          test -f typedoc || git clone git@github.com:TypeStrong/typedoc.git
+          cd typedoc
+          git pull
+          git checkout $(git describe --tags --abbrev=0)
+          npm i
+          npm run build
+          node bin/typedoc --options ../typedoc.json
+          cd ..
+      - name: Rebuild schema.json
+        run: node typedoc/scripts/generate_options_schema.js _site/schema.json
+      - name: Rebuild markdown site
+        run: npm run build
+      - name: Publish
+        run: npm run publish
