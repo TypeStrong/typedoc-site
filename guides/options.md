@@ -106,6 +106,14 @@ $ typedoc --excludeProtected
 
 Removes protected class members from the generated documentation. Defaults to false.
 
+### excludeInternal
+
+```bash
+$ typedoc --excludeInternal
+```
+
+Removes symbols annotated with the `@internal` doc tag. Defaults to true if the stripInternal compiler option is set to true, otherwise defaults to false.
+
 ### media
 
 ```bash
