@@ -20,7 +20,7 @@ jobs:
       - name: Set up auth
         run: |
           mkdir -p ~/.ssh
-          echo "$BOT_SSH_KEY" > ~/.ssh/id_rsa
+          echo "${{ secrets.BOT_SSH_KEY }}" > ~/.ssh/id_rsa
           chmod 0600 ~/.ssh/id_rsa
           ssh-keygen -l -f ~/.ssh/id_rsa
       - name: Rebuild /api
