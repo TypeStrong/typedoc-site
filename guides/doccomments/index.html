@@ -134,12 +134,6 @@ If the <code>--excludeExternal</code> option is passed, TypeDoc will not documen
 <h3 id="%40category"><code>@category</code></h3>
 <p>Allows grouping reflections on a page. The <code>--categorizeByGroup</code>, <code>--defaultCategory</code>, and <code>--categoryOrder</code> allow more granular control.</p>
 <pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * Regular description<br> *<br> * @category Category Name<br> */</span><br><span class="token keyword">function</span> <span class="token function">doSomething</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>
-<h2 id="namespaces">Namespaces</h2>
-<p>Namespaces can be commented like any other elements in TypeScript. As namespaces can be defined in multiple
-files, TypeDoc selects the longest comment by default. One may override this behavior with the special
-<code>@preferred</code> comment tag.</p>
-<pre class="language-typescript"><code class="language-typescript"><span class="token comment">/**<br> * Actual namespace comment.<br> * @preferred<br> */</span><br><span class="token keyword">namespace</span> MyModule <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>
-<pre class="language-typescript"><code class="language-typescript"><span class="token comment">/**<br> * Dismissed namespace comment.<br> * This is the longer comment but will be dismissed in favor of the preferred comment.<br> */</span><br><span class="token keyword">namespace</span> MyModule <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>
 <h2 id="files">Files</h2>
 <p>A doc comment describing a file must be placed before any code in the file.
 It should be annotated with the <code>@packageDocumentation</code> tag so that TypeDoc knows that it is intended to be documentation for the file itself.</p>
