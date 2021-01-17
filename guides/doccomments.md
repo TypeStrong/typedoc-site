@@ -167,28 +167,6 @@ Allows grouping reflections on a page. The `--categorizeByGroup`, `--defaultCate
 function doSomething() {}
 ```
 
-## Namespaces
-
-Namespaces can be commented like any other elements in TypeScript. As namespaces can be defined in multiple
-files, TypeDoc selects the longest comment by default. One may override this behavior with the special
-`@preferred` comment tag.
-
-```typescript
-/**
- * Actual namespace comment.
- * @preferred
- */
-namespace MyModule {}
-```
-
-```typescript
-/**
- * Dismissed namespace comment.
- * This is the longer comment but will be dismissed in favor of the preferred comment.
- */
-namespace MyModule {}
-```
-
 ## Files
 
 A doc comment describing a file must be placed before any code in the file.
