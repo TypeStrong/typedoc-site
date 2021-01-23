@@ -1,9 +1,10 @@
 {
 	"id": 0,
-	"name": "TypeDoc Documentation",
+	"name": "TypeDoc Documentation - v0.20.17",
 	"kind": 0,
 	"kindString": "Project",
 	"flags": {},
+	"originalName": "TypeDoc Documentation",
 	"children": [
 		{
 			"id": 942,
@@ -139,7 +140,7 @@
 							"sources": [
 								{
 									"fileName": "src/lib/models/comments/comment.ts",
-									"line": 25,
+									"line": 27,
 									"character": 11
 								}
 							],
@@ -169,7 +170,7 @@
 							"sources": [
 								{
 									"fileName": "src/lib/models/comments/comment.ts",
-									"line": 15,
+									"line": 17,
 									"character": 13
 								}
 							],
@@ -199,7 +200,7 @@
 							"sources": [
 								{
 									"fileName": "src/lib/models/comments/comment.ts",
-									"line": 30,
+									"line": 32,
 									"character": 8
 								}
 							],
@@ -234,7 +235,7 @@
 							"sources": [
 								{
 									"fileName": "src/lib/models/comments/comment.ts",
-									"line": 20,
+									"line": 22,
 									"character": 8
 								}
 							],
