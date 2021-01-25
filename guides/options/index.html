@@ -140,6 +140,9 @@ The HTML output produced by running TypeDoc on itself can be seen at <a href="/a
 <pre class="language-bash"><code class="language-bash">$ typedoc --json <span class="token operator">&lt;</span>path/to/out-file.json<span class="token operator">></span></code></pre>
 <p>Specifies the location to output a JSON file containing all of the reflection data.
 An example of the JSON output from running TypeDoc on itself can be seen at <a href="/api/docs.json">/api/docs.json</a>.</p>
+<h3 id="emit">emit</h3>
+<pre class="language-bash"><code class="language-bash">$ typedoc --emit</code></pre>
+<p>Instructs TypeDoc to write compiled output files as <code>tsc</code> does.</p>
 <h3 id="theme">theme</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --theme <span class="token operator">&lt;</span>default<span class="token operator">|</span>minimal<span class="token operator">|</span>path/to/theme<span class="token operator">></span></code></pre>
 <p>Specify the path to the theme that should be used.
@@ -210,6 +213,13 @@ This is useful in large projects where there may be an unwieldy number of Global
 <p>Disables checking and clearing of the output directory specified with <code>--out</code>.</p>
 <h2 id="general-options">General Options</h2>
 <p>Options which don't fit elsewhere.</p>
+<h3 id="watch">watch</h3>
+<pre class="language-bash"><code class="language-bash">$ typedoc --watch</code></pre>
+<p>Use TypeScript's incremental compiler to watch source files for changes and build the docs on change. May be combined with <code>--emit</code>.</p>
+<p>Note: This mode will only detect changes to files watched by the TypeScript compiler. Changes to other files (README.md, imported files with <code>--includes</code>) will not cause a rebuild.</p>
+<h3 id="preservewatchoutput">preserveWatchOutput</h3>
+<pre class="language-bash"><code class="language-bash">$ typedoc --watch --preserveWatchOutput</code></pre>
+<p>By default, <code>--watch</code> clears the screen between compilation steps. If <code>--preserveWatchOutput</code> is specified, this behavior is disabled.</p>
 <h3 id="help">help</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --help</code></pre>
 <p>Print all available options, along with a short description. Also prints a list of supported highlighting languages.</p>
