@@ -77,6 +77,21 @@
 			"type": "string",
 			"default": ""
 		},
+		"watch": {
+			"description": "Watch files for changes and rebuild docs on change.",
+			"type": "boolean",
+			"default": false
+		},
+		"preserveWatchOutput": {
+			"description": "If set, TypeDoc will not clear the screen between compilation runs.",
+			"type": "boolean",
+			"default": false
+		},
+		"emit": {
+			"description": "If set, TypeDoc will emit the TypeScript compilation result",
+			"type": "boolean",
+			"default": false
+		},
 		"out": {
 			"description": "Specifies the location the documentation should be written to.",
 			"type": "string",
