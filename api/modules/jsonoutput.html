@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>JSONOutput | TypeDoc Documentation - v0.20.19</title>
-	<meta name="description" content="Documentation for TypeDoc Documentation - v0.20.19">
+	<title>JSONOutput | TypeDoc Documentation - v0.20.20</title>
+	<meta name="description" content="Documentation for TypeDoc Documentation - v0.20.20">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">TypeDoc Documentation - v0.20.19</a>
+					<a href="../index.html" class="title">TypeDoc Documentation - v0.20.20</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -50,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">TypeDoc Documentation - v0.20.19</a>
+					<a href="../modules.html">TypeDoc Documentation - v0.20.20</a>
 				</li>
 				<li>
 					<a href="jsonoutput.html">JSONOutput</a>
@@ -73,14 +73,14 @@
 					</a>
 					<p>Plugins which modify the serialization process can use declaration merging
 						to add custom properties to the exported interfaces.
-					For example, if your custom serializer adds a property to all <a href="../interfaces/jsonoutput.reflection.html">Reflection</a> objects:</p>
+					For example, if your custom serializer adds a property to all <a href="../classes/reflection.html">Reflection</a> objects:</p>
 					<pre><code class="language-ts"><span style="color: #0000FF">declare</span><span style="color: #000000"> </span><span style="color: #0000FF">module</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;typedoc/dist/lib/serialization/schema&#039;</span><span style="color: #000000"> {</span>
 <span style="color: #000000">    </span><span style="color: #AF00DB">export</span><span style="color: #000000"> </span><span style="color: #0000FF">interface</span><span style="color: #000000"> </span><span style="color: #267F99">AbstractReflection</span><span style="color: #000000"> {</span>
 <span style="color: #000000">        </span><span style="color: #001080">myCustomProp</span><span style="color: #000000">: </span><span style="color: #267F99">boolean</span>
 <span style="color: #000000">    }</span>
 <span style="color: #000000">}</span>
 </code></pre>
-					<p>If a plugin defines a new Model type, <a href="jsonoutput.html#modeltoobject">ModelToObject</a> will not pick up the serializer type and
+					<p>If a plugin defines a new Model type, [[ModelToObject]] will not pick up the serializer type and
 						the resulting type will not be included in the return type of {@link Serializer.toObject}.
 					To fix this, use declaration merging to augment the [[Serializer]] class.</p>
 					<pre><code class="language-ts"><span style="color: #0000FF">declare</span><span style="color: #000000"> </span><span style="color: #0000FF">module</span><span style="color: #000000"> </span><span style="color: #A31515">&#039;typedoc/dist/lib/serialization/serializer&#039;</span><span style="color: #000000"> {</span>
@@ -92,96 +92,6 @@
 					<p>For documentation on the JSON output properties, view the corresponding model.</p>
 				</div>
 			</section>
-			<section class="tsd-panel-group tsd-index-group">
-				<h2>Index</h2>
-				<section class="tsd-panel tsd-index-panel">
-					<div class="tsd-index-content">
-						<section class="tsd-index-section ">
-							<h3>Interfaces</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.arraytype.html" class="tsd-kind-icon">Array<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.comment.html" class="tsd-kind-icon">Comment</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.commenttag.html" class="tsd-kind-icon">Comment<wbr>Tag</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.conditionaltype.html" class="tsd-kind-icon">Conditional<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.containerreflection.html" class="tsd-kind-icon">Container<wbr>Reflection</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.declarationreflection.html" class="tsd-kind-icon">Declaration<wbr>Reflection</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.decorator.html" class="tsd-kind-icon">Decorator</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.indexedaccesstype.html" class="tsd-kind-icon">Indexed<wbr>Access<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.inferredtype.html" class="tsd-kind-icon">Inferred<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.intersectiontype.html" class="tsd-kind-icon">Intersection<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.intrinsictype.html" class="tsd-kind-icon">Intrinsic<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.literaltype.html" class="tsd-kind-icon">Literal<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.mappedtype.html" class="tsd-kind-icon">Mapped<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.namedtuplemembertype.html" class="tsd-kind-icon">Named<wbr>Tuple<wbr>Member<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.optionaltype.html" class="tsd-kind-icon">Optional<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.parameterreflection.html" class="tsd-kind-icon">Parameter<wbr>Reflection</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.predicatetype.html" class="tsd-kind-icon">Predicate<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.projectreflection.html" class="tsd-kind-icon">Project<wbr>Reflection</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.querytype.html" class="tsd-kind-icon">Query<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.referencereflection.html" class="tsd-kind-icon">Reference<wbr>Reflection</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.referencetype.html" class="tsd-kind-icon">Reference<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.reflection.html" class="tsd-kind-icon">Reflection</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.reflectioncategory.html" class="tsd-kind-icon">Reflection<wbr>Category</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.reflectionflags.html" class="tsd-kind-icon">Reflection<wbr>Flags</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.reflectiongroup.html" class="tsd-kind-icon">Reflection<wbr>Group</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.reflectiontype.html" class="tsd-kind-icon">Reflection<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.resttype.html" class="tsd-kind-icon">Rest<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.signaturereflection.html" class="tsd-kind-icon">Signature<wbr>Reflection</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.sourcereference.html" class="tsd-kind-icon">Source<wbr>Reference</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.templateliteraltype.html" class="tsd-kind-icon">Template<wbr>Literal<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.tupletype.html" class="tsd-kind-icon">Tuple<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.type.html" class="tsd-kind-icon">Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.typeoperatortype.html" class="tsd-kind-icon">Type<wbr>Operator<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.typeparameterreflection.html" class="tsd-kind-icon">Type<wbr>Parameter<wbr>Reflection</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.typeparametertype.html" class="tsd-kind-icon">Type<wbr>Parameter<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.uniontype.html" class="tsd-kind-icon">Union<wbr>Type</a></li>
-								<li class="tsd-kind-interface tsd-parent-kind-namespace"><a href="../interfaces/jsonoutput.unknowntype.html" class="tsd-kind-icon">Unknown<wbr>Type</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Type aliases</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter"><a href="jsonoutput.html#modeltoobject" class="tsd-kind-icon">Model<wbr>ToObject</a></li>
-								<li class="tsd-kind-type-alias tsd-parent-kind-namespace"><a href="jsonoutput.html#sometype" class="tsd-kind-icon">Some<wbr>Type</a></li>
-							</ul>
-						</section>
-					</div>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter">
-					<a name="modeltoobject" class="tsd-anchor"></a>
-					<h3>Model<wbr>ToObject</h3>
-					<div class="tsd-signature tsd-kind-icon">Model<wbr>ToObject&lt;T&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol"> extends </span><span class="tsd-signature-symbol">infer </span> U<span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> ? </span><span class="tsd-signature-type">_ModelToObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> : </span><span class="tsd-signature-type">_ModelToObject</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">&gt;</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.19/src/lib/serialization/schema.ts#L37">src/lib/serialization/schema.ts:37</a></li>
-						</ul>
-					</aside>
-					<div class="tsd-comment tsd-typography">
-						<div class="lead">
-							<p>Describes the mapping from Model types to the corresponding JSON output type.</p>
-						</div>
-					</div>
-					<h4 class="tsd-type-parameters-title">Type parameters</h4>
-					<ul class="tsd-type-parameters">
-						<li>
-							<h4>T</h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-parent-kind-namespace">
-					<a name="sometype" class="tsd-anchor"></a>
-					<h3>Some<wbr>Type</h3>
-					<div class="tsd-signature tsd-kind-icon">Some<wbr>Type<span class="tsd-signature-symbol">:</span> <a href="../interfaces/jsonoutput.arraytype.html" class="tsd-signature-type" data-tsd-kind="Interface">ArrayType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.conditionaltype.html" class="tsd-signature-type" data-tsd-kind="Interface">ConditionalType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.indexedaccesstype.html" class="tsd-signature-type" data-tsd-kind="Interface">IndexedAccessType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.inferredtype.html" class="tsd-signature-type" data-tsd-kind="Interface">InferredType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.intersectiontype.html" class="tsd-signature-type" data-tsd-kind="Interface">IntersectionType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.intrinsictype.html" class="tsd-signature-type" data-tsd-kind="Interface">IntrinsicType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.literaltype.html" class="tsd-signature-type" data-tsd-kind="Interface">LiteralType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.optionaltype.html" class="tsd-signature-type" data-tsd-kind="Interface">OptionalType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.predicatetype.html" class="tsd-signature-type" data-tsd-kind="Interface">PredicateType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.querytype.html" class="tsd-signature-type" data-tsd-kind="Interface">QueryType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.referencetype.html" class="tsd-signature-type" data-tsd-kind="Interface">ReferenceType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.reflectiontype.html" class="tsd-signature-type" data-tsd-kind="Interface">ReflectionType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.resttype.html" class="tsd-signature-type" data-tsd-kind="Interface">RestType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.tupletype.html" class="tsd-signature-type" data-tsd-kind="Interface">TupleType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.typeoperatortype.html" class="tsd-signature-type" data-tsd-kind="Interface">TypeOperatorType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.typeparametertype.html" class="tsd-signature-type" data-tsd-kind="Interface">TypeParameterType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.uniontype.html" class="tsd-signature-type" data-tsd-kind="Interface">UnionType</a><span class="tsd-signature-symbol"> | </span><a href="../interfaces/jsonoutput.unknowntype.html" class="tsd-signature-type" data-tsd-kind="Interface">UnknownType</a></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.19/src/lib/serialization/schema.ts#L222">src/lib/serialization/schema.ts:222</a></li>
-						</ul>
-					</aside>
-				</section>
-			</section>
 		</div>
 		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
 			<nav class="tsd-navigation primary">
@@ -189,133 +99,10 @@
 					<li class=" ">
 						<a href="../modules.html">Exports</a>
 					</li>
-					<li class="current tsd-kind-namespace">
-						<a href="jsonoutput.html">JSONOutput</a>
-					</li>
-					<li class=" tsd-kind-namespace">
-						<a href="reflectionkind.html">Reflection<wbr>Kind</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.arraytype.html" class="tsd-kind-icon">Array<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.comment.html" class="tsd-kind-icon">Comment</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.commenttag.html" class="tsd-kind-icon">Comment<wbr>Tag</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.conditionaltype.html" class="tsd-kind-icon">Conditional<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.containerreflection.html" class="tsd-kind-icon">Container<wbr>Reflection</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.declarationreflection.html" class="tsd-kind-icon">Declaration<wbr>Reflection</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.decorator.html" class="tsd-kind-icon">Decorator</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.indexedaccesstype.html" class="tsd-kind-icon">Indexed<wbr>Access<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.inferredtype.html" class="tsd-kind-icon">Inferred<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.intersectiontype.html" class="tsd-kind-icon">Intersection<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.intrinsictype.html" class="tsd-kind-icon">Intrinsic<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.literaltype.html" class="tsd-kind-icon">Literal<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.mappedtype.html" class="tsd-kind-icon">Mapped<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.namedtuplemembertype.html" class="tsd-kind-icon">Named<wbr>Tuple<wbr>Member<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.optionaltype.html" class="tsd-kind-icon">Optional<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.parameterreflection.html" class="tsd-kind-icon">Parameter<wbr>Reflection</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.predicatetype.html" class="tsd-kind-icon">Predicate<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.projectreflection.html" class="tsd-kind-icon">Project<wbr>Reflection</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.querytype.html" class="tsd-kind-icon">Query<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.referencereflection.html" class="tsd-kind-icon">Reference<wbr>Reflection</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.referencetype.html" class="tsd-kind-icon">Reference<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.reflection.html" class="tsd-kind-icon">Reflection</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.reflectioncategory.html" class="tsd-kind-icon">Reflection<wbr>Category</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.reflectionflags.html" class="tsd-kind-icon">Reflection<wbr>Flags</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.reflectiongroup.html" class="tsd-kind-icon">Reflection<wbr>Group</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.reflectiontype.html" class="tsd-kind-icon">Reflection<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.resttype.html" class="tsd-kind-icon">Rest<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.signaturereflection.html" class="tsd-kind-icon">Signature<wbr>Reflection</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.sourcereference.html" class="tsd-kind-icon">Source<wbr>Reference</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.templateliteraltype.html" class="tsd-kind-icon">Template<wbr>Literal<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.tupletype.html" class="tsd-kind-icon">Tuple<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.type.html" class="tsd-kind-icon">Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.typeoperatortype.html" class="tsd-kind-icon">Type<wbr>Operator<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.typeparameterreflection.html" class="tsd-kind-icon">Type<wbr>Parameter<wbr>Reflection</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.typeparametertype.html" class="tsd-kind-icon">Type<wbr>Parameter<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.uniontype.html" class="tsd-kind-icon">Union<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-namespace">
-						<a href="../interfaces/jsonoutput.unknowntype.html" class="tsd-kind-icon">Unknown<wbr>Type</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace tsd-has-type-parameter">
-						<a href="jsonoutput.html#modeltoobject" class="tsd-kind-icon">Model<wbr>ToObject</a>
-					</li>
-					<li class=" tsd-kind-type-alias tsd-parent-kind-namespace">
-						<a href="jsonoutput.html#sometype" class="tsd-kind-icon">Some<wbr>Type</a>
-					</li>
 				</ul>
 			</nav>
 		</div>

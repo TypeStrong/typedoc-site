@@ -224,6 +224,11 @@
 		},
 		"markedOptions": {
 			"description": "Specify the options passed to Marked, the Markdown parser used by TypeDoc"
+		},
+		"highlightTheme": {
+			"description": "Specifies the code highlighting theme.",
+			"type": "string",
+			"default": "light-plus"
 		}
 	}
 }
