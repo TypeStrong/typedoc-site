@@ -169,6 +169,14 @@ $ typedoc --theme <default|minimal|path/to/theme>
 Specify the path to the theme that should be used.
 TypeDoc includes the `default` and `minimal` themes, which may be specified without the full path to the theme.
 
+### highlightTheme
+
+```bash
+$ typedoc --highlightTheme dark-plus
+```
+
+Specify the Shiki theme to be used to highlight code snippets.
+
 ### markedOptions
 
 Specifies the options that are forwarded to [Marked](https://marked.js.org) when parsing doc comments.
