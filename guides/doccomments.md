@@ -27,20 +27,15 @@ export class DocumentMe {}
 
 ### Code Blocks
 
-TypeDoc supports code blocks in markdown and uses [HighlightJS](https://github.com/isagalaev/highlight.js)
-to provide syntax highlighting. HighlightJS will auto detect the language for code blocks, however
-you can also explicitly specify the language.
+TypeDoc supports code blocks in markdown and uses [Shiki](https://shiki.matsu.io/)
+to provide syntax highlighting.
 
 ````typescript
 /**
  * Code blocks are great for examples
  *
- * ```
- * <my-custom-element>Highlight JS will auto detect the language</my-custom-element>
- * ```
- *
  * ```typescript
- * // Or you can specify the language explicitly
+ * // run typedoc --help for a list of supported languages
  * const instance = new MyClass();
  * ```
  */
@@ -105,13 +100,13 @@ is not necessary because it will be read from the TypeScript types.
 function doSomething(target: any, text: string): number;
 ```
 
-### `@typeParam <param name>`
+### `@typeParam <param name>` or `@template <param name>`
 
 Documents a generic type parameter for the subsequent symbol specified by the param name.
 
 ```typescript
 /**
- * @typeParam T  Comment for type `T`.
+ * @typeParam T Comment for type `T`.
  * You may also use the template tag.
  * @template T comment for type `T`.
  */
@@ -124,7 +119,7 @@ Documents the return of the subsequent method
 
 ```ts
 /**
- * @returns      Comment for special return value.
+ * @returns Comment for special return value.
  */
 function doSomething(target: any, value: number): number;
 ```
@@ -133,7 +128,7 @@ function doSomething(target: any, value: number): number;
 
 Documents events triggered by the subsequent method
 
-### `@hidden and @ignore`
+### `@hidden` and `@ignore`
 
 Keeps the subsequent code from being documented.
 
@@ -166,6 +161,26 @@ Allows grouping reflections on a page. The `--categorizeByGroup`, `--defaultCate
  */
 function doSomething() {}
 ```
+
+### `@packageDocumentation`
+
+Used to specify a comment at the top of a source file as documenting that source file. See the Files section for more detail.
+
+### `@module`
+
+Used to override an entry point's name.
+
+### `@typedef`, `@callback`
+
+If your project uses TypeScript to type check JavaScript ([handbook](https://www.typescriptlang.org/docs/handbook/intro-to-js-ts.html)),
+then TypeDoc will also pick up on type aliases and interfaces defined with `@typedef` and `@callback`. See the
+[TypeScript handbook](https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html#typedef-callback-and-param) for details
+on writing these types.
+
+### `@public`, `@protected`, and `@private`
+
+These modifier tags are supported for overriding the visibility of documented items. Their use is discouraged as they do not conform to the TSDoc
+standard and they may be removed in a future release.
 
 ## Files
 

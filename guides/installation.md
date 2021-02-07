@@ -116,40 +116,6 @@ main().catch(console.error);
 
 ## Third-Party Tools
 
-Some great folks out there have created plugins so you can run TypeDoc with your favorite task runner.
-Plugins are available for Grunt, Gulp, and Webpack. All of them can be installed using `npm`.
-
-### Grunt
-
-<dl class="specs">
-    <dt>Name</dt><dd>grunt-typedoc</dd>
-    <dt>Website</dt><dd><a href="https://www.npmjs.org/package/grunt-typedoc/">https://www.npmjs.org/package/grunt-typedoc/</a></dd>
-    <dt>Author</dt><dd><a href="https://github.com/Bartvds">Bart van der Schoor</a></dd>
-</dl>
-
-You can install the plugin with the following command:
-
-```bash
-$ npm install --save-dev grunt-typedoc
-```
-
-Update the following snippet with your configuration and add it to your `gruntfile.js` file:
-
-```js
-grunt.loadNpmTasks("grunt-typedoc");
-grunt.initConfig({
-  typedoc: {
-    build: {
-      options: {
-        out: "docs/",
-        name: "My project title",
-      },
-      src: "src/**/*",
-    },
-  },
-});
-```
-
 ### Gulp
 
 <dl class="specs">
@@ -176,31 +142,4 @@ gulp.task("typedoc", function () {
     })
   );
 });
-```
-
-### Webpack
-
-<dl class="specs">
-    <dt>Name</dt><dd>typedoc-webpack-plugin</dd>
-    <dt>Website</dt><dd><a href="https://www.npmjs.com/package/typedoc-webpack-plugin">https://www.npmjs.com/package/typedoc-webpack-plugin</a></dd>
-    <dt>Author</dt><dd><a href="https://github.com/timsawyer">Tim Sawyer</a></dd>
-</dl>
-
-You can install the plugin with the following command:
-
-```bash
-$ npm install typedoc-webpack-plugin --save-dev
-```
-
-Update the following snippet with your configuration and add it to your Webpack config file:
-
-```js
-var TypedocWebpackPlugin = require("typedoc-webpack-plugin");
-
-// add to webpack plugins
-plugins: [
-  new TypedocWebpackPlugin({
-    theme: "./typedoc-theme/",
-  }),
-];
 ```
