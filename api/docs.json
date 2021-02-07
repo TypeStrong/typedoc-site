@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "TypeDoc Documentation - v0.20.21",
+	"name": "TypeDoc Documentation - v0.20.23",
 	"kind": 0,
 	"kindString": "Project",
 	"flags": {},
@@ -14466,6 +14466,9 @@
 					"flags": {
 						"isReadonly": true
 					},
+					"comment": {
+						"shortText": "The name of this reader so that it may be removed by plugins without the plugin\naccessing the instance performing the read. Multiple readers may have the same\nname."
+					},
 					"sources": [
 						{
 							"fileName": "src/lib/utils/options/readers/arguments.ts",
@@ -14491,6 +14494,10 @@
 					"kindString": "Property",
 					"flags": {
 						"isReadonly": true
+					},
+					"comment": {
+						"shortText": "Readers will be processed according to their priority.\nA higher priority indicates that the reader should be called *later* so that\nit can override options set by lower priority readers.",
+						"text": "Note that to preserve expected behavior, the argv reader must have both the lowest\npriority so that it may set the location of config files used by other readers and\nthe highest priority so that it can override settings from lower priority readers.\n"
 					},
 					"sources": [
 						{
@@ -14529,6 +14536,9 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
+							"comment": {
+								"shortText": "Read options from the reader's source and place them in the options parameter.\nOptions without a declared name may be treated as if they were declared with type\n[[ParameterType.Mixed]]. Options which have been declared must be converted to the\ncorrect type. As an alternative to doing this conversion in the reader,\nthe reader may use [[Options.setValue]], which will correctly convert values."
+							},
 							"parameters": [
 								{
 									"id": 892,
@@ -29070,6 +29080,9 @@
 					"flags": {
 						"isOptional": true
 					},
+					"comment": {
+						"shortText": "The reflection this reflection is a child of."
+					},
 					"sources": [
 						{
 							"fileName": "src/lib/models/reflections/parameter.ts",
@@ -39743,6 +39756,9 @@
 					"flags": {
 						"isOptional": true
 					},
+					"comment": {
+						"shortText": "The reflection this reflection is a child of."
+					},
 					"sources": [
 						{
 							"fileName": "src/lib/models/reflections/signature.ts",
@@ -40980,6 +40996,9 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
+					"comment": {
+						"shortText": "The name of this reader so that it may be removed by plugins without the plugin\naccessing the instance performing the read. Multiple readers may have the same\nname."
+					},
 					"sources": [
 						{
 							"fileName": "src/lib/utils/options/readers/tsconfig.ts",
@@ -41045,6 +41064,9 @@
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
+							"comment": {
+								"shortText": "Read options from the reader's source and place them in the options parameter.\nOptions without a declared name may be treated as if they were declared with type\n[[ParameterType.Mixed]]. Options which have been declared must be converted to the\ncorrect type. As an alternative to doing this conversion in the reader,\nthe reader may use [[Options.setValue]], which will correctly convert values."
+							},
 							"parameters": [
 								{
 									"id": 857,
@@ -41164,6 +41186,9 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
+					"comment": {
+						"shortText": "The name of this reader so that it may be removed by plugins without the plugin\naccessing the instance performing the read. Multiple readers may have the same\nname."
+					},
 					"sources": [
 						{
 							"fileName": "src/lib/utils/options/readers/typedoc.ts",
@@ -42065,6 +42090,9 @@
 					"kindString": "Property",
 					"flags": {
 						"isOptional": true
+					},
+					"comment": {
+						"shortText": "The reflection this reflection is a child of."
 					},
 					"sources": [
 						{
@@ -43295,6 +43323,9 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
+					"comment": {
+						"shortText": "The parameter type, used to convert user configuration values into the expected type.\nIf not set, the type will be a string."
+					},
 					"sources": [
 						{
 							"fileName": "src/lib/utils/options/declaration.ts",
@@ -43506,6 +43537,9 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
+					"comment": {
+						"shortText": "The parameter type, used to convert user configuration values into the expected type.\nIf not set, the type will be a string."
+					},
 					"sources": [
 						{
 							"fileName": "src/lib/utils/options/declaration.ts",
@@ -44119,6 +44153,9 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
+					"comment": {
+						"shortText": "The parameter type, used to convert user configuration values into the expected type.\nIf not set, the type will be a string."
+					},
 					"sources": [
 						{
 							"fileName": "src/lib/utils/options/declaration.ts",
@@ -44264,6 +44301,9 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
+					"comment": {
+						"shortText": "The parameter type, used to convert user configuration values into the expected type.\nIf not set, the type will be a string."
+					},
 					"sources": [
 						{
 							"fileName": "src/lib/utils/options/declaration.ts",
@@ -44536,6 +44576,9 @@
 					"kind": 1024,
 					"kindString": "Property",
 					"flags": {},
+					"comment": {
+						"shortText": "The parameter type, used to convert user configuration values into the expected type.\nIf not set, the type will be a string."
+					},
 					"sources": [
 						{
 							"fileName": "src/lib/utils/options/declaration.ts",
@@ -44935,6 +44978,9 @@
 					"kindString": "Property",
 					"flags": {
 						"isOptional": true
+					},
+					"comment": {
+						"shortText": "The parameter type, used to convert user configuration values into the expected type.\nIf not set, the type will be a string."
 					},
 					"sources": [
 						{

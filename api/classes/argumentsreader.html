@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>ArgumentsReader | TypeDoc Documentation - v0.20.21</title>
-	<meta name="description" content="Documentation for TypeDoc Documentation - v0.20.21">
+	<title>ArgumentsReader | TypeDoc Documentation - v0.20.23</title>
+	<meta name="description" content="Documentation for TypeDoc Documentation - v0.20.23">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">TypeDoc Documentation - v0.20.21</a>
+					<a href="../index.html" class="title">TypeDoc Documentation - v0.20.23</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -50,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">TypeDoc Documentation - v0.20.21</a>
+					<a href="../modules.html">TypeDoc Documentation - v0.20.23</a>
 				</li>
 				<li>
 					<a href="argumentsreader.html">ArgumentsReader</a>
@@ -123,7 +123,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.21/src/lib/utils/options/readers/arguments.ts#L11">src/lib/utils/options/readers/arguments.ts:11</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.23/src/lib/utils/options/readers/arguments.ts#L11">src/lib/utils/options/readers/arguments.ts:11</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -148,7 +148,7 @@
 					<div class="tsd-signature tsd-kind-icon">args<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.21/src/lib/utils/options/readers/arguments.ts#L11">src/lib/utils/options/readers/arguments.ts:11</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.23/src/lib/utils/options/readers/arguments.ts#L11">src/lib/utils/options/readers/arguments.ts:11</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -159,9 +159,16 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/optionsreader.html">OptionsReader</a>.<a href="../interfaces/optionsreader.html#name">name</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.21/src/lib/utils/options/readers/arguments.ts#L9">src/lib/utils/options/readers/arguments.ts:9</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.23/src/lib/utils/options/readers/arguments.ts#L9">src/lib/utils/options/readers/arguments.ts:9</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>The name of this reader so that it may be removed by plugins without the plugin
+								accessing the instance performing the read. Multiple readers may have the same
+							name.</p>
+						</div>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="priority" class="tsd-anchor"></a>
@@ -170,9 +177,19 @@
 					<aside class="tsd-sources">
 						<p>Implementation of <a href="../interfaces/optionsreader.html">OptionsReader</a>.<a href="../interfaces/optionsreader.html#priority">priority</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.21/src/lib/utils/options/readers/arguments.ts#L10">src/lib/utils/options/readers/arguments.ts:10</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.23/src/lib/utils/options/readers/arguments.ts#L10">src/lib/utils/options/readers/arguments.ts:10</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<div class="lead">
+							<p>Readers will be processed according to their priority.
+								A higher priority indicates that the reader should be called <em>later</em> so that
+							it can override options set by lower priority readers.</p>
+						</div>
+						<p>Note that to preserve expected behavior, the argv reader must have both the lowest
+							priority so that it may set the location of config files used by other readers and
+						the highest priority so that it can override settings from lower priority readers.</p>
+					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
@@ -188,9 +205,18 @@
 							<aside class="tsd-sources">
 								<p>Implementation of <a href="../interfaces/optionsreader.html">OptionsReader</a>.<a href="../interfaces/optionsreader.html#read">read</a></p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.21/src/lib/utils/options/readers/arguments.ts#L18">src/lib/utils/options/readers/arguments.ts:18</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.20.23/src/lib/utils/options/readers/arguments.ts#L18">src/lib/utils/options/readers/arguments.ts:18</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Read options from the reader&#39;s source and place them in the options parameter.
+										Options without a declared name may be treated as if they were declared with type
+										<a href="../enums/parametertype.html#mixed">ParameterType.Mixed</a>. Options which have been declared must be converted to the
+										correct type. As an alternative to doing this conversion in the reader,
+									the reader may use <a href="options.html#setvalue">Options.setValue</a>, which will correctly convert values.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
