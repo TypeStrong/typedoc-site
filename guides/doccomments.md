@@ -162,13 +162,9 @@ Allows grouping reflections on a page. The `--categorizeByGroup`, `--defaultCate
 function doSomething() {}
 ```
 
-### `@packageDocumentation`
-
-Used to specify a comment at the top of a source file as documenting that source file. See the Files section for more detail.
-
 ### `@module`
 
-Used to override an entry point's name.
+Used to specify a comment at the top of a source file as documenting that source file and optionally override an entry point's name. See the Files section for more detail.
 
 ### `@typedef`, `@callback`
 
@@ -185,31 +181,37 @@ standard and they may be removed in a future release.
 ## Files
 
 A doc comment describing a file must be placed before any code in the file.
-It should be annotated with the `@packageDocumentation` tag so that TypeDoc knows that it is intended to be documentation for the file itself.
+It should be annotated with the `@module` tag so that TypeDoc knows that it is intended to be documentation for the file itself.
 
-If TypeDoc guesses a module's name incorrectly, you can override it with the `@module` tag.
+If TypeDoc guesses a module's name incorrectly, you can override it with the `@module` by specifying text after the tag name.
 
 ```typescript
 // file1.ts
 /**
  * This is the doc comment for file1.ts
- * @packageDocumentation
+ *
+ * Specify this is a module comment and rename it to my-module:
  * @module my-module
+ * Specify this is a module comment without renaming it:
+ * @module
  */
-
-/**
- * This is a doc comment for "someVar".
- */
-const someVar = "value";
+import * as lib from "lib";
 
 // file2.ts
 /**
  * This is *not* a doc comment for the file, it is a doc comment for the import.
- * Include the packageDocumentation tag to mark it as a file comment.
+ * Include the module tag to mark it as a file comment.
  */
 import * as lib from "lib";
 
-// file3.ts (legacy, prefer @packageDocumentation)
+// file3.ts (legacy, prefer @module)
+/**
+ * File doc comment for file3.ts
+ * @packageDocumentation
+ */
+import * as lib from "lib";
+
+// file4.ts (legacy, prefer @module)
 /**
  * File doc comment for file3.ts
  */
