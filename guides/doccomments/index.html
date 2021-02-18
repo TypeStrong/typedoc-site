@@ -128,7 +128,7 @@ is not necessary because it will be read from the TypeScript types.</p>
 <pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * @ignore<br> */</span><br><span class="token keyword">function</span> <span class="token function">doSomething</span><span class="token punctuation">(</span>target<span class="token operator">:</span> <span class="token builtin">any</span><span class="token punctuation">,</span> value<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span></code></pre>
 <h3 id="%40internal"><code>@internal</code></h3>
 <p>Marks the following code as internal.
-If the <code>--excludeExternal</code> option is passed, TypeDoc will not document the given code.</p>
+If the <code>--excludeInternal</code> option is passed, TypeDoc will not document the given code.</p>
 <pre class="language-typescript"><code class="language-typescript"><span class="token comment">/** @internal */</span><br><span class="token keyword">export</span> <span class="token keyword">const</span> secret <span class="token operator">=</span> <span class="token number">1122</span><span class="token punctuation">;</span></code></pre>
 <h3 id="%40category"><code>@category</code></h3>
 <p>Allows grouping reflections on a page. The <code>--categorizeByGroup</code>, <code>--defaultCategory</code>, and <code>--categoryOrder</code> allow more granular control.</p>
