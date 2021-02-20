@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "TypeDoc Documentation - v0.20.25",
+	"name": "TypeDoc Documentation - v0.20.26",
 	"kind": 0,
 	"kindString": "Project",
 	"flags": {},
@@ -163,7 +163,9 @@
 							"name": "shortText",
 							"kind": 1024,
 							"kindString": "Property",
-							"flags": {},
+							"flags": {
+								"isOptional": true
+							},
 							"comment": {
 								"shortText": "The abstract of the comment. TypeDoc interprets the first paragraph of a comment\nas the abstract."
 							},
@@ -193,7 +195,9 @@
 							"name": "tags",
 							"kind": 1024,
 							"kindString": "Property",
-							"flags": {},
+							"flags": {
+								"isOptional": true
+							},
 							"comment": {
 								"shortText": "All associated tags."
 							},
@@ -228,7 +232,9 @@
 							"name": "text",
 							"kind": 1024,
 							"kindString": "Property",
-							"flags": {},
+							"flags": {
+								"isOptional": true
+							},
 							"comment": {
 								"shortText": "The full body text of the comment. Excludes the [[shortText]]."
 							},
