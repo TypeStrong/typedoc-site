@@ -47,7 +47,7 @@ $ typedoc --tsconfig </path/to/tsconfig.json>
 
 Specify a `tsconfig.json` file that options should be read from. If not specified TypeDoc will look for `tsconfig.json` in the current directory and parent directories like `tsc` does.
 
-When TypeDoc loads a `tsconfig.json` file, it will read options declared under the `typedocOptions` key and take the `tsconfig.json`'s input files (as defined by `files` or `include`/`exclude`) as the input files.
+When TypeDoc loads a `tsconfig.json` file, it also will read TypeDoc options declared under the `typedocOptions` key.
 
 ## Input Options
 
