@@ -97,7 +97,7 @@ The JSON file should return an object whose keys are the option names. For examp
 <h3 id="tsconfig">tsconfig</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --tsconfig <span class="token operator">&lt;</span>/path/to/tsconfig.json<span class="token operator">></span></code></pre>
 <p>Specify a <code>tsconfig.json</code> file that options should be read from. If not specified TypeDoc will look for <code>tsconfig.json</code> in the current directory and parent directories like <code>tsc</code> does.</p>
-<p>When TypeDoc loads a <code>tsconfig.json</code> file, it will read options declared under the <code>typedocOptions</code> key and take the <code>tsconfig.json</code>'s input files (as defined by <code>files</code> or <code>include</code>/<code>exclude</code>) as the input files.</p>
+<p>When TypeDoc loads a <code>tsconfig.json</code> file, it also will read TypeDoc options declared under the <code>typedocOptions</code> key.</p>
 <h2 id="input-options">Input Options</h2>
 <p>These options control what files TypeDoc processes to generate documentation and how the files are processed.</p>
 <h3 id="entrypoints">entryPoints</h3>
