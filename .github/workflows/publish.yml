@@ -34,6 +34,7 @@ jobs:
           git pull
           git checkout $(git describe --tags --abbrev=0)
           npm ci
+          node scripts/set_strict.js false
           npm run build
           node bin/typedoc --options ../typedoc.json --gitRevision $(git describe --tags --abbrev=0)
           cd ..
