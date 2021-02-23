@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "TypeDoc Documentation - v0.20.27",
+	"name": "TypeDoc Documentation - v0.20.28",
 	"kind": 0,
 	"kindString": "Project",
 	"flags": {},
@@ -12469,7 +12469,9 @@
 					"name": "_listenId",
 					"kind": 262144,
 					"kindString": "Accessor",
-					"flags": {},
+					"flags": {
+						"isPrivate": true
+					},
 					"comment": {
 						"shortText": "A unique id that identifies this instance."
 					},
@@ -16790,7 +16792,9 @@
 					"name": "_listenId",
 					"kind": 262144,
 					"kindString": "Accessor",
-					"flags": {},
+					"flags": {
+						"isPrivate": true
+					},
 					"comment": {
 						"shortText": "A unique id that identifies this instance."
 					},
@@ -21542,7 +21546,9 @@
 					"name": "_listenId",
 					"kind": 262144,
 					"kindString": "Accessor",
-					"flags": {},
+					"flags": {
+						"isPrivate": true
+					},
 					"comment": {
 						"shortText": "A unique id that identifies this instance."
 					},
@@ -23753,7 +23759,9 @@
 					"name": "_listenId",
 					"kind": 262144,
 					"kindString": "Accessor",
-					"flags": {},
+					"flags": {
+						"isPrivate": true
+					},
 					"comment": {
 						"shortText": "A unique id that identifies this instance."
 					},
@@ -37451,7 +37459,9 @@
 					"name": "_listenId",
 					"kind": 262144,
 					"kindString": "Accessor",
-					"flags": {},
+					"flags": {
+						"isPrivate": true
+					},
 					"comment": {
 						"shortText": "A unique id that identifies this instance."
 					},
