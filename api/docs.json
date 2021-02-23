@@ -26435,8 +26435,81 @@
 										"text": "The option declaration that should be added.\n"
 									},
 									"type": {
-										"type": "intrinsic",
-										"name": "never"
+										"type": "union",
+										"types": [
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 899,
+														"name": "StringDeclarationOption"
+													}
+												],
+												"name": "Readonly"
+											},
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 909,
+														"name": "NumberDeclarationOption"
+													}
+												],
+												"name": "Readonly"
+											},
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 920,
+														"name": "BooleanDeclarationOption"
+													}
+												],
+												"name": "Readonly"
+											},
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 934,
+														"name": "MixedDeclarationOption"
+													}
+												],
+												"name": "Readonly"
+											},
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 943,
+														"typeArguments": [
+															{
+																"type": "intrinsic",
+																"name": "unknown"
+															}
+														],
+														"name": "MapDeclarationOption"
+													}
+												],
+												"name": "Readonly"
+											},
+											{
+												"type": "reference",
+												"typeArguments": [
+													{
+														"type": "reference",
+														"id": 925,
+														"name": "ArrayDeclarationOption"
+													}
+												],
+												"name": "Readonly"
+											}
+										]
 									}
 								}
 							],
@@ -27317,7 +27390,7 @@
 									"flags": {},
 									"type": {
 										"type": "intrinsic",
-										"name": "never"
+										"name": "string"
 									}
 								}
 							],
@@ -27562,7 +27635,7 @@
 									"flags": {},
 									"type": {
 										"type": "intrinsic",
-										"name": "never"
+										"name": "string"
 									}
 								}
 							],
@@ -27801,7 +27874,7 @@
 									"flags": {},
 									"type": {
 										"type": "intrinsic",
-										"name": "never"
+										"name": "string"
 									}
 								}
 							],
@@ -28490,7 +28563,7 @@
 									"flags": {},
 									"type": {
 										"type": "intrinsic",
-										"name": "never"
+										"name": "string"
 									}
 								},
 								{
@@ -28501,7 +28574,7 @@
 									"flags": {},
 									"type": {
 										"type": "intrinsic",
-										"name": "never"
+										"name": "unknown"
 									}
 								}
 							],
