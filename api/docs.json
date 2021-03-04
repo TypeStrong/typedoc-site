@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "TypeDoc Documentation - v0.20.28",
+	"name": "TypeDoc Documentation - v0.20.29",
 	"kind": 0,
 	"kindString": "Project",
 	"flags": {},
@@ -1574,93 +1574,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -1798,93 +1713,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -2044,93 +1874,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -2282,93 +2027,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -2602,93 +2262,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -2718,7 +2293,7 @@
 							"typeArguments": [
 								{
 									"type": "reference",
-									"id": 1371,
+									"id": 1422,
 									"name": "M.Decorator"
 								},
 								{
@@ -3353,93 +2928,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -4215,93 +3705,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -4441,93 +3846,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -5706,93 +5026,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							},
@@ -5950,93 +5185,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							},
@@ -6201,93 +5351,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							},
@@ -6475,93 +5540,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							},
@@ -7574,7 +6554,7 @@
 									"typeArguments": [
 										{
 											"type": "reference",
-											"id": 1384,
+											"id": 1331,
 											"name": "M.ReflectionFlags"
 										},
 										{
@@ -7582,7 +6562,7 @@
 											"typeArguments": [
 												{
 													"type": "reference",
-													"id": 1384,
+													"id": 1331,
 													"name": "M.ReflectionFlags"
 												}
 											],
@@ -8169,93 +7149,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -8288,93 +7183,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -8534,93 +7344,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -8682,93 +7407,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -9625,93 +8265,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -9917,93 +8472,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -10098,93 +8568,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -10217,93 +8602,8 @@
 									},
 									{
 										"type": "reference",
-										"id": 1100,
-										"name": "ArrayType"
-									},
-									{
-										"type": "reference",
-										"id": 1103,
-										"name": "ConditionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1109,
-										"name": "IndexedAccessType"
-									},
-									{
-										"type": "reference",
-										"id": 1113,
-										"name": "InferredType"
-									},
-									{
-										"type": "reference",
-										"id": 1116,
-										"name": "IntersectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1119,
-										"name": "IntrinsicType"
-									},
-									{
-										"type": "reference",
-										"id": 1144,
-										"name": "LiteralType"
-									},
-									{
-										"type": "reference",
-										"id": 1122,
-										"name": "OptionalType"
-									},
-									{
-										"type": "reference",
-										"id": 1125,
-										"name": "PredicateType"
-									},
-									{
-										"type": "reference",
-										"id": 1130,
-										"name": "QueryType"
-									},
-									{
-										"type": "reference",
-										"id": 1133,
-										"name": "ReferenceType"
-									},
-									{
-										"type": "reference",
-										"id": 1138,
-										"name": "ReflectionType"
-									},
-									{
-										"type": "reference",
-										"id": 1141,
-										"name": "RestType"
-									},
-									{
-										"type": "reference",
-										"id": 1150,
-										"name": "TupleType"
-									},
-									{
-										"type": "reference",
-										"id": 1170,
-										"name": "TypeOperatorType"
-									},
-									{
-										"type": "reference",
-										"id": 1174,
-										"name": "TypeParameterType"
-									},
-									{
-										"type": "reference",
-										"id": 1179,
-										"name": "UnionType"
-									},
-									{
-										"type": "reference",
-										"id": 1182,
-										"name": "UnknownType"
+										"id": 1099,
+										"name": "SomeType"
 									}
 								]
 							}
@@ -11075,14 +9375,14 @@
 			]
 		},
 		{
-			"id": 794,
+			"id": 787,
 			"name": "ParameterHint",
 			"kind": 4,
 			"kindString": "Enumeration",
 			"flags": {},
 			"children": [
 				{
-					"id": 796,
+					"id": 789,
 					"name": "Directory",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11097,7 +9397,7 @@
 					"defaultValue": "1"
 				},
 				{
-					"id": 795,
+					"id": 788,
 					"name": "File",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11117,8 +9417,8 @@
 					"title": "Enumeration members",
 					"kind": 16,
 					"children": [
-						796,
-						795
+						789,
+						788
 					]
 				}
 			],
@@ -11131,14 +9431,14 @@
 			]
 		},
 		{
-			"id": 797,
+			"id": 790,
 			"name": "ParameterType",
 			"kind": 4,
 			"kindString": "Enumeration",
 			"flags": {},
 			"children": [
 				{
-					"id": 803,
+					"id": 796,
 					"name": "Array",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11153,7 +9453,7 @@
 					"defaultValue": "5"
 				},
 				{
-					"id": 800,
+					"id": 793,
 					"name": "Boolean",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11168,7 +9468,7 @@
 					"defaultValue": "2"
 				},
 				{
-					"id": 801,
+					"id": 794,
 					"name": "Map",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11183,7 +9483,7 @@
 					"defaultValue": "3"
 				},
 				{
-					"id": 802,
+					"id": 795,
 					"name": "Mixed",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11198,7 +9498,7 @@
 					"defaultValue": "4"
 				},
 				{
-					"id": 799,
+					"id": 792,
 					"name": "Number",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11213,7 +9513,7 @@
 					"defaultValue": "1"
 				},
 				{
-					"id": 798,
+					"id": 791,
 					"name": "String",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11233,12 +9533,12 @@
 					"title": "Enumeration members",
 					"kind": 16,
 					"children": [
-						803,
-						800,
-						801,
-						802,
-						799,
-						798
+						796,
+						793,
+						794,
+						795,
+						792,
+						791
 					]
 				}
 			],
@@ -11926,14 +10226,14 @@
 			]
 		},
 		{
-			"id": 1375,
+			"id": 1322,
 			"name": "TraverseProperty",
 			"kind": 4,
 			"kindString": "Enumeration",
 			"flags": {},
 			"children": [
 				{
-					"id": 1376,
+					"id": 1323,
 					"name": "Children",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11948,7 +10248,7 @@
 					"defaultValue": "0"
 				},
 				{
-					"id": 1382,
+					"id": 1329,
 					"name": "GetSignature",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11963,7 +10263,7 @@
 					"defaultValue": "6"
 				},
 				{
-					"id": 1381,
+					"id": 1328,
 					"name": "IndexSignature",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11978,7 +10278,7 @@
 					"defaultValue": "5"
 				},
 				{
-					"id": 1377,
+					"id": 1324,
 					"name": "Parameters",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -11993,7 +10293,7 @@
 					"defaultValue": "1"
 				},
 				{
-					"id": 1383,
+					"id": 1330,
 					"name": "SetSignature",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -12008,7 +10308,7 @@
 					"defaultValue": "7"
 				},
 				{
-					"id": 1380,
+					"id": 1327,
 					"name": "Signatures",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -12023,7 +10323,7 @@
 					"defaultValue": "4"
 				},
 				{
-					"id": 1378,
+					"id": 1325,
 					"name": "TypeLiteral",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -12038,7 +10338,7 @@
 					"defaultValue": "2"
 				},
 				{
-					"id": 1379,
+					"id": 1326,
 					"name": "TypeParameter",
 					"kind": 16,
 					"kindString": "Enumeration member",
@@ -12058,14 +10358,14 @@
 					"title": "Enumeration members",
 					"kind": 16,
 					"children": [
-						1376,
-						1382,
-						1381,
-						1377,
-						1383,
-						1380,
-						1378,
-						1379
+						1323,
+						1329,
+						1328,
+						1324,
+						1330,
+						1327,
+						1325,
+						1326
 					]
 				}
 			],
@@ -12699,7 +10999,7 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"id": 804,
+												"id": 848,
 												"name": "TypeDocOptions"
 											}
 										],
@@ -14385,7 +12685,7 @@
 			]
 		},
 		{
-			"id": 882,
+			"id": 829,
 			"name": "ArgumentsReader",
 			"kind": 128,
 			"kindString": "Class",
@@ -14395,21 +12695,21 @@
 			},
 			"children": [
 				{
-					"id": 883,
+					"id": 830,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 884,
+							"id": 831,
 							"name": "new ArgumentsReader",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 885,
+									"id": 832,
 									"name": "priority",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14420,7 +12720,7 @@
 									}
 								},
 								{
-									"id": 886,
+									"id": 833,
 									"name": "args",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14437,14 +12737,14 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 882,
+								"id": 829,
 								"name": "ArgumentsReader"
 							}
 						}
 					]
 				},
 				{
-					"id": 889,
+					"id": 836,
 					"name": "args",
 					"kind": 1024,
 					"kindString": "Property",
@@ -14467,7 +12767,7 @@
 					}
 				},
 				{
-					"id": 887,
+					"id": 834,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -14491,12 +12791,12 @@
 					"defaultValue": "\"arguments\"",
 					"implementationOf": {
 						"type": "reference",
-						"id": 789,
+						"id": 843,
 						"name": "OptionsReader.name"
 					}
 				},
 				{
-					"id": 888,
+					"id": 835,
 					"name": "priority",
 					"kind": 1024,
 					"kindString": "Property",
@@ -14520,12 +12820,12 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 788,
+						"id": 842,
 						"name": "OptionsReader.priority"
 					}
 				},
 				{
-					"id": 890,
+					"id": 837,
 					"name": "read",
 					"kind": 2048,
 					"kindString": "Method",
@@ -14539,7 +12839,7 @@
 					],
 					"signatures": [
 						{
-							"id": 891,
+							"id": 838,
 							"name": "read",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -14549,7 +12849,7 @@
 							},
 							"parameters": [
 								{
-									"id": 892,
+									"id": 839,
 									"name": "container",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14561,7 +12861,7 @@
 									}
 								},
 								{
-									"id": 893,
+									"id": 840,
 									"name": "logger",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -14578,14 +12878,14 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 791,
+								"id": 845,
 								"name": "OptionsReader.read"
 							}
 						}
 					],
 					"implementationOf": {
 						"type": "reference",
-						"id": 790,
+						"id": 844,
 						"name": "OptionsReader.read"
 					}
 				}
@@ -14595,23 +12895,23 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						883
+						830
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						889,
-						887,
-						888
+						836,
+						834,
+						835
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						890
+						837
 					]
 				}
 			],
@@ -14625,7 +12925,7 @@
 			"implementedTypes": [
 				{
 					"type": "reference",
-					"id": 787,
+					"id": 841,
 					"name": "OptionsReader"
 				}
 			]
@@ -14961,7 +13261,7 @@
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"id": 1371,
+									"id": 1422,
 									"name": "Decorator"
 								}
 							}
@@ -14988,7 +13288,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1384,
+						"id": 1331,
 						"name": "ReflectionFlags"
 					},
 					"defaultValue": "...",
@@ -15790,128 +14090,8 @@
 										"types": [
 											{
 												"type": "reference",
-												"id": 1272,
-												"name": "Project"
-											},
-											{
-												"type": "reference",
-												"id": 1273,
-												"name": "Module"
-											},
-											{
-												"type": "reference",
-												"id": 1274,
-												"name": "Namespace"
-											},
-											{
-												"type": "reference",
-												"id": 1275,
-												"name": "Enum"
-											},
-											{
-												"type": "reference",
-												"id": 1276,
-												"name": "EnumMember"
-											},
-											{
-												"type": "reference",
-												"id": 1277,
-												"name": "Variable"
-											},
-											{
-												"type": "reference",
-												"id": 1278,
-												"name": "Function"
-											},
-											{
-												"type": "reference",
-												"id": 1279,
-												"name": "Class"
-											},
-											{
-												"type": "reference",
-												"id": 1280,
-												"name": "Interface"
-											},
-											{
-												"type": "reference",
-												"id": 1281,
-												"name": "Constructor"
-											},
-											{
-												"type": "reference",
-												"id": 1282,
-												"name": "Property"
-											},
-											{
-												"type": "reference",
-												"id": 1283,
-												"name": "Method"
-											},
-											{
-												"type": "reference",
-												"id": 1284,
-												"name": "CallSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1285,
-												"name": "IndexSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1286,
-												"name": "ConstructorSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1287,
-												"name": "Parameter"
-											},
-											{
-												"type": "reference",
-												"id": 1288,
-												"name": "TypeLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1289,
-												"name": "TypeParameter"
-											},
-											{
-												"type": "reference",
-												"id": 1290,
-												"name": "Accessor"
-											},
-											{
-												"type": "reference",
-												"id": 1291,
-												"name": "GetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1292,
-												"name": "SetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1293,
-												"name": "ObjectLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1294,
-												"name": "TypeAlias"
-											},
-											{
-												"type": "reference",
-												"id": 1295,
-												"name": "Event"
-											},
-											{
-												"type": "reference",
-												"id": 1296,
-												"name": "Reference"
+												"id": 1271,
+												"name": "ReflectionKind"
 											},
 											{
 												"type": "array",
@@ -19010,7 +17190,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1336,
+						"id": 1387,
 						"name": "TypeParameterContainer.anchor"
 					}
 				},
@@ -19133,7 +17313,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1331,
+						"id": 1382,
 						"name": "TypeParameterContainer.comment"
 					}
 				},
@@ -19175,7 +17355,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1338,
+						"id": 1389,
 						"name": "TypeParameterContainer.cssClasses"
 					}
 				},
@@ -19220,7 +17400,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1334,
+						"id": 1385,
 						"name": "TypeParameterContainer.decorates"
 					}
 				},
@@ -19253,7 +17433,7 @@
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"id": 1371,
+									"id": 1422,
 									"name": "Decorator"
 								}
 							}
@@ -19266,7 +17446,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1333,
+						"id": 1384,
 						"name": "TypeParameterContainer.decorators"
 					}
 				},
@@ -19388,7 +17568,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1384,
+						"id": 1331,
 						"name": "ReflectionFlags"
 					},
 					"defaultValue": "...",
@@ -19399,7 +17579,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1329,
+						"id": 1380,
 						"name": "TypeParameterContainer.flags"
 					}
 				},
@@ -19515,7 +17695,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1337,
+						"id": 1388,
 						"name": "TypeParameterContainer.hasOwnDocument"
 					}
 				},
@@ -19546,7 +17726,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1324,
+						"id": 1375,
 						"name": "TypeParameterContainer.id"
 					}
 				},
@@ -19747,7 +17927,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1327,
+						"id": 1378,
 						"name": "TypeParameterContainer.kind"
 					}
 				},
@@ -19789,7 +17969,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1328,
+						"id": 1379,
 						"name": "TypeParameterContainer.kindString"
 					}
 				},
@@ -19820,7 +18000,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1325,
+						"id": 1376,
 						"name": "TypeParameterContainer.name"
 					}
 				},
@@ -19851,7 +18031,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1326,
+						"id": 1377,
 						"name": "TypeParameterContainer.originalName"
 					}
 				},
@@ -19927,7 +18107,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1330,
+						"id": 1381,
 						"name": "TypeParameterContainer.parent"
 					}
 				},
@@ -20042,7 +18222,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1332,
+						"id": 1383,
 						"name": "TypeParameterContainer.sources"
 					}
 				},
@@ -20146,7 +18326,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1323,
+						"id": 1374,
 						"name": "TypeParameterContainer.typeParameters"
 					}
 				},
@@ -20188,7 +18368,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1335,
+						"id": 1386,
 						"name": "TypeParameterContainer.url"
 					}
 				},
@@ -20262,7 +18442,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1361,
+								"id": 1412,
 								"name": "TypeParameterContainer.findReflectionByName"
 							}
 						}
@@ -20274,7 +18454,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1360,
+						"id": 1411,
 						"name": "TypeParameterContainer.findReflectionByName"
 					}
 				},
@@ -20312,7 +18492,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1350,
+								"id": 1401,
 								"name": "TypeParameterContainer.getAlias"
 							}
 						}
@@ -20324,7 +18504,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1349,
+						"id": 1400,
 						"name": "TypeParameterContainer.getAlias"
 					}
 				},
@@ -20429,7 +18609,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1356,
+								"id": 1407,
 								"name": "TypeParameterContainer.getChildByName"
 							}
 						}
@@ -20441,7 +18621,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1355,
+						"id": 1406,
 						"name": "TypeParameterContainer.getChildByName"
 					}
 				},
@@ -20560,7 +18740,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1343,
+								"id": 1394,
 								"name": "TypeParameterContainer.getFullName"
 							}
 						}
@@ -20572,7 +18752,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1342,
+						"id": 1393,
 						"name": "TypeParameterContainer.getFullName"
 					}
 				},
@@ -20646,7 +18826,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1352,
+								"id": 1403,
 								"name": "TypeParameterContainer.hasComment"
 							}
 						}
@@ -20658,7 +18838,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1351,
+						"id": 1402,
 						"name": "TypeParameterContainer.hasComment"
 					}
 				},
@@ -20693,7 +18873,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1354,
+								"id": 1405,
 								"name": "TypeParameterContainer.hasGetterOrSetter"
 							}
 						}
@@ -20705,7 +18885,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1353,
+						"id": 1404,
 						"name": "TypeParameterContainer.hasGetterOrSetter"
 					}
 				},
@@ -20749,7 +18929,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1359,
+								"id": 1410,
 								"name": "TypeParameterContainer.isProject"
 							}
 						}
@@ -20761,7 +18941,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1358,
+						"id": 1409,
 						"name": "TypeParameterContainer.isProject"
 					}
 				},
@@ -20800,128 +18980,8 @@
 										"types": [
 											{
 												"type": "reference",
-												"id": 1272,
-												"name": "Project"
-											},
-											{
-												"type": "reference",
-												"id": 1273,
-												"name": "Module"
-											},
-											{
-												"type": "reference",
-												"id": 1274,
-												"name": "Namespace"
-											},
-											{
-												"type": "reference",
-												"id": 1275,
-												"name": "Enum"
-											},
-											{
-												"type": "reference",
-												"id": 1276,
-												"name": "EnumMember"
-											},
-											{
-												"type": "reference",
-												"id": 1277,
-												"name": "Variable"
-											},
-											{
-												"type": "reference",
-												"id": 1278,
-												"name": "Function"
-											},
-											{
-												"type": "reference",
-												"id": 1279,
-												"name": "Class"
-											},
-											{
-												"type": "reference",
-												"id": 1280,
-												"name": "Interface"
-											},
-											{
-												"type": "reference",
-												"id": 1281,
-												"name": "Constructor"
-											},
-											{
-												"type": "reference",
-												"id": 1282,
-												"name": "Property"
-											},
-											{
-												"type": "reference",
-												"id": 1283,
-												"name": "Method"
-											},
-											{
-												"type": "reference",
-												"id": 1284,
-												"name": "CallSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1285,
-												"name": "IndexSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1286,
-												"name": "ConstructorSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1287,
-												"name": "Parameter"
-											},
-											{
-												"type": "reference",
-												"id": 1288,
-												"name": "TypeLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1289,
-												"name": "TypeParameter"
-											},
-											{
-												"type": "reference",
-												"id": 1290,
-												"name": "Accessor"
-											},
-											{
-												"type": "reference",
-												"id": 1291,
-												"name": "GetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1292,
-												"name": "SetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1293,
-												"name": "ObjectLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1294,
-												"name": "TypeAlias"
-											},
-											{
-												"type": "reference",
-												"id": 1295,
-												"name": "Event"
-											},
-											{
-												"type": "reference",
-												"id": 1296,
-												"name": "Reference"
+												"id": 1271,
+												"name": "ReflectionKind"
 											},
 											{
 												"type": "array",
@@ -20946,7 +19006,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1340,
+								"id": 1391,
 								"name": "TypeParameterContainer.kindOf"
 							}
 						}
@@ -20958,7 +19018,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1339,
+						"id": 1390,
 						"name": "TypeParameterContainer.kindOf"
 					}
 				},
@@ -21022,7 +19082,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1346,
+								"id": 1397,
 								"name": "TypeParameterContainer.setFlag"
 							}
 						}
@@ -21034,7 +19094,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1345,
+						"id": 1396,
 						"name": "TypeParameterContainer.setFlag"
 					}
 				},
@@ -21107,7 +19167,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1367,
+								"id": 1418,
 								"name": "TypeParameterContainer.toString"
 							}
 						}
@@ -21119,7 +19179,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1366,
+						"id": 1417,
 						"name": "TypeParameterContainer.toString"
 					}
 				},
@@ -21174,7 +19234,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1369,
+								"id": 1420,
 								"name": "TypeParameterContainer.toStringHierarchy"
 							}
 						}
@@ -21186,7 +19246,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1368,
+						"id": 1419,
 						"name": "TypeParameterContainer.toStringHierarchy"
 					}
 				},
@@ -21241,7 +19301,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1364,
+								"id": 1415,
 								"name": "TypeParameterContainer.traverse"
 							}
 						}
@@ -21253,7 +19313,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1363,
+						"id": 1414,
 						"name": "TypeParameterContainer.traverse"
 					}
 				}
@@ -21361,7 +19421,7 @@
 				},
 				{
 					"type": "reference",
-					"id": 1322,
+					"id": 1373,
 					"name": "TypeParameterContainer"
 				}
 			]
@@ -25906,81 +23966,15 @@
 								"name": "string"
 							},
 							{
-								"type": "union",
-								"types": [
+								"type": "reference",
+								"typeArguments": [
 									{
 										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 899,
-												"name": "StringDeclarationOption"
-											}
-										],
-										"name": "Readonly"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 909,
-												"name": "NumberDeclarationOption"
-											}
-										],
-										"name": "Readonly"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 920,
-												"name": "BooleanDeclarationOption"
-											}
-										],
-										"name": "Readonly"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 934,
-												"name": "MixedDeclarationOption"
-											}
-										],
-										"name": "Readonly"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 943,
-												"typeArguments": [
-													{
-														"type": "intrinsic",
-														"name": "unknown"
-													}
-												],
-												"name": "MapDeclarationOption"
-											}
-										],
-										"name": "Readonly"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 925,
-												"name": "ArrayDeclarationOption"
-											}
-										],
-										"name": "Readonly"
+										"id": 894,
+										"name": "DeclarationOption"
 									}
-								]
+								],
+								"name": "Readonly"
 							}
 						],
 						"name": "Map"
@@ -26082,7 +24076,7 @@
 						"type": "array",
 						"elementType": {
 							"type": "reference",
-							"id": 787,
+							"id": 841,
 							"name": "OptionsReader"
 						}
 					},
@@ -26177,177 +24171,13 @@
 									"kindString": "Type parameter",
 									"flags": {},
 									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "literal",
-												"value": "logger"
-											},
-											{
-												"type": "literal",
-												"value": "options"
-											},
-											{
-												"type": "literal",
-												"value": "tsconfig"
-											},
-											{
-												"type": "literal",
-												"value": "entryPoints"
-											},
-											{
-												"type": "literal",
-												"value": "exclude"
-											},
-											{
-												"type": "literal",
-												"value": "externalPattern"
-											},
-											{
-												"type": "literal",
-												"value": "excludeExternals"
-											},
-											{
-												"type": "literal",
-												"value": "excludePrivate"
-											},
-											{
-												"type": "literal",
-												"value": "excludeProtected"
-											},
-											{
-												"type": "literal",
-												"value": "excludeNotDocumented"
-											},
-											{
-												"type": "literal",
-												"value": "excludeInternal"
-											},
-											{
-												"type": "literal",
-												"value": "disableSources"
-											},
-											{
-												"type": "literal",
-												"value": "includes"
-											},
-											{
-												"type": "literal",
-												"value": "media"
-											},
-											{
-												"type": "literal",
-												"value": "emit"
-											},
-											{
-												"type": "literal",
-												"value": "watch"
-											},
-											{
-												"type": "literal",
-												"value": "preserveWatchOutput"
-											},
-											{
-												"type": "literal",
-												"value": "out"
-											},
-											{
-												"type": "literal",
-												"value": "json"
-											},
-											{
-												"type": "literal",
-												"value": "theme"
-											},
-											{
-												"type": "literal",
-												"value": "name"
-											},
-											{
-												"type": "literal",
-												"value": "includeVersion"
-											},
-											{
-												"type": "literal",
-												"value": "excludeTags"
-											},
-											{
-												"type": "literal",
-												"value": "readme"
-											},
-											{
-												"type": "literal",
-												"value": "defaultCategory"
-											},
-											{
-												"type": "literal",
-												"value": "categoryOrder"
-											},
-											{
-												"type": "literal",
-												"value": "categorizeByGroup"
-											},
-											{
-												"type": "literal",
-												"value": "gitRevision"
-											},
-											{
-												"type": "literal",
-												"value": "gitRemote"
-											},
-											{
-												"type": "literal",
-												"value": "gaID"
-											},
-											{
-												"type": "literal",
-												"value": "gaSite"
-											},
-											{
-												"type": "literal",
-												"value": "hideGenerator"
-											},
-											{
-												"type": "literal",
-												"value": "toc"
-											},
-											{
-												"type": "literal",
-												"value": "disableOutputCheck"
-											},
-											{
-												"type": "literal",
-												"value": "help"
-											},
-											{
-												"type": "literal",
-												"value": "version"
-											},
-											{
-												"type": "literal",
-												"value": "showConfig"
-											},
-											{
-												"type": "literal",
-												"value": "plugin"
-											},
-											{
-												"type": "literal",
-												"value": "logLevel"
-											},
-											{
-												"type": "literal",
-												"value": "listInvalidSymbolLinks"
-											},
-											{
-												"type": "literal",
-												"value": "markedOptions"
-											},
-											{
-												"type": "literal",
-												"value": "highlightTheme"
-											}
-										]
+										"type": "typeOperator",
+										"operator": "keyof",
+										"target": {
+											"type": "reference",
+											"id": 849,
+											"name": "TypeDocOptionMap"
+										}
 									}
 								}
 							],
@@ -26405,7 +24235,7 @@
 											},
 											{
 												"type": "reference",
-												"id": 848,
+												"id": 892,
 												"typeArguments": [
 													{
 														"type": "reference",
@@ -26443,81 +24273,15 @@
 										"text": "The option declaration that should be added.\n"
 									},
 									"type": {
-										"type": "union",
-										"types": [
+										"type": "reference",
+										"typeArguments": [
 											{
 												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 899,
-														"name": "StringDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 909,
-														"name": "NumberDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 920,
-														"name": "BooleanDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 934,
-														"name": "MixedDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 943,
-														"typeArguments": [
-															{
-																"type": "intrinsic",
-																"name": "unknown"
-															}
-														],
-														"name": "MapDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 925,
-														"name": "ArrayDeclarationOption"
-													}
-												],
-												"name": "Readonly"
+												"id": 894,
+												"name": "DeclarationOption"
 											}
-										]
+										],
+										"name": "Readonly"
 									}
 								}
 							],
@@ -26653,7 +24417,7 @@
 									},
 									"type": {
 										"type": "reference",
-										"id": 787,
+										"id": 841,
 										"name": "OptionsReader"
 									}
 								}
@@ -26746,69 +24510,8 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"id": 899,
-												"name": "StringDeclarationOption"
-											}
-										],
-										"name": "Readonly"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 909,
-												"name": "NumberDeclarationOption"
-											}
-										],
-										"name": "Readonly"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 920,
-												"name": "BooleanDeclarationOption"
-											}
-										],
-										"name": "Readonly"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 934,
-												"name": "MixedDeclarationOption"
-											}
-										],
-										"name": "Readonly"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 943,
-												"typeArguments": [
-													{
-														"type": "intrinsic",
-														"name": "unknown"
-													}
-												],
-												"name": "MapDeclarationOption"
-											}
-										],
-										"name": "Readonly"
-									},
-									{
-										"type": "reference",
-										"typeArguments": [
-											{
-												"type": "reference",
-												"id": 925,
-												"name": "ArrayDeclarationOption"
+												"id": 894,
+												"name": "DeclarationOption"
 											}
 										],
 										"name": "Readonly"
@@ -26844,81 +24547,15 @@
 							"type": {
 								"type": "array",
 								"elementType": {
-									"type": "union",
-									"types": [
+									"type": "reference",
+									"typeArguments": [
 										{
 											"type": "reference",
-											"typeArguments": [
-												{
-													"type": "reference",
-													"id": 899,
-													"name": "StringDeclarationOption"
-												}
-											],
-											"name": "Readonly"
-										},
-										{
-											"type": "reference",
-											"typeArguments": [
-												{
-													"type": "reference",
-													"id": 909,
-													"name": "NumberDeclarationOption"
-												}
-											],
-											"name": "Readonly"
-										},
-										{
-											"type": "reference",
-											"typeArguments": [
-												{
-													"type": "reference",
-													"id": 920,
-													"name": "BooleanDeclarationOption"
-												}
-											],
-											"name": "Readonly"
-										},
-										{
-											"type": "reference",
-											"typeArguments": [
-												{
-													"type": "reference",
-													"id": 934,
-													"name": "MixedDeclarationOption"
-												}
-											],
-											"name": "Readonly"
-										},
-										{
-											"type": "reference",
-											"typeArguments": [
-												{
-													"type": "reference",
-													"id": 943,
-													"typeArguments": [
-														{
-															"type": "intrinsic",
-															"name": "unknown"
-														}
-													],
-													"name": "MapDeclarationOption"
-												}
-											],
-											"name": "Readonly"
-										},
-										{
-											"type": "reference",
-											"typeArguments": [
-												{
-													"type": "reference",
-													"id": 925,
-													"name": "ArrayDeclarationOption"
-												}
-											],
-											"name": "Readonly"
+											"id": 894,
+											"name": "DeclarationOption"
 										}
-									]
+									],
+									"name": "Readonly"
 								}
 							}
 						}
@@ -26954,81 +24591,15 @@
 									"kindString": "Parameter",
 									"flags": {},
 									"type": {
-										"type": "union",
-										"types": [
+										"type": "reference",
+										"typeArguments": [
 											{
 												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 899,
-														"name": "StringDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 909,
-														"name": "NumberDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 920,
-														"name": "BooleanDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 934,
-														"name": "MixedDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 943,
-														"typeArguments": [
-															{
-																"type": "intrinsic",
-																"name": "unknown"
-															}
-														],
-														"name": "MapDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 925,
-														"name": "ArrayDeclarationOption"
-													}
-												],
-												"name": "Readonly"
+												"id": 894,
+												"name": "DeclarationOption"
 											}
-										]
+										],
+										"name": "Readonly"
 									}
 								}
 							],
@@ -27141,7 +24712,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 804,
+										"id": 848,
 										"name": "TypeDocOptions"
 									}
 								],
@@ -27181,177 +24752,13 @@
 									"kindString": "Type parameter",
 									"flags": {},
 									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "literal",
-												"value": "logger"
-											},
-											{
-												"type": "literal",
-												"value": "options"
-											},
-											{
-												"type": "literal",
-												"value": "tsconfig"
-											},
-											{
-												"type": "literal",
-												"value": "entryPoints"
-											},
-											{
-												"type": "literal",
-												"value": "exclude"
-											},
-											{
-												"type": "literal",
-												"value": "externalPattern"
-											},
-											{
-												"type": "literal",
-												"value": "excludeExternals"
-											},
-											{
-												"type": "literal",
-												"value": "excludePrivate"
-											},
-											{
-												"type": "literal",
-												"value": "excludeProtected"
-											},
-											{
-												"type": "literal",
-												"value": "excludeNotDocumented"
-											},
-											{
-												"type": "literal",
-												"value": "excludeInternal"
-											},
-											{
-												"type": "literal",
-												"value": "disableSources"
-											},
-											{
-												"type": "literal",
-												"value": "includes"
-											},
-											{
-												"type": "literal",
-												"value": "media"
-											},
-											{
-												"type": "literal",
-												"value": "emit"
-											},
-											{
-												"type": "literal",
-												"value": "watch"
-											},
-											{
-												"type": "literal",
-												"value": "preserveWatchOutput"
-											},
-											{
-												"type": "literal",
-												"value": "out"
-											},
-											{
-												"type": "literal",
-												"value": "json"
-											},
-											{
-												"type": "literal",
-												"value": "theme"
-											},
-											{
-												"type": "literal",
-												"value": "name"
-											},
-											{
-												"type": "literal",
-												"value": "includeVersion"
-											},
-											{
-												"type": "literal",
-												"value": "excludeTags"
-											},
-											{
-												"type": "literal",
-												"value": "readme"
-											},
-											{
-												"type": "literal",
-												"value": "defaultCategory"
-											},
-											{
-												"type": "literal",
-												"value": "categoryOrder"
-											},
-											{
-												"type": "literal",
-												"value": "categorizeByGroup"
-											},
-											{
-												"type": "literal",
-												"value": "gitRevision"
-											},
-											{
-												"type": "literal",
-												"value": "gitRemote"
-											},
-											{
-												"type": "literal",
-												"value": "gaID"
-											},
-											{
-												"type": "literal",
-												"value": "gaSite"
-											},
-											{
-												"type": "literal",
-												"value": "hideGenerator"
-											},
-											{
-												"type": "literal",
-												"value": "toc"
-											},
-											{
-												"type": "literal",
-												"value": "disableOutputCheck"
-											},
-											{
-												"type": "literal",
-												"value": "help"
-											},
-											{
-												"type": "literal",
-												"value": "version"
-											},
-											{
-												"type": "literal",
-												"value": "showConfig"
-											},
-											{
-												"type": "literal",
-												"value": "plugin"
-											},
-											{
-												"type": "literal",
-												"value": "logLevel"
-											},
-											{
-												"type": "literal",
-												"value": "listInvalidSymbolLinks"
-											},
-											{
-												"type": "literal",
-												"value": "markedOptions"
-											},
-											{
-												"type": "literal",
-												"value": "highlightTheme"
-											}
-										]
+										"type": "typeOperator",
+										"operator": "keyof",
+										"target": {
+											"type": "reference",
+											"id": 849,
+											"name": "TypeDocOptionMap"
+										}
 									}
 								}
 							],
@@ -27449,177 +24856,13 @@
 										"text": "\n"
 									},
 									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "literal",
-												"value": "logger"
-											},
-											{
-												"type": "literal",
-												"value": "options"
-											},
-											{
-												"type": "literal",
-												"value": "tsconfig"
-											},
-											{
-												"type": "literal",
-												"value": "entryPoints"
-											},
-											{
-												"type": "literal",
-												"value": "exclude"
-											},
-											{
-												"type": "literal",
-												"value": "externalPattern"
-											},
-											{
-												"type": "literal",
-												"value": "excludeExternals"
-											},
-											{
-												"type": "literal",
-												"value": "excludePrivate"
-											},
-											{
-												"type": "literal",
-												"value": "excludeProtected"
-											},
-											{
-												"type": "literal",
-												"value": "excludeNotDocumented"
-											},
-											{
-												"type": "literal",
-												"value": "excludeInternal"
-											},
-											{
-												"type": "literal",
-												"value": "disableSources"
-											},
-											{
-												"type": "literal",
-												"value": "includes"
-											},
-											{
-												"type": "literal",
-												"value": "media"
-											},
-											{
-												"type": "literal",
-												"value": "emit"
-											},
-											{
-												"type": "literal",
-												"value": "watch"
-											},
-											{
-												"type": "literal",
-												"value": "preserveWatchOutput"
-											},
-											{
-												"type": "literal",
-												"value": "out"
-											},
-											{
-												"type": "literal",
-												"value": "json"
-											},
-											{
-												"type": "literal",
-												"value": "theme"
-											},
-											{
-												"type": "literal",
-												"value": "name"
-											},
-											{
-												"type": "literal",
-												"value": "includeVersion"
-											},
-											{
-												"type": "literal",
-												"value": "excludeTags"
-											},
-											{
-												"type": "literal",
-												"value": "readme"
-											},
-											{
-												"type": "literal",
-												"value": "defaultCategory"
-											},
-											{
-												"type": "literal",
-												"value": "categoryOrder"
-											},
-											{
-												"type": "literal",
-												"value": "categorizeByGroup"
-											},
-											{
-												"type": "literal",
-												"value": "gitRevision"
-											},
-											{
-												"type": "literal",
-												"value": "gitRemote"
-											},
-											{
-												"type": "literal",
-												"value": "gaID"
-											},
-											{
-												"type": "literal",
-												"value": "gaSite"
-											},
-											{
-												"type": "literal",
-												"value": "hideGenerator"
-											},
-											{
-												"type": "literal",
-												"value": "toc"
-											},
-											{
-												"type": "literal",
-												"value": "disableOutputCheck"
-											},
-											{
-												"type": "literal",
-												"value": "help"
-											},
-											{
-												"type": "literal",
-												"value": "version"
-											},
-											{
-												"type": "literal",
-												"value": "showConfig"
-											},
-											{
-												"type": "literal",
-												"value": "plugin"
-											},
-											{
-												"type": "literal",
-												"value": "logLevel"
-											},
-											{
-												"type": "literal",
-												"value": "listInvalidSymbolLinks"
-											},
-											{
-												"type": "literal",
-												"value": "markedOptions"
-											},
-											{
-												"type": "literal",
-												"value": "highlightTheme"
-											}
-										]
+										"type": "typeOperator",
+										"operator": "keyof",
+										"target": {
+											"type": "reference",
+											"id": 849,
+											"name": "TypeDocOptionMap"
+										}
 									}
 								}
 							],
@@ -27688,177 +24931,13 @@
 										"text": "\n"
 									},
 									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "literal",
-												"value": "logger"
-											},
-											{
-												"type": "literal",
-												"value": "options"
-											},
-											{
-												"type": "literal",
-												"value": "tsconfig"
-											},
-											{
-												"type": "literal",
-												"value": "entryPoints"
-											},
-											{
-												"type": "literal",
-												"value": "exclude"
-											},
-											{
-												"type": "literal",
-												"value": "externalPattern"
-											},
-											{
-												"type": "literal",
-												"value": "excludeExternals"
-											},
-											{
-												"type": "literal",
-												"value": "excludePrivate"
-											},
-											{
-												"type": "literal",
-												"value": "excludeProtected"
-											},
-											{
-												"type": "literal",
-												"value": "excludeNotDocumented"
-											},
-											{
-												"type": "literal",
-												"value": "excludeInternal"
-											},
-											{
-												"type": "literal",
-												"value": "disableSources"
-											},
-											{
-												"type": "literal",
-												"value": "includes"
-											},
-											{
-												"type": "literal",
-												"value": "media"
-											},
-											{
-												"type": "literal",
-												"value": "emit"
-											},
-											{
-												"type": "literal",
-												"value": "watch"
-											},
-											{
-												"type": "literal",
-												"value": "preserveWatchOutput"
-											},
-											{
-												"type": "literal",
-												"value": "out"
-											},
-											{
-												"type": "literal",
-												"value": "json"
-											},
-											{
-												"type": "literal",
-												"value": "theme"
-											},
-											{
-												"type": "literal",
-												"value": "name"
-											},
-											{
-												"type": "literal",
-												"value": "includeVersion"
-											},
-											{
-												"type": "literal",
-												"value": "excludeTags"
-											},
-											{
-												"type": "literal",
-												"value": "readme"
-											},
-											{
-												"type": "literal",
-												"value": "defaultCategory"
-											},
-											{
-												"type": "literal",
-												"value": "categoryOrder"
-											},
-											{
-												"type": "literal",
-												"value": "categorizeByGroup"
-											},
-											{
-												"type": "literal",
-												"value": "gitRevision"
-											},
-											{
-												"type": "literal",
-												"value": "gitRemote"
-											},
-											{
-												"type": "literal",
-												"value": "gaID"
-											},
-											{
-												"type": "literal",
-												"value": "gaSite"
-											},
-											{
-												"type": "literal",
-												"value": "hideGenerator"
-											},
-											{
-												"type": "literal",
-												"value": "toc"
-											},
-											{
-												"type": "literal",
-												"value": "disableOutputCheck"
-											},
-											{
-												"type": "literal",
-												"value": "help"
-											},
-											{
-												"type": "literal",
-												"value": "version"
-											},
-											{
-												"type": "literal",
-												"value": "showConfig"
-											},
-											{
-												"type": "literal",
-												"value": "plugin"
-											},
-											{
-												"type": "literal",
-												"value": "logLevel"
-											},
-											{
-												"type": "literal",
-												"value": "listInvalidSymbolLinks"
-											},
-											{
-												"type": "literal",
-												"value": "markedOptions"
-											},
-											{
-												"type": "literal",
-												"value": "highlightTheme"
-											}
-										]
+										"type": "typeOperator",
+										"operator": "keyof",
+										"target": {
+											"type": "reference",
+											"id": 849,
+											"name": "TypeDocOptionMap"
+										}
 									}
 								}
 							],
@@ -28225,81 +25304,15 @@
 										"text": "The option whose value should be reset.\n"
 									},
 									"type": {
-										"type": "union",
-										"types": [
+										"type": "reference",
+										"typeArguments": [
 											{
 												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 899,
-														"name": "StringDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 909,
-														"name": "NumberDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 920,
-														"name": "BooleanDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 934,
-														"name": "MixedDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 943,
-														"typeArguments": [
-															{
-																"type": "intrinsic",
-																"name": "unknown"
-															}
-														],
-														"name": "MapDeclarationOption"
-													}
-												],
-												"name": "Readonly"
-											},
-											{
-												"type": "reference",
-												"typeArguments": [
-													{
-														"type": "reference",
-														"id": 925,
-														"name": "ArrayDeclarationOption"
-													}
-												],
-												"name": "Readonly"
+												"id": 894,
+												"name": "DeclarationOption"
 											}
-										]
+										],
+										"name": "Readonly"
 									}
 								}
 							],
@@ -28341,177 +25354,13 @@
 									"kindString": "Type parameter",
 									"flags": {},
 									"type": {
-										"type": "union",
-										"types": [
-											{
-												"type": "literal",
-												"value": "logger"
-											},
-											{
-												"type": "literal",
-												"value": "options"
-											},
-											{
-												"type": "literal",
-												"value": "tsconfig"
-											},
-											{
-												"type": "literal",
-												"value": "entryPoints"
-											},
-											{
-												"type": "literal",
-												"value": "exclude"
-											},
-											{
-												"type": "literal",
-												"value": "externalPattern"
-											},
-											{
-												"type": "literal",
-												"value": "excludeExternals"
-											},
-											{
-												"type": "literal",
-												"value": "excludePrivate"
-											},
-											{
-												"type": "literal",
-												"value": "excludeProtected"
-											},
-											{
-												"type": "literal",
-												"value": "excludeNotDocumented"
-											},
-											{
-												"type": "literal",
-												"value": "excludeInternal"
-											},
-											{
-												"type": "literal",
-												"value": "disableSources"
-											},
-											{
-												"type": "literal",
-												"value": "includes"
-											},
-											{
-												"type": "literal",
-												"value": "media"
-											},
-											{
-												"type": "literal",
-												"value": "emit"
-											},
-											{
-												"type": "literal",
-												"value": "watch"
-											},
-											{
-												"type": "literal",
-												"value": "preserveWatchOutput"
-											},
-											{
-												"type": "literal",
-												"value": "out"
-											},
-											{
-												"type": "literal",
-												"value": "json"
-											},
-											{
-												"type": "literal",
-												"value": "theme"
-											},
-											{
-												"type": "literal",
-												"value": "name"
-											},
-											{
-												"type": "literal",
-												"value": "includeVersion"
-											},
-											{
-												"type": "literal",
-												"value": "excludeTags"
-											},
-											{
-												"type": "literal",
-												"value": "readme"
-											},
-											{
-												"type": "literal",
-												"value": "defaultCategory"
-											},
-											{
-												"type": "literal",
-												"value": "categoryOrder"
-											},
-											{
-												"type": "literal",
-												"value": "categorizeByGroup"
-											},
-											{
-												"type": "literal",
-												"value": "gitRevision"
-											},
-											{
-												"type": "literal",
-												"value": "gitRemote"
-											},
-											{
-												"type": "literal",
-												"value": "gaID"
-											},
-											{
-												"type": "literal",
-												"value": "gaSite"
-											},
-											{
-												"type": "literal",
-												"value": "hideGenerator"
-											},
-											{
-												"type": "literal",
-												"value": "toc"
-											},
-											{
-												"type": "literal",
-												"value": "disableOutputCheck"
-											},
-											{
-												"type": "literal",
-												"value": "help"
-											},
-											{
-												"type": "literal",
-												"value": "version"
-											},
-											{
-												"type": "literal",
-												"value": "showConfig"
-											},
-											{
-												"type": "literal",
-												"value": "plugin"
-											},
-											{
-												"type": "literal",
-												"value": "logLevel"
-											},
-											{
-												"type": "literal",
-												"value": "listInvalidSymbolLinks"
-											},
-											{
-												"type": "literal",
-												"value": "markedOptions"
-											},
-											{
-												"type": "literal",
-												"value": "highlightTheme"
-											}
-										]
+										"type": "typeOperator",
+										"operator": "keyof",
+										"target": {
+											"type": "reference",
+											"id": 849,
+											"name": "TypeDocOptionMap"
+										}
 									}
 								}
 							],
@@ -28545,7 +25394,7 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"id": 804,
+											"id": 848,
 											"name": "TypeDocOptions"
 										}
 									}
@@ -28913,7 +25762,7 @@
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"id": 1371,
+									"id": 1422,
 									"name": "Decorator"
 								}
 							}
@@ -28969,7 +25818,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1384,
+						"id": 1331,
 						"name": "ReflectionFlags"
 					},
 					"defaultValue": "...",
@@ -29713,128 +26562,8 @@
 										"types": [
 											{
 												"type": "reference",
-												"id": 1272,
-												"name": "Project"
-											},
-											{
-												"type": "reference",
-												"id": 1273,
-												"name": "Module"
-											},
-											{
-												"type": "reference",
-												"id": 1274,
-												"name": "Namespace"
-											},
-											{
-												"type": "reference",
-												"id": 1275,
-												"name": "Enum"
-											},
-											{
-												"type": "reference",
-												"id": 1276,
-												"name": "EnumMember"
-											},
-											{
-												"type": "reference",
-												"id": 1277,
-												"name": "Variable"
-											},
-											{
-												"type": "reference",
-												"id": 1278,
-												"name": "Function"
-											},
-											{
-												"type": "reference",
-												"id": 1279,
-												"name": "Class"
-											},
-											{
-												"type": "reference",
-												"id": 1280,
-												"name": "Interface"
-											},
-											{
-												"type": "reference",
-												"id": 1281,
-												"name": "Constructor"
-											},
-											{
-												"type": "reference",
-												"id": 1282,
-												"name": "Property"
-											},
-											{
-												"type": "reference",
-												"id": 1283,
-												"name": "Method"
-											},
-											{
-												"type": "reference",
-												"id": 1284,
-												"name": "CallSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1285,
-												"name": "IndexSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1286,
-												"name": "ConstructorSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1287,
-												"name": "Parameter"
-											},
-											{
-												"type": "reference",
-												"id": 1288,
-												"name": "TypeLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1289,
-												"name": "TypeParameter"
-											},
-											{
-												"type": "reference",
-												"id": 1290,
-												"name": "Accessor"
-											},
-											{
-												"type": "reference",
-												"id": 1291,
-												"name": "GetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1292,
-												"name": "SetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1293,
-												"name": "ObjectLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1294,
-												"name": "TypeAlias"
-											},
-											{
-												"type": "reference",
-												"id": 1295,
-												"name": "Event"
-											},
-											{
-												"type": "reference",
-												"id": 1296,
-												"name": "Reference"
+												"id": 1271,
+												"name": "ReflectionKind"
 											},
 											{
 												"type": "array",
@@ -30483,7 +27212,7 @@
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"id": 1371,
+									"id": 1422,
 									"name": "Decorator"
 								}
 							}
@@ -30557,7 +27286,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1384,
+						"id": 1331,
 						"name": "ReflectionFlags"
 					},
 					"defaultValue": "...",
@@ -31855,128 +28584,8 @@
 										"types": [
 											{
 												"type": "reference",
-												"id": 1272,
-												"name": "Project"
-											},
-											{
-												"type": "reference",
-												"id": 1273,
-												"name": "Module"
-											},
-											{
-												"type": "reference",
-												"id": 1274,
-												"name": "Namespace"
-											},
-											{
-												"type": "reference",
-												"id": 1275,
-												"name": "Enum"
-											},
-											{
-												"type": "reference",
-												"id": 1276,
-												"name": "EnumMember"
-											},
-											{
-												"type": "reference",
-												"id": 1277,
-												"name": "Variable"
-											},
-											{
-												"type": "reference",
-												"id": 1278,
-												"name": "Function"
-											},
-											{
-												"type": "reference",
-												"id": 1279,
-												"name": "Class"
-											},
-											{
-												"type": "reference",
-												"id": 1280,
-												"name": "Interface"
-											},
-											{
-												"type": "reference",
-												"id": 1281,
-												"name": "Constructor"
-											},
-											{
-												"type": "reference",
-												"id": 1282,
-												"name": "Property"
-											},
-											{
-												"type": "reference",
-												"id": 1283,
-												"name": "Method"
-											},
-											{
-												"type": "reference",
-												"id": 1284,
-												"name": "CallSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1285,
-												"name": "IndexSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1286,
-												"name": "ConstructorSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1287,
-												"name": "Parameter"
-											},
-											{
-												"type": "reference",
-												"id": 1288,
-												"name": "TypeLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1289,
-												"name": "TypeParameter"
-											},
-											{
-												"type": "reference",
-												"id": 1290,
-												"name": "Accessor"
-											},
-											{
-												"type": "reference",
-												"id": 1291,
-												"name": "GetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1292,
-												"name": "SetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1293,
-												"name": "ObjectLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1294,
-												"name": "TypeAlias"
-											},
-											{
-												"type": "reference",
-												"id": 1295,
-												"name": "Event"
-											},
-											{
-												"type": "reference",
-												"id": 1296,
-												"name": "Reference"
+												"id": 1271,
+												"name": "ReflectionKind"
 											},
 											{
 												"type": "array",
@@ -32868,7 +29477,7 @@
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"id": 1371,
+									"id": 1422,
 									"name": "Decorator"
 								}
 							}
@@ -33013,7 +29622,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1384,
+						"id": 1331,
 						"name": "ReflectionFlags"
 					},
 					"defaultValue": "...",
@@ -34504,128 +31113,8 @@
 										"types": [
 											{
 												"type": "reference",
-												"id": 1272,
-												"name": "Project"
-											},
-											{
-												"type": "reference",
-												"id": 1273,
-												"name": "Module"
-											},
-											{
-												"type": "reference",
-												"id": 1274,
-												"name": "Namespace"
-											},
-											{
-												"type": "reference",
-												"id": 1275,
-												"name": "Enum"
-											},
-											{
-												"type": "reference",
-												"id": 1276,
-												"name": "EnumMember"
-											},
-											{
-												"type": "reference",
-												"id": 1277,
-												"name": "Variable"
-											},
-											{
-												"type": "reference",
-												"id": 1278,
-												"name": "Function"
-											},
-											{
-												"type": "reference",
-												"id": 1279,
-												"name": "Class"
-											},
-											{
-												"type": "reference",
-												"id": 1280,
-												"name": "Interface"
-											},
-											{
-												"type": "reference",
-												"id": 1281,
-												"name": "Constructor"
-											},
-											{
-												"type": "reference",
-												"id": 1282,
-												"name": "Property"
-											},
-											{
-												"type": "reference",
-												"id": 1283,
-												"name": "Method"
-											},
-											{
-												"type": "reference",
-												"id": 1284,
-												"name": "CallSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1285,
-												"name": "IndexSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1286,
-												"name": "ConstructorSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1287,
-												"name": "Parameter"
-											},
-											{
-												"type": "reference",
-												"id": 1288,
-												"name": "TypeLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1289,
-												"name": "TypeParameter"
-											},
-											{
-												"type": "reference",
-												"id": 1290,
-												"name": "Accessor"
-											},
-											{
-												"type": "reference",
-												"id": 1291,
-												"name": "GetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1292,
-												"name": "SetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1293,
-												"name": "ObjectLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1294,
-												"name": "TypeAlias"
-											},
-											{
-												"type": "reference",
-												"id": 1295,
-												"name": "Event"
-											},
-											{
-												"type": "reference",
-												"id": 1296,
-												"name": "Reference"
+												"id": 1271,
+												"name": "ReflectionKind"
 											},
 											{
 												"type": "array",
@@ -35409,7 +31898,7 @@
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"id": 1371,
+									"id": 1422,
 									"name": "Decorator"
 								}
 							}
@@ -35431,7 +31920,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1384,
+						"id": 1331,
 						"name": "ReflectionFlags"
 					},
 					"defaultValue": "..."
@@ -36026,128 +32515,8 @@
 										"types": [
 											{
 												"type": "reference",
-												"id": 1272,
-												"name": "Project"
-											},
-											{
-												"type": "reference",
-												"id": 1273,
-												"name": "Module"
-											},
-											{
-												"type": "reference",
-												"id": 1274,
-												"name": "Namespace"
-											},
-											{
-												"type": "reference",
-												"id": 1275,
-												"name": "Enum"
-											},
-											{
-												"type": "reference",
-												"id": 1276,
-												"name": "EnumMember"
-											},
-											{
-												"type": "reference",
-												"id": 1277,
-												"name": "Variable"
-											},
-											{
-												"type": "reference",
-												"id": 1278,
-												"name": "Function"
-											},
-											{
-												"type": "reference",
-												"id": 1279,
-												"name": "Class"
-											},
-											{
-												"type": "reference",
-												"id": 1280,
-												"name": "Interface"
-											},
-											{
-												"type": "reference",
-												"id": 1281,
-												"name": "Constructor"
-											},
-											{
-												"type": "reference",
-												"id": 1282,
-												"name": "Property"
-											},
-											{
-												"type": "reference",
-												"id": 1283,
-												"name": "Method"
-											},
-											{
-												"type": "reference",
-												"id": 1284,
-												"name": "CallSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1285,
-												"name": "IndexSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1286,
-												"name": "ConstructorSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1287,
-												"name": "Parameter"
-											},
-											{
-												"type": "reference",
-												"id": 1288,
-												"name": "TypeLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1289,
-												"name": "TypeParameter"
-											},
-											{
-												"type": "reference",
-												"id": 1290,
-												"name": "Accessor"
-											},
-											{
-												"type": "reference",
-												"id": 1291,
-												"name": "GetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1292,
-												"name": "SetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1293,
-												"name": "ObjectLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1294,
-												"name": "TypeAlias"
-											},
-											{
-												"type": "reference",
-												"id": 1295,
-												"name": "Event"
-											},
-											{
-												"type": "reference",
-												"id": 1296,
-												"name": "Reference"
+												"id": 1271,
+												"name": "ReflectionKind"
 											},
 											{
 												"type": "array",
@@ -36406,7 +32775,7 @@
 			"extendedBy": [
 				{
 					"type": "reference",
-					"id": 1322,
+					"id": 1373,
 					"name": "TypeParameterContainer"
 				},
 				{
@@ -36432,7 +32801,7 @@
 			]
 		},
 		{
-			"id": 1384,
+			"id": 1331,
 			"name": "ReflectionFlags",
 			"kind": 128,
 			"kindString": "Class",
@@ -36442,21 +32811,21 @@
 			},
 			"children": [
 				{
-					"id": 1385,
+					"id": 1332,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 1386,
+							"id": 1333,
 							"name": "new ReflectionFlags",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 1387,
+									"id": 1334,
 									"name": "arrayLength",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -36469,19 +32838,19 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 1384,
+								"id": 1331,
 								"name": "ReflectionFlags"
 							}
 						},
 						{
-							"id": 1388,
+							"id": 1335,
 							"name": "new ReflectionFlags",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 1389,
+									"id": 1336,
 									"name": "items",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -36499,14 +32868,14 @@
 							],
 							"type": {
 								"type": "reference",
-								"id": 1384,
+								"id": 1331,
 								"name": "ReflectionFlags"
 							}
 						}
 					]
 				},
 				{
-					"id": 1390,
+					"id": 1337,
 					"name": "flags",
 					"kind": 1024,
 					"kindString": "Property",
@@ -36528,7 +32897,7 @@
 					"defaultValue": "..."
 				},
 				{
-					"id": 1408,
+					"id": 1355,
 					"name": "hasExportAssignment",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36542,7 +32911,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1409,
+							"id": 1356,
 							"name": "hasExportAssignment",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36555,7 +32924,7 @@
 					]
 				},
 				{
-					"id": 1410,
+					"id": 1357,
 					"name": "isAbstract",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36569,7 +32938,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1411,
+							"id": 1358,
 							"name": "isAbstract",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36582,7 +32951,7 @@
 					]
 				},
 				{
-					"id": 1412,
+					"id": 1359,
 					"name": "isConst",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36596,7 +32965,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1413,
+							"id": 1360,
 							"name": "isConst",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36609,7 +32978,7 @@
 					]
 				},
 				{
-					"id": 1402,
+					"id": 1349,
 					"name": "isExternal",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36626,7 +32995,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1403,
+							"id": 1350,
 							"name": "isExternal",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36642,7 +33011,7 @@
 					]
 				},
 				{
-					"id": 1414,
+					"id": 1361,
 					"name": "isLet",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36656,7 +33025,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1415,
+							"id": 1362,
 							"name": "isLet",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36669,7 +33038,7 @@
 					]
 				},
 				{
-					"id": 1404,
+					"id": 1351,
 					"name": "isOptional",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36687,7 +33056,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1405,
+							"id": 1352,
 							"name": "isOptional",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36704,7 +33073,7 @@
 					]
 				},
 				{
-					"id": 1394,
+					"id": 1341,
 					"name": "isPrivate",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36721,7 +33090,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1395,
+							"id": 1342,
 							"name": "isPrivate",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36737,7 +33106,7 @@
 					]
 				},
 				{
-					"id": 1396,
+					"id": 1343,
 					"name": "isProtected",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36754,7 +33123,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1397,
+							"id": 1344,
 							"name": "isProtected",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36770,7 +33139,7 @@
 					]
 				},
 				{
-					"id": 1398,
+					"id": 1345,
 					"name": "isPublic",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36787,7 +33156,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1399,
+							"id": 1346,
 							"name": "isPublic",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36803,7 +33172,7 @@
 					]
 				},
 				{
-					"id": 1416,
+					"id": 1363,
 					"name": "isReadonly",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36817,7 +33186,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1417,
+							"id": 1364,
 							"name": "isReadonly",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36830,7 +33199,7 @@
 					]
 				},
 				{
-					"id": 1406,
+					"id": 1353,
 					"name": "isRest",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36847,7 +33216,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1407,
+							"id": 1354,
 							"name": "isRest",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36863,7 +33232,7 @@
 					]
 				},
 				{
-					"id": 1400,
+					"id": 1347,
 					"name": "isStatic",
 					"kind": 262144,
 					"kindString": "Accessor",
@@ -36880,7 +33249,7 @@
 					],
 					"getSignature": [
 						{
-							"id": 1401,
+							"id": 1348,
 							"name": "isStatic",
 							"kind": 524288,
 							"kindString": "Get signature",
@@ -36896,7 +33265,7 @@
 					]
 				},
 				{
-					"id": 1391,
+					"id": 1338,
 					"name": "hasFlag",
 					"kind": 2048,
 					"kindString": "Method",
@@ -36910,14 +33279,14 @@
 					],
 					"signatures": [
 						{
-							"id": 1392,
+							"id": 1339,
 							"name": "hasFlag",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 1393,
+									"id": 1340,
 									"name": "flag",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -36937,7 +33306,7 @@
 					]
 				},
 				{
-					"id": 1418,
+					"id": 1365,
 					"name": "setFlag",
 					"kind": 2048,
 					"kindString": "Method",
@@ -36951,14 +33320,14 @@
 					],
 					"signatures": [
 						{
-							"id": 1419,
+							"id": 1366,
 							"name": "setFlag",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 1420,
+									"id": 1367,
 									"name": "flag",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -36970,7 +33339,7 @@
 									}
 								},
 								{
-									"id": 1421,
+									"id": 1368,
 									"name": "set",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -36989,7 +33358,7 @@
 					]
 				},
 				{
-					"id": 1422,
+					"id": 1369,
 					"name": "setSingleFlag",
 					"kind": 2048,
 					"kindString": "Method",
@@ -37005,14 +33374,14 @@
 					],
 					"signatures": [
 						{
-							"id": 1423,
+							"id": 1370,
 							"name": "setSingleFlag",
 							"kind": 4096,
 							"kindString": "Call signature",
 							"flags": {},
 							"parameters": [
 								{
-									"id": 1424,
+									"id": 1371,
 									"name": "flag",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37024,7 +33393,7 @@
 									}
 								},
 								{
-									"id": 1425,
+									"id": 1372,
 									"name": "set",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -37048,41 +33417,41 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						1385
+						1332
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1390
+						1337
 					]
 				},
 				{
 					"title": "Accessors",
 					"kind": 262144,
 					"children": [
-						1408,
-						1410,
-						1412,
-						1402,
-						1414,
-						1404,
-						1394,
-						1396,
-						1398,
-						1416,
-						1406,
-						1400
+						1355,
+						1357,
+						1359,
+						1349,
+						1361,
+						1351,
+						1341,
+						1343,
+						1345,
+						1363,
+						1353,
+						1347
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						1391,
-						1418,
-						1422
+						1338,
+						1365,
+						1369
 					]
 				}
 			],
@@ -39286,7 +35655,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1336,
+						"id": 1387,
 						"name": "TypeParameterContainer.anchor"
 					}
 				},
@@ -39328,7 +35697,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1331,
+						"id": 1382,
 						"name": "TypeParameterContainer.comment"
 					}
 				},
@@ -39370,7 +35739,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1338,
+						"id": 1389,
 						"name": "TypeParameterContainer.cssClasses"
 					}
 				},
@@ -39415,7 +35784,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1334,
+						"id": 1385,
 						"name": "TypeParameterContainer.decorates"
 					}
 				},
@@ -39448,7 +35817,7 @@
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"id": 1371,
+									"id": 1422,
 									"name": "Decorator"
 								}
 							}
@@ -39461,7 +35830,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1333,
+						"id": 1384,
 						"name": "TypeParameterContainer.decorators"
 					}
 				},
@@ -39480,7 +35849,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1384,
+						"id": 1331,
 						"name": "ReflectionFlags"
 					},
 					"defaultValue": "...",
@@ -39491,7 +35860,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1329,
+						"id": 1380,
 						"name": "TypeParameterContainer.flags"
 					}
 				},
@@ -39534,7 +35903,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1337,
+						"id": 1388,
 						"name": "TypeParameterContainer.hasOwnDocument"
 					}
 				},
@@ -39565,7 +35934,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1324,
+						"id": 1375,
 						"name": "TypeParameterContainer.id"
 					}
 				},
@@ -39663,7 +36032,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1327,
+						"id": 1378,
 						"name": "TypeParameterContainer.kind"
 					}
 				},
@@ -39705,7 +36074,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1328,
+						"id": 1379,
 						"name": "TypeParameterContainer.kindString"
 					}
 				},
@@ -39736,7 +36105,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1325,
+						"id": 1376,
 						"name": "TypeParameterContainer.name"
 					}
 				},
@@ -39767,7 +36136,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1326,
+						"id": 1377,
 						"name": "TypeParameterContainer.originalName"
 					}
 				},
@@ -39876,7 +36245,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1330,
+						"id": 1381,
 						"name": "TypeParameterContainer.parent"
 					}
 				},
@@ -39921,7 +36290,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1332,
+						"id": 1383,
 						"name": "TypeParameterContainer.sources"
 					}
 				},
@@ -39988,7 +36357,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1323,
+						"id": 1374,
 						"name": "TypeParameterContainer.typeParameters"
 					}
 				},
@@ -40030,7 +36399,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1335,
+						"id": 1386,
 						"name": "TypeParameterContainer.url"
 					}
 				},
@@ -40104,7 +36473,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1361,
+								"id": 1412,
 								"name": "TypeParameterContainer.findReflectionByName"
 							}
 						}
@@ -40116,7 +36485,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1360,
+						"id": 1411,
 						"name": "TypeParameterContainer.findReflectionByName"
 					}
 				},
@@ -40154,7 +36523,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1350,
+								"id": 1401,
 								"name": "TypeParameterContainer.getAlias"
 							}
 						}
@@ -40166,7 +36535,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1349,
+						"id": 1400,
 						"name": "TypeParameterContainer.getAlias"
 					}
 				},
@@ -40240,7 +36609,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1356,
+								"id": 1407,
 								"name": "TypeParameterContainer.getChildByName"
 							}
 						}
@@ -40252,7 +36621,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1355,
+						"id": 1406,
 						"name": "TypeParameterContainer.getChildByName"
 					}
 				},
@@ -40309,7 +36678,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1343,
+								"id": 1394,
 								"name": "TypeParameterContainer.getFullName"
 							}
 						}
@@ -40321,7 +36690,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1342,
+						"id": 1393,
 						"name": "TypeParameterContainer.getFullName"
 					}
 				},
@@ -40393,7 +36762,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1352,
+								"id": 1403,
 								"name": "TypeParameterContainer.hasComment"
 							}
 						}
@@ -40405,7 +36774,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1351,
+						"id": 1402,
 						"name": "TypeParameterContainer.hasComment"
 					}
 				},
@@ -40440,7 +36809,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1354,
+								"id": 1405,
 								"name": "TypeParameterContainer.hasGetterOrSetter"
 							}
 						}
@@ -40452,7 +36821,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1353,
+						"id": 1404,
 						"name": "TypeParameterContainer.hasGetterOrSetter"
 					}
 				},
@@ -40496,7 +36865,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1359,
+								"id": 1410,
 								"name": "TypeParameterContainer.isProject"
 							}
 						}
@@ -40508,7 +36877,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1358,
+						"id": 1409,
 						"name": "TypeParameterContainer.isProject"
 					}
 				},
@@ -40547,128 +36916,8 @@
 										"types": [
 											{
 												"type": "reference",
-												"id": 1272,
-												"name": "Project"
-											},
-											{
-												"type": "reference",
-												"id": 1273,
-												"name": "Module"
-											},
-											{
-												"type": "reference",
-												"id": 1274,
-												"name": "Namespace"
-											},
-											{
-												"type": "reference",
-												"id": 1275,
-												"name": "Enum"
-											},
-											{
-												"type": "reference",
-												"id": 1276,
-												"name": "EnumMember"
-											},
-											{
-												"type": "reference",
-												"id": 1277,
-												"name": "Variable"
-											},
-											{
-												"type": "reference",
-												"id": 1278,
-												"name": "Function"
-											},
-											{
-												"type": "reference",
-												"id": 1279,
-												"name": "Class"
-											},
-											{
-												"type": "reference",
-												"id": 1280,
-												"name": "Interface"
-											},
-											{
-												"type": "reference",
-												"id": 1281,
-												"name": "Constructor"
-											},
-											{
-												"type": "reference",
-												"id": 1282,
-												"name": "Property"
-											},
-											{
-												"type": "reference",
-												"id": 1283,
-												"name": "Method"
-											},
-											{
-												"type": "reference",
-												"id": 1284,
-												"name": "CallSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1285,
-												"name": "IndexSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1286,
-												"name": "ConstructorSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1287,
-												"name": "Parameter"
-											},
-											{
-												"type": "reference",
-												"id": 1288,
-												"name": "TypeLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1289,
-												"name": "TypeParameter"
-											},
-											{
-												"type": "reference",
-												"id": 1290,
-												"name": "Accessor"
-											},
-											{
-												"type": "reference",
-												"id": 1291,
-												"name": "GetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1292,
-												"name": "SetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1293,
-												"name": "ObjectLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1294,
-												"name": "TypeAlias"
-											},
-											{
-												"type": "reference",
-												"id": 1295,
-												"name": "Event"
-											},
-											{
-												"type": "reference",
-												"id": 1296,
-												"name": "Reference"
+												"id": 1271,
+												"name": "ReflectionKind"
 											},
 											{
 												"type": "array",
@@ -40693,7 +36942,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1340,
+								"id": 1391,
 								"name": "TypeParameterContainer.kindOf"
 							}
 						}
@@ -40705,7 +36954,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1339,
+						"id": 1390,
 						"name": "TypeParameterContainer.kindOf"
 					}
 				},
@@ -40769,7 +37018,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1346,
+								"id": 1397,
 								"name": "TypeParameterContainer.setFlag"
 							}
 						}
@@ -40781,7 +37030,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1345,
+						"id": 1396,
 						"name": "TypeParameterContainer.setFlag"
 					}
 				},
@@ -40819,7 +37068,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1367,
+								"id": 1418,
 								"name": "TypeParameterContainer.toString"
 							}
 						}
@@ -40831,7 +37080,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1366,
+						"id": 1417,
 						"name": "TypeParameterContainer.toString"
 					}
 				},
@@ -40886,7 +37135,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1369,
+								"id": 1420,
 								"name": "TypeParameterContainer.toStringHierarchy"
 							}
 						}
@@ -40898,7 +37147,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1368,
+						"id": 1419,
 						"name": "TypeParameterContainer.toStringHierarchy"
 					}
 				},
@@ -40953,7 +37202,7 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 1364,
+								"id": 1415,
 								"name": "TypeParameterContainer.traverse"
 							}
 						}
@@ -40965,7 +37214,7 @@
 					},
 					"implementationOf": {
 						"type": "reference",
-						"id": 1363,
+						"id": 1414,
 						"name": "TypeParameterContainer.traverse"
 					}
 				}
@@ -41046,41 +37295,41 @@
 				},
 				{
 					"type": "reference",
-					"id": 1322,
+					"id": 1373,
 					"name": "TypeParameterContainer"
 				}
 			]
 		},
 		{
-			"id": 850,
+			"id": 797,
 			"name": "TSConfigReader",
 			"kind": 128,
 			"kindString": "Class",
 			"flags": {},
 			"children": [
 				{
-					"id": 851,
+					"id": 798,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 852,
+							"id": 799,
 							"name": "new TSConfigReader",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 850,
+								"id": 797,
 								"name": "TSConfigReader"
 							}
 						}
 					]
 				},
 				{
-					"id": 854,
+					"id": 801,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -41102,12 +37351,12 @@
 					"defaultValue": "\"tsconfig-json\"",
 					"implementationOf": {
 						"type": "reference",
-						"id": 789,
+						"id": 843,
 						"name": "OptionsReader.name"
 					}
 				},
 				{
-					"id": 853,
+					"id": 800,
 					"name": "priority",
 					"kind": 1024,
 					"kindString": "Property",
@@ -41129,12 +37378,12 @@
 					"defaultValue": "200",
 					"implementationOf": {
 						"type": "reference",
-						"id": 788,
+						"id": 842,
 						"name": "OptionsReader.priority"
 					}
 				},
 				{
-					"id": 855,
+					"id": 802,
 					"name": "read",
 					"kind": 2048,
 					"kindString": "Method",
@@ -41148,7 +37397,7 @@
 					],
 					"signatures": [
 						{
-							"id": 856,
+							"id": 803,
 							"name": "read",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -41158,7 +37407,7 @@
 							},
 							"parameters": [
 								{
-									"id": 857,
+									"id": 804,
 									"name": "container",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -41170,7 +37419,7 @@
 									}
 								},
 								{
-									"id": 858,
+									"id": 805,
 									"name": "logger",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -41187,14 +37436,14 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 791,
+								"id": 845,
 								"name": "OptionsReader.read"
 							}
 						}
 					],
 					"implementationOf": {
 						"type": "reference",
-						"id": 790,
+						"id": 844,
 						"name": "OptionsReader.read"
 					}
 				}
@@ -41204,22 +37453,22 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						851
+						798
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						854,
-						853
+						801,
+						800
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						855
+						802
 					]
 				}
 			],
@@ -41233,13 +37482,13 @@
 			"implementedTypes": [
 				{
 					"type": "reference",
-					"id": 787,
+					"id": 841,
 					"name": "OptionsReader"
 				}
 			]
 		},
 		{
-			"id": 859,
+			"id": 806,
 			"name": "TypeDocReader",
 			"kind": 128,
 			"kindString": "Class",
@@ -41249,28 +37498,28 @@
 			},
 			"children": [
 				{
-					"id": 860,
+					"id": 807,
 					"name": "constructor",
 					"kind": 512,
 					"kindString": "Constructor",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 861,
+							"id": 808,
 							"name": "new TypeDocReader",
 							"kind": 16384,
 							"kindString": "Constructor signature",
 							"flags": {},
 							"type": {
 								"type": "reference",
-								"id": 859,
+								"id": 806,
 								"name": "TypeDocReader"
 							}
 						}
 					]
 				},
 				{
-					"id": 863,
+					"id": 810,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -41292,12 +37541,12 @@
 					"defaultValue": "\"typedoc-json\"",
 					"implementationOf": {
 						"type": "reference",
-						"id": 789,
+						"id": 843,
 						"name": "OptionsReader.name"
 					}
 				},
 				{
-					"id": 862,
+					"id": 809,
 					"name": "priority",
 					"kind": 1024,
 					"kindString": "Property",
@@ -41319,12 +37568,12 @@
 					"defaultValue": "100",
 					"implementationOf": {
 						"type": "reference",
-						"id": 788,
+						"id": 842,
 						"name": "OptionsReader.priority"
 					}
 				},
 				{
-					"id": 879,
+					"id": 826,
 					"name": "findTypedocFile",
 					"kind": 2048,
 					"kindString": "Method",
@@ -41340,7 +37589,7 @@
 					],
 					"signatures": [
 						{
-							"id": 880,
+							"id": 827,
 							"name": "findTypedocFile",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -41351,7 +37600,7 @@
 							},
 							"parameters": [
 								{
-									"id": 881,
+									"id": 828,
 									"name": "path",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -41382,7 +37631,7 @@
 					]
 				},
 				{
-					"id": 864,
+					"id": 811,
 					"name": "read",
 					"kind": 2048,
 					"kindString": "Method",
@@ -41396,7 +37645,7 @@
 					],
 					"signatures": [
 						{
-							"id": 865,
+							"id": 812,
 							"name": "read",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -41406,7 +37655,7 @@
 							},
 							"parameters": [
 								{
-									"id": 866,
+									"id": 813,
 									"name": "container",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -41419,7 +37668,7 @@
 									}
 								},
 								{
-									"id": 867,
+									"id": 814,
 									"name": "logger",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -41439,19 +37688,19 @@
 							},
 							"implementationOf": {
 								"type": "reference",
-								"id": 791,
+								"id": 845,
 								"name": "OptionsReader.read"
 							}
 						}
 					],
 					"implementationOf": {
 						"type": "reference",
-						"id": 790,
+						"id": 844,
 						"name": "OptionsReader.read"
 					}
 				},
 				{
-					"id": 868,
+					"id": 815,
 					"name": "readFile",
 					"kind": 2048,
 					"kindString": "Method",
@@ -41467,7 +37716,7 @@
 					],
 					"signatures": [
 						{
-							"id": 869,
+							"id": 816,
 							"name": "readFile",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -41477,7 +37726,7 @@
 							},
 							"parameters": [
 								{
-									"id": 870,
+									"id": 817,
 									"name": "file",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -41489,7 +37738,7 @@
 									}
 								},
 								{
-									"id": 871,
+									"id": 818,
 									"name": "container",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -41506,28 +37755,28 @@
 											{
 												"type": "reflection",
 												"declaration": {
-													"id": 872,
+													"id": 819,
 													"name": "__type",
 													"kind": 65536,
 													"kindString": "Type literal",
 													"flags": {},
 													"children": [
 														{
-															"id": 873,
+															"id": 820,
 															"name": "setValue",
 															"kind": 2048,
 															"kindString": "Method",
 															"flags": {},
 															"signatures": [
 																{
-																	"id": 874,
+																	"id": 821,
 																	"name": "setValue",
 																	"kind": 4096,
 																	"kindString": "Call signature",
 																	"flags": {},
 																	"parameters": [
 																		{
-																			"id": 875,
+																			"id": 822,
 																			"name": "key",
 																			"kind": 32768,
 																			"kindString": "Parameter",
@@ -41538,7 +37787,7 @@
 																			}
 																		},
 																		{
-																			"id": 876,
+																			"id": 823,
 																			"name": "value",
 																			"kind": 32768,
 																			"kindString": "Parameter",
@@ -41562,7 +37811,7 @@
 															"title": "Methods",
 															"kind": 2048,
 															"children": [
-																873
+																820
 															]
 														}
 													]
@@ -41572,7 +37821,7 @@
 									}
 								},
 								{
-									"id": 877,
+									"id": 824,
 									"name": "logger",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -41586,7 +37835,7 @@
 									}
 								},
 								{
-									"id": 878,
+									"id": 825,
 									"name": "seen",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -41616,24 +37865,24 @@
 					"title": "Constructors",
 					"kind": 512,
 					"children": [
-						860
+						807
 					]
 				},
 				{
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						863,
-						862
+						810,
+						809
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						879,
-						864,
-						868
+						826,
+						811,
+						815
 					]
 				}
 			],
@@ -41647,7 +37896,7 @@
 			"implementedTypes": [
 				{
 					"type": "reference",
-					"id": 787,
+					"id": 841,
 					"name": "OptionsReader"
 				}
 			]
@@ -41926,7 +38175,7 @@
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"id": 1371,
+									"id": 1422,
 									"name": "Decorator"
 								}
 							}
@@ -41982,7 +38231,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1384,
+						"id": 1331,
 						"name": "ReflectionFlags"
 					},
 					"defaultValue": "...",
@@ -42726,128 +38975,8 @@
 										"types": [
 											{
 												"type": "reference",
-												"id": 1272,
-												"name": "Project"
-											},
-											{
-												"type": "reference",
-												"id": 1273,
-												"name": "Module"
-											},
-											{
-												"type": "reference",
-												"id": 1274,
-												"name": "Namespace"
-											},
-											{
-												"type": "reference",
-												"id": 1275,
-												"name": "Enum"
-											},
-											{
-												"type": "reference",
-												"id": 1276,
-												"name": "EnumMember"
-											},
-											{
-												"type": "reference",
-												"id": 1277,
-												"name": "Variable"
-											},
-											{
-												"type": "reference",
-												"id": 1278,
-												"name": "Function"
-											},
-											{
-												"type": "reference",
-												"id": 1279,
-												"name": "Class"
-											},
-											{
-												"type": "reference",
-												"id": 1280,
-												"name": "Interface"
-											},
-											{
-												"type": "reference",
-												"id": 1281,
-												"name": "Constructor"
-											},
-											{
-												"type": "reference",
-												"id": 1282,
-												"name": "Property"
-											},
-											{
-												"type": "reference",
-												"id": 1283,
-												"name": "Method"
-											},
-											{
-												"type": "reference",
-												"id": 1284,
-												"name": "CallSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1285,
-												"name": "IndexSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1286,
-												"name": "ConstructorSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1287,
-												"name": "Parameter"
-											},
-											{
-												"type": "reference",
-												"id": 1288,
-												"name": "TypeLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1289,
-												"name": "TypeParameter"
-											},
-											{
-												"type": "reference",
-												"id": 1290,
-												"name": "Accessor"
-											},
-											{
-												"type": "reference",
-												"id": 1291,
-												"name": "GetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1292,
-												"name": "SetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1293,
-												"name": "ObjectLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1294,
-												"name": "TypeAlias"
-											},
-											{
-												"type": "reference",
-												"id": 1295,
-												"name": "Event"
-											},
-											{
-												"type": "reference",
-												"id": 1296,
-												"name": "Reference"
+												"id": 1271,
+												"name": "ReflectionKind"
 											},
 											{
 												"type": "array",
@@ -43424,7 +39553,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 803,
+						"id": 796,
 						"name": "Array"
 					},
 					"overwrites": {
@@ -43638,7 +39767,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 800,
+						"id": 793,
 						"name": "Boolean"
 					},
 					"overwrites": {
@@ -43876,33 +40005,8 @@
 							},
 							{
 								"type": "reference",
-								"id": 798,
-								"name": "String"
-							},
-							{
-								"type": "reference",
-								"id": 799,
-								"name": "Number"
-							},
-							{
-								"type": "reference",
-								"id": 800,
-								"name": "Boolean"
-							},
-							{
-								"type": "reference",
-								"id": 801,
-								"name": "Map"
-							},
-							{
-								"type": "reference",
-								"id": 802,
-								"name": "Mixed"
-							},
-							{
-								"type": "reference",
-								"id": 803,
-								"name": "Array"
+								"id": 790,
+								"name": "ParameterType"
 							}
 						]
 					}
@@ -43960,7 +40064,7 @@
 			]
 		},
 		{
-			"id": 1371,
+			"id": 1422,
 			"name": "Decorator",
 			"kind": 256,
 			"kindString": "Interface",
@@ -43970,7 +40074,7 @@
 			},
 			"children": [
 				{
-					"id": 1374,
+					"id": 1425,
 					"name": "arguments",
 					"kind": 1024,
 					"kindString": "Property",
@@ -43993,7 +40097,7 @@
 					}
 				},
 				{
-					"id": 1372,
+					"id": 1423,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -44014,7 +40118,7 @@
 					}
 				},
 				{
-					"id": 1373,
+					"id": 1424,
 					"name": "type",
 					"kind": 1024,
 					"kindString": "Property",
@@ -44051,9 +40155,9 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1374,
-						1372,
-						1373
+						1425,
+						1423,
+						1424
 					]
 				}
 			],
@@ -44254,7 +40358,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 801,
+						"id": 794,
 						"name": "Map"
 					},
 					"overwrites": {
@@ -44402,7 +40506,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 802,
+						"id": 795,
 						"name": "Mixed"
 					},
 					"overwrites": {
@@ -44677,7 +40781,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 799,
+						"id": 792,
 						"name": "Number"
 					},
 					"overwrites": {
@@ -44782,7 +40886,7 @@
 			]
 		},
 		{
-			"id": 787,
+			"id": 841,
 			"name": "OptionsReader",
 			"kind": 256,
 			"kindString": "Interface",
@@ -44792,7 +40896,7 @@
 			},
 			"children": [
 				{
-					"id": 789,
+					"id": 843,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -44813,7 +40917,7 @@
 					}
 				},
 				{
-					"id": 788,
+					"id": 842,
 					"name": "priority",
 					"kind": 1024,
 					"kindString": "Property",
@@ -44835,14 +40939,14 @@
 					}
 				},
 				{
-					"id": 790,
+					"id": 844,
 					"name": "read",
 					"kind": 2048,
 					"kindString": "Method",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 791,
+							"id": 845,
 							"name": "read",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -44852,7 +40956,7 @@
 							},
 							"parameters": [
 								{
-									"id": 792,
+									"id": 846,
 									"name": "container",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -44867,7 +40971,7 @@
 									}
 								},
 								{
-									"id": 793,
+									"id": 847,
 									"name": "logger",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -44894,15 +40998,15 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						789,
-						788
+						843,
+						842
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						790
+						844
 					]
 				}
 			],
@@ -44916,17 +41020,17 @@
 			"implementedBy": [
 				{
 					"type": "reference",
-					"id": 882,
+					"id": 829,
 					"name": "ArgumentsReader"
 				},
 				{
 					"type": "reference",
-					"id": 850,
+					"id": 797,
 					"name": "TSConfigReader"
 				},
 				{
 					"type": "reference",
-					"id": 859,
+					"id": 806,
 					"name": "TypeDocReader"
 				}
 			]
@@ -45023,13 +41127,8 @@
 							},
 							{
 								"type": "reference",
-								"id": 795,
-								"name": "File"
-							},
-							{
-								"type": "reference",
-								"id": 796,
-								"name": "Directory"
+								"id": 787,
+								"name": "ParameterHint"
 							}
 						]
 					}
@@ -45087,7 +41186,7 @@
 							},
 							{
 								"type": "reference",
-								"id": 798,
+								"id": 791,
 								"name": "String"
 							}
 						]
@@ -45193,7 +41292,7 @@
 			]
 		},
 		{
-			"id": 805,
+			"id": 849,
 			"name": "TypeDocOptionMap",
 			"kind": 256,
 			"kindString": "Interface",
@@ -45203,7 +41302,7 @@
 			},
 			"children": [
 				{
-					"id": 831,
+					"id": 875,
 					"name": "categorizeByGroup",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45221,7 +41320,7 @@
 					}
 				},
 				{
-					"id": 830,
+					"id": 874,
 					"name": "categoryOrder",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45242,7 +41341,7 @@
 					}
 				},
 				{
-					"id": 829,
+					"id": 873,
 					"name": "defaultCategory",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45260,7 +41359,7 @@
 					}
 				},
 				{
-					"id": 838,
+					"id": 882,
 					"name": "disableOutputCheck",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45278,7 +41377,7 @@
 					}
 				},
 				{
-					"id": 816,
+					"id": 860,
 					"name": "disableSources",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45296,7 +41395,7 @@
 					}
 				},
 				{
-					"id": 819,
+					"id": 863,
 					"name": "emit",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45314,7 +41413,7 @@
 					}
 				},
 				{
-					"id": 808,
+					"id": 852,
 					"name": "entryPoints",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45335,7 +41434,7 @@
 					}
 				},
 				{
-					"id": 809,
+					"id": 853,
 					"name": "exclude",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45356,7 +41455,7 @@
 					}
 				},
 				{
-					"id": 811,
+					"id": 855,
 					"name": "excludeExternals",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45374,7 +41473,7 @@
 					}
 				},
 				{
-					"id": 815,
+					"id": 859,
 					"name": "excludeInternal",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45392,7 +41491,7 @@
 					}
 				},
 				{
-					"id": 814,
+					"id": 858,
 					"name": "excludeNotDocumented",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45410,7 +41509,7 @@
 					}
 				},
 				{
-					"id": 812,
+					"id": 856,
 					"name": "excludePrivate",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45428,7 +41527,7 @@
 					}
 				},
 				{
-					"id": 813,
+					"id": 857,
 					"name": "excludeProtected",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45446,7 +41545,7 @@
 					}
 				},
 				{
-					"id": 827,
+					"id": 871,
 					"name": "excludeTags",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45467,7 +41566,7 @@
 					}
 				},
 				{
-					"id": 810,
+					"id": 854,
 					"name": "externalPattern",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45488,7 +41587,7 @@
 					}
 				},
 				{
-					"id": 834,
+					"id": 878,
 					"name": "gaID",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45506,7 +41605,7 @@
 					}
 				},
 				{
-					"id": 835,
+					"id": 879,
 					"name": "gaSite",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45524,7 +41623,7 @@
 					}
 				},
 				{
-					"id": 833,
+					"id": 877,
 					"name": "gitRemote",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45542,7 +41641,7 @@
 					}
 				},
 				{
-					"id": 832,
+					"id": 876,
 					"name": "gitRevision",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45560,7 +41659,7 @@
 					}
 				},
 				{
-					"id": 839,
+					"id": 883,
 					"name": "help",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45578,7 +41677,7 @@
 					}
 				},
 				{
-					"id": 836,
+					"id": 880,
 					"name": "hideGenerator",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45596,7 +41695,7 @@
 					}
 				},
 				{
-					"id": 847,
+					"id": 891,
 					"name": "highlightTheme",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45614,7 +41713,7 @@
 					}
 				},
 				{
-					"id": 826,
+					"id": 870,
 					"name": "includeVersion",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45632,7 +41731,7 @@
 					}
 				},
 				{
-					"id": 817,
+					"id": 861,
 					"name": "includes",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45650,7 +41749,7 @@
 					}
 				},
 				{
-					"id": 823,
+					"id": 867,
 					"name": "json",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45668,7 +41767,7 @@
 					}
 				},
 				{
-					"id": 845,
+					"id": 889,
 					"name": "listInvalidSymbolLinks",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45686,7 +41785,7 @@
 					}
 				},
 				{
-					"id": 844,
+					"id": 888,
 					"name": "logLevel",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45707,7 +41806,7 @@
 					}
 				},
 				{
-					"id": 843,
+					"id": 887,
 					"name": "logger",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45725,7 +41824,7 @@
 					}
 				},
 				{
-					"id": 846,
+					"id": 890,
 					"name": "markedOptions",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45743,7 +41842,7 @@
 					}
 				},
 				{
-					"id": 818,
+					"id": 862,
 					"name": "media",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45761,7 +41860,7 @@
 					}
 				},
 				{
-					"id": 825,
+					"id": 869,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45779,7 +41878,7 @@
 					}
 				},
 				{
-					"id": 806,
+					"id": 850,
 					"name": "options",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45797,7 +41896,7 @@
 					}
 				},
 				{
-					"id": 822,
+					"id": 866,
 					"name": "out",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45815,7 +41914,7 @@
 					}
 				},
 				{
-					"id": 842,
+					"id": 886,
 					"name": "plugin",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45836,7 +41935,7 @@
 					}
 				},
 				{
-					"id": 821,
+					"id": 865,
 					"name": "preserveWatchOutput",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45854,7 +41953,7 @@
 					}
 				},
 				{
-					"id": 828,
+					"id": 872,
 					"name": "readme",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45872,7 +41971,7 @@
 					}
 				},
 				{
-					"id": 841,
+					"id": 885,
 					"name": "showConfig",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45890,7 +41989,7 @@
 					}
 				},
 				{
-					"id": 824,
+					"id": 868,
 					"name": "theme",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45908,7 +42007,7 @@
 					}
 				},
 				{
-					"id": 837,
+					"id": 881,
 					"name": "toc",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45929,7 +42028,7 @@
 					}
 				},
 				{
-					"id": 807,
+					"id": 851,
 					"name": "tsconfig",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45947,7 +42046,7 @@
 					}
 				},
 				{
-					"id": 840,
+					"id": 884,
 					"name": "version",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45965,7 +42064,7 @@
 					}
 				},
 				{
-					"id": 820,
+					"id": 864,
 					"name": "watch",
 					"kind": 1024,
 					"kindString": "Property",
@@ -45988,48 +42087,48 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						831,
-						830,
-						829,
-						838,
-						816,
-						819,
-						808,
-						809,
-						811,
-						815,
-						814,
-						812,
-						813,
-						827,
-						810,
-						834,
-						835,
-						833,
-						832,
-						839,
-						836,
-						847,
-						826,
-						817,
-						823,
-						845,
-						844,
-						843,
-						846,
-						818,
-						825,
-						806,
-						822,
-						842,
-						821,
-						828,
-						841,
-						824,
-						837,
-						807,
-						840,
-						820
+						875,
+						874,
+						873,
+						882,
+						860,
+						863,
+						852,
+						853,
+						855,
+						859,
+						858,
+						856,
+						857,
+						871,
+						854,
+						878,
+						879,
+						877,
+						876,
+						883,
+						880,
+						891,
+						870,
+						861,
+						867,
+						889,
+						888,
+						887,
+						890,
+						862,
+						869,
+						850,
+						866,
+						886,
+						865,
+						872,
+						885,
+						868,
+						881,
+						851,
+						884,
+						864
 					]
 				}
 			],
@@ -46042,14 +42141,14 @@
 			]
 		},
 		{
-			"id": 1322,
+			"id": 1373,
 			"name": "TypeParameterContainer",
 			"kind": 256,
 			"kindString": "Interface",
 			"flags": {},
 			"children": [
 				{
-					"id": 1336,
+					"id": 1387,
 					"name": "anchor",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46086,7 +42185,7 @@
 					}
 				},
 				{
-					"id": 1331,
+					"id": 1382,
 					"name": "comment",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46123,7 +42222,7 @@
 					}
 				},
 				{
-					"id": 1338,
+					"id": 1389,
 					"name": "cssClasses",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46160,7 +42259,7 @@
 					}
 				},
 				{
-					"id": 1334,
+					"id": 1385,
 					"name": "decorates",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46200,7 +42299,7 @@
 					}
 				},
 				{
-					"id": 1333,
+					"id": 1384,
 					"name": "decorators",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46228,7 +42327,7 @@
 								"type": "array",
 								"elementType": {
 									"type": "reference",
-									"id": 1371,
+									"id": 1422,
 									"name": "Decorator"
 								}
 							}
@@ -46241,7 +42340,7 @@
 					}
 				},
 				{
-					"id": 1329,
+					"id": 1380,
 					"name": "flags",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46255,7 +42354,7 @@
 					],
 					"type": {
 						"type": "reference",
-						"id": 1384,
+						"id": 1331,
 						"name": "ReflectionFlags"
 					},
 					"defaultValue": "...",
@@ -46266,7 +42365,7 @@
 					}
 				},
 				{
-					"id": 1337,
+					"id": 1388,
 					"name": "hasOwnDocument",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46304,7 +42403,7 @@
 					}
 				},
 				{
-					"id": 1324,
+					"id": 1375,
 					"name": "id",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46330,7 +42429,7 @@
 					}
 				},
 				{
-					"id": 1327,
+					"id": 1378,
 					"name": "kind",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46357,7 +42456,7 @@
 					}
 				},
 				{
-					"id": 1328,
+					"id": 1379,
 					"name": "kindString",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46394,7 +42493,7 @@
 					}
 				},
 				{
-					"id": 1325,
+					"id": 1376,
 					"name": "name",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46420,7 +42519,7 @@
 					}
 				},
 				{
-					"id": 1326,
+					"id": 1377,
 					"name": "originalName",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46446,7 +42545,7 @@
 					}
 				},
 				{
-					"id": 1330,
+					"id": 1381,
 					"name": "parent",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46484,7 +42583,7 @@
 					}
 				},
 				{
-					"id": 1332,
+					"id": 1383,
 					"name": "sources",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46524,7 +42623,7 @@
 					}
 				},
 				{
-					"id": 1323,
+					"id": 1374,
 					"name": "typeParameters",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46557,7 +42656,7 @@
 					}
 				},
 				{
-					"id": 1335,
+					"id": 1386,
 					"name": "url",
 					"kind": 1024,
 					"kindString": "Property",
@@ -46594,7 +42693,7 @@
 					}
 				},
 				{
-					"id": 1360,
+					"id": 1411,
 					"name": "findReflectionByName",
 					"kind": 2048,
 					"kindString": "Method",
@@ -46608,7 +42707,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1361,
+							"id": 1412,
 							"name": "findReflectionByName",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -46619,7 +42718,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1362,
+									"id": 1413,
 									"name": "arg",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -46670,7 +42769,7 @@
 					}
 				},
 				{
-					"id": 1349,
+					"id": 1400,
 					"name": "getAlias",
 					"kind": 2048,
 					"kindString": "Method",
@@ -46684,7 +42783,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1350,
+							"id": 1401,
 							"name": "getAlias",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -46710,7 +42809,7 @@
 					}
 				},
 				{
-					"id": 1355,
+					"id": 1406,
 					"name": "getChildByName",
 					"kind": 2048,
 					"kindString": "Method",
@@ -46724,7 +42823,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1356,
+							"id": 1407,
 							"name": "getChildByName",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -46735,7 +42834,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1357,
+									"id": 1408,
 									"name": "arg",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -46786,7 +42885,7 @@
 					}
 				},
 				{
-					"id": 1342,
+					"id": 1393,
 					"name": "getFullName",
 					"kind": 2048,
 					"kindString": "Method",
@@ -46800,7 +42899,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1343,
+							"id": 1394,
 							"name": "getFullName",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -46812,7 +42911,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1344,
+									"id": 1395,
 									"name": "separator",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -46845,7 +42944,7 @@
 					}
 				},
 				{
-					"id": 1351,
+					"id": 1402,
 					"name": "hasComment",
 					"kind": 2048,
 					"kindString": "Method",
@@ -46859,7 +42958,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1352,
+							"id": 1403,
 							"name": "hasComment",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -46886,7 +42985,7 @@
 					}
 				},
 				{
-					"id": 1353,
+					"id": 1404,
 					"name": "hasGetterOrSetter",
 					"kind": 2048,
 					"kindString": "Method",
@@ -46900,7 +42999,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1354,
+							"id": 1405,
 							"name": "hasGetterOrSetter",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -46923,7 +43022,7 @@
 					}
 				},
 				{
-					"id": 1358,
+					"id": 1409,
 					"name": "isProject",
 					"kind": 2048,
 					"kindString": "Method",
@@ -46937,7 +43036,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1359,
+							"id": 1410,
 							"name": "isProject",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -46969,7 +43068,7 @@
 					}
 				},
 				{
-					"id": 1339,
+					"id": 1390,
 					"name": "kindOf",
 					"kind": 2048,
 					"kindString": "Method",
@@ -46983,7 +43082,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1340,
+							"id": 1391,
 							"name": "kindOf",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -46993,7 +43092,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1341,
+									"id": 1392,
 									"name": "kind",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -47003,128 +43102,8 @@
 										"types": [
 											{
 												"type": "reference",
-												"id": 1272,
-												"name": "Project"
-											},
-											{
-												"type": "reference",
-												"id": 1273,
-												"name": "Module"
-											},
-											{
-												"type": "reference",
-												"id": 1274,
-												"name": "Namespace"
-											},
-											{
-												"type": "reference",
-												"id": 1275,
-												"name": "Enum"
-											},
-											{
-												"type": "reference",
-												"id": 1276,
-												"name": "EnumMember"
-											},
-											{
-												"type": "reference",
-												"id": 1277,
-												"name": "Variable"
-											},
-											{
-												"type": "reference",
-												"id": 1278,
-												"name": "Function"
-											},
-											{
-												"type": "reference",
-												"id": 1279,
-												"name": "Class"
-											},
-											{
-												"type": "reference",
-												"id": 1280,
-												"name": "Interface"
-											},
-											{
-												"type": "reference",
-												"id": 1281,
-												"name": "Constructor"
-											},
-											{
-												"type": "reference",
-												"id": 1282,
-												"name": "Property"
-											},
-											{
-												"type": "reference",
-												"id": 1283,
-												"name": "Method"
-											},
-											{
-												"type": "reference",
-												"id": 1284,
-												"name": "CallSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1285,
-												"name": "IndexSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1286,
-												"name": "ConstructorSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1287,
-												"name": "Parameter"
-											},
-											{
-												"type": "reference",
-												"id": 1288,
-												"name": "TypeLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1289,
-												"name": "TypeParameter"
-											},
-											{
-												"type": "reference",
-												"id": 1290,
-												"name": "Accessor"
-											},
-											{
-												"type": "reference",
-												"id": 1291,
-												"name": "GetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1292,
-												"name": "SetSignature"
-											},
-											{
-												"type": "reference",
-												"id": 1293,
-												"name": "ObjectLiteral"
-											},
-											{
-												"type": "reference",
-												"id": 1294,
-												"name": "TypeAlias"
-											},
-											{
-												"type": "reference",
-												"id": 1295,
-												"name": "Event"
-											},
-											{
-												"type": "reference",
-												"id": 1296,
-												"name": "Reference"
+												"id": 1271,
+												"name": "ReflectionKind"
 											},
 											{
 												"type": "array",
@@ -47156,7 +43135,7 @@
 					}
 				},
 				{
-					"id": 1345,
+					"id": 1396,
 					"name": "setFlag",
 					"kind": 2048,
 					"kindString": "Method",
@@ -47170,7 +43149,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1346,
+							"id": 1397,
 							"name": "setFlag",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -47180,7 +43159,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1347,
+									"id": 1398,
 									"name": "flag",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -47192,7 +43171,7 @@
 									}
 								},
 								{
-									"id": 1348,
+									"id": 1399,
 									"name": "value",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -47222,7 +43201,7 @@
 					}
 				},
 				{
-					"id": 1366,
+					"id": 1417,
 					"name": "toString",
 					"kind": 2048,
 					"kindString": "Method",
@@ -47236,7 +43215,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1367,
+							"id": 1418,
 							"name": "toString",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -47262,7 +43241,7 @@
 					}
 				},
 				{
-					"id": 1368,
+					"id": 1419,
 					"name": "toStringHierarchy",
 					"kind": 2048,
 					"kindString": "Method",
@@ -47276,7 +43255,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1369,
+							"id": 1420,
 							"name": "toStringHierarchy",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -47286,7 +43265,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1370,
+									"id": 1421,
 									"name": "indent",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -47319,7 +43298,7 @@
 					}
 				},
 				{
-					"id": 1363,
+					"id": 1414,
 					"name": "traverse",
 					"kind": 2048,
 					"kindString": "Method",
@@ -47333,7 +43312,7 @@
 					],
 					"signatures": [
 						{
-							"id": 1364,
+							"id": 1415,
 							"name": "traverse",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -47344,7 +43323,7 @@
 							},
 							"parameters": [
 								{
-									"id": 1365,
+									"id": 1416,
 									"name": "_callback",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -47378,40 +43357,40 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						1336,
-						1331,
-						1338,
-						1334,
-						1333,
-						1329,
-						1337,
-						1324,
-						1327,
-						1328,
-						1325,
-						1326,
-						1330,
-						1332,
-						1323,
-						1335
+						1387,
+						1382,
+						1389,
+						1385,
+						1384,
+						1380,
+						1388,
+						1375,
+						1378,
+						1379,
+						1376,
+						1377,
+						1381,
+						1383,
+						1374,
+						1386
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						1360,
-						1349,
-						1355,
-						1342,
-						1351,
-						1353,
-						1358,
-						1339,
-						1345,
-						1366,
-						1368,
-						1363
+						1411,
+						1400,
+						1406,
+						1393,
+						1402,
+						1404,
+						1409,
+						1390,
+						1396,
+						1417,
+						1419,
+						1414
 					]
 				}
 			],
@@ -47635,7 +43614,7 @@
 			}
 		},
 		{
-			"id": 848,
+			"id": 892,
 			"name": "KeyToDeclaration",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -47652,7 +43631,7 @@
 			],
 			"typeParameter": [
 				{
-					"id": 849,
+					"id": 893,
 					"name": "K",
 					"kind": 131072,
 					"kindString": "Type parameter",
@@ -47662,7 +43641,7 @@
 						"operator": "keyof",
 						"target": {
 							"type": "reference",
-							"id": 805,
+							"id": 849,
 							"name": "TypeDocOptionMap"
 						}
 					}
@@ -47678,7 +43657,7 @@
 					},
 					"objectType": {
 						"type": "reference",
-						"id": 805,
+						"id": 849,
 						"name": "TypeDocOptionMap"
 					}
 				},
@@ -47701,7 +43680,7 @@
 						},
 						"objectType": {
 							"type": "reference",
-							"id": 805,
+							"id": 849,
 							"name": "TypeDocOptionMap"
 						}
 					},
@@ -47724,7 +43703,7 @@
 							},
 							"objectType": {
 								"type": "reference",
-								"id": 805,
+								"id": 849,
 								"name": "TypeDocOptionMap"
 							}
 						},
@@ -47747,7 +43726,7 @@
 								},
 								"objectType": {
 									"type": "reference",
-									"id": 805,
+									"id": 849,
 									"name": "TypeDocOptionMap"
 								}
 							},
@@ -47777,7 +43756,7 @@
 									},
 									"objectType": {
 										"type": "reference",
-										"id": 805,
+										"id": 849,
 										"name": "TypeDocOptionMap"
 									}
 								},
@@ -47796,7 +43775,7 @@
 										},
 										"objectType": {
 											"type": "reference",
-											"id": 805,
+											"id": 849,
 											"name": "TypeDocOptionMap"
 										}
 									},
@@ -47846,7 +43825,7 @@
 			}
 		},
 		{
-			"id": 804,
+			"id": 848,
 			"name": "TypeDocOptions",
 			"kind": 4194304,
 			"kindString": "Type alias",
@@ -47869,7 +43848,7 @@
 					"operator": "keyof",
 					"target": {
 						"type": "reference",
-						"id": 805,
+						"id": 849,
 						"name": "TypeDocOptionMap"
 					}
 				},
@@ -47883,7 +43862,7 @@
 						},
 						"objectType": {
 							"type": "reference",
-							"id": 805,
+							"id": 849,
 							"name": "TypeDocOptionMap"
 						}
 					},
@@ -47929,7 +43908,7 @@
 									},
 									"objectType": {
 										"type": "reference",
-										"id": 805,
+										"id": 849,
 										"name": "TypeDocOptionMap"
 									}
 								}
@@ -47944,7 +43923,7 @@
 						},
 						"objectType": {
 							"type": "reference",
-							"id": 805,
+							"id": 849,
 							"name": "TypeDocOptionMap"
 						}
 					}
@@ -48080,177 +44059,13 @@
 							"kindString": "Type parameter",
 							"flags": {},
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "literal",
-										"value": "logger"
-									},
-									{
-										"type": "literal",
-										"value": "options"
-									},
-									{
-										"type": "literal",
-										"value": "tsconfig"
-									},
-									{
-										"type": "literal",
-										"value": "entryPoints"
-									},
-									{
-										"type": "literal",
-										"value": "exclude"
-									},
-									{
-										"type": "literal",
-										"value": "externalPattern"
-									},
-									{
-										"type": "literal",
-										"value": "excludeExternals"
-									},
-									{
-										"type": "literal",
-										"value": "excludePrivate"
-									},
-									{
-										"type": "literal",
-										"value": "excludeProtected"
-									},
-									{
-										"type": "literal",
-										"value": "excludeNotDocumented"
-									},
-									{
-										"type": "literal",
-										"value": "excludeInternal"
-									},
-									{
-										"type": "literal",
-										"value": "disableSources"
-									},
-									{
-										"type": "literal",
-										"value": "includes"
-									},
-									{
-										"type": "literal",
-										"value": "media"
-									},
-									{
-										"type": "literal",
-										"value": "emit"
-									},
-									{
-										"type": "literal",
-										"value": "watch"
-									},
-									{
-										"type": "literal",
-										"value": "preserveWatchOutput"
-									},
-									{
-										"type": "literal",
-										"value": "out"
-									},
-									{
-										"type": "literal",
-										"value": "json"
-									},
-									{
-										"type": "literal",
-										"value": "theme"
-									},
-									{
-										"type": "literal",
-										"value": "name"
-									},
-									{
-										"type": "literal",
-										"value": "includeVersion"
-									},
-									{
-										"type": "literal",
-										"value": "excludeTags"
-									},
-									{
-										"type": "literal",
-										"value": "readme"
-									},
-									{
-										"type": "literal",
-										"value": "defaultCategory"
-									},
-									{
-										"type": "literal",
-										"value": "categoryOrder"
-									},
-									{
-										"type": "literal",
-										"value": "categorizeByGroup"
-									},
-									{
-										"type": "literal",
-										"value": "gitRevision"
-									},
-									{
-										"type": "literal",
-										"value": "gitRemote"
-									},
-									{
-										"type": "literal",
-										"value": "gaID"
-									},
-									{
-										"type": "literal",
-										"value": "gaSite"
-									},
-									{
-										"type": "literal",
-										"value": "hideGenerator"
-									},
-									{
-										"type": "literal",
-										"value": "toc"
-									},
-									{
-										"type": "literal",
-										"value": "disableOutputCheck"
-									},
-									{
-										"type": "literal",
-										"value": "help"
-									},
-									{
-										"type": "literal",
-										"value": "version"
-									},
-									{
-										"type": "literal",
-										"value": "showConfig"
-									},
-									{
-										"type": "literal",
-										"value": "plugin"
-									},
-									{
-										"type": "literal",
-										"value": "logLevel"
-									},
-									{
-										"type": "literal",
-										"value": "listInvalidSymbolLinks"
-									},
-									{
-										"type": "literal",
-										"value": "markedOptions"
-									},
-									{
-										"type": "literal",
-										"value": "highlightTheme"
-									}
-								]
+								"type": "typeOperator",
+								"operator": "keyof",
+								"target": {
+									"type": "reference",
+									"id": 849,
+									"name": "TypeDocOptionMap"
+								}
 							}
 						}
 					],
@@ -48790,11 +44605,11 @@
 			"title": "Enumerations",
 			"kind": 4,
 			"children": [
-				794,
-				797,
+				787,
+				790,
 				1307,
 				1271,
-				1375
+				1322
 			]
 		},
 		{
@@ -48802,7 +44617,7 @@
 			"kind": 128,
 			"children": [
 				1,
-				882,
+				829,
 				1426,
 				227,
 				1485,
@@ -48816,11 +44631,11 @@
 				1625,
 				1716,
 				1216,
-				1384,
+				1331,
 				376,
 				1810,
-				850,
-				859,
+				797,
+				806,
 				1871,
 				665
 			]
@@ -48833,14 +44648,14 @@
 				920,
 				1566,
 				895,
-				1371,
+				1422,
 				943,
 				934,
 				909,
-				787,
+				841,
 				899,
-				805,
-				1322
+				849,
+				1373
 			]
 		},
 		{
@@ -48849,8 +44664,8 @@
 			"children": [
 				894,
 				951,
-				848,
-				804
+				892,
+				848
 			]
 		},
 		{
