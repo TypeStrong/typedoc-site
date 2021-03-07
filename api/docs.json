@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "TypeDoc Documentation - v0.20.29",
+	"name": "TypeDoc Documentation - v0.20.30",
 	"kind": 0,
 	"kindString": "Project",
 	"flags": {},
@@ -145,17 +145,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							}
 						},
 						{
@@ -177,17 +168,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							}
 						},
 						{
@@ -209,21 +191,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1204,
-											"name": "CommentTag"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1204,
+									"name": "CommentTag"
+								}
 							},
 							"defaultValue": "..."
 						},
@@ -246,17 +219,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							}
 						}
 					],
@@ -342,17 +306,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							}
 						},
 						{
@@ -607,21 +562,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 961,
-											"name": "ReflectionCategory"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 961,
+									"name": "ReflectionCategory"
+								}
 							}
 						},
 						{
@@ -643,21 +589,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1021,
-											"name": "DeclarationReflection"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1021,
+									"name": "DeclarationReflection"
+								}
 							}
 						},
 						{
@@ -679,18 +616,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1199,
-										"name": "Comment"
-									}
-								]
+								"type": "reference",
+								"id": 1199,
+								"name": "Comment"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -717,21 +645,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -755,21 +674,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1212,
-											"name": "Decorator"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1212,
+									"name": "Decorator"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -820,21 +730,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 956,
-											"name": "ReflectionGroup"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 956,
+									"name": "ReflectionGroup"
+								}
 							}
 						},
 						{
@@ -909,17 +810,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -972,17 +864,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -1006,21 +889,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1208,
-											"name": "SourceReference"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1208,
+									"name": "SourceReference"
+								}
 							}
 						}
 					],
@@ -1126,21 +1000,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 961,
-											"name": "ReflectionCategory"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 961,
+									"name": "ReflectionCategory"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -1167,21 +1032,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1021,
-											"name": "DeclarationReflection"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1021,
+									"name": "DeclarationReflection"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -1208,18 +1064,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1199,
-										"name": "Comment"
-									}
-								]
+								"type": "reference",
+								"id": 1199,
+								"name": "Comment"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -1246,21 +1093,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -1284,21 +1122,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1212,
-											"name": "Decorator"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1212,
+									"name": "Decorator"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -1326,17 +1155,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							}
 						},
 						{
@@ -1358,21 +1178,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							}
 						},
 						{
@@ -1394,21 +1205,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							}
 						},
 						{
@@ -1451,28 +1253,19 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
+								"type": "tuple",
+								"elements": [
 									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "tuple",
-										"elements": [
+										"type": "union",
+										"types": [
 											{
-												"type": "union",
-												"types": [
-													{
-														"type": "intrinsic",
-														"name": "undefined"
-													},
-													{
-														"type": "reference",
-														"id": 993,
-														"name": "SignatureReflection"
-													}
-												]
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"id": 993,
+												"name": "SignatureReflection"
 											}
 										]
 									}
@@ -1498,21 +1291,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 956,
-											"name": "ReflectionGroup"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 956,
+									"name": "ReflectionGroup"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -1566,18 +1350,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -1599,21 +1374,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							}
 						},
 						{
@@ -1635,21 +1401,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							}
 						},
 						{
@@ -1671,18 +1428,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 993,
-										"name": "SignatureReflection"
-									}
-								]
+								"type": "reference",
+								"id": 993,
+								"name": "SignatureReflection"
 							}
 						},
 						{
@@ -1705,18 +1453,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -1765,17 +1504,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -1828,17 +1558,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -1866,18 +1587,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -1896,28 +1608,19 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
+								"type": "tuple",
+								"elements": [
 									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "tuple",
-										"elements": [
+										"type": "union",
+										"types": [
 											{
-												"type": "union",
-												"types": [
-													{
-														"type": "intrinsic",
-														"name": "undefined"
-													},
-													{
-														"type": "reference",
-														"id": 993,
-														"name": "SignatureReflection"
-													}
-												]
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"id": 993,
+												"name": "SignatureReflection"
 											}
 										]
 									}
@@ -1944,21 +1647,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 993,
-											"name": "SignatureReflection"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 993,
+									"name": "SignatureReflection"
+								}
 							}
 						},
 						{
@@ -1977,21 +1671,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1208,
-											"name": "SourceReference"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1208,
+									"name": "SourceReference"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -2019,18 +1704,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -2049,21 +1725,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1049,
-											"name": "TypeParameterReflection"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1049,
+									"name": "TypeParameterReflection"
+								}
 							}
 						}
 					],
@@ -2254,18 +1921,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						}
 					],
@@ -2920,18 +2578,9 @@
 								"isOptional": true
 							},
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -2946,10 +2595,6 @@
 							"type": {
 								"type": "union",
 								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
 									{
 										"type": "literal",
 										"value": "-"
@@ -3000,10 +2645,6 @@
 							"type": {
 								"type": "union",
 								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
 									{
 										"type": "literal",
 										"value": "-"
@@ -3377,18 +3018,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1199,
-										"name": "Comment"
-									}
-								]
+								"type": "reference",
+								"id": 1199,
+								"name": "Comment"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -3415,21 +3047,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -3453,21 +3076,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1212,
-											"name": "Decorator"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1212,
+									"name": "Decorator"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -3491,17 +3105,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							}
 						},
 						{
@@ -3600,17 +3205,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -3663,17 +3259,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -3697,18 +3284,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						}
 					],
@@ -3838,18 +3416,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -3961,21 +3530,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 961,
-											"name": "ReflectionCategory"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 961,
+									"name": "ReflectionCategory"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4002,21 +3562,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1021,
-											"name": "DeclarationReflection"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1021,
+									"name": "DeclarationReflection"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4043,18 +3594,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1199,
-										"name": "Comment"
-									}
-								]
+								"type": "reference",
+								"id": 1199,
+								"name": "Comment"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4081,21 +3623,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4119,21 +3652,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1212,
-											"name": "Decorator"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1212,
+									"name": "Decorator"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4184,21 +3708,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 956,
-											"name": "ReflectionGroup"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 956,
+									"name": "ReflectionGroup"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4278,17 +3793,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4341,17 +3847,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4375,21 +3872,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1208,
-											"name": "SourceReference"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1208,
+									"name": "SourceReference"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4558,21 +4046,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 961,
-											"name": "ReflectionCategory"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 961,
+									"name": "ReflectionCategory"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4599,21 +4078,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1021,
-											"name": "DeclarationReflection"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1021,
+									"name": "DeclarationReflection"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4640,18 +4110,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1199,
-										"name": "Comment"
-									}
-								]
+								"type": "reference",
+								"id": 1199,
+								"name": "Comment"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4678,21 +4139,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4716,21 +4168,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1212,
-											"name": "Decorator"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1212,
+									"name": "Decorator"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4758,17 +4201,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4795,21 +4229,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4836,21 +4261,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -4898,28 +4314,19 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
+								"type": "tuple",
+								"elements": [
 									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "tuple",
-										"elements": [
+										"type": "union",
+										"types": [
 											{
-												"type": "union",
-												"types": [
-													{
-														"type": "intrinsic",
-														"name": "undefined"
-													},
-													{
-														"type": "reference",
-														"id": 993,
-														"name": "SignatureReflection"
-													}
-												]
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"id": 993,
+												"name": "SignatureReflection"
 											}
 										]
 									}
@@ -4950,21 +4357,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 956,
-											"name": "ReflectionGroup"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 956,
+									"name": "ReflectionGroup"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5018,18 +4416,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5056,21 +4445,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5097,21 +4477,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5138,18 +4509,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 993,
-										"name": "SignatureReflection"
-									}
-								]
+								"type": "reference",
+								"id": 993,
+								"name": "SignatureReflection"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5177,18 +4539,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5242,17 +4595,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5305,17 +4649,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5343,18 +4678,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5378,28 +4704,19 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
+								"type": "tuple",
+								"elements": [
 									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "tuple",
-										"elements": [
+										"type": "union",
+										"types": [
 											{
-												"type": "union",
-												"types": [
-													{
-														"type": "intrinsic",
-														"name": "undefined"
-													},
-													{
-														"type": "reference",
-														"id": 993,
-														"name": "SignatureReflection"
-													}
-												]
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"id": 993,
+												"name": "SignatureReflection"
 											}
 										]
 									}
@@ -5431,21 +4748,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 993,
-											"name": "SignatureReflection"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 993,
+									"name": "SignatureReflection"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5469,21 +4777,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1208,
-											"name": "SourceReference"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1208,
+									"name": "SourceReference"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5532,18 +4831,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5567,21 +4857,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1049,
-											"name": "TypeParameterReflection"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1049,
+									"name": "TypeParameterReflection"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -5679,17 +4960,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "number"
-									}
-								]
+								"type": "intrinsic",
+								"name": "number"
 							}
 						},
 						{
@@ -5757,21 +5029,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							}
 						}
 					],
@@ -5855,18 +5118,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1199,
-										"name": "Comment"
-									}
-								]
+								"type": "reference",
+								"id": 1199,
+								"name": "Comment"
 							}
 						},
 						{
@@ -5888,21 +5142,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							}
 						},
 						{
@@ -5921,21 +5166,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1212,
-											"name": "Decorator"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1212,
+									"name": "Decorator"
+								}
 							}
 						},
 						{
@@ -6019,17 +5255,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							}
 						},
 						{
@@ -6072,17 +5299,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							}
 						}
 					],
@@ -6198,20 +5416,11 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "number"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "number"
+								}
 							}
 						},
 						{
@@ -6602,21 +5811,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 961,
-											"name": "ReflectionCategory"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 961,
+									"name": "ReflectionCategory"
+								}
 							}
 						},
 						{
@@ -6635,20 +5835,11 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "number"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "number"
+								}
 							}
 						},
 						{
@@ -6767,18 +5958,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1021,
-										"name": "DeclarationReflection"
-									}
-								]
+								"type": "reference",
+								"id": 1021,
+								"name": "DeclarationReflection"
 							}
 						},
 						{
@@ -6973,18 +6155,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1199,
-										"name": "Comment"
-									}
-								]
+								"type": "reference",
+								"id": 1199,
+								"name": "Comment"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -7011,21 +6184,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -7049,21 +6213,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1212,
-											"name": "Decorator"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1212,
+									"name": "Decorator"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -7141,18 +6296,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -7175,18 +6321,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -7235,17 +6372,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -7298,17 +6426,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -7336,18 +6455,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -7366,21 +6476,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1009,
-											"name": "ParameterReflection"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1009,
+									"name": "ParameterReflection"
+								}
 							}
 						},
 						{
@@ -7399,18 +6500,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -7429,21 +6521,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1049,
-											"name": "TypeParameterReflection"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1049,
+									"name": "TypeParameterReflection"
+								}
 							}
 						}
 					],
@@ -7787,21 +6870,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							}
 						},
 						{
@@ -8143,18 +7217,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1199,
-										"name": "Comment"
-									}
-								]
+								"type": "reference",
+								"id": 1199,
+								"name": "Comment"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -8181,21 +7246,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1099,
-											"name": "SomeType"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1099,
+									"name": "SomeType"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -8219,21 +7275,12 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "reference",
-											"id": 1212,
-											"name": "Decorator"
-										}
-									}
-								]
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"id": 1212,
+									"name": "Decorator"
+								}
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -8257,18 +7304,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -8367,17 +7405,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -8430,17 +7459,8 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "intrinsic",
-										"name": "string"
-									}
-								]
+								"type": "intrinsic",
+								"name": "string"
 							},
 							"inheritedFrom": {
 								"type": "reference",
@@ -8464,18 +7484,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						}
 					],
@@ -8560,18 +7571,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -8594,18 +7596,9 @@
 								}
 							],
 							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "reference",
-										"id": 1099,
-										"name": "SomeType"
-									}
-								]
+								"type": "reference",
+								"id": 1099,
+								"name": "SomeType"
 							}
 						},
 						{
@@ -13029,17 +12022,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -13066,20 +12050,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "ReflectionCategory"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "ReflectionCategory"
+						}
 					}
 				},
 				{
@@ -13101,21 +12076,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1485,
-									"name": "DeclarationReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1485,
+							"name": "DeclarationReflection"
+						}
 					}
 				},
 				{
@@ -13137,17 +12103,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Comment"
-							}
-						]
+						"type": "reference",
+						"name": "Comment"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -13174,17 +12131,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -13211,20 +12159,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -13251,21 +12190,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1422,
-									"name": "Decorator"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1422,
+							"name": "Decorator"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -13317,20 +12247,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "ReflectionGroup"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "ReflectionGroup"
+						}
 					}
 				},
 				{
@@ -13353,17 +12274,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -13443,17 +12355,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -13532,18 +12435,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1216,
-								"name": "Reflection"
-							}
-						]
+						"type": "reference",
+						"id": 1216,
+						"name": "Reflection"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -13570,20 +12464,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "SourceReference"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "SourceReference"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -13610,17 +12495,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -14917,20 +13793,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "IMinimatch"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "IMinimatch"
+						}
 					}
 				},
 				{
@@ -17171,17 +16038,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -17213,20 +16071,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "ReflectionCategory"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "ReflectionCategory"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -17253,21 +16102,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1485,
-									"name": "DeclarationReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1485,
+							"name": "DeclarationReflection"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -17294,17 +16134,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Comment"
-							}
-						]
+						"type": "reference",
+						"name": "Comment"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -17336,17 +16167,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -17378,20 +16200,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -17423,21 +16236,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1422,
-									"name": "Decorator"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1422,
+							"name": "Decorator"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -17470,17 +16274,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -17502,20 +16297,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					}
 				},
 				{
@@ -17537,20 +16323,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					}
 				},
 				{
@@ -17602,18 +16379,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1810,
-								"name": "SignatureReflection"
-							}
-						]
+						"type": "reference",
+						"id": 1810,
+						"name": "SignatureReflection"
 					}
 				},
 				{
@@ -17635,20 +16403,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "ReflectionGroup"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "ReflectionGroup"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -17676,17 +16435,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -17750,17 +16500,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -17782,20 +16523,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					}
 				},
 				{
@@ -17817,20 +16549,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					}
 				},
 				{
@@ -17852,18 +16575,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1810,
-								"name": "SignatureReflection"
-							}
-						]
+						"type": "reference",
+						"id": 1810,
+						"name": "SignatureReflection"
 					}
 				},
 				{
@@ -17886,17 +16600,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -17950,17 +16655,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -18055,17 +16751,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -18087,18 +16774,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1216,
-								"name": "Reflection"
-							}
-						]
+						"type": "reference",
+						"id": 1216,
+						"name": "Reflection"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -18130,18 +16808,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1810,
-								"name": "SignatureReflection"
-							}
-						]
+						"type": "reference",
+						"id": 1810,
+						"name": "SignatureReflection"
 					}
 				},
 				{
@@ -18164,21 +16833,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1810,
-									"name": "SignatureReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1810,
+							"name": "SignatureReflection"
+						}
 					}
 				},
 				{
@@ -18200,20 +16860,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "SourceReference"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "SourceReference"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -18246,17 +16897,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -18278,18 +16920,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1566,
-								"name": "DeclarationHierarchy"
-							}
-						]
+						"type": "reference",
+						"id": 1566,
+						"name": "DeclarationHierarchy"
 					}
 				},
 				{
@@ -18308,21 +16941,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1871,
-									"name": "TypeParameterReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1871,
+							"name": "TypeParameterReflection"
+						}
 					},
 					"implementationOf": {
 						"type": "reference",
@@ -18349,17 +16973,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -21705,17 +20320,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "EventHandlers"
-							}
-						]
+						"type": "reference",
+						"name": "EventHandlers"
 					}
 				},
 				{
@@ -21738,17 +20344,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "EventListeners"
-							}
-						]
+						"type": "reference",
+						"name": "EventListeners"
 					}
 				},
 				{
@@ -21771,17 +20368,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "EventListeners"
-							}
-						]
+						"type": "reference",
+						"name": "EventListeners"
 					}
 				},
 				{
@@ -21801,17 +20389,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -23410,21 +21989,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 640,
-									"name": "NavigationItem"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 640,
+							"name": "NavigationItem"
+						}
 					}
 				},
 				{
@@ -23467,20 +22037,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "string"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
 					}
 				},
 				{
@@ -23502,17 +22063,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					}
 				},
 				{
@@ -23534,17 +22086,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					}
 				},
 				{
@@ -23566,17 +22109,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					}
 				},
 				{
@@ -23598,17 +22132,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					}
 				},
 				{
@@ -23630,17 +22155,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					}
 				},
 				{
@@ -23662,18 +22178,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 640,
-								"name": "NavigationItem"
-							}
-						]
+						"type": "reference",
+						"id": 640,
+						"name": "NavigationItem"
 					}
 				},
 				{
@@ -23695,18 +22202,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1216,
-								"name": "Reflection"
-							}
-						]
+						"type": "reference",
+						"id": 1216,
+						"name": "Reflection"
 					}
 				},
 				{
@@ -25601,17 +24099,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -25638,17 +24127,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Comment"
-							}
-						]
+						"type": "reference",
+						"name": "Comment"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -25675,17 +24155,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -25712,20 +24183,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -25752,21 +24214,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1422,
-									"name": "Decorator"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1422,
+							"name": "Decorator"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -25790,17 +24243,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -25848,17 +24292,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -25938,17 +24373,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -26027,18 +24453,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1810,
-								"name": "SignatureReflection"
-							}
-						]
+						"type": "reference",
+						"id": 1810,
+						"name": "SignatureReflection"
 					},
 					"overwrites": {
 						"type": "reference",
@@ -26065,20 +24482,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "SourceReference"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "SourceReference"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -26102,17 +24510,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -26134,17 +24533,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -26970,17 +25360,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27007,20 +25388,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "ReflectionCategory"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "ReflectionCategory"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27047,21 +25419,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1485,
-									"name": "DeclarationReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1485,
+							"name": "DeclarationReflection"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27088,17 +25451,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Comment"
-							}
-						]
+						"type": "reference",
+						"name": "Comment"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27125,17 +25479,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27162,20 +25507,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27202,21 +25538,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1422,
-									"name": "Decorator"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1422,
+							"name": "Decorator"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27315,20 +25642,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "ReflectionGroup"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "ReflectionGroup"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27356,17 +25674,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27446,17 +25755,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27557,18 +25857,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1216,
-								"name": "Reflection"
-							}
-						]
+						"type": "reference",
+						"id": 1216,
+						"name": "Reflection"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27595,17 +25886,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -27625,30 +25907,21 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
+						"type": "reference",
+						"typeArguments": [
 							{
 								"type": "intrinsic",
-								"name": "undefined"
+								"name": "number"
 							},
 							{
-								"type": "reference",
-								"typeArguments": [
-									{
-										"type": "intrinsic",
-										"name": "number"
-									},
-									{
-										"type": "array",
-										"elementType": {
-											"type": "intrinsic",
-											"name": "number"
-										}
-									}
-								],
-								"name": "Map"
+								"type": "array",
+								"elementType": {
+									"type": "intrinsic",
+									"name": "number"
+								}
 							}
-						]
+						],
+						"name": "Map"
 					}
 				},
 				{
@@ -27759,20 +26032,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "SourceReference"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "SourceReference"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -27830,17 +26094,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29172,18 +27427,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1625,
-								"name": "ProjectReflection"
-							}
-						]
+						"type": "reference",
+						"id": 1625,
+						"name": "ProjectReflection"
 					}
 				},
 				{
@@ -29235,17 +27481,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29272,20 +27509,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "ReflectionCategory"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "ReflectionCategory"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29312,21 +27540,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1485,
-									"name": "DeclarationReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1485,
+							"name": "DeclarationReflection"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29353,17 +27572,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Comment"
-							}
-						]
+						"type": "reference",
+						"name": "Comment"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29390,17 +27600,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29427,20 +27628,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29467,21 +27659,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1422,
-									"name": "Decorator"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1422,
+							"name": "Decorator"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29509,17 +27692,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29546,20 +27720,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29586,20 +27751,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29651,18 +27807,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1810,
-								"name": "SignatureReflection"
-							}
-						]
+						"type": "reference",
+						"id": 1810,
+						"name": "SignatureReflection"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29689,20 +27836,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "ReflectionGroup"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "ReflectionGroup"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29730,17 +27868,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29794,17 +27923,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29831,20 +27951,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29871,20 +27982,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29911,18 +28013,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1810,
-								"name": "SignatureReflection"
-							}
-						]
+						"type": "reference",
+						"id": 1810,
+						"name": "SignatureReflection"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -29950,17 +28043,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -30014,17 +28098,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -30104,17 +28179,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -30141,18 +28207,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1216,
-								"name": "Reflection"
-							}
-						]
+						"type": "reference",
+						"id": 1216,
+						"name": "Reflection"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -30179,18 +28236,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1810,
-								"name": "SignatureReflection"
-							}
-						]
+						"type": "reference",
+						"id": 1810,
+						"name": "SignatureReflection"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -30218,21 +28266,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1810,
-									"name": "SignatureReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1810,
+							"name": "SignatureReflection"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -30259,20 +28298,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "SourceReference"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "SourceReference"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -30300,17 +28330,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -30337,18 +28358,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1566,
-								"name": "DeclarationHierarchy"
-							}
-						]
+						"type": "reference",
+						"id": 1566,
+						"name": "DeclarationHierarchy"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -30372,21 +28384,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1871,
-									"name": "TypeParameterReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1871,
+							"name": "TypeParameterReflection"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -30413,17 +28416,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -31692,17 +29686,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -31722,20 +29707,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "string"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
 					}
 				},
 				{
@@ -31757,17 +29733,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -31789,17 +29756,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Comment"
-							}
-						]
+						"type": "reference",
+						"name": "Comment"
 					}
 				},
 				{
@@ -31821,17 +29779,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -31853,20 +29802,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					}
 				},
 				{
@@ -31888,21 +29828,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1422,
-									"name": "Decorator"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1422,
+							"name": "Decorator"
+						}
 					}
 				},
 				{
@@ -31945,17 +29876,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					}
 				},
 				{
@@ -32020,17 +29942,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -32094,18 +30007,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1216,
-								"name": "Reflection"
-							}
-						]
+						"type": "reference",
+						"id": 1216,
+						"name": "Reflection"
 					}
 				},
 				{
@@ -32127,20 +30031,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "SourceReference"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "SourceReference"
+						}
 					}
 				},
 				{
@@ -32162,17 +30057,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -33745,17 +31631,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Theme"
-							}
-						]
+						"type": "reference",
+						"name": "Theme"
 					}
 				},
 				{
@@ -35636,17 +33513,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -35678,17 +33546,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Comment"
-							}
-						]
+						"type": "reference",
+						"name": "Comment"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -35720,17 +33579,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -35762,20 +33612,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -35807,21 +33648,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1422,
-									"name": "Decorator"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1422,
+							"name": "Decorator"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -35884,17 +33716,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -35958,17 +33781,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -35991,17 +33805,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -36055,17 +33860,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -36160,17 +33956,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -36189,21 +33976,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1570,
-									"name": "ParameterReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1570,
+							"name": "ParameterReflection"
+						}
 					}
 				},
 				{
@@ -36225,18 +34003,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1426,
-								"name": "ContainerReflection"
-							}
-						]
+						"type": "reference",
+						"id": 1426,
+						"name": "ContainerReflection"
 					},
 					"overwrites": {
 						"type": "reference",
@@ -36268,20 +34037,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "SourceReference"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "SourceReference"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -36310,17 +34070,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -36339,21 +34090,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1871,
-									"name": "TypeParameterReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1871,
+							"name": "TypeParameterReflection"
+						}
 					},
 					"implementationOf": {
 						"type": "reference",
@@ -36380,17 +34122,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -38014,17 +35747,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -38051,17 +35775,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Comment"
-							}
-						]
+						"type": "reference",
+						"name": "Comment"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -38088,17 +35803,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -38125,20 +35831,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -38165,21 +35862,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1422,
-									"name": "Decorator"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1422,
+							"name": "Decorator"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -38203,17 +35891,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -38261,17 +35940,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -38351,17 +36021,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -38440,18 +36101,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1485,
-								"name": "DeclarationReflection"
-							}
-						]
+						"type": "reference",
+						"id": 1485,
+						"name": "DeclarationReflection"
 					},
 					"overwrites": {
 						"type": "reference",
@@ -38478,20 +36130,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "SourceReference"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "SourceReference"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -38515,17 +36158,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				},
 				{
@@ -38547,17 +36181,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -39467,20 +37092,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "intrinsic",
-									"name": "string"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "intrinsic",
+							"name": "string"
+						}
 					}
 				},
 				{
@@ -39581,52 +37197,43 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 929,
+						"type": "reflection",
+						"declaration": {
+							"id": 929,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 930,
 									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
+									"kind": 4096,
+									"kindString": "Call signature",
 									"flags": {},
-									"signatures": [
+									"parameters": [
 										{
-											"id": 930,
-											"name": "__type",
-											"kind": 4096,
-											"kindString": "Call signature",
+											"id": 931,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
 											"flags": {},
-											"parameters": [
-												{
-													"id": 931,
-													"name": "value",
-													"kind": 32768,
-													"kindString": "Parameter",
-													"flags": {},
-													"type": {
-														"type": "array",
-														"elementType": {
-															"type": "intrinsic",
-															"name": "string"
-														}
-													}
-												}
-											],
 											"type": {
-												"type": "intrinsic",
-												"name": "void"
+												"type": "array",
+												"elementType": {
+													"type": "intrinsic",
+													"name": "string"
+												}
 											}
 										}
-									]
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
 								}
-							}
-						]
+							]
+						}
 					}
 				}
 			],
@@ -39684,17 +37291,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					}
 				},
 				{
@@ -39839,17 +37437,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					}
 				},
 				{
@@ -39871,18 +37460,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1566,
-								"name": "DeclarationHierarchy"
-							}
-						]
+						"type": "reference",
+						"id": 1566,
+						"name": "DeclarationHierarchy"
 					}
 				},
 				{
@@ -39997,18 +37577,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 790,
-								"name": "ParameterType"
-							}
-						]
+						"type": "reference",
+						"id": 790,
+						"name": "ParameterType"
 					}
 				}
 			],
@@ -40136,17 +37707,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Type"
-							}
-						]
+						"type": "reference",
+						"name": "Type"
 					}
 				}
 			],
@@ -40301,17 +37863,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -40534,49 +38087,40 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 938,
+						"type": "reflection",
+						"declaration": {
+							"id": 938,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 939,
 									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
+									"kind": 4096,
+									"kindString": "Call signature",
 									"flags": {},
-									"signatures": [
+									"parameters": [
 										{
-											"id": 939,
-											"name": "__type",
-											"kind": 4096,
-											"kindString": "Call signature",
+											"id": 940,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
 											"flags": {},
-											"parameters": [
-												{
-													"id": 940,
-													"name": "value",
-													"kind": 32768,
-													"kindString": "Parameter",
-													"flags": {},
-													"type": {
-														"type": "intrinsic",
-														"name": "unknown"
-													}
-												}
-											],
 											"type": {
 												"type": "intrinsic",
-												"name": "void"
+												"name": "unknown"
 											}
 										}
-									]
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
 								}
-							}
-						]
+							]
+						}
 					}
 				}
 			],
@@ -40634,17 +38178,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "number"
-							}
-						]
+						"type": "intrinsic",
+						"name": "number"
 					}
 				},
 				{
@@ -40692,17 +38227,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "number"
-							}
-						]
+						"type": "intrinsic",
+						"name": "number"
 					}
 				},
 				{
@@ -40724,17 +38250,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "number"
-							}
-						]
+						"type": "intrinsic",
+						"name": "number"
 					}
 				},
 				{
@@ -40809,49 +38326,40 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 915,
+						"type": "reflection",
+						"declaration": {
+							"id": 915,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 916,
 									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
+									"kind": 4096,
+									"kindString": "Call signature",
 									"flags": {},
-									"signatures": [
+									"parameters": [
 										{
-											"id": 916,
-											"name": "__type",
-											"kind": 4096,
-											"kindString": "Call signature",
+											"id": 917,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
 											"flags": {},
-											"parameters": [
-												{
-													"id": 917,
-													"name": "value",
-													"kind": 32768,
-													"kindString": "Parameter",
-													"flags": {},
-													"type": {
-														"type": "intrinsic",
-														"name": "number"
-													}
-												}
-											],
 											"type": {
 												"type": "intrinsic",
-												"name": "void"
+												"name": "number"
 											}
 										}
-									]
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
 								}
-							}
-						]
+							]
+						}
 					}
 				}
 			],
@@ -41061,17 +38569,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					}
 				},
 				{
@@ -41119,18 +38618,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 787,
-								"name": "ParameterHint"
-							}
-						]
+						"type": "reference",
+						"id": 787,
+						"name": "ParameterHint"
 					}
 				},
 				{
@@ -41178,18 +38668,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 791,
-								"name": "String"
-							}
-						]
+						"type": "reference",
+						"id": 791,
+						"name": "String"
 					},
 					"overwrites": {
 						"type": "reference",
@@ -41216,49 +38697,40 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reflection",
-								"declaration": {
-									"id": 904,
+						"type": "reflection",
+						"declaration": {
+							"id": 904,
+							"name": "__type",
+							"kind": 65536,
+							"kindString": "Type literal",
+							"flags": {},
+							"signatures": [
+								{
+									"id": 905,
 									"name": "__type",
-									"kind": 65536,
-									"kindString": "Type literal",
+									"kind": 4096,
+									"kindString": "Call signature",
 									"flags": {},
-									"signatures": [
+									"parameters": [
 										{
-											"id": 905,
-											"name": "__type",
-											"kind": 4096,
-											"kindString": "Call signature",
+											"id": 906,
+											"name": "value",
+											"kind": 32768,
+											"kindString": "Parameter",
 											"flags": {},
-											"parameters": [
-												{
-													"id": 906,
-													"name": "value",
-													"kind": 32768,
-													"kindString": "Parameter",
-													"flags": {},
-													"type": {
-														"type": "intrinsic",
-														"name": "string"
-													}
-												}
-											],
 											"type": {
 												"type": "intrinsic",
-												"name": "void"
+												"name": "string"
 											}
 										}
-									]
+									],
+									"type": {
+										"type": "intrinsic",
+										"name": "void"
+									}
 								}
-							}
-						]
+							]
+						}
 					}
 				}
 			],
@@ -42166,17 +39638,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -42203,17 +39666,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"name": "Comment"
-							}
-						]
+						"type": "reference",
+						"name": "Comment"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -42240,17 +39694,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -42277,20 +39722,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "Type"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "Type"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -42317,21 +39753,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1422,
-									"name": "Decorator"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1422,
+							"name": "Decorator"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -42384,17 +39811,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "boolean"
-							}
-						]
+						"type": "intrinsic",
+						"name": "boolean"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -42474,17 +39892,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -42563,18 +39972,9 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "reference",
-								"id": 1216,
-								"name": "Reflection"
-							}
-						]
+						"type": "reference",
+						"id": 1216,
+						"name": "Reflection"
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -42601,20 +40001,11 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"name": "SourceReference"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"name": "SourceReference"
+						}
 					},
 					"inheritedFrom": {
 						"type": "reference",
@@ -42638,21 +40029,12 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"id": 1871,
-									"name": "TypeParameterReflection"
-								}
-							}
-						]
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 1871,
+							"name": "TypeParameterReflection"
+						}
 					}
 				},
 				{
@@ -42674,17 +40056,8 @@
 						}
 					],
 					"type": {
-						"type": "union",
-						"types": [
-							{
-								"type": "intrinsic",
-								"name": "undefined"
-							},
-							{
-								"type": "intrinsic",
-								"name": "string"
-							}
-						]
+						"type": "intrinsic",
+						"name": "string"
 					},
 					"inheritedFrom": {
 						"type": "reference",
