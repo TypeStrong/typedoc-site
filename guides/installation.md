@@ -63,7 +63,7 @@ When running typedoc from the CLI, you can define any option except the entry fi
 
 ### tsconfig.json
 
-TypeDoc options can be defined withing an existing `tsconfig.json` file. Use a `typedocOptions` section to define
+TypeDoc options can be defined within an existing `tsconfig.json` file. Use a `typedocOptions` section to define
 options as a json model.
 
 ```json
