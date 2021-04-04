@@ -1,6 +1,6 @@
 {
 	"id": 0,
-	"name": "TypeDoc Documentation - v0.20.34",
+	"name": "TypeDoc Documentation - v0.20.35",
 	"kind": 0,
 	"kindString": "Project",
 	"flags": {},
@@ -214,7 +214,7 @@
 									"name": "CommentTag"
 								}
 							},
-							"defaultValue": "...",
+							"defaultValue": "[]",
 							"inheritedFrom": {
 								"type": "reference",
 								"name": "Partial.tags"
@@ -10488,7 +10488,7 @@
 										],
 										"name": "Partial"
 									},
-									"defaultValue": "..."
+									"defaultValue": "{}"
 								}
 							],
 							"type": {
@@ -23326,7 +23326,7 @@
 						"type": "reference",
 						"name": "CompilerOptions"
 					},
-					"defaultValue": "..."
+					"defaultValue": "{}"
 				},
 				{
 					"id": 702,
@@ -23392,7 +23392,7 @@
 							}
 						}
 					},
-					"defaultValue": "..."
+					"defaultValue": "[]"
 				},
 				{
 					"id": 708,
@@ -23440,7 +23440,7 @@
 							}
 						}
 					},
-					"defaultValue": "..."
+					"defaultValue": "[]"
 				},
 				{
 					"id": 701,
@@ -23465,7 +23465,7 @@
 							"name": "OptionsReader"
 						}
 					},
-					"defaultValue": "..."
+					"defaultValue": "[]"
 				},
 				{
 					"id": 704,
@@ -23523,7 +23523,7 @@
 						],
 						"name": "Record"
 					},
-					"defaultValue": "..."
+					"defaultValue": "{}"
 				},
 				{
 					"id": 725,
@@ -26647,7 +26647,7 @@
 							"name": "SourceFile"
 						}
 					},
-					"defaultValue": "..."
+					"defaultValue": "[]"
 				},
 				{
 					"id": 1679,
@@ -27062,7 +27062,7 @@
 							}
 						}
 					},
-					"defaultValue": "..."
+					"defaultValue": "{}"
 				},
 				{
 					"id": 1682,
