@@ -8,7 +8,7 @@
 			"type": "string"
 		},
 		"tsconfig": {
-			"description": "Specify a typescript config file that should be loaded. If not specified TypeDoc will look for 'tsconfig.json' in the current directory.",
+			"description": "Specify a TypeScript config file that should be loaded. If not specified TypeDoc will look for 'tsconfig.json' in the current directory.",
 			"type": "string"
 		},
 		"entryPoints": {
@@ -48,7 +48,7 @@
 			"default": false
 		},
 		"excludeInternal": {
-			"description": "Prevent symbols that marked with @internal from being documented.",
+			"description": "Prevent symbols that are marked with @internal from being documented.",
 			"type": "boolean",
 			"default": false
 		},
@@ -98,12 +98,17 @@
 			"default": ""
 		},
 		"json": {
-			"description": "Specifies the location and file name a json file describing the project is written to.",
+			"description": "Specifies the location and filename a JSON file describing the project is written to.",
 			"type": "string",
 			"default": ""
 		},
+		"pretty": {
+			"description": "Specifies whether the output JSON should be formatted with tabs.",
+			"type": "boolean",
+			"default": true
+		},
 		"theme": {
-			"description": "Specify the path to the theme that should be used or 'default' or 'minimal' to use built-in themes.",
+			"description": "Specify the path to the theme that should be used, or 'default' or 'minimal' to use built-in themes.",
 			"type": "string",
 			"default": "default"
 		},
