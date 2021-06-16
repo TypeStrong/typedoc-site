@@ -20,9 +20,9 @@ where to find `Apple.seeds`.
 This can be most easily understood with an example.
 
 ```ts
-// index.ts
+// fruits.ts
 /**
- * @packageDocumentation
+ * @module
  * Module comment
  */
 
@@ -40,22 +40,34 @@ class Orange {
 ```
 
 When converted, this code will be converted into an internal structure which
-resembles the following (Note: In `file` mode, this structure will be missing
-the top level `"index"` node, and multiple files will be merged into one.):
+resembles the following:
 
-```yaml
+```text
+Project <-- Links in the @module comment start resolution here
+   - Apple <-- Links in the Apple class comment start resolution here
+      - seeds <-- Links in the seeds class comment start resolution here
+   - Orange
+      - slices
+```
+
+If more than one entry point is specified, each entry point's module name as specified
+by `@module` or inferred from the file name will be the first entry, for example:
+
+```text
 Project
-- "index" <-- Links in the @packageDocumentation comment start resolution here
-- Apple <-- Links in the Apple class comment start resolution here
-- seeds <-- Links in the seeds class comment start resolution here
-- Orange
-- slices
+- fruits <-- Links in the @module comment in fruits.ts start resolution here
+   - Apple <-- Links in the Apple class comment start resolution here
+      - seeds <-- Links in the seeds class comment start resolution here
+   - Orange
+      - slices
+- fruits2
+   - Banana
 ```
 
 This structure can be used to determine the fully qualified name of each
 reflection. The fully qualified name of a reflection is the name of the
 reflection and all its parents, joined with `.`; that is, the fully qualified
-name of the `seeds` property is `"index".Apple.seeds`. You can use the fully
+name of the `seeds` property is `Apple.seeds`. You can use the fully
 qualified name to link to symbols defined in other source files without relying
 on the slow fourth step of the algorithm used to resolve links.
 

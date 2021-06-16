@@ -200,18 +200,18 @@ import * as lib from "lib";
 // file2.ts
 /**
  * This is *not* a doc comment for the file, it is a doc comment for the import.
- * Include the module tag to mark it as a file comment.
+ * Include the module or packageDocumentation tag to mark it as a file comment.
  */
 import * as lib from "lib";
 
-// file3.ts (legacy, prefer @module)
+// file3.ts
 /**
  * File doc comment for file3.ts
  * @packageDocumentation
  */
 import * as lib from "lib";
 
-// file4.ts (legacy, prefer @module)
+// file4.ts (deprecated, prefer @module or @packageDocumentation)
 /**
  * File doc comment for file3.ts
  */

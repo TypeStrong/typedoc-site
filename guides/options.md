@@ -53,6 +53,21 @@ When TypeDoc loads a `tsconfig.json` file, it also will read TypeDoc options dec
 
 These options control what files TypeDoc processes to generate documentation and how the files are processed.
 
+### packages
+
+```bash
+$ typedoc --packages .
+```
+
+If your codebase is comprised of one or more npm packages, you can pass the paths to these
+packages and TypeDoc will attempt to determine entry points based on `package.json`'s `main`
+property (with default value `index.js`) and if it wasn't found, based on `types` property.
+If any of the packages given are the root of an [npm Workspace](https://docs.npmjs.com/cli/v7/using-npm/workspaces)
+or a [Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/) TypeDoc will find all
+the `workspaces` defined in the `package.json`.
+This mode requires sourcemaps in your JS entry points, in order to find the TS entry points.
+Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces.
+
 ### entryPoints
 
 ```bash
@@ -61,7 +76,7 @@ $ typedoc a b
 $ typedoc --entryPoints a --entryPoints b
 ```
 
-Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports. Either files or directories may be specified. If a directory is specified, all source files within the directory will be included as an entry point, unless excluded by `--exclude`.
+Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports. Either files or directories may be specified. If a directory is specified, all source files within the directory will be included as an entry point, unless excluded by `--exclude`. See also [--packages](#packages)
 
 ### exclude
 
@@ -72,7 +87,7 @@ $ typedoc --exclude "**/*+(index|.spec|.e2e).ts"
 Exclude files by the given pattern when a path is provided as source.
 Supports [minimatch](https://github.com/isaacs/minimatch) patterns.
 In configuration files, this option accepts an array of patterns. On the command line, it may be specified multiple times to add multiple patterns.
-This option will **only** be used to filter entry points specified under directories.
+If an exported member from one of your entry points is located in an excluded file, it will be excluded from the documentation.
 
 ### externalPattern
 
@@ -274,6 +289,34 @@ Array option which allows overriding the order categories display in. A string o
 
 By default, categories are displayed alphabetically. If unknown categories are found, they will be listed at the end by default.
 
+### sort
+
+```bash
+$ typedoc --sort static-first --sort alphabetical
+```
+
+Specifies the sort order for members. Sorting strategies will be applied in order.
+If an earlier sorting strategy determines the relative ordering of two reflections, later
+ordering strategies will not be applied.
+
+For example, with the setting `["static-first", "visibility"]`, TypeDoc will first compare two
+reflections by if they are static or not, and if that comparison returns equal, will check the
+visibility of each reflection. On the other hand, if `["visibility", "static-first"]` is specified,
+TypeDoc would sort all public properties first and then sort each group to put static properties first.
+This means that `["source-order", "static-first"]` is equivalent to `["source-order"]` since ordering
+by position in source will always produce a non-equal comparison.
+
+The available sorting strategies are:
+
+- `source-order` (sorts by file, then by position in file)
+- `alphabetical`
+- `enum-value-ascending` (only applies to children of an enum)
+- `enum-value-descending` (only applies to children of an enum)
+- `static-first`
+- `instance-first`
+- `visibility` (public, then protected, then private)
+- `required-first`
+
 ### gitRevision
 
 ```bash
@@ -413,6 +456,14 @@ Specifies the log level to be printed to the console. Defaults to `Info`. The av
 - Info - Print informational log messages along with warning and error messages
 - Warn - Print warning and error messages
 - Error - Print only error messages
+
+### treatWarningsAsErrors
+
+```bash
+$ typedoc --treatWarningsAsErrors
+```
+
+Causes TypeDoc to treat any reported warnings as fatal errors that can prevent documentation from being generated.
 
 ### listInvalidSymbolLinks
 

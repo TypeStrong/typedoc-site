@@ -12,7 +12,6 @@
     "markdown-it-anchor": "^8.0.1"
   },
   "scripts": {
-    "build": "npx @11ty/eleventy",
-    "publish": "gh-pages -d _site"
+    "build": "npx @11ty/eleventy"
   }
 }
