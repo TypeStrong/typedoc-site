@@ -81,11 +81,11 @@
 
     </div>
     <div class="col-sm-7 typography">
-      <h1 id="development">Development</h1>
+      <h1 id="development" tabindex="-1">Development</h1>
 <p>This page is a work in progress overview of TypeDoc's architecture.
 For more details about each individual component, refer to the doc comments within each module.
 It is intended primarily for those interested in contributing to the TypeDoc codebase or developing a plugin.</p>
-<h2 id="high-level">High Level</h2>
+<h2 id="high-level" tabindex="-1">High Level</h2>
 <p>TypeDoc follows several high level steps when called.</p>
 <ol>
 <li>Read options<br>
@@ -106,15 +106,15 @@ Resolution is implemented entirely by internal plugins that live in <code>src/li
 Output is split into two folders, for JSON output see the <code>src/lib/serialization</code> directory, and for HTML output see <code>src/lib/output</code>.</p>
 <p>Plugins may effect any part of the process after step 2 by listening to events fired by each component or adding / replacing handlers for a given task.
 As an example, the <a href="https://typedoc.org/api/classes/converter.html">Converter</a> fires events before starting conversion, when declarations are converted and when the project should be resolved.</p>
-<h2 id="tests">Tests</h2>
+<h2 id="tests" tabindex="-1">Tests</h2>
 <p>TypeDoc has tests for individual utilities and some components, but the majority of the project is tested by converting source files into their JSON model and comparing it to a known good version. The basic example under <code>examples/basic</code> is rendered to HTML to test theme changes.</p>
 <p>If changing the behavior of a converter or resolver, it should be possible to modify one of the existing tests under <code>src/test/converter</code>.
 Bug fixes or feature additions which need to change one of the <code>specs*.json</code> files should run <code>npm run rebuild_specs [converter|renderer] [converter filter]</code> to run the current build of TypeDoc on the source files and generate new specs.
 For other components, we use <a href="https://mochajs.org/">Mocha</a> to write tests.</p>
-<h2 id="components">Components</h2>
+<h2 id="components" tabindex="-1">Components</h2>
 <p>For more detailed information about the implementation and API surface of each component, consult its API documentation.
 All components are available on the <a href="https://typedoc.org/api/classes/application.html">Application</a> class, which is passed to plugins.</p>
-<h3 id="options">Options</h3>
+<h3 id="options" tabindex="-1">Options</h3>
 <p>TypeDoc provides some 30 options which determine how the project model is generated and output to disk.
 The <a href="https://typedoc.org/api/classes/options.html">Options</a> class consolidates application options into a single location and handles type conversion.</p>
 <p>There are 6 builtin option types as specified by the <a href="https://typedoc.org/api/enums/parametertype.html">ParameterType</a> enum.</p>
@@ -128,16 +128,16 @@ The <a href="https://typedoc.org/api/classes/options.html">Options</a> class con
 </ul>
 <p>Options are discovered and set by option readers, which are documented in the <a href="https://typedoc.org/api/interfaces/optionsreader.html">OptionReader</a> interface.</p>
 <p>Plugins can declare their own options by calling <a href="https://typedoc.org/api/classes/options.html#adddeclaration">Options.addDeclaration</a>.</p>
-<h3 id="plugins">Plugins</h3>
+<h3 id="plugins" tabindex="-1">Plugins</h3>
 <p>Plugins are loaded by the <a href="https://typedoc.org/api/classes/pluginhost.html">PluginHost</a>.
 Plugins should export a <code>load</code> function which will be called by TypeDoc when loading the plugin with an instance of <code>PluginHost</code>.
 This function should add any options the plugin accepts and add any listeners necessary to effect TypeDoc's behavior.</p>
 <pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> ParameterType<span class="token punctuation">,</span> Converter <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"typedoc"</span><span class="token punctuation">;</span><br><br><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">load</span><span class="token punctuation">(</span>host<span class="token operator">:</span> PluginHost<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>  <span class="token keyword">const</span> app<span class="token operator">:</span> Application <span class="token operator">=</span> host<span class="token punctuation">.</span>application<span class="token punctuation">;</span><br><br>  app<span class="token punctuation">.</span>options<span class="token punctuation">.</span><span class="token function">addDeclaration</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>    name<span class="token operator">:</span> <span class="token string">"plugin-option"</span><span class="token punctuation">,</span><br>    help<span class="token operator">:</span> <span class="token string">"Displayed when --help is passed"</span><span class="token punctuation">,</span><br>    <span class="token keyword">type</span><span class="token operator">:</span> ParameterType<span class="token punctuation">.</span>String<span class="token punctuation">,</span> <span class="token comment">// The default</span><br>    defaultValue<span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token comment">// The default</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>  app<span class="token punctuation">.</span>converter<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span>Converter<span class="token punctuation">.</span><span class="token constant">EVENT_RESOLVE</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>context<span class="token operator">:</span> Context<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>    <span class="token keyword">if</span> <span class="token punctuation">(</span>app<span class="token punctuation">.</span>options<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token string">"plugin-option"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">"something"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>      <span class="token comment">// ...</span><br>    <span class="token punctuation">}</span><br>  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
-<h3 id="converters">Converters</h3>
+<h3 id="converters" tabindex="-1">Converters</h3>
 <p>Docs to come - For the most part converters work just on <code>ts.SyntaxKind</code>, but there are special cases that need to be covered.</p>
-<h3 id="json-output">JSON Output</h3>
+<h3 id="json-output" tabindex="-1">JSON Output</h3>
 <p>Docs to come - TypeDoc's JSON output is defined according to serializers which support some or all reflections.</p>
-<h3 id="html-output">HTML Output</h3>
+<h3 id="html-output" tabindex="-1">HTML Output</h3>
 <p>Nobody currently working on the project fully understands how this works... Docs to come eventually.</p>
 
     </div>

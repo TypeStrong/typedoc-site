@@ -81,14 +81,14 @@
 
     </div>
     <div class="col-sm-7 typography">
-      <h1 id="project-references">Project References</h1>
+      <h1 id="project-references" tabindex="-1">Project References</h1>
 <p>As of 0.20, TypeDoc has limited support for TypeScript projects using project references and solution style tsconfig files.
 This support is limited since TypeDoc is currently unable to:</p>
 <ol>
 <li>Resolve type reference links between projects</li>
 <li>Properly link files to GitHub if they are in a child project of the root project.</li>
 </ol>
-<h2 id="how-it-works">How it works</h2>
+<h2 id="how-it-works" tabindex="-1">How it works</h2>
 <p>For the most part, project reference support should <em>just work</em>, however if you have a tsconfig containing <code>&quot;files&quot;: []</code>,
 the output might not quite match what you expect.</p>
 <p>When given a solution style tsconfig whose program contains no files, TypeDoc will check for project references and create

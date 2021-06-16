@@ -81,164 +81,164 @@
 
     </div>
     <div class="col-sm-7 typography">
-      <h1 id="options">Options</h1>
+      <h1 id="options" tabindex="-1">Options</h1>
 <p>TypeDoc accepts most of the command line arguments that the TypeScript compiler accepts.
 All command line arguments that are passed in without a flag will be parsed as input files.
 TypeDoc also accepts directories as input files.
 Any options passed on the command line will override options set in a configuration file.</p>
 <pre class="language-bash"><code class="language-bash">$ typedoc --out path/to/documentation/ path/to/typescript/project/</code></pre>
-<h2 id="configuration-options">Configuration Options</h2>
+<h2 id="configuration-options" tabindex="-1">Configuration Options</h2>
 <p>These options control where TypeDoc reads its configuration from.</p>
-<h3 id="options-1">options</h3>
+<h3 id="options-1" tabindex="-1">options</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --options <span class="token operator">&lt;</span>filename<span class="token operator">></span></code></pre>
 <p>Specify a json option file that should be loaded. If not specified TypeDoc will look for <code>typedoc.json</code> and <code>typedoc.js</code> in the current directory.
 The JSON file should return an object whose keys are the option names. For example:</p>
 <pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"entryPoints"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"./src/index.ts"</span><span class="token punctuation">,</span> <span class="token string">"./src/secondary-entry.ts"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token property">"out"</span><span class="token operator">:</span> <span class="token string">"doc"</span><br><span class="token punctuation">}</span></code></pre>
-<h3 id="tsconfig">tsconfig</h3>
+<h3 id="tsconfig" tabindex="-1">tsconfig</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --tsconfig <span class="token operator">&lt;</span>/path/to/tsconfig.json<span class="token operator">></span></code></pre>
 <p>Specify a <code>tsconfig.json</code> file that options should be read from. If not specified TypeDoc will look for <code>tsconfig.json</code> in the current directory and parent directories like <code>tsc</code> does.</p>
 <p>When TypeDoc loads a <code>tsconfig.json</code> file, it also will read TypeDoc options declared under the <code>typedocOptions</code> key.</p>
-<h2 id="input-options">Input Options</h2>
+<h2 id="input-options" tabindex="-1">Input Options</h2>
 <p>These options control what files TypeDoc processes to generate documentation and how the files are processed.</p>
-<h3 id="entrypoints">entryPoints</h3>
+<h3 id="entrypoints" tabindex="-1">entryPoints</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc a b<br><span class="token comment"># or</span><br>$ typedoc --entryPoints a --entryPoints b</code></pre>
 <p>Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports. Either files or directories may be specified. If a directory is specified, all source files within the directory will be included as an entry point, unless excluded by <code>--exclude</code>.</p>
-<h3 id="exclude">exclude</h3>
+<h3 id="exclude" tabindex="-1">exclude</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --exclude <span class="token string">"**/*+(index|.spec|.e2e).ts"</span></code></pre>
 <p>Exclude files by the given pattern when a path is provided as source.
 Supports <a href="https://github.com/isaacs/minimatch">minimatch</a> patterns.
 In configuration files, this option accepts an array of patterns. On the command line, it may be specified multiple times to add multiple patterns.
 This option will <strong>only</strong> be used to filter entry points specified under directories.</p>
-<h3 id="externalpattern">externalPattern</h3>
+<h3 id="externalpattern" tabindex="-1">externalPattern</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --externalPattern <span class="token string">'lib/**/*.ts'</span> --externalPattern <span class="token string">'external/**/*.ts'</span></code></pre>
 <p>Define patterns for extra files that should be considered external. Can be used along with <code>--excludeExternals</code> to remove external modules from the documentation.</p>
-<h3 id="excludeexternals">excludeExternals</h3>
+<h3 id="excludeexternals" tabindex="-1">excludeExternals</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --excludeExternals</code></pre>
 <p>Prevent externally resolved TypeScript files from being documented. Defaults to false.</p>
-<h3 id="excludeprivate">excludePrivate</h3>
+<h3 id="excludeprivate" tabindex="-1">excludePrivate</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --excludePrivate</code></pre>
 <p>Removes private class members from the generated documentation. Defaults to false.</p>
-<h3 id="excludeprotected">excludeProtected</h3>
+<h3 id="excludeprotected" tabindex="-1">excludeProtected</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --excludeProtected</code></pre>
 <p>Removes protected class members from the generated documentation. Defaults to false.</p>
-<h3 id="excludeinternal">excludeInternal</h3>
+<h3 id="excludeinternal" tabindex="-1">excludeInternal</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --excludeInternal</code></pre>
 <p>Removes symbols annotated with the <code>@internal</code> doc tag. Defaults to true if the stripInternal compiler option is set to true, otherwise defaults to false.</p>
-<h3 id="media">media</h3>
+<h3 id="media" tabindex="-1">media</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --media <span class="token operator">&lt;</span>path/to/media/<span class="token operator">></span></code></pre>
 <p>Specifies a media directory that will be copied to the output file. Media can be linked to with <code>media://file.jpg</code> in doc comments.</p>
-<h3 id="includes">includes</h3>
+<h3 id="includes" tabindex="-1">includes</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --includes <span class="token operator">&lt;</span>path/to/includes/<span class="token operator">></span></code></pre>
 <p>Specifies a directory with files that can be injected into the generated documentation with <code>[[include:file.md]]</code> in a doc comment.</p>
-<h2 id="output-options">Output Options</h2>
+<h2 id="output-options" tabindex="-1">Output Options</h2>
 <p>These options control TypeDoc's output.</p>
-<h3 id="out">out</h3>
+<h3 id="out" tabindex="-1">out</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --out <span class="token operator">&lt;</span>path/to/documentation/<span class="token operator">></span></code></pre>
 <p>Specifies the location the html documentation should be written to.
 The HTML output produced by running TypeDoc on itself can be seen at <a href="/api">/api</a>.</p>
-<h3 id="json">json</h3>
+<h3 id="json" tabindex="-1">json</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --json <span class="token operator">&lt;</span>path/to/out-file.json<span class="token operator">></span></code></pre>
 <p>Specifies the location to output a JSON file containing all of the reflection data.
 An example of the JSON output from running TypeDoc on itself can be seen at <a href="/api/docs.json">/api/docs.json</a>.</p>
-<h3 id="emit">emit</h3>
+<h3 id="emit" tabindex="-1">emit</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --emit</code></pre>
 <p>Instructs TypeDoc to write compiled output files as <code>tsc</code> does.</p>
-<h3 id="theme">theme</h3>
+<h3 id="theme" tabindex="-1">theme</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --theme <span class="token operator">&lt;</span>default<span class="token operator">|</span>minimal<span class="token operator">|</span>path/to/theme<span class="token operator">></span></code></pre>
 <p>Specify the path to the theme that should be used.
 TypeDoc includes the <code>default</code> and <code>minimal</code> themes, which may be specified without the full path to the theme.</p>
-<h3 id="highlighttheme">highlightTheme</h3>
+<h3 id="highlighttheme" tabindex="-1">highlightTheme</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --highlightTheme dark-plus</code></pre>
 <p>Specify the Shiki theme to be used to highlight code snippets.</p>
-<h3 id="markedoptions">markedOptions</h3>
+<h3 id="markedoptions" tabindex="-1">markedOptions</h3>
 <p>Specifies the options that are forwarded to <a href="https://marked.js.org">Marked</a> when parsing doc comments.
 By default TypeDoc overrides the default values used by Marked with the ones shown below:</p>
 <pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"markedOptions"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token property">"mangle"</span><span class="token operator">:</span> <span class="token boolean">false</span><br>  <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
 <p>See the <a href="https://marked.js.org/using_advanced#options">options section</a> on the Marked site for a full list of available options.</p>
-<h3 id="name">name</h3>
+<h3 id="name" tabindex="-1">name</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --name <span class="token operator">&lt;</span>Documentation title<span class="token operator">></span></code></pre>
 <p>Set the name of the project that will be used in the header of the template.
 The name defaults to the package name and current version according to your package.json.</p>
-<h3 id="includeversion">includeVersion</h3>
+<h3 id="includeversion" tabindex="-1">includeVersion</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --name <span class="token string">"Name"</span> --includeVersion</code></pre>
 <p>Adds the package version to the project's name.
 In this case, if the project was on version 1.2.3 according to <code>package.json</code>, this would generate documentation called &quot;Name - v1.2.3&quot;</p>
-<h3 id="disablesources">disableSources</h3>
+<h3 id="disablesources" tabindex="-1">disableSources</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --disableSources</code></pre>
 <p>Disables the defined in text describing where a reflection was created.</p>
-<h3 id="excludetags">excludeTags</h3>
+<h3 id="excludetags" tabindex="-1">excludeTags</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --excludeTags apidefine</code></pre>
 <p>Specify tags that should be removed from doc comments when parsing.
 Useful if your project uses <a href="https://apidocjs.com/">apiDoc</a> for documenting RESTful web APIs.</p>
-<h3 id="readme">readme</h3>
+<h3 id="readme" tabindex="-1">readme</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --readme <span class="token operator">&lt;</span>path/to/readme<span class="token operator">|</span>none<span class="token operator">></span></code></pre>
 <p>Path to the readme file that should be displayed on the index page. Pass none to disable the index page and start the documentation on the globals page.</p>
-<h3 id="categorizebygroup">categorizeByGroup</h3>
+<h3 id="categorizebygroup" tabindex="-1">categorizeByGroup</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --categorizeByGroup <span class="token boolean">false</span></code></pre>
 <p>This flag categorizes reflections by group (within properties, methods, etc).
 To allow methods and properties of the same category to be grouped together, set this flag to false.
 Defaults to true.</p>
-<h3 id="defaultcategory">defaultCategory</h3>
+<h3 id="defaultcategory" tabindex="-1">defaultCategory</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --defaultCategory <span class="token string">"Category Name"</span></code></pre>
 <p>Sets the name for the default category which is used when only some elements of the page are categorized.
 Defaults to 'Other'</p>
-<h3 id="categoryorder">categoryOrder</h3>
+<h3 id="categoryorder" tabindex="-1">categoryOrder</h3>
 <p>command line:</p>
 <pre class="language-bash"><code class="language-bash">$ typedoc --categoryOrder <span class="token string">"Category Name"</span> --categoryOrder <span class="token string">"Other Category"</span> --categoryOrder <span class="token string">"*"</span></code></pre>
 <p>typedoc.json:</p>
 <pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"categoryOrder"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"Category Name"</span><span class="token punctuation">,</span> <span class="token string">"Other Category"</span><span class="token punctuation">,</span> <span class="token string">"*"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
 <p>Array option which allows overriding the order categories display in. A string of <code>*</code> indicates where categories that are not in the list should appear.</p>
 <p>By default, categories are displayed alphabetically. If unknown categories are found, they will be listed at the end by default.</p>
-<h3 id="gitrevision">gitRevision</h3>
+<h3 id="gitrevision" tabindex="-1">gitRevision</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --gitRevision <span class="token operator">&lt;</span>revision<span class="token operator">|</span>branch<span class="token operator">></span></code></pre>
 <p>Use specified revision or branch instead of the last revision for linking to GitHub source files.</p>
-<h3 id="gitremote">gitRemote</h3>
+<h3 id="gitremote" tabindex="-1">gitRemote</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --gitRemote <span class="token operator">&lt;</span>remote<span class="token operator">></span></code></pre>
 <p>Use the specified git remote instead of <code>origin</code> for linking to GitHub source files.
 You can use <code>git remote</code> to view a list of valid remotes.
 If you are updating documentation for a forked package, you probably want to pass <code>--gitRemote upstream</code>.</p>
-<h3 id="gaid">gaID</h3>
+<h3 id="gaid" tabindex="-1">gaID</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --gaID</code></pre>
 <p>Set the Google Analytics tracking ID and activate tracking code.</p>
-<h3 id="gasite">gaSite</h3>
+<h3 id="gasite" tabindex="-1">gaSite</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --gaSite <span class="token operator">&lt;</span>site<span class="token operator">></span></code></pre>
 <p>Set the site name for Google Analytics. Defaults to <code>auto</code>.</p>
-<h3 id="hidegenerator">hideGenerator</h3>
+<h3 id="hidegenerator" tabindex="-1">hideGenerator</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --hideGenerator</code></pre>
 <p>Do not print the TypeDoc link at the end of the page. Defaults to false.</p>
-<h3 id="toc">toc</h3>
+<h3 id="toc" tabindex="-1">toc</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --toc EntryClass,ImportantInterface</code></pre>
 <pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"toc"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"EntryClass"</span><span class="token punctuation">,</span> <span class="token string">"ImportantInterface"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
 <p>Overrides the &quot;globals&quot; navigation sidebar to only include the types provided in the &quot;toc&quot; whitelist.
 This is useful in large projects where there may be an unwieldy number of Globals in the sidebar.</p>
-<h3 id="disableoutputcheck">disableOutputCheck</h3>
+<h3 id="disableoutputcheck" tabindex="-1">disableOutputCheck</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --disableOutputCheck</code></pre>
 <p>Disables checking and clearing of the output directory specified with <code>--out</code>.</p>
-<h2 id="general-options">General Options</h2>
+<h2 id="general-options" tabindex="-1">General Options</h2>
 <p>Options which don't fit elsewhere.</p>
-<h3 id="watch">watch</h3>
+<h3 id="watch" tabindex="-1">watch</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --watch</code></pre>
 <p>Use TypeScript's incremental compiler to watch source files for changes and build the docs on change. May be combined with <code>--emit</code>.</p>
 <p>Note: This mode will only detect changes to files watched by the TypeScript compiler. Changes to other files (README.md, imported files with <code>--includes</code>) will not cause a rebuild.</p>
-<h3 id="preservewatchoutput">preserveWatchOutput</h3>
+<h3 id="preservewatchoutput" tabindex="-1">preserveWatchOutput</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --watch --preserveWatchOutput</code></pre>
 <p>By default, <code>--watch</code> clears the screen between compilation steps. If <code>--preserveWatchOutput</code> is specified, this behavior is disabled.</p>
-<h3 id="help">help</h3>
+<h3 id="help" tabindex="-1">help</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --help</code></pre>
 <p>Print all available options, along with a short description. Also prints a list of supported highlighting languages.</p>
-<h3 id="version">version</h3>
+<h3 id="version" tabindex="-1">version</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --version</code></pre>
 <p>Prints TypeDoc's version.</p>
-<h3 id="showconfig">showConfig</h3>
+<h3 id="showconfig" tabindex="-1">showConfig</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --showConfig</code></pre>
 <p>Print TypeDoc's config and exit. Useful for debugging what options have been loaded.</p>
-<h3 id="plugin">plugin</h3>
+<h3 id="plugin" tabindex="-1">plugin</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --plugin <span class="token operator">&lt;</span>none<span class="token operator">|</span>plugin<span class="token operator">></span></code></pre>
 <p>Specifies the plugins that should be loaded. By default, all installed npm packages with <code>typedocplugin</code> in their keywords will be loaded.</p>
-<h3 id="logger">logger</h3>
+<h3 id="logger" tabindex="-1">logger</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --logger <span class="token operator">&lt;</span>none<span class="token operator">|</span>Function<span class="token operator">></span></code></pre>
 <p>Specifies the logger to write output to. When using TypeDoc programmatically, a function may be specified that will be called with the log message. By default, logs to the console. <code>none</code> may be passed to disable logging.</p>
-<h3 id="loglevel">logLevel</h3>
+<h3 id="loglevel" tabindex="-1">logLevel</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --logLevel Verbose</code></pre>
 <p>Specifies the log level to be printed to the console. Defaults to <code>Info</code>. The available levels are:</p>
 <ul>
@@ -247,7 +247,7 @@ This is useful in large projects where there may be an unwieldy number of Global
 <li>Warn - Print warning and error messages</li>
 <li>Error - Print only error messages</li>
 </ul>
-<h3 id="listinvalidsymbollinks">listInvalidSymbolLinks</h3>
+<h3 id="listinvalidsymbollinks" tabindex="-1">listInvalidSymbolLinks</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --listInvalidSymbolLinks</code></pre>
 <p>Tells TypeDoc to report any <code>[[symbol name]]</code> links that are broken.</p>
 

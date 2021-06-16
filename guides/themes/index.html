@@ -81,14 +81,14 @@
 
     </div>
     <div class="col-sm-7 typography">
-      <h1 id="themes">Themes</h1>
+      <h1 id="themes" tabindex="-1">Themes</h1>
 <p>Themes allow you to change the look and feel of the generated documentation. You can use one of the included
 themes, modify them to suit your needs or create a fully custom theme. The <code>--theme</code> parameter allows you to
 select a theme when creating a documentation:</p>
 <pre class="language-bash"><code class="language-bash">$ typedoc --theme <span class="token operator">&lt;</span>default<span class="token operator">|</span>minimal<span class="token operator">|</span>path/to/theme<span class="token operator">></span></code></pre>
 <p>You must supply a path to a valid theme directory or a name of a built-in theme. If you don't supply the
 <code>--theme</code> parameter, the theme <code>default</code> will be used.</p>
-<h2 id="built-in-themes">Built-in themes</h2>
+<h2 id="built-in-themes" tabindex="-1">Built-in themes</h2>
 <p>TypeDoc ships with two themes so you can start creating docs right out of the box:</p>
 <ul>
 <li>
@@ -102,7 +102,7 @@ the entire documentation into one big html file including all required assets li
 Like the default theme, it supports filtering the displayed members by different criteria.</p>
 </li>
 </ul>
-<h2 id="custom-themes">Custom themes</h2>
+<h2 id="custom-themes" tabindex="-1">Custom themes</h2>
 <p>Creating a custom theme in TypeDoc is pretty easy. Basically you create a directory and overwrite the
 components of the <a href="https://github.com/TypeStrong/typedoc-default-themes/tree/master/src/default"><code>default</code> theme</a>
 you want to change. All themes extend the default theme, so you only have to change the parts that don't
