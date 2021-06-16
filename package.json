@@ -8,7 +8,6 @@
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
-    "gh-pages": "^3.2.1",
     "markdown-it": "^12.0.6",
     "markdown-it-anchor": "^8.0.1"
   },
