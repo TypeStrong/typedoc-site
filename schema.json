@@ -67,6 +67,11 @@
 			"type": "boolean",
 			"default": false
 		},
+		"disableAliases": {
+			"description": "Disables creating aliases for shared reflections.",
+			"type": "boolean",
+			"default": false
+		},
 		"includes": {
 			"description": "Specifies the location to look for included documents (use [[include:FILENAME]] in comments).",
 			"type": "string",
