@@ -1,8 +1,8 @@
 {
-    "out": "../_site/api",
-    "json": "../_site/api/docs.json",
-    "name": "TypeDoc Documentation",
-    "excludeExternals": true,
-    "includeVersion": true,
-    "entryPoints": ["src/index.ts"]
+  "out": "_site/api",
+  "json": "_site/api/docs.json",
+  "name": "TypeDoc Documentation",
+  "excludeExternals": true,
+  "includeVersion": true,
+  "entryPoints": ["typedoc/src/index.ts"]
 }
