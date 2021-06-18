@@ -4,38 +4,22 @@
 	"type": "object",
 	"properties": {
 		"options": {
-			"description": "Specify a json option file that should be loaded. If not specified TypeDoc will look for 'typedoc.json' in the current directory",
-			"type": "string"
+			"description": "Specify a json option file that should be loaded. If not specified TypeDoc will look for 'typedoc.json' in the current directory"
 		},
 		"tsconfig": {
-			"description": "Specify a TypeScript config file that should be loaded. If not specified TypeDoc will look for 'tsconfig.json' in the current directory.",
-			"type": "string"
+			"description": "Specify a TypeScript config file that should be loaded. If not specified TypeDoc will look for 'tsconfig.json' in the current directory."
+		},
+		"packages": {
+			"description": "Specify one or more package folders from which a package.json file should be loaded to determine the entry points. Your JS files must have sourcemaps for this to work.If the root of an npm or Yarn workspace is given, the packages specified in `workspaces` will be loaded."
 		},
 		"entryPoints": {
-			"description": "The entry points of your library, which files should be documented as available to consumers.",
-			"type": "array",
-			"items": {
-				"type": "string"
-			},
-			"default": []
+			"description": "The entry points of your library, which files should be documented as available to consumers."
 		},
 		"exclude": {
-			"description": "Define paths to be excluded when expanding a directory that was specified as an entry point.",
-			"type": "array",
-			"items": {
-				"type": "string"
-			},
-			"default": []
+			"description": "Define patterns to be excluded when expanding a directory that was specified as an entry point."
 		},
 		"externalPattern": {
-			"description": "Define patterns for files that should be considered being external.",
-			"type": "array",
-			"items": {
-				"type": "string"
-			},
-			"default": [
-				"**/node_modules/**"
-			]
+			"description": "Define patterns for files that should be considered being external."
 		},
 		"excludeExternals": {
 			"description": "Prevent externally resolved symbols from being documented.",
@@ -67,20 +51,11 @@
 			"type": "boolean",
 			"default": false
 		},
-		"disableAliases": {
-			"description": "Disables creating aliases for shared reflections.",
-			"type": "boolean",
-			"default": false
-		},
 		"includes": {
-			"description": "Specifies the location to look for included documents (use [[include:FILENAME]] in comments).",
-			"type": "string",
-			"default": ""
+			"description": "Specifies the location to look for included documents (use [[include:FILENAME]] in comments)."
 		},
 		"media": {
-			"description": "Specifies the location with media files that should be copied to the output directory.",
-			"type": "string",
-			"default": ""
+			"description": "Specifies the location with media files that should be copied to the output directory."
 		},
 		"watch": {
 			"description": "Watch files for changes and rebuild docs on change.",
@@ -98,14 +73,10 @@
 			"default": false
 		},
 		"out": {
-			"description": "Specifies the location the documentation should be written to.",
-			"type": "string",
-			"default": ""
+			"description": "Specifies the location the documentation should be written to."
 		},
 		"json": {
-			"description": "Specifies the location and filename a JSON file describing the project is written to.",
-			"type": "string",
-			"default": ""
+			"description": "Specifies the location and filename a JSON file describing the project is written to."
 		},
 		"pretty": {
 			"description": "Specifies whether the output JSON should be formatted with tabs.",
@@ -113,7 +84,7 @@
 			"default": true
 		},
 		"theme": {
-			"description": "Specify the path to the theme that should be used, or 'default' or 'minimal' to use built-in themes.",
+			"description": "Specify the path to the theme that should be used, or 'default' or 'minimal' to use built-in themes.Note: Not resolved according to the config file location, always resolved according to cwd.",
 			"type": "string",
 			"default": "default"
 		},
@@ -141,9 +112,7 @@
 			"default": []
 		},
 		"readme": {
-			"description": "Path to the readme file that should be displayed on the index page. Pass `none` to disable the index page and start the documentation on the globals page.",
-			"type": "string",
-			"default": ""
+			"description": "Path to the readme file that should be displayed on the index page. Pass `none` to disable the index page and start the documentation on the globals page."
 		},
 		"defaultCategory": {
 			"description": "Specifies the default category for reflections without a category.",
@@ -162,6 +131,18 @@
 			"description": "Specifies whether categorization will be done at the group level.",
 			"type": "boolean",
 			"default": true
+		},
+		"sort": {
+			"description": "Specify the sort strategy for documented values",
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [
+				"kind",
+				"instance-first",
+				"alphabetical"
+			]
 		},
 		"gitRevision": {
 			"description": "Use specified revision instead of the last revision for linking to GitHub source files.",
@@ -207,12 +188,7 @@
 			"default": false
 		},
 		"plugin": {
-			"description": "Specify the npm plugins that should be loaded. Omit to load all installed plugins, set to 'none' to load no plugins.",
-			"type": "array",
-			"items": {
-				"type": "string"
-			},
-			"default": []
+			"description": "Specify the npm plugins that should be loaded. Omit to load all installed plugins, set to 'none' to load no plugins."
 		},
 		"logger": {
 			"description": "Specify the logger that should be used, 'none' or 'console'",
@@ -231,6 +207,11 @@
 				"Error"
 			],
 			"default": 1
+		},
+		"treatWarningsAsErrors": {
+			"description": "If set, warnings will be treated as errors.",
+			"type": "boolean",
+			"default": false
 		},
 		"listInvalidSymbolLinks": {
 			"description": "Emits a list of broken symbol [[navigation]] links after documentation generation",

@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TypeDoc Documentation - v0.20.37</title>
-	<meta name="description" content="Documentation for TypeDoc Documentation - v0.20.37">
+	<title>TypeDoc Documentation - v0.21.0</title>
+	<meta name="description" content="Documentation for TypeDoc Documentation - v0.21.0">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script async src="assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="index.html" class="title">TypeDoc Documentation - v0.20.37</a>
+					<a href="index.html" class="title">TypeDoc Documentation - v0.21.0</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -48,7 +48,7 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>TypeDoc Documentation - v0.20.37</h1>
+			<h1>TypeDoc Documentation - v0.21.0</h1>
 		</div>
 	</div>
 </header>
@@ -84,6 +84,35 @@
 				will treat each file contained within it as an entry point.</p>
 				<pre><code class="language-text">typedoc package1/index.ts package2/index.ts
 </code></pre>
+				<a href="#monorepos--workspaces" id="monorepos--workspaces" style="color: inherit; text-decoration: none;">
+					<h3>Monorepos / Workspaces</h3>
+				</a>
+				<p>If your codebase is comprised of one or more npm packages, you can pass the paths to these
+					packages and TypeDoc will attempt to determine entry points based on <code>package.json</code>&#39;s <code>main</code>
+					property (with default value <code>index.js</code>) and if it wasn&#39;t found, based on <code>types</code> property.
+					If any of the packages given are the root of an <a href="https://docs.npmjs.com/cli/v7/using-npm/workspaces">npm Workspace</a>
+					or a <a href="https://classic.yarnpkg.com/en/docs/workspaces/">Yarn Workspace</a> TypeDoc will find all
+					the <code>workspaces</code> defined in the <code>package.json</code>.
+					This mode requires sourcemaps in your JS entry points, in order to find the TS entry points.
+				Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces.</p>
+				<a href="#single-npm-module" id="single-npm-module" style="color: inherit; text-decoration: none;">
+					<h4>Single npm module</h4>
+				</a>
+				<pre><code class="language-text">typedoc --packages .
+</code></pre>
+				<a href="#monorepo-with-npmyarn-workspace-at-the-root" id="monorepo-with-npmyarn-workspace-at-the-root" style="color: inherit; text-decoration: none;">
+					<h4>Monorepo with npm/Yarn workspace at the root</h4>
+				</a>
+				<pre><code class="language-text">typedoc --packages .
+</code></pre>
+				<a href="#monorepo-with-manually-specified-sub-packages-to-document" id="monorepo-with-manually-specified-sub-packages-to-document" style="color: inherit; text-decoration: none;">
+					<h4>Monorepo with manually specified sub-packages to document</h4>
+				</a>
+				<p>This can be useful if you do not want all your workspaces to be processed.
+				Accepts the same paths as would go in the <code>package.json</code>&#39;s workspaces</p>
+				<pre><code class="language-text"># Note the single quotes prevent shell wildcard expansion, allowing typedoc to do the expansion
+typedoc --packages a-package --packages &#039;some-more-packages/*&#039; --packages &#039;some-other-packages/*&#039;
+</code></pre>
 				<a href="#arguments" id="arguments" style="color: inherit; text-decoration: none;">
 					<h3>Arguments</h3>
 				</a>
@@ -98,6 +127,9 @@
 					<li><code>--options</code><br>
 						Specify a json option file that should be loaded. If not specified TypeDoc
 					will look for &#39;typedoc.json&#39; in the current directory.</li>
+					<li><code>--packages &lt;path/to/package/&gt;</code><br>
+						Specify one or more sub packages, or the root of a monorepo with workspaces.
+					Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces.</li>
 					<li><code>--tsconfig &lt;path/to/tsconfig.json&gt;</code><br>
 						Specify a typescript config file that should be loaded. If not
 					specified TypeDoc will look for &#39;tsconfig.json&#39; in the current directory.</li>
@@ -293,6 +325,9 @@
 					</li>
 					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
 						<a href="modules.html#keytodeclaration" class="tsd-kind-icon">Key<wbr>ToDeclaration</a>
+					</li>
+					<li class=" tsd-kind-type-alias">
+						<a href="modules.html#sortstrategy" class="tsd-kind-icon">Sort<wbr>Strategy</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="modules.html#typedocoptions" class="tsd-kind-icon">Type<wbr>Doc<wbr>Options</a>

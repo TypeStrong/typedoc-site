@@ -100,15 +100,25 @@ The JSON file should return an object whose keys are the option names. For examp
 <p>When TypeDoc loads a <code>tsconfig.json</code> file, it also will read TypeDoc options declared under the <code>typedocOptions</code> key.</p>
 <h2 id="input-options" tabindex="-1">Input Options</h2>
 <p>These options control what files TypeDoc processes to generate documentation and how the files are processed.</p>
+<h3 id="packages" tabindex="-1">packages</h3>
+<pre class="language-bash"><code class="language-bash">$ typedoc --packages <span class="token builtin class-name">.</span></code></pre>
+<p>If your codebase is comprised of one or more npm packages, you can pass the paths to these
+packages and TypeDoc will attempt to determine entry points based on <code>package.json</code>'s <code>main</code>
+property (with default value <code>index.js</code>) and if it wasn't found, based on <code>types</code> property.
+If any of the packages given are the root of an <a href="https://docs.npmjs.com/cli/v7/using-npm/workspaces">npm Workspace</a>
+or a <a href="https://classic.yarnpkg.com/en/docs/workspaces/">Yarn Workspace</a> TypeDoc will find all
+the <code>workspaces</code> defined in the <code>package.json</code>.
+This mode requires sourcemaps in your JS entry points, in order to find the TS entry points.
+Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces.</p>
 <h3 id="entrypoints" tabindex="-1">entryPoints</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc a b<br><span class="token comment"># or</span><br>$ typedoc --entryPoints a --entryPoints b</code></pre>
-<p>Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports. Either files or directories may be specified. If a directory is specified, all source files within the directory will be included as an entry point, unless excluded by <code>--exclude</code>.</p>
+<p>Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports. Either files or directories may be specified. If a directory is specified, all source files within the directory will be included as an entry point, unless excluded by <code>--exclude</code>. See also <a href="#packages">--packages</a></p>
 <h3 id="exclude" tabindex="-1">exclude</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --exclude <span class="token string">"**/*+(index|.spec|.e2e).ts"</span></code></pre>
 <p>Exclude files by the given pattern when a path is provided as source.
 Supports <a href="https://github.com/isaacs/minimatch">minimatch</a> patterns.
 In configuration files, this option accepts an array of patterns. On the command line, it may be specified multiple times to add multiple patterns.
-This option will <strong>only</strong> be used to filter entry points specified under directories.</p>
+If an exported member from one of your entry points is located in an excluded file, it will be excluded from the documentation.</p>
 <h3 id="externalpattern" tabindex="-1">externalPattern</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --externalPattern <span class="token string">'lib/**/*.ts'</span> --externalPattern <span class="token string">'external/**/*.ts'</span></code></pre>
 <p>Define patterns for extra files that should be considered external. Can be used along with <code>--excludeExternals</code> to remove external modules from the documentation.</p>
@@ -189,6 +199,28 @@ Defaults to 'Other'</p>
 <pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>  <span class="token property">"categoryOrder"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"Category Name"</span><span class="token punctuation">,</span> <span class="token string">"Other Category"</span><span class="token punctuation">,</span> <span class="token string">"*"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
 <p>Array option which allows overriding the order categories display in. A string of <code>*</code> indicates where categories that are not in the list should appear.</p>
 <p>By default, categories are displayed alphabetically. If unknown categories are found, they will be listed at the end by default.</p>
+<h3 id="sort" tabindex="-1">sort</h3>
+<pre class="language-bash"><code class="language-bash">$ typedoc --sort static-first --sort alphabetical</code></pre>
+<p>Specifies the sort order for members. Sorting strategies will be applied in order.
+If an earlier sorting strategy determines the relative ordering of two reflections, later
+ordering strategies will not be applied.</p>
+<p>For example, with the setting <code>[&quot;static-first&quot;, &quot;visibility&quot;]</code>, TypeDoc will first compare two
+reflections by if they are static or not, and if that comparison returns equal, will check the
+visibility of each reflection. On the other hand, if <code>[&quot;visibility&quot;, &quot;static-first&quot;]</code> is specified,
+TypeDoc would sort all public properties first and then sort each group to put static properties first.
+This means that <code>[&quot;source-order&quot;, &quot;static-first&quot;]</code> is equivalent to <code>[&quot;source-order&quot;]</code> since ordering
+by position in source will always produce a non-equal comparison.</p>
+<p>The available sorting strategies are:</p>
+<ul>
+<li><code>source-order</code> (sorts by file, then by position in file)</li>
+<li><code>alphabetical</code></li>
+<li><code>enum-value-ascending</code> (only applies to children of an enum)</li>
+<li><code>enum-value-descending</code> (only applies to children of an enum)</li>
+<li><code>static-first</code></li>
+<li><code>instance-first</code></li>
+<li><code>visibility</code> (public, then protected, then private)</li>
+<li><code>required-first</code></li>
+</ul>
 <h3 id="gitrevision" tabindex="-1">gitRevision</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --gitRevision <span class="token operator">&lt;</span>revision<span class="token operator">|</span>branch<span class="token operator">></span></code></pre>
 <p>Use specified revision or branch instead of the last revision for linking to GitHub source files.</p>
@@ -247,6 +279,9 @@ This is useful in large projects where there may be an unwieldy number of Global
 <li>Warn - Print warning and error messages</li>
 <li>Error - Print only error messages</li>
 </ul>
+<h3 id="treatwarningsaserrors" tabindex="-1">treatWarningsAsErrors</h3>
+<pre class="language-bash"><code class="language-bash">$ typedoc --treatWarningsAsErrors</code></pre>
+<p>Causes TypeDoc to treat any reported warnings as fatal errors that can prevent documentation from being generated.</p>
 <h3 id="listinvalidsymbollinks" tabindex="-1">listInvalidSymbolLinks</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --listInvalidSymbolLinks</code></pre>
 <p>Tells TypeDoc to report any <code>[[symbol name]]</code> links that are broken.</p>
