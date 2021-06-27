@@ -4,8 +4,6 @@ const markdownItAnchor = require("markdown-it-anchor");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 
 module.exports = function (el) {
-    el.setUseGitIgnore(false);
-
     el.addPassthroughCopy("css");
     el.addPassthroughCopy("scripts");
     el.addPassthroughCopy("images");
