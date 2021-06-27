@@ -41,7 +41,11 @@ jobs:
       - name: Rebuild schema.json
         run: node typedoc/scripts/generate_options_schema.js _site/schema.json
       - name: Generate changelog
-        run: node typedoc/scripts/generate_changelog.js changelog.md
+        run: |
+            cd typedoc
+            git checkout master
+            cd ..
+            node typedoc/scripts/generate_changelog.js changelog.md
       - name: Rebuild markdown site
         run: npm run build
       - name: Deploy
