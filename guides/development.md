@@ -28,7 +28,7 @@ TypeDoc follows several high level steps when called.
 TypeDoc's code is loosely organized according to each of these steps.
 The code to read options lives under `src/lib/utils/options`.
 The plugin loading code lives in `src/lib/utils/plugins`.
-Conversion is performed according to the Node's `ts.SyntaxKind`. Each distinct `SyntaxKind` gets its own converter under the `src/lib/converter` directory.
+Conversion is performed according to the Symbol's `ts.SymbolFlags`. Each distinct flag type gets its own converter function in `src/lib/converter/symbols.ts`.
 Resolution is implemented entirely by internal plugins that live in `src/lib/output/plugins` and listen to the `Converter.EVENT_RESOLVE` event.
 Output is split into two folders, for JSON output see the `src/lib/serialization` directory, and for HTML output see `src/lib/output`.
 
@@ -72,7 +72,6 @@ Plugins can declare their own options by calling [Options.addDeclaration](https:
 
 ### Plugins
 
-Plugins are loaded by the [PluginHost](https://typedoc.org/api/classes/pluginhost.html).
 Plugins should export a `load` function which will be called by TypeDoc when loading the plugin with an instance of `PluginHost`.
 This function should add any options the plugin accepts and add any listeners necessary to effect TypeDoc's behavior.
 
