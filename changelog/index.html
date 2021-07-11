@@ -1,17 +1,32 @@
-<h1 id="v0.21.2-(2021-05-27)" tabindex="-1">v0.21.2 (2021-05-27)</h1>
+<h1 id="v0.21.3-(2021-06-10)" tabindex="-1">v0.21.3 (2021-06-10)</h1>
+<h3 id="breaking-changes" tabindex="-1">Breaking Changes</h3>
+<ul>
+<li>Options may not be set once conversion starts. Enables a small perf improvement. (<a href="https://github.com/TypeStrong/typedoc/commit/f3294cdd2a024456ac41626616bfc6dc5f9e6b85">f3294cd</a>)</li>
+</ul>
 <h3 id="bug-fixes" tabindex="-1">Bug Fixes</h3>
+<ul>
+<li>Improve detection for &quot;property methods&quot; to convert as methods (<a href="https://github.com/TypeStrong/typedoc/commit/98331b5b1a0248753b98c895d1b2168c31e3cee7">98331b5</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1624">#1624</a></li>
+<li>Two members differing only by case produced broken links (<a href="https://github.com/TypeStrong/typedoc/commit/f9092814e83e42ca674e48cb065ffa23fa10e7fe">f909281</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1585">#1585</a></li>
+<li>Resolve some memory leaks (<a href="https://github.com/TypeStrong/typedoc/commit/9be9e36aa5e1bc122c72298e505e04f78ea2537a">9be9e36</a>)</li>
+</ul>
+<h3 id="thanks!" tabindex="-1">Thanks!</h3>
+<ul>
+<li>Andrew Bradley</li>
+</ul>
+<h1 id="v0.21.2-(2021-05-27)" tabindex="-1">v0.21.2 (2021-05-27)</h1>
+<h3 id="bug-fixes-1" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Postpone resolution of inherited classes until their parents have been resolved (<a href="https://github.com/TypeStrong/typedoc/commit/fc920bd22dc13282bf1b09cda2dd05e400d06e2e">fc920bd</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1580">#1580</a></li>
 </ul>
 <h1 id="v0.21.1-(2021-05-25)" tabindex="-1">v0.21.1 (2021-05-25)</h1>
-<h3 id="bug-fixes-1" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-2" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Exclude empty modules from documentation (<a href="https://github.com/TypeStrong/typedoc/commit/8a5a933ecce8f79679415a11ddd66ae2c5d682c4">8a5a933</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1607">#1607</a></li>
 <li><code>readme</code> could not be set to <code>none</code> in a config file (<a href="https://github.com/TypeStrong/typedoc/commit/da27756d9c08b2353e375523a9cf93a5496c9fc7">da27756</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1608">#1608</a></li>
 <li>Correctly handle minimatch excludes on Windows (<a href="https://github.com/TypeStrong/typedoc/commit/bf79e32f32b107673b779fdc5257439dddeacfaf">bf79e32</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1610">#1610</a></li>
 </ul>
 <h1 id="v0.21.0-(2021-05-18)" tabindex="-1">v0.21.0 (2021-05-18)</h1>
-<h3 id="breaking-changes" tabindex="-1">Breaking Changes</h3>
+<h3 id="breaking-changes-1" tabindex="-1">Breaking Changes</h3>
 <ul>
 <li>Drop support for Node v10 (<a href="https://github.com/TypeStrong/typedoc/commit/dc8416a83f1dfbc35a1c26788b344c3876eb8196">dc8416a</a>)</li>
 <li>Plugins are now passed Application directly (<a href="https://github.com/TypeStrong/typedoc/commit/22df5746dc8bf7df0a26ff47e1f1d82737461f05">22df574</a>)</li>
@@ -26,7 +41,7 @@
 <li>Add the --treatWarningsAsErrors option (<a href="https://github.com/TypeStrong/typedoc/commit/58f1bac81b594123a3ed0fdb5d970f276d8ada9a">58f1bac</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1568">#1568</a></li>
 <li>The exclude option will now remove symbols re-exported from excluded files (<a href="https://github.com/TypeStrong/typedoc/commit/bb5a5ae4c538f9359c7bf428d344b6769bf36641">bb5a5ae</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1578">#1578</a></li>
 </ul>
-<h3 id="bug-fixes-2" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-3" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Correctly handle comments on function type aliases (<a href="https://github.com/TypeStrong/typedoc/commit/1b1cd140828be02cbcac6214ade7448beb1e0eee">1b1cd14</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/799">#799</a></li>
 <li>Setters should always have a <code>void</code> return type (<a href="https://github.com/TypeStrong/typedoc/commit/1dc56591b9b230c95c57b07c4679616299f2323e">1dc5659</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1215">#1215</a></li>
@@ -36,7 +51,7 @@
 <li>Correct handling for intentionally broken references (<a href="https://github.com/TypeStrong/typedoc/commit/5d581b0c2d6abdab3aede4c46e33da4f12c1e467">5d581b0</a>)</li>
 <li>Inheritance from multiple Partial<T> types was incorrectly converted (<a href="https://github.com/TypeStrong/typedoc/commit/4aad444e7995719f2988346e0e1bc6a836f48c20">4aad444</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1579">#1579</a></li>
 </ul>
-<h3 id="thanks!" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-1" tabindex="-1">Thanks!</h3>
 <ul>
 <li>efokschaner</li>
 <li>Martin</li>
@@ -46,11 +61,11 @@
 <ul>
 <li>Add disableAliases option (#1576) (<a href="https://github.com/TypeStrong/typedoc/commit/a446431a5233139b8d4daee08ea57fd6cabb9965">a446431</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1571">#1571</a></li>
 </ul>
-<h3 id="bug-fixes-3" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-4" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Pin <code>marked</code> dependency to 2.0.x (#1602) (<a href="https://github.com/TypeStrong/typedoc/commit/0e8d4291f71b2a3ff423a73b2082ee18fb97ccaa">0e8d429</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1601">#1601</a></li>
 </ul>
-<h3 id="thanks!-1" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-2" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Martin</li>
 <li>Nick</li>
@@ -61,12 +76,12 @@
 <li>use 'pretty' option when generating json (<a href="https://github.com/TypeStrong/typedoc/commit/d5930e0a676128a5f8969bbb46983d12d0265980">d5930e0</a>)</li>
 <li>create 'pretty' option (<a href="https://github.com/TypeStrong/typedoc/commit/b3c856eadd8dc112b8d29003a028b9749fa06646">b3c856e</a>)</li>
 </ul>
-<h3 id="bug-fixes-4" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-5" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Always write to stdout, even if redirected (<a href="https://github.com/TypeStrong/typedoc/commit/dcbda43104f1a4e51d477e6b2d5206ed1d1c6a40">dcbda43</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1566">#1566</a></li>
 <li>Create directories when writing JSON output (<a href="https://github.com/TypeStrong/typedoc/commit/4817db464156c020bfc0d72ab65e1ac62eba6cff">4817db4</a>)</li>
 </ul>
-<h3 id="thanks!-2" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-3" tabindex="-1">Thanks!</h3>
 <ul>
 <li>cAttte</li>
 </ul>
@@ -75,44 +90,44 @@
 <ul>
 <li>Include debugging information in highlighting error messages (#1561) (<a href="https://github.com/TypeStrong/typedoc/commit/a90deee663c3113e320e41781d8167200693e659">a90deee</a>)</li>
 </ul>
-<h3 id="bug-fixes-5" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-6" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Relax simple expression requirements for default values (<a href="https://github.com/TypeStrong/typedoc/commit/bff58164d182312791c754a60dacd1c2159f2147">bff5816</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1552">#1552</a></li>
 <li>Handle #private getters + methods (<a href="https://github.com/TypeStrong/typedoc/commit/d1a9bca8ecd0fa50f3a7f946ed73f2160a8118fd">d1a9bca</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1564">#1564</a></li>
 </ul>
-<h3 id="thanks!-3" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-4" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Masato Makino</li>
 </ul>
 <h1 id="v0.20.34-(2021-02-25)" tabindex="-1">v0.20.34 (2021-02-25)</h1>
-<h3 id="bug-fixes-6" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-7" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Crash when converting recursive type alias (<a href="https://github.com/TypeStrong/typedoc/commit/02fe2a73048687288cb33d837ff685a4c6c1e2b4">02fe2a7</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1547">#1547</a></li>
 <li>Discover module comments for global files (<a href="https://github.com/TypeStrong/typedoc/commit/ce218e9bda960539066140cc346851b7bd0fe4dd">ce218e9</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1549">#1549</a></li>
 <li>Detect references when export * is used (<a href="https://github.com/TypeStrong/typedoc/commit/f0b9192e0c46d8f8c37488124d43721387050679">f0b9192</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1551">#1551</a></li>
 </ul>
 <h1 id="v0.20.33-(2021-02-22)" tabindex="-1">v0.20.33 (2021-02-22)</h1>
-<h3 id="bug-fixes-7" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-8" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Static properties of Error class incorrectly converted (<a href="https://github.com/TypeStrong/typedoc/commit/fbc5966465441536ede196e6550a9c10fbfb9e68">fbc5966</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1541">#1541</a>, <a href="https://github.com/TypeStrong/typedoc/issues/572">#572</a></li>
 </ul>
 <h1 id="v0.20.32-(2021-02-14)" tabindex="-1">v0.20.32 (2021-02-14)</h1>
-<h3 id="bug-fixes-8" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-9" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Correct crash with reflection types (<a href="https://github.com/TypeStrong/typedoc/commit/5d7856b7c4185559faeb40913eb07d178c5ff679">5d7856b</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1538">#1538</a></li>
 </ul>
 <h1 id="v0.20.31-(2021-02-14)" tabindex="-1">v0.20.31 (2021-02-14)</h1>
-<h3 id="bug-fixes-9" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-10" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>readonly tuples were recognized as arrays (<a href="https://github.com/TypeStrong/typedoc/commit/99c6a13759fb947af1446cb8eb07cf189b1801aa">99c6a13</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1534">#1534</a></li>
 <li>Constructors were improperly reported as inherited (<a href="https://github.com/TypeStrong/typedoc/commit/b908c097f87b7bb2e75e8a8011aa15c638206796">b908c09</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1528">#1528</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1527">#1527</a></li>
 </ul>
-<h3 id="thanks!-4" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-5" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Vladimir Ivakin</li>
 </ul>
 <h1 id="v0.20.30-(2021-02-06)" tabindex="-1">v0.20.30 (2021-02-06)</h1>
-<h3 id="bug-fixes-10" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-11" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Categories should only appear once if specified multiple times (<a href="https://github.com/TypeStrong/typedoc/commit/6949a1f6f45eff164a68e99fea99c50e4001adb0">6949a1f</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1522">#1522</a></li>
 <li>Support JSDocNullableType, JSDocNonNullableType (<a href="https://github.com/TypeStrong/typedoc/commit/34d05f271d79a706cede3b6667c75bee49912681">34d05f2</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1524">#1524</a></li>
@@ -124,7 +139,7 @@
 <li>Support for TypeScript 4.2 (<a href="https://github.com/TypeStrong/typedoc/commit/ee273624fafbcde016e57e5124d0f8535e5da27b">ee27362</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1517">#1517</a></li>
 </ul>
 <h1 id="v0.20.28-(2021-01-23)" tabindex="-1">v0.20.28 (2021-01-23)</h1>
-<h3 id="bug-fixes-11" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-12" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Detect visibility modifiers on accessors (<a href="https://github.com/TypeStrong/typedoc/commit/46be74ec8f6fbfc174a3d394a15b7fd1ba32abe2">46be74e</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1516">#1516</a></li>
 </ul>
@@ -133,16 +148,16 @@
 <ul>
 <li>preserve spaces in code blocks (<a href="https://github.com/TypeStrong/typedoc/commit/c8de53adf2c494289629578eaf71c3992b54e330">c8de53a</a>)</li>
 </ul>
-<h3 id="bug-fixes-12" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-13" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Detect and normalize unique symbol names (<a href="https://github.com/TypeStrong/typedoc/commit/441fea209e7a94a05a81c380e267d41e06812346">441fea2</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1514">#1514</a></li>
 </ul>
-<h3 id="thanks!-5" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-6" tabindex="-1">Thanks!</h3>
 <ul>
 <li>michaelf</li>
 </ul>
 <h1 id="v0.20.26-(2021-01-20)" tabindex="-1">v0.20.26 (2021-01-20)</h1>
-<h3 id="bug-fixes-13" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-14" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Pick up optional/readonly from mapped types (<a href="https://github.com/TypeStrong/typedoc/commit/a2d9dd8bf0671abd2447f9d0476602b9974cea41">a2d9dd8</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1509">#1509</a></li>
 </ul>
@@ -156,27 +171,27 @@
 <ul>
 <li>add support for non .com gh enterprise domains (#1507) (<a href="https://github.com/TypeStrong/typedoc/commit/c0f5d9102a71cbe32d83136e2bc8f925b3dc91b7">c0f5d91</a>)</li>
 </ul>
-<h3 id="thanks!-6" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-7" tabindex="-1">Thanks!</h3>
 <ul>
 <li>TUNER88</li>
 </ul>
 <h1 id="v0.20.23-(2021-01-06)" tabindex="-1">v0.20.23 (2021-01-06)</h1>
-<h3 id="bug-fixes-14" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-15" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Missing namespace members when ns is created by re-exporting an entire module (<a href="https://github.com/TypeStrong/typedoc/commit/7dfadcf63fbae08c7f918dacff05771bcf7d7afe">7dfadcf</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1499">#1499</a></li>
 <li>Set inheritedFrom on accessor signatures (<a href="https://github.com/TypeStrong/typedoc/commit/ccd519a82d7a250c9547a49aa8f2357828d4c255">ccd519a</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1497">#1497</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1498">#1498</a></li>
 </ul>
-<h3 id="thanks!-7" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-8" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Siddharth VP</li>
 </ul>
 <h1 id="v0.20.22-(2021-01-06)" tabindex="-1">v0.20.22 (2021-01-06)</h1>
-<h3 id="bug-fixes-15" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-16" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Import from shiki rather than shiki-themes (<a href="https://github.com/TypeStrong/typedoc/commit/1c37702f2c86e22bde76b1b31e0b0d387154ad09">1c37702</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1496">#1496</a></li>
 </ul>
 <h1 id="v0.20.21-(2021-01-05)" tabindex="-1">v0.20.21 (2021-01-05)</h1>
-<h3 id="bug-fixes-16" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-17" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Missing exported members in file-as-namespace reflection (<a href="https://github.com/TypeStrong/typedoc/commit/1423960dd64ec16197df925527ed4f3216b4184c">1423960</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1493">#1493</a></li>
 </ul>
@@ -185,14 +200,14 @@
 <ul>
 <li>add highlight theme option (<a href="https://github.com/TypeStrong/typedoc/commit/4a6df9ad86da346ef8d66d1d5b2138158d9be12a">4a6df9a</a>)</li>
 </ul>
-<h3 id="bug-fixes-17" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-18" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Missing comments on optional methods (<a href="https://github.com/TypeStrong/typedoc/commit/e4fb86651cc063b3e55f77a589aa0825fba2bd2b">e4fb866</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1490">#1490</a></li>
 <li>Avoid crash with removed project reflection (<a href="https://github.com/TypeStrong/typedoc/commit/fa95b07f34045990140617b596b492c213721876">fa95b07</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1489">#1489</a></li>
 <li>function-namespaces were converted incorrectly (<a href="https://github.com/TypeStrong/typedoc/commit/3097c5ac2e157e609254aafa0be8a11cdf57f22c">3097c5a</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1483">#1483</a></li>
 <li>add validation to highlightTheme option (<a href="https://github.com/TypeStrong/typedoc/commit/7723ddf4f72abef30aa7dd95d08f8e52ae308fb1">7723ddf</a>)</li>
 </ul>
-<h3 id="thanks!-8" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-9" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Matthias Law</li>
 </ul>
@@ -202,7 +217,7 @@
 <li>Support for --watch, --preserveWatchOutput, --emit (<a href="https://github.com/TypeStrong/typedoc/commit/2188f86a9f63c4142a480554a703a7a6dee47ba0">2188f86</a>)</li>
 </ul>
 <h1 id="v0.20.18-(2021-00-24)" tabindex="-1">v0.20.18 (2021-00-24)</h1>
-<h3 id="bug-fixes-18" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-19" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Static methods added to the class manually in JS (<a href="https://github.com/TypeStrong/typedoc/commit/687ae53578c7ecc9ce4b668a6087db7ad0ca3596">687ae53</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1481">#1481</a></li>
 </ul>
@@ -211,16 +226,16 @@
 <ul>
 <li>Add support for copying item’s documentation by copying it from another API item (<a href="https://github.com/TypeStrong/typedoc/commit/84db49abc0767ade1bf1284d11f8b333935e9f8b">84db49a</a>)</li>
 </ul>
-<h3 id="bug-fixes-19" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-20" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>CommonJS export= with type exports (<a href="https://github.com/TypeStrong/typedoc/commit/4a539ddb3b17b53642b3981864ab3cd5a498d6fe">4a539dd</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1476">#1476</a></li>
 </ul>
-<h3 id="thanks!-9" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-10" tabindex="-1">Thanks!</h3>
 <ul>
 <li>dergash</li>
 </ul>
 <h1 id="v0.20.16-(2021-00-17)" tabindex="-1">v0.20.16 (2021-00-17)</h1>
-<h3 id="bug-fixes-20" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-21" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Comments on projects were broken (<a href="https://github.com/TypeStrong/typedoc/commit/685ca411f12d381951ff8470c961696fc83ec539">685ca41</a>)</li>
 <li>Constructors were a bit broken (<a href="https://github.com/TypeStrong/typedoc/commit/d746d857c65116b8d4b0e0b69277665a1748c556">d746d85</a>)</li>
@@ -231,68 +246,68 @@
 <li>Support for excludeInternal (<a href="https://github.com/TypeStrong/typedoc/commit/4f4d85ccd37267d7aad970fd693fa9723f022a82">4f4d85c</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1469">#1469</a></li>
 <li>add option to read more categories from doc (<a href="https://github.com/TypeStrong/typedoc/commit/18d83f60a1cd52adab525319219d3bd417334a81">18d83f6</a>)</li>
 </ul>
-<h3 id="bug-fixes-21" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-22" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Crash when converting <code>@types/ws</code> (<a href="https://github.com/TypeStrong/typedoc/commit/b8071c6785790f5104dec197b02d264d0c75ffac">b8071c6</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1463">#1463</a></li>
 <li>replace return with continue (<a href="https://github.com/TypeStrong/typedoc/commit/c01883bf9e82c632abe69b8a27aef4eb0a194077">c01883b</a>)</li>
 <li>excludeNotDocumented incorrectly ignored some symbols (<a href="https://github.com/TypeStrong/typedoc/commit/1d03d4bd907e881df0bf9bf7e94b65991d791d92">1d03d4b</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1465">#1465</a></li>
 <li>Support for JSDoc <code>@enum</code> tags (<a href="https://github.com/TypeStrong/typedoc/commit/66c1652d70a47b4cc335efe0ebbe2403095633ed">66c1652</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1464">#1464</a></li>
 </ul>
-<h3 id="thanks!-10" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-11" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Bruno Zorić</li>
 </ul>
 <h1 id="v0.20.14-(2021-00-09)" tabindex="-1">v0.20.14 (2021-00-09)</h1>
-<h3 id="bug-fixes-22" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-23" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Crash with destructured export const (<a href="https://github.com/TypeStrong/typedoc/commit/f373302738a995e6a34b8f5163fc4038cf22addd">f373302</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1462">#1462</a></li>
 <li>Add support for optional types (<a href="https://github.com/TypeStrong/typedoc/commit/28c234eed724dc0e08ac5da8e97da2bdcb247a83">28c234e</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1312">#1312</a></li>
 <li>Add support for rest types (<a href="https://github.com/TypeStrong/typedoc/commit/83d2a2c7d9409b5acfdf5f66cdce4c4250fdeaa6">83d2a2c</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1457">#1457</a></li>
 <li>Avoid using process.exit (#1461) (<a href="https://github.com/TypeStrong/typedoc/commit/0d892ce6a17d7dc3072477087bd0fbdbcaa33530">0d892ce</a>)</li>
 </ul>
-<h3 id="thanks!-11" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-12" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Krisztián Balla</li>
 </ul>
 <h1 id="v0.20.13-(2021-00-06)" tabindex="-1">v0.20.13 (2021-00-06)</h1>
-<h3 id="bug-fixes-23" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-24" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Use type nodes if converting a regular function (<a href="https://github.com/TypeStrong/typedoc/commit/d528c6991325326a4f4b0b5421640d950b0efb9c">d528c69</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1454">#1454</a></li>
 </ul>
 <h1 id="v0.20.12-(2021-00-05)" tabindex="-1">v0.20.12 (2021-00-05)</h1>
-<h3 id="bug-fixes-24" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-25" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Arrow methods did not have modifiers set properly (<a href="https://github.com/TypeStrong/typedoc/commit/9b4f898c01ad69a8c030fcc5b5fb1435f54cca22">9b4f898</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1452">#1452</a></li>
 <li>Add support for import types (<a href="https://github.com/TypeStrong/typedoc/commit/37e8a3c241240ab41f82845f1d5125fbf16bf36c">37e8a3c</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1453">#1453</a></li>
 <li>Don't document type arguments if there are none (#1451) (<a href="https://github.com/TypeStrong/typedoc/commit/894f92f9382ac78cf9c9cea4616b827c62d50ee7">894f92f</a>)</li>
 </ul>
-<h3 id="thanks!-12" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-13" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Krisztián Balla</li>
 </ul>
 <h1 id="v0.20.11-(2021-00-04)" tabindex="-1">v0.20.11 (2021-00-04)</h1>
-<h3 id="bug-fixes-25" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-26" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Crash when converting a generic with a tuple constraint (<a href="https://github.com/TypeStrong/typedoc/commit/685cd3e1fcb67665f07e7ed6a79da694b19427e7">685cd3e</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1449">#1449</a></li>
 </ul>
 <h1 id="v0.20.10-(2021-00-03)" tabindex="-1">v0.20.10 (2021-00-03)</h1>
-<h3 id="bug-fixes-26" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-27" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Errors due to bad options in tsconfig file were dropped (<a href="https://github.com/TypeStrong/typedoc/commit/f76b521ae3e6c6695fb8abeda4409d64e4ac896e">f76b521</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1444">#1444</a></li>
 </ul>
 <h1 id="v0.20.9-(2021-00-02)" tabindex="-1">v0.20.9 (2021-00-02)</h1>
-<h3 id="bug-fixes-27" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-28" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Regression caused by 1886304f327da5642097834feac0387fd1b78b6e (<a href="https://github.com/TypeStrong/typedoc/commit/e884ec37532714cbd0214726a560221c8b9cc8e7">e884ec3</a>)</li>
 <li>Parameter declarations might not exist (<a href="https://github.com/TypeStrong/typedoc/commit/1886304f327da5642097834feac0387fd1b78b6e">1886304</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1443">#1443</a></li>
 </ul>
 <h1 id="v0.20.8-(2021-00-01)" tabindex="-1">v0.20.8 (2021-00-01)</h1>
-<h3 id="bug-fixes-28" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-29" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>CLI should not exit cleanly on unexpected error (<a href="https://github.com/TypeStrong/typedoc/commit/29073285bbe317c02a05392179fb1246ff1955d8">2907328</a>)</li>
 </ul>
 <h1 id="v0.20.7-(2021-00-01)" tabindex="-1">v0.20.7 (2021-00-01)</h1>
-<h3 id="bug-fixes-29" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-30" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Tuples could cause a crash (<a href="https://github.com/TypeStrong/typedoc/commit/b4da1cab22af447454e0a0c67daee2e3c189466a">b4da1ca</a>)</li>
 </ul>
@@ -301,17 +316,17 @@
 <ul>
 <li>Support for JSDoc types (<a href="https://github.com/TypeStrong/typedoc/commit/11537350dc3b69e997f94c1882e47fdbe9f09ec4">1153735</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1214">#1214</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1437">#1437</a></li>
 </ul>
-<h3 id="bug-fixes-30" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-31" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Properly resolve type parameters (<a href="https://github.com/TypeStrong/typedoc/commit/60b65069afb49a908da538f79c01bf624a9b0e68">60b6506</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1438">#1438</a></li>
 </ul>
 <h1 id="v0.20.5-(2020-11-30)" tabindex="-1">v0.20.5 (2020-11-30)</h1>
-<h3 id="bug-fixes-31" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-32" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Functions might not have a parent in global files (<a href="https://github.com/TypeStrong/typedoc/commit/d739298b144ee94a1f5ad56f120d286346d46bf2">d739298</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1436">#1436</a></li>
 </ul>
 <h1 id="v0.20.4-(2020-11-30)" tabindex="-1">v0.20.4 (2020-11-30)</h1>
-<h3 id="bug-fixes-32" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-33" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>--excludeNotDocumented didn't remove reflections (<a href="https://github.com/TypeStrong/typedoc/commit/5ebbd0f530bba9748d135381ce0c6d8cc30700e8">5ebbd0f</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1435">#1435</a></li>
 </ul>
@@ -325,7 +340,7 @@
 <ul>
 <li>Better detection for declaration files defining a module (<a href="https://github.com/TypeStrong/typedoc/commit/38d8edfa458da1a6a60ad23241860ffaa891ee1f">38d8edf</a>)</li>
 </ul>
-<h3 id="bug-fixes-33" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-34" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Negative literal types were converted incorrectly (<a href="https://github.com/TypeStrong/typedoc/commit/c14b5b5423ff8bebb6e99c3c41b865a4aaeff9bc">c14b5b5</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1427">#1427</a></li>
 <li>ArgumentsReader should warn if missing a value (<a href="https://github.com/TypeStrong/typedoc/commit/02b915dbe69897808afc06a4c95005746d9c3517">02b915d</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1429">#1429</a></li>
@@ -334,12 +349,12 @@
 <li>Map bash, sh, shell to shellscript when highlighting (<a href="https://github.com/TypeStrong/typedoc/commit/6eb6c285e93a7fad5c259b7ffb9f740ce0050ea1">6eb6c28</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1432">#1432</a></li>
 </ul>
 <h1 id="v0.20.1-(2020-11-29)" tabindex="-1">v0.20.1 (2020-11-29)</h1>
-<h3 id="bug-fixes-34" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-35" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Initializers should only be included if &quot;simple&quot; (<a href="https://github.com/TypeStrong/typedoc/commit/5bf4d05cb5f23f5c2b3fc8a115e0392e5d661c2b">5bf4d05</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1288">#1288</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1224">#1224</a>, <a href="https://github.com/TypeStrong/typedoc/issues/764">#764</a></li>
 </ul>
 <h1 id="v0.20.0-(2020-11-28)" tabindex="-1">v0.20.0 (2020-11-28)</h1>
-<h3 id="breaking-changes-1" tabindex="-1">Breaking Changes</h3>
+<h3 id="breaking-changes-2" tabindex="-1">Breaking Changes</h3>
 <ul>
 <li>Remove EVENT_FUNCTION_IMPLEMENTATION (<a href="https://github.com/TypeStrong/typedoc/commit/6f6de330569905501697b2ebf83054b4994050b4">6f6de33</a>)</li>
 <li>Switch to Shiki for syntax highlighting (<a href="https://github.com/TypeStrong/typedoc/commit/fb93c3e63ee47ff6aa578479d761ebd5d586b835">fb93c3e</a>)</li>
@@ -365,7 +380,7 @@
 <li>Support for mapped types (<a href="https://github.com/TypeStrong/typedoc/commit/103606903a2c94e58de5874fbf918b9c2ba0ffd7">1036069</a>)</li>
 <li>Mostly working library mode (<a href="https://github.com/TypeStrong/typedoc/commit/bcbd401be32c287fd6c4ae3d465d5c26c6bc4db2">bcbd401</a>)</li>
 </ul>
-<h3 id="bug-fixes-35" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-36" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>ConstructorType node support (<a href="https://github.com/TypeStrong/typedoc/commit/7ba17f611c5dcd4ff93007c5b19b0c84d7102101">7ba17f6</a>)</li>
 <li>Reintroduce support for index signatures (<a href="https://github.com/TypeStrong/typedoc/commit/20a7d5f5dbb51420fb4c67275755ea306f90bf41">20a7d5f</a>)</li>
@@ -398,14 +413,14 @@
 <li>Rendering works again (<a href="https://github.com/TypeStrong/typedoc/commit/17bf655677a51470052f4130fe35b4c48ef0cff5">17bf655</a>)</li>
 <li>A few of the issues with the type converter (<a href="https://github.com/TypeStrong/typedoc/commit/6ff7fcd1d2cc14eeae1f16399e15d8cb7d7f2346">6ff7fcd</a>)</li>
 </ul>
-<h3 id="thanks!-13" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-14" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Denis Sikuler</li>
 <li>Krisztián Balla</li>
 <li>Soc Sieng</li>
 </ul>
 <h1 id="v0.19.2-(2020-08-21)" tabindex="-1">v0.19.2 (2020-08-21)</h1>
-<h3 id="bug-fixes-36" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-37" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Export declarations within namespaces weren't detected (<a href="https://github.com/TypeStrong/typedoc/commit/983c0e60fb7b58e89a0c62a0a65eb2ee2b6e04c6">983c0e6</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1366">#1366</a></li>
 </ul>
@@ -414,7 +429,7 @@
 <ul>
 <li>Re-introduce support for TS 3.9 (<a href="https://github.com/TypeStrong/typedoc/commit/833ebb81127c240e09cbe6367ebaf335ce0a0ef4">833ebb8</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1362">#1362</a></li>
 </ul>
-<h3 id="thanks!-14" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-15" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Constantine Dergachev</li>
 </ul>
@@ -425,25 +440,25 @@
 <li>Upgrade to TS 4.0 (<a href="https://github.com/TypeStrong/typedoc/commit/e1364695db03f503ab38f2dd55ac6e1d77f2f60d">e136469</a>)</li>
 <li>Support for defaulted type parameters (<a href="https://github.com/TypeStrong/typedoc/commit/f67f8dba4f4543e164521ef9e9a694eb99ff56ae">f67f8db</a>)</li>
 </ul>
-<h3 id="bug-fixes-37" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-38" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Check for missing declarations (<a href="https://github.com/TypeStrong/typedoc/commit/71d838ad32c90831ee7ab32c6e9de74da0c2ebf0">71d838a</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1329">#1329</a></li>
 <li>Add converter for parenthesized type nodes (<a href="https://github.com/TypeStrong/typedoc/commit/b3c77314d1bc6abe3f807bc4ea1cd4f5d370cc85">b3c7731</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1346">#1346</a></li>
 <li>Support for type operators <code>readonly</code> &amp; <code>unique</code> (<a href="https://github.com/TypeStrong/typedoc/commit/a1ac23c7897cb27e9f9e7f04727c870963eee870">a1ac23c</a>)</li>
 <li>Address typo in log statement (<a href="https://github.com/TypeStrong/typedoc/commit/96ede6a43f95bf73e9b3786c7aa46846020850ee">96ede6a</a>)</li>
 </ul>
-<h3 id="thanks!-15" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-16" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Eric ZHANG</li>
 <li>Krisztián Balla</li>
 <li>MathBunny</li>
 </ul>
 <h1 id="v0.18.0-(2020-07-09)" tabindex="-1">v0.18.0 (2020-07-09)</h1>
-<h3 id="breaking-changes-2" tabindex="-1">Breaking Changes</h3>
+<h3 id="breaking-changes-3" tabindex="-1">Breaking Changes</h3>
 <ul>
 <li>Bump minimum node version to 10 (<a href="https://github.com/TypeStrong/typedoc/commit/2f8d295882c280186d7353406b62b5a0bc36511c">2f8d295</a>)</li>
 </ul>
-<h3 id="bug-fixes-38" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-39" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Improve support for type aliases (<a href="https://github.com/TypeStrong/typedoc/commit/7fc721cd2333d70677837e97ca9ef4a3c134ab0e">7fc721c</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1330">#1330</a></li>
 <li>Examples don't run (#1327) (<a href="https://github.com/TypeStrong/typedoc/commit/f582eb38a64ea2e728e1f13c7c7822a97b3aeea8">f582eb3</a>)</li>
@@ -454,7 +469,7 @@
 <li>Only set inputFiles from tsconfig if not already set (<a href="https://github.com/TypeStrong/typedoc/commit/5878278a2dcff02020fc646b1768b91459291224">5878278</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1263">#1263</a></li>
 <li>Options.isDefault was always false when passed non-literals. (<a href="https://github.com/TypeStrong/typedoc/commit/5878278a2dcff02020fc646b1768b91459291224">5878278</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1263">#1263</a></li>
 </ul>
-<h3 id="thanks!-16" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-17" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Brandon Istenes</li>
 <li>Chris Thielen</li>
@@ -462,7 +477,7 @@
 <li>TheBrokenRail</li>
 </ul>
 <h1 id="v0.17.7-(2020-04-17)" tabindex="-1">v0.17.7 (2020-04-17)</h1>
-<h3 id="breaking-changes-3" tabindex="-1">Breaking Changes</h3>
+<h3 id="breaking-changes-4" tabindex="-1">Breaking Changes</h3>
 <ul>
 <li>Any plugins which referenced ReflectionKind.ExternalModule or ReflectionKind.Module need to be updated to reference ReflectionKind.Module and ReflectionKind.Namespace respectively. (<a href="https://github.com/TypeStrong/typedoc/commit/295ccdd892d344dc373bfe17f3948c5f16587a70">295ccdd</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/109">#109</a></li>
 <li><code>createMinimatch</code> is no longer a public function. (<a href="https://github.com/TypeStrong/typedoc/commit/592e0b34e3758b00b6f846d05d479a52f8b6f4db">592e0b3</a>)</li>
@@ -481,7 +496,7 @@
 <li>Allow user to set git remote (<a href="https://github.com/TypeStrong/typedoc/commit/5cbd44d300150c8f2d62f9a9e2b7c7688945a2f1">5cbd44d</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1130">#1130</a></li>
 <li>Only generate legend for items that are displayed on the page (#1187) (<a href="https://github.com/TypeStrong/typedoc/commit/923c55dd9d44c14d019a5184edac3dcb440823cb">923c55d</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1136">#1136</a></li>
 </ul>
-<h3 id="bug-fixes-39" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-40" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>copy inherited parameter descriptions (#1303) (<a href="https://github.com/TypeStrong/typedoc/commit/9b586db354e582d612b5ab6ee8151dbca494ccad">9b586db</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/787">#787</a></li>
 <li>TypeDoc fails to resolve @types packages outside of cwd (<a href="https://github.com/TypeStrong/typedoc/commit/8edb17c5bf08f6306664ce16d3123605bef9c2b3">8edb17c</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1300">#1300</a></li>
@@ -502,7 +517,7 @@
 <li>Moved @types/minimatch dependency to devDepencencies (#1206) (<a href="https://github.com/TypeStrong/typedoc/commit/592e0b34e3758b00b6f846d05d479a52f8b6f4db">592e0b3</a>)</li>
 <li>Plugin resolution for relative paths (#1194) (<a href="https://github.com/TypeStrong/typedoc/commit/13f4debd6395ff34025061abdb06f70bfd8aef84">13f4deb</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1188">#1188</a></li>
 </ul>
-<h3 id="thanks!-17" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-18" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Alexander Cerutti</li>
 <li>Krisztián Balla</li>
@@ -521,14 +536,14 @@
 <li>Support for extended config in typedoc.json (<a href="https://github.com/TypeStrong/typedoc/commit/07fb1ce879bfcbea0c3d75e2b1a1dee8575c15ae">07fb1ce</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/493">#493</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1115">#1115</a></li>
 <li>Config option to exclude not explicitly documented symbols (#996) (<a href="https://github.com/TypeStrong/typedoc/commit/20db9a5b7ce0170fb80a5183069bbceb7e348632">20db9a5</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/995">#995</a></li>
 </ul>
-<h3 id="bug-fixes-40" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-41" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Support code blocks with four spaces (<a href="https://github.com/TypeStrong/typedoc/commit/148bd1269a9b71f85176a00e1a312ca09ad16079">148bd12</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1218">#1218</a></li>
 <li>Ensure child comment tags get set (#1221) (<a href="https://github.com/TypeStrong/typedoc/commit/541fbcf93fedc499fee9579ad044b2fc67e3cfac">541fbcf</a>)</li>
 <li>Re-export TypeScript namespace (#1217) (<a href="https://github.com/TypeStrong/typedoc/commit/796349a442cf02a3d0b5a62a8ef646ce4f3e2663">796349a</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1213">#1213</a></li>
 <li>Logger extensions now also count the warnings (#1210) (<a href="https://github.com/TypeStrong/typedoc/commit/c4ce9a58aad070b9282f1e2c0a5796df38074cb7">c4ce9a5</a>)</li>
 </ul>
-<h3 id="thanks!-18" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-19" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Adam Epling</li>
 <li>Emily Marigold Klassen</li>
@@ -543,29 +558,29 @@
 <li>Allow excluding tags from comments (<a href="https://github.com/TypeStrong/typedoc/commit/bc02096982bc221cf7352db4e1fdc0bf20803c89">bc02096</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/815">#815</a></li>
 <li>Count warnings (#1205) (<a href="https://github.com/TypeStrong/typedoc/commit/c75df1c6a0d19aca71946a732ed834b43e69a761">c75df1c</a>)</li>
 </ul>
-<h3 id="bug-fixes-41" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-42" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Remove tags containing redundant type info (<a href="https://github.com/TypeStrong/typedoc/commit/429b3a901ab5fbf35f199d234c40afeed7907956">429b3a9</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1198">#1198</a></li>
 <li>Don't remove braces containing a tag (<a href="https://github.com/TypeStrong/typedoc/commit/eefdb2c588f378ebea2abc11903d66af3b24e908">eefdb2c</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1001">#1001</a></li>
 <li>Mixin symbols might not have declarations (#1208) (<a href="https://github.com/TypeStrong/typedoc/commit/91cfa1ba99d942c8c7d8c8ae7e8440f753fbe15b">91cfa1b</a>)</li>
 </ul>
-<h3 id="thanks!-19" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-20" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Raynor Chen</li>
 <li>Robin Stevens</li>
 <li>Zack Slayton</li>
 </ul>
 <h1 id="v0.16.9-(2020-00-25)" tabindex="-1">v0.16.9 (2020-00-25)</h1>
-<h3 id="bug-fixes-42" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-43" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>use util.readFile everywhere to handle BOM issues (<a href="https://github.com/TypeStrong/typedoc/commit/00a6816dabf370f5ce9556b426a9e59ab7132ea2">00a6816</a>)</li>
 </ul>
-<h3 id="thanks!-20" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-21" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Anton Golub</li>
 </ul>
 <h1 id="v0.16.8-(2020-00-21)" tabindex="-1">v0.16.8 (2020-00-21)</h1>
-<h3 id="bug-fixes-43" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-44" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Correctly handle export * from... (<a href="https://github.com/TypeStrong/typedoc/commit/9ce64c55d0230e311281f0d6c54a63ef40ad0e5c">9ce64c5</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1186">#1186</a></li>
 </ul>
@@ -574,16 +589,16 @@
 <ul>
 <li>Support for query types (<a href="https://github.com/TypeStrong/typedoc/commit/e039eb8cce7082f3f67735ebc6a3d0b1e5b5fa71">e039eb8</a>)</li>
 </ul>
-<h3 id="bug-fixes-44" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-45" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Add test for {} and fix generation (<a href="https://github.com/TypeStrong/typedoc/commit/64a2a4f86a2531de6500d8b72d7b7ae489a3e51b">64a2a4f</a>)</li>
 </ul>
-<h3 id="thanks!-21" tabindex="-1">Thanks!</h3>
+<h3 id="thanks!-22" tabindex="-1">Thanks!</h3>
 <ul>
 <li>Robin Stevens</li>
 </ul>
 <h1 id="v0.16.6-(2020-00-16)" tabindex="-1">v0.16.6 (2020-00-16)</h1>
-<h3 id="bug-fixes-45" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-46" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>removeReflection does not fully remove reflections (<a href="https://github.com/TypeStrong/typedoc/commit/f9c126a599bec29d0424da80c6aeff128365c0cd">f9c126a</a>), closes <a href="https://github.com/TypeStrong/typedoc/issues/1176">#1176</a></li>
 </ul>
