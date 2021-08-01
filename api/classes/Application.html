@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Application | TypeDoc Documentation - v0.21.4</title>
-	<meta name="description" content="Documentation for TypeDoc Documentation - v0.21.4">
+	<title>Application | TypeDoc Documentation - v0.21.5</title>
+	<meta name="description" content="Documentation for TypeDoc Documentation - v0.21.5">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">TypeDoc Documentation - v0.21.4</a>
+					<a href="../index.html" class="title">TypeDoc Documentation - v0.21.5</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -50,7 +50,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">TypeDoc Documentation - v0.21.4</a>
+					<a href="../modules.html">TypeDoc Documentation - v0.21.5</a>
 				</li>
 				<li>
 					<a href="Application.html">Application</a>
@@ -107,13 +107,12 @@
 							<ul class="tsd-index-list">
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="Application.html#componentName" class="tsd-kind-icon">component<wbr>Name</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#converter" class="tsd-kind-icon">converter</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#emit" class="tsd-kind-icon">emit</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#entryPoints" class="tsd-kind-icon">entry<wbr>Points</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#exclude" class="tsd-kind-icon">exclude</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#logger" class="tsd-kind-icon">logger</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#loggerType" class="tsd-kind-icon">logger<wbr>Type</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#options" class="tsd-kind-icon">options</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#optionsFile" class="tsd-kind-icon">options<wbr>File</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#project" class="tsd-kind-icon">project</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#renderer" class="tsd-kind-icon">renderer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class"><a href="Application.html#serializer" class="tsd-kind-icon">serializer</a></li>
 								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><a href="Application.html#VERSION" class="tsd-kind-icon">VERSION</a></li>
@@ -174,7 +173,7 @@
 							<aside class="tsd-sources">
 								<p>Overrides ChildableComponent&lt;Application,AbstractComponent&lt;Application&gt;&gt;.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L209">src/lib/application.ts:209</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L221">src/lib/application.ts:221</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -196,7 +195,7 @@
 					<aside class="tsd-sources">
 						<p>Inherited from ChildableComponent.componentName</p>
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/component.ts#L126">src/lib/utils/component.ts:126</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/component.ts#L126">src/lib/utils/component.ts:126</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -211,7 +210,7 @@
 					<div class="tsd-signature tsd-kind-icon">converter<span class="tsd-signature-symbol">:</span> <a href="Converter.html" class="tsd-signature-type" data-tsd-kind="Class">Converter</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L165">src/lib/application.ts:165</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L176">src/lib/application.ts:176</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -221,14 +220,36 @@
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="emit" class="tsd-anchor"></a>
+					<h3>emit</h3>
+					<div class="tsd-signature tsd-kind-icon">emit<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L209">src/lib/application.ts:209</a></li>
+						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="entryPoints" class="tsd-anchor"></a>
 					<h3>entry<wbr>Points</h3>
 					<div class="tsd-signature tsd-kind-icon">entry<wbr>Points<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L191">src/lib/application.ts:191</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L205">src/lib/application.ts:205</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="exclude" class="tsd-anchor"></a>
@@ -236,9 +257,15 @@
 					<div class="tsd-signature tsd-kind-icon">exclude<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L188">src/lib/application.ts:188</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L201">src/lib/application.ts:201</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="logger" class="tsd-anchor"></a>
@@ -246,7 +273,7 @@
 					<div class="tsd-signature tsd-kind-icon">logger<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Logger</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L180">src/lib/application.ts:180</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L191">src/lib/application.ts:191</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -261,9 +288,15 @@
 					<div class="tsd-signature tsd-kind-icon">logger<wbr>Type<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">Function</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L185">src/lib/application.ts:185</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L197">src/lib/application.ts:197</a></li>
 						</ul>
 					</aside>
+					<div class="tsd-comment tsd-typography">
+						<dl class="tsd-comment-tags">
+							<dt>internal</dt>
+							<dd></dd>
+						</dl>
+					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
 					<a name="options" class="tsd-anchor"></a>
@@ -271,27 +304,7 @@
 					<div class="tsd-signature tsd-kind-icon">options<span class="tsd-signature-symbol">:</span> <a href="Options.html" class="tsd-signature-type" data-tsd-kind="Class">Options</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L182">src/lib/application.ts:182</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="optionsFile" class="tsd-anchor"></a>
-					<h3>options<wbr>File</h3>
-					<div class="tsd-signature tsd-kind-icon">options<wbr>File<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L194">src/lib/application.ts:194</a></li>
-						</ul>
-					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="project" class="tsd-anchor"></a>
-					<h3>project</h3>
-					<div class="tsd-signature tsd-kind-icon">project<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L197">src/lib/application.ts:197</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L193">src/lib/application.ts:193</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -301,7 +314,7 @@
 					<div class="tsd-signature tsd-kind-icon">renderer<span class="tsd-signature-symbol">:</span> <a href="Renderer.html" class="tsd-signature-type" data-tsd-kind="Class">Renderer</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L170">src/lib/application.ts:170</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L181">src/lib/application.ts:181</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -316,7 +329,7 @@
 					<div class="tsd-signature tsd-kind-icon">serializer<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Serializer</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L175">src/lib/application.ts:175</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L186">src/lib/application.ts:186</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -331,7 +344,7 @@
 					<div class="tsd-signature tsd-kind-icon">VERSION<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> = ...</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L202">src/lib/application.ts:202</a></li>
+							<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L214">src/lib/application.ts:214</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
@@ -353,7 +366,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L420">src/lib/utils/events.ts:420</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L420">src/lib/utils/events.ts:420</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -375,7 +388,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L264">src/lib/application.ts:264</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L276">src/lib/application.ts:276</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -397,7 +410,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/component.ts#L177">src/lib/utils/component.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/component.ts#L177">src/lib/utils/component.ts:177</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -423,7 +436,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.addComponent</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/component.ts#L231">src/lib/utils/component.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/component.ts#L231">src/lib/utils/component.ts:231</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -455,7 +468,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L225">src/lib/application.ts:225</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L237">src/lib/application.ts:237</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -487,7 +500,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.bubble</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/component.ts#L144">src/lib/utils/component.ts:144</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/component.ts#L144">src/lib/utils/component.ts:144</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -513,7 +526,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L287">src/lib/application.ts:287</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L299">src/lib/application.ts:299</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -536,7 +549,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L358">src/lib/application.ts:358</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L374">src/lib/application.ts:374</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -577,7 +590,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L548">src/lib/application.ts:548</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L564">src/lib/application.ts:564</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -612,7 +625,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L498">src/lib/application.ts:498</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L514">src/lib/application.ts:514</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -643,7 +656,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L519">src/lib/application.ts:519</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L535">src/lib/application.ts:535</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -679,7 +692,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.getComponent</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/component.ts#L219">src/lib/utils/component.ts:219</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/component.ts#L219">src/lib/utils/component.ts:219</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -709,7 +722,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.getComponents</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/component.ts#L223">src/lib/utils/component.ts:223</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/component.ts#L223">src/lib/utils/component.ts:223</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">AbstractComponent</span><span class="tsd-signature-symbol">&lt;</span><a href="Application.html" class="tsd-signature-type" data-tsd-kind="Class">Application</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -726,7 +739,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L639">src/lib/application.ts:639</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L661">src/lib/application.ts:661</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -769,7 +782,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L599">src/lib/application.ts:599</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L615">src/lib/application.ts:615</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Program</span><span class="tsd-signature-symbol">[]</span></h4>
@@ -786,7 +799,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L274">src/lib/application.ts:274</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L286">src/lib/application.ts:286</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -808,7 +821,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L278">src/lib/application.ts:278</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L290">src/lib/application.ts:290</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -826,7 +839,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.hasComponent</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/component.ts#L227">src/lib/utils/component.ts:227</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/component.ts#L227">src/lib/utils/component.ts:227</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -850,7 +863,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.initialize</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/component.ts#L140">src/lib/utils/component.ts:140</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/component.ts#L140">src/lib/utils/component.ts:140</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -873,7 +886,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.listenTo</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L542">src/lib/utils/events.ts:542</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L542">src/lib/utils/events.ts:542</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -914,7 +927,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.listenToOnce</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L576">src/lib/utils/events.ts:576</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L576">src/lib/utils/events.ts:576</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -937,7 +950,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.listenToOnce</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L577">src/lib/utils/events.ts:577</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L577">src/lib/utils/events.ts:577</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -972,7 +985,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.off</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L517">src/lib/utils/events.ts:517</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L517">src/lib/utils/events.ts:517</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -989,7 +1002,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.off</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L518">src/lib/utils/events.ts:518</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L518">src/lib/utils/events.ts:518</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1007,7 +1020,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.off</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L519">src/lib/utils/events.ts:519</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L519">src/lib/utils/events.ts:519</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1039,7 +1052,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L429">src/lib/utils/events.ts:429</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L429">src/lib/utils/events.ts:429</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1063,7 +1076,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L430">src/lib/utils/events.ts:430</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L430">src/lib/utils/events.ts:430</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1087,7 +1100,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.on</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L436">src/lib/utils/events.ts:436</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L436">src/lib/utils/events.ts:436</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1121,7 +1134,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.once</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L487">src/lib/utils/events.ts:487</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L487">src/lib/utils/events.ts:487</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1147,7 +1160,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.once</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L488">src/lib/utils/events.ts:488</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L488">src/lib/utils/events.ts:488</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1180,7 +1193,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.removeAllComponents</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/component.ts#L274">src/lib/utils/component.ts:274</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/component.ts#L274">src/lib/utils/component.ts:274</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
@@ -1198,7 +1211,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.removeComponent</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/component.ts#L262">src/lib/utils/component.ts:262</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/component.ts#L262">src/lib/utils/component.ts:262</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1222,7 +1235,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.stopListening</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L604">src/lib/utils/events.ts:604</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L604">src/lib/utils/events.ts:604</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1257,7 +1270,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/application.ts#L669">src/lib/application.ts:669</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/application.ts#L691">src/lib/application.ts:691</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1280,7 +1293,7 @@
 							<aside class="tsd-sources">
 								<p>Inherited from ChildableComponent.trigger</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.4/src/lib/utils/events.ts#L640">src/lib/utils/events.ts:640</a></li>
+									<li>Defined in <a href="https://github.com/TypeStrong/typedoc/blob/v0.21.5/src/lib/utils/events.ts#L640">src/lib/utils/events.ts:640</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -1331,6 +1344,9 @@
 								<a href="Application.html#converter" class="tsd-kind-icon">converter</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="Application.html#emit" class="tsd-kind-icon">emit</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Application.html#entryPoints" class="tsd-kind-icon">entry<wbr>Points</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
@@ -1344,12 +1360,6 @@
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Application.html#options" class="tsd-kind-icon">options</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="Application.html#optionsFile" class="tsd-kind-icon">options<wbr>File</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="Application.html#project" class="tsd-kind-icon">project</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
 								<a href="Application.html#renderer" class="tsd-kind-icon">renderer</a>
