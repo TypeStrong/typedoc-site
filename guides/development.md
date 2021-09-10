@@ -55,16 +55,16 @@ The [Options](https://typedoc.org/api/classes/options.html) class consolidates a
 
 There are 10 builtin option types as specified by the [ParameterType](https://typedoc.org/api/enums/parametertype.html) enum.
 
-- `String` - A string
-- `Path` - A string which will be resolved to a path. Paths in config files will be resolved relative to the config directory.
-- `Number` - A number which is not `NaN`
-- `Boolean` - `true` or `false`
-- `Map` - Defines a map between string keys and an arbitrary type. See the [tests](https://github.com/TypeStrong/typedoc/blob/master/src/test/utils/options/declaration.test.ts#L39) for an example.
-- `Mixed` - An arbitrary type that will just be passed through by TypeDoc.
-- `Array` - An array of strings.
-- `PathArray` - An array of paths, if specified in a config file, will be resolved relative to the config file directory.
-- `ModuleArray` - An array of modules/paths. Items will be resolved if they start with `.`.
-- `GlobArray` - An array of globs. Globs will be resolved if they do not start with `**`, after skipping leading `!` and `#` characters.
+-   `String` - A string
+-   `Path` - A string which will be resolved to a path. Paths in config files will be resolved relative to the config directory.
+-   `Number` - A number which is not `NaN`
+-   `Boolean` - `true` or `false`
+-   `Map` - Defines a map between string keys and an arbitrary type. See the [tests](https://github.com/TypeStrong/typedoc/blob/master/src/test/utils/options/declaration.test.ts#L39) for an example.
+-   `Mixed` - An arbitrary type that will just be passed through by TypeDoc.
+-   `Array` - An array of strings.
+-   `PathArray` - An array of paths, if specified in a config file, will be resolved relative to the config file directory.
+-   `ModuleArray` - An array of modules/paths. Items will be resolved if they start with `.`.
+-   `GlobArray` - An array of globs. Globs will be resolved if they do not start with `**`, after skipping leading `!` and `#` characters.
 
 Options are discovered and set by option readers, which are documented in the [OptionReader](https://typedoc.org/api/interfaces/optionsreader.html) interface.
 
@@ -79,18 +79,18 @@ This function should add any options the plugin accepts and add any listeners ne
 import { Application, ParameterType, Converter } from "typedoc";
 
 export function load(app: Application) {
-  app.options.addDeclaration({
-    name: "plugin-option",
-    help: "Displayed when --help is passed",
-    type: ParameterType.String, // The default
-    defaultValue: "", // The default
-  });
+    app.options.addDeclaration({
+        name: "plugin-option",
+        help: "Displayed when --help is passed",
+        type: ParameterType.String, // The default
+        defaultValue: "", // The default
+    });
 
-  app.converter.on(Converter.EVENT_RESOLVE, (context: Context) => {
-    if (app.options.getValue("plugin-option") === "something") {
-      // ...
-    }
-  });
+    app.converter.on(Converter.EVENT_RESOLVE, (context: Context) => {
+        if (app.options.getValue("plugin-option") === "something") {
+            // ...
+        }
+    });
 }
 ```
 
@@ -98,9 +98,9 @@ export function load(app: Application) {
 
 TypeDoc converts the syntax tree created by TypeScript into its own structure of [`Reflection`](https://typedoc.org/api/classes/reflection.html)s to allow themes and serialization to work with a standard object format. Conversion is done primarily in three files.
 
-- [symbols.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/symbols.ts) - contains converters for each `ts.Symbol` that is exported from entry points.
-- [types.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/types.ts) - contains converters for `ts.Type`s and `ts.TypeNode`s.
-- [jsdoc.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/jsdoc.ts) - contains converters for types and symbols declared within JSDoc comments.
+-   [symbols.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/symbols.ts) - contains converters for each `ts.Symbol` that is exported from entry points.
+-   [types.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/types.ts) - contains converters for `ts.Type`s and `ts.TypeNode`s.
+-   [jsdoc.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/jsdoc.ts) - contains converters for types and symbols declared within JSDoc comments.
 
 ### JSON Output
 
@@ -108,4 +108,4 @@ Docs to come - TypeDoc's JSON output is defined according to serializers which s
 
 ### HTML Output
 
-Docs to come - Not before 0.22.
+See [internal-docs/custom-themes.md](https://github.com/TypeStrong/typedoc/blob/master/internal-docs/custom-themes.md) for creating a theme.
