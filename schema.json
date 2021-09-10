@@ -9,11 +9,17 @@
 		"tsconfig": {
 			"description": "Specify a TypeScript config file that should be loaded. If not specified TypeDoc will look for 'tsconfig.json' in the current directory."
 		},
-		"packages": {
-			"description": "Specify one or more package folders from which a package.json file should be loaded to determine the entry points. Your JS files must have sourcemaps for this to work.If the root of an npm or Yarn workspace is given, the packages specified in `workspaces` will be loaded."
-		},
 		"entryPoints": {
-			"description": "The entry points of your library, which files should be documented as available to consumers."
+			"description": "The entry points of your documentation."
+		},
+		"entryPointStrategy": {
+			"description": "The strategy to be used to convert entry points into documentation modules.",
+			"enum": [
+				"Resolve",
+				"Expand",
+				"Packages"
+			],
+			"default": "resolve"
 		},
 		"exclude": {
 			"description": "Define patterns to be excluded when expanding a directory that was specified as an entry point."
@@ -88,10 +94,18 @@
 			"type": "string",
 			"default": "default"
 		},
-		"highlightTheme": {
-			"description": "Specifies the code highlighting theme.",
+		"lightHighlightTheme": {
+			"description": "Specifies the code highlighting theme in light mode.",
 			"type": "string",
-			"default": "light-plus"
+			"default": "min-light"
+		},
+		"darkHighlightTheme": {
+			"description": "Specifies the code highlighting theme in dark mode.",
+			"type": "string",
+			"default": "min-dark"
+		},
+		"customCss": {
+			"description": "Path to a custom CSS file to for the theme to import."
 		},
 		"name": {
 			"description": "Set the name of the project that will be used in the header of the template.",
@@ -169,18 +183,15 @@
 			"type": "boolean",
 			"default": false
 		},
-		"toc": {
-			"description": "Define the contents of the top level table of contents as a comma-separated list of global symbols.",
-			"type": "array",
-			"items": {
-				"type": "string"
-			},
-			"default": []
-		},
-		"disableOutputCheck": {
-			"description": "Should TypeDoc disable the testing and cleaning of the output directory?",
+		"hideLegend": {
+			"description": "Do not print the Legend for icons at the end of the page.",
 			"type": "boolean",
 			"default": false
+		},
+		"cleanOutputDir": {
+			"description": "If set, TypeDoc will remove the output directory before writing output.",
+			"type": "boolean",
+			"default": true
 		},
 		"showConfig": {
 			"description": "Print the resolved configuration and exit",
@@ -208,18 +219,26 @@
 			],
 			"default": 1
 		},
+		"markedOptions": {
+			"description": "Specify the options passed to Marked, the Markdown parser used by TypeDoc"
+		},
 		"treatWarningsAsErrors": {
 			"description": "If set, warnings will be treated as errors.",
 			"type": "boolean",
 			"default": false
 		},
 		"listInvalidSymbolLinks": {
-			"description": "Emits a list of broken symbol [[navigation]] links after documentation generation",
+			"description": "Emits a list of broken symbol {@link navigation} links after documentation generation",
 			"type": "boolean",
 			"default": false
 		},
-		"markedOptions": {
-			"description": "Specify the options passed to Marked, the Markdown parser used by TypeDoc"
+		"intentionallyNotExported": {
+			"description": "A list of types which should not produce 'referenced but not documented' warnings.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": []
 		}
 	}
 }
