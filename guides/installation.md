@@ -56,8 +56,8 @@ When running typedoc from the CLI, you can define any option except the entry fi
 
 ```json
 {
-  "entryPoints": ["src/index.ts"],
-  "out": "docs"
+    "entryPoints": ["src/index.ts"],
+    "out": "docs"
 }
 ```
 
@@ -68,13 +68,13 @@ options as a json model.
 
 ```json
 {
-  "compilerOptions": {
-    "normalTypeScriptOptions": "here"
-  },
-  "typedocOptions": {
-    "entryPoints": ["src/index.ts"],
-    "out": "docs"
-  }
+    "compilerOptions": {
+        "normalTypeScriptOptions": "here"
+    },
+    "typedocOptions": {
+        "entryPoints": ["src/index.ts"],
+        "out": "docs"
+    }
 }
 ```
 
@@ -87,28 +87,28 @@ the node module and build the documentation yourself.
 const TypeDoc = require("typedoc");
 
 async function main() {
-  const app = new TypeDoc.Application();
+    const app = new TypeDoc.Application();
 
-  // If you want TypeDoc to load tsconfig.json / typedoc.json files
-  app.options.addReader(new TypeDoc.TSConfigReader());
-  app.options.addReader(new TypeDoc.TypeDocReader());
+    // If you want TypeDoc to load tsconfig.json / typedoc.json files
+    app.options.addReader(new TypeDoc.TSConfigReader());
+    app.options.addReader(new TypeDoc.TypeDocReader());
 
-  app.bootstrap({
-    // typedoc options here
-    entryPoints: ["src/index.ts"],
-  });
+    app.bootstrap({
+        // typedoc options here
+        entryPoints: ["src/index.ts"],
+    });
 
-  const project = app.convert();
+    const project = app.convert();
 
-  if (project) {
-    // Project may not have converted correctly
-    const outputDir = "docs";
+    if (project) {
+        // Project may not have converted correctly
+        const outputDir = "docs";
 
-    // Rendered docs
-    await app.generateDocs(project, outputDir);
-    // Alternatively generate JSON output
-    await app.generateJson(project, outputDir + "/documentation.json");
-  }
+        // Rendered docs
+        await app.generateDocs(project, outputDir);
+        // Alternatively generate JSON output
+        await app.generateJson(project, outputDir + "/documentation.json");
+    }
 }
 
 main().catch(console.error);
@@ -135,11 +135,11 @@ Update the following snippet with your configuration and add it to your `gulpfil
 ```js
 var typedoc = require("gulp-typedoc");
 gulp.task("typedoc", function () {
-  return gulp.src(["src/**/*.ts"]).pipe(
-    typedoc({
-      out: "docs/",
-      name: "My project title",
-    })
-  );
+    return gulp.src(["src/**/*.ts"]).pipe(
+        typedoc({
+            out: "docs/",
+            name: "My project title",
+        })
+    );
 });
 ```

@@ -4,8 +4,8 @@ tags: guide
 title: "Options"
 menuOrder: 2
 redirect_from:
-  - /guides/usage
-  - /guides/arguments
+    - /guides/usage
+    - /guides/arguments
 ---
 
 # Options
@@ -34,8 +34,8 @@ The JSON file should return an object whose keys are the option names. For examp
 
 ```json
 {
-  "entryPoints": ["./src/index.ts", "./src/secondary-entry.ts"],
-  "out": "doc"
+    "entryPoints": ["./src/index.ts", "./src/secondary-entry.ts"],
+    "out": "doc"
 }
 ```
 
@@ -53,21 +53,6 @@ When TypeDoc loads a `tsconfig.json` file, it also will read TypeDoc options dec
 
 These options control what files TypeDoc processes to generate documentation and how the files are processed.
 
-### packages
-
-```bash
-$ typedoc --packages .
-```
-
-If your codebase is comprised of one or more npm packages, you can pass the paths to these
-packages and TypeDoc will attempt to determine entry points based on `package.json`'s `main`
-property (with default value `index.js`) and if it wasn't found, based on `types` property.
-If any of the packages given are the root of an [npm Workspace](https://docs.npmjs.com/cli/v7/using-npm/workspaces)
-or a [Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/) TypeDoc will find all
-the `workspaces` defined in the `package.json`.
-This mode requires sourcemaps in your JS entry points, in order to find the TS entry points.
-Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces.
-
 ### entryPoints
 
 ```bash
@@ -77,6 +62,19 @@ $ typedoc --entryPoints a --entryPoints b
 ```
 
 Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports. Either files or directories may be specified. If a directory is specified, all source files within the directory will be included as an entry point, unless excluded by `--exclude`. See also [--packages](#packages)
+
+### entryPointStrategy
+
+```bash
+$ typedoc --entryPointStrategy expand ./src
+```
+
+There are three possible options:
+| Option | Behavior |
+| --- | --- |
+| resolve (default) | Expects all entry points to be contained within the root level tsconfig project. If a directory is given, includes `<directory>/index` as the entry point. |
+| expand | Expects all entry points to be contained within the root level tsconfig project. If a directory is given, files within it are recursively expanded. This was the default behavior in v0.21. |
+| packages | If your codebase is comprised of one or more npm packages, you can pass the paths to these packages and TypeDoc will attempt to determine entry points based on `package.json`'s `main` property (with default value `index.js`) and if it wasn't found, based on `types` property. If any of the packages given are the root of an [npm Workspace](https://docs.npmjs.com/cli/v7/using-npm/workspaces) or a [Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/) TypeDoc will find all the `workspaces` defined in the `package.json`. This mode requires sourcemaps in your JS entry points or that you specify `typedocMain` in your package.json to tell TypeDoc where your entry point TypeScript source. Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces. |
 
 ### exclude
 
@@ -167,6 +165,14 @@ $ typedoc --json <path/to/out-file.json>
 Specifies the location to output a JSON file containing all of the reflection data.
 An example of the JSON output from running TypeDoc on itself can be seen at [/api/docs.json](/api/docs.json).
 
+### pretty
+
+```bash
+$ typedoc --json out.json --pretty
+```
+
+Tells TypeDoc to pretty-format the JSON output.
+
 ### emit
 
 ```bash
@@ -178,19 +184,26 @@ Instructs TypeDoc to write compiled output files as `tsc` does.
 ### theme
 
 ```bash
-$ typedoc --theme <default|minimal|path/to/theme>
+$ typedoc --theme default
 ```
 
-Specify the path to the theme that should be used.
-TypeDoc includes the `default` and `minimal` themes, which may be specified without the full path to the theme.
+Specify the theme that should be used. TypeDoc 0.22 contains architectural changes which breaks themes developed for TypeDoc 0.21 and earlier.
 
-### highlightTheme
+### lightHighlightTheme / darkHighlightTheme
 
 ```bash
-$ typedoc --highlightTheme dark-plus
+$ typedoc --darkHighlightTheme dark-plus
 ```
 
-Specify the Shiki theme to be used to highlight code snippets.
+Specify the Shiki theme to be used to highlight code snippets in light/dark mode.
+
+### customCss
+
+```bash
+$ typedoc --customCss ./theme/style.css
+```
+
+Specifies an extra CSS file that should be copied into the assets directory and referenced by the theme.
 
 ### markedOptions
 
@@ -199,9 +212,9 @@ By default TypeDoc overrides the default values used by Marked with the ones sho
 
 ```json
 {
-  "markedOptions": {
-    "mangle": false
-  }
+    "markedOptions": {
+        "mangle": false
+    }
 }
 ```
 
@@ -281,7 +294,7 @@ typedoc.json:
 
 ```json
 {
-  "categoryOrder": ["Category Name", "Other Category", "*"]
+    "categoryOrder": ["Category Name", "Other Category", "*"]
 }
 ```
 
@@ -308,14 +321,14 @@ by position in source will always produce a non-equal comparison.
 
 The available sorting strategies are:
 
-- `source-order` (sorts by file, then by position in file)
-- `alphabetical`
-- `enum-value-ascending` (only applies to children of an enum)
-- `enum-value-descending` (only applies to children of an enum)
-- `static-first`
-- `instance-first`
-- `visibility` (public, then protected, then private)
-- `required-first`
+-   `source-order` (sorts by file, then by position in file)
+-   `alphabetical`
+-   `enum-value-ascending` (only applies to children of an enum)
+-   `enum-value-descending` (only applies to children of an enum)
+-   `static-first`
+-   `instance-first`
+-   `visibility` (public, then protected, then private)
+-   `required-first`
 
 ### gitRevision
 
@@ -359,28 +372,13 @@ $ typedoc --hideGenerator
 
 Do not print the TypeDoc link at the end of the page. Defaults to false.
 
-### toc
+### cleanOutputDir
 
 ```bash
-$ typedoc --toc EntryClass,ImportantInterface
+$ typedoc --cleanOutputDir false
 ```
 
-```json
-{
-  "toc": ["EntryClass", "ImportantInterface"]
-}
-```
-
-Overrides the "globals" navigation sidebar to only include the types provided in the "toc" whitelist.
-This is useful in large projects where there may be an unwieldy number of Globals in the sidebar.
-
-### disableOutputCheck
-
-```bash
-$ typedoc --disableOutputCheck
-```
-
-Disables checking and clearing of the output directory specified with `--out`.
+Can be used to prevent TypeDoc from cleaning the output directory specified with `--out`.
 
 ## General Options
 
@@ -452,10 +450,14 @@ $ typedoc --logLevel Verbose
 
 Specifies the log level to be printed to the console. Defaults to `Info`. The available levels are:
 
-- Verbose - Print all log messages, may include debugging information intended for TypeDoc developers
-- Info - Print informational log messages along with warning and error messages
-- Warn - Print warning and error messages
-- Error - Print only error messages
+-   Verbose - Print all log messages, may include debugging information intended for TypeDoc developers
+-   Info - Print informational log messages along with warning and error messages
+-   Warn - Print warning and error messages
+-   Error - Print only error messages
+
+## Validation
+
+Options that control how TypeDoc validates your documentation
 
 ### treatWarningsAsErrors
 
@@ -471,4 +473,16 @@ Causes TypeDoc to treat any reported warnings as fatal errors that can prevent d
 $ typedoc --listInvalidSymbolLinks
 ```
 
-Tells TypeDoc to report any `[[symbol name]]` links that are broken.
+Tells TypeDoc to report any `{@link symbol}` links that are broken.
+
+### intentionallyNotExported
+
+Lists symbols which are intentionally excluded from the documentation output and should not produce warnings
+
+typedoc.json:
+
+```json
+{
+    "intentionallyNotExported": ["InternalClass", "OtherInternal"]
+}
+```
