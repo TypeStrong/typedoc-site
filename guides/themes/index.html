@@ -88,41 +88,7 @@
 <p>Themes allow you to change the look and feel of the generated documentation. You can use one of the included
 themes, modify them to suit your needs or create a fully custom theme. The <code>--theme</code> parameter allows you to
 select a theme when creating a documentation:</p>
-<pre class="language-bash"><code class="language-bash">$ typedoc --theme <span class="token operator">&lt;</span>default<span class="token operator">|</span>minimal<span class="token operator">|</span>path/to/theme<span class="token operator">></span></code></pre>
-<p>You must supply a path to a valid theme directory or a name of a built-in theme. If you don't supply the
-<code>--theme</code> parameter, the theme <code>default</code> will be used.</p>
-<h2 id="built-in-themes" tabindex="-1">Built-in themes</h2>
-<p>TypeDoc ships with two themes so you can start creating docs right out of the box:</p>
-<ul>
-<li>
-<p><code>default</code> - This is the standard theme used by TypeDoc. It is intended to be used with medium to large
-projects. It creates a single html file for each module, class, interface and enumeration in your project.
-It supports filtering the displayed members by different criteria and it includes a simpled search.</p>
-</li>
-<li>
-<p><code>minimal</code> - This theme is intended to be used with smaller projects. It is ultra portable as it renders
-the entire documentation into one big html file including all required assets like stylesheets or images.
-Like the default theme, it supports filtering the displayed members by different criteria.</p>
-</li>
-</ul>
-<h2 id="custom-themes" tabindex="-1">Custom themes</h2>
-<p>Creating a custom theme in TypeDoc is pretty easy. Basically you create a directory and overwrite the
-components of the <a href="https://github.com/TypeStrong/typedoc-default-themes/tree/master/src/default"><code>default</code> theme</a>
-you want to change. All themes extend the default theme, so you only have to change the parts that don't
-fit your needs.</p>
-<p>This is the basic directory structure of a theme, only the assets directory is mandatory:</p>
-<pre><code>+ my-theme             // Root directory of your theme
-  + assets             // Static assets like *.css or *.js files
-  + layouts            // Optional. Layout templates
-    - default.hbs      // Optional. Default layout template
-  + partials           // Optional. Partials to be used by Handlebar
-  + templates          // Optional. Page templates
-    - index.hbs        // Optional. Home page template
-    - reflection.hbs   // Optional. Definition page template
-  - theme.js           // Optional. JavaScript class of the theme
-  + helpers            // Optional. Custom Handlebars helpers
-    - helper.js        // See [Github issue](https://github.com/TypeStrong/typedoc/issues/154#issuecomment-224483571) for example
-</code></pre>
+<p>TypeDoc ships with one builtin default theme, additional themes can be added by plugins. For documentation on creating custom themes, see the <a href="https://github.com/TypeStrong/typedoc/blob/master/internal-docs/custom-themes.md">custom-themes.md</a> document in the TypeDoc repository.</p>
 
     </div>
     <div class="col-sm-3 toc-container"></div>
