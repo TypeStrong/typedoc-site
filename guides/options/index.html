@@ -87,9 +87,8 @@
       <h1 id="options" tabindex="-1">Options</h1>
 <p>TypeDoc accepts most of the command line arguments that the TypeScript compiler accepts.
 All command line arguments that are passed in without a flag will be parsed as input files.
-TypeDoc also accepts directories as input files.
 Any options passed on the command line will override options set in a configuration file.</p>
-<pre class="language-bash"><code class="language-bash">$ typedoc --out path/to/documentation/ path/to/typescript/project/</code></pre>
+<pre class="language-bash"><code class="language-bash">$ typedoc --out path/to/documentation/ path/to/typescript/project/index.ts</code></pre>
 <h2 id="configuration-options" tabindex="-1">Configuration Options</h2>
 <p>These options control where TypeDoc reads its configuration from.</p>
 <h3 id="options-1" tabindex="-1">options</h3>
@@ -105,7 +104,8 @@ The JSON file should return an object whose keys are the option names. For examp
 <p>These options control what files TypeDoc processes to generate documentation and how the files are processed.</p>
 <h3 id="entrypoints" tabindex="-1">entryPoints</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc a b<br><span class="token comment"># or</span><br>$ typedoc --entryPoints a --entryPoints b</code></pre>
-<p>Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports. Either files or directories may be specified. If a directory is specified, all source files within the directory will be included as an entry point, unless excluded by <code>--exclude</code>. See also <a href="#packages">--packages</a></p>
+<p>Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports.
+Entry points can be handled in one of three ways, see <a href="#entrypointstrategy"><code>--entryPointStrategy</code></a> for details.</p>
 <h3 id="entrypointstrategy" tabindex="-1">entryPointStrategy</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --entryPointStrategy <span class="token function">expand</span> ./src</code></pre>
 <p>There are three possible options:</p>
