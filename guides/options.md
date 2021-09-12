@@ -12,11 +12,10 @@ redirect_from:
 
 TypeDoc accepts most of the command line arguments that the TypeScript compiler accepts.
 All command line arguments that are passed in without a flag will be parsed as input files.
-TypeDoc also accepts directories as input files.
 Any options passed on the command line will override options set in a configuration file.
 
 ```bash
-$ typedoc --out path/to/documentation/ path/to/typescript/project/
+$ typedoc --out path/to/documentation/ path/to/typescript/project/index.ts
 ```
 
 ## Configuration Options
@@ -61,7 +60,8 @@ $ typedoc a b
 $ typedoc --entryPoints a --entryPoints b
 ```
 
-Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports. Either files or directories may be specified. If a directory is specified, all source files within the directory will be included as an entry point, unless excluded by `--exclude`. See also [--packages](#packages)
+Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports.
+Entry points can be handled in one of three ways, see [`--entryPointStrategy`](#entrypointstrategy) for details.
 
 ### entryPointStrategy
 
