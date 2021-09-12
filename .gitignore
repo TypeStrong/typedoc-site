@@ -2,3 +2,6 @@ _site
 typedoc
 node_modules
 changelog.md
+plugins.json
+versions.json
+plugin_content.txt

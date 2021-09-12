@@ -9,9 +9,19 @@
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.6",
     "markdown-it": "^12.0.6",
-    "markdown-it-anchor": "^8.0.1"
+    "markdown-it-anchor": "^8.0.1",
+    "node-fetch": "^3.0.0",
+    "semver": "^7.3.5",
+    "ts-node": "^10.2.1"
   },
   "scripts": {
+    "get-plugins": "node --loader ts-node/esm scripts/plugins.ts",
+    "prebuild": "npm run get-plugins",
     "build": "npx @11ty/eleventy"
+  },
+  "devDependencies": {
+    "@swc/core": "^1.2.85",
+    "@types/node": "^16.9.1",
+    "@types/semver": "^7.3.8"
   }
 }

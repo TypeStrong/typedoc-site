@@ -1,7 +1,9 @@
+const fs = require("fs");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const { join } = require("path");
 
 module.exports = function (el) {
     el.addPassthroughCopy("css");
@@ -18,6 +20,10 @@ module.exports = function (el) {
         items.sort((a, b) => a.data.menuOrder - b.data.menuOrder);
         return items;
     });
+
+    el.addShortcode("typedocPlugins", () =>
+        fs.readFileSync(join(__dirname, "_includes/plugin_content.txt"))
+    );
 
     return {
         dir: {
