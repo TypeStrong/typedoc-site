@@ -97,12 +97,12 @@
 		"lightHighlightTheme": {
 			"description": "Specifies the code highlighting theme in light mode.",
 			"type": "string",
-			"default": "min-light"
+			"default": "light-plus"
 		},
 		"darkHighlightTheme": {
 			"description": "Specifies the code highlighting theme in dark mode.",
 			"type": "string",
-			"default": "min-dark"
+			"default": "dark-plus"
 		},
 		"customCss": {
 			"description": "Path to a custom CSS file to for the theme to import."
@@ -228,7 +228,7 @@
 			"default": false
 		},
 		"listInvalidSymbolLinks": {
-			"description": "Emits a list of broken symbol {@link navigation} links after documentation generation",
+			"description": "Emits a list of broken symbol {@link navigation} links after documentation generation, DEPRECATED, prefer validation.invalidLink instead.",
 			"type": "boolean",
 			"default": false
 		},
@@ -239,6 +239,21 @@
 				"type": "string"
 			},
 			"default": []
+		},
+		"validation": {
+			"description": "Specify which validation steps TypeDoc should perform on your generated documentation.",
+			"properties": {},
+			"notExported": {
+				"type": "boolean"
+			},
+			"invalidLink": {
+				"type": "boolean"
+			},
+			"additionalProperties": false,
+			"default": {
+				"notExported": true,
+				"invalidLink": false
+			}
 		}
 	}
 }
