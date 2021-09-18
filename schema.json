@@ -159,12 +159,12 @@
 			]
 		},
 		"gitRevision": {
-			"description": "Use specified revision instead of the last revision for linking to GitHub source files.",
+			"description": "Use specified revision instead of the last revision for linking to GitHub/Bitbucket source files.",
 			"type": "string",
 			"default": ""
 		},
 		"gitRemote": {
-			"description": "Use the specified remote for linking to GitHub source files.",
+			"description": "Use the specified remote for linking to GitHub/Bitbucket source files.",
 			"type": "string",
 			"default": "origin"
 		},
@@ -177,6 +177,11 @@
 			"description": "Set the site name for Google Analytics. Defaults to `auto`.",
 			"type": "string",
 			"default": "auto"
+		},
+		"githubPages": {
+			"description": "Generate a .nojekyll file to prevent 404 errors in GitHub Pages. Defaults to `true`.",
+			"type": "boolean",
+			"default": true
 		},
 		"hideGenerator": {
 			"description": "Do not print the TypeDoc link at the end of the page.",
@@ -242,14 +247,23 @@
 		},
 		"validation": {
 			"description": "Specify which validation steps TypeDoc should perform on your generated documentation.",
-			"properties": {},
-			"notExported": {
-				"type": "boolean"
-			},
-			"invalidLink": {
-				"type": "boolean"
-			},
-			"additionalProperties": false,
+			"anyOf": [
+				{
+					"type": "boolean"
+				},
+				{
+					"type": "object",
+					"properties": {
+						"notExported": {
+							"type": "boolean"
+						},
+						"invalidLink": {
+							"type": "boolean"
+						}
+					},
+					"additionalProperties": false
+				}
+			],
 			"default": {
 				"notExported": true,
 				"invalidLink": false

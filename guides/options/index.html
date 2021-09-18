@@ -246,12 +246,17 @@ by position in source will always produce a non-equal comparison.</p>
 </ul>
 <h3 id="gitrevision" tabindex="-1">gitRevision</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --gitRevision <span class="token operator">&lt;</span>revision<span class="token operator">|</span>branch<span class="token operator">></span></code></pre>
-<p>Use specified revision or branch instead of the last revision for linking to GitHub source files.</p>
+<p>Use specified revision or branch instead of the last revision for linking to GitHub/Bitbucket source files.</p>
 <h3 id="gitremote" tabindex="-1">gitRemote</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --gitRemote <span class="token operator">&lt;</span>remote<span class="token operator">></span></code></pre>
-<p>Use the specified git remote instead of <code>origin</code> for linking to GitHub source files.
+<p>Use the specified git remote instead of <code>origin</code> for linking to GitHub/Bitbucket source files.
 You can use <code>git remote</code> to view a list of valid remotes.
 If you are updating documentation for a forked package, you probably want to pass <code>--gitRemote upstream</code>.</p>
+<h3 id="githubpages" tabindex="-1">githubPages</h3>
+<pre class="language-bash"><code class="language-bash">$ typedoc --githubPages <span class="token boolean">false</span></code></pre>
+<p>When enabled, automatically add a <code>.nojekyll</code> file to the output directory to prevent GitHub Pages
+from processing your documentation site using Jekyll. If you have scoped packages, TypeDoc
+generates HTML files that start with <code>_</code> which are ignored by Jekyll. Defaults to <code>true</code>.</p>
 <h3 id="gaid" tabindex="-1">gaID</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --gaID</code></pre>
 <p>Set the Google Analytics tracking ID and activate tracking code.</p>
