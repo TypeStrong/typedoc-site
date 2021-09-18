@@ -12,8 +12,10 @@ menuOrder: 1
 ---
 </code></pre>
 <h2 id="building-the-site-locally" tabindex="-1">Building the site locally</h2>
-<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> i<br><span class="token function">npm</span> run build --serve</code></pre>
-<p>To regenerate the <code>_site/api/</code> folder, clone the typedoc repo here, and then run:</p>
+<pre class="language-bash"><code class="language-bash"><span class="token function">npm</span> i<br><span class="token function">npm</span> run build -- --serve</code></pre>
+<p>To regenerate the <code>_site/api/</code> folder, go to the root directory of
+typedoc-site and clone the typedoc repo (the <code>typedoc</code> folder is in
+<code>.gitignore</code>). Then run:</p>
 <pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> typedoc<br><span class="token function">npm</span> i<br><span class="token function">npm</span> run build<br>node bin/typedoc --options <span class="token punctuation">..</span>/typedoc.json</code></pre>
 <p>If new options have been added since the last update, run the following to update the typedoc.json schema:</p>
 <pre class="language-bash"><code class="language-bash">node typedoc/scripts/generate_options_schema.js _site/schema.json</code></pre>
