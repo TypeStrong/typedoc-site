@@ -23,10 +23,12 @@ menuOrder: 1
 
 ```bash
 npm i
-npm run build --serve
+npm run build -- --serve
 ```
 
-To regenerate the `_site/api/` folder, clone the typedoc repo here, and then run:
+To regenerate the `_site/api/` folder, go to the root directory of
+typedoc-site and clone the typedoc repo (the `typedoc` folder is in
+`.gitignore`). Then run:
 
 ```bash
 cd typedoc
