@@ -16,8 +16,10 @@
   },
   "scripts": {
     "get-plugins": "node --loader ts-node/esm scripts/plugins.ts",
-    "prebuild": "npm run get-plugins",
-    "build": "npx @11ty/eleventy"
+    "get-changelog": "node --loader ts-node/esm scripts/changelog.ts",
+    "prebuild": "npm run get-plugins && npm run get-changelog",
+    "build": "npx @11ty/eleventy",
+    "serve": "npx @11ty/eleventy --serve"
   },
   "devDependencies": {
     "@swc/core": "^1.2.85",

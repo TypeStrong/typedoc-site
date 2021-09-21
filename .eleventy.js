@@ -6,6 +6,8 @@ const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { join } = require("path");
 
 module.exports = function (el) {
+    el.setUseGitIgnore(false);
+
     el.addPassthroughCopy("css");
     el.addPassthroughCopy("scripts");
     el.addPassthroughCopy("images");
