@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
+    <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,8 +21,8 @@
 </head>
 
 
-  <body>
-    <header>
+    <body>
+        <header>
     <div class="container">
         <a href="/" class="logo">TypeDoc</a>
         <nav>
@@ -39,12 +39,10 @@
 </header>
 
 
-    <section class="content" id="content">
-      
+        <section class="content" id="content">
 <div class="container main">
-  <div class="row">
-    <div class="col-sm-2">
-      <nav class="navigation">
+    <div class="row">
+        <div class="col-sm-2"><nav class="navigation">
   <ul>
     
       <li >
@@ -81,10 +79,8 @@
     
   </ul>
 </nav>
-
-    </div>
-    <div class="col-sm-7 typography">
-      <h1 id="document-your-code" tabindex="-1">Document your code</h1>
+</div>
+        <div class="col-sm-7 typography"><h1 id="document-your-code" tabindex="-1">Document your code</h1>
 <p>TypeDoc runs the TypeScript compiler and extracts type information from the generated compiler symbols.
 Therefore you don't have to include additional metadata within your comments, TypeScript specific elements
 like classes, enumerations or property types and access modifiers will be automatically detected.</p>
@@ -151,16 +147,14 @@ standard and they may be removed in a future release.</p>
 It should be annotated with the <code>@module</code> tag so that TypeDoc knows that it is intended to be documentation for the file itself.</p>
 <p>If TypeDoc guesses a module's name incorrectly, you can override it with the <code>@module</code> by specifying text after the tag name.</p>
 <pre class="language-typescript"><code class="language-typescript"><span class="token comment">// file1.ts</span><br><span class="token comment">/**<br> * This is the doc comment for file1.ts<br> *<br> * Specify this is a module comment and rename it to my-module:<br> * @module my-module<br> * Specify this is a module comment without renaming it:<br> * @module<br> */</span><br><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> lib <span class="token keyword">from</span> <span class="token string">"lib"</span><span class="token punctuation">;</span><br><br><span class="token comment">// file2.ts</span><br><span class="token comment">/**<br> * This is *not* a doc comment for the file, it is a doc comment for the import.<br> * Include the module or packageDocumentation tag to mark it as a file comment.<br> */</span><br><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> lib <span class="token keyword">from</span> <span class="token string">"lib"</span><span class="token punctuation">;</span><br><br><span class="token comment">// file3.ts</span><br><span class="token comment">/**<br> * File doc comment for file3.ts<br> * @packageDocumentation<br> */</span><br><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> lib <span class="token keyword">from</span> <span class="token string">"lib"</span><span class="token punctuation">;</span><br><br><span class="token comment">// file4.ts (deprecated, prefer @module or @packageDocumentation)</span><br><span class="token comment">/**<br> * File doc comment for file3.ts<br> */</span><br><span class="token comment">/**<br> * dummy comment so that TypeDoc does not associate the comment with the import<br> */</span><br><span class="token keyword">import</span> <span class="token operator">*</span> <span class="token keyword">as</span> lib <span class="token keyword">from</span> <span class="token string">"lib"</span><span class="token punctuation">;</span></code></pre>
-
-    </div>
-    <div class="col-sm-3 toc-container"></div>
-  </div>
 </div>
+        <div class="col-sm-3 toc-container"></div>
+    </div>
+</div>
+</section>
 
-    </section>
-
-    <footer>
+        <footer>
 </footer>
 
-  </body>
+    </body>
 </html>
