@@ -41,7 +41,7 @@ jobs:
             - name: Rebuild schema.json
               run: node typedoc/scripts/generate_options_schema.js _site/schema.json
             - name: Rebuild markdown site
-              run: npm run build
+              run: DEBUG="Eleventy*" npm run build
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@4.1.4
               with:
