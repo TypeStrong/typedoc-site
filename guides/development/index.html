@@ -106,7 +106,7 @@ Output is split into two folders, for JSON output see the <code>src/lib/serializ
 <p>Plugins may effect any part of the process after step 2 by listening to events fired by each component or adding / replacing handlers for a given task.
 As an example, the <a href="https://typedoc.org/api/classes/converter.html">Converter</a> fires events before starting conversion, when declarations are converted and when the project should be resolved.</p>
 <h2 id="tests" tabindex="-1">Tests</h2>
-<p>TypeDoc has tests for individual utilities and some components, but the majority of the project is tested by converting source files into their JSON model and comparing it to a known good version. The basic example under <code>examples/basic</code> is rendered to HTML to test theme changes.</p>
+<p>TypeDoc has tests for individual utilities and some components, but the majority of the project is tested by converting source files into their JSON model and comparing it to a known good version. The basic example under <code>src/test/renderer/testProject</code> is rendered to HTML to test theme changes.</p>
 <p>If changing the behavior of a converter or resolver, it should be possible to modify one of the existing tests under <code>src/test/converter</code>.
 Bug fixes or feature additions which need to change one of the <code>specs*.json</code> files should run <code>npm run rebuild_specs [converter|renderer] [converter filter]</code> to run the current build of TypeDoc on the source files and generate new specs.
 For other components, we use <a href="https://mochajs.org/">Mocha</a> to write tests.</p>
