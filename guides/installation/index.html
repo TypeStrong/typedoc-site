@@ -87,6 +87,34 @@ over to their site and follow their install instructions.</p>
 <p>Installing TypeDoc is available as a node package. Using <code>npm</code> ensures that all relevant
 dependencies are setup correctly. You can choose to either install locally to your project or
 globally to the CLI.</p>
+<p>TypeDoc aims to support the two latest TypeScript releases for the latest release. Depending on the scale of breaking
+changes introduced in a new TypeScript version, a given version may support more versions of TypeScript.</p>
+<table>
+<thead>
+<tr>
+<th>TypeDoc Version</th>
+<th>TypeScript Version(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.22</td>
+<td>4.0 through 4.4</td>
+</tr>
+<tr>
+<td>0.21</td>
+<td>4.0 through 4.4</td>
+</tr>
+<tr>
+<td>0.20</td>
+<td>3.9 through 4.2</td>
+</tr>
+<tr>
+<td>0.19</td>
+<td>3.9 through 4.0</td>
+</tr>
+</tbody>
+</table>
 <h2 id="local-installation-(preferred)" tabindex="-1">Local installation (preferred)</h2>
 <p>If you want to use TypeDoc from your command line in a project, use the API in your project code, or TypeDoc in an npm script, a local installation is the recommended approach. First install TypeDoc locally in your project:</p>
 <pre class="language-bash"><code class="language-bash">$ <span class="token function">npm</span> <span class="token function">install</span> typedoc --save-dev</code></pre>
