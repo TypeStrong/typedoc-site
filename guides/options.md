@@ -176,10 +176,18 @@ Tells TypeDoc to pretty-format the JSON output.
 ### emit
 
 ```bash
-$ typedoc --emit
+$ typedoc --emit none
 ```
 
 Instructs TypeDoc to write compiled output files as `tsc` does.
+
+| Value   | Behavior                                                                |
+| ------- | ----------------------------------------------------------------------- |
+| `docs`  | Emit documentation, but not JS (default).                               |
+| `both`  | Emit both documentation and JS.                                         |
+| `none`  | Emit nothing, just convert and run validation.                          |
+| `true`  | Alias for `both`, for backwards compatibility. Will be removed in 0.23. |
+| `false` | Alias for `docs`, for backwards compatibility. Will be removed in 0.23. |
 
 ### theme
 
@@ -487,12 +495,13 @@ Tells TypeDoc to report any `{@link symbol}` links that are broken.
 
 ### intentionallyNotExported
 
-Lists symbols which are intentionally excluded from the documentation output and should not produce warnings
+Lists symbols which are intentionally excluded from the documentation output and should not produce warnings.
+Entries may optionally specify a file name before a colon to only suppress warnings for symbols declared in a specific file.
 
 typedoc.json:
 
 ```json
 {
-    "intentionallyNotExported": ["InternalClass", "OtherInternal"]
+    "intentionallyNotExported": ["InternalClass", "src/other.ts:OtherInternal"]
 }
 ```

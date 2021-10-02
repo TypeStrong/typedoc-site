@@ -58,7 +58,7 @@ export class Bar implements Foo {}
 
 /** More details */
 interface Foo {
-  member: boolean;
+    member: boolean;
 }
 ```
 
@@ -177,6 +177,24 @@ on writing these types.
 
 These modifier tags are supported for overriding the visibility of documented items. Their use is discouraged as they do not conform to the TSDoc
 standard and they may be removed in a future release.
+
+### `@enum`
+
+If present on an `as const` object with string literal values, TypeDoc will convert the variable as an enumeration instead.
+
+```ts
+/**
+ * This will be displayed as an enumeration.
+ * @enum
+ */
+export const MyEnum = {
+    /**
+     * Doc comments may be included here.
+     */
+    A: "a",
+    B: "b",
+} as const;
+```
 
 ## Files
 
