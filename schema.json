@@ -4,7 +4,7 @@
 	"type": "object",
 	"properties": {
 		"options": {
-			"description": "Specify a json option file that should be loaded. If not specified TypeDoc will look for 'typedoc.json' in the current directory"
+			"description": "Specify a json option file that should be loaded. If not specified TypeDoc will look for 'typedoc.json' in the current directory."
 		},
 		"tsconfig": {
 			"description": "Specify a TypeScript config file that should be loaded. If not specified TypeDoc will look for 'tsconfig.json' in the current directory."
@@ -43,25 +43,25 @@
 			"default": false
 		},
 		"excludePrivate": {
-			"description": "Ignores private variables and methods",
+			"description": "Ignore private variables and methods.",
 			"type": "boolean",
 			"default": false
 		},
 		"excludeProtected": {
-			"description": "Ignores protected variables and methods",
+			"description": "Ignore protected variables and methods.",
 			"type": "boolean",
 			"default": false
 		},
 		"disableSources": {
-			"description": "Disables setting the source of a reflection when documenting it.",
+			"description": "Disable setting the source of a reflection when documenting it.",
 			"type": "boolean",
 			"default": false
 		},
 		"includes": {
-			"description": "Specifies the location to look for included documents (use [[include:FILENAME]] in comments)."
+			"description": "Specify the location to look for included documents (use [[include:FILENAME]] in comments)."
 		},
 		"media": {
-			"description": "Specifies the location with media files that should be copied to the output directory."
+			"description": "Specify the location with media files that should be copied to the output directory."
 		},
 		"watch": {
 			"description": "Watch files for changes and rebuild docs on change.",
@@ -74,33 +74,39 @@
 			"default": false
 		},
 		"emit": {
-			"description": "If set, TypeDoc will emit the TypeScript compilation result",
-			"type": "boolean",
-			"default": false
+			"description": "Specify what TypeDoc should emit, 'docs', 'both', or 'none'.",
+			"enum": [
+				"true",
+				"false",
+				"both",
+				"docs",
+				"none"
+			],
+			"default": "docs"
 		},
 		"out": {
-			"description": "Specifies the location the documentation should be written to."
+			"description": "Specify the location the documentation should be written to."
 		},
 		"json": {
-			"description": "Specifies the location and filename a JSON file describing the project is written to."
+			"description": "Specify the location and filename a JSON file describing the project is written to."
 		},
 		"pretty": {
-			"description": "Specifies whether the output JSON should be formatted with tabs.",
+			"description": "Specify whether the output JSON should be formatted with tabs.",
 			"type": "boolean",
 			"default": true
 		},
 		"theme": {
-			"description": "Specify the path to the theme that should be used, or 'default' or 'minimal' to use built-in themes.Note: Not resolved according to the config file location, always resolved according to cwd.",
+			"description": "Specify the path to the theme that should be used, or 'default' or 'minimal' to use built-in themes. Note: Not resolved according to the config file location, always resolved according to cwd.",
 			"type": "string",
 			"default": "default"
 		},
 		"lightHighlightTheme": {
-			"description": "Specifies the code highlighting theme in light mode.",
+			"description": "Specify the code highlighting theme in light mode.",
 			"type": "string",
 			"default": "light-plus"
 		},
 		"darkHighlightTheme": {
-			"description": "Specifies the code highlighting theme in dark mode.",
+			"description": "Specify the code highlighting theme in dark mode.",
 			"type": "string",
 			"default": "dark-plus"
 		},
@@ -129,12 +135,12 @@
 			"description": "Path to the readme file that should be displayed on the index page. Pass `none` to disable the index page and start the documentation on the globals page."
 		},
 		"defaultCategory": {
-			"description": "Specifies the default category for reflections without a category.",
+			"description": "Specify the default category for reflections without a category.",
 			"type": "string",
 			"default": "Other"
 		},
 		"categoryOrder": {
-			"description": "Specifies the order in which categories appear. * indicates the relative order for categories not in the list.",
+			"description": "Specify the order in which categories appear. * indicates the relative order for categories not in the list.",
 			"type": "array",
 			"items": {
 				"type": "string"
@@ -142,12 +148,12 @@
 			"default": []
 		},
 		"categorizeByGroup": {
-			"description": "Specifies whether categorization will be done at the group level.",
+			"description": "Specify whether categorization will be done at the group level.",
 			"type": "boolean",
 			"default": true
 		},
 		"sort": {
-			"description": "Specify the sort strategy for documented values",
+			"description": "Specify the sort strategy for documented values.",
 			"type": "array",
 			"items": {
 				"type": "string"
@@ -199,7 +205,7 @@
 			"default": true
 		},
 		"showConfig": {
-			"description": "Print the resolved configuration and exit",
+			"description": "Print the resolved configuration and exit.",
 			"type": "boolean",
 			"default": false
 		},
@@ -207,7 +213,7 @@
 			"description": "Specify the npm plugins that should be loaded. Omit to load all installed plugins, set to 'none' to load no plugins."
 		},
 		"logger": {
-			"description": "Specify the logger that should be used, 'none' or 'console'",
+			"description": "Specify the logger that should be used, 'none' or 'console'.",
 			"enum": [
 				"console",
 				"none"
@@ -225,7 +231,7 @@
 			"default": 1
 		},
 		"markedOptions": {
-			"description": "Specify the options passed to Marked, the Markdown parser used by TypeDoc"
+			"description": "Specify the options passed to Marked, the Markdown parser used by TypeDoc."
 		},
 		"treatWarningsAsErrors": {
 			"description": "If set, warnings will be treated as errors.",
@@ -233,7 +239,7 @@
 			"default": false
 		},
 		"listInvalidSymbolLinks": {
-			"description": "Emits a list of broken symbol {@link navigation} links after documentation generation, DEPRECATED, prefer validation.invalidLink instead.",
+			"description": "Emit a list of broken symbol {@link navigation} links after documentation generation, DEPRECATED, prefer validation.invalidLink instead.",
 			"type": "boolean",
 			"default": false
 		},

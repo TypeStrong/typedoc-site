@@ -168,8 +168,38 @@ An example of the JSON output from running TypeDoc on itself can be seen at <a h
 <pre class="language-bash"><code class="language-bash">$ typedoc --json out.json --pretty</code></pre>
 <p>Tells TypeDoc to pretty-format the JSON output.</p>
 <h3 id="emit" tabindex="-1">emit</h3>
-<pre class="language-bash"><code class="language-bash">$ typedoc --emit</code></pre>
+<pre class="language-bash"><code class="language-bash">$ typedoc --emit none</code></pre>
 <p>Instructs TypeDoc to write compiled output files as <code>tsc</code> does.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>docs</code></td>
+<td>Emit documentation, but not JS (default).</td>
+</tr>
+<tr>
+<td><code>both</code></td>
+<td>Emit both documentation and JS.</td>
+</tr>
+<tr>
+<td><code>none</code></td>
+<td>Emit nothing, just convert and run validation.</td>
+</tr>
+<tr>
+<td><code>true</code></td>
+<td>Alias for <code>both</code>, for backwards compatibility. Will be removed in 0.23.</td>
+</tr>
+<tr>
+<td><code>false</code></td>
+<td>Alias for <code>docs</code>, for backwards compatibility. Will be removed in 0.23.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="theme" tabindex="-1">theme</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --theme default</code></pre>
 <p>Specify the theme that should be used. TypeDoc 0.22 contains architectural changes which breaks themes developed for TypeDoc 0.21 and earlier.</p>
@@ -307,9 +337,10 @@ generates HTML files that start with <code>_</code> which are ignored by Jekyll.
 <pre class="language-bash"><code class="language-bash">$ typedoc --listInvalidSymbolLinks</code></pre>
 <p>Tells TypeDoc to report any <code>{@link symbol}</code> links that are broken.</p>
 <h3 id="intentionallynotexported" tabindex="-1">intentionallyNotExported</h3>
-<p>Lists symbols which are intentionally excluded from the documentation output and should not produce warnings</p>
+<p>Lists symbols which are intentionally excluded from the documentation output and should not produce warnings.
+Entries may optionally specify a file name before a colon to only suppress warnings for symbols declared in a specific file.</p>
 <p>typedoc.json:</p>
-<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>    <span class="token property">"intentionallyNotExported"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"InternalClass"</span><span class="token punctuation">,</span> <span class="token string">"OtherInternal"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>    <span class="token property">"intentionallyNotExported"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"InternalClass"</span><span class="token punctuation">,</span> <span class="token string">"src/other.ts:OtherInternal"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
 </div>
         <div class="col-sm-3 toc-container"></div>
     </div>
