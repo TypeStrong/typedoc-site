@@ -16,6 +16,16 @@ Installing TypeDoc is available as a node package. Using `npm` ensures that all 
 dependencies are setup correctly. You can choose to either install locally to your project or
 globally to the CLI.
 
+TypeDoc aims to support the two latest TypeScript releases for the latest release. Depending on the scale of breaking
+changes introduced in a new TypeScript version, a given version may support more versions of TypeScript.
+
+| TypeDoc Version | TypeScript Version(s) |
+| --------------- | --------------------- |
+| 0.22            | 4.0 through 4.4       |
+| 0.21            | 4.0 through 4.4       |
+| 0.20            | 3.9 through 4.2       |
+| 0.19            | 3.9 through 4.0       |
+
 ## Local installation (preferred)
 
 If you want to use TypeDoc from your command line in a project, use the API in your project code, or TypeDoc in an npm script, a local installation is the recommended approach. First install TypeDoc locally in your project:
