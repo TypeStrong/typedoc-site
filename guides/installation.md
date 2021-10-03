@@ -62,7 +62,7 @@ Instead of passing all arguments via the command line, the CLI also supports rea
 
 ### typedoc.json
 
-When running typedoc from the CLI, you can define any option except the entry files in a json file named `typedoc.json`.
+When running typedoc from the CLI, you can define options in a json file named `typedoc.json`.
 
 ```json
 {
