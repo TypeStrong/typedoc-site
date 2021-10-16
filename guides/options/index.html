@@ -200,6 +200,7 @@ An example of the JSON output from running TypeDoc on itself can be seen at <a h
 </tr>
 </tbody>
 </table>
+<p><em><strong>Note:</strong> If you have your TypeScript configured with <code>declaration: true</code> (through the <code>tsconfig.json</code>), the Typedoc emit <code>both</code> option will also generate type declaration files. This is because Typedoc falls back to typescript to generate the JS, this allows us to set the normal typescript options for type declarations and have Typedoc handle generating the <code>docs</code>, <code>js</code>, and <code>types</code> for us, all at once.</em></p>
 <h3 id="theme" tabindex="-1">theme</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --theme default</code></pre>
 <p>Specify the theme that should be used. TypeDoc 0.22 contains architectural changes which breaks themes developed for TypeDoc 0.21 and earlier.</p>
