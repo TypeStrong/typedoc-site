@@ -189,6 +189,8 @@ Instructs TypeDoc to write compiled output files as `tsc` does.
 | `true`  | Alias for `both`, for backwards compatibility. Will be removed in 0.23. |
 | `false` | Alias for `docs`, for backwards compatibility. Will be removed in 0.23. |
 
+_**Note:** If you have your TypeScript configured with `declaration: true` (through the `tsconfig.json`), the Typedoc emit `both` option will also generate type declaration files. This is because Typedoc falls back to typescript to generate the JS, this allows us to set the normal typescript options for type declarations and have Typedoc handle generating the `docs`, `js`, and `types` for us, all at once._
+
 ### theme
 
 ```bash
