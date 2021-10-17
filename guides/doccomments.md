@@ -180,7 +180,7 @@ standard and they may be removed in a future release.
 
 ### `@enum`
 
-If present on an `as const` object with string literal values, TypeDoc will convert the variable as an enumeration instead.
+If present on an object with string literal values, TypeDoc will convert the variable as an enumeration instead.
 
 ```ts
 /**
@@ -194,6 +194,12 @@ export const MyEnum = {
     A: "a",
     B: "b",
 } as const;
+
+/**
+ * This works too, but is more verbose
+ * @enum
+ */
+export const MyEnum2: { A: "a" } = { A: "a" }
 ```
 
 ## Files
