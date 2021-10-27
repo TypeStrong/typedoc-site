@@ -346,7 +346,7 @@ The available sorting strategies are:
 $ typedoc --gitRevision <revision|branch>
 ```
 
-Use specified revision or branch instead of the last revision for linking to GitHub/Bitbucket source files.
+Use specified revision or branch instead of the last revision for linking to source files.
 
 ### gitRemote
 
@@ -354,7 +354,7 @@ Use specified revision or branch instead of the last revision for linking to Git
 $ typedoc --gitRemote <remote>
 ```
 
-Use the specified git remote instead of `origin` for linking to GitHub/Bitbucket source files.
+Use the specified git remote instead of `origin` for linking to source files in GitHub, Bitbucket, or GitLab.
 You can use `git remote` to view a list of valid remotes.
 If you are updating documentation for a forked package, you probably want to pass `--gitRemote upstream`.
 
