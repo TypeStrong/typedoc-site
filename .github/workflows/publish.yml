@@ -38,6 +38,12 @@ jobs:
                   npm run build
                   node bin/typedoc --options ../typedoc.json --gitRevision $(git describe --tags --abbrev=0)
                   cd ..
+            - name: Rebuild /example
+              run: |
+                  cd typedoc/example
+                  npm ci
+                  node ../bin/typedoc --options ../../example.typedoc.json --gitRevision $(git describe --tags --abbrev=0)
+                  cd ../..
             - name: Rebuild schema.json
               run: node typedoc/scripts/generate_options_schema.js _site/schema.json
             - name: Rebuild markdown site
