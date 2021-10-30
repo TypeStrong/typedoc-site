@@ -1,14 +1,16 @@
 import { readFile, writeFile } from "fs/promises";
 
 const inPath = "typedoc/CHANGELOG.md";
-const outPath = "changelog.md";
+const outPath = "guides/changelog.md";
 
 const changelog = await readFile(inPath, "utf-8");
 
 const heading = `
 ---
+layout: "guide"
+tags: guide
 title: "Changelog"
-layout: "changelog"
+menuOrder: 100
 ---
 `.trim();
 

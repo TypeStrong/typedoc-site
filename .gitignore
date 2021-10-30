@@ -1,7 +1,7 @@
 _site
 typedoc
 node_modules
-changelog.md
+guides/changelog.md
 plugins.json
 versions.json
 plugin_content.txt
