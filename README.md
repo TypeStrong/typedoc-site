@@ -23,7 +23,7 @@ menuOrder: 1
 
 ```bash
 npm i
-npm run build -- --serve
+npm run serve
 ```
 
 To regenerate the `_site/api/` folder, go to the root directory of
