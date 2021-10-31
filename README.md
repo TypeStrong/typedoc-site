@@ -23,7 +23,7 @@ menuOrder: 1
 
 ```bash
 npm i
-npm run build -- --serve
+npm run serve
 ```
 
 To regenerate the `_site/api/` folder, go to the root directory of
@@ -37,7 +37,16 @@ npm run build
 node bin/typedoc --options ../typedoc.json
 ```
 
-If new options have been added since the last update, run the following to update the typedoc.json schema:
+To regenerate the `_site/example/` folder:
+
+```bash
+cd typedoc/example
+npm i
+node ../bin/typedoc --options ../../example.typedoc.json
+```
+
+If new options have been added since the last update, run the following to
+update the typedoc.json schema:
 
 ```bash
 node typedoc/scripts/generate_options_schema.js _site/schema.json

@@ -5,7 +5,7 @@ title: "Doc Comments"
 menuOrder: 3
 ---
 
-# Document your code
+# Document Your Code
 
 TypeDoc runs the TypeScript compiler and extracts type information from the generated compiler symbols.
 Therefore you don't have to include additional metadata within your comments, TypeScript specific elements
@@ -199,7 +199,7 @@ export const MyEnum = {
  * This works too, but is more verbose
  * @enum
  */
-export const MyEnum2: { A: "a" } = { A: "a" }
+export const MyEnum2: { A: "a" } = { A: "a" };
 ```
 
 ## Files
