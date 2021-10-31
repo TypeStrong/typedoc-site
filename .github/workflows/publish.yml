@@ -5,33 +5,23 @@ on:
             - master
     schedule:
         - cron: "0 12 * * *"
+    workflow_dispatch:
 jobs:
     publish-site:
         runs-on: ubuntu-latest
         steps:
             - name: Checkout repository
               uses: actions/checkout@v2
-            - name: Fix remote
-              run: git remote set-url origin git@github.com:TypeStrong/typedoc-site.git
             - name: Set up Node
               uses: actions/setup-node@v1
               with:
                   node-version: "16"
             - name: Install
               run: npm ci
-            - name: Set up auth
-              run: |
-                  git config --global user.email "typedoc@gerritbirkeland.com"
-                  git config --global user.name "TypeDoc Bot"
-                  mkdir -p ~/.ssh
-                  echo "${{ secrets.BOT_SSH_KEY }}" > ~/.ssh/id_rsa
-                  chmod 0600 ~/.ssh/id_rsa
-                  ssh-keygen -l -f ~/.ssh/id_rsa
             - name: Rebuild /api
               run: |
-                  test -f typedoc || git clone git@github.com:TypeStrong/typedoc.git
+                  git clone https://github.com/TypeStrong/typedoc.git
                   cd typedoc
-                  git pull
                   git checkout $(git describe --tags --abbrev=0)
                   npm ci
                   node scripts/set_strict.js false
