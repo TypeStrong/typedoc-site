@@ -27,9 +27,9 @@
         <a href="/" class="logo">TypeDoc</a>
         <nav>
             <ul>
-                <li><a href="/guides/installation">Guides</a></li>
+                <li><a href="/guides/installation">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
                 <li><a href="/api/">API</a></li>
-                <li><a href="/changelog/">Changelog</a></li>
                 <li>
                     <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
                 </li>
@@ -77,10 +77,14 @@
         <a href="/guides/development/" >Development</a>
       </li>
     
+      <li >
+        <a href="/guides/changelog/" >Changelog</a>
+      </li>
+    
   </ul>
 </nav>
 </div>
-        <div class="col-sm-7 typography"><h1 id="document-your-code" tabindex="-1">Document your code</h1>
+        <div class="col-sm-7 typography"><h1 id="document-your-code" tabindex="-1">Document Your Code</h1>
 <p>TypeDoc runs the TypeScript compiler and extracts type information from the generated compiler symbols.
 Therefore you don't have to include additional metadata within your comments, TypeScript specific elements
 like classes, enumerations or property types and access modifiers will be automatically detected.</p>
@@ -144,7 +148,7 @@ on writing these types.</p>
 standard and they may be removed in a future release.</p>
 <h3 id="%40enum" tabindex="-1"><code>@enum</code></h3>
 <p>If present on an object with string literal values, TypeDoc will convert the variable as an enumeration instead.</p>
-<pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * This will be displayed as an enumeration.<br> * @enum<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">const</span> MyEnum <span class="token operator">=</span> <span class="token punctuation">{</span><br>    <span class="token comment">/**<br>     * Doc comments may be included here.<br>     */</span><br>    <span class="token constant">A</span><span class="token operator">:</span> <span class="token string">"a"</span><span class="token punctuation">,</span><br>    <span class="token constant">B</span><span class="token operator">:</span> <span class="token string">"b"</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span> <span class="token keyword">as</span> <span class="token keyword">const</span><span class="token punctuation">;</span><br><br><span class="token comment">/**<br> * This works too, but is more verbose<br> * @enum<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">const</span> MyEnum2<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token constant">A</span><span class="token operator">:</span> <span class="token string">"a"</span> <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token constant">A</span><span class="token operator">:</span> <span class="token string">"a"</span> <span class="token punctuation">}</span></code></pre>
+<pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * This will be displayed as an enumeration.<br> * @enum<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">const</span> MyEnum <span class="token operator">=</span> <span class="token punctuation">{</span><br>    <span class="token comment">/**<br>     * Doc comments may be included here.<br>     */</span><br>    <span class="token constant">A</span><span class="token operator">:</span> <span class="token string">"a"</span><span class="token punctuation">,</span><br>    <span class="token constant">B</span><span class="token operator">:</span> <span class="token string">"b"</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span> <span class="token keyword">as</span> <span class="token keyword">const</span><span class="token punctuation">;</span><br><br><span class="token comment">/**<br> * This works too, but is more verbose<br> * @enum<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">const</span> MyEnum2<span class="token operator">:</span> <span class="token punctuation">{</span> <span class="token constant">A</span><span class="token operator">:</span> <span class="token string">"a"</span> <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token constant">A</span><span class="token operator">:</span> <span class="token string">"a"</span> <span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 <h2 id="files" tabindex="-1">Files</h2>
 <p>A doc comment describing a file must be placed before any code in the file.
 It should be annotated with the <code>@module</code> tag so that TypeDoc knows that it is intended to be documentation for the file itself.</p>

@@ -5,11 +5,6 @@
 
 /** ============== Layout =============== **/
 
-html,
-body {
-    height: 100%;
-}
-
 body {
     background-color: #fff;
     padding: 0;
@@ -25,7 +20,7 @@ body {
     font-weight: 300;
     font-size: 42px;
     color: #285786;
-    margin: 0.5em 0 0.5em 0;
+    margin: 0 0 0.5em 0;
 }
 .typography h2 {
     position: relative;
@@ -58,6 +53,7 @@ body {
     line-height: 1.5em;
     margin: 1em 0;
     border-bottom: 1px solid #eee;
+    overflow: auto;
 }
 .typography dl.specs dt {
     float: left;
@@ -91,12 +87,26 @@ body {
 /** ================= GRID =================== **/
 
 .container {
-    margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 20px;
     max-width: 1200px;
 }
+
+@media (min-width: 768px) {
+    .container {
+        margin: 0 auto;
+    }
+}
+
 .container.main {
-    padding: 100px 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+    .container.main {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
 }
 
 .row {
@@ -131,7 +141,7 @@ body {
     margin-left: 8.3333333333%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-1 {
         display: inline-block;
         box-sizing: border-box;
@@ -173,7 +183,7 @@ body {
     margin-left: 16.6666666667%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-2 {
         display: inline-block;
         box-sizing: border-box;
@@ -215,7 +225,7 @@ body {
     margin-left: 25%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-3 {
         display: inline-block;
         box-sizing: border-box;
@@ -257,7 +267,7 @@ body {
     margin-left: 33.3333333333%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-4 {
         display: inline-block;
         box-sizing: border-box;
@@ -299,7 +309,7 @@ body {
     margin-left: 41.6666666667%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-5 {
         display: inline-block;
         box-sizing: border-box;
@@ -341,7 +351,7 @@ body {
     margin-left: 50%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-6 {
         display: inline-block;
         box-sizing: border-box;
@@ -383,7 +393,7 @@ body {
     margin-left: 58.3333333333%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-7 {
         display: inline-block;
         box-sizing: border-box;
@@ -425,7 +435,7 @@ body {
     margin-left: 66.6666666667%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-8 {
         display: inline-block;
         box-sizing: border-box;
@@ -467,7 +477,7 @@ body {
     margin-left: 75%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-9 {
         display: inline-block;
         box-sizing: border-box;
@@ -509,7 +519,7 @@ body {
     margin-left: 83.3333333333%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-10 {
         display: inline-block;
         box-sizing: border-box;
@@ -551,7 +561,7 @@ body {
     margin-left: 91.6666666667%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-11 {
         display: inline-block;
         box-sizing: border-box;
@@ -593,7 +603,7 @@ body {
     margin-left: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     .col-sm-12 {
         display: inline-block;
         box-sizing: border-box;
@@ -615,30 +625,29 @@ body {
 /** ============== Header =============== **/
 
 header {
-    position: absolute;
-    z-index: 1024;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 60px;
     background-color: #fff;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
     text-transform: uppercase;
-    font-size: 20px;
 }
+
+@media (min-width: 768px) {
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
 header .logo {
     padding-left: 37px;
-    float: left;
     text-decoration: none;
     color: var(--color-text);
+    font-size: 20px;
     line-height: 60px;
+    height: 60px;
+    display: block;
     background-image: url(../images/logo-32.png);
     background-repeat: no-repeat;
     background-position: left center;
-}
-header nav {
-    text-align: right;
-    font-size: 0;
 }
 header nav ul {
     display: inline-block;
@@ -651,11 +660,10 @@ header nav li {
 }
 header nav a {
     display: inline-block;
-    padding: 0 15px;
+    margin-right: 1rem;
     color: var(--color-text);
     text-decoration: none;
-    font-size: 20px;
-    line-height: 60px;
+    margin-bottom: 0.5rem;
     transition: opacity 0.2s;
 }
 header nav a.current {
@@ -663,6 +671,14 @@ header nav a.current {
 }
 header nav a:hover {
     opacity: 0.75;
+}
+
+@media (min-width: 768px) {
+    header nav a {
+        margin-bottom: 0;
+        font-size: 20px;
+        line-height: 60px;
+    }
 }
 
 /** ============== Home =============== **/
@@ -707,9 +723,10 @@ header nav a:hover {
 }
 
 /** ============== Navigation ============== **/
-
 .navigation {
-    padding: 20px 20px 0 0;
+    /* This !important is only necessary because the col classes set
+    margin-bottom to 0 */
+    margin-bottom: 1.5rem !important;
 }
 .navigation ul {
     list-style: none;
@@ -737,7 +754,15 @@ header nav a:hover {
     top: 0;
     max-height: 100vh;
     overflow-y: auto;
+    display: none;
 }
+
+@media (min-width: 768px) {
+    .toc-container {
+        display: inline-block;
+    }
+}
+
 .toc-container ol {
     list-style: none;
     padding-left: 20px;

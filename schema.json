@@ -19,7 +19,7 @@
 				"Expand",
 				"Packages"
 			],
-			"default": "resolve"
+			"default": "Resolve"
 		},
 		"exclude": {
 			"description": "Define patterns to be excluded when expanding a directory that was specified as an entry point."
@@ -228,7 +228,7 @@
 				"Warn",
 				"Error"
 			],
-			"default": 1
+			"default": "Info"
 		},
 		"markedOptions": {
 			"description": "Specify the options passed to Marked, the Markdown parser used by TypeDoc."
