@@ -20,7 +20,7 @@ body {
     font-weight: 300;
     font-size: 42px;
     color: #285786;
-    margin: 0 0 0.5em 0;
+    margin: 0 0 1rem 0;
 }
 .typography h2 {
     position: relative;
@@ -28,7 +28,7 @@ body {
     font-weight: 300;
     font-size: 32px;
     color: #285786;
-    margin: 1em 0 0.5em 0;
+    margin: 1.5rem 0 1rem 0;
 }
 .typography h3 {
     position: relative;
@@ -36,7 +36,7 @@ body {
     font-weight: 300;
     font-size: 24px;
     color: #285786;
-    margin: 1.5em 0 0.5em 0;
+    margin: 1.5rem 0 1rem 0;
 }
 .typography p {
     line-height: 1.5em;
@@ -621,6 +621,7 @@ header nav a:hover {
 /** ============== Changelog ============== **/
 table {
     border-collapse: collapse;
+    margin-bottom: 1rem;
 }
 
 th,
