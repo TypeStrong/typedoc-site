@@ -691,7 +691,6 @@ header nav a:hover {
     height: 500px;
     max-height: 75%;
     min-height: 300px;
-    padding-top: 60px;
     box-sizing: border-box;
 }
 .jumbotron .visual {
