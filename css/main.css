@@ -128,14 +128,6 @@ body {
     vertical-align: top;
     width: 8.3333333333%;
 }
-.col-1 > *:first-child,
-.col-sm-1 > *:first-child {
-    margin-top: 0;
-}
-.col-1 > *:last-child,
-.col-sm-1 > *:last-child {
-    margin-bottom: 0;
-}
 
 .offset-1 {
     margin-left: 8.3333333333%;
@@ -152,12 +144,6 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-1 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-1 > *:last-child {
-        margin-bottom: 0;
-    }
 }
 .col-2,
 .col-sm-2 {
@@ -170,15 +156,6 @@ body {
     vertical-align: top;
     width: 16.6666666667%;
 }
-.col-2 > *:first-child,
-.col-sm-2 > *:first-child {
-    margin-top: 0;
-}
-.col-2 > *:last-child,
-.col-sm-2 > *:last-child {
-    margin-bottom: 0;
-}
-
 .offset-2 {
     margin-left: 16.6666666667%;
 }
@@ -194,12 +171,6 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-2 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-2 > *:last-child {
-        margin-bottom: 0;
-    }
 }
 .col-3,
 .col-sm-3 {
@@ -211,14 +182,6 @@ body {
     font-size: 16px;
     vertical-align: top;
     width: 25%;
-}
-.col-3 > *:first-child,
-.col-sm-3 > *:first-child {
-    margin-top: 0;
-}
-.col-3 > *:last-child,
-.col-sm-3 > *:last-child {
-    margin-bottom: 0;
 }
 
 .offset-3 {
@@ -236,12 +199,6 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-3 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-3 > *:last-child {
-        margin-bottom: 0;
-    }
 }
 .col-4,
 .col-sm-4 {
@@ -253,14 +210,6 @@ body {
     font-size: 16px;
     vertical-align: top;
     width: 33.3333333333%;
-}
-.col-4 > *:first-child,
-.col-sm-4 > *:first-child {
-    margin-top: 0;
-}
-.col-4 > *:last-child,
-.col-sm-4 > *:last-child {
-    margin-bottom: 0;
 }
 
 .offset-4 {
@@ -278,12 +227,6 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-4 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-4 > *:last-child {
-        margin-bottom: 0;
-    }
 }
 .col-5,
 .col-sm-5 {
@@ -295,14 +238,6 @@ body {
     font-size: 16px;
     vertical-align: top;
     width: 41.6666666667%;
-}
-.col-5 > *:first-child,
-.col-sm-5 > *:first-child {
-    margin-top: 0;
-}
-.col-5 > *:last-child,
-.col-sm-5 > *:last-child {
-    margin-bottom: 0;
 }
 
 .offset-5 {
@@ -320,12 +255,6 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-5 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-5 > *:last-child {
-        margin-bottom: 0;
-    }
 }
 .col-6,
 .col-sm-6 {
@@ -337,14 +266,6 @@ body {
     font-size: 16px;
     vertical-align: top;
     width: 50%;
-}
-.col-6 > *:first-child,
-.col-sm-6 > *:first-child {
-    margin-top: 0;
-}
-.col-6 > *:last-child,
-.col-sm-6 > *:last-child {
-    margin-bottom: 0;
 }
 
 .offset-6 {
@@ -362,12 +283,6 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-6 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-6 > *:last-child {
-        margin-bottom: 0;
-    }
 }
 .col-7,
 .col-sm-7 {
@@ -379,14 +294,6 @@ body {
     font-size: 16px;
     vertical-align: top;
     width: 58.3333333333%;
-}
-.col-7 > *:first-child,
-.col-sm-7 > *:first-child {
-    margin-top: 0;
-}
-.col-7 > *:last-child,
-.col-sm-7 > *:last-child {
-    margin-bottom: 0;
 }
 
 .offset-7 {
@@ -404,12 +311,6 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-7 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-7 > *:last-child {
-        margin-bottom: 0;
-    }
 }
 .col-8,
 .col-sm-8 {
@@ -421,14 +322,6 @@ body {
     font-size: 16px;
     vertical-align: top;
     width: 66.6666666667%;
-}
-.col-8 > *:first-child,
-.col-sm-8 > *:first-child {
-    margin-top: 0;
-}
-.col-8 > *:last-child,
-.col-sm-8 > *:last-child {
-    margin-bottom: 0;
 }
 
 .offset-8 {
@@ -446,12 +339,6 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-8 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-8 > *:last-child {
-        margin-bottom: 0;
-    }
 }
 .col-9,
 .col-sm-9 {
@@ -463,14 +350,6 @@ body {
     font-size: 16px;
     vertical-align: top;
     width: 75%;
-}
-.col-9 > *:first-child,
-.col-sm-9 > *:first-child {
-    margin-top: 0;
-}
-.col-9 > *:last-child,
-.col-sm-9 > *:last-child {
-    margin-bottom: 0;
 }
 
 .offset-9 {
@@ -488,12 +367,6 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-9 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-9 > *:last-child {
-        margin-bottom: 0;
-    }
 }
 .col-10,
 .col-sm-10 {
@@ -505,14 +378,6 @@ body {
     font-size: 16px;
     vertical-align: top;
     width: 83.3333333333%;
-}
-.col-10 > *:first-child,
-.col-sm-10 > *:first-child {
-    margin-top: 0;
-}
-.col-10 > *:last-child,
-.col-sm-10 > *:last-child {
-    margin-bottom: 0;
 }
 
 .offset-10 {
@@ -530,12 +395,6 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-10 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-10 > *:last-child {
-        margin-bottom: 0;
-    }
 }
 .col-11,
 .col-sm-11 {
@@ -548,15 +407,6 @@ body {
     vertical-align: top;
     width: 91.6666666667%;
 }
-.col-11 > *:first-child,
-.col-sm-11 > *:first-child {
-    margin-top: 0;
-}
-.col-11 > *:last-child,
-.col-sm-11 > *:last-child {
-    margin-bottom: 0;
-}
-
 .offset-11 {
     margin-left: 91.6666666667%;
 }
@@ -572,13 +422,8 @@ body {
         vertical-align: top;
         width: 100%;
     }
-    .col-sm-11 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-11 > *:last-child {
-        margin-bottom: 0;
-    }
 }
+
 .col-12,
 .col-sm-12 {
     display: inline-block;
@@ -590,15 +435,6 @@ body {
     vertical-align: top;
     width: 100%;
 }
-.col-12 > *:first-child,
-.col-sm-12 > *:first-child {
-    margin-top: 0;
-}
-.col-12 > *:last-child,
-.col-sm-12 > *:last-child {
-    margin-bottom: 0;
-}
-
 .offset-12 {
     margin-left: 100%;
 }
@@ -613,12 +449,6 @@ body {
         font-size: 16px;
         vertical-align: top;
         width: 100%;
-    }
-    .col-sm-12 > *:first-child {
-        margin-top: 0;
-    }
-    .col-sm-12 > *:last-child {
-        margin-bottom: 0;
     }
 }
 
@@ -725,9 +555,7 @@ header nav a:hover {
 
 /** ============== Navigation ============== **/
 .navigation {
-    /* This !important is only necessary because the col classes set
-    margin-bottom to 0 */
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.5rem;
 }
 .navigation ul {
     list-style: none;
