@@ -320,7 +320,13 @@ generates HTML files that start with <code>_</code> which are ignored by Jekyll.
 <p>Print TypeDoc's config and exit. Useful for debugging what options have been loaded.</p>
 <h3 id="plugin" tabindex="-1">plugin</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --plugin <span class="token operator">&lt;</span>none<span class="token operator">|</span>plugin<span class="token operator">></span></code></pre>
-<p>Specifies the plugins that should be loaded. By default, all installed npm packages with <code>typedocplugin</code> in their keywords will be loaded.</p>
+<p>Specifies the plugins that should be loaded. By default, all installed npm packages with one of the following in their keywords will be loaded.</p>
+<ul>
+<li><code>typedocplugin</code> - Widest support, discouraged for plugins only supporting versions newer than 0.22.8.</li>
+<li><code>typedoc-plugin</code> - Replacement for <code>typedocplugin</code>, used for plugins which do more than just add a theme, introduced in 0.22.9.</li>
+<li><code>typedoc-theme</code> - Used for plugins which add a theme, and should show up on the <a href="../themes/">Themes</a> page, introduced in 0.22.9.</li>
+</ul>
+<p>If this option is specified, automatic package discovery and loading will be disabled.</p>
 <h3 id="logger" tabindex="-1">logger</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --logger <span class="token operator">&lt;</span>none<span class="token operator">|</span>Function<span class="token operator">></span></code></pre>
 <p>Specifies the logger to write output to. When using TypeDoc programmatically, a function may be specified that will be called with the log message. By default, logs to the console. <code>none</code> may be passed to disable logging.</p>
