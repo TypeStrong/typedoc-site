@@ -4,4 +4,7 @@ node_modules
 guides/changelog.md
 plugins.json
 versions.json
+themes.json
+theme_versions.json
 plugin_content.txt
+theme_content.txt

@@ -1,5 +1,6 @@
 // @ts-check
-const query = `https://www.npmjs.com/search?q=keywords%3Atypedocplugin`;
+const PLUGIN_QUERY = `https://www.npmjs.com/search?q=keywords%3Atypedoc-plugin keywords%3Atypedocplugin`;
+const THEME_QUERY = `https://www.npmjs.com/search?q=keywords%3Atypedoc-theme`;
 
 import * as cp from "child_process";
 import { promises as fs, existsSync } from "fs";
@@ -47,7 +48,7 @@ interface Response {
 }
 
 /** @returns {Promise<NpmPackage[]>} */
-async function getAllPackages() {
+async function getAllPackages(query: string) {
     let page = 0;
     let total = 0;
     /** @type {NpmPackage[]} */
@@ -99,27 +100,51 @@ function getSupportingPlugins(
     return supported;
 }
 
-async function getAllPackagesLocal(): Promise<NpmPackage[]> {
-    return JSON.parse(await fs.readFile("plugins.json", "utf-8"));
+async function getLocalCache<T>(filename: string): Promise<T> {
+    return JSON.parse(await fs.readFile(filename, "utf-8"));
 }
 
 function getAllVersions(plugins: NpmPackage[]): Promise<string[]> {
     return Promise.all(plugins.map((p) => getSupportedVersions(p.name)));
 }
 
-async function getAllVersionsLocal(): Promise<string[]> {
-    return JSON.parse(await fs.readFile("versions.json", "utf-8"));
+function createInclude(
+    plugins: (NpmPackage & { peer: string })[],
+    checkVersions: string[],
+    ident: string
+) {
+    const out: string[] = [];
+
+    for (const typedocVersion of checkVersions) {
+        out.push(`<h2 id="${typedocVersion}">v${typedocVersion}</h2>`);
+
+        for (const plugin of getSupportingPlugins(typedocVersion, plugins).sort(
+            (a, b) => b.date.ts - a.date.ts
+        )) {
+            out.push(`<div class="box">`);
+            out.push(
+                `    <p class="title"><a href="${plugin.links.npm}" target="_blank">${plugin.name}</a></p>`
+            );
+            out.push(`    <p>${plugin.description}</p>`);
+            out.push(`    <p>
+                <a href="https://www.npmjs.com/~${plugin.publisher.name}" target="_blank">${plugin.publisher.name}</a> published ${plugin.version} • ${plugin.date.rel}
+            </p>`);
+            out.push(`</div>`);
+        }
+    }
+
+    return fs.writeFile(`_includes/${ident}.txt`, out.join("\n"));
 }
 
 async function main() {
     const local = existsSync("plugins.json");
 
     const plugins = local
-        ? await getAllPackagesLocal()
-        : await getAllPackages();
+        ? await getLocalCache<NpmPackage[]>("plugins.json")
+        : await getAllPackages(PLUGIN_QUERY);
 
     const versions = local
-        ? await getAllVersionsLocal()
+        ? await getLocalCache<string[]>("versions.json")
         : await getAllVersions(plugins);
 
     const withVersions = plugins.map((plug, i) =>
@@ -143,35 +168,35 @@ async function main() {
         index--;
     }
 
-    const out: string[] = [];
+    await createInclude(withVersions, checkVersions, "plugin_content");
+    console.log("Finished getting plugins");
 
-    for (const typedocVersion of checkVersions) {
-        out.push(`<h2 id="${typedocVersion}">v${typedocVersion}</h2>`);
+    const themes = local
+        ? await getLocalCache<NpmPackage[]>("themes.json")
+        : await getAllPackages(THEME_QUERY);
 
-        for (const plugin of getSupportingPlugins(
-            typedocVersion,
-            withVersions
-        ).sort((a, b) => b.date.ts - a.date.ts)) {
-            out.push(`<div class="box">`);
-            out.push(
-                `    <p class="title"><a href="${plugin.links.npm}" target="_blank">${plugin.name}</a></p>`
-            );
-            out.push(`    <p>${plugin.description}</p>`);
-            out.push(`    <p>
-                <a href="https://www.npmjs.com/~${plugin.publisher.name}" target="_blank">${plugin.publisher.name}</a> published ${plugin.version} • ${plugin.date.rel}
-            </p>`);
-            out.push(`</div>`);
-        }
+    const themeVersions = local
+        ? await getLocalCache<string[]>("theme_versions.json")
+        : await getAllVersions(themes);
 
-        out.push("</table>");
-    }
+    const themesWithVersions = themes.map((plug, i) =>
+        Object.assign(plug, { peer: themeVersions[i] })
+    );
 
-    await fs.writeFile("_includes/plugin_content.txt", out.join("\n"));
+    // v0.22 - this needs to be updated.
+    checkVersions.length = Math.min(checkVersions.length, 1);
+    await createInclude(themesWithVersions, checkVersions, "theme_content");
+    console.log("Finished getting themes");
 
     // Create a local cache for development to avoid hammering the API
     if (!local && process.env.CI !== "true") {
         await fs.writeFile("plugins.json", JSON.stringify(plugins, null, 4));
         await fs.writeFile("versions.json", JSON.stringify(versions, null, 4));
+        await fs.writeFile("themes.json", JSON.stringify(themes, null, 4));
+        await fs.writeFile(
+            "theme_versions.json",
+            JSON.stringify(themeVersions, null, 4)
+        );
     }
 }
 

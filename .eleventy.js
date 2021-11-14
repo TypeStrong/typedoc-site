@@ -27,6 +27,10 @@ module.exports = function (el) {
         fs.readFileSync(join(__dirname, "_includes/plugin_content.txt"))
     );
 
+    el.addShortcode("typedocThemes", () =>
+        fs.readFileSync(join(__dirname, "_includes/theme_content.txt"))
+    );
+
     return {
         dir: {
             layouts: "_layouts",
