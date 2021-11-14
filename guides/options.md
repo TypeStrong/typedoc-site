@@ -452,7 +452,13 @@ Print TypeDoc's config and exit. Useful for debugging what options have been loa
 $ typedoc --plugin <none|plugin>
 ```
 
-Specifies the plugins that should be loaded. By default, all installed npm packages with `typedocplugin` in their keywords will be loaded.
+Specifies the plugins that should be loaded. By default, all installed npm packages with one of the following in their keywords will be loaded.
+
+-   `typedocplugin` - Widest support, discouraged for plugins only supporting versions newer than 0.22.8.
+-   `typedoc-plugin` - Replacement for `typedocplugin`, used for plugins which do more than just add a theme, introduced in 0.22.9.
+-   `typedoc-theme` - Used for plugins which add a theme, and should show up on the [Themes](../themes/) page, introduced in 0.22.9.
+
+If this option is specified, automatic package discovery and loading will be disabled.
 
 ### logger
 

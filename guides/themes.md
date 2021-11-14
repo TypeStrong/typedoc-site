@@ -13,4 +13,6 @@ select a theme when creating a documentation:
 
 TypeDoc ships with one builtin default theme, additional themes can be added by plugins. For documentation on creating custom themes, see the [custom-themes.md](https://github.com/TypeStrong/typedoc/blob/master/internal-docs/custom-themes.md) document in the TypeDoc repository.
 
+You can find more themes on npm under the [typedoc-theme](https://www.npmjs.com/search?q=keywords:typedoc-theme) keyword.
+
 {% typedocThemes %}

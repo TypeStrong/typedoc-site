@@ -10,6 +10,6 @@ menuOrder: 10
 TypeDoc supports plugins using the `--plugin` flag. There are a number of community developed
 plugins available for installation on npm.
 
-You can find more plugins on npm under the [typedocplugin](https://www.npmjs.com/search?q=keywords:typedocplugin) tag.
+You can find more plugins on npm under the [typedoc-plugin](https://www.npmjs.com/search?q=keywords:typedocplugin%20keywords:typedoc-plugin) tag.
 
 {% typedocPlugins %}
