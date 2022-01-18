@@ -152,6 +152,11 @@
 			"type": "boolean",
 			"default": true
 		},
+		"cname": {
+			"description": "Set the CNAME file text, it's useful for custom domains on GitHub Pages.",
+			"type": "string",
+			"default": ""
+		},
 		"sort": {
 			"description": "Specify the sort strategy for documented values.",
 			"type": "array",

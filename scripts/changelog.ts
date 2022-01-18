@@ -17,8 +17,12 @@ menuOrder: 100
 const page = changelog
     .replace("# Unreleased", heading)
     .replace(
-        /#(\d+)/g,
-        "[#$1](https://github.com/TypeStrong/typedoc/issues/$1)"
+        /\s(\w+\/[\w-]+)#(\d+)/g,
+        " [#$2](https://github.com/$1/issues/$2)"
+    )
+    .replace(
+        /\s#(\d+)/g,
+        " [#$1](https://github.com/TypeStrong/typedoc/issues/$1)"
     );
 
 await writeFile(outPath, page);

@@ -72,9 +72,13 @@
 											{
 												"type": "reference",
 												"id": 555,
+												"qualifiedName": "T",
+												"package": "@types/lodash",
 												"name": "T"
 											}
 										],
+										"qualifiedName": "List",
+										"package": "@types/lodash",
 										"name": "List"
 									}
 								]
@@ -100,12 +104,18 @@
 												{
 													"type": "reference",
 													"id": 555,
+													"qualifiedName": "T",
+													"package": "@types/lodash",
 													"name": "T"
 												}
 											],
+											"qualifiedName": "ListIteratee",
+											"package": "@types/lodash",
 											"name": "ListIteratee"
 										}
 									],
+									"qualifiedName": "Many",
+									"package": "@types/lodash",
 									"name": "Many"
 								}
 							}
@@ -116,6 +126,8 @@
 						"elementType": {
 							"type": "reference",
 							"id": 555,
+							"qualifiedName": "T",
+							"package": "@types/lodash",
 							"name": "T"
 						}
 					}
@@ -174,6 +186,8 @@
 									{
 										"type": "reference",
 										"id": 559,
+										"qualifiedName": "T",
+										"package": "@types/lodash",
 										"name": "T"
 									}
 								]
@@ -199,12 +213,18 @@
 												{
 													"type": "reference",
 													"id": 559,
+													"qualifiedName": "T",
+													"package": "@types/lodash",
 													"name": "T"
 												}
 											],
+											"qualifiedName": "ObjectIteratee",
+											"package": "@types/lodash",
 											"name": "ObjectIteratee"
 										}
 									],
+									"qualifiedName": "Many",
+									"package": "@types/lodash",
 									"name": "Many"
 								}
 							}
@@ -220,12 +240,16 @@
 								"target": {
 									"type": "reference",
 									"id": 559,
+									"qualifiedName": "T",
+									"package": "@types/lodash",
 									"name": "T"
 								}
 							},
 							"objectType": {
 								"type": "reference",
 								"id": 559,
+								"qualifiedName": "T",
+								"package": "@types/lodash",
 								"name": "T"
 							}
 						}
@@ -525,6 +549,8 @@
 																	"name": "T1"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -546,6 +572,8 @@
 																	"name": "T2"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -567,6 +595,8 @@
 																	"name": "T3"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -588,6 +618,8 @@
 																	"name": "T4"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -609,6 +641,8 @@
 																	"name": "T5"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -630,6 +664,8 @@
 																	"name": "T6"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -651,6 +687,8 @@
 																	"name": "T7"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -672,6 +710,8 @@
 																	"name": "T8"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -693,6 +733,8 @@
 																	"name": "T9"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -714,6 +756,8 @@
 																	"name": "T10"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -894,6 +938,8 @@
 																	"name": "T1"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -915,6 +961,8 @@
 																	"name": "T2"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -936,6 +984,8 @@
 																	"name": "T3"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -957,6 +1007,8 @@
 																	"name": "T4"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -978,6 +1030,8 @@
 																	"name": "T5"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -999,6 +1053,8 @@
 																	"name": "T6"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1020,6 +1076,8 @@
 																	"name": "T7"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1041,6 +1099,8 @@
 																	"name": "T8"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1062,6 +1122,8 @@
 																	"name": "T9"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1230,6 +1292,8 @@
 																	"name": "T1"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1251,6 +1315,8 @@
 																	"name": "T2"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1272,6 +1338,8 @@
 																	"name": "T3"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1293,6 +1361,8 @@
 																	"name": "T4"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1314,6 +1384,8 @@
 																	"name": "T5"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1335,6 +1407,8 @@
 																	"name": "T6"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1356,6 +1430,8 @@
 																	"name": "T7"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1377,6 +1453,8 @@
 																	"name": "T8"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1533,6 +1611,8 @@
 																	"name": "T1"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1554,6 +1634,8 @@
 																	"name": "T2"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1575,6 +1657,8 @@
 																	"name": "T3"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1596,6 +1680,8 @@
 																	"name": "T4"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1617,6 +1703,8 @@
 																	"name": "T5"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1638,6 +1726,8 @@
 																	"name": "T6"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1659,6 +1749,8 @@
 																	"name": "T7"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1803,6 +1895,8 @@
 																	"name": "T1"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1824,6 +1918,8 @@
 																	"name": "T2"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1845,6 +1941,8 @@
 																	"name": "T3"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1866,6 +1964,8 @@
 																	"name": "T4"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1887,6 +1987,8 @@
 																	"name": "T5"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -1908,6 +2010,8 @@
 																	"name": "T6"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2040,6 +2144,8 @@
 																	"name": "T1"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2061,6 +2167,8 @@
 																	"name": "T2"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2082,6 +2190,8 @@
 																	"name": "T3"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2103,6 +2213,8 @@
 																	"name": "T4"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2124,6 +2236,8 @@
 																	"name": "T5"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2244,6 +2358,8 @@
 																	"name": "T1"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2265,6 +2381,8 @@
 																	"name": "T2"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2286,6 +2404,8 @@
 																	"name": "T3"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2307,6 +2427,8 @@
 																	"name": "T4"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2415,6 +2537,8 @@
 																	"name": "T1"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2436,6 +2560,8 @@
 																	"name": "T2"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2457,6 +2583,8 @@
 																	"name": "T3"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2553,6 +2681,8 @@
 																	"name": "T1"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2574,6 +2704,8 @@
 																	"name": "T2"
 																}
 															],
+															"qualifiedName": "PromiseLike",
+															"package": "typescript",
 															"name": "PromiseLike"
 														}
 													]
@@ -2657,6 +2789,8 @@
 																"name": "T"
 															}
 														],
+														"qualifiedName": "PromiseLike",
+														"package": "typescript",
 														"name": "PromiseLike"
 													}
 												]
@@ -2813,6 +2947,8 @@
 																"name": "U"
 															}
 														],
+														"qualifiedName": "PromiseLike",
+														"package": "typescript",
 														"name": "PromiseLike"
 													},
 													"trueType": {
@@ -2833,6 +2969,8 @@
 													}
 												}
 											],
+											"qualifiedName": "PromiseSettledResult",
+											"package": "typescript",
 											"name": "PromiseSettledResult"
 										},
 										"readonlyModifier": "-"
@@ -2879,6 +3017,8 @@
 												"name": "T"
 											}
 										],
+										"qualifiedName": "Iterable",
+										"package": "typescript",
 										"name": "Iterable"
 									}
 								}
@@ -2907,6 +3047,8 @@
 																"name": "U"
 															}
 														],
+														"qualifiedName": "PromiseLike",
+														"package": "typescript",
 														"name": "PromiseLike"
 													},
 													"trueType": {
@@ -2920,6 +3062,8 @@
 													}
 												}
 											],
+											"qualifiedName": "PromiseSettledResult",
+											"package": "typescript",
 											"name": "PromiseSettledResult"
 										}
 									}
@@ -2993,31 +3137,17 @@
 								"id": 401,
 								"typeArguments": [
 									{
-										"type": "conditional",
-										"checkType": {
-											"type": "reference",
-											"id": 496,
-											"name": "T"
-										},
-										"extendsType": {
-											"type": "reference",
-											"typeArguments": [
-												{
-													"type": "reference",
-													"name": "U"
-												}
-											],
-											"name": "PromiseLike"
-										},
-										"trueType": {
-											"type": "reference",
-											"name": "U"
-										},
-										"falseType": {
-											"type": "reference",
-											"id": 496,
-											"name": "T"
-										}
+										"type": "reference",
+										"typeArguments": [
+											{
+												"type": "reference",
+												"id": 496,
+												"name": "T"
+											}
+										],
+										"qualifiedName": "Awaited",
+										"package": "typescript",
+										"name": "Awaited"
 									}
 								],
 								"name": "CancellablePromise"
@@ -3036,7 +3166,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/CancellablePromise.ts",
-							"line": 379,
+							"line": 377,
 							"character": 11
 						}
 					],
@@ -3126,6 +3256,8 @@
 												"name": "T"
 											}
 										],
+										"qualifiedName": "PromiseLike",
+										"package": "typescript",
 										"name": "PromiseLike"
 									}
 								},
@@ -3222,6 +3354,8 @@
 								"name": "T"
 							}
 						],
+						"qualifiedName": "Promise",
+						"package": "typescript",
 						"name": "Promise"
 					}
 				},
@@ -3394,6 +3528,8 @@
 																				"name": "TResult1"
 																			}
 																		],
+																		"qualifiedName": "PromiseLike",
+																		"package": "typescript",
 																		"name": "PromiseLike"
 																	}
 																]
@@ -3465,6 +3601,8 @@
 																				"name": "TResult2"
 																			}
 																		],
+																		"qualifiedName": "PromiseLike",
+																		"package": "typescript",
 																		"name": "PromiseLike"
 																	}
 																]
@@ -3599,6 +3737,8 @@
 																				"name": "TResult"
 																			}
 																		],
+																		"qualifiedName": "PromiseLike",
+																		"package": "typescript",
 																		"name": "PromiseLike"
 																	}
 																]
@@ -4947,6 +5087,8 @@
 														"targetType": {
 															"type": "reference",
 															"id": 325,
+															"qualifiedName": "S",
+															"package": "typescript",
 															"name": "S"
 														}
 													}
@@ -4983,6 +5125,8 @@
 									{
 										"type": "reference",
 										"id": 325,
+										"qualifiedName": "S",
+										"package": "typescript",
 										"name": "S"
 									}
 								]
@@ -5482,9 +5626,13 @@
 											{
 												"type": "reference",
 												"id": 114,
+												"qualifiedName": "T",
+												"package": "typescript",
 												"name": "T"
 											}
 										],
+										"qualifiedName": "ArrayLike",
+										"package": "typescript",
 										"name": "ArrayLike"
 									}
 								}
@@ -5494,6 +5642,8 @@
 								"elementType": {
 									"type": "reference",
 									"id": 114,
+									"qualifiedName": "T",
+									"package": "typescript",
 									"name": "T"
 								}
 							},
@@ -5551,9 +5701,13 @@
 											{
 												"type": "reference",
 												"id": 117,
+												"qualifiedName": "T",
+												"package": "typescript",
 												"name": "T"
 											}
 										],
+										"qualifiedName": "ArrayLike",
+										"package": "typescript",
 										"name": "ArrayLike"
 									}
 								},
@@ -5599,6 +5753,8 @@
 															"type": {
 																"type": "reference",
 																"id": 117,
+																"qualifiedName": "T",
+																"package": "typescript",
 																"name": "T"
 															}
 														},
@@ -5619,6 +5775,8 @@
 													"type": {
 														"type": "reference",
 														"id": 118,
+														"qualifiedName": "U",
+														"package": "typescript",
 														"name": "U"
 													}
 												}
@@ -5649,6 +5807,8 @@
 								"elementType": {
 									"type": "reference",
 									"id": 118,
+									"qualifiedName": "U",
+									"package": "typescript",
 									"name": "U"
 								}
 							},
@@ -5700,9 +5860,13 @@
 													{
 														"type": "reference",
 														"id": 127,
+														"qualifiedName": "T",
+														"package": "typescript",
 														"name": "T"
 													}
 												],
+												"qualifiedName": "Iterable",
+												"package": "typescript",
 												"name": "Iterable"
 											},
 											{
@@ -5711,9 +5875,13 @@
 													{
 														"type": "reference",
 														"id": 127,
+														"qualifiedName": "T",
+														"package": "typescript",
 														"name": "T"
 													}
 												],
+												"qualifiedName": "ArrayLike",
+												"package": "typescript",
 												"name": "ArrayLike"
 											}
 										]
@@ -5725,6 +5893,8 @@
 								"elementType": {
 									"type": "reference",
 									"id": 127,
+									"qualifiedName": "T",
+									"package": "typescript",
 									"name": "T"
 								}
 							},
@@ -5785,9 +5955,13 @@
 													{
 														"type": "reference",
 														"id": 130,
+														"qualifiedName": "T",
+														"package": "typescript",
 														"name": "T"
 													}
 												],
+												"qualifiedName": "Iterable",
+												"package": "typescript",
 												"name": "Iterable"
 											},
 											{
@@ -5796,9 +5970,13 @@
 													{
 														"type": "reference",
 														"id": 130,
+														"qualifiedName": "T",
+														"package": "typescript",
 														"name": "T"
 													}
 												],
+												"qualifiedName": "ArrayLike",
+												"package": "typescript",
 												"name": "ArrayLike"
 											}
 										]
@@ -5846,6 +6024,8 @@
 															"type": {
 																"type": "reference",
 																"id": 130,
+																"qualifiedName": "T",
+																"package": "typescript",
 																"name": "T"
 															}
 														},
@@ -5866,6 +6046,8 @@
 													"type": {
 														"type": "reference",
 														"id": 131,
+														"qualifiedName": "U",
+														"package": "typescript",
 														"name": "U"
 													}
 												}
@@ -5896,6 +6078,8 @@
 								"elementType": {
 									"type": "reference",
 									"id": 131,
+									"qualifiedName": "U",
+									"package": "typescript",
 									"name": "U"
 								}
 							},
@@ -5960,6 +6144,8 @@
 										"elementType": {
 											"type": "reference",
 											"id": 141,
+											"qualifiedName": "T",
+											"package": "typescript",
 											"name": "T"
 										}
 									}
@@ -5970,6 +6156,8 @@
 								"elementType": {
 									"type": "reference",
 									"id": 141,
+									"qualifiedName": "T",
+									"package": "typescript",
 									"name": "T"
 								}
 							},
@@ -6012,6 +6200,8 @@
 										"name": "string"
 									}
 								],
+								"qualifiedName": "IterableIterator",
+								"package": "typescript",
 								"name": "IterableIterator"
 							},
 							"inheritedFrom": {
@@ -6062,6 +6252,8 @@
 										]
 									}
 								],
+								"qualifiedName": "IterableIterator",
+								"package": "typescript",
 								"name": "IterableIterator"
 							},
 							"inheritedFrom": {
@@ -6103,6 +6295,8 @@
 										"name": "number"
 									}
 								],
+								"qualifiedName": "IterableIterator",
+								"package": "typescript",
 								"name": "IterableIterator"
 							},
 							"inheritedFrom": {
@@ -6144,6 +6338,8 @@
 										"name": "string"
 									}
 								],
+								"qualifiedName": "IterableIterator",
+								"package": "typescript",
 								"name": "IterableIterator"
 							},
 							"inheritedFrom": {
@@ -6376,11 +6572,13 @@
 					],
 					"type": {
 						"type": "reference",
+						"qualifiedName": "ArrayConstructor",
+						"package": "typescript",
 						"name": "ArrayConstructor"
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "Array.__@species@220"
+						"name": "Array.__@species@222"
 					}
 				},
 				{
@@ -6578,6 +6776,8 @@
 															{
 																"type": "reference",
 																"id": 372,
+																"qualifiedName": "U",
+																"package": "typescript",
 																"name": "U"
 															},
 															{
@@ -6588,6 +6788,8 @@
 																	"elementType": {
 																		"type": "reference",
 																		"id": 372,
+																		"qualifiedName": "U",
+																		"package": "typescript",
 																		"name": "U"
 																	}
 																}
@@ -6614,6 +6816,8 @@
 									"type": {
 										"type": "reference",
 										"id": 373,
+										"qualifiedName": "This",
+										"package": "typescript",
 										"name": "This"
 									}
 								}
@@ -6623,6 +6827,8 @@
 								"elementType": {
 									"type": "reference",
 									"id": 372,
+									"qualifiedName": "U",
+									"package": "typescript",
 									"name": "U"
 								}
 							},
@@ -6701,6 +6907,8 @@
 									"type": {
 										"type": "reference",
 										"id": 384,
+										"qualifiedName": "D",
+										"package": "typescript",
 										"name": "D"
 									}
 								}
@@ -6713,14 +6921,20 @@
 										{
 											"type": "reference",
 											"id": 383,
+											"qualifiedName": "A",
+											"package": "typescript",
 											"name": "A"
 										},
 										{
 											"type": "reference",
 											"id": 384,
+											"qualifiedName": "D",
+											"package": "typescript",
 											"name": "D"
 										}
 									],
+									"qualifiedName": "FlatArray",
+									"package": "typescript",
 									"name": "FlatArray"
 								}
 							},
@@ -6956,7 +7170,7 @@
 										"isOptional": true
 									},
 									"comment": {
-										"shortText": "Function used to determine the order of the elements. It is expected to return\na negative value if first argument is less than second argument, zero if they're equal and a positive\nvalue otherwise. If omitted, the elements are sorted in ascending, ASCII character order.\n```ts\n[11,2,22,1].sort((a, b) => a - b)\n```\n"
+										"shortText": "Function used to determine the order of the elements. It is expected to return\na negative value if the first argument is less than the second argument, zero if they're equal, and a positive\nvalue otherwise. If omitted, the elements are sorted in ascending, ASCII character order.\n```ts\n[11,2,22,1].sort((a, b) => a - b)\n```\n"
 									},
 									"type": {
 										"type": "reflection",
@@ -7404,6 +7618,8 @@
 													"type": {
 														"type": "reference",
 														"id": 241,
+														"qualifiedName": "U",
+														"package": "typescript",
 														"name": "U"
 													}
 												}
@@ -7434,6 +7650,8 @@
 								"elementType": {
 									"type": "reference",
 									"id": 241,
+									"qualifiedName": "U",
+									"package": "typescript",
 									"name": "U"
 								}
 							},
@@ -7765,6 +7983,8 @@
 															"type": {
 																"type": "reference",
 																"id": 286,
+																"qualifiedName": "U",
+																"package": "typescript",
 																"name": "U"
 															}
 														},
@@ -7814,6 +8034,8 @@
 													"type": {
 														"type": "reference",
 														"id": 286,
+														"qualifiedName": "U",
+														"package": "typescript",
 														"name": "U"
 													}
 												}
@@ -7835,6 +8057,8 @@
 									"type": {
 										"type": "reference",
 										"id": 286,
+										"qualifiedName": "U",
+										"package": "typescript",
 										"name": "U"
 									}
 								}
@@ -7842,6 +8066,8 @@
 							"type": {
 								"type": "reference",
 								"id": 286,
+								"qualifiedName": "U",
+								"package": "typescript",
 								"name": "U"
 							},
 							"inheritedFrom": {
@@ -8001,7 +8227,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
-							"line": 1224,
+							"line": 1273,
 							"character": 4
 						}
 					],
@@ -8136,6 +8362,8 @@
 													"name": "string"
 												}
 											],
+											"qualifiedName": "ConcatArray",
+											"package": "typescript",
 											"name": "ConcatArray"
 										}
 									}
@@ -8194,6 +8422,8 @@
 															"name": "string"
 														}
 													],
+													"qualifiedName": "ConcatArray",
+													"package": "typescript",
 													"name": "ConcatArray"
 												}
 											]
@@ -8670,6 +8900,8 @@
 														"targetType": {
 															"type": "reference",
 															"id": 205,
+															"qualifiedName": "S",
+															"package": "typescript",
 															"name": "S"
 														}
 													}
@@ -8705,6 +8937,8 @@
 									"elementType": {
 										"type": "reference",
 										"id": 205,
+										"qualifiedName": "S",
+										"package": "typescript",
 										"name": "S"
 									}
 								}
@@ -9096,6 +9330,8 @@
 														"targetType": {
 															"type": "reference",
 															"id": 251,
+															"qualifiedName": "S",
+															"package": "typescript",
 															"name": "S"
 														}
 													}
@@ -9127,6 +9363,8 @@
 								"elementType": {
 									"type": "reference",
 									"id": 251,
+									"qualifiedName": "S",
+									"package": "typescript",
 									"name": "S"
 								}
 							},
@@ -9583,6 +9821,8 @@
 															"type": {
 																"type": "reference",
 																"id": 314,
+																"qualifiedName": "U",
+																"package": "typescript",
 																"name": "U"
 															}
 														},
@@ -9632,6 +9872,8 @@
 													"type": {
 														"type": "reference",
 														"id": 314,
+														"qualifiedName": "U",
+														"package": "typescript",
 														"name": "U"
 													}
 												}
@@ -9653,6 +9895,8 @@
 									"type": {
 										"type": "reference",
 										"id": 314,
+										"qualifiedName": "U",
+										"package": "typescript",
 										"name": "U"
 									}
 								}
@@ -9660,6 +9904,8 @@
 							"type": {
 								"type": "reference",
 								"id": 314,
+								"qualifiedName": "U",
+								"package": "typescript",
 								"name": "U"
 							},
 							"inheritedFrom": {
@@ -9751,6 +9997,8 @@
 							"name": "string"
 						}
 					],
+					"qualifiedName": "Array",
+					"package": "typescript",
 					"name": "Array"
 				}
 			]
@@ -10278,6 +10526,8 @@
 								"name": "string"
 							}
 						],
+						"qualifiedName": "Record",
+						"package": "typescript",
 						"name": "Record"
 					}
 				},
@@ -10303,10 +10553,14 @@
 							},
 							{
 								"type": "reference",
+								"qualifiedName": "Blob",
+								"package": "typescript",
 								"name": "Blob"
 							},
 							{
 								"type": "reference",
+								"qualifiedName": "FormData",
+								"package": "typescript",
 								"name": "FormData"
 							}
 						]
@@ -10408,9 +10662,13 @@
 						"typeArguments": [
 							{
 								"type": "reference",
+								"qualifiedName": "Response",
+								"package": "typescript",
 								"name": "Response"
 							}
 						],
+						"qualifiedName": "Promise",
+						"package": "typescript",
 						"name": "Promise"
 					}
 				}
@@ -10523,6 +10781,8 @@
 														"name": "string"
 													}
 												],
+												"qualifiedName": "Record",
+												"package": "typescript",
 												"name": "Record"
 											}
 										},
@@ -10548,10 +10808,14 @@
 													},
 													{
 														"type": "reference",
+														"qualifiedName": "Blob",
+														"package": "typescript",
 														"name": "Blob"
 													},
 													{
 														"type": "reference",
+														"qualifiedName": "FormData",
+														"package": "typescript",
 														"name": "FormData"
 													}
 												]
@@ -10611,9 +10875,13 @@
 						"typeArguments": [
 							{
 								"type": "reference",
+								"qualifiedName": "Response",
+								"package": "typescript",
 								"name": "Response"
 							}
 						],
+						"qualifiedName": "Promise",
+						"package": "typescript",
 						"name": "Promise"
 					}
 				}
@@ -10862,12 +11130,16 @@
 										"name": "CardAProps"
 									}
 								],
+								"qualifiedName": "React.PropsWithChildren",
+								"package": "@types/react",
 								"name": "PropsWithChildren"
 							}
 						}
 					],
 					"type": {
 						"type": "reference",
+						"qualifiedName": "React.ReactElement",
+						"package": "@types/react",
 						"name": "ReactElement"
 					}
 				}
@@ -10975,12 +11247,16 @@
 										}
 									}
 								],
+								"qualifiedName": "React.PropsWithChildren",
+								"package": "@types/react",
 								"name": "PropsWithChildren"
 							}
 						}
 					],
 					"type": {
 						"type": "reference",
+						"qualifiedName": "React.ReactElement",
+						"package": "@types/react",
 						"name": "ReactElement"
 					}
 				}
@@ -11014,6 +11290,8 @@
 					],
 					"type": {
 						"type": "reference",
+						"qualifiedName": "React.ReactNode",
+						"package": "@types/react",
 						"name": "ReactNode"
 					}
 				},
@@ -11224,6 +11502,8 @@
 										"name": "void"
 									}
 								],
+								"qualifiedName": "Promise",
+								"package": "typescript",
 								"name": "Promise"
 							}
 						}
@@ -11297,6 +11577,8 @@
 												]
 											}
 										],
+										"qualifiedName": "Record",
+										"package": "typescript",
 										"name": "Record"
 									}
 								}
@@ -11312,6 +11594,8 @@
 												"name": "void"
 											}
 										],
+										"qualifiedName": "Promise",
+										"package": "typescript",
 										"name": "Promise"
 									},
 									{
@@ -11387,6 +11671,8 @@
 												]
 											}
 										],
+										"qualifiedName": "Promise",
+										"package": "typescript",
 										"name": "Promise"
 									}
 								]
@@ -11465,6 +11751,8 @@
 								}
 							}
 						],
+						"qualifiedName": "React.MutableRefObject",
+						"package": "@types/react",
 						"name": "MutableRefObject"
 					}
 				},
@@ -11616,12 +11904,16 @@
 										"name": "EasyFormDialogProps"
 									}
 								],
+								"qualifiedName": "React.PropsWithChildren",
+								"package": "@types/react",
 								"name": "PropsWithChildren"
 							}
 						}
 					],
 					"type": {
 						"type": "reference",
+						"qualifiedName": "React.ReactElement",
+						"package": "@types/react",
 						"name": "ReactElement"
 					}
 				}
@@ -11773,6 +12065,8 @@
 								"name": "T"
 							}
 						],
+						"qualifiedName": "Promise",
+						"package": "typescript",
 						"name": "Promise"
 					},
 					{
@@ -11787,6 +12081,8 @@
 								}
 							}
 						],
+						"qualifiedName": "Promise",
+						"package": "typescript",
 						"name": "Promise"
 					},
 					{
@@ -11805,9 +12101,13 @@
 										"name": "T"
 									}
 								],
+								"qualifiedName": "Promise",
+								"package": "typescript",
 								"name": "Promise"
 							}
 						],
+						"qualifiedName": "Record",
+						"package": "typescript",
 						"name": "Record"
 					}
 				]
