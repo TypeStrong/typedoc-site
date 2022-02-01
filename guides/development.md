@@ -33,7 +33,7 @@ Resolution is implemented entirely by internal plugins that live in `src/lib/out
 Output is split into two folders, for JSON output see the `src/lib/serialization` directory, and for HTML output see `src/lib/output`.
 
 Plugins may effect any part of the process after step 2 by listening to events fired by each component or adding / replacing handlers for a given task.
-As an example, the [Converter](https://typedoc.org/api/classes/converter.html) fires events before starting conversion, when declarations are converted and when the project should be resolved.
+As an example, the [Converter](https://typedoc.org/api/classes/Converter.html) fires events before starting conversion, when declarations are converted and when the project should be resolved.
 
 ## Tests
 
@@ -46,14 +46,14 @@ For other components, we use [Mocha](https://mochajs.org/) to write tests.
 ## Components
 
 For more detailed information about the implementation and API surface of each component, consult its API documentation.
-All components are available on the [Application](https://typedoc.org/api/classes/application.html) class, which is passed to plugins.
+All components are available on the [Application](https://typedoc.org/api/classes/Application.html) class, which is passed to plugins.
 
 ### Options
 
 TypeDoc provides some 30 options which determine how the project model is generated and output to disk.
-The [Options](https://typedoc.org/api/classes/options.html) class consolidates application options into a single location and handles type conversion.
+The [Options](https://typedoc.org/api/classes/Options.html) class consolidates application options into a single location and handles type conversion.
 
-There are 10 builtin option types as specified by the [ParameterType](https://typedoc.org/api/enums/parametertype.html) enum.
+There are 10 builtin option types as specified by the [ParameterType](https://typedoc.org/api/enums/ParameterType.html) enum.
 
 -   `String` - A string
 -   `Path` - A string which will be resolved to a path. Paths in config files will be resolved relative to the config directory.
@@ -66,9 +66,9 @@ There are 10 builtin option types as specified by the [ParameterType](https://ty
 -   `ModuleArray` - An array of modules/paths. Items will be resolved if they start with `.`.
 -   `GlobArray` - An array of globs. Globs will be resolved if they do not start with `**`, after skipping leading `!` and `#` characters.
 
-Options are discovered and set by option readers, which are documented in the [OptionReader](https://typedoc.org/api/interfaces/optionsreader.html) interface.
+Options are discovered and set by option readers, which are documented in the [OptionReader](https://typedoc.org/api/interfaces/OptionsReader.html) interface.
 
-Plugins can declare their own options by calling [Options.addDeclaration](https://typedoc.org/api/classes/options.html#adddeclaration).
+Plugins can declare their own options by calling [Options.addDeclaration](https://typedoc.org/api/classes/Options.html#addDeclaration).
 
 ### Plugins
 
@@ -96,7 +96,7 @@ export function load(app: Application) {
 
 ### Converters
 
-TypeDoc converts the syntax tree created by TypeScript into its own structure of [`Reflection`](https://typedoc.org/api/classes/reflection.html)s to allow themes and serialization to work with a standard object format. Conversion is done primarily in three files.
+TypeDoc converts the syntax tree created by TypeScript into its own structure of [`Reflection`](https://typedoc.org/api/classes/Reflection.html)s to allow themes and serialization to work with a standard object format. Conversion is done primarily in three files.
 
 -   [symbols.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/symbols.ts) - contains converters for each `ts.Symbol` that is exported from entry points.
 -   [types.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/types.ts) - contains converters for `ts.Type`s and `ts.TypeNode`s.
