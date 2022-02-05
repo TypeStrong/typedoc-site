@@ -28,15 +28,24 @@ These options control where TypeDoc reads its configuration from.
 $ typedoc --options <filename>
 ```
 
-Specify a json option file that should be loaded. If not specified TypeDoc will look for `typedoc.json` and `typedoc.js` in the current directory.
+Specify an option file that should be loaded. If not specified TypeDoc will look for `typedoc.json` and `typedoc.js` in the current directory.
 The JSON file should return an object whose keys are the option names. For example:
 
-```json
+```js
+// typedoc.json
 {
     "entryPoints": ["./src/index.ts", "./src/secondary-entry.ts"],
     "out": "doc"
 }
+
+// typedoc.js
+module.exports = {
+    entryPoints: ["./src/index.ts", "./src/secondary-entry.ts"],
+    out: "doc"
+}
 ```
+
+Option files may also contain an `extends` key which specifies an additional file to be loaded before importing options from the current file. Paths will be resolved relative to the options file they are loaded from.
 
 ### tsconfig
 
