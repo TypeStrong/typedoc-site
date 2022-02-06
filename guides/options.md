@@ -34,6 +34,7 @@ The JSON file should return an object whose keys are the option names. For examp
 ```js
 // typedoc.json
 {
+    "$schema": "https://typedoc.org/schema.json",
     "entryPoints": ["./src/index.ts", "./src/secondary-entry.ts"],
     "out": "doc"
 }
@@ -46,6 +47,8 @@ module.exports = {
 ```
 
 Option files may also contain an `extends` key which specifies an additional file to be loaded before importing options from the current file. Paths will be resolved relative to the options file they are loaded from.
+
+The `$schema` key is an optional property that will be ignored by TypeDoc, but can be used to get better autocomplete when editing a `typedoc.json` file in VSCode and other editors which support JSON Schemas.
 
 ### tsconfig
 
