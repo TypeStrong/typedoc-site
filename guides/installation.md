@@ -21,7 +21,7 @@ changes introduced in a new TypeScript version, a given version may support more
 
 | TypeDoc Version | TypeScript Version(s) |
 | --------------- | --------------------- |
-| 0.22            | 4.0 through 4.5       |
+| 0.22            | 4.0 through 4.6       |
 | 0.21            | 4.0 through 4.4       |
 | 0.20            | 3.9 through 4.2       |
 | 0.19            | 3.9 through 4.0       |
