@@ -238,6 +238,9 @@
 		"markedOptions": {
 			"description": "Specify the options passed to Marked, the Markdown parser used by TypeDoc."
 		},
+		"compilerOptions": {
+			"description": "Selectively override the TypeScript compiler options used by TypeDoc."
+		},
 		"treatWarningsAsErrors": {
 			"description": "If set, warnings will be treated as errors.",
 			"type": "boolean",
