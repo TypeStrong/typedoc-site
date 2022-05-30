@@ -6,7 +6,7 @@
 	"flags": {},
 	"children": [
 		{
-			"id": 556,
+			"id": 560,
 			"name": "lodashSortBy",
 			"kind": 64,
 			"kindString": "Function",
@@ -15,7 +15,7 @@
 			},
 			"signatures": [
 				{
-					"id": 557,
+					"id": 561,
 					"name": "lodashSortBy",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -34,7 +34,7 @@
 					},
 					"typeParameter": [
 						{
-							"id": 558,
+							"id": 562,
 							"name": "T",
 							"kind": 131072,
 							"kindString": "Type parameter",
@@ -45,7 +45,7 @@
 					],
 					"parameters": [
 						{
-							"id": 559,
+							"id": 563,
 							"name": "collection",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -71,7 +71,7 @@
 										"typeArguments": [
 											{
 												"type": "reference",
-												"id": 558,
+												"id": 562,
 												"qualifiedName": "T",
 												"package": "@types/lodash",
 												"name": "T"
@@ -80,115 +80,6 @@
 										"qualifiedName": "List",
 										"package": "@types/lodash",
 										"name": "List"
-									}
-								]
-							}
-						},
-						{
-							"id": 560,
-							"name": "iteratees",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {
-								"isExternal": true,
-								"isRest": true
-							},
-							"type": {
-								"type": "array",
-								"elementType": {
-									"type": "reference",
-									"typeArguments": [
-										{
-											"type": "reference",
-											"typeArguments": [
-												{
-													"type": "reference",
-													"id": 558,
-													"qualifiedName": "T",
-													"package": "@types/lodash",
-													"name": "T"
-												}
-											],
-											"qualifiedName": "ListIteratee",
-											"package": "@types/lodash",
-											"name": "ListIteratee"
-										}
-									],
-									"qualifiedName": "Many",
-									"package": "@types/lodash",
-									"name": "Many"
-								}
-							}
-						}
-					],
-					"type": {
-						"type": "array",
-						"elementType": {
-							"type": "reference",
-							"id": 558,
-							"qualifiedName": "T",
-							"package": "@types/lodash",
-							"name": "T"
-						}
-					}
-				},
-				{
-					"id": 561,
-					"name": "lodashSortBy",
-					"kind": 4096,
-					"kindString": "Call signature",
-					"flags": {
-						"isExternal": true
-					},
-					"comment": {
-						"tags": [
-							{
-								"tag": "see",
-								"text": "_.sortBy\n"
-							}
-						]
-					},
-					"typeParameter": [
-						{
-							"id": 562,
-							"name": "T",
-							"kind": 131072,
-							"kindString": "Type parameter",
-							"flags": {
-								"isExternal": true
-							},
-							"type": {
-								"type": "intrinsic",
-								"name": "object"
-							}
-						}
-					],
-					"parameters": [
-						{
-							"id": 563,
-							"name": "collection",
-							"kind": 32768,
-							"kindString": "Parameter",
-							"flags": {
-								"isExternal": true
-							},
-							"type": {
-								"type": "union",
-								"types": [
-									{
-										"type": "intrinsic",
-										"name": "undefined"
-									},
-									{
-										"type": "literal",
-										"value": null
-									},
-									{
-										"type": "reference",
-										"id": 562,
-										"qualifiedName": "T",
-										"package": "@types/lodash",
-										"name": "T"
 									}
 								]
 							}
@@ -218,6 +109,115 @@
 													"name": "T"
 												}
 											],
+											"qualifiedName": "ListIteratee",
+											"package": "@types/lodash",
+											"name": "ListIteratee"
+										}
+									],
+									"qualifiedName": "Many",
+									"package": "@types/lodash",
+									"name": "Many"
+								}
+							}
+						}
+					],
+					"type": {
+						"type": "array",
+						"elementType": {
+							"type": "reference",
+							"id": 562,
+							"qualifiedName": "T",
+							"package": "@types/lodash",
+							"name": "T"
+						}
+					}
+				},
+				{
+					"id": 565,
+					"name": "lodashSortBy",
+					"kind": 4096,
+					"kindString": "Call signature",
+					"flags": {
+						"isExternal": true
+					},
+					"comment": {
+						"tags": [
+							{
+								"tag": "see",
+								"text": "_.sortBy\n"
+							}
+						]
+					},
+					"typeParameter": [
+						{
+							"id": 566,
+							"name": "T",
+							"kind": 131072,
+							"kindString": "Type parameter",
+							"flags": {
+								"isExternal": true
+							},
+							"type": {
+								"type": "intrinsic",
+								"name": "object"
+							}
+						}
+					],
+					"parameters": [
+						{
+							"id": 567,
+							"name": "collection",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExternal": true
+							},
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "intrinsic",
+										"name": "undefined"
+									},
+									{
+										"type": "literal",
+										"value": null
+									},
+									{
+										"type": "reference",
+										"id": 566,
+										"qualifiedName": "T",
+										"package": "@types/lodash",
+										"name": "T"
+									}
+								]
+							}
+						},
+						{
+							"id": 568,
+							"name": "iteratees",
+							"kind": 32768,
+							"kindString": "Parameter",
+							"flags": {
+								"isExternal": true,
+								"isRest": true
+							},
+							"type": {
+								"type": "array",
+								"elementType": {
+									"type": "reference",
+									"typeArguments": [
+										{
+											"type": "reference",
+											"typeArguments": [
+												{
+													"type": "reference",
+													"id": 566,
+													"qualifiedName": "T",
+													"package": "@types/lodash",
+													"name": "T"
+												}
+											],
 											"qualifiedName": "ObjectIteratee",
 											"package": "@types/lodash",
 											"name": "ObjectIteratee"
@@ -239,7 +239,7 @@
 								"operator": "keyof",
 								"target": {
 									"type": "reference",
-									"id": 562,
+									"id": 566,
 									"qualifiedName": "T",
 									"package": "@types/lodash",
 									"name": "T"
@@ -247,7 +247,7 @@
 							},
 							"objectType": {
 								"type": "reference",
-								"id": 562,
+								"id": 566,
 								"qualifiedName": "T",
 								"package": "@types/lodash",
 								"name": "T"
@@ -3941,7 +3941,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 8,
+							"line": 10,
 							"character": 13
 						}
 					],
@@ -3962,7 +3962,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 11,
+							"line": 13,
 							"character": 4
 						}
 					],
@@ -3986,7 +3986,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 14,
+							"line": 16,
 							"character": 14
 						}
 					],
@@ -4009,7 +4009,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 17,
+							"line": 19,
 							"character": 12
 						}
 					],
@@ -4028,7 +4028,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 23,
+							"line": 25,
 							"character": 8
 						}
 					],
@@ -4096,7 +4096,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 46,
+							"line": 48,
 							"character": 4
 						}
 					],
@@ -4180,7 +4180,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 54,
+							"line": 56,
 							"character": 4
 						}
 					],
@@ -4210,7 +4210,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 63,
+							"line": 65,
 							"character": 4
 						}
 					],
@@ -4243,7 +4243,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 68,
+							"line": 70,
 							"character": 14
 						}
 					],
@@ -4275,7 +4275,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 73,
+							"line": 75,
 							"character": 12
 						}
 					],
@@ -4336,7 +4336,7 @@
 			"sources": [
 				{
 					"fileName": "example/src/classes/Customer.ts",
-					"line": 6,
+					"line": 8,
 					"character": 22
 				}
 			],
@@ -4372,7 +4372,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 8,
+							"line": 10,
 							"character": 13
 						}
 					],
@@ -4398,7 +4398,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 11,
+							"line": 13,
 							"character": 4
 						}
 					],
@@ -4427,7 +4427,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 14,
+							"line": 16,
 							"character": 14
 						}
 					],
@@ -4450,7 +4450,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 23,
+							"line": 25,
 							"character": 8
 						}
 					],
@@ -4531,7 +4531,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 54,
+							"line": 56,
 							"character": 4
 						}
 					],
@@ -4571,7 +4571,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 63,
+							"line": 65,
 							"character": 4
 						}
 					],
@@ -4617,7 +4617,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 83,
+							"line": 85,
 							"character": 4
 						}
 					],
@@ -4640,7 +4640,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 86,
+							"line": 88,
 							"character": 13
 						}
 					],
@@ -4667,7 +4667,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 96,
+							"line": 98,
 							"character": 4
 						}
 					],
@@ -4786,7 +4786,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/classes/Customer.ts",
-							"line": 112,
+							"line": 114,
 							"character": 14
 						}
 					],
@@ -4858,7 +4858,7 @@
 			"sources": [
 				{
 					"fileName": "example/src/classes/Customer.ts",
-					"line": 81,
+					"line": 83,
 					"character": 13
 				}
 			],
@@ -6160,13 +6160,13 @@
 							},
 							"inheritedFrom": {
 								"type": "reference",
-								"name": "Array.__@iterator@14"
+								"name": "Array.__@iterator@13"
 							}
 						}
 					],
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "Array.__@iterator@14"
+						"name": "Array.__@iterator@13"
 					}
 				},
 				{
@@ -6532,7 +6532,7 @@
 					},
 					"inheritedFrom": {
 						"type": "reference",
-						"name": "Array.__@species@235"
+						"name": "Array.__@species@237"
 					}
 				},
 				{
@@ -7011,7 +7011,7 @@
 					"sources": [
 						{
 							"fileName": "node_modules/typescript/lib/lib.es5.d.ts",
-							"line": 1273,
+							"line": 1279,
 							"character": 4
 						}
 					],
@@ -10065,7 +10065,7 @@
 					"id": 543,
 					"name": "Pending",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"comment": {
 						"shortText": "This order has just been placed and is yet to be processed."
@@ -10077,13 +10077,17 @@
 							"character": 4
 						}
 					],
+					"type": {
+						"type": "literal",
+						"value": 0
+					},
 					"defaultValue": "0"
 				},
 				{
 					"id": 544,
 					"name": "InProgress",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"comment": {
 						"shortText": "A courier is en route delivering this order."
@@ -10095,13 +10099,17 @@
 							"character": 4
 						}
 					],
+					"type": {
+						"type": "literal",
+						"value": 1
+					},
 					"defaultValue": "1"
 				},
 				{
 					"id": 545,
 					"name": "Complete",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"comment": {
 						"shortText": "The order has been delivered."
@@ -10113,12 +10121,16 @@
 							"character": 4
 						}
 					],
+					"type": {
+						"type": "literal",
+						"value": "COMPLETE"
+					},
 					"defaultValue": "\"COMPLETE\""
 				}
 			],
 			"groups": [
 				{
-					"title": "Enumeration members",
+					"title": "Enumeration Members",
 					"kind": 16,
 					"children": [
 						543,
@@ -10150,7 +10162,7 @@
 					"id": 547,
 					"name": "None",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"sources": [
 						{
@@ -10159,13 +10171,17 @@
 							"character": 4
 						}
 					],
+					"type": {
+						"type": "literal",
+						"value": 0
+					},
 					"defaultValue": "0"
 				},
 				{
 					"id": 548,
 					"name": "Read",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"sources": [
 						{
@@ -10174,13 +10190,17 @@
 							"character": 4
 						}
 					],
+					"type": {
+						"type": "literal",
+						"value": 2
+					},
 					"defaultValue": "2"
 				},
 				{
 					"id": 549,
 					"name": "Write",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"sources": [
 						{
@@ -10189,13 +10209,17 @@
 							"character": 4
 						}
 					],
+					"type": {
+						"type": "literal",
+						"value": 4
+					},
 					"defaultValue": "4"
 				},
 				{
 					"id": 550,
 					"name": "ReadWrite",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"sources": [
 						{
@@ -10204,13 +10228,17 @@
 							"character": 4
 						}
 					],
+					"type": {
+						"type": "literal",
+						"value": 6
+					},
 					"defaultValue": "6"
 				},
 				{
 					"id": 551,
 					"name": "ComputedMember",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"sources": [
 						{
@@ -10218,12 +10246,16 @@
 							"line": 28,
 							"character": 4
 						}
-					]
+					],
+					"type": {
+						"type": "intrinsic",
+						"name": "number"
+					}
 				}
 			],
 			"groups": [
 				{
-					"title": "Enumeration members",
+					"title": "Enumeration Members",
 					"kind": 16,
 					"children": [
 						547,
@@ -10257,7 +10289,7 @@
 					"id": 553,
 					"name": "Pending",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"sources": [
 						{
@@ -10266,13 +10298,17 @@
 							"character": 4
 						}
 					],
+					"type": {
+						"type": "literal",
+						"value": "pending"
+					},
 					"defaultValue": "\"pending\""
 				},
 				{
 					"id": 554,
 					"name": "InProgress",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"comment": {
 						"shortText": "Indicates that a courier is en route delivering this order."
@@ -10284,13 +10320,17 @@
 							"character": 4
 						}
 					],
+					"type": {
+						"type": "literal",
+						"value": "inProgress"
+					},
 					"defaultValue": "\"inProgress\""
 				},
 				{
 					"id": 555,
 					"name": "Completed",
 					"kind": 16,
-					"kindString": "Enumeration member",
+					"kindString": "Enumeration Member",
 					"flags": {},
 					"sources": [
 						{
@@ -10299,12 +10339,16 @@
 							"character": 4
 						}
 					],
+					"type": {
+						"type": "literal",
+						"value": "completed"
+					},
 					"defaultValue": "\"completed\""
 				}
 			],
 			"groups": [
 				{
-					"title": "Enumeration members",
+					"title": "Enumeration Members",
 					"kind": 16,
 					"children": [
 						553,
@@ -10317,6 +10361,97 @@
 				{
 					"fileName": "example/src/enums.ts",
 					"line": 46,
+					"character": 13
+				}
+			]
+		},
+		{
+			"id": 556,
+			"name": "EnumLikeObjectNumValues",
+			"kind": 8,
+			"kindString": "Enumeration",
+			"flags": {},
+			"comment": {
+				"shortText": "Since TypeScript's `enum` can be inconvenient to work with, some packages define their own enum-like objects:",
+				"text": "```\nexport const EnumLikeObjectNumValues = {\n    Pending: 1,\n    InProgress: 2,\n    Completed: 3\n} as const\n```\n\nUse the `@enum` tag to make TypeDoc document this object as an enum.\n"
+			},
+			"children": [
+				{
+					"id": 557,
+					"name": "Pending",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "example/src/enums.ts",
+							"line": 71,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 1
+					},
+					"defaultValue": "1"
+				},
+				{
+					"id": 558,
+					"name": "InProgress",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"comment": {
+						"shortText": "Indicates that a courier is en route delivering this order."
+					},
+					"sources": [
+						{
+							"fileName": "example/src/enums.ts",
+							"line": 74,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 2
+					},
+					"defaultValue": "2"
+				},
+				{
+					"id": 559,
+					"name": "Completed",
+					"kind": 16,
+					"kindString": "Enumeration Member",
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "example/src/enums.ts",
+							"line": 76,
+							"character": 4
+						}
+					],
+					"type": {
+						"type": "literal",
+						"value": 3
+					},
+					"defaultValue": "3"
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumeration Members",
+					"kind": 16,
+					"children": [
+						557,
+						558,
+						559
+					]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "example/src/enums.ts",
+					"line": 70,
 					"character": 13
 				}
 			]
@@ -11028,7 +11163,7 @@
 			]
 		},
 		{
-			"id": 612,
+			"id": 616,
 			"name": "anInternalFunction",
 			"kind": 64,
 			"kindString": "Function",
@@ -11042,7 +11177,7 @@
 			],
 			"signatures": [
 				{
-					"id": 613,
+					"id": 617,
 					"name": "anInternalFunction",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -11063,7 +11198,7 @@
 			]
 		},
 		{
-			"id": 580,
+			"id": 584,
 			"name": "CardAProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -11073,7 +11208,7 @@
 			},
 			"children": [
 				{
-					"id": 581,
+					"id": 585,
 					"name": "variant",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11124,7 +11259,7 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						581
+						585
 					]
 				}
 			],
@@ -11137,7 +11272,7 @@
 			]
 		},
 		{
-			"id": 569,
+			"id": 573,
 			"name": "CardA",
 			"kind": 64,
 			"kindString": "Function",
@@ -11145,13 +11280,13 @@
 			"sources": [
 				{
 					"fileName": "example/src/reactComponents.tsx",
-					"line": 40,
+					"line": 42,
 					"character": 16
 				}
 			],
 			"signatures": [
 				{
-					"id": 570,
+					"id": 574,
 					"name": "CardA",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -11162,7 +11297,7 @@
 					},
 					"parameters": [
 						{
-							"id": 571,
+							"id": 575,
 							"name": "__namedParameters",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -11172,7 +11307,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 580,
+										"id": 584,
 										"name": "CardAProps"
 									}
 								],
@@ -11192,7 +11327,7 @@
 			]
 		},
 		{
-			"id": 572,
+			"id": 576,
 			"name": "CardB",
 			"kind": 64,
 			"kindString": "Function",
@@ -11200,13 +11335,13 @@
 			"sources": [
 				{
 					"fileName": "example/src/reactComponents.tsx",
-					"line": 70,
+					"line": 74,
 					"character": 16
 				}
 			],
 			"signatures": [
 				{
-					"id": 573,
+					"id": 577,
 					"name": "CardB",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -11217,7 +11352,7 @@
 					},
 					"parameters": [
 						{
-							"id": 574,
+							"id": 578,
 							"name": "__namedParameters",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -11228,14 +11363,14 @@
 									{
 										"type": "reflection",
 										"declaration": {
-											"id": 575,
+											"id": 579,
 											"name": "__type",
 											"kind": 65536,
 											"kindString": "Type literal",
 											"flags": {},
 											"children": [
 												{
-													"id": 576,
+													"id": 580,
 													"name": "variant",
 													"kind": 1024,
 													"kindString": "Property",
@@ -11246,7 +11381,7 @@
 													"sources": [
 														{
 															"fileName": "example/src/reactComponents.tsx",
-															"line": 75,
+															"line": 79,
 															"character": 4
 														}
 													],
@@ -11286,7 +11421,7 @@
 													"title": "Properties",
 													"kind": 1024,
 													"children": [
-														576
+														580
 													]
 												}
 											]
@@ -11309,7 +11444,7 @@
 			]
 		},
 		{
-			"id": 582,
+			"id": 586,
 			"name": "EasyFormDialogProps",
 			"kind": 256,
 			"kindString": "Interface",
@@ -11319,7 +11454,7 @@
 			},
 			"children": [
 				{
-					"id": 583,
+					"id": 587,
 					"name": "title",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11330,7 +11465,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 83,
+							"line": 87,
 							"character": 4
 						}
 					],
@@ -11342,7 +11477,7 @@
 					}
 				},
 				{
-					"id": 584,
+					"id": 588,
 					"name": "submitButtonText",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11353,7 +11488,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 86,
+							"line": 90,
 							"character": 4
 						}
 					],
@@ -11363,7 +11498,7 @@
 					}
 				},
 				{
-					"id": 585,
+					"id": 589,
 					"name": "submitButtonClass",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11376,7 +11511,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 89,
+							"line": 93,
 							"character": 4
 						}
 					],
@@ -11386,7 +11521,7 @@
 					}
 				},
 				{
-					"id": 586,
+					"id": 590,
 					"name": "cancelButtonText",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11399,7 +11534,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 92,
+							"line": 96,
 							"character": 4
 						}
 					],
@@ -11409,7 +11544,7 @@
 					}
 				},
 				{
-					"id": 587,
+					"id": 591,
 					"name": "submitEnabled",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11423,7 +11558,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 101,
+							"line": 105,
 							"character": 4
 						}
 					],
@@ -11433,7 +11568,7 @@
 					}
 				},
 				{
-					"id": 588,
+					"id": 592,
 					"name": "formIsValid",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11444,7 +11579,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 104,
+							"line": 108,
 							"character": 4
 						}
 					],
@@ -11454,7 +11589,7 @@
 					}
 				},
 				{
-					"id": 589,
+					"id": 593,
 					"name": "showValidation",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11465,7 +11600,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 107,
+							"line": 111,
 							"character": 4
 						}
 					],
@@ -11475,14 +11610,14 @@
 					}
 				},
 				{
-					"id": 590,
+					"id": 594,
 					"name": "onShowValidationChange",
 					"kind": 2048,
 					"kindString": "Method",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 591,
+							"id": 595,
 							"name": "onShowValidationChange",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -11492,7 +11627,7 @@
 							},
 							"parameters": [
 								{
-									"id": 592,
+									"id": 596,
 									"name": "showValidation",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -11511,14 +11646,14 @@
 					]
 				},
 				{
-					"id": 593,
+					"id": 597,
 					"name": "onSuccess",
 					"kind": 2048,
 					"kindString": "Method",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 594,
+							"id": 598,
 							"name": "onSuccess",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -11529,7 +11664,7 @@
 							},
 							"parameters": [
 								{
-									"id": 595,
+									"id": 599,
 									"name": "payload",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -11556,14 +11691,14 @@
 					]
 				},
 				{
-					"id": 596,
+					"id": 600,
 					"name": "onClose",
 					"kind": 2048,
 					"kindString": "Method",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 597,
+							"id": 601,
 							"name": "onClose",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -11579,14 +11714,14 @@
 					]
 				},
 				{
-					"id": 598,
+					"id": 602,
 					"name": "onSubmit",
 					"kind": 2048,
 					"kindString": "Method",
 					"flags": {},
 					"signatures": [
 						{
-							"id": 599,
+							"id": 603,
 							"name": "onSubmit",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -11597,7 +11732,7 @@
 							},
 							"parameters": [
 								{
-									"id": 600,
+									"id": 604,
 									"name": "formData",
 									"kind": 32768,
 									"kindString": "Parameter",
@@ -11657,14 +11792,14 @@
 													{
 														"type": "reflection",
 														"declaration": {
-															"id": 601,
+															"id": 605,
 															"name": "__type",
 															"kind": 65536,
 															"kindString": "Type literal",
 															"flags": {},
 															"children": [
 																{
-																	"id": 602,
+																	"id": 606,
 																	"name": "shouldClose",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11674,7 +11809,7 @@
 																	"sources": [
 																		{
 																			"fileName": "example/src/reactComponents.tsx",
-																			"line": 153,
+																			"line": 157,
 																			"character": 20
 																		}
 																	],
@@ -11684,7 +11819,7 @@
 																	}
 																},
 																{
-																	"id": 603,
+																	"id": 607,
 																	"name": "responseData",
 																	"kind": 1024,
 																	"kindString": "Property",
@@ -11692,7 +11827,7 @@
 																	"sources": [
 																		{
 																			"fileName": "example/src/reactComponents.tsx",
-																			"line": 154,
+																			"line": 158,
 																			"character": 20
 																		}
 																	],
@@ -11707,8 +11842,8 @@
 																	"title": "Properties",
 																	"kind": 1024,
 																	"children": [
-																		602,
-																		603
+																		606,
+																		607
 																	]
 																}
 															]
@@ -11727,7 +11862,7 @@
 					]
 				},
 				{
-					"id": 604,
+					"id": 608,
 					"name": "onCancel",
 					"kind": 2048,
 					"kindString": "Method",
@@ -11736,7 +11871,7 @@
 					},
 					"signatures": [
 						{
-							"id": 605,
+							"id": 609,
 							"name": "onCancel",
 							"kind": 4096,
 							"kindString": "Call signature",
@@ -11752,7 +11887,7 @@
 					]
 				},
 				{
-					"id": 606,
+					"id": 610,
 					"name": "closeRef",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11766,7 +11901,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 173,
+							"line": 177,
 							"character": 4
 						}
 					],
@@ -11776,14 +11911,14 @@
 							{
 								"type": "reflection",
 								"declaration": {
-									"id": 607,
+									"id": 611,
 									"name": "__type",
 									"kind": 65536,
 									"kindString": "Type literal",
 									"flags": {},
 									"signatures": [
 										{
-											"id": 608,
+											"id": 612,
 											"name": "__type",
 											"kind": 4096,
 											"kindString": "Call signature",
@@ -11803,7 +11938,7 @@
 					}
 				},
 				{
-					"id": 609,
+					"id": 613,
 					"name": "modalClass",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11816,7 +11951,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 176,
+							"line": 180,
 							"character": 4
 						}
 					],
@@ -11826,7 +11961,7 @@
 					}
 				},
 				{
-					"id": 610,
+					"id": 614,
 					"name": "focusFirst",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11839,7 +11974,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 182,
+							"line": 186,
 							"character": 4
 						}
 					],
@@ -11849,7 +11984,7 @@
 					}
 				},
 				{
-					"id": 611,
+					"id": 615,
 					"name": "showFooter",
 					"kind": 1024,
 					"kindString": "Property",
@@ -11862,7 +11997,7 @@
 					"sources": [
 						{
 							"fileName": "example/src/reactComponents.tsx",
-							"line": 188,
+							"line": 192,
 							"character": 4
 						}
 					],
@@ -11877,41 +12012,41 @@
 					"title": "Properties",
 					"kind": 1024,
 					"children": [
-						583,
-						584,
-						585,
-						586,
 						587,
 						588,
 						589,
-						606,
-						609,
+						590,
+						591,
+						592,
+						593,
 						610,
-						611
+						613,
+						614,
+						615
 					]
 				},
 				{
 					"title": "Methods",
 					"kind": 2048,
 					"children": [
-						590,
-						593,
-						596,
-						598,
-						604
+						594,
+						597,
+						600,
+						602,
+						608
 					]
 				}
 			],
 			"sources": [
 				{
 					"fileName": "example/src/reactComponents.tsx",
-					"line": 81,
+					"line": 85,
 					"character": 17
 				}
 			]
 		},
 		{
-			"id": 577,
+			"id": 581,
 			"name": "EasyFormDialog",
 			"kind": 64,
 			"kindString": "Function",
@@ -11919,24 +12054,24 @@
 			"sources": [
 				{
 					"fileName": "example/src/reactComponents.tsx",
-					"line": 249,
+					"line": 254,
 					"character": 16
 				}
 			],
 			"signatures": [
 				{
-					"id": 578,
+					"id": 582,
 					"name": "EasyFormDialog",
 					"kind": 4096,
 					"kindString": "Call signature",
 					"flags": {},
 					"comment": {
 						"shortText": "An example of a complex React component.",
-						"text": "A wrapper around `ActionDialog` that removes a lot of the boilerplate needed\nfor dialogs that contain a form.\n\n```tsx\ninterface ExampleProps {\n    onSuccess(responseData: number): Promise<void>\n    onClose(): void\n}\n\nexport function Example({\n    onSuccess,\n    onClose,\n}: ExampleProps): ReactElement {\n    const { onChildValidChange, allFieldsValid } = useFieldValidity()\n    const [showValidation, setShowValidation] = useState(false)\n    const vProps = { showValidation, onValidChange: onChildValidChange }\n\n    const [myNumber, setMyNumber] = useState('')\n\n    async function submit() {\n        await api.product.performOperation()\n\n        return {\n            responseData: parseInt(myNumber),\n        }\n    }\n\n    return (\n        <EasyFormDialog\n            title=\"Enter a Number\"\n            submitButtonText=\"Submit\"\n            formIsValid={allFieldsValid}\n            showValidation={showValidation}\n            onShowValidationChange={setShowValidation}\n            onSubmit={submit}\n            onSuccess={onSuccess}\n            onClose={onClose}\n        >\n            <FormGroup label=\"My number\">\n                {(id) => (\n                    <ValidatedInput\n                        id={id}\n                        name=\"myNumber\"\n                        validators={[Validators.required(), Validators.integer()]}\n                        value={myNumber}\n                        onChange={setMyNumber}\n                        {...vProps}\n                    />\n                )}\n            </FormGroup>\n        </EasyFormDialog>\n    )\n}\n```\n"
+						"text": "A wrapper around `ActionDialog` that removes a lot of the boilerplate needed\nfor dialogs that contain a form.\n\n```tsx\ninterface ExampleProps {\n    onSuccess(responseData: number): Promise<void>\n    onClose(): void\n}\n\nexport function Example({\n    onSuccess,\n    onClose,\n}: ExampleProps): ReactElement {\n    const { onChildValidChange, allFieldsValid } = useFieldValidity()\n    const [showValidation, setShowValidation] = useState(false)\n    const vProps = { showValidation, onValidChange: onChildValidChange }\n\n    const [myNumber, setMyNumber] = useState('')\n\n    async function submit() {\n        await api.product.performOperation()\n\n        return {\n            responseData: parseInt(myNumber),\n        }\n    }\n\n    return (\n        <EasyFormDialog\n            title=\"Enter a Number\"\n            submitButtonText=\"Submit\"\n            formIsValid={allFieldsValid}\n            showValidation={showValidation}\n            onShowValidationChange={setShowValidation}\n            onSubmit={submit}\n            onSuccess={onSuccess}\n            onClose={onClose}\n        >\n            <FormGroup label=\"My number\">\n                {(id) => (\n                    <ValidatedInput\n                        id={id}\n                        name=\"myNumber\"\n                        validators={[Validators.required(), Validators.integer()]}\n                        value={myNumber}\n                        onChange={setMyNumber}\n                        {...vProps}\n                    />\n                )}\n            </FormGroup>\n        </EasyFormDialog>\n    )\n}\n```"
 					},
 					"parameters": [
 						{
-							"id": 579,
+							"id": 583,
 							"name": "props",
 							"kind": 32768,
 							"kindString": "Parameter",
@@ -11946,7 +12081,7 @@
 								"typeArguments": [
 									{
 										"type": "reference",
-										"id": 582,
+										"id": 586,
 										"name": "EasyFormDialogProps"
 									}
 								],
@@ -11966,7 +12101,7 @@
 			]
 		},
 		{
-			"id": 565,
+			"id": 569,
 			"name": "markdownShowcase",
 			"kind": 64,
 			"kindString": "Function",
@@ -11980,7 +12115,7 @@
 			],
 			"signatures": [
 				{
-					"id": 566,
+					"id": 570,
 					"name": "markdownShowcase",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -11997,7 +12132,7 @@
 			]
 		},
 		{
-			"id": 567,
+			"id": 571,
 			"name": "syntaxHighlightingShowcase",
 			"kind": 64,
 			"kindString": "Function",
@@ -12011,7 +12146,7 @@
 			],
 			"signatures": [
 				{
-					"id": 568,
+					"id": 572,
 					"name": "syntaxHighlightingShowcase",
 					"kind": 4096,
 					"kindString": "Call signature",
@@ -12727,44 +12862,19 @@
 			"title": "Functions",
 			"kind": 64,
 			"children": [
-				556,
+				560,
 				1,
 				28,
 				4,
 				9,
 				12,
 				21,
-				612,
+				616,
+				573,
+				576,
+				581,
 				569,
-				572,
-				577,
-				565,
-				567
-			],
-			"categories": [
-				{
-					"title": "Collection",
-					"children": [
-						556
-					]
-				},
-				{
-					"title": "Other",
-					"children": [
-						1,
-						28,
-						4,
-						9,
-						12,
-						21,
-						612,
-						569,
-						572,
-						577,
-						565,
-						567
-					]
-				}
+				571
 			]
 		},
 		{
@@ -12783,7 +12893,8 @@
 			"children": [
 				542,
 				546,
-				552
+				552,
+				556
 			]
 		},
 		{
@@ -12791,14 +12902,14 @@
 			"kind": 256,
 			"children": [
 				31,
-				580,
-				582,
+				584,
+				586,
 				48,
 				55
 			]
 		},
 		{
-			"title": "Type aliases",
+			"title": "Type Aliases",
 			"kind": 4194304,
 			"children": [
 				45,
@@ -12809,6 +12920,60 @@
 			"title": "Variables",
 			"kind": 32,
 			"children": [
+				37,
+				38,
+				39,
+				44
+			]
+		}
+	],
+	"categories": [
+		{
+			"title": "Collection",
+			"children": [
+				560
+			]
+		},
+		{
+			"title": "Component",
+			"children": [
+				573,
+				576,
+				581
+			]
+		},
+		{
+			"title": "Model",
+			"children": [
+				64
+			]
+		},
+		{
+			"title": "Other",
+			"children": [
+				404,
+				86,
+				108,
+				542,
+				546,
+				552,
+				556,
+				1,
+				28,
+				4,
+				31,
+				9,
+				12,
+				21,
+				616,
+				584,
+				586,
+				569,
+				571,
+				45,
+				46,
+				48,
+				55,
 				37,
 				38,
 				39,

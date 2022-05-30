@@ -52,6 +52,12 @@
 			"type": "boolean",
 			"default": false
 		},
+		"searchCategoryBoosts": {
+			"description": "Configure search to give a relevance boost to selected categories"
+		},
+		"searchGroupBoosts": {
+			"description": "Configure search to give a relevance boost to selected kinds (eg \"class\")"
+		},
 		"disableSources": {
 			"description": "Disable setting the source of a reflection when documenting it.",
 			"type": "boolean",
