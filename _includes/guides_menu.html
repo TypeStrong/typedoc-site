@@ -1,9 +1,25 @@
 <nav class="navigation">
-  <ul>
-    {% for guide in collections.sorted_guides %}
-      <li {% if page.url == guide.url %}class="selected"{% endif %}>
-        <a href="{{ guide.url }}" {% if page.url == guide.url %}class="current"{% endif %}>{{ guide.data.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
+    <ul>
+        <li>
+            <a href="/guides/overview/">Overview</a>
+            <ul>
+                {% for guide in collections.sorted_guides %}
+                <li>
+                    <a href="{{ guide.url }}" {% if page.url == guide.url %}class="current"{% endif %}>{{ guide.data.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+
+        <li>
+            <a href="/guides/tags/">Tags</a>
+            <ul>
+                {% for tag in collections.alpha_tags %}
+                <li>
+                    <a href="{{ tag.url }}" {% if page.url == tag.url %}class="current"{% endif %}>{{ tag.data.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+    </ul>
 </nav>

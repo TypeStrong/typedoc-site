@@ -1,6 +1,7 @@
 :root {
     --color-text: #333;
-    --color-link: #007bff;
+    --color-link: #9600ff;
+    --color-divider: #ccc;
 }
 
 /** ============== Layout =============== **/
@@ -559,23 +560,25 @@ header nav a:hover {
 }
 .navigation ul {
     list-style: none;
+    padding-left: 1.5em;
+}
+.navigation > ul {
     padding: 0;
     margin: 0;
-    border-bottom: 1px solid #eee;
 }
 .navigation a {
-    display: block;
-    padding: 10px 0;
+    display: inline-block;
+    padding: 0.2em;
     text-decoration: none;
     color: var(--color-text);
-    border-top: 1px solid #eee;
     transition: opacity 0.2s;
 }
 .navigation a.current {
     color: #9600ff;
 }
 .navigation a:hover {
-    opacity: 0.75;
+    color: var(--color-link);
+    text-decoration: underline;
 }
 
 .toc-container {
@@ -602,6 +605,28 @@ header nav a:hover {
 }
 .toc-container a:hover {
     color: var(--color-link);
+    text-decoration: underline;
+}
+
+/** ============== Tags ============== **/
+
+.tag-info {
+    border-left: 1px solid var(--color-divider);
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: auto 1fr;
+    gap: 0 1em;
+}
+.tag-info dt {
+    grid-column-start: 1;
+    font-weight: bold;
+    padding-left: 1em;
+}
+.tag-info dt::after {
+    content: ":";
+}
+.tag-info dd {
+    margin: 0;
 }
 
 /** ============== Plugins ============== **/
