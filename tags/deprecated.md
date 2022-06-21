@@ -11,6 +11,8 @@ title: "@deprecated"
 The `@deprecated` tag indicates that a declaration should not be used and may be removed in a future release.
 TypeDoc will render members marked with `@deprecated` with a line through their name like VSCode.
 
+## Example
+
 ```ts
 /**
  * @deprecated Use {@link NewWidget} instead.

@@ -12,6 +12,8 @@ The `@category` tag can be used to place several related API items under a commo
 listed in a page's index. It may be specified multiple times to list a reflection under several
 headings.
 
+## Example
+
 ```ts
 /**
  * @category General Use
@@ -32,7 +34,7 @@ export function ref(): void;
 ## See Also
 
 -   The [`@group`](/tags/group/) tag
--   The [`categorizeByGroup`](/guides/options/#categorizebygroup) option
--   The [`defaultCategory`](/guides/options/#defaultcategory) option
--   The [`categoryOrder`](/guides/options/#categoryorder) option
--   The [`searchCategoryBoosts`](/guides/options/#searchcategoryboosts) option
+-   The [`--categorizeByGroup`](/guides/options/#categorizebygroup) option
+-   The [`--defaultCategory`](/guides/options/#defaultcategory) option
+-   The [`--categoryOrder`](/guides/options/#categoryorder) option
+-   The [`--searchCategoryBoosts`](/guides/options/#searchcategoryboosts) option

@@ -16,6 +16,8 @@ Unlike the [`@category`](/tags/category/) tag, reflections will be automatically
 a header according to their kind if the `@group` tag is not specified. This tag can be used to
 simulate custom member types.
 
+## Example
+
 ```ts
 export class App extends EventEmitter {
     /**
@@ -40,3 +42,4 @@ export class App extends EventEmitter {
 ## See Also
 
 -   The [`@category`](/tags/category/) tag
+-   The [`--searchGroupBoosts`](/guides/options/#searchgroupboosts) option

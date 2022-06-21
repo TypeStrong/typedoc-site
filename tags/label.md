@@ -1,0 +1,45 @@
+---
+layout: "guide"
+tags: tag
+title: "{@label}"
+---
+
+# {@label}
+
+{% include 'tag-info', kind: 'Inline', tsdoc: 'label' %}
+
+The `@label` tag can be used to give an overloaded signature a name that it can be referenced
+with via a [declaration reference](/guides/declaration-reference/).
+
+## Example
+
+```ts
+/**
+ * {@label BASE}
+ */
+export function round(x: number);
+/**
+ * {@label PRECISION}
+ */
+export function round(x: number, y: number);
+export function round(x: number, y = 0) {
+    // ...
+}
+
+/**
+ * A value rounded with {@link round:PRECISION}
+ */
+export const rounded = round(123.456, 2);
+```
+
+## TSDoc Compatibility
+
+While the `@label` tag is considered a core tag by TSDoc, its usage in the form of declaration references
+supported by TypeDoc is not permitted. TypeDoc extends the declaration reference grammar to support it,
+but users should be aware that this is non-standard. See [declaration references](/guides/declaration-reference/)
+for additional details.
+
+## See Also
+
+-   The [`@link`](/tags/link/) tag
+-   [Declaration references](/guides/declaration-reference/) documentation

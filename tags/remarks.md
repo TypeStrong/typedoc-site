@@ -16,6 +16,8 @@ Themes _may_ use it to separate documentation to be displayed on an summary page
 displayed on a dedicated page. The default theme does not attach special behavior to this tag,
 displaying its contents under a `# Remarks` header like other block tags.
 
+## Example
+
 ```ts
 /**
  * Some docs here
@@ -28,5 +30,5 @@ export function rand(): number;
 
 ## See also
 
--   The [@inheritDoc](/tags/inheritDoc) tag
--   The [@privateRemarks](/tags/privateRemarks/) tag
+-   The [`@inheritDoc`](/tags/inheritDoc) tag
+-   The [`@privateRemarks`](/tags/privateRemarks/) tag

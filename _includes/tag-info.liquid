@@ -5,7 +5,7 @@
     </dd>
     <dt>TSDoc Reference</dt>
     <dd>
-        {% if tsdoc %}<a href="https://tsdoc.org/pages/tags/{{ tsdoc }}/" target="_blank"
+        {% if tsdoc %}<a href="https://tsdoc.org/pages/tags/{{ tsdoc | downcase }}/" target="_blank"
             >@{{ tsdoc }}</a
         >{% else %}TypeDoc specific{% endif %}
     </dd>
