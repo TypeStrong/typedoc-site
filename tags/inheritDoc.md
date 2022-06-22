@@ -10,7 +10,7 @@ title: "{@inheritDoc}"
 
 The `@inheritDoc` tag is used to create a reflection's documentation by copying it from another
 reflection. The tag has the form `{@inheritDoc ref}` where `ref` is a
-[declaration reference](/guides/declaration-reference).
+[declaration reference](/guides/declaration-references/).
 
 ## Copied Elements
 

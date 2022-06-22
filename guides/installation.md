@@ -21,29 +21,30 @@ changes introduced in a new TypeScript version, a given version may support more
 
 | TypeDoc Version | TypeScript Version(s) |
 | --------------- | --------------------- |
+| 0.23            | 4.6 through 4.7       |
 | 0.22            | 4.0 through 4.7       |
 | 0.21            | 4.0 through 4.4       |
 | 0.20            | 3.9 through 4.2       |
 | 0.19            | 3.9 through 4.0       |
 
-## Local installation (preferred)
+## Installation
 
-If you want to use TypeDoc from your command line in a project, use the API in your project code, or TypeDoc in an npm script, a local installation is the recommended approach. First install TypeDoc locally in your project:
+If you want to use TypeDoc from your command line in a project, use the API in your project code, or TypeDoc in an npm script, a local installation is the recommended approach. First install TypeDoc in your project:
 
 ```bash
 $ npm install typedoc --save-dev
 ```
 
-By saving TypeDoc to the project `package.json` file with the previous command,
-anyone who runs `npm install` on the project will have typedoc installed at the specific version required for the project.
+By saving TypeDoc to the project `package.json` file with the previous command, anyone who runs
+`npm install` on the project will have typedoc installed at the specific version required for the project.
 
 The name of TypeDoc's executable is `typedoc`. To verify that it works, you can now invoke the CLI in your project using `npx` (`npx` is a tool bundled with `npm`), passing TypeDoc the `--version` argument:
 
 ```bash
 $ npx typedoc --version
 
-TypeDoc 0.20.0
-Using TypeScript 4.1.2 from /home/gerrit/typedoc/node_modules/typescript/lib
+TypeDoc 0.23.0
+Using TypeScript 4.7.2 from /home/gerrit/typedoc/node_modules/typescript/lib
 ```
 
 ## Command line interface
@@ -66,6 +67,7 @@ When running typedoc from the CLI, you can define options in a json file named `
 
 ```json
 {
+    // Comments are supported
     "entryPoints": ["src/index.ts"],
     "out": "docs"
 }
@@ -122,34 +124,4 @@ async function main() {
 }
 
 main().catch(console.error);
-```
-
-## Third-Party Tools
-
-### Gulp
-
-<dl class="specs">
-    <dt>Name</dt><dd>gulp-typedoc</dd>
-    <dt>Website</dt><dd><a href="https://www.npmjs.org/package/gulp-typedoc/">https://www.npmjs.org/package/gulp-typedoc/</a></dd>
-    <dt>Author</dt><dd><a href="https://github.com/rogierschouten">Rogier Schouten</a></dd>
-</dl>
-
-You can install the plugin with the following command:
-
-```bash
-$ npm install --save-dev gulp-typedoc
-```
-
-Update the following snippet with your configuration and add it to your `gulpfile.js` file:
-
-```js
-var typedoc = require("gulp-typedoc");
-gulp.task("typedoc", function () {
-    return gulp.src(["src/**/*.ts"]).pipe(
-        typedoc({
-            out: "docs/",
-            name: "My project title",
-        })
-    );
-});
 ```

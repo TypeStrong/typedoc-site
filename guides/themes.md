@@ -11,7 +11,7 @@ Themes allow you to change the look and feel of the generated documentation. You
 themes, modify them to suit your needs or create a fully custom theme. The `--theme` parameter allows you to
 select a theme when creating a documentation:
 
-TypeDoc ships with one builtin default theme, additional themes can be added by plugins. For documentation on creating custom themes, see the [custom-themes.md](https://github.com/TypeStrong/typedoc/blob/master/internal-docs/custom-themes.md) document in the TypeDoc repository.
+TypeDoc ships with one builtin default theme, additional themes can be added by plugins. For documentation on creating custom themes, see the [custom-themes.md](https://github.com/TypeStrong/typedoc/blob/master/internal-docs/custom-themes.md) document in the TypeDoc repository, or check out the [theme demo](https://github.com/Gerrit0/typedoc-custom-theme-demo) repository.
 
 You can find more themes on npm under the [typedoc-theme](https://www.npmjs.com/search?q=keywords:typedoc-theme) keyword.
 

@@ -8,7 +8,8 @@ title: "@protected"
 
 {% include 'tag-info', kind: 'Modifier' %}
 
-This tag should generally not be used. The `@protected` tag overrides the visibility of a reflection to be protected.
+This tag should generally not be used and may be removed in a future release.
+The `@protected` tag overrides the visibility of a reflection to be protected.
 
 ## Example
 

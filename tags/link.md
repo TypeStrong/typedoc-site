@@ -62,7 +62,7 @@ export enum Merged {
 TypeDoc implements the **beta** version of declaration references, specified at
 [tsdoc/src/beta/DeclarationReference.grammarkdown](https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/beta/DeclarationReference.grammarkdown).
 TypeDoc does not support parsing the initial declaration reference syntax proposed by TSDoc.
-For more details see the [declaration reference](/guides/declaration-reference/) documentation.
+For more details see the [declaration reference](/guides/declaration-references/) documentation.
 
 ## See Also
 

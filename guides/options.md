@@ -58,7 +58,20 @@ $ typedoc --tsconfig </path/to/tsconfig.json>
 
 Specify a `tsconfig.json` file that options should be read from. If not specified TypeDoc will look for `tsconfig.json` in the current directory and parent directories like `tsc` does.
 
-When TypeDoc loads a `tsconfig.json` file, it also will read TypeDoc options declared under the `typedocOptions` key.
+When TypeDoc loads a `tsconfig.json` file, it also will read TypeDoc options declared under the `typedocOptions` key and look for a `tsdoc.json` file in the same directory to read the supported tags.
+
+### compilerOptions
+
+Used to selectively override compiler options for generating documentation. Values set with this option
+will override options read from `tsconfig.json`.
+
+```json
+{
+    "compilerOptions": {
+        "strictNullChecks": false
+    }
+}
+```
 
 ## Input Options
 
@@ -115,6 +128,22 @@ $ typedoc --excludeExternals
 
 Prevent externally resolved TypeScript files from being documented. Defaults to false.
 
+### excludeNotDocumented
+
+```bash
+$ typedoc --excludeNotDocumented
+```
+
+Removes symbols from the generated documentation which do not have an associated doc comment.
+
+### excludeInternal
+
+```bash
+$ typedoc --excludeInternal
+```
+
+Removes symbols annotated with the `@internal` doc tag. Defaults to true if the stripInternal compiler option is set to true, otherwise defaults to false.
+
 ### excludePrivate
 
 ```bash
@@ -130,14 +159,6 @@ $ typedoc --excludeProtected
 ```
 
 Removes protected class members from the generated documentation. Defaults to false.
-
-### excludeInternal
-
-```bash
-$ typedoc --excludeInternal
-```
-
-Removes symbols annotated with the `@internal` doc tag. Defaults to true if the stripInternal compiler option is set to true, otherwise defaults to false.
 
 ### media
 
@@ -183,7 +204,7 @@ An example of the JSON output from running TypeDoc on itself can be seen at [/ap
 $ typedoc --json out.json --pretty
 ```
 
-Tells TypeDoc to pretty-format the JSON output.
+Tells TypeDoc to pretty-format the JSON output. Defaults to true.
 
 ### emit
 
@@ -193,15 +214,13 @@ $ typedoc --emit none
 
 Instructs TypeDoc to write compiled output files as `tsc` does.
 
-| Value   | Behavior                                                                |
-| ------- | ----------------------------------------------------------------------- |
-| `docs`  | Emit documentation, but not JS (default).                               |
-| `both`  | Emit both documentation and JS.                                         |
-| `none`  | Emit nothing, just convert and run validation.                          |
-| `true`  | Alias for `both`, for backwards compatibility. Will be removed in 0.23. |
-| `false` | Alias for `docs`, for backwards compatibility. Will be removed in 0.23. |
+| Value  | Behavior                                       |
+| ------ | ---------------------------------------------- |
+| `docs` | Emit documentation, but not JS (default).      |
+| `both` | Emit both documentation and JS.                |
+| `none` | Emit nothing, just convert and run validation. |
 
-_**Note:** If you have your TypeScript configured with `declaration: true` (through the `tsconfig.json`), the Typedoc emit `both` option will also generate type declaration files. This is because Typedoc falls back to typescript to generate the JS, this allows us to set the normal typescript options for type declarations and have Typedoc handle generating the `docs`, `js`, and `types` for us, all at once._
+_**Note:** If you have your TypeScript configured with `declaration: true` (through `tsconfig.json`), the Typedoc emit `both` option will also generate type declaration files. This is because Typedoc falls back to TypeScript to generate the JS, this allows us to set the normal TypeScript options for type declarations and have Typedoc handle generating the `docs`, `js`, and `types` for us, all at once._
 
 ### theme
 
@@ -209,7 +228,7 @@ _**Note:** If you have your TypeScript configured with `declaration: true` (thro
 $ typedoc --theme default
 ```
 
-Specify the theme that should be used. TypeDoc 0.22 contains architectural changes which breaks themes developed for TypeDoc 0.21 and earlier.
+Specify the theme name that should be used. TypeDoc 0.22 contains architectural changes which breaks themes developed for TypeDoc 0.21 and earlier.
 
 ### lightHighlightTheme / darkHighlightTheme
 
@@ -285,72 +304,13 @@ $ typedoc --readme <path/to/readme|none>
 
 Path to the readme file that should be displayed on the index page. Pass none to disable the index page and start the documentation on the globals page.
 
-### categorizeByGroup
+### cname
 
 ```bash
-$ typedoc --categorizeByGroup false
+$ typedoc --cname typedoc.org
 ```
 
-This flag categorizes reflections by group (within properties, methods, etc).
-To allow methods and properties of the same category to be grouped together, set this flag to false.
-Defaults to true.
-
-### defaultCategory
-
-```bash
-$ typedoc --defaultCategory "Category Name"
-```
-
-Sets the name for the default category which is used when only some elements of the page are categorized.
-Defaults to 'Other'
-
-### categoryOrder
-
-command line:
-
-```bash
-$ typedoc --categoryOrder "Category Name" --categoryOrder "Other Category" --categoryOrder "*"
-```
-
-typedoc.json:
-
-```json
-{
-    "categoryOrder": ["Category Name", "Other Category", "*"]
-}
-```
-
-Array option which allows overriding the order categories display in. A string of `*` indicates where categories that are not in the list should appear.
-
-By default, categories are displayed alphabetically. If unknown categories are found, they will be listed at the end by default.
-
-### sort
-
-```bash
-$ typedoc --sort static-first --sort alphabetical
-```
-
-Specifies the sort order for members. Sorting strategies will be applied in order.
-If an earlier sorting strategy determines the relative ordering of two reflections, later
-ordering strategies will not be applied.
-
-For example, with the setting `["static-first", "visibility"]`, TypeDoc will first compare two
-reflections by if they are static or not, and if that comparison returns equal, will check the
-visibility of each reflection. On the other hand, if `["visibility", "static-first"]` is specified,
-TypeDoc would sort all public properties first and then sort each group to put static properties first.
-This means that `["source-order", "static-first"]` is equivalent to `["source-order"]` since ordering
-by position in source will always produce a non-equal comparison.
-
-The available sorting strategies are:
-
--   `source-order` (sorts by file, then by position in file)
--   `alphabetical`
--   `enum-value-ascending` (only applies to children of an enum)
--   `enum-value-descending` (only applies to children of an enum)
--   `static-first`
--   `instance-first`
--   `visibility` (public, then protected, then private)
--   `required-first`
+Create a CNAME file in the output directory with the specified text.
 
 ### gitRevision
 
@@ -388,14 +348,6 @@ $ typedoc --gaID
 
 Set the Google Analytics tracking ID and activate tracking code.
 
-### gaSite
-
-```bash
-$ typedoc --gaSite <site>
-```
-
-Set the site name for Google Analytics. Defaults to `auto`.
-
 ### hideGenerator
 
 ```bash
@@ -411,6 +363,169 @@ $ typedoc --cleanOutputDir false
 ```
 
 Can be used to prevent TypeDoc from cleaning the output directory specified with `--out`.
+
+## Comment Options
+
+## commentStyle
+
+```bash
+$ typedoc --commentStyle block
+```
+
+Determines what comment types TypeDoc will use. Note: Writing non-JSDoc comments will cause poorer
+intellisense in VSCode and is therefore generally not recommended.
+
+| Value           | Behavior                               |
+| --------------- | -------------------------------------- |
+| jsdoc (default) | Use block comments starting with `/**` |
+| block           | Use all block comments                 |
+| line            | Use `//` comments                      |
+| all             | Use both block and line comments       |
+
+## blockTags
+
+```json
+// typedoc.json
+{
+    "blockTags": ["@param", "@returns"]
+}
+```
+
+Override TypeDoc's supported block tags, emit warnings for any tags not listed here.
+This option will be set by `tsdoc.json` if present.
+
+## inlineTags
+
+```json
+// typedoc.json
+{
+    "inlineTags": ["@link"]
+}
+```
+
+Override TypeDoc's supported inline tags, emit warnings for any tags not listed here.
+This option will be set by `tsdoc.json` if present.
+
+## modifierTags
+
+```json
+// typedoc.json
+{
+    "modifierTags": ["@hidden", "@packageDocumentation"]
+}
+```
+
+Override TypeDoc's supported modifier tags, emit warnings for any tags not listed here.
+This option will be set by `tsdoc.json` if present.
+
+## Organization Options
+
+### categorizeByGroup
+
+```bash
+$ typedoc --categorizeByGroup false
+```
+
+This flag categorizes reflections by group (within properties, methods, etc).
+To allow methods and properties of the same category to be grouped together, set this flag to false.
+Defaults to true.
+
+### defaultCategory
+
+```bash
+$ typedoc --defaultCategory "Category Name"
+```
+
+Sets the name for the default category which is used when only some elements of the page are categorized.
+Defaults to 'Other'
+
+### categoryOrder
+
+```json
+// typedoc.json
+{
+    "categoryOrder": ["Category Name", "Other Category", "*"]
+}
+```
+
+Array option which allows overriding the order categories display in. A string of `*` indicates where categories that are not in the list should appear.
+
+By default, categories are displayed alphabetically. If unknown categories are found, they will be listed at the end by default.
+
+### sort
+
+```bash
+$ typedoc --sort static-first --sort alphabetical
+```
+
+Specifies the sort order for members. Sorting strategies will be applied in order.
+If an earlier sorting strategy determines the relative ordering of two reflections, later
+ordering strategies will not be applied.
+
+For example, with the setting `["static-first", "visibility"]`, TypeDoc will first compare two
+reflections by if they are static or not, and if that comparison returns equal, will check the
+visibility of each reflection. On the other hand, if `["visibility", "static-first"]` is specified,
+TypeDoc would sort all public properties first and then sort each group to put static properties first.
+This means that `["source-order", "static-first"]` is equivalent to `["source-order"]` since ordering
+by position in source will always produce a non-equal comparison.
+
+The available sorting strategies are:
+
+-   `source-order` (sorts by file, then by position in file)
+-   `alphabetical`
+-   `enum-value-ascending` (only applies to children of an enum)
+-   `enum-value-descending` (only applies to children of an enum)
+-   `static-first`
+-   `instance-first`
+-   `visibility` (public, then protected, then private)
+-   `required-first`
+
+### visibilityFilters
+
+```json
+// typedoc.json
+{
+    "visibilityFilters": {
+        "protected": false,
+        "private": false,
+        "inherited": true,
+        "external": false,
+        "@alpha": false,
+        "@beta": false
+    }
+}
+```
+
+Specifies the available filters when viewing a page. The four `protected`, `private`, `inherited`, and
+`external` options are all shown by default. Their default value may be set, or they may be omitted
+from this option to disable that filter. Further, modifier tags may be specified to introduce a custom
+sort option based on a tag.
+
+### searchCategoryBoosts
+
+```json
+// typedoc.json
+{
+    "searchCategoryBoosts": {
+        "Common Items": 1.5
+    }
+}
+```
+
+Configure the search to increase the relevance of items in a given category.
+
+### searchGroupBoosts
+
+```json
+// typedoc.json
+{
+    "searchCategoryBoosts": {
+        "Classes": 1.5
+    }
+}
+```
+
+Configure the search to increase the relevance of items in a given group.
 
 ## General Options
 
@@ -456,7 +571,7 @@ Prints TypeDoc's version.
 $ typedoc --showConfig
 ```
 
-Print TypeDoc's config and exit. Useful for debugging what options have been loaded.
+Print TypeDoc's config and exit. Useful for debugging what options have been set.
 
 ### plugin
 
@@ -497,6 +612,25 @@ Specifies the log level to be printed to the console. Defaults to `Info`. The av
 
 Options that control how TypeDoc validates your documentation
 
+### validation
+
+```bash
+$ typedoc --validation.invalidLink
+$ typedoc --validation
+```
+
+```json
+{
+    "validation": {
+        "notExported": true,
+        "invalidLink": true,
+        "notDocumented": false
+    }
+}
+```
+
+Specifies validation steps TypeDoc should perform on your generated documentation.
+
 ### treatWarningsAsErrors
 
 ```bash
@@ -504,14 +638,6 @@ $ typedoc --treatWarningsAsErrors
 ```
 
 Causes TypeDoc to treat any reported warnings as fatal errors that can prevent documentation from being generated.
-
-### listInvalidSymbolLinks
-
-```bash
-$ typedoc --listInvalidSymbolLinks
-```
-
-Tells TypeDoc to report any `{@link symbol}` links that are broken.
 
 ### intentionallyNotExported
 
@@ -523,5 +649,17 @@ typedoc.json:
 ```json
 {
     "intentionallyNotExported": ["InternalClass", "src/other.ts:OtherInternal"]
+}
+```
+
+### requiredToBeDocumented
+
+Set the list of reflection types that must be documented, used by `validation.notDocumented`
+
+typedoc.json:
+
+```json
+{
+    "requiredToBeDocumented": ["Enum", "Class"]
 }
 ```

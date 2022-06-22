@@ -8,7 +8,8 @@ title: "@private"
 
 {% include 'tag-info', kind: 'Modifier' %}
 
-This tag should generally not be used. The `@private` tag overrides the visibility of a reflection to be private.
+This tag should generally not be used and may be removed in a future release.
+The `@private` tag overrides the visibility of a reflection to be private.
 
 ## Example
 

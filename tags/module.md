@@ -17,6 +17,7 @@ a comment as referring to the file, but cannot be used to rename the module.
 ## Example
 
 ```ts
+// file1.ts
 /**
  * This is the doc comment for file1.ts
  *
@@ -24,6 +25,13 @@ a comment as referring to the file, but cannot be used to rename the module.
  * @module my-module
  * Specify this is a module comment without renaming it:
  * @module
+ */
+import * as lib from "lib";
+
+// file2.ts
+/**
+ * This is *not* a doc comment for the file, it is a doc comment for the import.
+ * Include the `@module` or `@packageDocumentation` tag to mark it as a file comment.
  */
 import * as lib from "lib";
 ```
