@@ -64,6 +64,10 @@ TypeDoc implements the **beta** version of declaration references, specified at
 TypeDoc does not support parsing the initial declaration reference syntax proposed by TSDoc.
 For more details see the [declaration reference](/guides/declaration-references/) documentation.
 
+## JSDoc Compatibility
+
+TypeDoc will also recognize the `@linkplain` and `@linkcode` JSDoc tags and resolve them with the same method as other links.
+
 ## See Also
 
 -   The [`@template`](/tags/template/) tag
