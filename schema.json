@@ -4,13 +4,25 @@
 	"type": "object",
 	"properties": {
 		"options": {
-			"description": "Specify a json option file that should be loaded. If not specified TypeDoc will look for 'typedoc.json' in the current directory."
+			"description": "Specify a json option file that should be loaded. If not specified TypeDoc will look for 'typedoc.json' in the current directory.",
+			"type": "string"
 		},
 		"tsconfig": {
-			"description": "Specify a TypeScript config file that should be loaded. If not specified TypeDoc will look for 'tsconfig.json' in the current directory."
+			"description": "Specify a TypeScript config file that should be loaded. If not specified TypeDoc will look for 'tsconfig.json' in the current directory.",
+			"type": "string"
+		},
+		"compilerOptions": {
+			"description": "Selectively override the TypeScript compiler options used by TypeDoc.",
+			"type": "object",
+			"markedOptions": "object"
 		},
 		"entryPoints": {
-			"description": "The entry points of your documentation."
+			"description": "The entry points of your documentation.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": []
 		},
 		"entryPointStrategy": {
 			"description": "The strategy to be used to convert entry points into documentation modules.",
@@ -22,10 +34,22 @@
 			"default": "Resolve"
 		},
 		"exclude": {
-			"description": "Define patterns to be excluded when expanding a directory that was specified as an entry point."
+			"description": "Define patterns to be excluded when expanding a directory that was specified as an entry point.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": []
 		},
 		"externalPattern": {
-			"description": "Define patterns for files that should be considered being external."
+			"description": "Define patterns for files that should be considered being external.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [
+				"**/node_modules/**"
+			]
 		},
 		"excludeExternals": {
 			"description": "Prevent externally resolved symbols from being documented.",
@@ -52,57 +76,42 @@
 			"type": "boolean",
 			"default": false
 		},
-		"searchCategoryBoosts": {
-			"description": "Configure search to give a relevance boost to selected categories"
-		},
-		"searchGroupBoosts": {
-			"description": "Configure search to give a relevance boost to selected kinds (eg \"class\")"
-		},
-		"disableSources": {
-			"description": "Disable setting the source of a reflection when documenting it.",
-			"type": "boolean",
-			"default": false
+		"media": {
+			"description": "Specify the location with media files that should be copied to the output directory.",
+			"type": "string",
+			"default": ""
 		},
 		"includes": {
-			"description": "Specify the location to look for included documents (use [[include:FILENAME]] in comments)."
-		},
-		"media": {
-			"description": "Specify the location with media files that should be copied to the output directory."
-		},
-		"watch": {
-			"description": "Watch files for changes and rebuild docs on change.",
-			"type": "boolean",
-			"default": false
-		},
-		"preserveWatchOutput": {
-			"description": "If set, TypeDoc will not clear the screen between compilation runs.",
-			"type": "boolean",
-			"default": false
-		},
-		"emit": {
-			"description": "Specify what TypeDoc should emit, 'docs', 'both', or 'none'.",
-			"enum": [
-				"true",
-				"false",
-				"both",
-				"docs",
-				"none"
-			],
-			"default": "docs"
+			"description": "Specify the location to look for included documents (use [[include:FILENAME]] in comments).",
+			"type": "string",
+			"default": ""
 		},
 		"out": {
-			"description": "Specify the location the documentation should be written to."
+			"description": "Specify the location the documentation should be written to.",
+			"type": "string",
+			"default": ""
 		},
 		"json": {
-			"description": "Specify the location and filename a JSON file describing the project is written to."
+			"description": "Specify the location and filename a JSON file describing the project is written to.",
+			"type": "string",
+			"default": ""
 		},
 		"pretty": {
 			"description": "Specify whether the output JSON should be formatted with tabs.",
 			"type": "boolean",
 			"default": true
 		},
+		"emit": {
+			"description": "Specify what TypeDoc should emit, 'docs', 'both', or 'none'.",
+			"enum": [
+				"both",
+				"docs",
+				"none"
+			],
+			"default": "docs"
+		},
 		"theme": {
-			"description": "Specify the path to the theme that should be used, or 'default' or 'minimal' to use built-in themes. Note: Not resolved according to the config file location, always resolved according to cwd.",
+			"description": "Specify the theme name to render the documentation with",
 			"type": "string",
 			"default": "default"
 		},
@@ -117,7 +126,12 @@
 			"default": "dark-plus"
 		},
 		"customCss": {
-			"description": "Path to a custom CSS file to for the theme to import."
+			"description": "Path to a custom CSS file to for the theme to import.",
+			"type": "string",
+			"default": ""
+		},
+		"markedOptions": {
+			"description": "Specify the options passed to Marked, the Markdown parser used by TypeDoc."
 		},
 		"name": {
 			"description": "Set the name of the project that will be used in the header of the template.",
@@ -129,16 +143,144 @@
 			"type": "boolean",
 			"default": false
 		},
+		"disableSources": {
+			"description": "Disable setting the source of a reflection when documenting it.",
+			"type": "boolean",
+			"default": false
+		},
 		"excludeTags": {
-			"description": "Remove the listed tags from doc comments.",
+			"description": "Remove the listed block/modifier tags from doc comments.",
 			"type": "array",
 			"items": {
 				"type": "string"
 			},
-			"default": []
+			"default": [
+				"@override",
+				"@virtual",
+				"@privateRemarks"
+			]
 		},
 		"readme": {
-			"description": "Path to the readme file that should be displayed on the index page. Pass `none` to disable the index page and start the documentation on the globals page."
+			"description": "Path to the readme file that should be displayed on the index page. Pass `none` to disable the index page and start the documentation on the globals page.",
+			"type": "string",
+			"default": ""
+		},
+		"cname": {
+			"description": "Set the CNAME file text, it's useful for custom domains on GitHub Pages.",
+			"type": "string",
+			"default": ""
+		},
+		"gitRevision": {
+			"description": "Use specified revision instead of the last revision for linking to GitHub/Bitbucket source files.",
+			"type": "string",
+			"default": ""
+		},
+		"gitRemote": {
+			"description": "Use the specified remote for linking to GitHub/Bitbucket source files.",
+			"type": "string",
+			"default": "origin"
+		},
+		"githubPages": {
+			"description": "Generate a .nojekyll file to prevent 404 errors in GitHub Pages. Defaults to `true`.",
+			"type": "boolean",
+			"default": true
+		},
+		"gaID": {
+			"description": "Set the Google Analytics tracking ID and activate tracking code.",
+			"type": "string",
+			"default": ""
+		},
+		"hideGenerator": {
+			"description": "Do not print the TypeDoc link at the end of the page.",
+			"type": "boolean",
+			"default": false
+		},
+		"cleanOutputDir": {
+			"description": "If set, TypeDoc will remove the output directory before writing output.",
+			"type": "boolean",
+			"default": true
+		},
+		"commentStyle": {
+			"description": "Determines how TypeDoc searches for comments.",
+			"enum": [
+				"JSDoc",
+				"Block",
+				"Line",
+				"All"
+			],
+			"default": "JSDoc"
+		},
+		"blockTags": {
+			"description": "Block tags which TypeDoc should recognize when parsing comments.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [
+				"@deprecated",
+				"@param",
+				"@remarks",
+				"@returns",
+				"@throws",
+				"@privateRemarks",
+				"@defaultValue",
+				"@typeParam",
+				"@module",
+				"@inheritDoc",
+				"@group",
+				"@category",
+				"@template",
+				"@type",
+				"@typedef",
+				"@callback",
+				"@prop",
+				"@property"
+			]
+		},
+		"inlineTags": {
+			"description": "Inline tags which TypeDoc should recognize when parsing comments.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [
+				"@link",
+				"@inheritDoc",
+				"@label",
+				"@linkcode",
+				"@linkplain"
+			]
+		},
+		"modifierTags": {
+			"description": "Modifier tags which TypeDoc should recognize when parsing comments.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": [
+				"@public",
+				"@private",
+				"@protected",
+				"@internal",
+				"@readonly",
+				"@packageDocumentation",
+				"@eventProperty",
+				"@alpha",
+				"@beta",
+				"@experimental",
+				"@sealed",
+				"@override",
+				"@virtual",
+				"@hidden",
+				"@ignore",
+				"@enum",
+				"@event"
+			]
+		},
+		"categorizeByGroup": {
+			"description": "Specify whether categorization will be done at the group level.",
+			"type": "boolean",
+			"default": true
 		},
 		"defaultCategory": {
 			"description": "Specify the default category for reflections without a category.",
@@ -153,16 +295,6 @@
 			},
 			"default": []
 		},
-		"categorizeByGroup": {
-			"description": "Specify whether categorization will be done at the group level.",
-			"type": "boolean",
-			"default": true
-		},
-		"cname": {
-			"description": "Set the CNAME file text, it's useful for custom domains on GitHub Pages.",
-			"type": "string",
-			"default": ""
-		},
 		"sort": {
 			"description": "Specify the sort strategy for documented values.",
 			"type": "array",
@@ -175,45 +307,53 @@
 				"alphabetical"
 			]
 		},
-		"gitRevision": {
-			"description": "Use specified revision instead of the last revision for linking to GitHub/Bitbucket source files.",
-			"type": "string",
-			"default": ""
+		"visibilityFilters": {
+			"description": "Specify the default visibility for builtin filters and additional filters according to modifier tags.",
+			"default": {
+				"protected": false,
+				"private": false,
+				"inherited": true,
+				"external": false
+			},
+			"type": "object",
+			"properties": {
+				"protected": {
+					"type": "boolean"
+				},
+				"private": {
+					"type": "boolean"
+				},
+				"inherited": {
+					"type": "boolean"
+				},
+				"external": {
+					"type": "boolean"
+				}
+			},
+			"patternProperties": {
+				"^@": {
+					"type": "boolean"
+				}
+			},
+			"additionalProperties": false
 		},
-		"gitRemote": {
-			"description": "Use the specified remote for linking to GitHub/Bitbucket source files.",
-			"type": "string",
-			"default": "origin"
+		"searchCategoryBoosts": {
+			"description": "Configure search to give a relevance boost to selected categories",
+			"default": {}
 		},
-		"gaID": {
-			"description": "Set the Google Analytics tracking ID and activate tracking code.",
-			"type": "string",
-			"default": ""
+		"searchGroupBoosts": {
+			"description": "Configure search to give a relevance boost to selected kinds (eg \"class\")",
+			"default": {}
 		},
-		"gaSite": {
-			"description": "Set the site name for Google Analytics. Defaults to `auto`.",
-			"type": "string",
-			"default": "auto"
-		},
-		"githubPages": {
-			"description": "Generate a .nojekyll file to prevent 404 errors in GitHub Pages. Defaults to `true`.",
-			"type": "boolean",
-			"default": true
-		},
-		"hideGenerator": {
-			"description": "Do not print the TypeDoc link at the end of the page.",
+		"watch": {
+			"description": "Watch files for changes and rebuild docs on change.",
 			"type": "boolean",
 			"default": false
 		},
-		"hideLegend": {
-			"description": "Do not print the Legend for icons at the end of the page.",
+		"preserveWatchOutput": {
+			"description": "If set, TypeDoc will not clear the screen between compilation runs.",
 			"type": "boolean",
 			"default": false
-		},
-		"cleanOutputDir": {
-			"description": "If set, TypeDoc will remove the output directory before writing output.",
-			"type": "boolean",
-			"default": true
 		},
 		"showConfig": {
 			"description": "Print the resolved configuration and exit.",
@@ -221,15 +361,20 @@
 			"default": false
 		},
 		"plugin": {
-			"description": "Specify the npm plugins that should be loaded. Omit to load all installed plugins, set to 'none' to load no plugins."
+			"description": "Specify the npm plugins that should be loaded. Omit to load all installed plugins, set to 'none' to load no plugins.",
+			"type": "array",
+			"items": {
+				"type": "string"
+			},
+			"default": []
 		},
 		"logger": {
 			"description": "Specify the logger that should be used, 'none' or 'console'.",
+			"default": "console",
 			"enum": [
 				"console",
 				"none"
-			],
-			"default": "console"
+			]
 		},
 		"logLevel": {
 			"description": "Specify what level of logging should be used.",
@@ -241,19 +386,8 @@
 			],
 			"default": "Info"
 		},
-		"markedOptions": {
-			"description": "Specify the options passed to Marked, the Markdown parser used by TypeDoc."
-		},
-		"compilerOptions": {
-			"description": "Selectively override the TypeScript compiler options used by TypeDoc."
-		},
 		"treatWarningsAsErrors": {
 			"description": "If set, warnings will be treated as errors.",
-			"type": "boolean",
-			"default": false
-		},
-		"listInvalidSymbolLinks": {
-			"description": "Emit a list of broken symbol {@link navigation} links after documentation generation, DEPRECATED, prefer validation.invalidLink instead.",
 			"type": "boolean",
 			"default": false
 		},
@@ -305,11 +439,12 @@
 					},
 					"additionalProperties": false
 				}
-			],
-			"default": {
-				"notExported": true,
-				"invalidLink": false,
-				"notDocumented": false
+			]
+		},
+		"extends": {
+			"type": "array",
+			"items": {
+				"type": "string"
 			}
 		}
 	}
