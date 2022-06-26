@@ -366,7 +366,7 @@ Can be used to prevent TypeDoc from cleaning the output directory specified with
 
 ## Comment Options
 
-## commentStyle
+### commentStyle
 
 ```bash
 $ typedoc --commentStyle block
@@ -382,7 +382,7 @@ intellisense in VSCode and is therefore generally not recommended.
 | line            | Use `//` comments                      |
 | all             | Use both block and line comments       |
 
-## blockTags
+### blockTags
 
 ```json
 // typedoc.json
@@ -394,7 +394,7 @@ intellisense in VSCode and is therefore generally not recommended.
 Override TypeDoc's supported block tags, emit warnings for any tags not listed here.
 This option will be set by `tsdoc.json` if present.
 
-## inlineTags
+### inlineTags
 
 ```json
 // typedoc.json
@@ -406,7 +406,7 @@ This option will be set by `tsdoc.json` if present.
 Override TypeDoc's supported inline tags, emit warnings for any tags not listed here.
 This option will be set by `tsdoc.json` if present.
 
-## modifierTags
+### modifierTags
 
 ```json
 // typedoc.json
