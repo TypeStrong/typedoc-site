@@ -416,7 +416,7 @@ generates HTML files that start with <code>_</code> which are ignored by Jekyll.
 <pre class="language-bash"><code class="language-bash">$ typedoc --cleanOutputDir <span class="token boolean">false</span></code></pre>
 <p>Can be used to prevent TypeDoc from cleaning the output directory specified with <code>--out</code>.</p>
 <h2 id="comment-options" tabindex="-1">Comment Options</h2>
-<h2 id="commentstyle" tabindex="-1">commentStyle</h2>
+<h3 id="commentstyle" tabindex="-1">commentStyle</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --commentStyle block</code></pre>
 <p>Determines what comment types TypeDoc will use. Note: Writing non-JSDoc comments will cause poorer
 intellisense in VSCode and is therefore generally not recommended.</p>
@@ -446,15 +446,15 @@ intellisense in VSCode and is therefore generally not recommended.</p>
 </tr>
 </tbody>
 </table>
-<h2 id="blocktags" tabindex="-1">blockTags</h2>
+<h3 id="blocktags" tabindex="-1">blockTags</h3>
 <pre class="language-json"><code class="language-json"><span class="token comment">// typedoc.json</span><br><span class="token punctuation">{</span><br>    <span class="token property">"blockTags"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"@param"</span><span class="token punctuation">,</span> <span class="token string">"@returns"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
 <p>Override TypeDoc's supported block tags, emit warnings for any tags not listed here.
 This option will be set by <code>tsdoc.json</code> if present.</p>
-<h2 id="inlinetags" tabindex="-1">inlineTags</h2>
+<h3 id="inlinetags" tabindex="-1">inlineTags</h3>
 <pre class="language-json"><code class="language-json"><span class="token comment">// typedoc.json</span><br><span class="token punctuation">{</span><br>    <span class="token property">"inlineTags"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"@link"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
 <p>Override TypeDoc's supported inline tags, emit warnings for any tags not listed here.
 This option will be set by <code>tsdoc.json</code> if present.</p>
-<h2 id="modifiertags" tabindex="-1">modifierTags</h2>
+<h3 id="modifiertags" tabindex="-1">modifierTags</h3>
 <pre class="language-json"><code class="language-json"><span class="token comment">// typedoc.json</span><br><span class="token punctuation">{</span><br>    <span class="token property">"modifierTags"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"@hidden"</span><span class="token punctuation">,</span> <span class="token string">"@packageDocumentation"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
 <p>Override TypeDoc's supported modifier tags, emit warnings for any tags not listed here.
 This option will be set by <code>tsdoc.json</code> if present.</p>
