@@ -9,7 +9,7 @@ title: "{@label}"
 {% include 'tag-info', kind: 'Inline', tsdoc: 'label' %}
 
 The `@label` tag can be used to give an overloaded signature a name that it can be referenced
-with via a [declaration reference](/guides/declaration-reference/).
+with via a [declaration reference](/guides/declaration-references/).
 
 The identifier specified by the `@label` tag should contain only `A-Z`, `0-9`, and `_`, and should
 not start with a number. If the identifier does not match this pattern, TypeDoc will be unable to
@@ -40,10 +40,10 @@ export const rounded = round(123.456, 2);
 
 While the `@label` tag is considered a core tag by TSDoc, its usage in the form of declaration references
 supported by TypeDoc is not permitted. TypeDoc extends the declaration reference grammar to support it,
-but users should be aware that this is non-standard. See [declaration references](/guides/declaration-reference/)
+but users should be aware that this is non-standard. See [declaration references](/guides/declaration-references/)
 for additional details.
 
 ## See Also
 
 -   The [`@link`](/tags/link/) tag
--   [Declaration references](/guides/declaration-reference/) documentation
+-   [Declaration references](/guides/declaration-references/) documentation

@@ -6,7 +6,7 @@ title: "@see"
 
 # @see
 
-{% include 'tag-info', kind: 'Modifier', tsdoc: 'see' %}
+{% include 'tag-info', kind: 'Block', tsdoc: 'see' %}
 
 The `@see` tag can be used to create a list of references for other resources related to this export.
 
