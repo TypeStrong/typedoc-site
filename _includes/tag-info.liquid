@@ -1,0 +1,12 @@
+<dl class="tag-info">
+    <dt>Tag Kind</dt>
+    <dd>
+        <a href="/guides/tags/#{{ kind | downcase }}-tags">{{ kind }}</a>
+    </dd>
+    <dt>TSDoc Reference</dt>
+    <dd>
+        {% if tsdoc %}<a href="https://tsdoc.org/pages/tags/{{ tsdoc | downcase }}/" target="_blank"
+            >@{{ tsdoc }}</a
+        >{% else %}TypeDoc specific{% endif %}
+    </dd>
+</dl>

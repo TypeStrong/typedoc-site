@@ -2,10 +2,14 @@
 layout: "guide"
 tags: guide
 title: "Link Resolution"
-menuOrder: 4
+menuOrder: 98
 ---
 
-# Link Resolution
+# Link Resolution (Deprecated)
+
+This page describes the legacy link resolution strategy used by TypeDoc 0.22 and earlier.
+For the strategy used by TypeDoc 0.23, see the [Declaration References](/guides/declaration-references/)
+documentation.
 
 When a link is specified with `{@link Apple.seeds}` or
 `{@link Apple.seeds | link text}`, TypeDoc takes several steps to determine
@@ -28,14 +32,14 @@ This can be most easily understood with an example.
 
 /** Apple class comment */
 class Apple {
-  /** seeds property comment */
-  seeds = 16;
+    /** seeds property comment */
+    seeds = 16;
 }
 
 /** Orange class comment */
 class Orange {
-  /** slices property comment */
-  slices = 8;
+    /** slices property comment */
+    slices = 8;
 }
 ```
 
@@ -77,18 +81,18 @@ TypeDoc will use the following process to resolve the link:
 1. Check `slices` members for elements named `Apple`, find none.
 1. Check `Orange` members for elements named `Apple`, find none.
 1. Check `"index"` members for elements named `Apple`, find `Apple`.
-   1. Recurse, looking for `["seeds"]`, starting from `Apple`
-   1. Check `Apple` members for elements named `seeds`, find `Apple.seeds`
-   1. Since this was the last element of the array, return `Apple.seeds`
+    1. Recurse, looking for `["seeds"]`, starting from `Apple`
+    1. Check `Apple` members for elements named `seeds`, find `Apple.seeds`
+    1. Since this was the last element of the array, return `Apple.seeds`
 
 If `{@link Apple.seeds}` was included in the doc comment for `Apple`, TypeDoc
 would take the following steps:
 
 1. Check `Apple` members for elements named `Apple`, find none.
 1. Check `"index"` members for `Apple`, find the `Apple` class.
-   1. Recurse, looking for `["seeds"]`, starting from `Apple`.
-   1. Check `Apple` members for elements named `seeds`, find `Apple.seeds`
-   1. Since this was the last element of the array, return `Apple.seeds`
+    1. Recurse, looking for `["seeds"]`, starting from `Apple`.
+    1. Check `Apple` members for elements named `seeds`, find `Apple.seeds`
+    1. Since this was the last element of the array, return `Apple.seeds`
 
 Note that due to step four in the algorithm presented above, it is possible
 for the `seeds` property on `Apple` to link directly to `slices` on `Orange`
