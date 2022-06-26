@@ -18,6 +18,8 @@ In 0.23, if resolving a link with declaration references fails, TypeDoc will att
 the [legacy method](/guides/declaration-references/#legacy-behavior) used in 0.22 and earlier.
 This behavior will be removed in 0.24.
 
+External hyperlinks should be constructed with markdown `[text](link)` style links, not with the `@link` tag.
+
 ## Example
 
 ```ts

@@ -161,7 +161,7 @@ async function main() {
 
     while (checkVersions.length < 3) {
         const currentVersion = semver.parse(typedocVersions[index])!;
-        if (currentVersion.minor !== lastMinor) {
+        if (currentVersion.minor < lastMinor) {
             checkVersions.push(typedocVersions[index]);
             lastMinor = currentVersion.minor;
         }

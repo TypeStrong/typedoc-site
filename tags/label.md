@@ -11,6 +11,10 @@ title: "{@label}"
 The `@label` tag can be used to give an overloaded signature a name that it can be referenced
 with via a [declaration reference](/guides/declaration-reference/).
 
+The identifier specified by the `@label` tag should contain only `A-Z`, `0-9`, and `_`, and should
+not start with a number. If the identifier does not match this pattern, TypeDoc will be unable to
+use it when referencing via a declaration reference.
+
 ## Example
 
 ```ts

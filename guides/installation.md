@@ -67,7 +67,7 @@ When running typedoc from the CLI, you can define options in a json file named `
 
 ```json
 {
-    // Comments are supported
+    // Comments are supported, like tsconfig.json
     "entryPoints": ["src/index.ts"],
     "out": "docs"
 }
