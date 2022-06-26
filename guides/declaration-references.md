@@ -42,7 +42,7 @@ The deliminator is used to determine how to navigate the project tree.
 <!-- prettier-ignore -->
 | Deliminator | Behavior |
 | --- | --- |
-| `.` | The most general purpose deliminator. It will first try to resolve exports and static class properties, but will also resolve members if no export is found. |
+| `.` | The most general purpose deliminator. It will first try to resolve exports and static class properties, but will also resolve members if no export is found for improved compatibility with TypeScript's resolution. |
 | `#` | Indicates that the next component is a "member", including class instance properties, interface members, and enum members. |
 | `~` | Indicates that the next component is an export of a namespace/module. |
 
