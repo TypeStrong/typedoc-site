@@ -183,8 +183,8 @@ async function main() {
         Object.assign(plug, { peer: themeVersions[i] })
     );
 
-    // v0.22 - this needs to be updated.
-    checkVersions.length = Math.min(checkVersions.length, 1);
+    // v0.23 - this needs to be updated.
+    checkVersions.length = Math.min(checkVersions.length, 2);
     await createInclude(themesWithVersions, checkVersions, "theme_content");
     console.log("Finished getting themes");
 
