@@ -153,6 +153,8 @@ The keywords recognized by TypeDoc are:
 -   `new` - Refers to the constructor of a class or type.
 -   `index` - Refers to a reflection's index signatures.
 -   `complex` - Refers to reflections which represent some type.
+-   `getter` - (TypeDoc specific, 0.23.3+) Refers to the get signature of an accessor.
+-   `setter` - (TypeDoc specific, 0.23.3+) Refers to the set signature of an accessor.
 
 ```ts
 /**
