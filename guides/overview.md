@@ -28,5 +28,5 @@ function localHelper() {}
 ## Get Started
 
 -   [Install](/guides/installation/)
--   [Configure](/guides/configure/)
+-   [Configure](/guides/options/)
 -   [Extend](/guides/plugins/)

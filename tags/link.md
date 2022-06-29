@@ -14,8 +14,8 @@ The `@link` tag is used to refer to another documented declaration. It takes one
 -   `{@link Foo.Bar | Foo.Bar}` - Links to `Foo.Bar`, with link text `Foo.Bar`
 -   (non-TSDoc) `{@link Foo.Bar Foo.Bar}` - Links to `Foo.Bar`, with link text `Foo.Bar`
 
-In 0.23, if resolving a link with declaration references fails, TypeDoc will attempt to resolve the link with
-the [legacy method](/guides/declaration-references/#legacy-behavior) used in 0.22 and earlier.
+In 0.23, if resolving a link with [declaration references](/guides/declaration-references/) fails, TypeDoc will attempt to resolve the link with
+the [legacy method](/guides/link-resolution/) used in 0.22 and earlier.
 This behavior will be removed in 0.24.
 
 External hyperlinks should be constructed with markdown `[text](link)` style links, not with the `@link` tag.
