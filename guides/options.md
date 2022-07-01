@@ -330,6 +330,14 @@ Use the specified git remote instead of `origin` for linking to source files in 
 You can use `git remote` to view a list of valid remotes.
 If you are updating documentation for a forked package, you probably want to pass `--gitRemote upstream`.
 
+### htmlLang
+
+```bash
+$ typedoc --htmlLang es
+```
+
+Sets the `lang` attribute in TypeDoc's HTML output, defaults to `en`, resulting in `<html lang="en">`.
+
 ### githubPages
 
 ```bash
