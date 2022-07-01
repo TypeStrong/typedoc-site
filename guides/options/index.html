@@ -383,6 +383,11 @@ In this case, if the project was on version 1.2.3 according to <code>package.jso
 <h3 id="disablesources" tabindex="-1">disableSources</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --disableSources</code></pre>
 <p>Disables the defined in text describing where a reflection was created.</p>
+<h3 id="basepath" tabindex="-1">basePath</h3>
+<pre class="language-bash"><code class="language-bash">$ typedoc --basePath ./ --entryPoints src/index.ts</code></pre>
+<p>Specifies the base path to be used when displaying file paths. If not set, TypeDoc will guess by taking the lowest
+common directory to all source files. In the above example, TypeDoc would display links to <code>index.ts</code> rather than <code>src/index.ts</code>.</p>
+<p>Note: This option only affects displayed paths. It <em>does not</em> affect where TypeDoc will create links to.</p>
 <h3 id="excludetags" tabindex="-1">excludeTags</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --excludeTags apidefine</code></pre>
 <p>Specify tags that should be removed from doc comments when parsing.
@@ -401,6 +406,9 @@ Useful if your project uses <a href="https://apidocjs.com/">apiDoc</a> for docum
 <p>Use the specified git remote instead of <code>origin</code> for linking to source files in GitHub, Bitbucket, or GitLab.
 You can use <code>git remote</code> to view a list of valid remotes.
 If you are updating documentation for a forked package, you probably want to pass <code>--gitRemote upstream</code>.</p>
+<h3 id="htmllang" tabindex="-1">htmlLang</h3>
+<pre class="language-bash"><code class="language-bash">$ typedoc --htmlLang es</code></pre>
+<p>Sets the <code>lang</code> attribute in TypeDoc's HTML output, defaults to <code>en</code>, resulting in <code>&lt;html lang=&quot;en&quot;&gt;</code>.</p>
 <h3 id="githubpages" tabindex="-1">githubPages</h3>
 <pre class="language-bash"><code class="language-bash">$ typedoc --githubPages <span class="token boolean">false</span></code></pre>
 <p>When enabled, automatically add a <code>.nojekyll</code> file to the output directory to prevent GitHub Pages

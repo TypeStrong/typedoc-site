@@ -148,6 +148,11 @@
 			"type": "boolean",
 			"default": false
 		},
+		"basePath": {
+			"description": "Specifies the base path to be used when displaying file paths.",
+			"type": "string",
+			"default": ""
+		},
 		"excludeTags": {
 			"description": "Remove the listed block/modifier tags from doc comments.",
 			"type": "array",
@@ -184,6 +189,11 @@
 			"description": "Generate a .nojekyll file to prevent 404 errors in GitHub Pages. Defaults to `true`.",
 			"type": "boolean",
 			"default": true
+		},
+		"htmlLang": {
+			"description": "Sets the lang attribute in the generated html tag.",
+			"type": "string",
+			"default": "en"
 		},
 		"gaID": {
 			"description": "Set the Google Analytics tracking ID and activate tracking code.",
