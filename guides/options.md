@@ -287,6 +287,17 @@ $ typedoc --disableSources
 
 Disables the defined in text describing where a reflection was created.
 
+### basePath
+
+```bash
+$ typedoc --basePath ./ --entryPoints src/index.ts
+```
+
+Specifies the base path to be used when displaying file paths. If not set, TypeDoc will guess by taking the lowest
+common directory to all source files. In the above example, TypeDoc would display links to `index.ts` rather than `src/index.ts`.
+
+Note: This option only affects displayed paths. It _does not_ affect where TypeDoc will create links to.
+
 ### excludeTags
 
 ```bash
