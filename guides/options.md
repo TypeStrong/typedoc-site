@@ -375,6 +375,17 @@ $ typedoc --hideGenerator
 
 Do not print the TypeDoc link at the end of the page. Defaults to false.
 
+### searchInComments
+
+```bash
+$ typedoc --searchInComments
+```
+
+Enables searching comment text in the generated documentation site.
+
+Note: Enabling this option will increase the size of your search index, potentially up
+to an order of magnitude larger in projects with many long comments.
+
 ### cleanOutputDir
 
 ```bash
