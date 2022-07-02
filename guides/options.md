@@ -112,6 +112,8 @@ Supports [minimatch](https://github.com/isaacs/minimatch) patterns.
 In configuration files, this option accepts an array of patterns. On the command line, it may be specified multiple times to add multiple patterns.
 If an exported member from one of your entry points is located in an excluded file, it will be excluded from the documentation.
 
+If `entryPointStrategy` is set to `packages, then you can specify package directories with this option to exclude from documentation.
+
 ### externalPattern
 
 ```bash
