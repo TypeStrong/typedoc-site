@@ -236,8 +236,21 @@
     </ul>
 </nav>
 </div>
-        <div class="typography"><h2 id="v0.23.3-(2022-07-01)" tabindex="-1">v0.23.3 (2022-07-01)</h2>
+        <div class="typography"><h2 id="v0.23.4-(2022-07-02)" tabindex="-1">v0.23.4 (2022-07-02)</h2>
 <h3 id="bug-fixes" tabindex="-1">Bug Fixes</h3>
+<ul>
+<li>TypeDoc no longer ignores project references if <code>--entryPointStrategy Packages</code> is set, <a href="https://github.com/TypeStrong/typedoc/issues/1976">#1976</a>.</li>
+<li>Boost computations are now done when creating the search index, resulting in a smaller <code>search.js</code> generated file.</li>
+</ul>
+<h3 id="features" tabindex="-1">Features</h3>
+<ul>
+<li>The <code>--exclude</code> option will now be respected by <code>--entryPointStrategy Packages</code> and can be used to exclude package directories, <a href="https://github.com/TypeStrong/typedoc/issues/1959">#1959</a>.</li>
+<li>TypeDoc now emits an <code>IndexEvent</code> on the <code>Renderer</code> when preparing the search index, <a href="https://github.com/TypeStrong/typedoc/issues/1953">#1953</a>.</li>
+<li>Added new <code>--searchInComments</code> option to include comment text in the search index, <a href="https://github.com/TypeStrong/typedoc/issues/1553">#1553</a>.
+Turning this option on will increase the size of your search index, potentially by an order of magnitude.</li>
+</ul>
+<h2 id="v0.23.3-(2022-07-01)" tabindex="-1">v0.23.3 (2022-07-01)</h2>
+<h3 id="bug-fixes-1" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Function properties in type space will no longer be interpreted as methods, <a href="https://github.com/TypeStrong/typedoc/issues/1637">#1637</a>.</li>
 <li>TypeDoc will no longer crash if a comment contains an empty <code>@example</code> tag, <a href="https://github.com/TypeStrong/typedoc/issues/1967">#1967</a>.</li>
@@ -249,7 +262,7 @@
 <li>Validation warnings caused by missing documentation will now be formatted like other warnings which reference a declaration.</li>
 <li>TypeDoc will no longer warn if both the <code>get</code> and <code>set</code> signatures of an accessor have a comment.</li>
 </ul>
-<h3 id="features" tabindex="-1">Features</h3>
+<h3 id="features-1" tabindex="-1">Features</h3>
 <ul>
 <li>Added <code>--htmlLang</code> option to set the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang"><code>lang</code></a> attribute in the generated HTML. Defaults to <code>en</code>, <a href="https://github.com/TypeStrong/typedoc/issues/1951">#1951</a>.</li>
 <li>Added <code>--basePath</code> option to override TypeDoc's detected root directory, <a href="https://github.com/TypeStrong/typedoc/issues/1924">#1924</a>.</li>
@@ -257,7 +270,7 @@
 <li>Warnings caused by comment contents will now do a better job of including the location of the text that caused the warning.</li>
 </ul>
 <h2 id="v0.23.2-(2022-06-28)" tabindex="-1">v0.23.2 (2022-06-28)</h2>
-<h3 id="bug-fixes-1" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-2" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Module comments will no longer be inappropriately attached to signatures, <a href="https://github.com/TypeStrong/typedoc/issues/1962">#1962</a>.</li>
 <li>Projects with a single entry point will now parse <code>@module</code> comments in the entry point, <a href="https://github.com/TypeStrong/typedoc/issues/1963">#1963</a>.</li>
@@ -265,7 +278,7 @@
 <li>Reflections with a boost of <code>&lt;= 0</code> due to <code>searchCategoryBoosts</code> or <code>searchGroupBoosts</code> will be excluded from search.</li>
 </ul>
 <h2 id="v0.23.1-(2022-06-26)" tabindex="-1">v0.23.1 (2022-06-26)</h2>
-<h3 id="bug-fixes-2" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-3" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>If a declaration has multiple comments associated with it, the last one should be used, <a href="https://github.com/TypeStrong/typedoc/issues/1961">#1961</a>.</li>
 </ul>
@@ -302,7 +315,7 @@ For most cases, this will just work. See <a href="https://typedoc.org/guides/lin
 <li>Removed <code>ReflectionKind.Event</code>, the <code>@event</code> tag is now an alias for <code>@group Events</code>. Note: This changes the value of <code>ReflectionKind.Reference</code> from <code>16777216</code> to <code>8388608</code>.</li>
 <li>Themes are now set on the document element rather than on body, <a href="https://github.com/TypeStrong/typedoc/issues/1706">#1706</a>.</li>
 </ul>
-<h3 id="features-1" tabindex="-1">Features</h3>
+<h3 id="features-2" tabindex="-1">Features</h3>
 <ul>
 <li>
 <p>TypeDoc now supports the <code>@group</code> tag to group reflections in a page. If no <code>@group</code> tag is specified, reflections will be grouped according to their kind, <a href="https://github.com/TypeStrong/typedoc/issues/1652">#1652</a>.</p>
@@ -381,7 +394,7 @@ It is recommended to add <code>&quot;extends&quot;: [&quot;typedoc/tsdoc.json&qu
 If a tag not in in one of these options is encountered, TypeDoc will produce a warning and use context clues to determine how to parse the tag.</p>
 </li>
 </ul>
-<h3 id="bug-fixes-3" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-4" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Fixed off by one error in warnings for types referenced but not included in the documentation.</li>
 <li>TypeDoc will no longer render a <code>Type Parameters</code> heading if there are no type parameters in some cases.</li>
@@ -408,11 +421,11 @@ If a tag not in in one of these options is encountered, TypeDoc will produce a w
 <li>@shmax</li>
 </ul>
 <h2 id="v0.22.18-(2022-06-25)" tabindex="-1">v0.22.18 (2022-06-25)</h2>
-<h3 id="features-2" tabindex="-1">Features</h3>
+<h3 id="features-3" tabindex="-1">Features</h3>
 <ul>
 <li>Relaxed restrictions on <code>@enum</code> style enums to also permit non-literal strings and numbers, <a href="https://github.com/TypeStrong/typedoc/issues/1956">#1956</a>.</li>
 </ul>
-<h3 id="bug-fixes-4" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-5" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li><code>searchGroupBoosts</code> was only computing the boost for the first reflection in a group, <a href="https://github.com/TypeStrong/typedoc/issues/1958">#1958</a>.</li>
 </ul>
@@ -422,23 +435,23 @@ If a tag not in in one of these options is encountered, TypeDoc will produce a w
 <li>@Zamiell</li>
 </ul>
 <h2 id="v0.22.17-(2022-06-01)" tabindex="-1">v0.22.17 (2022-06-01)</h2>
-<h3 id="features-3" tabindex="-1">Features</h3>
+<h3 id="features-4" tabindex="-1">Features</h3>
 <ul>
 <li>Added support for documenting a module's global declarations as its exports if it contains no real exports.</li>
 </ul>
-<h3 id="bug-fixes-5" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-6" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Restore support for TS 4.0 through 4.5, <a href="https://github.com/TypeStrong/typedoc/issues/1945">#1945</a>.</li>
 </ul>
 <h2 id="v0.22.16-(2022-05-30)" tabindex="-1">v0.22.16 (2022-05-30)</h2>
-<h3 id="features-4" tabindex="-1">Features</h3>
+<h3 id="features-5" tabindex="-1">Features</h3>
 <ul>
 <li>Added support for TypeScript 4.7, <a href="https://github.com/TypeStrong/typedoc/issues/1935">#1935</a>.</li>
 <li>Support enum-like objects with numeric literal values tagged with <code>@enum</code>, <a href="https://github.com/TypeStrong/typedoc/issues/1918">#1918</a>.</li>
 <li>Enum member reflections will now have their <code>type</code> set to either a <code>LiteralType</code> with a string or numeric value or an <code>IntrinsicType</code> with type <code>number</code>, <a href="https://github.com/TypeStrong/typedoc/issues/1942">#1942</a>.
 Using <code>defaultValue</code> on <code>EnumMember</code> reflections is now deprecated, and will be broken in 0.23.</li>
 </ul>
-<h3 id="bug-fixes-6" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-7" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Fixed invalid type output in some uncommon edge cases, TypeDoc also now renders fewer superfluous parenthesis when creating types.</li>
 <li>TypeDoc is now more consistent about ordering with <code>enum-value-ascending</code> or <code>enum-value-descending</code> sort strategies in mixed string/number enums.</li>
@@ -449,13 +462,13 @@ Using <code>defaultValue</code> on <code>EnumMember</code> reflections is now de
 <li>@Zamiell</li>
 </ul>
 <h2 id="v0.22.15-(2022-04-10)" tabindex="-1">v0.22.15 (2022-04-10)</h2>
-<h3 id="features-5" tabindex="-1">Features</h3>
+<h3 id="features-6" tabindex="-1">Features</h3>
 <ul>
 <li>Classes which are <code>abstract</code> and enums which are <code>const</code> will now be indicated in their rendered documentation, <a href="https://github.com/TypeStrong/typedoc/issues/1874">#1874</a>.</li>
 <li>Added a new option <code>compilerOptions</code>, which can be used to override compiler options read from <code>tsconfig.json</code>, <a href="https://github.com/TypeStrong/typedoc/issues/1891">#1891</a>.</li>
 <li>Added new render hooks: <code>content.begin</code>, <code>content.end</code>, <code>navigation.begin</code>, <code>navigation.end</code></li>
 </ul>
-<h3 id="bug-fixes-7" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-8" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>TypeDoc will now warn if a project name/version cannot be inferred from a package.json file rather than using <code>undefined</code>, <a href="https://github.com/TypeStrong/typedoc/issues/1907">#1907</a>.</li>
 </ul>
@@ -466,7 +479,7 @@ Using <code>defaultValue</code> on <code>EnumMember</code> reflections is now de
 <li>@schlusslicht</li>
 </ul>
 <h2 id="v0.22.14-(2022-04-07)" tabindex="-1">v0.22.14 (2022-04-07)</h2>
-<h3 id="bug-fixes-8" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-9" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Fixed missing comments on <code>@enum</code> style enum members defined in declaration files, <a href="https://github.com/TypeStrong/typedoc/issues/1880">#1880</a>.</li>
 <li>Fixed <code>--validation.notDocumented</code> warnings for functions/methods/type aliases, <a href="https://github.com/TypeStrong/typedoc/issues/1895">#1895</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1898">#1898</a>.</li>
@@ -482,22 +495,22 @@ Using <code>defaultValue</code> on <code>EnumMember</code> reflections is now de
 <li>@ychan167</li>
 </ul>
 <h2 id="v0.22.13-(2022-03-06)" tabindex="-1">v0.22.13 (2022-03-06)</h2>
-<h3 id="features-6" tabindex="-1">Features</h3>
+<h3 id="features-7" tabindex="-1">Features</h3>
 <ul>
 <li>Add support for TypeScript 4.6, <a href="https://github.com/TypeStrong/typedoc/issues/1877">#1877</a>.</li>
 <li>Support copying <code>@param</code> comments for nested members that target union and intersection types, <a href="https://github.com/TypeStrong/typedoc/issues/1876">#1876</a>.</li>
 </ul>
-<h3 id="bug-fixes-9" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-10" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Fixed validation for <code>--requiredToBeDocumented</code> option, <a href="https://github.com/TypeStrong/typedoc/issues/1872">#1872</a>.</li>
 <li>Fixed missing <code>this</code> parameters in documentation for some functions, <a href="https://github.com/TypeStrong/typedoc/issues/1875">#1875</a>.</li>
 </ul>
 <h2 id="v0.22.12-(2022-02-20)" tabindex="-1">v0.22.12 (2022-02-20)</h2>
-<h3 id="features-7" tabindex="-1">Features</h3>
+<h3 id="features-8" tabindex="-1">Features</h3>
 <ul>
 <li>Added <code>--validation.notDocumented</code> option to warn on items that are not documented, <a href="https://github.com/TypeStrong/typedoc/issues/1817">#1817</a>.</li>
 </ul>
-<h3 id="bug-fixes-10" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-11" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Fixed <code>const</code> variables not properly marked as <code>const</code>, <a href="https://github.com/TypeStrong/typedoc/issues/1866">#1866</a>.</li>
 </ul>
@@ -507,13 +520,13 @@ Using <code>defaultValue</code> on <code>EnumMember</code> reflections is now de
 <li>@Nokel81</li>
 </ul>
 <h2 id="v0.22.11-(2022-01-18)" tabindex="-1">v0.22.11 (2022-01-18)</h2>
-<h3 id="features-8" tabindex="-1">Features</h3>
+<h3 id="features-9" tabindex="-1">Features</h3>
 <ul>
 <li>Added new <code>cname</code> option for GitHub Pages custom domain support, <a href="https://github.com/TypeStrong/typedoc/issues/1803">#1803</a>.</li>
 <li><code>ReferenceType</code>s which reference an external symbol will now include <code>qualifiedName</code> and <code>package</code> in their serialized JSON.</li>
 <li>Added clickable anchor link for member titles, <a href="https://github.com/TypeStrong/typedoc/issues/1842">#1842</a>.</li>
 </ul>
-<h3 id="bug-fixes-11" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-12" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Fixed line height of <code>h1</code> and <code>h2</code> elements being too low, <a href="https://github.com/TypeStrong/typedoc/issues/1796">#1796</a>.</li>
 <li>Code blocks in the light theme will no longer have the same background as the rest of the page, <a href="https://github.com/TypeStrong/typedoc/issues/1836">#1836</a>.</li>
@@ -529,24 +542,24 @@ Using <code>defaultValue</code> on <code>EnumMember</code> reflections is now de
 <li>@stefanobaghino-da</li>
 </ul>
 <h2 id="v0.22.10-(2021-11-25)" tabindex="-1">v0.22.10 (2021-11-25)</h2>
-<h3 id="features-9" tabindex="-1">Features</h3>
+<h3 id="features-10" tabindex="-1">Features</h3>
 <ul>
 <li>Added support for TypeScript 4.5, <a href="https://github.com/TypeStrong/typedoc/issues/1798">#1798</a>.</li>
 </ul>
-<h3 id="bug-fixes-12" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-13" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>If file exports a symbol both under it's real name and as <code>default</code>, the <code>default</code> export will now always be the renamed symbol, <a href="https://github.com/TypeStrong/typedoc/issues/1795">#1795</a>.</li>
 <li>TypeDoc will no longer crash if a symbol is defined both as a normal class (and optional interface) and as a property, as is used for global Node types in older <code>@types/node</code> versions, <a href="https://github.com/Gerrit0/typedoc-plugin-missing-exports/issues/5">#5</a>.</li>
 </ul>
 <h2 id="v0.22.9-(2021-11-14)" tabindex="-1">v0.22.9 (2021-11-14)</h2>
-<h3 id="features-10" tabindex="-1">Features</h3>
+<h3 id="features-11" tabindex="-1">Features</h3>
 <ul>
 <li>TypeDoc will now detect and warn if multiple instances of the package are loaded. This usually means that a plugin has its own version of TypeDoc installed, which will lead to things breaking in unexpected ways.
 It will only work if both loaded TypeDocs are v0.22.9 or later.</li>
 <li>TypeDoc will now automatically load packages with <code>typedoc-theme</code> in their keywords.
 Plugins which define a custom theme should include this keyword so that they can be automatically collected and displayed at https://typedoc.org/guides/themes/.</li>
 </ul>
-<h3 id="bug-fixes-13" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-14" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Corrected HTML generation for projects using Google Analytics, <a href="https://github.com/TypeStrong/typedoc/issues/1786">#1786</a>.</li>
 <li>Ensured that the <code>&lt;meta charset=&quot;utf-8&quot; /&gt;</code> appears within the first 1024 bytes of generated pages, <a href="https://github.com/TypeStrong/typedoc/issues/1783">#1783</a>.</li>
@@ -556,12 +569,12 @@ Plugins which define a custom theme should include this keyword so that they can
 <li>@RunDevelopment</li>
 </ul>
 <h2 id="v0.22.8-(2021-11-07)" tabindex="-1">v0.22.8 (2021-11-07)</h2>
-<h3 id="features-11" tabindex="-1">Features</h3>
+<h3 id="features-12" tabindex="-1">Features</h3>
 <ul>
 <li>Added hooks which can be used to inject HTML without completely replacing a template, <a href="https://github.com/TypeStrong/typedoc/issues/1773">#1773</a>.
 See the documentation in <a href="https://github.com/TypeStrong/typedoc/blob/master/internal-docs/custom-themes.md">custom-themes.md</a> for details.</li>
 </ul>
-<h3 id="bug-fixes-14" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-15" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Actually fixed <code>@category</code> tag incorrectly appearing on function types if used on a type alias, <a href="https://github.com/TypeStrong/typedoc/issues/1745">#1745</a>.</li>
 <li>Fix error in console when a page contains no documentation items.</li>
@@ -572,12 +585,12 @@ See the documentation in <a href="https://github.com/TypeStrong/typedoc/blob/mas
 <li>@srmagura</li>
 </ul>
 <h2 id="v0.22.7-(2021-10-25)" tabindex="-1">v0.22.7 (2021-10-25)</h2>
-<h3 id="features-12" tabindex="-1">Features</h3>
+<h3 id="features-13" tabindex="-1">Features</h3>
 <ul>
 <li>Added support for GitHub enterprise projects with a <code>githubprivate.com</code> domain, <a href="https://github.com/TypeStrong/typedoc/issues/1743">#1743</a>.</li>
 <li>Added support for GitLab repositories, <a href="https://github.com/TypeStrong/typedoc/issues/1728">#1728</a>.</li>
 </ul>
-<h3 id="bug-fixes-15" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-16" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Replaced O(n^2) with O(1) implementation for determining unique IDs in a rendered page, <a href="https://github.com/TypeStrong/typedoc/issues/1755">#1755</a>.</li>
 <li>Fixed crash with when running in very large repositories, <a href="https://github.com/TypeStrong/typedoc/issues/1744">#1744</a>.</li>
@@ -593,12 +606,12 @@ See the documentation in <a href="https://github.com/TypeStrong/typedoc/blob/mas
 <li>@srmagura</li>
 </ul>
 <h2 id="v0.22.6-(2021-10-17)" tabindex="-1">v0.22.6 (2021-10-17)</h2>
-<h3 id="features-13" tabindex="-1">Features</h3>
+<h3 id="features-14" tabindex="-1">Features</h3>
 <ul>
 <li>Added support for displaying identifiers &amp; property access expressions in initializers, <a href="https://github.com/TypeStrong/typedoc/issues/1730">#1730</a>.</li>
 <li>Expanded support for variables tagged with <code>@enum</code> to all variables whose property types are string literals, <a href="https://github.com/TypeStrong/typedoc/issues/1740">#1740</a>.</li>
 </ul>
-<h3 id="bug-fixes-16" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-17" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Fixed flash when navigating to a second page when OS theme does not match selected theme, <a href="https://github.com/TypeStrong/typedoc/issues/1709">#1709</a>.</li>
 <li>Fixed improper quoting of <code>as const</code> style enums, <a href="https://github.com/TypeStrong/typedoc/issues/1727">#1727</a>.</li>
@@ -612,7 +625,7 @@ See the documentation in <a href="https://github.com/TypeStrong/typedoc/blob/mas
 <li>@srmagura</li>
 </ul>
 <h2 id="v0.22.5-(2021-10-02)" tabindex="-1">v0.22.5 (2021-10-02)</h2>
-<h3 id="features-14" tabindex="-1">Features</h3>
+<h3 id="features-15" tabindex="-1">Features</h3>
 <ul>
 <li>TypeDoc will now recognize <code>@param</code> comments for destructured parameters and rename <code>__namedParameters</code> to the name specified
 in the <code>@param</code> comment if the number of <code>@param</code> comments match the number of parameters, resolves <a href="https://github.com/TypeStrong/typedoc/issues/1703">#1703</a>.</li>
@@ -653,7 +666,7 @@ declared in <code>src/utils/foo.ts</code> is not exported.<pre class="language-j
 </table>
 </li>
 </ul>
-<h3 id="bug-fixes-17" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-18" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>TypeDoc will now only create one highlighter for rendering code, saving ~200-500ms for rendering time.</li>
 <li>For compatibility with JSDoc, TypeDoc will now strip <code>&lt;caption&gt;</code> elements from <code>@example</code> tags, resolves <a href="https://github.com/TypeStrong/typedoc/issues/1679">#1679</a>.</li>
@@ -669,14 +682,14 @@ declared in <code>src/utils/foo.ts</code> is not exported.<pre class="language-j
 <li>@srmagura</li>
 </ul>
 <h2 id="v0.22.4-(2021-09-18)" tabindex="-1">v0.22.4 (2021-09-18)</h2>
-<h3 id="features-15" tabindex="-1">Features</h3>
+<h3 id="features-16" tabindex="-1">Features</h3>
 <ul>
 <li>Flag option types like <code>validation</code> can now be set to true/false to enable/disable all flags within them.</li>
 <li>Source code links now work with Bitbucket repositories, resolves <a href="https://github.com/TypeStrong/typedoc/issues/1615">#1615</a>.</li>
 <li>Added <code>githubPages</code> option (default: true), which will create a <code>.nojekyll</code> page in the generated output, resolves <a href="https://github.com/TypeStrong/typedoc/issues/1680">#1680</a>.</li>
 <li><code>MarkdownEvent</code> is now exported, resolves <a href="https://github.com/TypeStrong/typedoc/issues/1696">#1696</a>.</li>
 </ul>
-<h3 id="bug-fixes-18" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-19" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Fixed the hamburger menu not being visible on mobile devices, fixes <a href="https://github.com/TypeStrong/typedoc/issues/1699">#1699</a>.</li>
 <li>Comments on function implementations with overloaded signatures will now be correctly handled, fixes <a href="https://github.com/TypeStrong/typedoc/issues/1697">#1697</a>.</li>
@@ -686,11 +699,11 @@ declared in <code>src/utils/foo.ts</code> is not exported.<pre class="language-j
 <li>@srmagura</li>
 </ul>
 <h2 id="v0.22.3-(2021-09-12)" tabindex="-1">v0.22.3 (2021-09-12)</h2>
-<h3 id="bug-fixes-19" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-20" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Switched the default highlighting themes back to <code>light-plus</code> and <code>dark-plus</code>, they were accidentally set to <code>min-light</code> and <code>min-dark</code> in v0.22.0.</li>
 </ul>
-<h3 id="features-16" tabindex="-1">Features</h3>
+<h3 id="features-17" tabindex="-1">Features</h3>
 <ul>
 <li>Added new <code>validation</code> option which can be used to disable checks for non-exported symbols.
 On the command line, this can be specified with <code>--validation.notExported true</code>, or in an options file with:<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>    <span class="token property">"validation"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token property">"notExported"</span><span class="token operator">:</span> <span class="token boolean">true</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
@@ -698,12 +711,12 @@ On the command line, this can be specified with <code>--validation.notExported t
 <li>Added invalidLink to <code>validation</code> option, deprecated <code>listInvalidSymbolLinks</code>, which will be removed in 0.23.</li>
 </ul>
 <h2 id="v0.22.2-(2021-09-11)" tabindex="-1">v0.22.2 (2021-09-11)</h2>
-<h3 id="bug-fixes-20" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-21" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Fix background color of tables in dark mode, closes <a href="https://github.com/TypeStrong/typedoc/issues/1684">#1684</a>.</li>
 </ul>
 <h2 id="v0.22.1-(2021-09-10)" tabindex="-1">v0.22.1 (2021-09-10)</h2>
-<h3 id="bug-fixes-21" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-22" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Validation for non-exported symbols will now only produce one warning per symbol, instead of one warning per reference.</li>
 <li>Syntax highlighting when the preferred color scheme is dark but dark theme is not explicitly selected will now properly use the dark highlighting theme.</li>
@@ -728,7 +741,7 @@ See <a href="https://github.com/TypeStrong/typedoc/blob/v0.22.0/internal-docs/cu
 <li>Exclude patterns are now checked against files instead of against each part of the path as traversed, <a href="https://github.com/TypeStrong/typedoc/issues/1399">#1399</a>.
 This means that an exclude of <code>**/someDir</code> will <strong>not</strong> exclude files in that directory. To exclude files in a directory, specify <code>**/someDir/**</code>.</li>
 </ul>
-<h3 id="features-17" tabindex="-1">Features</h3>
+<h3 id="features-18" tabindex="-1">Features</h3>
 <ul>
 <li>Added support for light/dark mode to the default theme, closes <a href="https://github.com/TypeStrong/typedoc/issues/1641">#1641</a>.</li>
 <li>Added support for custom CSS with the new <code>customCss</code> option, closes <a href="https://github.com/TypeStrong/typedoc/issues/1060">#1060</a>.</li>
@@ -767,7 +780,7 @@ There are three possible options:
 <li>Added performance measurements to debug logging (<code>--logLevel Verbose</code>)</li>
 <li>String literal indexed access types will create links to their referencing member if possible, closes <a href="https://github.com/TypeStrong/typedoc/issues/1226">#1226</a>.</li>
 </ul>
-<h3 id="bug-fixes-22" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-23" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Support inclusion patterns when expanding input files, closes <a href="https://github.com/TypeStrong/typedoc/issues/1399">#1399</a>.</li>
 <li>Arrow keys can no longer select hidden search results.</li>
@@ -791,7 +804,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>@itsjamie</li>
 </ul>
 <h2 id="v0.21.9-(2021-08-29)" tabindex="-1">v0.21.9 (2021-08-29)</h2>
-<h3 id="bug-fixes-23" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-24" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Support highlighting language aliases (#1673), closes <a href="https://github.com/TypeStrong/typedoc/issues/1672">#1672</a></li>
 </ul>
@@ -800,7 +813,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>@StoneCypher</li>
 </ul>
 <h2 id="v0.21.8-(2021-08-28)" tabindex="-1">v0.21.8 (2021-08-28)</h2>
-<h3 id="features-18" tabindex="-1">Features</h3>
+<h3 id="features-19" tabindex="-1">Features</h3>
 <ul>
 <li>Upgrade Shiki to 0.9.8, adds support for several new highlighting languages</li>
 </ul>
@@ -809,16 +822,16 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>@StoneCypher</li>
 </ul>
 <h2 id="v0.21.7-(2021-08-27)" tabindex="-1">v0.21.7 (2021-08-27)</h2>
-<h3 id="features-19" tabindex="-1">Features</h3>
+<h3 id="features-20" tabindex="-1">Features</h3>
 <ul>
 <li>Support for TypeScript 4.4, closes <a href="https://github.com/TypeStrong/typedoc/issues/1664">#1664</a></li>
 </ul>
 <h2 id="v0.21.6-(2021-08-19)" tabindex="-1">v0.21.6 (2021-08-19)</h2>
-<h3 id="features-20" tabindex="-1">Features</h3>
+<h3 id="features-21" tabindex="-1">Features</h3>
 <ul>
 <li>Add support for NO_COLOR environment variable (#1650)</li>
 </ul>
-<h3 id="bug-fixes-24" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-25" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Handle undefined symbols in query types, closes <a href="https://github.com/TypeStrong/typedoc/issues/1660">#1660</a></li>
 </ul>
@@ -827,11 +840,11 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>@krisztianb</li>
 </ul>
 <h2 id="v0.21.5-(2021-07-31)" tabindex="-1">v0.21.5 (2021-07-31)</h2>
-<h3 id="features-21" tabindex="-1">Features</h3>
+<h3 id="features-22" tabindex="-1">Features</h3>
 <ul>
 <li>Support Node v12.10 (#1632), closes <a href="https://github.com/TypeStrong/typedoc/issues/1628">#1628</a></li>
 </ul>
-<h3 id="bug-fixes-25" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-26" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Implicitly set noEmit unless --emit is provided, closes <a href="https://github.com/TypeStrong/typedoc/issues/1639">#1639</a></li>
 </ul>
@@ -840,7 +853,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>@betaorbust</li>
 </ul>
 <h2 id="v0.21.4-(2021-07-12)" tabindex="-1">v0.21.4 (2021-07-12)</h2>
-<h3 id="bug-fixes-26" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-27" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Constructors did not have source information set, closes <a href="https://github.com/TypeStrong/typedoc/issues/1626">#1626</a></li>
 </ul>
@@ -849,7 +862,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <ul>
 <li>Options may not be set once conversion starts. Enables a small perf improvement.</li>
 </ul>
-<h3 id="bug-fixes-27" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-28" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Improve detection for &quot;property methods&quot; to convert as methods, closes <a href="https://github.com/TypeStrong/typedoc/issues/1624">#1624</a></li>
 <li>Two members differing only by case produced broken links, closes <a href="https://github.com/TypeStrong/typedoc/issues/1585">#1585</a></li>
@@ -860,12 +873,12 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>@cspotcode</li>
 </ul>
 <h2 id="v0.21.2-(2021-06-27)" tabindex="-1">v0.21.2 (2021-06-27)</h2>
-<h3 id="bug-fixes-28" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-29" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Postpone resolution of inherited classes until their parents have been resolved, closes <a href="https://github.com/TypeStrong/typedoc/issues/1580">#1580</a></li>
 </ul>
 <h2 id="v0.21.1-(2021-06-25)" tabindex="-1">v0.21.1 (2021-06-25)</h2>
-<h3 id="bug-fixes-29" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-30" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Exclude empty modules from documentation, closes <a href="https://github.com/TypeStrong/typedoc/issues/1607">#1607</a></li>
 <li><code>readme</code> could not be set to <code>none</code> in a config file, closes <a href="https://github.com/TypeStrong/typedoc/issues/1608">#1608</a></li>
@@ -878,7 +891,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Plugins are now passed Application directly</li>
 <li>Drop support for TypeScript 3.9</li>
 </ul>
-<h3 id="features-22" tabindex="-1">Features</h3>
+<h3 id="features-23" tabindex="-1">Features</h3>
 <ul>
 <li>Improve monorepos by adding support for TS entry points (#1596)</li>
 <li>Support for monorepos</li>
@@ -887,7 +900,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Add the --treatWarningsAsErrors option, closes <a href="https://github.com/TypeStrong/typedoc/issues/1568">#1568</a></li>
 <li>The exclude option will now remove symbols re-exported from excluded files, closes <a href="https://github.com/TypeStrong/typedoc/issues/1578">#1578</a></li>
 </ul>
-<h3 id="bug-fixes-30" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-31" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Correctly handle comments on function type aliases, closes <a href="https://github.com/TypeStrong/typedoc/issues/799">#799</a></li>
 <li>Setters should always have a <code>void</code> return type, closes <a href="https://github.com/TypeStrong/typedoc/issues/1215">#1215</a></li>
@@ -903,11 +916,11 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Martin</li>
 </ul>
 <h2 id="v0.20.37-(2021-06-16)" tabindex="-1">v0.20.37 (2021-06-16)</h2>
-<h3 id="features-23" tabindex="-1">Features</h3>
+<h3 id="features-24" tabindex="-1">Features</h3>
 <ul>
 <li>Add disableAliases option (#1576), closes <a href="https://github.com/TypeStrong/typedoc/issues/1571">#1571</a></li>
 </ul>
-<h3 id="bug-fixes-31" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-32" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Pin <code>marked</code> dependency to 2.0.x (#1602), closes <a href="https://github.com/TypeStrong/typedoc/issues/1601">#1601</a></li>
 </ul>
@@ -917,12 +930,12 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Nick</li>
 </ul>
 <h2 id="v0.20.36-(2021-04-23)" tabindex="-1">v0.20.36 (2021-04-23)</h2>
-<h3 id="features-24" tabindex="-1">Features</h3>
+<h3 id="features-25" tabindex="-1">Features</h3>
 <ul>
 <li>use 'pretty' option when generating json</li>
 <li>create 'pretty' option</li>
 </ul>
-<h3 id="bug-fixes-32" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-33" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Always write to stdout, even if redirected, closes <a href="https://github.com/TypeStrong/typedoc/issues/1566">#1566</a></li>
 <li>Create directories when writing JSON output</li>
@@ -932,11 +945,11 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>cAttte</li>
 </ul>
 <h2 id="v0.20.35-(2021-04-03)" tabindex="-1">v0.20.35 (2021-04-03)</h2>
-<h3 id="features-25" tabindex="-1">Features</h3>
+<h3 id="features-26" tabindex="-1">Features</h3>
 <ul>
 <li>Include debugging information in highlighting error messages (#1561)</li>
 </ul>
-<h3 id="bug-fixes-33" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-34" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Relax simple expression requirements for default values, closes <a href="https://github.com/TypeStrong/typedoc/issues/1552">#1552</a></li>
 <li>Handle #private getters + methods, closes <a href="https://github.com/TypeStrong/typedoc/issues/1564">#1564</a></li>
@@ -946,24 +959,24 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Masato Makino</li>
 </ul>
 <h2 id="v0.20.34-(2021-03-25)" tabindex="-1">v0.20.34 (2021-03-25)</h2>
-<h3 id="bug-fixes-34" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-35" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Crash when converting recursive type alias, closes <a href="https://github.com/TypeStrong/typedoc/issues/1547">#1547</a></li>
 <li>Discover module comments for global files, closes <a href="https://github.com/TypeStrong/typedoc/issues/1549">#1549</a></li>
 <li>Detect references when export * is used, closes <a href="https://github.com/TypeStrong/typedoc/issues/1551">#1551</a></li>
 </ul>
 <h2 id="v0.20.33-(2021-03-22)" tabindex="-1">v0.20.33 (2021-03-22)</h2>
-<h3 id="bug-fixes-35" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-36" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Static properties of Error class incorrectly converted, closes <a href="https://github.com/TypeStrong/typedoc/issues/1541">#1541</a>, <a href="https://github.com/TypeStrong/typedoc/issues/572">#572</a></li>
 </ul>
 <h2 id="v0.20.32-(2021-03-14)" tabindex="-1">v0.20.32 (2021-03-14)</h2>
-<h3 id="bug-fixes-36" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-37" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Correct crash with reflection types, closes <a href="https://github.com/TypeStrong/typedoc/issues/1538">#1538</a></li>
 </ul>
 <h2 id="v0.20.31-(2021-03-14)" tabindex="-1">v0.20.31 (2021-03-14)</h2>
-<h3 id="bug-fixes-37" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-38" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>readonly tuples were recognized as arrays, closes <a href="https://github.com/TypeStrong/typedoc/issues/1534">#1534</a></li>
 <li>Constructors were improperly reported as inherited, closes <a href="https://github.com/TypeStrong/typedoc/issues/1528">#1528</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1527">#1527</a></li>
@@ -973,28 +986,28 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Vladimir Ivakin</li>
 </ul>
 <h2 id="v0.20.30-(2021-03-06)" tabindex="-1">v0.20.30 (2021-03-06)</h2>
-<h3 id="bug-fixes-38" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-39" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Categories should only appear once if specified multiple times, closes <a href="https://github.com/TypeStrong/typedoc/issues/1522">#1522</a></li>
 <li>Support JSDocNullableType, JSDocNonNullableType, closes <a href="https://github.com/TypeStrong/typedoc/issues/1524">#1524</a></li>
 <li>Remove undefined from optional property types, closes <a href="https://github.com/TypeStrong/typedoc/issues/1525">#1525</a></li>
 </ul>
 <h2 id="v0.20.29-(2021-03-04)" tabindex="-1">v0.20.29 (2021-03-04)</h2>
-<h3 id="features-26" tabindex="-1">Features</h3>
+<h3 id="features-27" tabindex="-1">Features</h3>
 <ul>
 <li>Support for TypeScript 4.2, closes <a href="https://github.com/TypeStrong/typedoc/issues/1517">#1517</a></li>
 </ul>
 <h2 id="v0.20.28-(2021-02-23)" tabindex="-1">v0.20.28 (2021-02-23)</h2>
-<h3 id="bug-fixes-39" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-40" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Detect visibility modifiers on accessors, closes <a href="https://github.com/TypeStrong/typedoc/issues/1516">#1516</a></li>
 </ul>
 <h2 id="v0.20.27-(2021-02-20)" tabindex="-1">v0.20.27 (2021-02-20)</h2>
-<h3 id="features-27" tabindex="-1">Features</h3>
+<h3 id="features-28" tabindex="-1">Features</h3>
 <ul>
 <li>preserve spaces in code blocks</li>
 </ul>
-<h3 id="bug-fixes-40" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-41" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Detect and normalize unique symbol names, closes <a href="https://github.com/TypeStrong/typedoc/issues/1514">#1514</a></li>
 </ul>
@@ -1003,17 +1016,17 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>michaelf</li>
 </ul>
 <h2 id="v0.20.26-(2021-02-20)" tabindex="-1">v0.20.26 (2021-02-20)</h2>
-<h3 id="bug-fixes-41" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-42" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Pick up optional/readonly from mapped types, closes <a href="https://github.com/TypeStrong/typedoc/issues/1509">#1509</a></li>
 </ul>
 <h2 id="v0.20.25-(2021-02-15)" tabindex="-1">v0.20.25 (2021-02-15)</h2>
-<h3 id="features-28" tabindex="-1">Features</h3>
+<h3 id="features-29" tabindex="-1">Features</h3>
 <ul>
 <li>Support for specifying comments on export declarations, closes <a href="https://github.com/TypeStrong/typedoc/issues/1504">#1504</a></li>
 </ul>
 <h2 id="v0.20.24-(2021-02-11)" tabindex="-1">v0.20.24 (2021-02-11)</h2>
-<h3 id="features-29" tabindex="-1">Features</h3>
+<h3 id="features-30" tabindex="-1">Features</h3>
 <ul>
 <li>add support for non .com gh enterprise domains (#1507)</li>
 </ul>
@@ -1022,7 +1035,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>TUNER88</li>
 </ul>
 <h2 id="v0.20.23-(2021-02-06)" tabindex="-1">v0.20.23 (2021-02-06)</h2>
-<h3 id="bug-fixes-42" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-43" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Missing namespace members when ns is created by re-exporting an entire module, closes <a href="https://github.com/TypeStrong/typedoc/issues/1499">#1499</a></li>
 <li>Set inheritedFrom on accessor signatures, closes <a href="https://github.com/TypeStrong/typedoc/issues/1497">#1497</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1498">#1498</a></li>
@@ -1032,21 +1045,21 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Siddharth VP</li>
 </ul>
 <h2 id="v0.20.22-(2021-02-06)" tabindex="-1">v0.20.22 (2021-02-06)</h2>
-<h3 id="bug-fixes-43" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-44" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Import from shiki rather than shiki-themes, closes <a href="https://github.com/TypeStrong/typedoc/issues/1496">#1496</a></li>
 </ul>
 <h2 id="v0.20.21-(2021-02-05)" tabindex="-1">v0.20.21 (2021-02-05)</h2>
-<h3 id="bug-fixes-44" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-45" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Missing exported members in file-as-namespace reflection, closes <a href="https://github.com/TypeStrong/typedoc/issues/1493">#1493</a></li>
 </ul>
 <h2 id="v0.20.20-(2021-01-31)" tabindex="-1">v0.20.20 (2021-01-31)</h2>
-<h3 id="features-30" tabindex="-1">Features</h3>
+<h3 id="features-31" tabindex="-1">Features</h3>
 <ul>
 <li>add highlight theme option</li>
 </ul>
-<h3 id="bug-fixes-45" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-46" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Missing comments on optional methods, closes <a href="https://github.com/TypeStrong/typedoc/issues/1490">#1490</a></li>
 <li>Avoid crash with removed project reflection, closes <a href="https://github.com/TypeStrong/typedoc/issues/1489">#1489</a></li>
@@ -1058,21 +1071,21 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Matthias Law</li>
 </ul>
 <h2 id="v0.20.19-(2021-01-25)" tabindex="-1">v0.20.19 (2021-01-25)</h2>
-<h3 id="features-31" tabindex="-1">Features</h3>
+<h3 id="features-32" tabindex="-1">Features</h3>
 <ul>
 <li>Support for --watch, --preserveWatchOutput, --emit</li>
 </ul>
 <h2 id="v0.20.18-(2021-01-24)" tabindex="-1">v0.20.18 (2021-01-24)</h2>
-<h3 id="bug-fixes-46" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-47" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Static methods added to the class manually in JS, closes <a href="https://github.com/TypeStrong/typedoc/issues/1481">#1481</a></li>
 </ul>
 <h2 id="v0.20.17-(2021-01-23)" tabindex="-1">v0.20.17 (2021-01-23)</h2>
-<h3 id="features-32" tabindex="-1">Features</h3>
+<h3 id="features-33" tabindex="-1">Features</h3>
 <ul>
 <li>Add support for copying item’s documentation by copying it from another API item</li>
 </ul>
-<h3 id="bug-fixes-47" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-48" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>CommonJS export= with type exports, closes <a href="https://github.com/TypeStrong/typedoc/issues/1476">#1476</a></li>
 </ul>
@@ -1081,18 +1094,18 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>dergash</li>
 </ul>
 <h2 id="v0.20.16-(2021-01-17)" tabindex="-1">v0.20.16 (2021-01-17)</h2>
-<h3 id="bug-fixes-48" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-49" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Comments on projects were broken</li>
 <li>Constructors were a bit broken</li>
 </ul>
 <h2 id="v0.20.15-(2021-01-16)" tabindex="-1">v0.20.15 (2021-01-16)</h2>
-<h3 id="features-33" tabindex="-1">Features</h3>
+<h3 id="features-34" tabindex="-1">Features</h3>
 <ul>
 <li>Support for excludeInternal, closes <a href="https://github.com/TypeStrong/typedoc/issues/1469">#1469</a></li>
 <li>add option to read more categories from doc</li>
 </ul>
-<h3 id="bug-fixes-49" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-50" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Crash when converting <code>@types/ws</code>, closes <a href="https://github.com/TypeStrong/typedoc/issues/1463">#1463</a></li>
 <li>replace return with continue</li>
@@ -1104,7 +1117,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Bruno Zorić</li>
 </ul>
 <h2 id="v0.20.14-(2021-01-09)" tabindex="-1">v0.20.14 (2021-01-09)</h2>
-<h3 id="bug-fixes-50" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-51" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Crash with destructured export const, closes <a href="https://github.com/TypeStrong/typedoc/issues/1462">#1462</a></li>
 <li>Add support for optional types, closes <a href="https://github.com/TypeStrong/typedoc/issues/1312">#1312</a></li>
@@ -1116,12 +1129,12 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Krisztián Balla</li>
 </ul>
 <h2 id="v0.20.13-(2021-01-06)" tabindex="-1">v0.20.13 (2021-01-06)</h2>
-<h3 id="bug-fixes-51" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-52" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Use type nodes if converting a regular function, closes <a href="https://github.com/TypeStrong/typedoc/issues/1454">#1454</a></li>
 </ul>
 <h2 id="v0.20.12-(2021-01-05)" tabindex="-1">v0.20.12 (2021-01-05)</h2>
-<h3 id="bug-fixes-52" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-53" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Arrow methods did not have modifiers set properly, closes <a href="https://github.com/TypeStrong/typedoc/issues/1452">#1452</a></li>
 <li>Add support for import types, closes <a href="https://github.com/TypeStrong/typedoc/issues/1453">#1453</a></li>
@@ -1132,61 +1145,61 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Krisztián Balla</li>
 </ul>
 <h2 id="v0.20.11-(2021-01-04)" tabindex="-1">v0.20.11 (2021-01-04)</h2>
-<h3 id="bug-fixes-53" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-54" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Crash when converting a generic with a tuple constraint, closes <a href="https://github.com/TypeStrong/typedoc/issues/1449">#1449</a></li>
 </ul>
 <h2 id="v0.20.10-(2021-01-03)" tabindex="-1">v0.20.10 (2021-01-03)</h2>
-<h3 id="bug-fixes-54" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-55" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Errors due to bad options in tsconfig file were dropped, closes <a href="https://github.com/TypeStrong/typedoc/issues/1444">#1444</a></li>
 </ul>
 <h2 id="v0.20.9-(2021-01-02)" tabindex="-1">v0.20.9 (2021-01-02)</h2>
-<h3 id="bug-fixes-55" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-56" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Regression caused by 1886304f327da5642097834feac0387fd1b78b6e</li>
 <li>Parameter declarations might not exist, closes <a href="https://github.com/TypeStrong/typedoc/issues/1443">#1443</a></li>
 </ul>
 <h2 id="v0.20.8-(2021-01-01)" tabindex="-1">v0.20.8 (2021-01-01)</h2>
-<h3 id="bug-fixes-56" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-57" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>CLI should not exit cleanly on unexpected error</li>
 </ul>
 <h2 id="v0.20.7-(2020-01-01)" tabindex="-1">v0.20.7 (2020-01-01)</h2>
-<h3 id="bug-fixes-57" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-58" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Tuples could cause a crash</li>
 </ul>
 <h2 id="v0.20.6-(2020-01-01)" tabindex="-1">v0.20.6 (2020-01-01)</h2>
-<h3 id="features-34" tabindex="-1">Features</h3>
+<h3 id="features-35" tabindex="-1">Features</h3>
 <ul>
 <li>Support for JSDoc types, closes <a href="https://github.com/TypeStrong/typedoc/issues/1214">#1214</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1437">#1437</a></li>
 </ul>
-<h3 id="bug-fixes-58" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-59" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Properly resolve type parameters, closes <a href="https://github.com/TypeStrong/typedoc/issues/1438">#1438</a></li>
 </ul>
 <h2 id="v0.20.5-(2020-12-30)" tabindex="-1">v0.20.5 (2020-12-30)</h2>
-<h3 id="bug-fixes-59" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-60" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Functions might not have a parent in global files, closes <a href="https://github.com/TypeStrong/typedoc/issues/1436">#1436</a></li>
 </ul>
 <h2 id="v0.20.4-(2020-12-30)" tabindex="-1">v0.20.4 (2020-12-30)</h2>
-<h3 id="bug-fixes-60" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-61" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>--excludeNotDocumented didn't remove reflections, closes <a href="https://github.com/TypeStrong/typedoc/issues/1435">#1435</a></li>
 </ul>
 <h2 id="v0.20.3-(2020-12-29)" tabindex="-1">v0.20.3 (2020-12-29)</h2>
-<h3 id="features-35" tabindex="-1">Features</h3>
+<h3 id="features-36" tabindex="-1">Features</h3>
 <ul>
 <li>Improved support for global files, closes <a href="https://github.com/TypeStrong/typedoc/issues/1424">#1424</a></li>
 </ul>
 <h2 id="v0.20.2-(2020-12-29)" tabindex="-1">v0.20.2 (2020-12-29)</h2>
-<h3 id="features-36" tabindex="-1">Features</h3>
+<h3 id="features-37" tabindex="-1">Features</h3>
 <ul>
 <li>Better detection for declaration files defining a module</li>
 </ul>
-<h3 id="bug-fixes-61" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-62" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Negative literal types were converted incorrectly, closes <a href="https://github.com/TypeStrong/typedoc/issues/1427">#1427</a></li>
 <li>ArgumentsReader should warn if missing a value, closes <a href="https://github.com/TypeStrong/typedoc/issues/1429">#1429</a></li>
@@ -1195,7 +1208,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Map bash, sh, shell to shellscript when highlighting, closes <a href="https://github.com/TypeStrong/typedoc/issues/1432">#1432</a></li>
 </ul>
 <h2 id="v0.20.1-(2020-12-29)" tabindex="-1">v0.20.1 (2020-12-29)</h2>
-<h3 id="bug-fixes-62" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-63" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Initializers should only be included if &quot;simple&quot;, closes <a href="https://github.com/TypeStrong/typedoc/issues/1288">#1288</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1224">#1224</a>, <a href="https://github.com/TypeStrong/typedoc/issues/764">#764</a></li>
 </ul>
@@ -1210,7 +1223,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Remove &quot;mode&quot; option</li>
 <li>Remove ignoreCompilerErrors option</li>
 </ul>
-<h3 id="features-37" tabindex="-1">Features</h3>
+<h3 id="features-38" tabindex="-1">Features</h3>
 <ul>
 <li>new option &quot;markedOptions&quot; (#1412)</li>
 <li>Initial attempt at support for project references</li>
@@ -1226,7 +1239,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Support for mapped types</li>
 <li>Mostly working library mode</li>
 </ul>
-<h3 id="bug-fixes-63" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-64" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>ConstructorType node support</li>
 <li>Reintroduce support for index signatures</li>
@@ -1266,12 +1279,12 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Soc Sieng</li>
 </ul>
 <h2 id="v0.19.2-(2020-09-21)" tabindex="-1">v0.19.2 (2020-09-21)</h2>
-<h3 id="bug-fixes-64" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-65" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Export declarations within namespaces weren't detected, closes <a href="https://github.com/TypeStrong/typedoc/issues/1366">#1366</a></li>
 </ul>
 <h2 id="v0.19.1-(2020-09-05)" tabindex="-1">v0.19.1 (2020-09-05)</h2>
-<h3 id="features-38" tabindex="-1">Features</h3>
+<h3 id="features-39" tabindex="-1">Features</h3>
 <ul>
 <li>Re-introduce support for TS 3.9, closes <a href="https://github.com/TypeStrong/typedoc/issues/1362">#1362</a></li>
 </ul>
@@ -1280,13 +1293,13 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Constantine Dergachev</li>
 </ul>
 <h1 id="v0.19.0-(2020-08-28)" tabindex="-1">v0.19.0 (2020-08-28)</h1>
-<h3 id="features-39" tabindex="-1">Features</h3>
+<h3 id="features-40" tabindex="-1">Features</h3>
 <ul>
 <li>Support for named tuples, closes <a href="https://github.com/TypeStrong/typedoc/issues/1357">#1357</a></li>
 <li>Upgrade to TS 4.0</li>
 <li>Support for defaulted type parameters</li>
 </ul>
-<h3 id="bug-fixes-65" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-66" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Check for missing declarations, closes <a href="https://github.com/TypeStrong/typedoc/issues/1329">#1329</a></li>
 <li>Add converter for parenthesized type nodes, closes <a href="https://github.com/TypeStrong/typedoc/issues/1346">#1346</a></li>
@@ -1304,7 +1317,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <ul>
 <li>Bump minimum node version to 10</li>
 </ul>
-<h3 id="bug-fixes-66" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-67" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Improve support for type aliases, closes <a href="https://github.com/TypeStrong/typedoc/issues/1330">#1330</a></li>
 <li>Examples don't run (#1327)</li>
@@ -1328,7 +1341,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Any plugins which referenced ReflectionKind.ExternalModule or ReflectionKind.Module need to be updated to reference ReflectionKind.Module and ReflectionKind.Namespace respectively., closes <a href="https://github.com/TypeStrong/typedoc/issues/109">#109</a></li>
 <li><code>createMinimatch</code> is no longer a public function.</li>
 </ul>
-<h3 id="features-40" tabindex="-1">Features</h3>
+<h3 id="features-41" tabindex="-1">Features</h3>
 <ul>
 <li>Allow every possible number as a defaultValue for a number option (#1296), closes <a href="https://github.com/TypeStrong/typedoc/issues/1291">#1291</a></li>
 <li>Number options may require min and max values (#1278)</li>
@@ -1342,7 +1355,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Allow user to set git remote, closes <a href="https://github.com/TypeStrong/typedoc/issues/1130">#1130</a></li>
 <li>Only generate legend for items that are displayed on the page (#1187), closes <a href="https://github.com/TypeStrong/typedoc/issues/1136">#1136</a></li>
 </ul>
-<h3 id="bug-fixes-67" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-68" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>copy inherited parameter descriptions (#1303), closes <a href="https://github.com/TypeStrong/typedoc/issues/787">#787</a></li>
 <li>TypeDoc fails to resolve @types packages outside of cwd, closes <a href="https://github.com/TypeStrong/typedoc/issues/1300">#1300</a></li>
@@ -1376,13 +1389,13 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>William Johnes</li>
 </ul>
 <h2 id="v0.16.11-(2020-02-28)" tabindex="-1">v0.16.11 (2020-02-28)</h2>
-<h3 id="features-41" tabindex="-1">Features</h3>
+<h3 id="features-42" tabindex="-1">Features</h3>
 <ul>
 <li>Add support for `` inside of Marked Link Brackets (#1091)</li>
 <li>Support for extended config in typedoc.json, closes <a href="https://github.com/TypeStrong/typedoc/issues/493">#493</a>, <a href="https://github.com/TypeStrong/typedoc/issues/1115">#1115</a></li>
 <li>Config option to exclude not explicitly documented symbols (#996), closes <a href="https://github.com/TypeStrong/typedoc/issues/995">#995</a></li>
 </ul>
-<h3 id="bug-fixes-68" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-69" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Support code blocks with four spaces, closes <a href="https://github.com/TypeStrong/typedoc/issues/1218">#1218</a></li>
 <li>Ensure child comment tags get set (#1221)</li>
@@ -1399,12 +1412,12 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Robin Stevens</li>
 </ul>
 <h2 id="v0.16.10-(2020-02-16)" tabindex="-1">v0.16.10 (2020-02-16)</h2>
-<h3 id="features-42" tabindex="-1">Features</h3>
+<h3 id="features-43" tabindex="-1">Features</h3>
 <ul>
 <li>Allow excluding tags from comments, closes <a href="https://github.com/TypeStrong/typedoc/issues/815">#815</a></li>
 <li>Count warnings (#1205)</li>
 </ul>
-<h3 id="bug-fixes-69" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-70" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Remove tags containing redundant type info, closes <a href="https://github.com/TypeStrong/typedoc/issues/1198">#1198</a></li>
 <li>Don't remove braces containing a tag, closes <a href="https://github.com/TypeStrong/typedoc/issues/1001">#1001</a></li>
@@ -1417,7 +1430,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Zack Slayton</li>
 </ul>
 <h2 id="v0.16.9-(2020-01-25)" tabindex="-1">v0.16.9 (2020-01-25)</h2>
-<h3 id="bug-fixes-70" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-71" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>use util.readFile everywhere to handle BOM issues</li>
 </ul>
@@ -1426,16 +1439,16 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Anton Golub</li>
 </ul>
 <h2 id="v0.16.8-(2020-01-21)" tabindex="-1">v0.16.8 (2020-01-21)</h2>
-<h3 id="bug-fixes-71" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-72" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Correctly handle export * from..., closes <a href="https://github.com/TypeStrong/typedoc/issues/1186">#1186</a></li>
 </ul>
 <h2 id="v0.16.7-(2020-01-17)" tabindex="-1">v0.16.7 (2020-01-17)</h2>
-<h3 id="features-43" tabindex="-1">Features</h3>
+<h3 id="features-44" tabindex="-1">Features</h3>
 <ul>
 <li>Support for query types</li>
 </ul>
-<h3 id="bug-fixes-72" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-73" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>Add test for {} and fix generation</li>
 </ul>
@@ -1444,7 +1457,7 @@ TypeDoc should now export all necessary structures (potentially marked with <cod
 <li>Robin Stevens</li>
 </ul>
 <h2 id="v0.16.6-(2020-01-16)" tabindex="-1">v0.16.6 (2020-01-16)</h2>
-<h3 id="bug-fixes-73" tabindex="-1">Bug Fixes</h3>
+<h3 id="bug-fixes-74" tabindex="-1">Bug Fixes</h3>
 <ul>
 <li>removeReflection does not fully remove reflections, closes <a href="https://github.com/TypeStrong/typedoc/issues/1176">#1176</a></li>
 </ul>

@@ -205,6 +205,11 @@
 			"type": "boolean",
 			"default": false
 		},
+		"searchInComments": {
+			"description": "If set, the search index will also include comments. This will greatly increase the size of the search index.",
+			"type": "boolean",
+			"default": false
+		},
 		"cleanOutputDir": {
 			"description": "If set, TypeDoc will remove the output directory before writing output.",
 			"type": "boolean",
