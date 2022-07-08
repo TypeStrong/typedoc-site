@@ -27,11 +27,11 @@
 		"entryPointStrategy": {
 			"description": "The strategy to be used to convert entry points into documentation modules.",
 			"enum": [
-				"Resolve",
-				"Expand",
-				"Packages"
+				"resolve",
+				"expand",
+				"packages"
 			],
-			"default": "Resolve"
+			"default": "resolve"
 		},
 		"exclude": {
 			"description": "Define patterns to be excluded when expanding a directory that was specified as an entry point.",
@@ -218,12 +218,12 @@
 		"commentStyle": {
 			"description": "Determines how TypeDoc searches for comments.",
 			"enum": [
-				"JSDoc",
-				"Block",
-				"Line",
-				"All"
+				"jsdoc",
+				"block",
+				"line",
+				"all"
 			],
-			"default": "JSDoc"
+			"default": "jsdoc"
 		},
 		"blockTags": {
 			"description": "Block tags which TypeDoc should recognize when parsing comments.",
@@ -462,5 +462,6 @@
 				"type": "string"
 			}
 		}
-	}
+	},
+	"allowTrailingCommas": true
 }

@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>@see | TypeDoc</title>
+    <title>Monorepo | TypeDoc</title>
     <meta name="description" property="og:description" content="" />
     <meta name="keywords" content="TypeScript documentation generator javascript open source" />
-    <meta property="og:title" content="@see">
-    <meta property="og:url" content="/tags/see/">
+    <meta property="og:title" content="Monorepo">
+    <meta property="og:url" content="/guides/monorepo/">
     <meta property="og:site_name" content="TypeDoc Documentation Generator">
     <meta name="twitter:card" content="summary">
 
@@ -85,7 +85,7 @@
                 </li>
                 
                 <li>
-                    <a href="/guides/monorepo/" >Monorepo</a>
+                    <a href="/guides/monorepo/" class="current">Monorepo</a>
                 </li>
                 
                 <li>
@@ -216,7 +216,7 @@
                 </li>
                 
                 <li>
-                    <a href="/tags/see/" class="current">@see</a>
+                    <a href="/tags/see/" >@see</a>
                 </li>
                 
                 <li>
@@ -240,22 +240,21 @@
     </ul>
 </nav>
 </div>
-        <div class="typography"><h1 id="%40see" tabindex="-1">@see</h1>
-<dl class="tag-info">
-    <dt>Tag Kind</dt>
-    <dd>
-        <a href="/guides/tags/#block-tags">Block</a>
-    </dd>
-    <dt>TSDoc Reference</dt>
-    <dd>
-        <a href="https://tsdoc.org/pages/tags/see/" target="_blank"
-            >@see</a
-        >
-    </dd>
-</dl>
-<p>The <code>@see</code> tag can be used to create a list of references for other resources related to this export.</p>
-<h2 id="example" tabindex="-1">Example</h2>
-<pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * @see [Factorial - Wikipedia](https://en.wikipedia.org/wiki/Factorial)<br> * @see {@link semifactorial}<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">factorial</span><span class="token punctuation">(</span>n<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span></code></pre>
+        <div class="typography"><h1 id="monorepo" tabindex="-1">Monorepo</h1>
+<p>TypeDoc's <code>entryPointStrategy: Packages</code> is dedicated support for monorepo projects. TypeDoc will attempt to determine entry points based on <code>package.json</code>'s <code>main</code> property (with default value <code>index.js</code>) and if it wasn't found, based on <code>types</code> property. If any of the packages given are the root of an <a href="https://docs.npmjs.com/cli/v7/using-npm/workspaces">npm Workspace</a> or a <a href="https://classic.yarnpkg.com/en/docs/workspaces/">Yarn Workspace</a> TypeDoc will find all the <code>workspaces</code> defined in the <code>package.json</code>. Each found package will be rendered by TypeDoc as a <code>module</code>.</p>
+<p>You may also need to configure TypeDoc for each child package using config field <code>typedoc</code> in package.json file for TypeDoc to work properly.</p>
+<h2 id="typedoc-package-config" tabindex="-1">TypeDoc package config</h2>
+<p>Example config in child package's package.json:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>    <span class="token property">"name"</span><span class="token operator">:</span> <span class="token string">"child-package"</span><span class="token punctuation">,</span><br>    <span class="token property">"version"</span><span class="token operator">:</span> <span class="token string">"1.0.0"</span><span class="token punctuation">,</span><br>    <span class="token property">"typedoc"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token property">"entryPoint"</span><span class="token operator">:</span> <span class="token string">"./src/index.ts"</span><span class="token punctuation">,</span><br>        <span class="token property">"readmeFile"</span><span class="token operator">:</span> <span class="token string">"./README.md"</span><span class="token punctuation">,</span><br>        <span class="token property">"displayName"</span><span class="token operator">:</span> <span class="token string">"Child Package"</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<blockquote>
+<p>All of these options are optional</p>
+</blockquote>
+<h3 id="entrypoint" tabindex="-1">entryPoint</h3>
+<p>Entry point strategy <code>Packages</code> requires sourcemaps in your JS entry points or that you specify the TypeDoc entry point in your package.json to tell TypeDoc where your entry point TypeScript source. Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces.</p>
+<h3 id="readmefile" tabindex="-1">readmeFile</h3>
+<p>Path to the readme file that should be displayed on the index page of the package doc.</p>
+<h3 id="displayname" tabindex="-1">displayName</h3>
+<p>The name of the package that will be used when rendering the doc. If none provided, the default name will be the name of the package specified in package.json file.</p>
 </div>
         <div class="toc-container"></div>
     </div>

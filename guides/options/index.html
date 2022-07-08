@@ -85,6 +85,10 @@
                 </li>
                 
                 <li>
+                    <a href="/guides/monorepo/" >Monorepo</a>
+                </li>
+                
+                <li>
                     <a href="/guides/changelog/" >Changelog</a>
                 </li>
                 
@@ -285,7 +289,7 @@ Entry points can be handled in one of three ways, see <a href="#entrypointstrate
 </tr>
 <tr>
 <td>packages</td>
-<td>If your codebase is comprised of one or more npm packages, you can pass the paths to these packages and TypeDoc will attempt to determine entry points based on <code>package.json</code>'s <code>main</code> property (with default value <code>index.js</code>) and if it wasn't found, based on <code>types</code> property. If any of the packages given are the root of an <a href="https://docs.npmjs.com/cli/v7/using-npm/workspaces">npm Workspace</a> or a <a href="https://classic.yarnpkg.com/en/docs/workspaces/">Yarn Workspace</a> TypeDoc will find all the <code>workspaces</code> defined in the <code>package.json</code>. This mode requires sourcemaps in your JS entry points or that you specify <code>typedocMain</code> in your package.json to tell TypeDoc where your entry point TypeScript source. Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces.</td>
+<td>If your codebase is comprised of one or more npm packages, you can pass the paths to these packages and TypeDoc will attempt to determine entry points based on <code>package.json</code>'s <code>main</code> property (with default value <code>index.js</code>) and if it wasn't found, based on <code>types</code> property. If any of the packages given are the root of an <a href="https://docs.npmjs.com/cli/v7/using-npm/workspaces">npm Workspace</a> or a <a href="https://classic.yarnpkg.com/en/docs/workspaces/">Yarn Workspace</a> TypeDoc will find all the <code>workspaces</code> defined in the <code>package.json</code>. This mode requires sourcemaps in your JS entry points or that you specify the TypeDoc entry point in your package.json to tell TypeDoc where your entry point TypeScript source. Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces. Find more details in <a href="/guides/monorepo">monorepo</a> guide</td>
 </tr>
 </tbody>
 </table>
