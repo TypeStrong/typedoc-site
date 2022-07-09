@@ -250,6 +250,8 @@ markdown parser to be converted to HTML.</p>
 to provide syntax highlighting. You can specify the syntax highlighting theme with the
 <code>--lightHighlightTheme</code> and <code>--darkHighlightTheme</code> options.</p>
 <pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * Code blocks are great for examples<br> *<br> * ```ts<br> * // run typedoc --help for a list of supported languages<br> * const instance = new MyClass();<br> * ```<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">MyClass</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></code></pre>
+<p>Note: TypeDoc only supports fenced code blocks. Indentation based code blocks will not prevent tags
+from being parsed within the code block.</p>
 <h2 id="escaping-comments" tabindex="-1">Escaping Comments</h2>
 <p>TypeDoc supports escaping special characters in comments to include literal <code>{}@/</code> characters.
 All other escapes will be passed through to be processed by Marked. As an example:</p>
