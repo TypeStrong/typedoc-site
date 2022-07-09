@@ -323,3 +323,20 @@ td {
     border: 1px solid #000;
     padding: 0.2em 0.5em;
 }
+
+/** ============== Footer ============== **/
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 1em;
+}
+.edit-github {
+    text-decoration: none;
+    color: var(--color-text);
+    border: 1px solid black;
+    padding: 0.5em;
+}
+.edit-github:hover {
+    color: var(--color-link);
+    border-color: var(--color-link);
+}
