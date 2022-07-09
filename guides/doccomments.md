@@ -36,6 +36,9 @@ to provide syntax highlighting. You can specify the syntax highlighting theme wi
 export class MyClass {}
 ````
 
+Note: TypeDoc only supports fenced code blocks. Indentation based code blocks will not prevent tags
+from being parsed within the code block.
+
 ## Escaping Comments
 
 TypeDoc supports escaping special characters in comments to include literal `{}@/` characters.
