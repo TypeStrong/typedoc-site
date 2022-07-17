@@ -3,7 +3,7 @@
     "extends": "./typedoc/.config/typedoc.json",
     "out": "_site/api",
     "json": "_site/api/docs.json",
-    "name": "TypeDoc Documentation",
+    "name": "TypeDoc",
     "excludeExternals": true,
     "includeVersion": true
 }
