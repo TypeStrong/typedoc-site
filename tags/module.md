@@ -23,12 +23,17 @@ a comment as referring to the file, but cannot be used to rename the module.
  *
  * Specify this is a module comment and rename it to my-module:
  * @module my-module
+ */
+import * as lib from "lib";
+
+// file2.ts
+/**
  * Specify this is a module comment without renaming it:
  * @module
  */
 import * as lib from "lib";
 
-// file2.ts
+// file3.ts
 /**
  * This is *not* a doc comment for the file, it is a doc comment for the import.
  * Include the `@module` or `@packageDocumentation` tag to mark it as a file comment.
