@@ -125,7 +125,7 @@ function createInclude(
             out.push(
                 `    <p class="title"><a href="${plugin.links.npm}" target="_blank">${plugin.name}</a></p>`
             );
-            out.push(`    <p>${plugin.description}</p>`);
+            out.push(`    <p>${miniMarkdown(plugin.description || "")}</p>`);
             out.push(`    <p>
                 <a href="https://www.npmjs.com/~${plugin.publisher.name}" target="_blank">${plugin.publisher.name}</a> published ${plugin.version} • ${plugin.date.rel}
             </p>`);
@@ -134,6 +134,29 @@ function createInclude(
     }
 
     return fs.writeFile(`_includes/${ident}.txt`, out.join("\n"));
+}
+
+function miniMarkdown(text: string) {
+    return escapeHtml(text)
+        .replace(
+            /\[(.*?)\]\((https?:\/\/.*?)\)/g,
+            (_, text, link) => `<a href="${link}" target="_blank">${text}</a>`
+        )
+        .replace(/`(.*?)`/g, "<code>$1</code>");
+}
+
+function escapeHtml(html: string) {
+    return html.replace(
+        /[&<>'"]/g,
+        (c) =>
+            ({
+                "&": "&amp;",
+                "<": "&lt;",
+                ">": "&gt;",
+                '"': "&quot;",
+                "'": "&#39;",
+            }[c as never])
+    );
 }
 
 async function main() {
