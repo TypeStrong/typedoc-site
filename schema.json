@@ -314,7 +314,17 @@
 			"description": "Specify the sort strategy for documented values.",
 			"type": "array",
 			"items": {
-				"type": "string"
+				"enum": [
+					"source-order",
+					"alphabetical",
+					"enum-value-ascending",
+					"enum-value-descending",
+					"static-first",
+					"instance-first",
+					"visibility",
+					"required-first",
+					"kind"
+				]
 			},
 			"default": [
 				"kind",
