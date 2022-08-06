@@ -8,6 +8,7 @@
   "dependencies": {
     "@11ty/eleventy": "^1.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "eleventy-sass": "^2.1.0",
     "markdown-it": "^13.0.1",
     "markdown-it-anchor": "^8.6.4",
     "node-fetch": "^3.2.6",

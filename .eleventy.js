@@ -3,6 +3,7 @@
 const fs = require("fs");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const eleventySass = require("eleventy-sass");
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const { join } = require("path");
@@ -11,12 +12,13 @@ const { join } = require("path");
 module.exports = function (el) {
     el.setUseGitIgnore(false);
 
-    el.addPassthroughCopy("css");
+    // el.addPassthroughCopy("css");
     el.addPassthroughCopy("scripts");
     el.addPassthroughCopy("images");
     el.addPassthroughCopy("CNAME");
 
     el.addPlugin(syntaxHighlight);
+    el.addPlugin(eleventySass);
 
     el.setLibrary(
         "md",

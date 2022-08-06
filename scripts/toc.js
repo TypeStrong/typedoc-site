@@ -1,6 +1,18 @@
 // @ts-check
 
 (function () {
+    const theme = /** @type {HTMLInputElement | null} */ (
+        document.querySelector("#theme")
+    );
+    if (theme) {
+        theme.addEventListener("input", () => {
+            localStorage.setItem("tsd-theme", theme.value);
+            document.documentElement.dataset.theme = theme.value;
+        });
+    }
+})();
+
+(function () {
     const tocContainer = document.querySelector(".toc-container");
     /** @type {HTMLElement[]} */
     const tocContainerStack = [];

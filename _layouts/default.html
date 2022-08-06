@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
     {% include 'head.html' %}
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
 
     <body>
         {% include 'header.html' %}
