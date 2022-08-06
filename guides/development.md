@@ -76,7 +76,7 @@ Plugins should export a `load` function which will be called by TypeDoc when loa
 This function should add any options the plugin accepts and add any listeners necessary to effect TypeDoc's behavior.
 
 ```typescript
-import { Application, ParameterType, Converter } from "typedoc";
+import { Application, ParameterType, Converter, Context } from "typedoc";
 
 export function load(app: Application) {
     app.options.addDeclaration({
