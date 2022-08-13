@@ -38,6 +38,10 @@ jobs:
               run: node typedoc/scripts/generate_options_schema.js _site/schema.json
             - name: Rebuild markdown site
               run: npm run build
+            - name: Set deploy author
+              run: |
+                  git config --global user.email "typedoc@gerritbirkeland.com"
+                  git config --global user.name "TypeDoc Bot"
             - name: Deploy
               uses: JamesIves/github-pages-deploy-action@4.1.4
               with:
