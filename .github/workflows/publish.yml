@@ -47,3 +47,4 @@ jobs:
               with:
                   branch: gh-pages
                   folder: _site
+                  ssh-key: ${{ secrets.BOT_SSH_KEY }}
