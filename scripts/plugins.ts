@@ -14,7 +14,6 @@ const EXCLUDED_PLUGINS = [
     // Custom plugins/themes for other libraries, likely not useful to most people.
     "@initializer-utils/typedoc-theme",
     "@colony/typedoc-plugin-markdown",
-    "tsparticles-clarity-plugin",
 ];
 
 const EXCLUDED_PLUGIN_USERS = [
