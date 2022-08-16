@@ -7,6 +7,21 @@ import { promises as fs, existsSync } from "fs";
 import semver from "#semver";
 import fetch from "node-fetch";
 
+const EXCLUDED_PLUGINS = [
+    // Fork not intended for public use.
+    "@zamiell/typedoc-plugin-markdown",
+
+    // Custom plugins/themes for other libraries, likely not useful to most people.
+    "@initializer-utils/typedoc-theme",
+    "@colony/typedoc-plugin-markdown",
+    "tsparticles-clarity-plugin",
+];
+
+const EXCLUDED_PLUGIN_USERS = [
+    // Forked typedoc-plugin-markdown, did not abide by license.
+    "acceleratxr",
+];
+
 function exec(command: string) {
     return new Promise<string>((resolve, reject) => {
         cp.exec(command, (err, stdout) => {
@@ -78,6 +93,9 @@ function getSupportingPlugins(
     const supported: NpmPackageWithPeer[] = [];
 
     for (const plugin of plugins) {
+        if (EXCLUDED_PLUGINS.includes(plugin.name)) continue;
+        if (EXCLUDED_PLUGIN_USERS.includes(plugin.publisher.name)) continue;
+
         let version = plugin.peer.trim();
         if (!version) continue;
 
