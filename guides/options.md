@@ -640,6 +640,14 @@ Specifies the log level to be printed to the console. Defaults to `Info`. The av
 -   Warn - Print warning and error messages
 -   Error - Print only error messages
 
+### skipErrorChecking
+
+```bash
+$ typedoc --skipErrorChecking
+```
+
+Instructs TypeDoc to not run the type checker before converting a project. Enabling this option may improve generation time, but could also result in crashes if your code contains type errors.
+
 ## Validation
 
 Options that control how TypeDoc validates your documentation
