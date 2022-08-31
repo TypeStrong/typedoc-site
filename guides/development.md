@@ -53,14 +53,15 @@ All components are available on the [Application](https://typedoc.org/api/classe
 TypeDoc provides some 30 options which determine how the project model is generated and output to disk.
 The [Options](https://typedoc.org/api/classes/Options.html) class consolidates application options into a single location and handles type conversion.
 
-There are 10 builtin option types as specified by the [ParameterType](https://typedoc.org/api/enums/ParameterType.html) enum.
+There are 11 builtin option types as specified by the [ParameterType](https://typedoc.org/api/enums/ParameterType.html) enum.
 
 -   `String` - A string
 -   `Path` - A string which will be resolved to a path. Paths in config files will be resolved relative to the config directory.
 -   `Number` - A number which is not `NaN`
 -   `Boolean` - `true` or `false`
 -   `Map` - Defines a map between string keys and an arbitrary type. See the [tests](https://github.com/TypeStrong/typedoc/blob/master/src/test/utils/options/declaration.test.ts#L39) for an example.
--   `Mixed` - An arbitrary type that will just be passed through by TypeDoc.
+-   `Mixed` - An object type that is passed through by TypeDoc to create specific implicit behaviour.
+-   `Object` - An object type of which value keys can be overridden or extended by passing a new object. 
 -   `Array` - An array of strings.
 -   `PathArray` - An array of paths, if specified in a config file, will be resolved relative to the config file directory.
 -   `ModuleArray` - An array of modules/paths. Items will be resolved if they start with `.`.
