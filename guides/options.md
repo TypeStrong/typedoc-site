@@ -162,6 +162,66 @@ $ typedoc --excludeProtected
 
 Removes protected class members from the generated documentation. Defaults to false.
 
+### externalSymbolLinkMappings
+
+```json
+// typedoc.json
+{
+    "externalSymbolLinkMappings": {
+        // {@link typescript!Partial} will use this link as well as
+        // type Foo = Partial<Bar>
+        "typescript": {
+            "Partial": "https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype"
+        }
+    }
+}
+```
+
+Can be used to specify locations of externally defined types. If the external library uses namespaces,
+qualify the name with `.` as a separator. These definitions will be used for both types linked to by
+the user via a `{@link}` tag and in code.
+
+TypeDoc assumes that if a symbol was referenced from a package, it was exported from that package.
+This will be true for most native TypeScript packages, but packages which rely on `@types` will be linked
+according to the `@types` package, not the original module name. If both are intended to be supported,
+both packages must be listed.
+
+```json
+// typedoc.json
+{
+    "externalSymbolLinkMappings": {
+        // used by `class Foo extends Component {}`
+        "@types/react": {
+            "Component": "https://reactjs.org/docs/react-component.html"
+        },
+        // used by {@link react!Component}
+        "react": {
+            "Component": "https://reactjs.org/docs/react-component.html"
+        }
+    }
+}
+```
+
+Global external types are supported, but may have surprising behavior. Types which are defined in the TypeScript
+lib files (including `Array`, `Promise`, ...) will be detected as belonging to the `typescript` package rather than 
+the special `global` package reserved for global types.
+
+```json
+// typedoc.json
+{
+    "externalSymbolLinkMappings": {
+        // used by {@link !Promise}
+        "global": {
+            "Promise": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+        },
+        // used by type Foo = Promise<string>
+        "typescript": {
+            "Promise": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+        }
+    }
+}
+```
+
 ### media
 
 ```bash
