@@ -40,6 +40,9 @@ The JSON file should return an object whose keys are the option names. For examp
 }
 
 // typedoc.js
+/**
+ * @type {import('typedoc').TypeDocOptions}
+ */
 module.exports = {
     entryPoints: ["./src/index.ts", "./src/secondary-entry.ts"],
     out: "doc"
