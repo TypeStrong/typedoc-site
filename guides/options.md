@@ -110,7 +110,11 @@ There are three possible options:
 $ typedoc --exclude "**/*+(index|.spec|.e2e).ts"
 ```
 
-Exclude files by the given pattern when a path is provided as source.
+Exclude files by the given pattern when a path is provided as source. This option is only used to remove files from consideration as
+entry points. Unlike TypeScript's `exclude` option, it *cannot* be used to exclude files from compilation. You may want to turn on TypeScript's
+[--skipLibCheck](https://www.typescriptlang.org/tsconfig#skipLibCheck) if you have compilation errors originating in `@types` packages.
+
+
 Supports [minimatch](https://github.com/isaacs/minimatch) patterns.
 In configuration files, this option accepts an array of patterns. On the command line, it may be specified multiple times to add multiple patterns.
 If an exported member from one of your entry points is located in an excluded file, it will be excluded from the documentation.
