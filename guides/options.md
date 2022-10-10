@@ -63,6 +63,21 @@ Specify a `tsconfig.json` file that options should be read from. If not specifie
 
 When TypeDoc loads a `tsconfig.json` file, it also will read TypeDoc options declared under the `typedocOptions` key and look for a `tsdoc.json` file in the same directory to read the supported tags.
 
+TypeDoc provides its default configuration for extension in `typedoc/tsdoc.json`. To add a custom block tag, try:
+
+```jsonc
+// tsdoc.json
+{
+    "extends": ["typedoc/tsdoc.json"],
+    "tagDefinitions": [
+        {
+            "tagName": "@myCustomTag",
+            "syntaxKind": "block"
+        }
+    ]
+}
+```
+
 ### compilerOptions
 
 Used to selectively override compiler options for generating documentation. Values set with this option
@@ -111,9 +126,8 @@ $ typedoc --exclude "**/*+(index|.spec|.e2e).ts"
 ```
 
 Exclude files by the given pattern when a path is provided as source. This option is only used to remove files from consideration as
-entry points. Unlike TypeScript's `exclude` option, it *cannot* be used to exclude files from compilation. You may want to turn on TypeScript's
+entry points. Unlike TypeScript's `exclude` option, it _cannot_ be used to exclude files from compilation. You may want to turn on TypeScript's
 [--skipLibCheck](https://www.typescriptlang.org/tsconfig#skipLibCheck) if you have compilation errors originating in `@types` packages.
-
 
 Supports [minimatch](https://github.com/isaacs/minimatch) patterns.
 In configuration files, this option accepts an array of patterns. On the command line, it may be specified multiple times to add multiple patterns.
@@ -210,7 +224,7 @@ both packages must be listed.
 ```
 
 Global external types are supported, but may have surprising behavior. Types which are defined in the TypeScript
-lib files (including `Array`, `Promise`, ...) will be detected as belonging to the `typescript` package rather than 
+lib files (including `Array`, `Promise`, ...) will be detected as belonging to the `typescript` package rather than
 the special `global` package reserved for global types.
 
 ```json
