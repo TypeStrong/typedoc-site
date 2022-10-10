@@ -22,7 +22,8 @@ Example config in child package's package.json:
     "typedoc": {
         "entryPoint": "./src/index.ts",
         "readmeFile": "./README.md",
-        "displayName": "Child Package"
+        "displayName": "Child Package",
+        "tsconfig": "./tsconfig.lib.json"
     }
 }
 ```
@@ -40,3 +41,7 @@ Path to the readme file that should be displayed on the index page of the packag
 ### displayName
 
 The name of the package that will be used when rendering the doc. If none provided, the default name will be the name of the package specified in package.json file.
+
+### tsconfig
+
+Path of the tsconfig file to use when creating the program for compilation. If omitted, will look for `tsconfig.json` like `tsc` does.
