@@ -412,7 +412,7 @@ Create a CNAME file in the output directory with the specified text.
 $ typedoc --gitRevision <revision|branch>
 ```
 
-Use specified revision or branch instead of the last revision for linking to source files.
+Use specified revision or branch instead of the last revision for linking to source files. Defaults to the last commit.
 
 ### gitRemote
 
@@ -423,6 +423,9 @@ $ typedoc --gitRemote <remote>
 Use the specified git remote instead of `origin` for linking to source files in GitHub, Bitbucket, or GitLab.
 You can use `git remote` to view a list of valid remotes.
 If you are updating documentation for a forked package, you probably want to pass `--gitRemote upstream`.
+
+This may be set to a URL (staring with `http://` or `https://`), in which case TypeDoc will assume that it is
+the base URL for links. Links will be created to `{gitRemote}/{gitRevision}/{filePath}`.
 
 ### htmlLang
 
