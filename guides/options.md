@@ -65,7 +65,7 @@ When TypeDoc loads a `tsconfig.json` file, it also will read TypeDoc options dec
 
 TypeDoc provides its default configuration for extension in `typedoc/tsdoc.json`. To add a custom block tag, try:
 
-```jsonc
+```json
 // tsdoc.json
 {
     "extends": ["typedoc/tsdoc.json"],
