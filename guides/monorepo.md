@@ -7,7 +7,20 @@ menuOrder: 100
 
 # Monorepo
 
-TypeDoc's `entryPointStrategy: Packages` is dedicated support for monorepo projects. TypeDoc will attempt to determine entry points based on `package.json`'s `main` property (with default value `index.js`) and if it wasn't found, based on `types` property. If any of the packages given are the root of an [npm Workspace](https://docs.npmjs.com/cli/v7/using-npm/workspaces) or a [Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/) TypeDoc will find all the `workspaces` defined in the `package.json`. Each found package will be rendered by TypeDoc as a `module`.
+TypeDoc's `entryPointStrategy: packages` is dedicated support for monorepo projects. TypeDoc will attempt to determine entry points based on `package.json`'s `main` property (with default value `index.js`) and if it wasn't found, based on `types` property. If any of the packages given are the root of an [npm Workspace](https://docs.npmjs.com/cli/v7/using-npm/workspaces) or a [Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/) TypeDoc will find all the `workspaces` defined in the `package.json`. Each found package will be rendered by TypeDoc as a `module`.
+
+**Note**: This means that you should give TypeDoc paths to modules in packages mode, _not_ paths to the entry point.
+
+```json
+{
+    "entryPointStrategy": "packages",
+    "entryPoints": [
+        "packages/my-module",
+        // not
+        "packages/my-module/src/index.ts"
+    ]
+}
+```
 
 You may also need to configure TypeDoc for each child package using config field `typedoc` in package.json file for TypeDoc to work properly.
 
