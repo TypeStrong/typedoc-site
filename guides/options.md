@@ -409,7 +409,7 @@ Create a CNAME file in the output directory with the specified text.
 ### sourceLinkTemplate
 
 ```bash
-$ typedoc --gitRevision 'https://vcs.example.com/{path}?at={gitRevision}#line={line}'
+$ typedoc --sourceLinkTemplate 'https://vcs.example.com/{path}?at={gitRevision}#line={line}'
 ```
 
 Specify a link template to be used when generating source urls. If not set, will be automatically created
