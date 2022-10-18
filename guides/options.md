@@ -406,6 +406,16 @@ $ typedoc --cname typedoc.org
 
 Create a CNAME file in the output directory with the specified text.
 
+### sourceLinkTemplate
+
+```bash
+$ typedoc --gitRevision 'https://vcs.example.com/{path}?at={gitRevision}#line={line}'
+```
+
+Specify a link template to be used when generating source urls. If not set, will be automatically created
+using the git remote for GitHub, GitLab, and BitBucket urls. Supports `{path}`, `{line}`, and `{gitRevision}`
+placeholders.
+
 ### gitRevision
 
 ```bash
@@ -424,7 +434,7 @@ Use the specified git remote instead of `origin` for linking to source files in 
 You can use `git remote` to view a list of valid remotes.
 If you are updating documentation for a forked package, you probably want to pass `--gitRemote upstream`.
 
-This may be set to a URL (staring with `http://` or `https://`), in which case TypeDoc will assume that it is
+(Deprecated, will be removed in 0.24) This may be set to a URL (staring with `http://` or `https://`), in which case TypeDoc will assume that it is
 the base URL for links. Links will be created to `{gitRemote}/{gitRevision}/{filePath}`.
 
 ### htmlLang
@@ -479,6 +489,40 @@ $ typedoc --cleanOutputDir false
 ```
 
 Can be used to prevent TypeDoc from cleaning the output directory specified with `--out`.
+
+### titleLink
+
+```bash
+$ typedoc --titleLink "http://example.com"
+```
+
+Sets the link the title in the header points to. Defaults to the documentation homepage.
+
+### navigationLinks
+
+```json
+// typedoc.json
+{
+    "navigationLinks": {
+        "Example": "http://example.com"
+    }
+}
+```
+
+Defines additional links to be included in the page header.
+
+### sidebarLinks
+
+```json
+// typedoc.json
+{
+    "sidebarLinks": {
+        "Example": "http://example.com"
+    }
+}
+```
+
+Defines additional links to be included in the page sidebar.
 
 ## Comment Options
 
