@@ -4,7 +4,7 @@ tags: tag
 title: "@group"
 ---
 
-# @category
+# @group
 
 {% include 'tag-info', kind: 'Block' %}
 
