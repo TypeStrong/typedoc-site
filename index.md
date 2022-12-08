@@ -16,7 +16,7 @@ If you have [npm installed](https://www.npmjs.com/get-npm), start using TypeDoc 
 
 ```bash
 # Install
-npm install typedoc
+npm install --save-dev typedoc
 
 # Execute typedoc on your project
 npx typedoc src/index.ts
