@@ -639,6 +639,43 @@ The available sorting strategies are:
 -   `instance-first`
 -   `visibility` (public, then protected, then private)
 -   `required-first`
+-   `kind` (order according to the `kindSortOrder` option)
+
+### kindSortOrder
+
+Specifies the relative ordering of reflections if `kind` is specified in the `sort` option. The default order is:
+
+```json
+// typedoc.json
+{
+    "kindSortOrder": [
+        "Reference",
+        "Project",
+        "Module",
+        "Namespace",
+        "Enum",
+        "EnumMember",
+        "Class",
+        "Interface",
+        "TypeAlias",
+        "Constructor",
+        "Property",
+        "Variable",
+        "Function",
+        "Accessor",
+        "Method",
+        "ObjectLiteral",
+        "Parameter",
+        "TypeParameter",
+        "TypeLiteral",
+        "CallSignature",
+        "ConstructorSignature",
+        "IndexSignature",
+        "GetSignature",
+        "SetSignature",
+    ]
+}
+```
 
 ### visibilityFilters
 
