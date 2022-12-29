@@ -19,6 +19,8 @@ const EXCLUDED_PLUGINS = [
 const EXCLUDED_PLUGIN_USERS = [
     // Forked typedoc-plugin-markdown, did not abide by license.
     "acceleratxr",
+    // Has forked several plugins & published, forks do not appear to be for general use.
+    "silei"
 ];
 
 function exec(command: string) {
