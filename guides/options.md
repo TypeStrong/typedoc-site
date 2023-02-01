@@ -68,6 +68,7 @@ TypeDoc provides its default configuration for extension in `typedoc/tsdoc.json`
 ```json
 // tsdoc.json
 {
+    "$schema": "https://developer.microsoft.com/json-schemas/tsdoc/v0/tsdoc.schema.json",
     "extends": ["typedoc/tsdoc.json"],
     "tagDefinitions": [
         {
