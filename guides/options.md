@@ -82,7 +82,7 @@ Note that:
 
 - Option files may also contain an `extends` key, which specifies an additional file to be loaded before importing options from the current file. Paths will be resolved relative to the options file they are loaded from.
 - If you have a relatively simple configuration, then you should use a JSON configuration file.
-- If you have a complex configuration, then you should use a JavaScript configuration file. (For example, you might want to build the `entryPoints` array manually by parsing the project's "index.ts" file.)
+- If you have a complex configuration, then you should use a JavaScript configuration file. (For example, you might want to build the `entryPoints` array programmatically by parsing the project's "index.ts" file.)
 
 ### tsconfig
 
