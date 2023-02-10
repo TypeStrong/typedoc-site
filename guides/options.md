@@ -36,9 +36,12 @@ Specify an option file that should be loaded. If not specified, TypeDoc will loo
 - `typedoc.config.cjs`
 - `typedoc.js`
 - `typedoc.cjs`
+- `.config/typedoc.json`
+- `.config/typedoc.jsonc`
+- `.config/typedoc.config.js`
+- `.config/typedoc.config.cjs`
 - `.config/typedoc.js`
 - `.config/typedoc.cjs`
-- `.config/typedoc.json`
 
 #### JSON Files
 
