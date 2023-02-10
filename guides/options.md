@@ -28,30 +28,58 @@ These options control where TypeDoc reads its configuration from.
 $ typedoc --options <filename>
 ```
 
-Specify an option file that should be loaded. If not specified TypeDoc will look for `typedoc.json` and `typedoc.js` in the current directory.
-The JSON file should return an object whose keys are the option names. For example:
+Specify an option file that should be loaded. If not specified, TypeDoc will look for a configuration file matching one of the valid config names in the current directory:
 
-```js
-// typedoc.json
+- `typedoc.json`
+- `typedoc.jsonc`
+- `typedoc.config.js`
+- `typedoc.config.cjs`
+- `typedoc.js`
+- `typedoc.cjs`
+- `.config/typedoc.js`
+- `.config/typedoc.cjs`
+- `.config/typedoc.json`
+
+#### JSON Files
+
+If you are using a JSON file, it should be an object whose keys are the option names. For example:
+
+```json
 {
     "$schema": "https://typedoc.org/schema.json",
     "entryPoints": ["./src/index.ts", "./src/secondary-entry.ts"],
     "out": "doc"
 }
+```
 
-// typedoc.js
-/**
- * @type {import('typedoc').TypeDocOptions}
- */
+Note that:
+
+- It is recommended that you use a file name of `typedoc.json`.
+- The `$schema` key is an optional property that will be ignored by TypeDoc, but will provide auto-complete and key validation when editing the file in VSCode and other editors which support JSON schemas.
+- JSON files are parsed as JSONC, which means that you can safely use trailing commas and comments in your file.
+
+#### JavaScript Files
+
+If you are using a JavaScript file, it should export an object whose keys are the option names. For example:
+
+```js
+/** @type {import('typedoc').TypeDocOptions} */
 module.exports = {
     entryPoints: ["./src/index.ts", "./src/secondary-entry.ts"],
-    out: "doc"
+    out: "doc",
 }
 ```
 
-Option files may also contain an `extends` key which specifies an additional file to be loaded before importing options from the current file. Paths will be resolved relative to the options file they are loaded from.
+Note that:
 
-The `$schema` key is an optional property that will be ignored by TypeDoc, but can be used to get better autocomplete when editing a `typedoc.json` file in VSCode and other editors which support JSON Schemas.
+- It is recommended that you use a file name of `typedoc.config.cjs`.
+- The comment will be ignored by TypeDoc, but will provide auto-complete and key validation when editing the file in VSCode and other editors which support TypeScript JSDoc annotations.
+
+#### Other Info
+
+- Option files may also contain an `extends` key, which specifies an additional file to be loaded before importing options from the current file. Paths will be resolved relative to the options file they are loaded from.
+- If you have a relatively simple configuration, then you should use a JSON configuration file.
+- If you have a complex configuration, then you should use a JavaScript configuration file. (For example, you might want to build the `entryPoints` array manually by parsing the project's "index.ts" file.)
 
 ### tsconfig
 
