@@ -28,7 +28,7 @@ These options control where TypeDoc reads its configuration from.
 $ typedoc --options <filename>
 ```
 
-Specify a configuration file to be loaded, which will contain entries that correspond to command-line options/flags. If not specified, TypeDoc will look for a configuration file matching one of the valid config names in the current directory:
+Specify a configuration file to be loaded, which should contain entries that correspond to command-line options/flags. If not specified, TypeDoc will look for a configuration file matching one of the valid config names in the current directory:
 
 - `typedoc.json`
 - `typedoc.jsonc`
