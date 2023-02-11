@@ -189,7 +189,49 @@ Prevent externally resolved TypeScript files from being documented. Defaults to 
 $ typedoc --excludeNotDocumented
 ```
 
-Removes symbols from the generated documentation which do not have an associated doc comment.
+Removes symbols from the generated documentation which do not have an associated doc comment if they are matched by `excludeNotDocumentedKinds`.
+
+### excludeNotDocumentedKinds
+
+```json
+// typedoc.json
+{
+    "excludeNotDocumented": true,
+    "excludeNotDocumentedKinds": [
+        "Property",
+        "Interface",
+        "TypeAlias",
+    ]
+}
+```
+
+Specifies the kinds of member which can be removed by `excludeNotDocumented`. Defaults to:
+
+```json
+{
+    "excludeNotDocumentedKinds": [
+        "Module",
+        "Namespace",
+        "Enum",
+        // "EnumMember", // Not enabled by default
+        "Variable",
+        "Function",
+        "Class",
+        "Interface",
+        "Constructor",
+        "Property",
+        "Method",
+        "CallSignature",
+        "IndexSignature",
+        "ConstructorSignature",
+        "Accessor",
+        "GetSignature",
+        "SetSignature",
+        "TypeAlias",
+        "Reference",
+    ]
+}
+```
 
 ### excludeInternal
 
