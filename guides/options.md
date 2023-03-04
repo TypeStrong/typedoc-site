@@ -112,8 +112,8 @@ TypeDoc provides its default configuration for extension in `typedoc/tsdoc.json`
 
 ### compilerOptions
 
-Used to selectively override compiler options for generating documentation. Values set with this option
-will override options read from `tsconfig.json`.
+Used to selectively override compiler options for generating documentation. TypeDoc parses code using the TypeScript compiler and will therefore behave similarly to tsc. Values set with this option
+will override options read from `tsconfig.json`. See [#1891](https://github.com/TypeStrong/typedoc/pull/1891) for details.
 
 ```json
 {
