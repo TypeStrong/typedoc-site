@@ -918,6 +918,15 @@ $ typedoc --treatWarningsAsErrors
 
 Causes TypeDoc to treat any reported warnings as fatal errors that can prevent documentation from being generated.
 
+### treatValidationWarningsAsErrors
+
+```bash
+$ typedoc --treatValidationWarningsAsErrors
+```
+
+Limited version of `treatWarningsAsErrors` that only applies to warnings emitted during validation of a project.
+This option cannot be used to turn `treatWarningsAsErrors` off for validation warnings.
+
 ### intentionallyNotExported
 
 Lists symbols which are intentionally excluded from the documentation output and should not produce warnings.
