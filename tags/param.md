@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@param"
+eleventyNavigation:
+    key: "@param"
+    parent: Tags
+    order: 24
 ---
 
 # @param

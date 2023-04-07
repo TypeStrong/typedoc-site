@@ -4,7 +4,12 @@ layout: default
 
 <div class="container main">
     <div class="row">
-        <div class="navigation">{% include 'guides_menu.html' %}</div>
+        <div class="navigation">
+            <nav class="navigation">
+                {{ collections.all | eleventyNavigation |
+                eleventyNavigationToHtml }}
+            </nav>
+        </div>
         <div class="typography">{{ content }}</div>
         <div class="toc-container"></div>
     </div>

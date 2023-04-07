@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@sealed"
+eleventyNavigation:
+    key: "@sealed"
+    parent: Tags
+    order: 34
 ---
 
 # @sealed
@@ -23,4 +26,4 @@ export class Visibility {
 
 -   The [`@virtual`](/tags/virtual/) tag
 -   The [`@override`](/tags/override/) tag
--   The [`--visibilityFilters`](/guides/options/#visibilityfilters) option
+-   The [`--visibilityFilters`](/options/output/#visibilityfilters) option

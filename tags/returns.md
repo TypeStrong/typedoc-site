@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@returns"
+eleventyNavigation:
+    key: "@returns"
+    parent: Tags
+    order: 32
 ---
 
 # @returns

@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@typeParam"
+eleventyNavigation:
+    key: "@typeParam"
+    parent: Tags
+    order: 38
 ---
 
 # @typeParam

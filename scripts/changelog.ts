@@ -9,8 +9,10 @@ const heading = `
 ---
 layout: "guide"
 tags: guide
-title: "Changelog"
-menuOrder: 100
+eleventyNavigation:
+    key: Changelog
+    parent: Overview
+    order: 100
 ---
 `.trim();
 

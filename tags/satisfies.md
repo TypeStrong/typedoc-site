@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@satisfies"
+eleventyNavigation:
+    key: "@satisfies"
+    parent: Tags
+    order: 33
 ---
 
 # @satisfies
@@ -10,7 +13,7 @@ title: "@satisfies"
 
 This tag is recognized for parity with TypeScript 5.0's [`@satisfies` Support in JSDoc](https://devblogs.microsoft.com/typescript/announcing-typescript-5-0/#satisfies-support-in-jsdoc).
 
-It is hidden by default by the [`--excludeTags`](/guides/options/#excludetags) option.
+It is hidden by default by the [`--excludeTags`](/options/comments/#excludetags) option.
 
 ## Example
 
@@ -23,4 +26,4 @@ export const myConfigSettings = { ... };
 
 ## See Also
 
--   The [`--excludeTags`](/guides/options/#excludetags) option
+-   The [`--excludeTags`](/options/comments/#excludetags) option

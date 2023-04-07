@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@internal"
+eleventyNavigation:
+    key: "@internal"
+    parent: Tags
+    order: 16
 ---
 
 # @internal
@@ -26,5 +29,5 @@ export class Visibility {
 -   The [`@alpha`](/tags/alpha) tag
 -   The [`@beta`](/tags/beta) tag
 -   The [`@experimental`](/tags/experimental) tag
--   The [`--excludeInternal`](/guides/options/#excludeinternal) option
+-   The [`--excludeInternal`](/options/input/#excludeinternal) option
 -   The [`--stripInternal`](https://www.typescriptlang.org/tsconfig#stripInternal) TypeScript compiler option

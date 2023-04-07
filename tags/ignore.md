@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@ignore"
+eleventyNavigation:
+    key: "@ignore"
+    parent: Tags
+    order: 13
 ---
 
 # @ignore

@@ -8,10 +8,7 @@ menuOrder: 5
 # Project References
 
 As of 0.20, TypeDoc has limited support for TypeScript projects using project references and solution style tsconfig files.
-This support is limited since TypeDoc is currently unable to:
-
-1. Resolve type reference links between projects
-1. Properly link files to GitHub if they are in a child project of the root project.
+This support is limited since TypeDoc is currently unable to properly link files to GitHub if they are in a child project of the root project.
 
 ## How it works
 
@@ -29,18 +26,18 @@ but `Dog` is not linked, even though animals/index.ts exports it. The cause of t
 
 ```json
 {
-  "files": [],
-  "references": [
-    {
-      "path": "./core"
-    },
-    {
-      "path": "./animals"
-    },
-    {
-      "path": "./zoo"
-    }
-  ]
+    "files": [],
+    "references": [
+        {
+            "path": "./core"
+        },
+        {
+            "path": "./animals"
+        },
+        {
+            "path": "./zoo"
+        }
+    ]
 }
 ```
 

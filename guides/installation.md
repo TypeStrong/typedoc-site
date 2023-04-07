@@ -1,8 +1,10 @@
 ---
 layout: "guide"
 tags: guide
-title: "Installation"
-menuOrder: 1
+eleventyNavigation:
+    order: 1
+    key: Installation
+    parent: Overview
 ---
 
 # Installation

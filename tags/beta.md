@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@beta"
+eleventyNavigation:
+    key: "@beta"
+    parent: Tags
+    order: 2
 ---
 
 # @beta
@@ -28,4 +31,4 @@ export class Visibility {
 -   The [`@alpha`](/tags/alpha/) tag
 -   The [`@experimental`](/tags/experimental/) tag
 -   The [`@public`](/tags/public/) tag
--   The [`--visibilityFilters`](/guides/options/#visibilityfilters) option
+-   The [`--visibilityFilters`](/options/output/#visibilityfilters) option

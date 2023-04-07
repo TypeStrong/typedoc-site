@@ -1,7 +1,11 @@
 ---
 layout: "guide"
 tags: tag
-title: "{@link}"
+eleventyNavigation:
+    key: "@link"
+    title: "{@link}"
+    parent: Tags
+    order: 18
 ---
 
 # {@link}
@@ -14,11 +18,13 @@ The `@link` tag is used to refer to another documented declaration. It takes one
 -   `{@link Foo.Bar | click here}` - Links to `Foo.Bar`, with link text `click here`
 -   (non-TSDoc) `{@link Foo.Bar click here}` - Links to `Foo.Bar`, with link text `click here`
 
-In 0.23, if resolving a link with [declaration references](/guides/declaration-references/) fails, TypeDoc will attempt to resolve the link with
-the [legacy method](/guides/link-resolution/) used in 0.22 and earlier.
-This behavior will be removed in 0.24.
+Link resolution is controlled by the `--useTsLinkResolution` option. When set
+(the default), links will be resolved using TypeScript's resolution, which uses the
+symbols in scope to determine what symbol should be linked to. This is the same
+resolution style used by Visual Studio Code.
 
-External hyperlinks should be constructed with markdown `[text](link)` style links, not with the `@link` tag.
+If `--useTsLinkResolution` is off, or TypeScript fails to resolve a link, the link will
+be resolved with [declaration references](/guides/declaration-references/).
 
 ## Example
 
@@ -36,7 +42,7 @@ export function random(): number;
 /**
  * {@link Data.prop | instance member}
  * {@link Data.member | static member}
- * {@link Data#member | instance member}
+ * {@link Data#member | instance member} (declaration references only)
  *
  */
 export class Data {
@@ -47,6 +53,8 @@ export class Data {
 }
 
 /**
+ * TypeScript links do not support meaning qualifiers (`:namespace`),
+ * so both of these links will link to the enum.
  * {@link Merged:namespace} links to the namespace.
  * {@link Merged:enum} links to the enum.
  */
@@ -69,7 +77,3 @@ For more details see the [declaration reference](/guides/declaration-references/
 ## JSDoc Compatibility
 
 TypeDoc will also recognize the `@linkplain` and `@linkcode` JSDoc tags and resolve them with the same method as other links.
-
-## See Also
-
--   The [`@template`](/tags/template/) tag

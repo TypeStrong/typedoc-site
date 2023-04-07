@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@readonly"
+eleventyNavigation:
+    key: "@readonly"
+    parent: Tags
+    order: 30
 ---
 
 # @readonly

@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@enum"
+eleventyNavigation:
+    key: "@enum"
+    parent: Tags
+    order: 6
 ---
 
 # @enum

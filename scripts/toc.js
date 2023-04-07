@@ -54,7 +54,10 @@
                 const tocAnchor = element.appendChild(
                     document.createElement("a")
                 );
-                tocAnchor.textContent = header.textContent;
+                tocAnchor.textContent = header.textContent.replace(
+                    /\([^)]*\)/,
+                    ""
+                );
                 tocAnchor.href = anchor.href;
                 tocContainerStack[tocContainerStack.length - 1].appendChild(
                     element

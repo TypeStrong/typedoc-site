@@ -6,6 +6,7 @@ const markdownItAnchor = require("markdown-it-anchor");
 const eleventySass = require("eleventy-sass");
 
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const { join } = require("path");
 
 /** @param {import("@11ty/eleventy/src/UserConfig")} el */
@@ -19,27 +20,12 @@ module.exports = function (el) {
 
     el.addPlugin(syntaxHighlight);
     el.addPlugin(eleventySass);
+    el.addPlugin(eleventyNavigationPlugin);
 
     el.setLibrary(
         "md",
         markdownIt({ html: true }).use(/** @type {*} */ (markdownItAnchor))
     );
-
-    el.addCollection("sorted_guides", function (collection) {
-        const items = collection.getFilteredByTag("guide");
-        items.sort((a, b) => a.data.menuOrder - b.data.menuOrder);
-        return items;
-    });
-
-    el.addCollection("alpha_tags", function (collection) {
-        const items = collection.getFilteredByTag("tag");
-        items.sort((a, b) =>
-            a.data.title
-                .replace(/[{}]/g, "")
-                .localeCompare(b.data.title.replace(/[{}]/g, ""))
-        );
-        return items;
-    });
 
     el.addShortcode("typedocPlugins", () =>
         fs.readFileSync(join(__dirname, "_includes/plugin_content.txt"))

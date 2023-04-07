@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@hidden"
+eleventyNavigation:
+    key: "@hidden"
+    parent: Tags
+    order: 12
 ---
 
 # @hidden

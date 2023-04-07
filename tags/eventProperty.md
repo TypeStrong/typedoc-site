@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@eventProperty"
+eleventyNavigation:
+    key: "@eventProperty"
+    parent: Tags
+    order: 8
 ---
 
 # @eventProperty

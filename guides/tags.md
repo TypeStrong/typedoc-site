@@ -1,6 +1,8 @@
 ---
 layout: "guide"
-title: "Tags"
+eleventyNavigation:
+    order: 2
+    key: Tags
 ---
 
 # Tags
@@ -59,7 +61,7 @@ or provide examples for how to use the export ([`@example`](/tags/example/)).
 Modifier tags have no associated content and serve only to specify some special behavior for how the reflection is processed
 by setting some binary flag. For example, [`@hidden`](/tags/hidden/) will remove a reflection from the documentation
 while [`@internal`](/tags/internal/) will mark the reflection as internal for use with
-[`--visibilityFilters`](/guides/options/#visibilityfilters) or [`--stripInternal`](/guides/options/#stripinternal).
+[`--visibilityFilters`](/options/output/#visibilityfilters) or [`--excludeInternal`](/options/input/#excludeinternal).
 
 ## Inline Tags
 

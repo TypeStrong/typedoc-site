@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@privateRemarks"
+eleventyNavigation:
+    key: "@privateRemarks"
+    parent: Tags
+    order: 26
 ---
 
 # @privateRemarks
@@ -31,4 +34,4 @@ the `--excludeTags` list if it is set.
 ## See also
 
 -   The [`@remarks`](/tags/remarks/) tag
--   The [`--excludeTags`](/guides/options/#excludetags) option
+-   The [`--excludeTags`](/options/comments/#excludetags) option

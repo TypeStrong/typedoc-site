@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@public"
+eleventyNavigation:
+    key: "@public"
+    parent: Tags
+    order: 29
 ---
 
 # @public

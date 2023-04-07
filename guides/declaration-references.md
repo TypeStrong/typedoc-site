@@ -1,11 +1,17 @@
 ---
 layout: "guide"
 tags: guide
-title: "Declaration References"
-menuOrder: 4
+eleventyNavigation:
+    order: 15
+    key: Declaration References
+    parent: Overview
 ---
 
 # Declaration References
+
+Note: If [--useTsLinkResolution](/options/comments/#usetslinkresolution) is turned on (the default) this page likely
+**does not apply** for your links. Declaration references are used only if that option is off or TypeScript
+fails to resolve a link.
 
 Some tags like [`{@link}`](/tags/link/) and [`{@inheritDoc}`](/tags/inheritDoc/) can refer to other
 members of the documentation. These tags use declaration references to name another declaration.

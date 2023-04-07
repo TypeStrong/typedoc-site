@@ -3,7 +3,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>{{ title }} | TypeDoc</title>
+    <title>
+        {{ eleventyNavigation.title | default: eleventyNavigation.key }} |
+        TypeDoc
+    </title>
     <meta
         name="description"
         property="og:description"
@@ -13,7 +16,10 @@
         name="keywords"
         content="TypeScript documentation generator javascript open source"
     />
-    <meta property="og:title" content="{{ title }}" />
+    <meta
+        property="og:title"
+        content="{{ eleventyNavigation.title | default: eleventyNavigation.key }}"
+    />
     <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
     <meta property="og:site_name" content="TypeDoc Documentation Generator" />
     <meta name="twitter:card" content="summary" />

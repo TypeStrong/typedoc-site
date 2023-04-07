@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@remarks"
+eleventyNavigation:
+    key: "@remarks"
+    parent: Tags
+    order: 31
 ---
 
 # @remarks
