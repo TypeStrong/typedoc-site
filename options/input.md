@@ -40,11 +40,11 @@ Expects all entry points to be contained within the root level tsconfig project.
 
 ### packages
 
-TODO GERRIT
+Expects all entry points to be directories to run TypeDoc within. After each entry point has been run through TypeDoc, the projects will be merged together and rendered to a single site.
 
 ### merge
 
-TODO GERRIT
+Expects all entry points to be `.json` files generated with a previous run of TypeDoc with the [`--json`](/options/output/#json) option set. These entry points will be merged into a single project.
 
 ### legacy-packages (deprecated)
 

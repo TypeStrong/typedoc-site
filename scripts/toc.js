@@ -1,6 +1,15 @@
 // @ts-check
 
 (function () {
+    // Ideally this should be done statically in the template, but I'm done fighting with eleventy.
+    for (const a of document.querySelectorAll(".navigation a")) {
+        if (location.pathname === new URL(a.href).pathname) {
+            a.classList.add("current");
+        }
+    }
+})();
+
+(function () {
     const theme = /** @type {HTMLInputElement | null} */ (
         document.querySelector("#theme")
     );
