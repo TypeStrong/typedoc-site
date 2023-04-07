@@ -40,7 +40,8 @@ Expects all entry points to be contained within the root level tsconfig project.
 
 ### packages
 
-Expects all entry points to be directories to run TypeDoc within. After each entry point has been run through TypeDoc, the projects will be merged together and rendered to a single site.
+Expects all entry points to be directories to run TypeDoc within. After each entry point has been run through TypeDoc, the projects will be merged together and rendered to a single site. Each package may have its own set of TypeDoc
+configuration, but `plugins` within sub-projects will _not_ be loaded.
 
 ### merge
 
@@ -49,21 +50,6 @@ Expects all entry points to be `.json` files generated with a previous run of Ty
 ### legacy-packages (deprecated)
 
 If your codebase is comprised of one or more npm packages, you can pass the paths to these packages and TypeDoc will attempt to determine entry points based on `package.json`'s `main` property (with default value `index.js`) and if it wasn't found, based on `types` property. If any of the packages given are the root of an [npm Workspace](https://docs.npmjs.com/cli/v7/using-npm/workspaces) or a [Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/) TypeDoc will find all the `workspaces` defined in the `package.json`. This mode requires source maps in your JS entry points or that you specify the TypeDoc entry point in your package.json to tell TypeDoc where your entry point TypeScript source. Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces.
-
-TypeDoc's `entryPointStrategy: legacy-packages` is dedicated support for monorepo projects. TypeDoc will attempt to determine entry points based on `package.json`'s `main` property (with default value `index.js`) and if it wasn't found, based on `types` property. If any of the packages given are the root of an [npm Workspace](https://docs.npmjs.com/cli/v7/using-npm/workspaces) or a [Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/) TypeDoc will find all the `workspaces` defined in the `package.json`. Each found package will be rendered by TypeDoc as a `module`.
-
-**Note**: This means that you should give TypeDoc paths to modules in packages mode, _not_ paths to the entry point.
-
-```json
-{
-    "entryPointStrategy": "packages",
-    "entryPoints": [
-        "packages/my-module",
-        // not
-        "packages/my-module/src/index.ts"
-    ]
-}
-```
 
 You may also need to configure TypeDoc for each child package using config field `typedoc` in package.json file for TypeDoc to work properly.
 
