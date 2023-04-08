@@ -1,7 +1,6 @@
 {
     "$schema": "https://typedoc.org/schema.json",
-    "extends": "./typedoc/example/typedoc.json",
+    "extends": ["./typedoc/example/typedoc.json"],
     "out": "_site/example",
-    "json": "_site/example/docs.json",
-    "name": "TypeDoc Example"
+    "json": "_site/example/docs.json"
 }

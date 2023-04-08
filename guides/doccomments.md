@@ -1,8 +1,10 @@
 ---
 layout: "guide"
 tags: guide
-title: "Doc Comments"
-menuOrder: 3
+eleventyNavigation:
+    order: 3
+    key: Doc Comments
+    parent: Overview
 ---
 
 # Doc Comments
@@ -22,7 +24,7 @@ export class DocumentMe {}
 
 TypeDoc supports code blocks in markdown and uses [Shiki](https://shiki.matsu.io/)
 to provide syntax highlighting. You can specify the syntax highlighting theme with the
-`--lightHighlightTheme` and `--darkHighlightTheme` options.
+[`--lightHighlightTheme`](/options/output/#lighthighlighttheme) and [`--darkHighlightTheme`](/options/output/#darkhighlighttheme) options.
 
 ````ts
 /**
@@ -83,6 +85,14 @@ support for more markdown constructs (including day-to-day features like
 [lists](https://github.com/microsoft/tsdoc/issues/178)). However, for projects requiring stricter validation
 of comment formats, this laxness may not be acceptable. In this case, [api-extractor](https://api-extractor.com/)
 is recommended instead of TypeDoc for it's much stricter conformance to TSDoc.
+
+## JSDoc Compliance
+
+JSDoc is the de-facto "standard" for comments, but does not specify a rigorous grammar and is fully implemented
+only by the official JSDoc tool. TypeDoc aims to recognize _most_ JSDoc comments in a manner similar to how they
+are handled by TypeScript and Visual Studio Code. Where the JSDoc implementation conflicts with the TSDoc specification,
+TypeDoc generally tries to detect which implementation is intended. JSDoc compatibility can be controlled with
+the [--jsDocCompatibility](/options/comments/#jsdoccompatibility) option.
 
 ## See Also
 

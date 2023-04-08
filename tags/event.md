@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@event"
+eleventyNavigation:
+    key: "@event"
+    parent: Tags
+    order: 7
 ---
 
 # @event

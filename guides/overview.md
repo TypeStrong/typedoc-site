@@ -1,6 +1,8 @@
 ---
 layout: "guide"
-title: "Overview"
+eleventyNavigation:
+    order: 1
+    key: Overview
 ---
 
 # What is TypeDoc?
@@ -28,5 +30,5 @@ function localHelper() {}
 ## Get Started
 
 -   [Install](/guides/installation/)
--   [Configure](/guides/options/)
+-   [Configure](/options/)
 -   [Extend](/guides/plugins/)

@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@deprecated"
+eleventyNavigation:
+    key: "@deprecated"
+    parent: Tags
+    order: 5
 ---
 
 # @deprecated

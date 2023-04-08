@@ -1,8 +1,10 @@
 ---
 layout: "guide"
 tags: guide
-title: "Development"
-menuOrder: 99
+eleventyNavigation:
+    order: 99
+    key: Development
+    parent: Overview
 ---
 
 # Development
@@ -61,7 +63,7 @@ There are 11 builtin option types as specified by the [ParameterType](https://ty
 -   `Boolean` - `true` or `false`
 -   `Map` - Defines a map between string keys and an arbitrary type. See the [tests](https://github.com/TypeStrong/typedoc/blob/master/src/test/utils/options/declaration.test.ts#L39) for an example.
 -   `Mixed` - An object type that is passed through by TypeDoc to create specific implicit behaviour.
--   `Object` - An object type of which value keys can be overridden or extended by passing a new object. 
+-   `Object` - An object type of which value keys can be overridden or extended by passing a new object.
 -   `Array` - An array of strings.
 -   `PathArray` - An array of paths, if specified in a config file, will be resolved relative to the config file directory.
 -   `ModuleArray` - An array of modules/paths. Items will be resolved if they start with `.`.

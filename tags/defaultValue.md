@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@defaultValue"
+eleventyNavigation:
+    key: "@defaultValue"
+    parent: Tags
+    order: 4
 ---
 
 # @defaultValue

@@ -1,8 +1,10 @@
 ---
 layout: "guide"
 tags: guide
-title: "Plugins"
-menuOrder: 10
+eleventyNavigation:
+    order: 10
+    key: Plugins
+    parent: Overview
 ---
 
 # Plugins

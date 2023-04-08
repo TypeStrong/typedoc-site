@@ -1,7 +1,11 @@
 ---
 layout: "guide"
 tags: tag
-title: "{@inheritDoc}"
+eleventyNavigation:
+    key: "@inheritDoc"
+    title: "{@inheritDoc}"
+    parent: Tags
+    order: 14
 ---
 
 # {@inheritDoc}

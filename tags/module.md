@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@module"
+eleventyNavigation:
+    key: "@module"
+    parent: Tags
+    order: 19
 ---
 
 # @module

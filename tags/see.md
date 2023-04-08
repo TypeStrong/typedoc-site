@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@see"
+eleventyNavigation:
+    key: "@see"
+    parent: Tags
+    order: 35
 ---
 
 # @see

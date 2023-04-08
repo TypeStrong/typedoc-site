@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@group"
+eleventyNavigation:
+    key: "@group"
+    parent: Tags
+    order: 11
 ---
 
 # @group
@@ -42,4 +45,4 @@ export class App extends EventEmitter {
 ## See Also
 
 -   The [`@category`](/tags/category/) tag
--   The [`--searchGroupBoosts`](/guides/options/#searchgroupboosts) option
+-   The [`--searchGroupBoosts`](/options/output/#searchgroupboosts) option

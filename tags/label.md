@@ -1,7 +1,11 @@
 ---
 layout: "guide"
 tags: tag
-title: "{@label}"
+eleventyNavigation:
+    key: "@label"
+    title: "{@label}"
+    parent: Tags
+    order: 17
 ---
 
 # {@label}

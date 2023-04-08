@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@throws"
+eleventyNavigation:
+    key: "@throws"
+    parent: Tags
+    order: 37
 ---
 
 # @throws

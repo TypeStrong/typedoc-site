@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@protected"
+eleventyNavigation:
+    key: "@protected"
+    parent: Tags
+    order: 28
 ---
 
 # @protected
@@ -30,4 +33,4 @@ export class Visibility {
 -   The [`@public`](/tags/public/) tag
 -   The [`@private`](/tags/private/) tag
 -   The [`@internal`](/tags/internal/) tag
--   The [`--excludeProtected`](/guides/options/#excludeprotected) option
+-   The [`--excludeProtected`](/options/input/#excludeprotected) option

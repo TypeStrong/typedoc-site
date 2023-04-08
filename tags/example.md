@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@example"
+eleventyNavigation:
+    key: "@example"
+    parent: Tags
+    order: 9
 ---
 
 # @example

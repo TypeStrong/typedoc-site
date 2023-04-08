@@ -1,7 +1,10 @@
 ---
 layout: "guide"
 tags: tag
-title: "@category"
+eleventyNavigation:
+    key: "@category"
+    parent: Tags
+    order: 3
 ---
 
 # @category
@@ -34,7 +37,7 @@ export function ref(): void;
 ## See Also
 
 -   The [`@group`](/tags/group/) tag
--   The [`--categorizeByGroup`](/guides/options/#categorizebygroup) option
--   The [`--defaultCategory`](/guides/options/#defaultcategory) option
--   The [`--categoryOrder`](/guides/options/#categoryorder) option
--   The [`--searchCategoryBoosts`](/guides/options/#searchcategoryboosts) option
+-   The [`--categorizeByGroup`](/options/organization/#categorizebygroup) option
+-   The [`--defaultCategory`](/options/organization/#defaultcategory) option
+-   The [`--categoryOrder`](/options/organization/#categoryorder) option
+-   The [`--searchCategoryBoosts`](/options/output/#searchcategoryboosts) option
