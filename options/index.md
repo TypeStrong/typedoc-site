@@ -32,6 +32,7 @@ Options which control how input is converted into a project.
 
 -   [entryPoints](/options/input/#entrypoints)
 -   [entryPointStrategy](/options/input/#entrypointstrategy)
+-   [exclude](/options/input/#exclude)
 -   [externalPattern](/options/input/#externalpattern)
 -   [excludeExternals](/options/input/#excludeexternals)
 -   [excludeNotDocumented](/options/input/#excludenotdocumented)
@@ -91,6 +92,14 @@ Options which control how TypeDoc parses comments.
 -   [externalSymbolLinkMappings](/options/comments/#externalsymbollinkmappings)
 -   [media](/options/comments/#media)
 -   [includes](/options/comments/#includes)
+
+## Organization Options
+
+-   [categorizeByGroup](/options/organization/#categorizebygroup)
+-   [defaultCategory](/options/organization/#defaultcategory)
+-   [categoryOrder](/options/organization/#categoryorder)
+-   [sort](/options/organization/#sort)
+-   [kindSortOrder](/options/organization/#kindsortorder)
 
 ## Validation Options
 

@@ -43,14 +43,15 @@
             anchor.appendChild(header);
 
             if (tocContainer) {
-                const level = +header.tagName.substr(1);
+                const level = +header.tagName.substring(1);
                 if (level > 1 && headers.length > 100) {
                     return;
                 }
 
-                if (level < tocContainerStack.length) {
+                while (level < tocContainerStack.length) {
                     tocContainerStack.pop();
-                } else if (level > tocContainerStack.length) {
+                }
+                if (level > tocContainerStack.length) {
                     const container = document.createElement("ol");
                     const containerLi = tocContainerStack[
                         tocContainerStack.length - 1
