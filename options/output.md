@@ -157,6 +157,14 @@ $ typedoc --gaID
 
 Set the Google Analytics tracking ID and activate tracking code.
 
+## hideParameterTypesInTitle
+
+```bash
+$ typedoc --hideParameterTypesInTitle false
+```
+
+Hide parameter types the signature "title" for easier scanning. When enabled, parameter types are still visible in the parameters list after the function summary. Defaults to true.
+
 ## hideGenerator
 
 ```bash
