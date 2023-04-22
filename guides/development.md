@@ -99,7 +99,7 @@ export function load(app: Application) {
 
 ### Converters
 
-TypeDoc converts the syntax tree created by TypeScript into its own structure of [`Reflection`](https://typedoc.org/api/classes/Reflection.html)s to allow themes and serialization to work with a standard object format. Conversion is done primarily in three files.
+TypeDoc converts the syntax tree created by TypeScript into its own structure of [`Reflection`](https://typedoc.org/api/classes/Models.Reflection.html)s to allow themes and serialization to work with a standard object format. Conversion is done primarily in three files.
 
 -   [symbols.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/symbols.ts) - contains converters for each `ts.Symbol` that is exported from entry points.
 -   [types.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/types.ts) - contains converters for `ts.Type`s and `ts.TypeNode`s.

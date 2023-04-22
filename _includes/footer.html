@@ -7,9 +7,11 @@
             <option value="dark">Dark</option>
         </select>
     </div>
+    {% if eleventyNavigation.key != "Changelog" %}
     <a
         href="https://github.com/TypeStrong/typedoc-site/blob/master/{{ page.inputPath }}"
         class="edit-github"
         >Edit on GitHub</a
     >
+    {% endif %}
 </footer>
