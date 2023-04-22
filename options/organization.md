@@ -41,7 +41,20 @@ Defaults to 'Other'
 
 Array option which allows overriding the order categories display in. A string of `*` indicates where categories that are not in the list should appear.
 
-By default, categories are displayed alphabetically. If unknown categories are found, they will be listed at the end by default.
+Categories whose order is not specified will be sorted alphabetically. If `*` is not specified and unknown categories are found, they will be listed at the end by default.
+
+## groupOrder
+
+```json
+// typedoc.json
+{
+    "groupOrder": ["Variables", "Functions", "*"]
+}
+```
+
+Array option which allows overriding the order groups display in. A string of `*` indicates where groups that are not in the list should appear.
+
+Groups whose order is not specified will be sorted alphabetically. If `*` is not specified and unknown groups are found, they will be listed at the end by default.
 
 ## sort
 

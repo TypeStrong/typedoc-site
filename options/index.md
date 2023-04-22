@@ -73,6 +73,7 @@ Options which control TypeDoc's output.
 -   [cleanOutputDir](/options/output/#cleanoutputdir)
 -   [titleLink](/options/output/#titlelink)
 -   [navigationLinks](/options/output/#navigationlinks)
+-   [navigation](/options/output/#navigation)
 -   [sidebarLinks](/options/output/#sidebarlinks)
 -   [visibilityFilters](/options/output/#visibilityfilters)
 -   [searchCategoryBoosts](/options/output/#searchcategoryboosts)
@@ -98,6 +99,7 @@ Options which control how TypeDoc parses comments.
 -   [categorizeByGroup](/options/organization/#categorizebygroup)
 -   [defaultCategory](/options/organization/#defaultcategory)
 -   [categoryOrder](/options/organization/#categoryorder)
+-   [groupOrder](/options/organization/#grouporder)
 -   [sort](/options/organization/#sort)
 -   [kindSortOrder](/options/organization/#kindsortorder)
 

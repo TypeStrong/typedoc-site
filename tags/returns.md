@@ -11,7 +11,7 @@ eleventyNavigation:
 
 {% include 'tag-info', kind: 'Block', tsdoc: 'returns' %}
 
-The `@returns` tag can be used to document the return value of a function.
+The `@returns` tag can be used to document the return value of a function. At most one `@returns` tag should be present in a comment.
 
 ## Example
 

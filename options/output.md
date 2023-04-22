@@ -226,6 +226,25 @@ Defines additional links to be included in the page header.
 
 Defines additional links to be included in the page sidebar.
 
+## navigation
+
+```json
+// typedoc.json
+{
+    "navigation": {
+        "includeCategories": true,
+        "includeGroups": false
+    },
+    "categorizeByGroup": false
+}
+```
+
+Determines if groups/categories will be included in the primary navigation pane.
+
+The [categorizeByGroup](/options/organization/#categorizebygroup) option also affects this behavior.
+If set (the default), and `includeGroups` is _not_ set, the value of `includeCategories` will be effectively
+ignored since categories will be created only within groups.
+
 ## visibilityFilters
 
 ```json
