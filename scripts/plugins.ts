@@ -15,7 +15,8 @@ const EXCLUDED_PLUGINS = [
     "@initializer-utils/typedoc-theme",
     "@colony/typedoc-plugin-markdown",
     "jsonforms-typedoc-theme",
-    "jsonforms-typedoc-theme",
+    "typedoc-jsonforms-theme",
+    "suika-docs-theme",
 ];
 
 const EXCLUDED_PLUGIN_USERS = [
