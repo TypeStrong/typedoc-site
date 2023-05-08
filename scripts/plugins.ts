@@ -10,6 +10,7 @@ import fetch from "node-fetch";
 const EXCLUDED_PLUGINS = [
     // Fork not intended for public use.
     "@zamiell/typedoc-plugin-markdown",
+    "@convex-dev/typedoc-plugin-markdown",
 
     // Custom plugins/themes for other libraries, likely not useful to most people.
     "@initializer-utils/typedoc-theme",
