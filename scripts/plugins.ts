@@ -185,9 +185,15 @@ function escapeHtml(html: string) {
 async function main() {
     const local = existsSync("plugins.json");
 
+    const themes = local
+        ? await getLocalCache<NpmPackage[]>("themes.json")
+        : await getAllPackages(THEME_QUERY);
+
     const plugins = local
         ? await getLocalCache<NpmPackage[]>("plugins.json")
-        : await getAllPackages(PLUGIN_QUERY);
+        : (await getAllPackages(PLUGIN_QUERY)).filter(
+              (pack) => !themes.some((t) => t.name === pack.name)
+          );
 
     const versions = local
         ? await getLocalCache<string[]>("versions.json")
@@ -216,10 +222,6 @@ async function main() {
 
     await createInclude(withVersions, checkVersions, "plugin_content");
     console.log("Finished getting plugins");
-
-    const themes = local
-        ? await getLocalCache<NpmPackage[]>("themes.json")
-        : await getAllPackages(THEME_QUERY);
 
     const themeVersions = local
         ? await getLocalCache<string[]>("theme_versions.json")
