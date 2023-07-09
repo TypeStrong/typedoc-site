@@ -40,7 +40,7 @@ Expects all entry points to be contained within the root level tsconfig project.
 
 ### packages
 
-Expects all entry points to be directories to run TypeDoc within. After each entry point has been run through TypeDoc, the projects will be merged together and rendered to a single site. Each package may have its own set of TypeDoc
+Expects all entry points to be directories to _effectively_ run TypeDoc within. After each entry point has been converted by TypeDoc to a JSON model, the projects will be merged together and rendered to a single site or JSON output. Each package may have its own set of TypeDoc
 configuration, but `plugins` within sub-projects will _not_ be loaded. See [Gerrit0/typedoc-packages-example](https://github.com/Gerrit0/typedoc-packages-example) for an example monorepo which uses this option.
 
 Configuration specified in the root level project will _not_ be copied to child projects.
