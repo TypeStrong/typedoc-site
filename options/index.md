@@ -9,7 +9,6 @@ eleventyNavigation:
 
 # Options
 
-TypeDoc accepts most of the command line arguments that the TypeScript compiler accepts.
 All command line arguments that are passed in without a flag will be parsed as input files.
 Any options passed on the command line will override options set in a configuration file.
 
