@@ -204,8 +204,8 @@ async function main() {
     );
 
     const typedocVersions = JSON.parse(
-        await exec("npm view typedoc@* version --json")
-    ) as string[];
+        await exec("npm view typedoc@* versions --json")
+    ).filter((s: unknown) => typeof s === "string" && !s.includes("-"));
 
     const checkVersions = [typedocVersions[typedocVersions.length - 1]];
     let index = typedocVersions.length - 1;

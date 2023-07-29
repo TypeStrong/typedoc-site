@@ -5,6 +5,7 @@ eleventyNavigation:
     order: 2
     key: Options
     parent: Overview
+redirect_from: /guides/options/
 ---
 
 # Options
