@@ -207,6 +207,8 @@ async function main() {
         await exec("npm view typedoc@* versions --json")
     ).filter((s: unknown) => typeof s === "string" && !s.includes("-"));
 
+    console.log(typedocVersions.slice(-10));
+
     const checkVersions = [typedocVersions[typedocVersions.length - 1]];
     let index = typedocVersions.length - 1;
     let lastMinor = semver.parse(checkVersions[0])!.minor;
