@@ -47,6 +47,7 @@ Options which control how input is converted into a project.
 -   [sourceLinkTemplate](/options/input/#sourcelinktemplate)
 -   [gitRevision](/options/input/#gitrevision)
 -   [gitRemote](/options/input/#gitremote)
+-   [disablegit](/options/input/#disablegit)
 -   [readme](/options/input/#readme)
 
 ## Output Options
