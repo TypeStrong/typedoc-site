@@ -35,6 +35,14 @@ $ typedoc --useTsLinkResolution false
 
 Indicates that `{@link}` tags should be resolved with TypeScript's parsing rules. This is on by default.
 
+## preserveLinkText
+
+```bash
+$ typedoc --preserveLinkText false
+```
+
+Indicates whether or not `{@link}` tags should include just the name of the target reflection, or the original link text. This is on by default.
+
 ## jsDocCompatibility
 
 CLI:

@@ -14,12 +14,12 @@ These options control how content is structured on generated pages.
 ## categorizeByGroup
 
 ```bash
-$ typedoc --categorizeByGroup false
+$ typedoc --categorizeByGroup
 ```
 
 This flag categorizes reflections by group (within properties, methods, etc).
 To allow methods and properties of the same category to be grouped together, set this flag to false.
-Defaults to true.
+Defaults to false.
 
 ## defaultCategory
 

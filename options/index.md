@@ -85,6 +85,7 @@ Options which control how TypeDoc parses comments.
 
 -   [commentStyle](/options/comments/#commentstyle)
 -   [useTsLinkResolution](/options/comments/#usetslinkresolution)
+-   [preserveLinkText](/options/comments/#preservelinktext)
 -   [jsDocCompatibility](/options/comments/#jsdoccompatibility)
 -   [blockTags](/options/comments/#blocktags)
 -   [inlineTags](/options/comments/#inlinetags)

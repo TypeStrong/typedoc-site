@@ -49,43 +49,6 @@ Configuration specified in the root level project will _not_ be copied to child 
 
 Expects all entry points to be `.json` files generated with a previous run of TypeDoc with the [`--json`](/options/output/#json) option set. These entry points will be merged into a single project.
 
-### legacy-packages (deprecated)
-
-If your codebase is comprised of one or more npm packages, you can pass the paths to these packages and TypeDoc will attempt to determine entry points based on `package.json`'s `main` property (with default value `index.js`) and if it wasn't found, based on `types` property. If any of the packages given are the root of an [npm Workspace](https://docs.npmjs.com/cli/v7/using-npm/workspaces) or a [Yarn Workspace](https://classic.yarnpkg.com/en/docs/workspaces/) TypeDoc will find all the `workspaces` defined in the `package.json`. This mode requires source maps in your JS entry points or that you specify the TypeDoc entry point in your package.json to tell TypeDoc where your entry point TypeScript source. Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces.
-
-You may also need to configure TypeDoc for each child package using config field `typedoc` in package.json file for TypeDoc to work properly.
-
-Example config in child package's package.json, note that this configuration **does not** support all TypeDoc options.
-
-```json
-{
-    "name": "child-package",
-    "version": "1.0.0",
-    "typedoc": {
-        "entryPoint": "./src/index.ts",
-        "readmeFile": "./README.md",
-        "displayName": "Child Package",
-        "tsconfig": "./tsconfig.lib.json"
-    }
-}
-```
-
-#### entryPoint
-
-Entry point strategy `Packages` requires sourcemaps in your JS entry points or that you specify the TypeDoc entry point in your package.json to tell TypeDoc where your entry point TypeScript source. Supports wildcard paths in the same fashion as those found in npm or Yarn workspaces.
-
-#### readmeFile
-
-Path to the readme file that should be displayed on the index page of the package doc.
-
-#### displayName
-
-The name of the package that will be used when rendering the doc. If none provided, the default name will be the name of the package specified in package.json file.
-
-#### tsconfig
-
-Path of the tsconfig file to use when creating the program for compilation. If omitted, will look for `tsconfig.json` like `tsc` does.
-
 ## exclude
 
 ```bash
@@ -254,6 +217,14 @@ If you are updating documentation for a forked package, you probably want to pas
 
 (Deprecated, will be removed in 0.24) This may be set to a URL (staring with `http://` or `https://`), in which case TypeDoc will assume that it is
 the base URL for links. Links will be created to `{gitRemote}/{gitRevision}/{filePath}`.
+
+## disableGit
+
+```bash
+$ typedoc --disableGit
+```
+
+Prevents TypeDoc from using Git to try to determine if sources can be linked, with this enabled, sources will always be linked, even if not part of a git repo.
 
 ## readme
 

@@ -23,7 +23,8 @@ changes introduced in a new TypeScript version, a given version may support more
 
 | TypeDoc Version | TypeScript Version(s) |
 | --------------- | --------------------- |
-| 0.24            | 4.6 through 5.0       |
+| 0.25            | 4.6 through 5.2       |
+| 0.24            | 4.6 through 5.1       |
 | 0.23            | 4.6 through 5.0       |
 | 0.22            | 4.0 through 4.7       |
 | 0.21            | 4.0 through 4.4       |
@@ -102,18 +103,14 @@ the node module and build the documentation yourself.
 const TypeDoc = require("typedoc");
 
 async function main() {
-    const app = new TypeDoc.Application();
-
-    // If you want TypeDoc to load tsconfig.json / typedoc.json files
-    app.options.addReader(new TypeDoc.TSConfigReader());
-    app.options.addReader(new TypeDoc.TypeDocReader());
-
-    app.bootstrap({
-        // typedoc options here
+    // Application.bootstrap also exists, which will not load plugins
+    // Also accepts an array of option readers if you want to disable
+    // TypeDoc's tsconfig.json/package.json/typedoc.json option readers
+    const app = await TypeDoc.Application.bootstrapWithPlugins({
         entryPoints: ["src/index.ts"],
     });
 
-    const project = app.convert();
+    const project = await app.convert();
 
     if (project) {
         // Project may not have converted correctly
