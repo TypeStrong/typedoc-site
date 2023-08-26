@@ -117,6 +117,7 @@ Useful if your project uses [apiDoc](https://apidocjs.com/) for documenting REST
 ```json
 // typedoc.json
 {
+    // format: { [packageName: string]: { [exportName: string]: string } }
     "externalSymbolLinkMappings": {
         // {@link typescript!Partial} will use this link as well as
         // type Foo = Partial<Bar>
