@@ -41,6 +41,7 @@ Options which control how input is converted into a project.
 -   [excludePrivate](/options/input/#excludeprivate)
 -   [excludeProtected](/options/input/#excludeprotected)
 -   [excludeReferences](/options/input/#excludereferences)
+-   [excludeCategories](/options/input/#excludecategories)
 -   [name](/options/input/#name)
 -   [includeVersion](/options/input/#includeversion)
 -   [disableSources](/options/input/#disablesources)
@@ -49,6 +50,7 @@ Options which control how input is converted into a project.
 -   [gitRemote](/options/input/#gitremote)
 -   [disablegit](/options/input/#disablegit)
 -   [readme](/options/input/#readme)
+-   [stripYamlFrontmatter](/options/input/#stripyamlfrontmatter)
 
 ## Output Options
 

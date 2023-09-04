@@ -159,6 +159,14 @@ $ typedoc --excludeReferences
 
 Removes re-exports of a symbol already included in the documentation from the documentation. Defaults to false.
 
+## excludeCategories
+
+```bash
+$ typedoc --excludeCategories A --excludeCategories B
+```
+
+Removes reflections associated with any of the given categories.
+
 ## name
 
 ```bash
@@ -233,3 +241,11 @@ $ typedoc --readme <path/to/readme|none>
 ```
 
 Path to the readme file that should be displayed on the index page. If no readme is discovered or read, the index page will be disabled.
+
+## stripYamlFrontmatter
+
+```bash
+$ typedoc --stripYamlFrontmatter
+```
+
+Remove YAML frontmatter from the readme file displayed on the main page.
