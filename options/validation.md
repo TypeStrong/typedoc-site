@@ -68,10 +68,45 @@ typedoc.json:
 
 Set the list of reflection types that must be documented, used by `validation.notDocumented`
 
+The full list of available values are below, with entries not required by default commented out.
+
 typedoc.json:
 
-```json
+```jsonc
 {
-    "requiredToBeDocumented": ["Enum", "Class"]
+    "requiredToBeDocumented": [
+        //"Project",
+        //"Module",
+        //"Namespace",
+        "Enum",
+        "EnumMember",
+        "Variable",
+        "Function",
+        "Class",
+        "Interface",
+        //"Constructor",
+        "Property",
+        "Method",
+        // Implicitly set if function/method is set (this means you can't require docs on methods, but not functions)
+        // This exists because methods/functions can have multiple signatures due to overloads, and TypeDoc puts comment
+        // data on the signature. This might be improved someday, so you probably shouldn't set this directly.
+        //    "CallSignature",
+        // Index signature { [k: string]: string } "properties"
+        //    "IndexSignature",
+        // Equivalent to Constructor due to the same implementation detail as CallSignature
+        //    "ConstructorSignature",
+        //"Parameter",
+        // Used for object literal types. You probably should set TypeAlias instead, which refers to types created with `type X =`.
+        // This only really exists because of an implementation detail.
+        //    "TypeLiteral",
+        //"TypeParameter",
+        "Accessor", // shorthand for GetSignature + SetSignature
+        //   "GetSignature",
+        //    "SetSignature",
+        "TypeAlias",
+        // TypeDoc creates reference reflections if a symbol is exported from a package with multiple names. Most projects
+        // won't have any of these, and they just render as a link to the canonical name.
+        //    "Reference",
+    ]
 }
 ```
