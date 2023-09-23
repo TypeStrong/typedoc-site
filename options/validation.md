@@ -72,7 +72,7 @@ The full list of available values are below, with entries not required by defaul
 
 typedoc.json:
 
-```jsonc
+```json
 {
     "requiredToBeDocumented": [
         //"Project",
