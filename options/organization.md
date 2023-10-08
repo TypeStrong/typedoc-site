@@ -85,6 +85,15 @@ The available sorting strategies are:
 -   `required-first`
 -   `kind` (order according to the `kindSortOrder` option)
 
+## sortEntryPoints
+
+```bash
+$ typedoc --sortEntryPoints false
+```
+
+By default, TypeDoc sorts the members of all pages according to the `sort` option, this option can be
+used to disable sorting at the top level.
+
 ## kindSortOrder
 
 Specifies the relative ordering of reflections if `kind` is specified in the `sort` option. The default order is:

@@ -77,6 +77,7 @@ Options which control TypeDoc's output.
 -   [titleLink](/options/output/#titlelink)
 -   [navigationLinks](/options/output/#navigationlinks)
 -   [navigation](/options/output/#navigation)
+-   [navigationLeaves](/options/output/#navigationleaves)
 -   [sidebarLinks](/options/output/#sidebarlinks)
 -   [visibilityFilters](/options/output/#visibilityfilters)
 -   [searchCategoryBoosts](/options/output/#searchcategoryboosts)
@@ -105,6 +106,7 @@ Options which control how TypeDoc parses comments.
 -   [categoryOrder](/options/organization/#categoryorder)
 -   [groupOrder](/options/organization/#grouporder)
 -   [sort](/options/organization/#sort)
+-   [sortEntryPoints](/options/organization/#sortentrypoints)
 -   [kindSortOrder](/options/organization/#kindsortorder)
 
 ## Validation Options

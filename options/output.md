@@ -245,6 +245,19 @@ The [categorizeByGroup](/options/organization/#categorizebygroup) option also af
 If set (the default), and `includeGroups` is _not_ set, the value of `includeCategories` will be effectively
 ignored since categories will be created only within groups.
 
+## navigationLeaves
+
+```json
+// typedoc.json
+{
+    "navigationLeaves": ["JSONOutput"]
+}
+```
+
+Specifies namespaces/modules which should not be expandable in the navigation tree.
+To specify a nested namespace, separate the parent names with `.` according to the displayed
+tree, skipping the top level project link. `ParentNS.ChildNS`
+
 ## visibilityFilters
 
 ```json
