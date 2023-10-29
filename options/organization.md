@@ -84,6 +84,7 @@ The available sorting strategies are:
 -   `visibility` (public, then protected, then private)
 -   `required-first`
 -   `kind` (order according to the `kindSortOrder` option)
+-   `external-last`
 
 ## sortEntryPoints
 
