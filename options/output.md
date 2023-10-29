@@ -121,6 +121,14 @@ $ typedoc --cname typedoc.org
 
 Create a CNAME file in the output directory with the specified text.
 
+### sourceLinkExternal
+
+```bash
+$ typedoc --sourceLinkExternal
+```
+
+Treat source links as external links that open in a new tab when generating HTML.
+
 ## htmlLang
 
 ```bash

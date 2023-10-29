@@ -67,6 +67,7 @@ Options which control TypeDoc's output.
 -   [markedOptions](/options/output/#markedoptions)
 -   [basePath](/options/output/#basepath)
 -   [cname](/options/output/#cname)
+-   [sourceLinkExternal](/options/output/#sourcelinkexternal)
 -   [htmlLang](/options/output/#htmllang)
 -   [githubPages](/options/output/#githubpages)
 -   [cacheBust](/options/output/#cachebust)
