@@ -118,7 +118,6 @@ Specifies the relative ordering of reflections if `kind` is specified in the `so
         "Function",
         "Accessor",
         "Method",
-        "ObjectLiteral",
         "Parameter",
         "TypeParameter",
         "TypeLiteral",
