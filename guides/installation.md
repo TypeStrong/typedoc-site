@@ -18,12 +18,14 @@ Installing TypeDoc is available as a node package. Using `npm` ensures that all 
 dependencies are setup correctly. You can choose to either install locally to your project or
 globally to the CLI.
 
+> Note: If you install globally, be aware that [npm/cli#7057](https://github.com/npm/cli/issues/7057) means that plugins and themes will get their own installation of TypeDoc unless you use the `--legacy-peer-deps` flag. This will break many plugins and cause warnings from TypeDoc.
+
 TypeDoc aims to support the two latest TypeScript releases for the latest release. Depending on the scale of breaking
 changes introduced in a new TypeScript version, a given version may support more versions of TypeScript.
 
 | TypeDoc Version | TypeScript Version(s) |
 | --------------- | --------------------- |
-| 0.25            | 4.6 through 5.2       |
+| 0.25            | 4.6 through 5.3       |
 | 0.24            | 4.6 through 5.1       |
 | 0.23            | 4.6 through 5.0       |
 | 0.22            | 4.0 through 4.7       |
