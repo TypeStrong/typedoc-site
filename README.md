@@ -1,6 +1,6 @@
 # TypeDoc homepage
 
-Holds the contents of https://typedoc.org.
+Holds the contents of https://ethereum.org.
 GitHub pages renders the website from the `gh-pages` branch, using the `_site/` folder.
 
 ## Reporting Issues
