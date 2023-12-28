@@ -49,4 +49,3 @@ comments from the "parent" reflection if possible.
 ## See Also
 
 -   JSDoc's [`@inheritdoc`](https://jsdoc.app/tags-inheritdoc.html)
--   A feature request for additional flexibility when copying documentation, [#304](https://github.com/TypeStrong/typedoc/issues/304)
