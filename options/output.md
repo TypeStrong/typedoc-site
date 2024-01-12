@@ -241,7 +241,8 @@ Defines additional links to be included in the page sidebar.
 {
     "navigation": {
         "includeCategories": true,
-        "includeGroups": false
+        "includeGroups": false,
+        "includeFolders": true
     },
     "categorizeByGroup": false
 }
@@ -252,6 +253,10 @@ Determines if groups/categories will be included in the primary navigation pane.
 The [categorizeByGroup](/options/organization/#categorizebygroup) option also affects this behavior.
 If set (the default), and `includeGroups` is _not_ set, the value of `includeCategories` will be effectively
 ignored since categories will be created only within groups.
+
+Also determines if project "folders" should become nested dropdowns in the navigation pane. This option
+will only have an effect if your project includes multiple entry points in different folders. `navigation.includeFolders`
+defaults to `true`.
 
 ## navigationLeaves
 
