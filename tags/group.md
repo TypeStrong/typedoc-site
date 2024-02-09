@@ -45,4 +45,5 @@ export class App extends EventEmitter {
 ## See Also
 
 -   The [`@category`](/tags/category/) tag
+-   The [`@groupDescription`](/tags/groupDescription/) tag
 -   The [`--searchGroupBoosts`](/options/output/#searchgroupboosts) option
