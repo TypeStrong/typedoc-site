@@ -48,3 +48,4 @@ jobs:
                   folder: _site
                   git-config-name: TypeDoc Bot
                   git-config-email: typedoc@gerritbirkeland.com
+                  single-commit: true
