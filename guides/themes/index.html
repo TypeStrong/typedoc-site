@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            Themes |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="Themes"
+    />
+    <meta property="og:url" content="/guides/themes/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li>
+<li><a href="/guides/changelog/">Changelog</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="themes" tabindex="-1">Themes</h1>
+<p>Themes allow you to change the look and feel of the generated documentation. You can use one of the included
+themes, modify them to suit your needs or create a fully custom theme. The <a href="/options/output/#theme"><code>--theme</code></a> parameter allows you to
+select a theme when creating a documentation:</p>
+<p>TypeDoc ships with one builtin default theme, additional themes can be added by plugins. For documentation on creating custom themes, see the <a href="https://github.com/TypeStrong/typedoc/blob/master/internal-docs/custom-themes.md">custom-themes.md</a> document in the TypeDoc repository, or check out the <a href="https://github.com/Gerrit0/typedoc-custom-theme-demo">theme demo</a> repository.</p>
+<p>If all you need to do is slightly change the generated output, the <a href="/options/output/#customcss">--customCss</a> option can be used to customize the look.</p>
+<p>You can find more themes on npm under the <a href="https://www.npmjs.com/search?q=keywords:typedoc-theme">typedoc-theme</a> keyword.</p>
+<h2 id="0.25.8">v0.25.8</h2>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-theme-category-nav" target="_blank">typedoc-theme-category-nav</a></p>
+    <p>Typedoc theme. Navigate by categories.</p>
+    <p>
+                <a href="https://www.npmjs.com/~ysh83737" target="_blank">ysh83737</a> published 0.0.3 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-material-theme" target="_blank">typedoc-material-theme</a></p>
+    <p>A TypeDoc theme based on Material 3.</p>
+    <p>
+                <a href="https://www.npmjs.com/~dmnsgn" target="_blank">dmnsgn</a> published 1.0.2 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40starbeam-dev%2Ftypedoc-theme" target="_blank">@starbeam-dev/typedoc-theme</a></p>
+    <p>A TypeDoc theme and plugin for projects using Starbeam Dev.</p>
+    <p>
+                <a href="https://www.npmjs.com/~wycats" target="_blank">wycats</a> published 1.0.1 • 4 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-theme-hierarchy" target="_blank">typedoc-theme-hierarchy</a></p>
+    <p>Hierarchy theme for typedoc</p>
+    <p>
+                <a href="https://www.npmjs.com/~difuks" target="_blank">difuks</a> published 4.1.2 • 5 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40mxssfd%2Ftypedoc-theme" target="_blank">@mxssfd/typedoc-theme</a></p>
+    <p>- demo   - <a href="https://mengxinssfd.github.io/typedoc-theme/" target="_blank">example</a>   - <a href="https://mengxinssfd.github.io/request-template/" target="_blank">request-template</a> - <a href="https://github.com/mengxinssfd/typedoc-theme/tree/main/example" target="_blank">example-code</a></p>
+    <p>
+                <a href="https://www.npmjs.com/~mxssfd" target="_blank">mxssfd</a> published 1.1.3 • 6 months ago
+            </p>
+</div>
+<h2 id="0.24.8">v0.24.8</h2>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-theme-hierarchy" target="_blank">typedoc-theme-hierarchy</a></p>
+    <p>Hierarchy theme for typedoc</p>
+    <p>
+                <a href="https://www.npmjs.com/~difuks" target="_blank">difuks</a> published 4.1.2 • 5 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-gitlab-wiki-theme" target="_blank">typedoc-gitlab-wiki-theme</a></p>
+    <p>An extension of the default theme from typedoc-plugin-markdown to create a compatible file structure for GitLab Wiki pages.</p>
+    <p>
+                <a href="https://www.npmjs.com/~tgreyuk" target="_blank">tgreyuk</a> published 1.1.1 • 6 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40carlosingles%2Ftypedoc-gitlab-wiki-theme" target="_blank">@carlosingles/typedoc-gitlab-wiki-theme</a></p>
+    <p>An extension of the default theme from typedoc-plugin-markdown to create a compatible file structure for GitLab Wiki pages.</p>
+    <p>
+                <a href="https://www.npmjs.com/~carlosingles" target="_blank">carlosingles</a> published 1.1.1 • 6 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40blazed-space%2Fblz-typedoc-theme" target="_blank">@blazed-space/blz-typedoc-theme</a></p>
+    <p>Typedoc theme made by Blazed Labs LLC (support v0.24).</p>
+    <p>
+                <a href="https://www.npmjs.com/~blazed-labs" target="_blank">blazed-labs</a> published 0.0.2 • 6 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/sonicware-tdt" target="_blank">sonicware-tdt</a></p>
+    <p>Typedoc Plugin &amp; Theme. Extends @mengxinssfd/typedoc-theme and combined other packages.</p>
+    <p>
+                <a href="https://www.npmjs.com/~klae-dev" target="_blank">klae-dev</a> published 20.0.0 • 7 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40bndynet%2Ftypedoc-theme" target="_blank">@bndynet/typedoc-theme</a></p>
+    <p>Doc: https://typedoc.org/guides/themes/</p>
+    <p>
+                <a href="https://www.npmjs.com/~bndy" target="_blank">bndy</a> published 0.0.1 • 9 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-github-wiki-theme" target="_blank">typedoc-github-wiki-theme</a></p>
+    <p>An extension of the default theme from typedoc-plugin-markdown to create a compatible file structure for Github Wiki pages.</p>
+    <p>
+                <a href="https://www.npmjs.com/~tgreyuk" target="_blank">tgreyuk</a> published 1.1.0 • 10 months ago
+            </p>
+</div>
+<h2 id="0.23.28">v0.23.28</h2>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40appium%2Ftypedoc-plugin-appium" target="_blank">@appium/typedoc-plugin-appium</a></p>
+    <p>TypeDoc plugin for Appium &amp; its extensions</p>
+    <p>
+                <a href="https://www.npmjs.com/~jlipps" target="_blank">jlipps</a> published 0.6.6 • 6 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/snwtd-theme" target="_blank">snwtd-theme</a></p>
+    <p>測試版本1</p>
+    <p>
+                <a href="https://www.npmjs.com/~klae-dev" target="_blank">klae-dev</a> published 1.0.0 • 7 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-theme-zt" target="_blank">typedoc-theme-zt</a></p>
+    <p>Example of creating a custom TypeDoc theme, see <a href="https://github.com/Gerrit0/typedoc-custom-theme-demo/blob/main/src/index.tsx" target="_blank">src/index.tsx</a> for code &amp; comments.</p>
+    <p>
+                <a href="https://www.npmjs.com/~stacey_1018" target="_blank">stacey_1018</a> published 2.0.0 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-theme-yaf" target="_blank">typedoc-theme-yaf</a></p>
+    <p>A fresh, opinionated and standalone front-end documentation application consuming Typedoc generated data.</p>
+    <p>
+                <a href="https://www.npmjs.com/~citkane" target="_blank">citkane</a> published 0.0.4 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40polymeshassociation%2Ftypedoc-theme" target="_blank">@polymeshassociation/typedoc-theme</a></p>
+    <p>An extension of the default theme from typedoc-plugin-markdown to create a compatible file structure for Polymesh Docs pages.</p>
+    <p>
+                <a href="https://www.npmjs.com/~polymesh" target="_blank">polymesh</a> published 1.1.0 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-wikijs-theme" target="_blank">typedoc-wikijs-theme</a></p>
+    <p>A TypeDoc theme to generate Wiki.js compatible markdown.</p>
+    <p>
+                <a href="https://www.npmjs.com/~aagaming" target="_blank">aagaming</a> published 1.0.5 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40telepath%2Ftypedoc-theme" target="_blank">@telepath/typedoc-theme</a></p>
+    <p>TypeDoc theme for Telepath docs</p>
+    <p>
+                <a href="https://www.npmjs.com/~dustinboss" target="_blank">dustinboss</a> published 0.3.1-alpha.32 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40daucus%2Ftypedoc-theme" target="_blank">@daucus/typedoc-theme</a></p>
+    <p>An extension of the default theme from typedoc-plugin-markdown to create a compatible file structure for Daucus.</p>
+    <p>
+                <a href="https://www.npmjs.com/~noelmace" target="_blank">noelmace</a> published 0.4.1 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40janniks%2Ftypedoc-theme-stacks" target="_blank">@janniks/typedoc-theme-stacks</a></p>
+    <p></p>
+    <p>
+                <a href="https://www.npmjs.com/~janniks" target="_blank">janniks</a> published 1.2.3 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40bangjelkoski%2Ftypedoc-theme" target="_blank">@bangjelkoski/typedoc-theme</a></p>
+    <p>A TypeDoc theme looks just like rustdoc.</p>
+    <p>
+                <a href="https://www.npmjs.com/~bangjelkoski" target="_blank">bangjelkoski</a> published 0.0.2 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-custom-theme-demo" target="_blank">typedoc-custom-theme-demo</a></p>
+    <p>Example of creating a custom TypeDoc theme, see <a href="https://github.com/Gerrit0/typedoc-custom-theme-demo/blob/main/src/index.tsx" target="_blank">src/index.tsx</a> for code &amp; comments.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 2.0.0 • 2 years ago
+            </p>
+</div>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./guides/themes.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>
