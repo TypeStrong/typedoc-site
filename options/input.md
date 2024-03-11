@@ -59,6 +59,8 @@ Exclude files by the given pattern when a path is provided as source. This optio
 entry points. Unlike TypeScript's `exclude` option, it _cannot_ be used to exclude files from compilation. You may want to turn on TypeScript's
 [--skipLibCheck](https://www.typescriptlang.org/tsconfig#skipLibCheck) if you have compilation errors originating in `@types` packages.
 
+**Important:** To exclude files or paths entirely, use TypeScript's `exclude` option in your `tsconfig.json`. TypeDoc will not include any files excluded by `tsconfig.json`. See [issue #1928](https://github.com/TypeStrong/typedoc/issues/1928#issuecomment-1121047065) for further discussion.
+
 Supports [minimatch](https://github.com/isaacs/minimatch) patterns.
 In configuration files, this option accepts an array of patterns. On the command line, it may be specified multiple times to add multiple patterns.
 If an exported member from one of your entry points is located in an excluded file, it will be excluded from the documentation.
