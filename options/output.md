@@ -317,3 +317,14 @@ Configure the search to increase the relevance of items in a given category.
 ```
 
 Configure the search to increase the relevance of items in a given group.
+
+## sitemapBaseUrl
+
+```json
+// typedoc.json
+{
+    "sitemapBaseUrl": "https://example.com/sitemap.xml"
+}
+```
+
+Make typedoc generate a sitemap and configure the base URL used in the sitemap.
