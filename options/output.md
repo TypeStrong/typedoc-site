@@ -323,7 +323,7 @@ Configure the search to increase the relevance of items in a given group.
 ```json
 // typedoc.json
 {
-    "sitemapBaseUrl": "https://example.com/sitemap.xml"
+    "sitemapBaseUrl": "https://example.com"
 }
 ```
 
