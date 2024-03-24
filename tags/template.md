@@ -23,7 +23,7 @@ projects using TypeScript via doc comments. For TypeScript projects, the TSDoc s
 /**
  * @template {string} T - the identity type
  */
-export function identity(x) {
+export function identity<T>(x) {
     return x;
 }
 ```
