@@ -225,9 +225,6 @@ Use the specified git remote instead of `origin` for linking to source files in 
 You can use `git remote` to view a list of valid remotes.
 If you are updating documentation for a forked package, you probably want to pass `--gitRemote upstream`.
 
-(Deprecated, will be removed in 0.24) This may be set to a URL (staring with `http://` or `https://`), in which case TypeDoc will assume that it is
-the base URL for links. Links will be created to `{gitRemote}/{gitRevision}/{filePath}`.
-
 ## disableGit
 
 ```bash
