@@ -23,6 +23,7 @@ export class Readable {
         return 1;
     }
 
+    /** Will be removed from the documentation due to the readonly tag */
     set prop(_: number) {
         throw new Error("Not permitted");
     }
