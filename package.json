@@ -18,9 +18,9 @@
     "ts-node": "^10.9.1"
   },
   "scripts": {
-    "update-tag-order": "ts-node --esm scripts/update-tag-order.ts",
-    "get-plugins": "ts-node --esm scripts/plugins.ts",
-    "get-changelog": "ts-node --esm scripts/changelog.ts",
+    "update-tag-order": "node --loader ts-node/esm scripts/update-tag-order.ts",
+    "get-plugins": "node --loader ts-node/esm scripts/plugins.ts",
+    "get-changelog": "node --loader ts-node/esm scripts/changelog.ts",
     "prebuild": "npm run get-plugins && npm run get-changelog",
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve",
