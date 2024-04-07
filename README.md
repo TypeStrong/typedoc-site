@@ -22,6 +22,7 @@ menuOrder: 1
 ## Building the site locally
 
 ```bash
+git clone https://github.com/TypeStrong/typedoc.git
 npm i
 npm run prebuild # serve doesn't do this as it takes a bit
 npm run serve
