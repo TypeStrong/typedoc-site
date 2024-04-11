@@ -121,7 +121,7 @@ $ typedoc --cname typedoc.org
 
 Create a CNAME file in the output directory with the specified text.
 
-### sourceLinkExternal
+## sourceLinkExternal
 
 ```bash
 $ typedoc --sourceLinkExternal
