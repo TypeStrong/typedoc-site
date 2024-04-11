@@ -17,6 +17,7 @@ module.exports = function (el) {
     el.addPassthroughCopy("scripts");
     el.addPassthroughCopy("images");
     el.addPassthroughCopy("CNAME");
+    el.addPassthroughCopy("favicon.ico");
 
     el.addPlugin(syntaxHighlight);
     el.addPlugin(eleventySass);
