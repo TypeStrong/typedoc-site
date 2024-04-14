@@ -53,9 +53,9 @@ All components are available on the [Application](https://typedoc.org/api/classe
 ### Options
 
 TypeDoc provides some 30 options which determine how the project model is generated and output to disk.
-The [Options](https://typedoc.org/api/classes/Options.html) class consolidates application options into a single location and handles type conversion.
+The [Options](https://typedoc.org/api/classes/Configuration.Options.html) class consolidates application options into a single location and handles type conversion.
 
-There are 11 builtin option types as specified by the [ParameterType](https://typedoc.org/api/enums/ParameterType.html) enum.
+There are 11 builtin option types as specified by the [ParameterType](https://typedoc.org/api/enums/Configuration.ParameterType.html) enum.
 
 -   `String` - A string
 -   `Path` - A string which will be resolved to a path. Paths in config files will be resolved relative to the config directory.
@@ -69,9 +69,9 @@ There are 11 builtin option types as specified by the [ParameterType](https://ty
 -   `ModuleArray` - An array of modules/paths. Items will be resolved if they start with `.`.
 -   `GlobArray` - An array of globs. Globs will be resolved if they do not start with `**`, after skipping leading `!` and `#` characters.
 
-Options are discovered and set by option readers, which are documented in the [OptionReader](https://typedoc.org/api/interfaces/OptionsReader.html) interface.
+Options are discovered and set by option readers, which are documented in the [OptionReader](https://typedoc.org/api/interfaces/Configuration.OptionsReader.html) interface.
 
-Plugins can declare their own options by calling [Options.addDeclaration](https://typedoc.org/api/classes/Options.html#addDeclaration).
+Plugins can declare their own options by calling [Options.addDeclaration](https://typedoc.org/api/classes/Configuration.Options.html#addDeclaration).
 
 ### Plugins
 
