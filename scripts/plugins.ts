@@ -11,6 +11,7 @@ const EXCLUDED_PLUGINS = [
     // Fork not intended for public use.
     "@zamiell/typedoc-plugin-markdown",
     "@convex-dev/typedoc-plugin-markdown",
+    "@jberesford/typedoc-plugin-mdn-links",
 
     // Custom plugins/themes for other libraries, likely not useful to most people.
     "@initializer-utils/typedoc-theme",
