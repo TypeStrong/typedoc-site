@@ -32,7 +32,7 @@ jobs:
               run: |
                   cd typedoc/example
                   npm ci
-                  node ../bin/typedoc --options ../../example.typedoc.json --gitRevision $(git describe --tags --abbrev=0)
+                  node ../bin/typedoc --options ../../example.typedoc.json --gitRevision $(git describe --tags --abbrev=0) --sitemapBaseUrl "https://typedoc.org/api"
                   cd ../..
             - name: Rebuild schema.json
               run: |
