@@ -26,13 +26,13 @@ jobs:
                   npm ci
                   node scripts/set_strict.js false
                   npm run build
-                  node bin/typedoc --options ../typedoc.json --gitRevision $(git describe --tags --abbrev=0)
+                  node bin/typedoc --options ../typedoc.json --gitRevision $(git describe --tags --abbrev=0) --sitemapBaseUrl "https://typedoc.org/api"
                   cd ..
             - name: Rebuild /example
               run: |
                   cd typedoc/example
                   npm ci
-                  node ../bin/typedoc --options ../../example.typedoc.json --gitRevision $(git describe --tags --abbrev=0) --sitemapBaseUrl "https://typedoc.org/api"
+                  node ../bin/typedoc --options ../../example.typedoc.json --gitRevision $(git describe --tags --abbrev=0) --sitemapBaseUrl "https://typedoc.org/example"
                   cd ../..
             - name: Rebuild schema.json
               run: |
