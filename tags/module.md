@@ -17,7 +17,7 @@ It may optionally be used to rename a module whose name TypeDoc guesses incorrec
 The TSDoc specified [`@packageDocumentation`](/tags/packageDocumentation) tag can also be used to mark
 a comment as referring to the file, but cannot be used to rename the module.
 
-**NOTE:** A comment block where the @module tag is used must be the first comment in the file.
+**NOTE:** A comment block where the `@module` tag is used must be the first comment in the file.
 Therefore, it is recommended to place it at the top of the file before any import statements.
 
 ## Example
