@@ -49,6 +49,31 @@ Configuration specified in the root level project will _not_ be copied to child 
 
 Expects all entry points to be `.json` files generated with a previous run of TypeDoc with the [`--json`](/options/output/#json) option set. These entry points will be merged into a single project.
 
+## alwaysCreateEntryPointModule
+
+By default, if TypeDoc is given only one entry point, it will place exports of that entry point directly within
+the generated project. If this option is specified, TypeDoc will instead always create a module for the entry point.
+Has no effect if more than one entry point is passed to TypeDoc.
+
+If [`--projectDocuments`](#projectdocuments) is used to add documents, this option defaults to `true`, otherwise, defaults to `false`.
+
+```bash
+$ typedoc --alwaysCreateEntryPointModule
+```
+
+## projectDocuments
+
+Specify additional markdown documents to be added to the generated documentation site.
+See the [External Documents](/guides/documents/) guide for more details.
+
+```json
+{
+    "projectDocuments": [
+        "docs/tutorial.md"
+    ]
+}
+```
+
 ## exclude
 
 ```bash
@@ -143,7 +168,7 @@ Removes symbols annotated with the `@internal` doc tag. Defaults to true if the 
 $ typedoc --excludePrivate
 ```
 
-Removes private class members from the generated documentation. Defaults to false.
+Removes private class members from the generated documentation. Defaults to true.
 
 ## excludeProtected
 
@@ -240,11 +265,3 @@ $ typedoc --readme <path/to/readme|none>
 ```
 
 Path to the readme file that should be displayed on the index page. If no readme is discovered or read, the index page will be disabled.
-
-## stripYamlFrontmatter
-
-```bash
-$ typedoc --stripYamlFrontmatter
-```
-
-Remove YAML frontmatter from the readme file displayed on the main page.

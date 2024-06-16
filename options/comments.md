@@ -103,6 +103,19 @@ This option will be set by `tsdoc.json` if present.
 Override TypeDoc's supported modifier tags, emit warnings for any tags not listed here.
 This option will be set by `tsdoc.json` if present.
 
+## cascadedModifierTags
+
+```json
+// typedoc.json
+{
+    "modifierTags": ["@alpha", "@beta", "@experimental"]
+}
+```
+
+Specifies modifier tags which should be copied to all children of the parent reflection.
+
+Note: `@deprecated` is a block tag, not a modifier tag, so should not be specified here.
+
 ## excludeTags
 
 ```bash
@@ -172,19 +185,3 @@ the special `global` package reserved for global types.
     }
 }
 ```
-
-## media
-
-```bash
-$ typedoc --media <path/to/media/>
-```
-
-Specifies a media directory that will be copied to the output file. Media can be linked to with `media://file.jpg` in doc comments.
-
-## includes
-
-```bash
-$ typedoc --includes <path/to/includes/>
-```
-
-Specifies a directory with files that can be injected into the generated documentation with `[[include:file.md]]` in a doc comment.

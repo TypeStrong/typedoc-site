@@ -77,6 +77,28 @@ $ typedoc --darkHighlightTheme dark-plus
 
 Specify the Shiki theme to be used to highlight code snippets in dark mode.
 
+## highlightLanguages
+
+Specifies the Shiki grammars to load for highlighting code blocks. By default, TypeDoc
+loads the following languages.
+
+```json
+{
+    "highlightLanguages": [
+        "bash",
+        "console",
+        "css",
+        "html",
+        "javascript",
+        "json",
+        "jsonc",
+        "json5",
+        "tsx",
+        "typescript",
+    ]
+}
+```
+
 ## customCss
 
 ```bash
@@ -85,22 +107,53 @@ $ typedoc --customCss ./theme/style.css
 
 Specifies an extra CSS file that should be copied into the assets directory and referenced by the theme.
 
-## markedOptions
+## customFooterHtml
 
-Specifies the options that are forwarded to [Marked](https://marked.js.org) when parsing doc comments.
-By default TypeDoc overrides the default values used by Marked with the ones shown below:
+```bash
+$ typedoc --customFooterHtml "Copyright <strong>Project</strong> 2024"
+```
+
+Specifies additional custom HTML which should be injected into the page footer.
+
+## customFooterHtmlDisableWrapper
+
+```bash
+$ typedoc --customFooterHtml "<p>Copyright <strong>Project</strong> 2024</p>" --customFooterHtmlDisableWrapper
+```
+
+By default, TypeDoc will wrap the custom footer HTML in a `<p>` element to allow plain text added
+with it to show up properly aligned. This option disables the wrapping.
+
+## markdownItOptions
+
+Specifies the options that are forwarded to [markdown-it](https://github.com/markdown-it/markdown-it) when parsing doc comments.
+By default TypeDoc overrides the default values used by markdown-it with the ones shown below:
 
 ```json
 {
-    "markedOptions": {
-        "mangle": false,
-        "highlight": "<Shiki based highlighter>",
-        "renderer": "<Renderer that adds links to headers>"
+    "markdownItOptions": {
+        "html": true,
+        "linkify": true,
     }
 }
 ```
 
-See the [options section](https://marked.js.org/using_advanced#options) on the Marked site for a full list of available options.
+See the [options section](https://github.com/markdown-it/markdown-it?tab=readme-ov-file#init-with-presets-and-options)
+in the markdown-it readme for a full list of available options.
+
+## markdownItLoader
+
+Function which can be set in a JS config file to configure plugins loaded by `markdown-it`. It will be called with an
+instance of the [`MarkdownIt`](https://markdown-it.github.io/markdown-it/#MarkdownIt) class.
+
+```js
+// typedoc.config.mjs
+export default {
+    markdownItLoader(parser) {
+        parser.use(plugin1)
+    }
+}
+```
 
 ## basePath
 
@@ -129,13 +182,34 @@ $ typedoc --sourceLinkExternal
 
 Treat source links as external links that open in a new tab when generating HTML.
 
-## htmlLang
+## lang
 
 ```bash
-$ typedoc --htmlLang es
+$ typedoc --lang zh
 ```
 
-Sets the `lang` attribute in TypeDoc's HTML output, defaults to `en`, resulting in `<html lang="en">`.
+Sets the `lang` attribute in TypeDoc's HTML output and the translations used when,
+generating documentation. Defaults to `en`, resulting in `<html lang="en">`.
+
+## locales
+
+```json
+// typedoc.json
+{
+    "locales": {
+        "zh": {
+            "flag_private": "私有",
+        }
+    }
+}
+```
+
+Specify translations which TypeDoc will used when `--lang` is set to the specified locale.
+See [translatable.ts](https://github.com/TypeStrong/typedoc/blob/master/src/lib/internationalization/translatable.ts)
+for a list of all potentially translated messages within TypeDoc.
+
+If your translations may be generally useful to the community, please consider submitting a
+pull request adding them to TypeDoc!
 
 ## githubPages
 
@@ -191,6 +265,17 @@ Enables searching comment text in the generated documentation site.
 
 Note: Enabling this option will increase the size of your search index, potentially up
 to an order of magnitude larger in projects with many long comments.
+
+## searchInDocuments
+
+```bash
+$ typedoc --searchInDocuments
+```
+
+Enables searching document text in the generated documentation site.
+
+Note: Enabling this option will increase the size of your search index, potentially up
+to an order of magnitude larger in projects with many documents.
 
 ## cleanOutputDir
 
@@ -318,13 +403,28 @@ Configure the search to increase the relevance of items in a given category.
 
 Configure the search to increase the relevance of items in a given group.
 
-## sitemapBaseUrl
+## hostedBaseUrl
 
 ```json
 // typedoc.json
 {
-    "sitemapBaseUrl": "https://example.com"
+    "hostedBaseUrl": "https://example.com"
 }
 ```
 
-Make typedoc generate a sitemap and configure the base URL used in the sitemap.
+Specify the base URL which the TypeDoc generated site will be hosted at. This
+is used to generate a sitemap, generate canonical `<link>` tags, and enable the
+[useHostedBaseUrlForAbsoluteLinks](#usehostedbaseurlforabsolutelinks) option.
+
+## useHostedBaseUrlForAbsoluteLinks
+
+```json
+// typedoc.json
+{
+    "hostedBaseUrl": "https://example.com",
+    "useHostedBaseUrlForAbsoluteLinks": true,
+}
+```
+
+If set, TypeDoc will generate absolute links to pages rather than relative links.
+Defaults to false.

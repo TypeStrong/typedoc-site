@@ -17,6 +17,17 @@ Any options passed on the command line will override options set in a configurat
 $ typedoc --out path/to/documentation/ path/to/typescript/project/index.ts
 ```
 
+<!--
+Updating these lists can be easily done by going to each page and running the
+following JS to copy what they should be to your clipboard. Ideally, someday this
+becomes automated...
+
+copy("-   " + $$(".toc-container > ol > li > ol > li > a").map(a => {
+  const url = new URL(a.href)
+  return `[${a.textContent}](${url.pathname}${url.hash})`
+}).join("\n-   "))
+-->
+
 ## Configuration Options
 
 Options which control what files TypeDoc reads.
@@ -32,6 +43,8 @@ Options which control how input is converted into a project.
 
 -   [entryPoints](/options/input/#entrypoints)
 -   [entryPointStrategy](/options/input/#entrypointstrategy)
+-   [alwaysCreateEntryPointModule](/options/input/#alwayscreateentrypointmodule)
+-   [projectDocuments](/options/input/#projectdocuments)
 -   [exclude](/options/input/#exclude)
 -   [externalPattern](/options/input/#externalpattern)
 -   [excludeExternals](/options/input/#excludeexternals)
@@ -48,9 +61,8 @@ Options which control how input is converted into a project.
 -   [sourceLinkTemplate](/options/input/#sourcelinktemplate)
 -   [gitRevision](/options/input/#gitrevision)
 -   [gitRemote](/options/input/#gitremote)
--   [disablegit](/options/input/#disablegit)
+-   [disableGit](/options/input/#disablegit)
 -   [readme](/options/input/#readme)
--   [stripYamlFrontmatter](/options/input/#stripyamlfrontmatter)
 
 ## Output Options
 
@@ -63,26 +75,35 @@ Options which control TypeDoc's output.
 -   [theme](/options/output/#theme)
 -   [lightHighlightTheme](/options/output/#lighthighlighttheme)
 -   [darkHighlightTheme](/options/output/#darkhighlighttheme)
+-   [highlightLanguages](/options/output/#highlightlanguages)
 -   [customCss](/options/output/#customcss)
--   [markedOptions](/options/output/#markedoptions)
+-   [customFooterHtml](/options/output/#customfooterhtml)
+-   [customFooterHtmlDisableWrapper](/options/output/#customfooterhtmldisablewrapper)
+-   [markdownItOptions](/options/output/#markdownitoptions)
+-   [markdownItLoader](/options/output/#markdownitloader)
 -   [basePath](/options/output/#basepath)
 -   [cname](/options/output/#cname)
 -   [sourceLinkExternal](/options/output/#sourcelinkexternal)
--   [htmlLang](/options/output/#htmllang)
+-   [lang](/options/output/#lang)
+-   [locales](/options/output/#locales)
 -   [githubPages](/options/output/#githubpages)
 -   [cacheBust](/options/output/#cachebust)
 -   [gaID](/options/output/#gaid)
+-   [hideParameterTypesInTitle](/options/output/#hideparametertypesintitle)
 -   [hideGenerator](/options/output/#hidegenerator)
 -   [searchInComments](/options/output/#searchincomments)
+-   [searchInDocuments](/options/output/#searchindocuments)
 -   [cleanOutputDir](/options/output/#cleanoutputdir)
 -   [titleLink](/options/output/#titlelink)
 -   [navigationLinks](/options/output/#navigationlinks)
+-   [sidebarLinks](/options/output/#sidebarlinks)
 -   [navigation](/options/output/#navigation)
 -   [navigationLeaves](/options/output/#navigationleaves)
--   [sidebarLinks](/options/output/#sidebarlinks)
 -   [visibilityFilters](/options/output/#visibilityfilters)
 -   [searchCategoryBoosts](/options/output/#searchcategoryboosts)
 -   [searchGroupBoosts](/options/output/#searchgroupboosts)
+-   [hostedBaseUrl](/options/output/#hostedbaseurl)
+-   [useHostedBaseUrlForAbsoluteLinks](/options/output/#usehostedbaseurlforabsolutelinks)
 
 ## Comment Options
 
@@ -95,10 +116,9 @@ Options which control how TypeDoc parses comments.
 -   [blockTags](/options/comments/#blocktags)
 -   [inlineTags](/options/comments/#inlinetags)
 -   [modifierTags](/options/comments/#modifiertags)
+-   [cascadedModifierTags](/options/comments/#cascadedmodifiertags)
 -   [excludeTags](/options/comments/#excludetags)
 -   [externalSymbolLinkMappings](/options/comments/#externalsymbollinkmappings)
--   [media](/options/comments/#media)
--   [includes](/options/comments/#includes)
 
 ## Organization Options
 
