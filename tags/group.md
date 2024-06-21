@@ -42,8 +42,16 @@ export class App extends EventEmitter {
 }
 ```
 
+## Navigation Customization
+
+Groups can be added to the navigation tree with the `navigation.includeGroups`
+option. This can be selectively enabled or disabled by specifying
+the `@showGroups` and `@hideGroups` modifier tags within
+the comment on the parent reflection.
+
 ## See Also
 
 -   The [`@category`](/tags/category/) tag
 -   The [`@groupDescription`](/tags/groupDescription/) tag
 -   The [`--searchGroupBoosts`](/options/output/#searchgroupboosts) option
+-   The [`--navigation.includeGroups`](/options/output/#navigation) option

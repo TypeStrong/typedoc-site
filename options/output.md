@@ -94,7 +94,7 @@ loads the following languages.
         "jsonc",
         "json5",
         "tsx",
-        "typescript",
+        "typescript"
     ]
 }
 ```
@@ -133,7 +133,7 @@ By default TypeDoc overrides the default values used by markdown-it with the one
 {
     "markdownItOptions": {
         "html": true,
-        "linkify": true,
+        "linkify": true
     }
 }
 ```
@@ -150,9 +150,9 @@ instance of the [`MarkdownIt`](https://markdown-it.github.io/markdown-it/#Markdo
 // typedoc.config.mjs
 export default {
     markdownItLoader(parser) {
-        parser.use(plugin1)
-    }
-}
+        parser.use(plugin1);
+    },
+};
 ```
 
 ## basePath
@@ -198,7 +198,7 @@ generating documentation. Defaults to `en`, resulting in `<html lang="en">`.
 {
     "locales": {
         "zh": {
-            "flag_private": "私有",
+            "flag_private": "私有"
         }
     }
 }
@@ -343,6 +343,16 @@ Also determines if project "folders" should become nested dropdowns in the navig
 will only have an effect if your project includes multiple entry points in different folders. `navigation.includeFolders`
 defaults to `true`.
 
+The `includeCategories` and `includeGroups` option can be
+overwritten on a per-reflection basis by using the following
+tags within the comment for the reflection containing the
+categories/groups.
+
+-   `@showGroups`
+-   `@hideGroups`
+-   `@showCategories`
+-   `@hideCategories`
+
 ## navigationLeaves
 
 ```json
@@ -422,7 +432,7 @@ is used to generate a sitemap, generate canonical `<link>` tags, and enable the
 // typedoc.json
 {
     "hostedBaseUrl": "https://example.com",
-    "useHostedBaseUrlForAbsoluteLinks": true,
+    "useHostedBaseUrlForAbsoluteLinks": true
 }
 ```
 
