@@ -19,8 +19,19 @@ $ typedoc a b
 $ typedoc --entryPoints a --entryPoints b
 ```
 
+```json
+// typedoc.json
+{
+    "entryPoints": ["src/index.ts"]
+}
+```
+
 Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports.
 Entry points can be handled in one of three ways, see [`--entryPointStrategy`](#entrypointstrategy) for details.
+
+The set of entry points provided to TypeDoc determines the names displayed in the documentation.
+By default, TypeDoc will derive a [basePath](/options/output/#basepath) based on your entry point
+paths to determine the displayed module name, but it can be also be set with the [`@module`](/tags/module/) tag.
 
 ## entryPointStrategy
 
@@ -67,10 +78,9 @@ Specify additional markdown documents to be added to the generated documentation
 See the [External Documents](/guides/documents/) guide for more details.
 
 ```json
+// typedoc.json
 {
-    "projectDocuments": [
-        "docs/tutorial.md"
-    ]
+    "projectDocuments": ["docs/tutorial.md"]
 }
 ```
 
