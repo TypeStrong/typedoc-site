@@ -7,11 +7,11 @@ eleventyNavigation:
     parent: Options
 ---
 
-## Other Options
+# Other Options
 
 Options which don't fit elsewhere.
 
-### watch
+## watch
 
 ```bash
 $ typedoc --watch
@@ -21,7 +21,7 @@ Use TypeScript's incremental compiler to watch source files for changes and buil
 
 Note: This mode will only detect changes to files watched by the TypeScript compiler. Changes to other files (README.md, imported files with `--includes`) will not cause a rebuild.
 
-### preserveWatchOutput
+## preserveWatchOutput
 
 ```bash
 $ typedoc --watch --preserveWatchOutput
@@ -29,7 +29,7 @@ $ typedoc --watch --preserveWatchOutput
 
 By default, `--watch` clears the screen between compilation steps. If `--preserveWatchOutput` is specified, this behavior is disabled.
 
-### help
+## help
 
 ```bash
 $ typedoc --help
@@ -37,7 +37,7 @@ $ typedoc --help
 
 Print all available options, along with a short description. Also prints a list of supported highlighting languages.
 
-### version
+## version
 
 ```bash
 $ typedoc --version
@@ -45,7 +45,7 @@ $ typedoc --version
 
 Prints TypeDoc's version.
 
-### showConfig
+## showConfig
 
 ```bash
 $ typedoc --showConfig
@@ -53,7 +53,7 @@ $ typedoc --showConfig
 
 Print TypeDoc's config and exit. Useful for debugging what options have been set.
 
-### logLevel
+## logLevel
 
 ```bash
 $ typedoc --logLevel Verbose
@@ -67,7 +67,7 @@ Specifies the log level to be printed to the console. Defaults to `Info`. The av
 -   Error - Print only error messages
 -   None - Print no messages.
 
-### skipErrorChecking
+## skipErrorChecking
 
 ```bash
 $ typedoc --skipErrorChecking

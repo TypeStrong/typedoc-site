@@ -34,6 +34,13 @@ export function unref(): void;
 export function ref(): void;
 ```
 
+## Navigation Customization
+
+Categories can be added to the navigation tree with the `navigation.includeCategories`
+option. This can be selectively enabled or disabled by specifying
+the `@showCategories` and `@hideCategories` modifier tags within
+the comment on the parent reflection.
+
 ## See Also
 
 -   The [`@group`](/tags/group/) tag
@@ -42,3 +49,4 @@ export function ref(): void;
 -   The [`--defaultCategory`](/options/organization/#defaultcategory) option
 -   The [`--categoryOrder`](/options/organization/#categoryorder) option
 -   The [`--searchCategoryBoosts`](/options/output/#searchcategoryboosts) option
+-   The [`--navigation.includeCategories`](/options/output/#navigation) option

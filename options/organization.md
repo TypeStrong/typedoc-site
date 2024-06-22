@@ -85,6 +85,9 @@ The available sorting strategies are:
 -   `required-first`
 -   `kind` (order according to the `kindSortOrder` option)
 -   `external-last`
+-   `documents-first`
+-   `documents-last`
+-   `alphabetical-ignoring-documents`
 
 ## sortEntryPoints
 

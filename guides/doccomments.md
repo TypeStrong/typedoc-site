@@ -10,15 +10,17 @@ eleventyNavigation:
 # Doc Comments
 
 TypeDoc implements a minimal parser for your comments which extracts TSDoc/JSDoc tags and recognizes code
-blocks to ignore decorators. The resulting markup after resolving tags is then passed to the [Marked](https://github.com/markedjs/marked)
+blocks to ignore decorators. The resulting markup after resolving tags is then passed to the [markdown-it](https://github.com/markdown-it/markdown-it)
 markdown parser to be converted to HTML.
 
 ```ts
 /**
- * This comment _supports_ [Markdown](https://marked.js.org/)
+ * This comment _supports_ [Markdown](https://www.markdownguide.org/)
  */
 export class DocumentMe {}
 ```
+
+TypeDoc will ignore comments containing `@license` or `@import`.
 
 ## Code Blocks
 
@@ -44,7 +46,7 @@ from being parsed within the code block.
 ## Escaping Comments
 
 TypeDoc supports escaping special characters in comments to include literal `{}@/` characters.
-All other escapes will be passed through to be processed by Marked. As an example:
+All other escapes will be passed through to be processed by markdown-it. As an example:
 
 ````ts
 /**

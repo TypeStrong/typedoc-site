@@ -19,8 +19,19 @@ $ typedoc a b
 $ typedoc --entryPoints a --entryPoints b
 ```
 
+```json
+// typedoc.json
+{
+    "entryPoints": ["src/index.ts"]
+}
+```
+
 Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports.
 Entry points can be handled in one of three ways, see [`--entryPointStrategy`](#entrypointstrategy) for details.
+
+The set of entry points provided to TypeDoc determines the names displayed in the documentation.
+By default, TypeDoc will derive a [basePath](/options/output/#basepath) based on your entry point
+paths to determine the displayed module name, but it can be also be set with the [`@module`](/tags/module/) tag.
 
 ## entryPointStrategy
 
@@ -48,6 +59,30 @@ Configuration specified in the root level project will _not_ be copied to child 
 ### merge
 
 Expects all entry points to be `.json` files generated with a previous run of TypeDoc with the [`--json`](/options/output/#json) option set. These entry points will be merged into a single project.
+
+## alwaysCreateEntryPointModule
+
+By default, if TypeDoc is given only one entry point, it will place exports of that entry point directly within
+the generated project. If this option is specified, TypeDoc will instead always create a module for the entry point.
+Has no effect if more than one entry point is passed to TypeDoc.
+
+If [`--projectDocuments`](#projectdocuments) is used to add documents, this option defaults to `true`, otherwise, defaults to `false`.
+
+```bash
+$ typedoc --alwaysCreateEntryPointModule
+```
+
+## projectDocuments
+
+Specify additional markdown documents to be added to the generated documentation site.
+See the [External Documents](/guides/documents/) guide for more details.
+
+```json
+// typedoc.json
+{
+    "projectDocuments": ["docs/tutorial.md"]
+}
+```
 
 ## exclude
 
@@ -143,7 +178,7 @@ Removes symbols annotated with the `@internal` doc tag. Defaults to true if the 
 $ typedoc --excludePrivate
 ```
 
-Removes private class members from the generated documentation. Defaults to false.
+Removes private class members from the generated documentation. Defaults to true.
 
 ## excludeProtected
 
@@ -240,11 +275,3 @@ $ typedoc --readme <path/to/readme|none>
 ```
 
 Path to the readme file that should be displayed on the index page. If no readme is discovered or read, the index page will be disabled.
-
-## stripYamlFrontmatter
-
-```bash
-$ typedoc --stripYamlFrontmatter
-```
-
-Remove YAML frontmatter from the readme file displayed on the main page.

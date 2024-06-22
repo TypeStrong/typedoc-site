@@ -1,6 +1,6 @@
 {
     "$schema": "https://typedoc.org/schema.json",
-    "extends": "./typedoc/.config/typedoc.json",
+    "extends": ["./typedoc/.config/typedoc.json"],
     "out": "_site/api",
     "json": "_site/api/docs.json",
     "name": "TypeDoc",

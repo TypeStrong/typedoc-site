@@ -58,7 +58,9 @@ typedoc.json (defaults):
 {
     "jsDocCompatibility": {
         "exampleTags": true,
-        "defaultTags": true
+        "defaultTags": true,
+        "inheritDocTag": true,
+        "ignoreUnescapedBraces": true
     }
 }
 ```
@@ -66,6 +68,13 @@ typedoc.json (defaults):
 JSDoc specifies that the `@example` and `@default` tags indicate that the following content should be parsed
 as code. This conflicts with the TSDoc standard. With this option on, TypeDoc will attempt to infer from the
 tag content whether it should be parsed as code by checking if the tag content contains a code block.
+
+TSDoc specifies that `@inheritdoc` should be spelled with a capitalized `D`, `@inheritDoc`. If `inheritDocTag`
+is set to `false`, TypeDoc will produce a warning when rewriting `@inheritdoc` to `@inheritDoc`.
+
+TSDoc specifies that braces (`{}`) must be escaped within comments to avoid ambiguity between the start of
+an inline tag and a brace to be included in the rendered text. TypeDoc's `ignoreUnescapedBraces` option
+determines if warnings are emitted if a brace is found within regular comment text without being escaped.
 
 ## blockTags
 
@@ -102,6 +111,19 @@ This option will be set by `tsdoc.json` if present.
 
 Override TypeDoc's supported modifier tags, emit warnings for any tags not listed here.
 This option will be set by `tsdoc.json` if present.
+
+## cascadedModifierTags
+
+```json
+// typedoc.json
+{
+    "modifierTags": ["@alpha", "@beta", "@experimental"]
+}
+```
+
+Specifies modifier tags which should be copied to all children of the parent reflection.
+
+Note: `@deprecated` is a block tag, not a modifier tag, so should not be specified here.
 
 ## excludeTags
 
@@ -172,19 +194,3 @@ the special `global` package reserved for global types.
     }
 }
 ```
-
-## media
-
-```bash
-$ typedoc --media <path/to/media/>
-```
-
-Specifies a media directory that will be copied to the output file. Media can be linked to with `media://file.jpg` in doc comments.
-
-## includes
-
-```bash
-$ typedoc --includes <path/to/includes/>
-```
-
-Specifies a directory with files that can be injected into the generated documentation with `[[include:file.md]]` in a doc comment.
