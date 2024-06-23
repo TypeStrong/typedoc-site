@@ -88,7 +88,6 @@ Options which control TypeDoc's output.
 -   [locales](/options/output/#locales)
 -   [githubPages](/options/output/#githubpages)
 -   [cacheBust](/options/output/#cachebust)
--   [gaID](/options/output/#gaid)
 -   [hideParameterTypesInTitle](/options/output/#hideparametertypesintitle)
 -   [hideGenerator](/options/output/#hidegenerator)
 -   [searchInComments](/options/output/#searchincomments)

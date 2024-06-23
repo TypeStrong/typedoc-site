@@ -231,14 +231,6 @@ When enabled, TypeDoc will include the generation time in `<script>` and `<link>
 to prevent assets from a previous build of the documentation from being used. This should generally not
 be necessary with a properly configured web server.
 
-## gaID
-
-```bash
-$ typedoc --gaID
-```
-
-Set the Google Analytics tracking ID and activate tracking code.
-
 ## hideParameterTypesInTitle
 
 ```bash
