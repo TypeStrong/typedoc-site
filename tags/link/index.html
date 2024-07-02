@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            {@link} |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="{@link}"
+    />
+    <meta property="og:url" content="/tags/link/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/documents/">External Documents</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li>
+<li><a href="/guides/changelog/">Changelog</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/document/">@document</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/hideconstructor/">@hideconstructor</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="%7B%40link%7D" tabindex="-1">{@link}</h1>
+<dl class="tag-info">
+    <dt>Tag Kind</dt>
+    <dd>
+        <a href="/guides/tags/#inline-tags">Inline</a>
+    </dd>
+    <dt>TSDoc Reference</dt>
+    <dd>
+        <a href="https://tsdoc.org/pages/tags/link/" target="_blank"
+            >@link</a
+        >
+    </dd>
+</dl>
+<p>The <code>@link</code> tag is used to refer to another documented declaration. It takes one of the following forms:</p>
+<ul>
+<li><code>{@link Foo.Bar}</code> - Links to <code>Foo.Bar</code>, with link text <code>Bar</code></li>
+<li><code>{@link Foo.Bar | click here}</code> - Links to <code>Foo.Bar</code>, with link text <code>click here</code></li>
+<li>(non-TSDoc) <code>{@link Foo.Bar click here}</code> - Links to <code>Foo.Bar</code>, with link text <code>click here</code></li>
+</ul>
+<p>Link resolution is controlled by the <code>--useTsLinkResolution</code> option. When set
+(the default), links will be resolved using TypeScript's resolution, which uses the
+symbols in scope to determine what symbol should be linked to. This is the same
+resolution style used by Visual Studio Code.</p>
+<p>If <code>--useTsLinkResolution</code> is off, or TypeScript fails to resolve a link, the link will
+be resolved with <a href="/guides/declaration-references/">declaration references</a>.</p>
+<h2 id="example" tabindex="-1">Example</h2>
+<pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * Similar to {@link random}, but with a range of [0, 100)<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">rand</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span><br><br><span class="token comment">/**<br> * Returns a random number in the range [0, 1)<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span><br><br><span class="token comment">/**<br> * {@link Data.prop | instance member}<br> * {@link Data.member | static member}<br> * {@link Data#member | instance member} (declaration references only)<br> *<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Data</span> <span class="token punctuation">{</span><br>    prop <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span><br><br>    <span class="token keyword">static</span> member <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br>    member <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token comment">/**<br> * TypeScript links do not support meaning qualifiers (`:namespace`),<br> * so both of these links will link to the enum.<br> * {@link Merged:namespace} links to the namespace.<br> * {@link Merged:enum} links to the enum.<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">namespace</span> Merged <span class="token punctuation">{</span><br>    <span class="token keyword">export</span> <span class="token keyword">const</span> a <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><br><span class="token keyword">export</span> <span class="token keyword">enum</span> Merged <span class="token punctuation">{</span><br>    <span class="token constant">A</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span></code></pre>
+<h2 id="tsdoc-compatibility" tabindex="-1">TSDoc Compatibility</h2>
+<p>TypeDoc implements the &quot;new&quot; version of declaration references, specified at
+<a href="https://github.com/microsoft/tsdoc/blob/main/tsdoc/src/beta/DeclarationReference.grammarkdown">tsdoc/src/beta/DeclarationReference.grammarkdown</a>.
+TypeDoc does not support parsing the initial declaration reference syntax proposed by TSDoc.
+For more details see the <a href="/guides/declaration-references/">declaration reference</a> documentation.</p>
+<h2 id="jsdoc-compatibility" tabindex="-1">JSDoc Compatibility</h2>
+<p>TypeDoc will also recognize the <code>@linkplain</code> and <code>@linkcode</code> JSDoc tags and resolve them with the same method as other links.</p>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./tags/link.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>
