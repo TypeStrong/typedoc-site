@@ -1,10 +1,23 @@
 // @ts-check
 
 (function () {
+    function checkVisible(elm) {
+        var rect = elm.getBoundingClientRect();
+        var viewHeight = Math.max(
+            document.documentElement.clientHeight,
+            window.innerHeight
+        );
+        return !(rect.bottom < 0 || rect.top - viewHeight >= 0);
+    }
+
     // Ideally this should be done statically in the template, but I'm done fighting with eleventy.
     for (const a of document.querySelectorAll(".navigation a")) {
         if (location.pathname === new URL(a.href).pathname) {
             a.classList.add("current");
+            if (!checkVisible(a)) {
+                a.scrollIntoView({ block: "center" });
+                document.documentElement.scrollTo(0, 0);
+            }
         }
     }
 })();
