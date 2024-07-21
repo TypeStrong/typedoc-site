@@ -26,6 +26,7 @@ const EXCLUDED_PLUGIN_USERS = [
     "acceleratxr",
     // Has forked several plugins & published, forks do not appear to be for general use.
     "silei",
+    "tivmof",
 ];
 
 function exec(command: string) {
