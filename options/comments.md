@@ -76,6 +76,14 @@ TSDoc specifies that braces (`{}`) must be escaped within comments to avoid ambi
 an inline tag and a brace to be included in the rendered text. TypeDoc's `ignoreUnescapedBraces` option
 determines if warnings are emitted if a brace is found within regular comment text without being escaped.
 
+## suppressCommentWarningsInDeclarationFiles
+
+```bash
+$ typedoc --suppressCommentWarningsInDeclarationFiles
+```
+
+Prevents warnings due to unspecified tags from being reported in comments within `.d.ts` files.
+
 ## blockTags
 
 ```json
