@@ -1,0 +1,63 @@
+<!DOCTYPE html><html class="default" lang="en"><head><meta charset="utf-8"/><link rel="canonical" href="https://typedoc.org/api/"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>TypeDoc - v0.26.5</title><meta name="description" content="Documentation for TypeDoc"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script defer src="assets/main.js"></script><script async src="assets/icons.js" id="tsd-icons-script"></script><script async src="assets/search.js" id="tsd-search-script"></script><script async src="assets/navigation.js" id="tsd-nav-script"></script></head><body><script>document.documentElement.dataset.theme = localStorage.getItem("tsd-theme") || "os";document.body.style.display="none";setTimeout(() => app?app.showPage():document.body.style.removeProperty("display"),500)</script><header class="tsd-page-toolbar"><div class="tsd-toolbar-contents container"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget tsd-toolbar-icon search no-caption"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-search"></use></svg></label><input type="text" id="tsd-search-field" aria-label="Search"/></div><div class="field"><div id="tsd-toolbar-links"></div></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">TypeDoc - v0.26.5</a></div><div class="table-cell" id="tsd-widgets"><a href="#" class="tsd-widget tsd-toolbar-icon menu no-caption" data-toggle="menu" aria-label="Menu"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><use href="assets/icons.svg#icon-menu"></use></svg></a></div></div></header><div class="container container-main"><div class="col-content"><div class="tsd-page-title"><h2>TypeDoc - v0.26.5</h2></div><div class="tsd-panel tsd-typography"><a id="md:typedoc" class="tsd-anchor"></a><h1 class="tsd-anchor-link">TypeDoc<a href="#md:typedoc" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h1><p>Documentation generator for TypeScript projects.</p>
+<p><a href="https://github.com/TypeStrong/typedoc/actions"><img src="https://github.com/TypeStrong/typedoc/workflows/CI/badge.svg" alt="CI"></a>
+<a href="https://www.npmjs.com/package/typedoc"><img src="https://img.shields.io/npm/v/typedoc?color=33cd56&amp;logo=npm" alt="NPM Version"></a></p>
+<a id="md:documentation" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Documentation<a href="#md:documentation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>For more detailed documentation, the changelog, and TypeDoc documentation rendered with TypeDoc, see <a href="https://typedoc.org">https://typedoc.org</a>.</p>
+<a id="md:installation" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Installation<a href="#md:installation" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>TypeDoc runs on Node.js and is available as a NPM package.</p>
+<pre><code class="text">npm install typedoc --save-dev
+</code><button type="button">Copy</button></pre>
+
+<a id="md:usage" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Usage<a href="#md:usage" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>To generate documentation TypeDoc needs to know your project entry point and TypeScript
+compiler options. It will automatically try to find your <code>tsconfig.json</code> file, so you can
+just specify the entry point of your library:</p>
+<pre><code class="text">typedoc src/index.ts
+</code><button type="button">Copy</button></pre>
+
+<p>If you have multiple entry points, specify each of them.</p>
+<pre><code class="text">typedoc package1/index.ts package2/index.ts
+</code><button type="button">Copy</button></pre>
+
+<p>If you specify a directory, TypeDoc will use the <code>entryPointStrategy</code> option to determine how to resolve it.
+By default, TypeDoc will search for a file called <code>index</code> under the directory.</p>
+<a id="md:monorepos--workspaces" class="tsd-anchor"></a><h3 class="tsd-anchor-link">Monorepos / Workspaces<a href="#md:monorepos--workspaces" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><p>If your codebase is comprised of one or more npm packages, you can build documentation for each of them individually
+and merge the results together into a single site by setting <code>entryPointStrategy</code> to <code>packages</code>. In this mode TypeDoc
+requires configuration to be present in each directory to specify the entry points. For an example setup, see
+<a href="https://github.com/Gerrit0/typedoc-packages-example">https://github.com/Gerrit0/typedoc-packages-example</a></p>
+<a id="md:arguments" class="tsd-anchor"></a><h3 class="tsd-anchor-link">Arguments<a href="#md:arguments" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h3><p>For a complete list of the command line arguments run <code>typedoc --help</code> or visit
+<a href="https://typedoc.org/options/">our website</a>.</p>
+<ul>
+<li><code>--out &lt;path/to/documentation/&gt;</code><br>
+Specifies the location the documentation should be written to. Defaults to <code>./docs</code></li>
+<li><code>--json &lt;path/to/output.json&gt;</code><br>
+Specifies the location and file name a json file describing the project is
+written to. When specified no documentation will be generated unless <code>--out</code> is also
+specified.</li>
+<li><code>--options</code><br>
+Specify a json option file that should be loaded. If not specified TypeDoc
+will look for 'typedoc.json' in the current directory.</li>
+<li><code>--tsconfig &lt;path/to/tsconfig.json&gt;</code><br>
+Specify a typescript config file that should be loaded. If not
+specified TypeDoc will look for 'tsconfig.json' in the current directory.</li>
+<li><code>--exclude &lt;pattern&gt;</code><br>
+Exclude files by the given pattern when a path is provided as source.
+Supports standard minimatch patterns.</li>
+</ul>
+<a id="md:theming" class="tsd-anchor"></a><h4 class="tsd-anchor-link">Theming<a href="#md:theming" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4><ul>
+<li><code>--theme &lt;default|plugin defined theme&gt;</code><br>
+Specify the theme that should be used.</li>
+<li><code>--name &lt;Documentation title&gt;</code><br>
+Set the name of the project that will be used in the header of the template.</li>
+<li><code>--readme &lt;path/to/readme|none&gt;</code><br>
+Path to the readme file that should be displayed on the index page. Pass <code>none</code> to disable the index page
+and start the documentation on the globals page.</li>
+</ul>
+<a id="md:miscellaneous" class="tsd-anchor"></a><h4 class="tsd-anchor-link">Miscellaneous<a href="#md:miscellaneous" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h4><ul>
+<li><code>--version</code><br>
+Display the version number of TypeDoc.</li>
+<li><code>--help</code><br>
+Display all TypeDoc options.</li>
+</ul>
+<a id="md:contributing" class="tsd-anchor"></a><h2 class="tsd-anchor-link">Contributing<a href="#md:contributing" aria-label="Permalink" class="tsd-anchor-icon"><svg viewBox="0 0 24 24"><use href="assets/icons.svg#icon-anchor"></use></svg></a></h2><p>This project is maintained by a community of developers. Contributions are welcome and appreciated.
+You can find TypeDoc on GitHub; feel free to open an issue or create a pull request:
+<a href="https://github.com/TypeStrong/typedoc">https://github.com/TypeStrong/typedoc</a></p>
+<p>For more information, read the <a href="https://github.com/TypeStrong/typedoc/blob/master/.github/CONTRIBUTING.md">contribution guide</a>.</p>
+</div></div><div class="col-sidebar"><div class="page-menu"><div class="tsd-navigation settings"><details class="tsd-accordion"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>Settings</h3></summary><div class="tsd-accordion-details"><div class="tsd-filter-visibility"><span class="settings-label">Member Visibility</span><ul id="tsd-filter-options"><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-protected" name="protected"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Protected</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-inherited" name="inherited" checked/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Inherited</span></label></li><li class="tsd-filter-item"><label class="tsd-filter-input"><input type="checkbox" id="tsd-filter-internal" name="internal"/><svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect class="tsd-checkbox-background" width="30" height="30" x="1" y="1" rx="6" fill="none"></rect><path class="tsd-checkbox-checkmark" d="M8.35422 16.8214L13.2143 21.75L24.6458 10.25" stroke="none" stroke-width="3.5" stroke-linejoin="round" fill="none"></path></svg><span>Internal</span></label></li></ul></div><div class="tsd-theme-toggle"><label class="settings-label" for="tsd-theme">Theme</label><select id="tsd-theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></div></div></details></div><details open class="tsd-accordion tsd-page-navigation"><summary class="tsd-accordion-summary"><h3><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><use href="assets/icons.svg#icon-chevronDown"></use></svg>On This Page</h3></summary><div class="tsd-accordion-details"><a href="#md:typedoc"><span>Type<wbr/>Doc</span></a><ul><li><a href="#md:documentation"><span>Documentation</span></a></li><li><a href="#md:installation"><span>Installation</span></a></li><li><a href="#md:usage"><span>Usage</span></a></li><li><ul><li><a href="#md:monorepos--workspaces"><span>Monorepos / <wbr/>Workspaces</span></a></li><li><a href="#md:arguments"><span>Arguments</span></a></li><li><ul><li><a href="#md:theming"><span>Theming</span></a></li><li><a href="#md:miscellaneous"><span>Miscellaneous</span></a></li></ul></li></ul></li><li><a href="#md:contributing"><span>Contributing</span></a></li></ul></div></details></div><div class="site-menu"><nav class="tsd-navigation"><a href="modules.html" class="current"><svg class="tsd-kind-icon" viewBox="0 0 24 24"><use href="assets/icons.svg#icon-1"></use></svg><span>TypeDoc - v0.26.5</span></a><ul class="tsd-small-nested-navigation" id="tsd-nav-container" data-base="."><li>Loading...</li></ul></nav></div></div></div><footer><p class="tsd-generator">Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></footer><div class="overlay"></div></body></html>

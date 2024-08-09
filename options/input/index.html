@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            Input |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="Input"
+    />
+    <meta property="og:url" content="/options/input/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/documents/">External Documents</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li>
+<li><a href="/guides/changelog/">Changelog</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/document/">@document</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/hideconstructor/">@hideconstructor</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="input-options" tabindex="-1">Input Options</h1>
+<p>These options control what files TypeDoc processes to generate documentation and how the files are processed.</p>
+<h2 id="entrypoints" tabindex="-1">entryPoints</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc a b<br><span class="token comment"># or</span><br>$ typedoc <span class="token parameter variable">--entryPoints</span> a <span class="token parameter variable">--entryPoints</span> b</code></pre>
+<pre class="language-json"><code class="language-json"><span class="token comment">// typedoc.json</span><br><span class="token punctuation">{</span><br>    <span class="token property">"entryPoints"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"src/index.ts"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<p>Specifies the entry points to be documented by TypeDoc. TypeDoc will examine the exports of these files and create documentation according to the exports.
+Entry points can be handled in one of three ways, see <a href="#entrypointstrategy"><code>--entryPointStrategy</code></a> for details.</p>
+<p>The set of entry points provided to TypeDoc determines the names displayed in the documentation.
+By default, TypeDoc will derive a <a href="/options/output/#basepath">basePath</a> based on your entry point
+paths to determine the displayed module name, but it can be also be set with the <a href="/tags/module/"><code>@module</code></a> tag.</p>
+<h2 id="entrypointstrategy" tabindex="-1">entryPointStrategy</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--entryPointStrategy</span> <span class="token function">expand</span> ./src</code></pre>
+<p>Specifies how specified entry points should be handled.</p>
+<h3 id="resolve-(default)" tabindex="-1">resolve (default)</h3>
+<p>Expects all entry points to be contained within the root level tsconfig project. If a directory is given, includes <code>&lt;directory&gt;/index</code> as the entry point.</p>
+<h3 id="expand-(default-prior-to-v0.22.0)" tabindex="-1">expand (default prior to v0.22.0)</h3>
+<p>Expects all entry points to be contained within the root level tsconfig project. If a directory is given, files within it are recursively expanded. Effectively, this will make a separate page for each individual TypeScript file.</p>
+<h3 id="packages" tabindex="-1">packages</h3>
+<p>Expects all entry points to be directories to <em>effectively</em> run TypeDoc within. After each entry point has been converted by TypeDoc to a JSON model, the projects will be merged together and rendered to a single site or JSON output. Each package may have its own set of TypeDoc
+configuration, but <code>plugins</code> within sub-projects will <em>not</em> be loaded. See <a href="https://github.com/Gerrit0/typedoc-packages-example">Gerrit0/typedoc-packages-example</a> for an example monorepo which uses this option.</p>
+<p>Configuration specified in the root level project will <em>not</em> be copied to child projects.</p>
+<h3 id="merge" tabindex="-1">merge</h3>
+<p>Expects all entry points to be <code>.json</code> files generated with a previous run of TypeDoc with the <a href="/options/output/#json"><code>--json</code></a> option set. These entry points will be merged into a single project.</p>
+<h2 id="alwayscreateentrypointmodule" tabindex="-1">alwaysCreateEntryPointModule</h2>
+<p>By default, if TypeDoc is given only one entry point, it will place exports of that entry point directly within
+the generated project. If this option is specified, TypeDoc will instead always create a module for the entry point.
+Has no effect if more than one entry point is passed to TypeDoc.</p>
+<p>If <a href="#projectdocuments"><code>--projectDocuments</code></a> is used to add documents, this option defaults to <code>true</code>, otherwise, defaults to <code>false</code>.</p>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--alwaysCreateEntryPointModule</span></code></pre>
+<h2 id="projectdocuments" tabindex="-1">projectDocuments</h2>
+<p>Specify additional markdown documents to be added to the generated documentation site.
+See the <a href="/guides/documents/">External Documents</a> guide for more details.</p>
+<pre class="language-json"><code class="language-json"><span class="token comment">// typedoc.json</span><br><span class="token punctuation">{</span><br>    <span class="token property">"projectDocuments"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"docs/tutorial.md"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<h2 id="exclude" tabindex="-1">exclude</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--exclude</span> <span class="token string">"**/*+(index|.spec|.e2e).ts"</span></code></pre>
+<p>Exclude files by the given pattern when a path is provided as source. This option is only used to remove files from consideration as
+entry points. Unlike TypeScript's <code>exclude</code> option, it <em>cannot</em> be used to exclude files from compilation. You may want to turn on TypeScript's
+<a href="https://www.typescriptlang.org/tsconfig#skipLibCheck">--skipLibCheck</a> if you have compilation errors originating in <code>@types</code> packages.</p>
+<p><strong>Important:</strong> To exclude files or paths entirely, use TypeScript's <code>exclude</code> option in your <code>tsconfig.json</code>. TypeDoc will not include any files excluded by <code>tsconfig.json</code>. See <a href="https://github.com/TypeStrong/typedoc/issues/1928#issuecomment-1121047065">issue #1928</a> for further discussion.</p>
+<p>Supports <a href="https://github.com/isaacs/minimatch">minimatch</a> patterns.
+In configuration files, this option accepts an array of patterns. On the command line, it may be specified multiple times to add multiple patterns.
+If an exported member from one of your entry points is located in an excluded file, it will be excluded from the documentation.</p>
+<p>If <code>entryPointStrategy</code> is set to <code>packages</code>, then you can specify package directories with this option to exclude from documentation.</p>
+<h2 id="externalpattern" tabindex="-1">externalPattern</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--externalPattern</span> <span class="token string">'lib/**/*.ts'</span> <span class="token parameter variable">--externalPattern</span> <span class="token string">'external/**/*.ts'</span></code></pre>
+<p>Define patterns for extra files that should be considered external. Can be used along with <code>--excludeExternals</code> to remove external modules from the documentation.</p>
+<h2 id="excludeexternals" tabindex="-1">excludeExternals</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--excludeExternals</span></code></pre>
+<p>Prevent externally resolved TypeScript files from being documented. Defaults to false.</p>
+<h2 id="excludenotdocumented" tabindex="-1">excludeNotDocumented</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--excludeNotDocumented</span></code></pre>
+<p>Removes symbols from the generated documentation which do not have an associated doc comment if they are matched by <code>excludeNotDocumentedKinds</code>.</p>
+<h2 id="excludenotdocumentedkinds" tabindex="-1">excludeNotDocumentedKinds</h2>
+<pre class="language-json"><code class="language-json"><span class="token comment">// typedoc.json</span><br><span class="token punctuation">{</span><br>    <span class="token property">"excludeNotDocumented"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><br>    <span class="token property">"excludeNotDocumentedKinds"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"Property"</span><span class="token punctuation">,</span> <span class="token string">"Interface"</span><span class="token punctuation">,</span> <span class="token string">"TypeAlias"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<p>Specifies the kinds of member which can be removed by <code>excludeNotDocumented</code>. Defaults to:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>    <span class="token property">"excludeNotDocumentedKinds"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token string">"Module"</span><span class="token punctuation">,</span><br>        <span class="token string">"Namespace"</span><span class="token punctuation">,</span><br>        <span class="token string">"Enum"</span><span class="token punctuation">,</span><br>        <span class="token comment">// "EnumMember", // Not enabled by default</span><br>        <span class="token string">"Variable"</span><span class="token punctuation">,</span><br>        <span class="token string">"Function"</span><span class="token punctuation">,</span><br>        <span class="token string">"Class"</span><span class="token punctuation">,</span><br>        <span class="token string">"Interface"</span><span class="token punctuation">,</span><br>        <span class="token string">"Constructor"</span><span class="token punctuation">,</span><br>        <span class="token string">"Property"</span><span class="token punctuation">,</span><br>        <span class="token string">"Method"</span><span class="token punctuation">,</span><br>        <span class="token string">"CallSignature"</span><span class="token punctuation">,</span><br>        <span class="token string">"IndexSignature"</span><span class="token punctuation">,</span><br>        <span class="token string">"ConstructorSignature"</span><span class="token punctuation">,</span><br>        <span class="token string">"Accessor"</span><span class="token punctuation">,</span><br>        <span class="token string">"GetSignature"</span><span class="token punctuation">,</span><br>        <span class="token string">"SetSignature"</span><span class="token punctuation">,</span><br>        <span class="token string">"TypeAlias"</span><span class="token punctuation">,</span><br>        <span class="token string">"Reference"</span><br>    <span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<h2 id="excludeinternal" tabindex="-1">excludeInternal</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--excludeInternal</span></code></pre>
+<p>Removes symbols annotated with the <code>@internal</code> doc tag. Defaults to true if the stripInternal compiler option is set to true, otherwise defaults to false.</p>
+<h2 id="excludeprivate" tabindex="-1">excludePrivate</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--excludePrivate</span></code></pre>
+<p>Removes private class members from the generated documentation. Defaults to true.</p>
+<h2 id="excludeprotected" tabindex="-1">excludeProtected</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--excludeProtected</span></code></pre>
+<p>Removes protected class members from the generated documentation. Defaults to false.</p>
+<h2 id="excludereferences" tabindex="-1">excludeReferences</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--excludeReferences</span></code></pre>
+<p>Removes re-exports of a symbol already included in the documentation from the documentation. Defaults to false.</p>
+<h2 id="excludecategories" tabindex="-1">excludeCategories</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--excludeCategories</span> A <span class="token parameter variable">--excludeCategories</span> B</code></pre>
+<p>Removes reflections associated with any of the given categories.</p>
+<h2 id="name" tabindex="-1">name</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--name</span> <span class="token operator">&lt;</span>Documentation title<span class="token operator">></span></code></pre>
+<p>Set the name of the project that will be used in the header of the template.
+The name defaults to the package name according to your <code>package.json</code>.</p>
+<h2 id="includeversion" tabindex="-1">includeVersion</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--includeVersion</span></code></pre>
+<p>Includes the version according to <code>package.json</code> in generated documentation. Defaults to false.</p>
+<h2 id="disablesources" tabindex="-1">disableSources</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--disableSources</span></code></pre>
+<p>Disables capturing where reflections are declared when converting input.</p>
+<h2 id="sourcelinktemplate" tabindex="-1">sourceLinkTemplate</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--sourceLinkTemplate</span> <span class="token string">'https://vcs.example.com/{path}?at={gitRevision}#line={line}'</span></code></pre>
+<p>Has no effect if <code>--disableSources</code> is set.
+Specify a link template to be used when generating source urls. If not set, will be automatically created
+using the git remote for GitHub, GitLab, and BitBucket urls. Supports <code>{path}</code>, <code>{line}</code>, and <code>{gitRevision}</code>
+placeholders.</p>
+<h2 id="gitrevision" tabindex="-1">gitRevision</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--gitRevision</span> <span class="token operator">&lt;</span>revision<span class="token operator">|</span>branch<span class="token operator">></span></code></pre>
+<p>Has no effect if <code>--disableSources</code> is set.
+Use specified revision or branch instead of the last revision for linking to source files. Defaults to the last commit.</p>
+<h2 id="gitremote" tabindex="-1">gitRemote</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--gitRemote</span> <span class="token operator">&lt;</span>remote<span class="token operator">></span></code></pre>
+<p>Has no effect if <code>--disableSources</code> is set.
+Use the specified git remote instead of <code>origin</code> for linking to source files in GitHub, Bitbucket, or GitLab.
+You can use <code>git remote</code> to view a list of valid remotes.
+If you are updating documentation for a forked package, you probably want to pass <code>--gitRemote upstream</code>.</p>
+<h2 id="disablegit" tabindex="-1">disableGit</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--disableGit</span></code></pre>
+<p>Prevents TypeDoc from using Git to try to determine if sources can be linked, with this enabled, sources will always be linked, even if not part of a git repo.</p>
+<h2 id="readme" tabindex="-1">readme</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--readme</span> <span class="token operator">&lt;</span>path/to/readme<span class="token operator">|</span>none<span class="token operator">></span></code></pre>
+<p>Path to the readme file that should be displayed on the index page. If no readme is discovered or read, the index page will be disabled.</p>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./options/input.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>

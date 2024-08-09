@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            External Documents |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="External Documents"
+    />
+    <meta property="og:url" content="/guides/documents/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/documents/">External Documents</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li>
+<li><a href="/guides/changelog/">Changelog</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/document/">@document</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/hideconstructor/">@hideconstructor</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="external-markdown" tabindex="-1">External Markdown</h1>
+<p>It can be convenient to write long-form guides/tutorials outside of doc comments.
+To support this, TypeDoc supports including documents which exist as standalone
+<code>.md</code> files in your repository.</p>
+<h2 id="including-documents" tabindex="-1">Including Documents</h2>
+<p>These documents can be included in your generated documentation in a few ways.</p>
+<ol>
+<li>With the <a href="/tags/document/"><code>@document</code></a> tag.</li>
+<li>With the <a href="/options/input/#projectdocuments">projectDocuments</a> option.</li>
+<li>As a child of another document using yaml frontmatter.</li>
+</ol>
+<h3 id="the-%40document-tag" tabindex="-1">The <code>@document</code> Tag</h3>
+<p>The <code>@document</code> tag can be placed in the comments for most types to add
+a child to that reflection in the generated documentation. The content of
+the <code>@document</code> tag should simply be a path to a markdown document to be
+included in the site.</p>
+<pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * @document documents/external-markdown.md<br> */</span></code></pre>
+<p>The document path is relative to the file in which the comment appears in.</p>
+<h3 id="project-documents" tabindex="-1">Project Documents</h3>
+<p>If your project has multiple entry points, the <code>@document</code> tag cannot be used
+to place documents at the top level of the project as there is no comment location
+associated with the project. For this use case, specify the <a href="/options/input/#projectdocuments">projectDocuments</a>
+option. This option can be specified multiple times, or a glob may be specified
+to include multiple documents.</p>
+<pre class="language-json"><code class="language-json"><span class="token comment">// typedoc.json</span><br><span class="token punctuation">{</span><br>    <span class="token property">"projectDocuments"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"documents/*.md"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<p>TypeDoc's default <a href="/options/organization/#sort">sorting</a> options
+will cause project documents to be re-ordered alphabetically. If not desired, sorting
+for entry points can be disabled with the <a href="/options/organization/#sortentrypoints">sortEntryPoints</a>
+option.</p>
+<h2 id="document-content" tabindex="-1">Document Content</h2>
+<p>Documents may include a yaml frontmatter section which can be used to control
+some details about the document. Note: The frontmatter <strong>must</strong> begin and end with
+<code>---</code> on lines by itself. TypeDoc's frontmatter extraction uses this to determine
+when the block ends.</p>
+<pre class="language-yaml"><code class="language-yaml"><span class="token punctuation">---</span><br><span class="token key atrule">title</span><span class="token punctuation">:</span> External Markdown<br><span class="token key atrule">group</span><span class="token punctuation">:</span> Documents<br><span class="token key atrule">category</span><span class="token punctuation">:</span> Guides<br><span class="token key atrule">children</span><span class="token punctuation">:</span><br>    <span class="token punctuation">-</span> ./child.md<br>    <span class="token punctuation">-</span> ./child2.md<br><span class="token punctuation">---</span></code></pre>
+<p>The <code>title</code> key specifies the document name, which will be used in the sidebar
+navigation. The <code>group</code> and <code>category</code> keys are equivalent to the
+<a href="https://typedoc.org/tags/group/"><code>@group</code></a>and <a href="https://typedoc.org/tags/category/"><code>@category</code></a>
+tags and control how the document shows up in the Index section on the page
+for the reflection which owns the document. The <code>children</code> key can be used to specify
+additional documents which should be added underneath the current document.</p>
+<p>Documents may include relative links to images or other files/documents. TypeDoc
+will detect links within markdown <code>[text](link)</code> formatted links, <code>&lt;a&gt;</code> tags
+and <code>&lt;img&gt;</code> tags and automatically resolve them to other documents in the project.</p>
+<p>if a path cannot be resolved to a part of the documentation, TypeDoc will copy
+the file found to a <code>media</code> folder in your generated documentation and update the
+link to point to it, so relative links to images will still work.</p>
+<p>Documents may also include <code>{@link}</code> inline tags, which will be resolved as
+<a href="/guides/declaration-references/">declaration references</a> by
+TypeDoc.</p>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./guides/documents.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>
