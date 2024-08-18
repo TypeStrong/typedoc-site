@@ -59,7 +59,7 @@ Note that:
 If you are using a JavaScript file, it should export an object whose keys are the option names. For example:
 
 ```js
-/** @type {import('typedoc').TypeDocOptions} */
+/** @type {Partial<import('typedoc').TypeDocOptions>} */
 const config = {
     entryPoints: ["./src/index.ts", "./src/secondary-entry.ts"],
     out: "doc",
