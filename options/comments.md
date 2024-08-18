@@ -95,7 +95,7 @@ Prevents warnings due to unspecified tags from being reported in comments within
 
 This specifics all of the [JSDoc block tags](../guides/tags.md#block-tags) that TypeDoc considers to be valid.
 
-By default, TypeDoc will warn when it finds a non-valid JSDoc tag. If you need to add a custom one, you can extend the defaults by using a JavaScript configuration file:
+By default, TypeDoc will warn when it finds an unknown tag. If you need to add a custom one, you can extend the defaults by using a JavaScript configuration file:
 
 ```js
 import { OptionDefaults } from "typedoc";
