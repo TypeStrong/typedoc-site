@@ -113,6 +113,8 @@ export default config;
 
 Note that this option will be set by `tsdoc.json`, if present. (Using a `tsdoc.json` file is an alternate way to add a custom JSDoc tag.)
 
+Also see [`inlineTags`](#inlinetags) and [`modifierTags`](#modifiertags).
+
 ## inlineTags
 
 ```json
@@ -142,6 +144,8 @@ export default config;
 
 Note that this option will be set by `tsdoc.json`, if present. (Using a `tsdoc.json` file is an alternate way to add a custom JSDoc tag.)
 
+Also see [`blockTags`](#blocktags) and [`modifierTags`](#modifiertags).
+
 ## modifierTags
 
 ```json
@@ -170,6 +174,8 @@ export default config;
 ```
 
 Note that this option will be set by `tsdoc.json`, if present. (Using a `tsdoc.json` file is an alternate way to add a custom JSDoc tag.)
+
+Also see [`blockTags`](#blocktags) and [`inlineTags`](#inlinetags).
 
 ## cascadedModifierTags
 
