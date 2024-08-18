@@ -93,8 +93,25 @@ Prevents warnings due to unspecified tags from being reported in comments within
 }
 ```
 
-Override TypeDoc's supported block tags, emit warnings for any tags not listed here.
-This option will be set by `tsdoc.json` if present.
+This specifics all of the [JSDoc block tags](../guides/tags.md#block-tags) that TypeDoc considers to be valid.
+
+By default, TypeDoc will warn when it finds a non-valid JSDoc tag. If you need to add a custom one, you can extend the defaults by using a JavaScript configuration file:
+
+```js
+import { OptionDefaults } from "typedoc";
+
+/** @type {Partial<import('typedoc').TypeDocOptions>} */
+const config = {
+    // Other config here.
+    // ...
+
+    blockTags: [...OptionDefaults.blockTags, "@foo"],
+};
+
+export default config;
+```
+
+Note that this option will be set by `tsdoc.json`, if present. (Using a `tsdoc.json` file is an alternate way to add a custom JSDoc tag.)
 
 ## inlineTags
 
@@ -105,8 +122,25 @@ This option will be set by `tsdoc.json` if present.
 }
 ```
 
-Override TypeDoc's supported inline tags, emit warnings for any tags not listed here.
-This option will be set by `tsdoc.json` if present.
+This specifics all of the [JSDoc inline tags](../guides/tags.md#inline-tags) that TypeDoc considers to be valid.
+
+By default, TypeDoc will warn when it finds a non-valid JSDoc tag. If you need to add a custom one, you can extend the defaults by using a JavaScript configuration file:
+
+```js
+import { OptionDefaults } from "typedoc";
+
+/** @type {Partial<import('typedoc').TypeDocOptions>} */
+const config = {
+    // Other config here.
+    // ...
+
+    inlineTags: [...OptionDefaults.inlineTags, "@foo"],
+};
+
+export default config;
+```
+
+Note that this option will be set by `tsdoc.json`, if present. (Using a `tsdoc.json` file is an alternate way to add a custom JSDoc tag.)
 
 ## modifierTags
 
@@ -117,8 +151,25 @@ This option will be set by `tsdoc.json` if present.
 }
 ```
 
-Override TypeDoc's supported modifier tags, emit warnings for any tags not listed here.
-This option will be set by `tsdoc.json` if present.
+This specifics all of the [JSDoc modifier tags](../guides/tags.md#inline-tags) that TypeDoc considers to be valid.
+
+By default, TypeDoc will warn when it finds a non-valid JSDoc tag. If you need to add a custom one, you can extend the defaults by using a JavaScript configuration file:
+
+```js
+import { OptionDefaults } from "typedoc";
+
+/** @type {Partial<import('typedoc').TypeDocOptions>} */
+const config = {
+    // Other config here.
+    // ...
+
+    modifierTags: [...OptionDefaults.modifierTags, "@foo"],
+};
+
+export default config;
+```
+
+Note that this option will be set by `tsdoc.json`, if present. (Using a `tsdoc.json` file is an alternate way to add a custom JSDoc tag.)
 
 ## cascadedModifierTags
 
