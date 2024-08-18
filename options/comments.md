@@ -155,7 +155,7 @@ Also see [`blockTags`](#blocktags) and [`modifierTags`](#modifiertags).
 }
 ```
 
-This specifics all of the [JSDoc modifier tags](../guides/tags.md#inline-tags) that TypeDoc considers to be valid.
+This specifics all of the [JSDoc modifier tags](../guides/tags.md#modifier-tags) that TypeDoc considers to be valid.
 
 By default, TypeDoc will warn when it finds a non-valid JSDoc tag. If you need to add a custom one, you can extend the defaults by using a JavaScript configuration file:
 
