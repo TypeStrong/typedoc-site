@@ -93,7 +93,7 @@ Prevents warnings due to unspecified tags from being reported in comments within
 }
 ```
 
-This specifics all of the [block tags](../guides/tags.md#block-tags) that TypeDoc considers to be valid.
+This specifics all of the [block tags](/guides/tags#block-tags) that TypeDoc considers to be valid.
 
 By default, TypeDoc will warn when it finds an unknown tag. If you need to add a custom one, you can extend the defaults by using a JavaScript configuration file:
 
@@ -124,7 +124,7 @@ Also see [`inlineTags`](#inlinetags) and [`modifierTags`](#modifiertags).
 }
 ```
 
-This specifics all of the [inline tags](../guides/tags.md#inline-tags) that TypeDoc considers to be valid.
+This specifics all of the [inline tags](/guides/tags#inline-tags) that TypeDoc considers to be valid.
 
 By default, TypeDoc will warn when it finds a non-valid tag. If you need to add a custom one, you can extend the defaults by using a JavaScript configuration file:
 
@@ -155,7 +155,7 @@ Also see [`blockTags`](#blocktags) and [`modifierTags`](#modifiertags).
 }
 ```
 
-This specifics all of the [modifier tags](../guides/tags.md#modifier-tags) that TypeDoc considers to be valid.
+This specifics all of the [modifier tags](guides/tags#modifier-tags) that TypeDoc considers to be valid.
 
 By default, TypeDoc will warn when it finds a non-valid tag. If you need to add a custom one, you can extend the defaults by using a JavaScript configuration file:
 
