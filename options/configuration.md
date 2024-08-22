@@ -23,14 +23,18 @@ Specify a configuration file to be loaded, which should contain entries that cor
 -   `typedoc.jsonc`
 -   `typedoc.config.js`
 -   `typedoc.config.cjs`
+-   `typedoc.config.mjs`
 -   `typedoc.js` (avoid this name, Windows CMD will try to run it instead of calling TypeDoc when running from that directory)
 -   `typedoc.cjs`
+-   `typedoc.mjs`
 -   `.config/typedoc.json`
 -   `.config/typedoc.jsonc`
 -   `.config/typedoc.config.js`
 -   `.config/typedoc.config.cjs`
+-   `.config/typedoc.config.mjs`
 -   `.config/typedoc.js`
 -   `.config/typedoc.cjs`
+-   `.config/typedoc.mjs`
 
 ### JSON Files
 
@@ -55,17 +59,19 @@ Note that:
 If you are using a JavaScript file, it should export an object whose keys are the option names. For example:
 
 ```js
-/** @type {import('typedoc').TypeDocOptions} */
-module.exports = {
+/** @type {Partial<import('typedoc').TypeDocOptions>} */
+const config = {
     entryPoints: ["./src/index.ts", "./src/secondary-entry.ts"],
     out: "doc",
 };
+
+export default config;
 ```
 
 Note that:
 
--   It is recommended that you use a file name of `typedoc.config.cjs`.
--   The comment will be ignored by TypeDoc, but will provide auto-complete and key validation when editing the file in VSCode and other editors which support TypeScript JSDoc annotations.
+-   It is recommended that you use a file name of `typedoc.config.mjs`.
+-   The "@type" comment will be ignored by TypeDoc, but will provide auto-complete and key validation when editing the file in VSCode and other editors which support TypeScript JSDoc annotations.
 
 ### Other Info
 
