@@ -274,4 +274,4 @@ Prevents TypeDoc from using Git to try to determine if sources can be linked, wi
 $ typedoc --readme <path/to/readme|none>
 ```
 
-Path to the readme file that should be displayed on the index page. If no readme is discovered or read, the index page will be disabled.
+Path to the readme file that should be displayed on the index page. If no readme is discovered or read, the index page will be disabled. You can also specify "none" to explicitly disable the index page.
