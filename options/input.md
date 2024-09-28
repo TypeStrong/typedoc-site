@@ -47,7 +47,7 @@ Expects all entry points to be contained within the root level tsconfig project.
 
 ### expand (default prior to v0.22.0)
 
-Expects all entry points to be contained within the root level tsconfig project. If a directory is given, files within it are recursively expanded. Effectively, this will make a separate page for each individual TypeScript file.
+Expects all entry points to be contained within the root level tsconfig project. If a directory is given, its contents are recursively expanded and treated as entry points.
 
 ### packages
 
