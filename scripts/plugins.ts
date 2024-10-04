@@ -12,6 +12,12 @@ const EXCLUDED_PLUGINS = [
     "@zamiell/typedoc-plugin-markdown",
     "@convex-dev/typedoc-plugin-markdown",
     "@jberesford/typedoc-plugin-mdn-links",
+    "nil-typedoc-plugin-markdown",
+    "@ayios/typedoc-plugin-merge-modules",
+    "@sisense/typedoc-plugin-markdown",
+    "@anatoly-tenenev/typedoc-plugin-markdown",
+    "@imtuanpham/typedoc-plugin-markdown",
+    "@terwer/typedoc-plugin-markdown",
 
     // Custom plugins/themes for other libraries, likely not useful to most people.
     "@initializer-utils/typedoc-theme",
