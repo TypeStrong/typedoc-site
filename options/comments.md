@@ -230,11 +230,13 @@ both packages must be listed.
     "externalSymbolLinkMappings": {
         // used by `class Foo extends Component {}`
         "@types/react": {
-            "Component": "https://reactjs.org/docs/react-component.html"
+            "Component": "https://react.dev/reference/react/Component",
+            // used if no other names match
+            "*": "https://react.dev/"
         },
         // used by {@link react!Component}
         "react": {
-            "Component": "https://reactjs.org/docs/react-component.html"
+            "Component": "https://react.dev/reference/react/Component"
         }
     }
 }
