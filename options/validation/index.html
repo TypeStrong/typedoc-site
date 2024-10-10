@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            Validation |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="Validation"
+    />
+    <meta property="og:url" content="/options/validation/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/documents/">External Documents</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li>
+<li><a href="/guides/changelog/">Changelog</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/document/">@document</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/hideconstructor/">@hideconstructor</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="validation-options" tabindex="-1">Validation Options</h1>
+<p>Options that control how TypeDoc validates your documentation.</p>
+<h2 id="validation" tabindex="-1">validation</h2>
+<p>CLI:</p>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--validation.invalidLink</span><br>$ typedoc <span class="token parameter variable">--validation</span></code></pre>
+<p>typedoc.json (defaults):</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>    <span class="token property">"validation"</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>        <span class="token property">"notExported"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><br>        <span class="token property">"invalidLink"</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><br>        <span class="token property">"notDocumented"</span><span class="token operator">:</span> <span class="token boolean">false</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<p>Specifies validation steps TypeDoc should perform on your generated documentation.</p>
+<h2 id="treatwarningsaserrors" tabindex="-1">treatWarningsAsErrors</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--treatWarningsAsErrors</span></code></pre>
+<p>Causes TypeDoc to treat any reported warnings as fatal errors that can prevent documentation from being generated.</p>
+<h2 id="treatvalidationwarningsaserrors" tabindex="-1">treatValidationWarningsAsErrors</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--treatValidationWarningsAsErrors</span></code></pre>
+<p>Limited version of <code>treatWarningsAsErrors</code> that only applies to warnings emitted during validation of a project.
+This option cannot be used to turn <code>treatWarningsAsErrors</code> off for validation warnings.</p>
+<h2 id="intentionallynotexported" tabindex="-1">intentionallyNotExported</h2>
+<p>Lists symbols which are intentionally excluded from the documentation output and should not produce warnings.
+Entries may optionally specify a file name before a colon to only suppress warnings for symbols declared in a specific file.</p>
+<p>typedoc.json:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>    <span class="token property">"intentionallyNotExported"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"InternalClass"</span><span class="token punctuation">,</span> <span class="token string">"src/other.ts:OtherInternal"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<h2 id="requiredtobedocumented" tabindex="-1">requiredToBeDocumented</h2>
+<p>Set the list of reflection types that must be documented, used by <code>validation.notDocumented</code></p>
+<p>The full list of available values are below, with entries not required by default commented out.</p>
+<p>typedoc.json:</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>    <span class="token property">"requiredToBeDocumented"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token comment">//"Project",</span><br>        <span class="token comment">//"Module",</span><br>        <span class="token comment">//"Namespace",</span><br>        <span class="token string">"Enum"</span><span class="token punctuation">,</span><br>        <span class="token string">"EnumMember"</span><span class="token punctuation">,</span><br>        <span class="token string">"Variable"</span><span class="token punctuation">,</span><br>        <span class="token string">"Function"</span><span class="token punctuation">,</span><br>        <span class="token string">"Class"</span><span class="token punctuation">,</span><br>        <span class="token string">"Interface"</span><span class="token punctuation">,</span><br>        <span class="token comment">//"Constructor",</span><br>        <span class="token string">"Property"</span><span class="token punctuation">,</span><br>        <span class="token string">"Method"</span><span class="token punctuation">,</span><br>        <span class="token comment">// Implicitly set if function/method is set (this means you can't require docs on methods, but not functions)</span><br>        <span class="token comment">// This exists because methods/functions can have multiple signatures due to overloads, and TypeDoc puts comment</span><br>        <span class="token comment">// data on the signature. This might be improved someday, so you probably shouldn't set this directly.</span><br>        <span class="token comment">//    "CallSignature",</span><br>        <span class="token comment">// Index signature { [k: string]: string } "properties"</span><br>        <span class="token comment">//    "IndexSignature",</span><br>        <span class="token comment">// Equivalent to Constructor due to the same implementation detail as CallSignature</span><br>        <span class="token comment">//    "ConstructorSignature",</span><br>        <span class="token comment">//"Parameter",</span><br>        <span class="token comment">// Used for object literal types. You probably should set TypeAlias instead, which refers to types created with `type X =`.</span><br>        <span class="token comment">// This only really exists because of an implementation detail.</span><br>        <span class="token comment">//    "TypeLiteral",</span><br>        <span class="token comment">//"TypeParameter",</span><br>        <span class="token string">"Accessor"</span><span class="token punctuation">,</span> <span class="token comment">// shorthand for GetSignature + SetSignature</span><br>        <span class="token comment">//   "GetSignature",</span><br>        <span class="token comment">//    "SetSignature",</span><br>        <span class="token string">"TypeAlias"</span><span class="token punctuation">,</span><br>        <span class="token comment">// TypeDoc creates reference reflections if a symbol is exported from a package with multiple names. Most projects</span><br>        <span class="token comment">// won't have any of these, and they just render as a link to the canonical name.</span><br>        <span class="token comment">//    "Reference",</span><br>    <span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./options/validation.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>

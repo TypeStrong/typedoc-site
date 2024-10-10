@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            Tags |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="Tags"
+    />
+    <meta property="og:url" content="/guides/tags/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/documents/">External Documents</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li>
+<li><a href="/guides/changelog/">Changelog</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/document/">@document</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/hideconstructor/">@hideconstructor</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="tags" tabindex="-1">Tags</h1>
+<p>TypeDoc supports a specific set of tags. Many JSDoc tags are not supported because the TypeScript
+compiler can infer the same information directly from code. Any tags which are not recognized will
+result in a warning being emitted. TypeDoc will still parse the documentation comment, using context
+clues to determine the likely intended tag type.</p>
+<p>When writing documentation for function signatures, you don't have to repeat yourself. TypeDoc will
+automatically copy comments and tags of the function implementation to its signatures.</p>
+<h2 id="defining-tags" tabindex="-1">Defining Tags</h2>
+<p>TypeDoc supports defining what tags are supported through either a <code>tsdoc.json</code> file or via the
+<code>--blockTags</code>, <code>--inlineTags</code>, and <code>--modifierTags</code> options. If defined in a <code>tsdoc.json</code> file,
+the file <strong>must</strong> be placed alongside <code>tsconfig.json</code>. See the
+<a href="https://tsdoc.org/pages/packages/tsdoc-config/">TSDoc documentation</a> for details on the file format.</p>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">{</span><br>    <span class="token property">"$schema"</span><span class="token operator">:</span> <span class="token string">"https://developer.microsoft.com/en-us/json-schemas/tsdoc/v0/tsdoc.schema.json"</span><span class="token punctuation">,</span><br>    <span class="token property">"extends"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"typedoc/tsdoc.json"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>    <span class="token property">"noStandardTags"</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span><br>    <span class="token property">"tagDefinitions"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token punctuation">{</span><br>            <span class="token property">"tagName"</span><span class="token operator">:</span> <span class="token string">"@customTag"</span><span class="token punctuation">,</span><br>            <span class="token property">"syntaxKind"</span><span class="token operator">:</span> <span class="token string">"modifier"</span><br>        <span class="token punctuation">}</span><br>    <span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<h2 id="block-tags" tabindex="-1">Block Tags</h2>
+<p>Block tags are tags that are associated with the following text. They can be used to divide documentation
+into sections (<a href="/tags/remarks/"><code>@remarks</code></a>), modify how the reflection is processed (<a href="/tags/group/"><code>@group</code></a>)
+or provide examples for how to use the export (<a href="/tags/example/"><code>@example</code></a>).</p>
+<pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * Summary<br> *<br> * @remarks<br> * Additional details<br> *<br> * @example<br> * ```ts<br> * factorial(3) // => 6<br> * ```<br> */</span></code></pre>
+<h2 id="modifier-tags" tabindex="-1">Modifier Tags</h2>
+<p>Modifier tags have no associated content and serve only to specify some special behavior for how the reflection is processed
+by setting some binary flag. For example, <a href="/tags/hidden/"><code>@hidden</code></a> will remove a reflection from the documentation
+while <a href="/tags/internal/"><code>@internal</code></a> will mark the reflection as internal for use with
+<a href="/options/output/#visibilityfilters"><code>--visibilityFilters</code></a> or <a href="/options/input/#excludeinternal"><code>--excludeInternal</code></a>.</p>
+<h2 id="inline-tags" tabindex="-1">Inline Tags</h2>
+<p>Inline tags are used to mark text within a paragraph for processing by TypeDoc. The most important ones are the
+<a href="/tags/link/"><code>@link</code></a> and <a href="/tags/inheritDoc/"><code>@inheritDoc</code></a> tags.</p>
+<h2 id="typescript-in-javascript" tabindex="-1">TypeScript in JavaScript</h2>
+<p>If your project uses TypeScript to type check JavaScript, TypeDoc will pick up type aliases and interfaces
+defined with <code>@typedef</code> and <code>@callback</code>. See the
+<a href="https://www.typescriptlang.org/docs/handbook/jsdoc-supported-types.html#typedef-callback-and-param">TypeScript handbook</a> for details.</p>
+<h2 id="see-also" tabindex="-1">See Also</h2>
+<ul>
+<li>The <a href="/guides/doccomments/">Doc Comments overview</a></li>
+</ul>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./guides/tags.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>
