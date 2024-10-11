@@ -311,6 +311,20 @@ Defines additional links to be included in the page header.
 
 Defines additional links to be included in the page sidebar.
 
+## headings
+
+```json
+// typedoc.json
+{
+    "headings": {
+        "readme": true,
+        "document": false
+    }
+}
+```
+
+Defines whether a heading describing the reflection should be included on the rendered page.
+
 ## navigation
 
 ```json
