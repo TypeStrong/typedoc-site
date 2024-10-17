@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            Organization |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="Organization"
+    />
+    <meta property="og:url" content="/options/organization/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/documents/">External Documents</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li>
+<li><a href="/guides/changelog/">Changelog</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/document/">@document</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/hideconstructor/">@hideconstructor</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="organization-options" tabindex="-1">Organization Options</h1>
+<p>These options control how content is structured on generated pages.</p>
+<h2 id="categorizebygroup" tabindex="-1">categorizeByGroup</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--categorizeByGroup</span></code></pre>
+<p>This flag categorizes reflections by group (within properties, methods, etc).
+To allow methods and properties of the same category to be grouped together, set this flag to false.
+Defaults to false.</p>
+<h2 id="defaultcategory" tabindex="-1">defaultCategory</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--defaultCategory</span> <span class="token string">"Category Name"</span></code></pre>
+<p>Sets the name for the default category which is used when only some elements of the page are categorized.
+Defaults to 'Other'</p>
+<h2 id="categoryorder" tabindex="-1">categoryOrder</h2>
+<pre class="language-json"><code class="language-json"><span class="token comment">// typedoc.json</span><br><span class="token punctuation">{</span><br>    <span class="token property">"categoryOrder"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"Category Name"</span><span class="token punctuation">,</span> <span class="token string">"Other Category"</span><span class="token punctuation">,</span> <span class="token string">"*"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<p>Array option which allows overriding the order categories display in. A string of <code>*</code> indicates where categories that are not in the list should appear.</p>
+<p>Categories whose order is not specified will be sorted alphabetically. If <code>*</code> is not specified and unknown categories are found, they will be listed at the end by default.</p>
+<h2 id="grouporder" tabindex="-1">groupOrder</h2>
+<pre class="language-json"><code class="language-json"><span class="token comment">// typedoc.json</span><br><span class="token punctuation">{</span><br>    <span class="token property">"groupOrder"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"Variables"</span><span class="token punctuation">,</span> <span class="token string">"Functions"</span><span class="token punctuation">,</span> <span class="token string">"*"</span><span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+<p>Array option which allows overriding the order groups display in. A string of <code>*</code> indicates where groups that are not in the list should appear.</p>
+<p>Groups whose order is not specified will be sorted alphabetically. If <code>*</code> is not specified and unknown groups are found, they will be listed at the end by default.</p>
+<h2 id="sort" tabindex="-1">sort</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--sort</span> static-first <span class="token parameter variable">--sort</span> alphabetical</code></pre>
+<p>Specifies the sort order for members. Sorting strategies will be applied in order.
+If an earlier sorting strategy determines the relative ordering of two reflections, later
+ordering strategies will not be applied.</p>
+<p>For example, with the setting <code>[&quot;static-first&quot;, &quot;visibility&quot;]</code>, TypeDoc will first compare two
+reflections by if they are static or not, and if that comparison returns equal, will check the
+visibility of each reflection. On the other hand, if <code>[&quot;visibility&quot;, &quot;static-first&quot;]</code> is specified,
+TypeDoc would sort all public properties first and then sort each group to put static properties first.
+This means that <code>[&quot;source-order&quot;, &quot;static-first&quot;]</code> is equivalent to <code>[&quot;source-order&quot;]</code> since ordering
+by position in source will always produce a non-equal comparison.</p>
+<p>The available sorting strategies are:</p>
+<ul>
+<li><code>source-order</code> (sorts by file, then by position in file)</li>
+<li><code>alphabetical</code></li>
+<li><code>enum-value-ascending</code> (only applies to children of an enum)</li>
+<li><code>enum-value-descending</code> (only applies to children of an enum)</li>
+<li><code>static-first</code></li>
+<li><code>instance-first</code></li>
+<li><code>visibility</code> (public, then protected, then private)</li>
+<li><code>required-first</code></li>
+<li><code>kind</code> (order according to the <code>kindSortOrder</code> option)</li>
+<li><code>external-last</code></li>
+<li><code>documents-first</code></li>
+<li><code>documents-last</code></li>
+<li><code>alphabetical-ignoring-documents</code></li>
+</ul>
+<h2 id="sortentrypoints" tabindex="-1">sortEntryPoints</h2>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--sortEntryPoints</span> <span class="token boolean">false</span></code></pre>
+<p>By default, TypeDoc sorts the members of all pages according to the <code>sort</code> option, this option can be
+used to disable sorting at the top level.</p>
+<h2 id="kindsortorder" tabindex="-1">kindSortOrder</h2>
+<p>Specifies the relative ordering of reflections if <code>kind</code> is specified in the <code>sort</code> option. The default order is:</p>
+<pre class="language-json"><code class="language-json"><span class="token comment">// typedoc.json</span><br><span class="token punctuation">{</span><br>    <span class="token property">"kindSortOrder"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>        <span class="token string">"Reference"</span><span class="token punctuation">,</span><br>        <span class="token string">"Project"</span><span class="token punctuation">,</span><br>        <span class="token string">"Module"</span><span class="token punctuation">,</span><br>        <span class="token string">"Namespace"</span><span class="token punctuation">,</span><br>        <span class="token string">"Enum"</span><span class="token punctuation">,</span><br>        <span class="token string">"EnumMember"</span><span class="token punctuation">,</span><br>        <span class="token string">"Class"</span><span class="token punctuation">,</span><br>        <span class="token string">"Interface"</span><span class="token punctuation">,</span><br>        <span class="token string">"TypeAlias"</span><span class="token punctuation">,</span><br>        <span class="token string">"Constructor"</span><span class="token punctuation">,</span><br>        <span class="token string">"Property"</span><span class="token punctuation">,</span><br>        <span class="token string">"Variable"</span><span class="token punctuation">,</span><br>        <span class="token string">"Function"</span><span class="token punctuation">,</span><br>        <span class="token string">"Accessor"</span><span class="token punctuation">,</span><br>        <span class="token string">"Method"</span><span class="token punctuation">,</span><br>        <span class="token string">"Parameter"</span><span class="token punctuation">,</span><br>        <span class="token string">"TypeParameter"</span><span class="token punctuation">,</span><br>        <span class="token string">"TypeLiteral"</span><span class="token punctuation">,</span><br>        <span class="token string">"CallSignature"</span><span class="token punctuation">,</span><br>        <span class="token string">"ConstructorSignature"</span><span class="token punctuation">,</span><br>        <span class="token string">"IndexSignature"</span><span class="token punctuation">,</span><br>        <span class="token string">"GetSignature"</span><span class="token punctuation">,</span><br>        <span class="token string">"SetSignature"</span><br>    <span class="token punctuation">]</span><br><span class="token punctuation">}</span></code></pre>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./options/organization.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>
