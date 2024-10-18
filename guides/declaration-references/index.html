@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            Declaration References |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="Declaration References"
+    />
+    <meta property="og:url" content="/guides/declaration-references/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/documents/">External Documents</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li>
+<li><a href="/guides/changelog/">Changelog</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/document/">@document</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/hideconstructor/">@hideconstructor</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="declaration-references" tabindex="-1">Declaration References</h1>
+<p>Note: If <a href="/options/comments/#usetslinkresolution">--useTsLinkResolution</a> is turned on (the default) this page likely
+<strong>does not apply</strong> for your links. Declaration references are used only if that option is off or TypeScript
+fails to resolve a link.</p>
+<p>Some tags like <a href="/tags/link/"><code>{@link}</code></a> and <a href="/tags/inheritDoc/"><code>{@inheritDoc}</code></a> can refer to other
+members of the documentation. These tags use declaration references to name another declaration.</p>
+<p>TypeDoc's declaration references are slightly different than JSDoc's namepaths. They are based off of
+the &quot;new&quot; <a href="https://tsdoc.org/pages/spec/overview/">TSDoc</a> declaration references with slight modifications
+to make their resolution behavior more closely match the TypeScript language service (e.g. what VSCode does).</p>
+<p>Declaration references are comprised of an optional module source, a component path, and an optional meaning.</p>
+<h2 id="module-source" tabindex="-1">Module Source</h2>
+<p>The first part of a declaration, up to a <code>!</code> is parsed as the module source. This will be taken
+literally and used to refer to the module name in a multiple entry point documentation site.
+It should <em>not</em> include the path to the module file.</p>
+<p>If a declaration reference does not contain a <code>!</code>, then it does not contain a module source, and the
+first part of the declaration reference is the component path.</p>
+<pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * {@link moduleA!}<br> * {@link "with!bang and \"quoted path\""!}<br> */</span></code></pre>
+<h2 id="component-path" tabindex="-1">Component Path</h2>
+<p>After the module source, declaration references contain a component path, which is made up of one
+or more component names delimitated by a <code>.</code>, <code>#</code>, or <code>~</code>.</p>
+<p>The deliminator is used to determine how to navigate the project tree.</p>
+<!-- prettier-ignore -->
+<table>
+<thead>
+<tr>
+<th>Deliminator</th>
+<th>Behavior</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>.</code></td>
+<td>The most general purpose deliminator. It will first try to resolve exports and static class properties, but will also resolve members if no export is found for improved compatibility with TypeScript's resolution.</td>
+</tr>
+<tr>
+<td><code>#</code></td>
+<td>Indicates that the next component is a &quot;member&quot;, including class instance properties, interface members, and enum members.</td>
+</tr>
+<tr>
+<td><code>~</code></td>
+<td>Indicates that the next component is an export of a namespace/module.</td>
+</tr>
+</tbody>
+</table>
+<pre class="language-ts"><code class="language-ts"><span class="token comment">// module.ts</span><br><span class="token comment">/**<br> * {@link module!Foo}<br> * {@link Foo}<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">namespace</span> Foo <span class="token punctuation">{</span><br>    <span class="token comment">/**<br>     * {@link module!Foo.Bar}<br>     * {@link module!Foo~Bar}<br>     * {@link Foo~Bar}<br>     */</span><br>    <span class="token keyword">export</span> <span class="token keyword">namespace</span> Bar <span class="token punctuation">{</span><br>        <span class="token comment">/**<br>         * {@link module!Foo.Bar.Baz}<br>         * {@link module!Foo~Bar~Baz}<br>         * {@link Bar~Baz}<br>         * {@link Baz}<br>         */</span><br>        <span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Baz</span> <span class="token punctuation">{</span><br>            <span class="token comment">/**<br>             * {@link Baz#prop}<br>             */</span><br>            prop <span class="token operator">=</span> <span class="token number">123</span><span class="token punctuation">;</span><br>            <span class="token comment">/**<br>             * {@link Baz.prop}<br>             */</span><br>            <span class="token keyword">static</span> prop <span class="token operator">=</span> <span class="token number">456</span><span class="token punctuation">;</span><br><br>            <span class="token comment">/**<br>             * {@link Baz#instanceOnly}<br>             * {@link Baz.instanceOnly} also works as there is no conflicting static<br>             */</span><br>            instanceOnly <span class="token operator">=</span> <span class="token number">789</span><span class="token punctuation">;</span><br>        <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span></code></pre>
+<h3 id="reference-scope" tabindex="-1">Reference Scope</h3>
+<p>If no module source is specified, by default component paths are resolved relative to the scope where
+they are declared (note: Modules and namespaces create a new scope. Classes, interfaces, and object types
+do not). This is sometimes inconvenient if a name is shadowed. To refer to a name with resolution starting
+in the the root scope, an empty module source can be specified with <code>!</code>.</p>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword">export</span> <span class="token keyword">const</span> Target <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br><span class="token keyword">export</span> <span class="token keyword">namespace</span> Foo <span class="token punctuation">{</span><br>    <span class="token keyword">export</span> <span class="token keyword">const</span> Target <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span><br><br>    <span class="token comment">/**<br>     * {@link Target} links to 2<br>     * {@link !Target} links to 1<br>     */</span><br>    <span class="token keyword">export</span> <span class="token keyword">const</span> Source <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>While classes and interfaces do not normally create a new scope, the TypeScript language service will
+check their members for link targets when resolving links starting at the class/interface declaration.
+TypeDoc mimics this behavior, but be aware that links that do not contain the class/interface name
+will prefer targets in their normal scope.</p>
+<pre class="language-ts"><code class="language-ts"><span class="token keyword">export</span> <span class="token keyword">const</span> dup <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span><br><span class="token comment">/**<br> * {@link dup} links to 1<br> * {@link target} links to 2<br> * {@link Foo.dup} links to 3<br> */</span><br><span class="token keyword">export</span> <span class="token keyword">class</span> <span class="token class-name">Foo</span> <span class="token punctuation">{</span><br>    target <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span><br>    dup <span class="token operator">=</span> <span class="token number">3</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h2 id="meaning" tabindex="-1">Meaning</h2>
+<p>The final part of a declaration reference is an optional meaning which can be used to disambiguate
+references which could otherwise refer to multiple documentation items. The meaning can also be used
+to refer to a specific overload or type of declaration.</p>
+<p>The meaning takes one of the following forms:</p>
+<ul>
+<li><code>:keyword</code> where <code>keyword</code> is described by the list below.</li>
+<li><code>:keyword(decimal digits)</code> where <code>decimal digits</code> indicates the index of an overloaded meaning</li>
+<li><code>:(decimal digits)</code> shorthand for an overloaded meaning</li>
+<li><code>:decimal digits</code> shorthand for an overloaded meaning</li>
+<li><code>:label</code> where <code>label</code> refers to a declaration by its <a href="/tags/label/"><code>{@label}</code></a> tag. <code>label</code> may contain <code>A-Z</code>, <code>0-9</code>, and <code>_</code> and may not start with a number. Note: This meaning parse is specific to TypeDoc, and is not currently specified by the TSDoc standard.</li>
+</ul>
+<p>The keywords recognized by TypeDoc are:</p>
+<ul>
+<li><code>class</code> - Refers to reflections which represent a class.</li>
+<li><code>interface</code> - Refers to reflections which represent an interface.</li>
+<li><code>type</code> - Refers to reflections which represent some type.</li>
+<li><code>enum</code> - Refers to reflections which represent an enum.</li>
+<li><code>namespace</code> - Refers to reflections which represent a namespace.</li>
+<li><code>function</code> - Refers to reflections which represent a function's or method's signatures.</li>
+<li><code>var</code> - Refers to reflections which represent a variable.</li>
+<li><code>constructor</code> - Refers to the constructor of a class or type.</li>
+<li><code>member</code> - Refers to reflections which represent an enum member, property, method, or accessor.</li>
+<li><code>event</code> - Permitted to conform with the TSDoc spec, but will result in a broken reference.</li>
+<li><code>call</code> - Refers to reflections which represent a function's or method's signatures.</li>
+<li><code>new</code> - Refers to the constructor of a class or type.</li>
+<li><code>index</code> - Refers to a reflection's index signatures.</li>
+<li><code>complex</code> - Refers to reflections which represent some type.</li>
+<li><code>getter</code> - (TypeDoc specific, 0.23.3+) Refers to the get signature of an accessor.</li>
+<li><code>setter</code> - (TypeDoc specific, 0.23.3+) Refers to the set signature of an accessor.</li>
+</ul>
+<pre class="language-ts"><code class="language-ts"><span class="token comment">/**<br> * {@link foo:0}<br> * {@link foo:function}<br> * {@link foo:(0)}<br> * {@link foo:function(0)}<br> * {@link foo:NO_ARGS}<br> * {@label NO_ARGS}<br> */</span><br><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token keyword">void</span><span class="token punctuation">;</span><br><span class="token comment">/**<br> * {@link foo:1}<br> * {@link foo:function(1)}<br> * {@link foo:(1)}<br> * {@link foo:NUM_ARG}<br> * {@label NUM_ARG}<br> */</span><br><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span>n<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">;</span><br><span class="token comment">/**<br> * {@link foo:2}<br> * {@link foo:function(2)}<br> * {@link foo:(2)}<br> * {@link foo:STR_ARG}<br> * {@label STR_ARG}<br> */</span><br><span class="token keyword">function</span> <span class="token function">foo</span><span class="token punctuation">(</span>s<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">;</span></code></pre>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./guides/declaration-references.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>
