@@ -342,7 +342,7 @@ Defines whether a heading describing the reflection should be included on the re
 Determines if groups/categories will be included in the primary navigation pane.
 
 The [categorizeByGroup](/options/organization/#categorizebygroup) option also affects this behavior.
-If set (the default), and `includeGroups` is _not_ set, the value of `includeCategories` will be effectively
+If set, and `includeGroups` is _not_ set, the value of `includeCategories` will be effectively
 ignored since categories will be created only within groups.
 
 Also determines if project "folders" should become nested dropdowns in the navigation pane. This option
