@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            Options |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="Options"
+    />
+    <meta property="og:url" content="/options/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/documents/">External Documents</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li>
+<li><a href="/guides/changelog/">Changelog</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/document/">@document</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/hideconstructor/">@hideconstructor</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="options" tabindex="-1">Options</h1>
+<p>All command line arguments that are passed in without a flag will be parsed as input files.
+Any options passed on the command line will override options set in a configuration file.</p>
+<pre class="language-bash"><code class="language-bash">$ typedoc <span class="token parameter variable">--out</span> path/to/documentation/ path/to/typescript/project/index.ts</code></pre>
+<!--
+Updating these lists can be easily done by going to each page and running the
+following JS to copy what they should be to your clipboard. Ideally, someday this
+becomes automated...
+
+copy("-   " + $$(".toc-container > ol > li > ol > li > a").map(a => {
+  const url = new URL(a.href)
+  return `[${a.textContent}](${url.pathname}${url.hash})`
+}).join("\n-   "))
+-->
+<h2 id="configuration-options" tabindex="-1">Configuration Options</h2>
+<p>Options which control what files TypeDoc reads.</p>
+<ul>
+<li><a href="/options/configuration/#options">options</a></li>
+<li><a href="/options/configuration/#tsconfig">tsconfig</a></li>
+<li><a href="/options/configuration/#compileroptions">compilerOptions</a></li>
+<li><a href="/options/configuration/#plugin">plugin</a></li>
+</ul>
+<h2 id="input-options" tabindex="-1">Input Options</h2>
+<p>Options which control how input is converted into a project.</p>
+<ul>
+<li><a href="/options/input/#entrypoints">entryPoints</a></li>
+<li><a href="/options/input/#entrypointstrategy">entryPointStrategy</a></li>
+<li><a href="/options/input/#alwayscreateentrypointmodule">alwaysCreateEntryPointModule</a></li>
+<li><a href="/options/input/#projectdocuments">projectDocuments</a></li>
+<li><a href="/options/input/#exclude">exclude</a></li>
+<li><a href="/options/input/#externalpattern">externalPattern</a></li>
+<li><a href="/options/input/#excludeexternals">excludeExternals</a></li>
+<li><a href="/options/input/#excludenotdocumented">excludeNotDocumented</a></li>
+<li><a href="/options/input/#excludenotdocumentedkinds">excludeNotDocumentedKinds</a></li>
+<li><a href="/options/input/#excludeinternal">excludeInternal</a></li>
+<li><a href="/options/input/#excludeprivate">excludePrivate</a></li>
+<li><a href="/options/input/#excludeprotected">excludeProtected</a></li>
+<li><a href="/options/input/#excludereferences">excludeReferences</a></li>
+<li><a href="/options/input/#excludecategories">excludeCategories</a></li>
+<li><a href="/options/input/#name">name</a></li>
+<li><a href="/options/input/#includeversion">includeVersion</a></li>
+<li><a href="/options/input/#disablesources">disableSources</a></li>
+<li><a href="/options/input/#sourcelinktemplate">sourceLinkTemplate</a></li>
+<li><a href="/options/input/#gitrevision">gitRevision</a></li>
+<li><a href="/options/input/#gitremote">gitRemote</a></li>
+<li><a href="/options/input/#disablegit">disableGit</a></li>
+<li><a href="/options/input/#readme">readme</a></li>
+</ul>
+<h2 id="output-options" tabindex="-1">Output Options</h2>
+<p>Options which control TypeDoc's output.</p>
+<ul>
+<li><a href="/options/output/#out">out</a></li>
+<li><a href="/options/output/#json">json</a></li>
+<li><a href="/options/output/#pretty">pretty</a></li>
+<li><a href="/options/output/#emit">emit</a></li>
+<li><a href="/options/output/#theme">theme</a></li>
+<li><a href="/options/output/#lighthighlighttheme">lightHighlightTheme</a></li>
+<li><a href="/options/output/#darkhighlighttheme">darkHighlightTheme</a></li>
+<li><a href="/options/output/#highlightlanguages">highlightLanguages</a></li>
+<li><a href="/options/output/#customcss">customCss</a></li>
+<li><a href="/options/output/#customfooterhtml">customFooterHtml</a></li>
+<li><a href="/options/output/#customfooterhtmldisablewrapper">customFooterHtmlDisableWrapper</a></li>
+<li><a href="/options/output/#markdownitoptions">markdownItOptions</a></li>
+<li><a href="/options/output/#markdownitloader">markdownItLoader</a></li>
+<li><a href="/options/output/#basepath">basePath</a></li>
+<li><a href="/options/output/#cname">cname</a></li>
+<li><a href="/options/output/#sourcelinkexternal">sourceLinkExternal</a></li>
+<li><a href="/options/output/#lang">lang</a></li>
+<li><a href="/options/output/#locales">locales</a></li>
+<li><a href="/options/output/#githubpages">githubPages</a></li>
+<li><a href="/options/output/#cachebust">cacheBust</a></li>
+<li><a href="/options/output/#hideparametertypesintitle">hideParameterTypesInTitle</a></li>
+<li><a href="/options/output/#hidegenerator">hideGenerator</a></li>
+<li><a href="/options/output/#searchincomments">searchInComments</a></li>
+<li><a href="/options/output/#searchindocuments">searchInDocuments</a></li>
+<li><a href="/options/output/#cleanoutputdir">cleanOutputDir</a></li>
+<li><a href="/options/output/#titlelink">titleLink</a></li>
+<li><a href="/options/output/#navigationlinks">navigationLinks</a></li>
+<li><a href="/options/output/#sidebarlinks">sidebarLinks</a></li>
+<li><a href="/options/output/#navigation">navigation</a></li>
+<li><a href="/options/output/#navigationleaves">navigationLeaves</a></li>
+<li><a href="/options/output/#visibilityfilters">visibilityFilters</a></li>
+<li><a href="/options/output/#searchcategoryboosts">searchCategoryBoosts</a></li>
+<li><a href="/options/output/#searchgroupboosts">searchGroupBoosts</a></li>
+<li><a href="/options/output/#hostedbaseurl">hostedBaseUrl</a></li>
+<li><a href="/options/output/#usehostedbaseurlforabsolutelinks">useHostedBaseUrlForAbsoluteLinks</a></li>
+</ul>
+<h2 id="comment-options" tabindex="-1">Comment Options</h2>
+<p>Options which control how TypeDoc parses comments.</p>
+<ul>
+<li><a href="/options/comments/#commentstyle">commentStyle</a></li>
+<li><a href="/options/comments/#usetslinkresolution">useTsLinkResolution</a></li>
+<li><a href="/options/comments/#preservelinktext">preserveLinkText</a></li>
+<li><a href="/options/comments/#jsdoccompatibility">jsDocCompatibility</a></li>
+<li><a href="/options/comments/#blocktags">blockTags</a></li>
+<li><a href="/options/comments/#inlinetags">inlineTags</a></li>
+<li><a href="/options/comments/#modifiertags">modifierTags</a></li>
+<li><a href="/options/comments/#cascadedmodifiertags">cascadedModifierTags</a></li>
+<li><a href="/options/comments/#excludetags">excludeTags</a></li>
+<li><a href="/options/comments/#externalsymbollinkmappings">externalSymbolLinkMappings</a></li>
+</ul>
+<h2 id="organization-options" tabindex="-1">Organization Options</h2>
+<ul>
+<li><a href="/options/organization/#categorizebygroup">categorizeByGroup</a></li>
+<li><a href="/options/organization/#defaultcategory">defaultCategory</a></li>
+<li><a href="/options/organization/#categoryorder">categoryOrder</a></li>
+<li><a href="/options/organization/#grouporder">groupOrder</a></li>
+<li><a href="/options/organization/#sort">sort</a></li>
+<li><a href="/options/organization/#sortentrypoints">sortEntryPoints</a></li>
+<li><a href="/options/organization/#kindsortorder">kindSortOrder</a></li>
+</ul>
+<h2 id="validation-options" tabindex="-1">Validation Options</h2>
+<ul>
+<li><a href="/options/validation/#validation">validation</a></li>
+<li><a href="/options/validation/#treatwarningsaserrors">treatWarningsAsErrors</a></li>
+<li><a href="/options/validation/#treatvalidationwarningsaserrors">treatValidationWarningsAsErrors</a></li>
+<li><a href="/options/validation/#intentionallynotexported">intentionallyNotExported</a></li>
+<li><a href="/options/validation/#requiredtobedocumented">requiredToBeDocumented</a></li>
+</ul>
+<h2 id="general-options" tabindex="-1">General Options</h2>
+<ul>
+<li><a href="/options/other/#watch">watch</a></li>
+<li><a href="/options/other/#preservewatchoutput">preserveWatchOutput</a></li>
+<li><a href="/options/other/#help">help</a></li>
+<li><a href="/options/other/#version">version</a></li>
+<li><a href="/options/other/#showconfig">showConfig</a></li>
+<li><a href="/options/other/#loglevel">logLevel</a></li>
+<li><a href="/options/other/#skiperrorchecking">skipErrorChecking</a></li>
+</ul>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./options/index.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>

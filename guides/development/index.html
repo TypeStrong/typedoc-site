@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            Development |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="Development"
+    />
+    <meta property="og:url" content="/guides/development/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/documents/">External Documents</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li>
+<li><a href="/guides/changelog/">Changelog</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/document/">@document</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/hideconstructor/">@hideconstructor</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="development" tabindex="-1">Development</h1>
+<p>This page is a work in progress overview of TypeDoc's architecture.
+For more details about each individual component, refer to the doc comments within each module.
+It is intended primarily for those interested in contributing to the TypeDoc codebase or developing a plugin.</p>
+<h2 id="high-level" tabindex="-1">High Level</h2>
+<p>TypeDoc follows several high level steps when called.</p>
+<ol>
+<li>Read options<br>
+Necessary to determine which plugins should be loaded.</li>
+<li>Load plugins<br>
+If <code>--plugin</code> was used, loads only those specified plugins, otherwise loads all npm plugins with the <code>typedocplugin</code> keyword.</li>
+<li>Read options again to pick up plugin options</li>
+<li>Convert the input files into the models (also called reflections) that live under <code>src/lib/models</code></li>
+<li>Resolve the models<br>
+Necessary to handle links to models that might not have been created when the source model is generated.</li>
+<li>Output the models by serializing to HTML and/or JSON</li>
+</ol>
+<p>TypeDoc's code is loosely organized according to each of these steps.
+The code to read options lives under <code>src/lib/utils/options</code>.
+The plugin loading code lives in <code>src/lib/utils/plugins</code>.
+Conversion is performed according to the Symbol's <code>ts.SymbolFlags</code>. Each distinct flag type gets its own converter function in <code>src/lib/converter/symbols.ts</code>.
+Resolution is implemented entirely by internal plugins that live in <code>src/lib/output/plugins</code> and listen to the <code>Converter.EVENT_RESOLVE</code> event.
+Output is split into two folders, for JSON output see the <code>src/lib/serialization</code> directory, and for HTML output see <code>src/lib/output</code>.</p>
+<p>Plugins may effect any part of the process after step 2 by listening to events fired by each component or adding / replacing handlers for a given task.
+As an example, the <a href="https://typedoc.org/api/classes/Converter.html">Converter</a> fires events before starting conversion, when declarations are converted and when the project should be resolved.</p>
+<h2 id="tests" tabindex="-1">Tests</h2>
+<p>TypeDoc has tests for individual utilities and some components, but the majority of the project is tested by converting source files into their JSON model and comparing it to a known good version. The basic example under <code>src/test/renderer/testProject</code> is rendered to HTML to test theme changes.</p>
+<p>If changing the behavior of a converter or resolver, it should be possible to modify one of the existing tests under <code>src/test/converter</code>.
+Bug fixes or feature additions which need to change one of the <code>specs*.json</code> files should run <code>npm run rebuild_specs [converter|renderer] [converter filter]</code> to run the current build of TypeDoc on the source files and generate new specs.
+For other components, we use <a href="https://mochajs.org/">Mocha</a> to write tests.</p>
+<h2 id="components" tabindex="-1">Components</h2>
+<p>For more detailed information about the implementation and API surface of each component, consult its API documentation.
+All components are available on the <a href="https://typedoc.org/api/classes/Application.html">Application</a> class, which is passed to plugins.</p>
+<h3 id="options" tabindex="-1">Options</h3>
+<p>TypeDoc provides some 30 options which determine how the project model is generated and output to disk.
+The <a href="https://typedoc.org/api/classes/Configuration.Options.html">Options</a> class consolidates application options into a single location and handles type conversion.</p>
+<p>There are 11 builtin option types as specified by the <a href="https://typedoc.org/api/enums/Configuration.ParameterType.html">ParameterType</a> enum.</p>
+<ul>
+<li><code>String</code> - A string</li>
+<li><code>Path</code> - A string which will be resolved to a path. Paths in config files will be resolved relative to the config directory.</li>
+<li><code>Number</code> - A number which is not <code>NaN</code></li>
+<li><code>Boolean</code> - <code>true</code> or <code>false</code></li>
+<li><code>Map</code> - Defines a map between string keys and an arbitrary type. See the <a href="https://github.com/TypeStrong/typedoc/blob/master/src/test/utils/options/declaration.test.ts#L39">tests</a> for an example.</li>
+<li><code>Mixed</code> - An object type that is passed through by TypeDoc to create specific implicit behaviour.</li>
+<li><code>Object</code> - An object type of which value keys can be overridden or extended by passing a new object.</li>
+<li><code>Array</code> - An array of strings.</li>
+<li><code>PathArray</code> - An array of paths, if specified in a config file, will be resolved relative to the config file directory.</li>
+<li><code>ModuleArray</code> - An array of modules/paths. Items will be resolved if they start with <code>.</code>.</li>
+<li><code>GlobArray</code> - An array of globs. Globs will be resolved if they do not start with <code>**</code>, after skipping leading <code>!</code> and <code>#</code> characters.</li>
+</ul>
+<p>Options are discovered and set by option readers, which are documented in the <a href="https://typedoc.org/api/interfaces/Configuration.OptionsReader.html">OptionReader</a> interface.</p>
+<p>Plugins can declare their own options by calling <a href="https://typedoc.org/api/classes/Configuration.Options.html#addDeclaration">Options.addDeclaration</a>.</p>
+<h3 id="plugins" tabindex="-1">Plugins</h3>
+<p>Plugins should export a <code>load</code> function which will be called by TypeDoc when loading the plugin with an instance of <code>PluginHost</code>.
+This function should add any options the plugin accepts and add any listeners necessary to effect TypeDoc's behavior.</p>
+<pre class="language-typescript"><code class="language-typescript"><span class="token keyword">import</span> <span class="token punctuation">{</span> Application<span class="token punctuation">,</span> ParameterType<span class="token punctuation">,</span> Converter<span class="token punctuation">,</span> Context <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"typedoc"</span><span class="token punctuation">;</span><br><br><span class="token keyword">export</span> <span class="token keyword">function</span> <span class="token function">load</span><span class="token punctuation">(</span>app<span class="token operator">:</span> Application<span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    app<span class="token punctuation">.</span>options<span class="token punctuation">.</span><span class="token function">addDeclaration</span><span class="token punctuation">(</span><span class="token punctuation">{</span><br>        name<span class="token operator">:</span> <span class="token string">"plugin-option"</span><span class="token punctuation">,</span><br>        help<span class="token operator">:</span> <span class="token string">"Displayed when --help is passed"</span><span class="token punctuation">,</span><br>        type<span class="token operator">:</span> ParameterType<span class="token punctuation">.</span>String<span class="token punctuation">,</span> <span class="token comment">// The default</span><br>        defaultValue<span class="token operator">:</span> <span class="token string">""</span><span class="token punctuation">,</span> <span class="token comment">// The default</span><br>    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><br>    app<span class="token punctuation">.</span>converter<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span>Converter<span class="token punctuation">.</span><span class="token constant">EVENT_RESOLVE</span><span class="token punctuation">,</span> <span class="token punctuation">(</span>context<span class="token operator">:</span> Context<span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span><br>        <span class="token keyword">if</span> <span class="token punctuation">(</span>app<span class="token punctuation">.</span>options<span class="token punctuation">.</span><span class="token function">getValue</span><span class="token punctuation">(</span><span class="token string">"plugin-option"</span><span class="token punctuation">)</span> <span class="token operator">===</span> <span class="token string">"something"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>            <span class="token comment">// ...</span><br>        <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<h3 id="converters" tabindex="-1">Converters</h3>
+<p>TypeDoc converts the syntax tree created by TypeScript into its own structure of <a href="https://typedoc.org/api/classes/Models.Reflection.html"><code>Reflection</code></a>s to allow themes and serialization to work with a standard object format. Conversion is done primarily in three files.</p>
+<ul>
+<li><a href="https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/symbols.ts">symbols.ts</a> - contains converters for each <code>ts.Symbol</code> that is exported from entry points.</li>
+<li><a href="https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/types.ts">types.ts</a> - contains converters for <code>ts.Type</code>s and <code>ts.TypeNode</code>s.</li>
+<li><a href="https://github.com/TypeStrong/typedoc/blob/master/src/lib/converter/jsdoc.ts">jsdoc.ts</a> - contains converters for types and symbols declared within JSDoc comments.</li>
+</ul>
+<h3 id="json-output" tabindex="-1">JSON Output</h3>
+<p>Docs to come - TypeDoc's JSON output is defined according to serializers which support some or all reflections.</p>
+<h3 id="html-output" tabindex="-1">HTML Output</h3>
+<p>See <a href="https://github.com/TypeStrong/typedoc/blob/master/internal-docs/custom-themes.md">internal-docs/custom-themes.md</a> for creating a theme.</p>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./guides/development.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>
