@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>
+        
+            Plugins |
+        
+        TypeDoc
+    </title>
+    <meta
+        name="description"
+        property="og:description"
+        content=""
+    />
+    <meta
+        name="keywords"
+        content="TypeScript documentation generator javascript open source"
+    />
+    <meta
+        property="og:title"
+        content="Plugins"
+    />
+    <meta property="og:url" content="/guides/plugins/" />
+    <meta property="og:site_name" content="TypeDoc Documentation Generator" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="/scripts/toc.js" defer></script>
+    <script>
+        if (location.host === "typedoc.org" && location.protocol === "http:") {
+            location.protocol = "https:";
+        }
+    </script>
+</head>
+
+    <script>
+        document.documentElement.dataset.theme =
+            localStorage.getItem("tsd-theme") || "os";
+    </script>
+
+    <body>
+        <header>
+    <div class="container">
+        <a href="/" class="logo">TypeDoc</a>
+        <nav>
+            <ul>
+                <li><a href="/guides/overview/">Docs</a></li>
+                <li><a href="/example/">Example</a></li>
+                <li><a href="/api/">API</a></li>
+                <li>
+                    <a href="https://github.com/TypeStrong/typedoc">GitHub</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <section class="content" id="content">
+<div class="container main">
+    <div class="row">
+        <div class="navigation">
+            <nav class="navigation">
+                <ul><li><a href="/guides/overview/">Overview</a><ul><li><a href="/guides/installation/">Installation</a></li>
+<li><a href="/options/">Options</a><ul><li><a href="/options/configuration/">Configuration</a></li>
+<li><a href="/options/input/">Input</a></li>
+<li><a href="/options/output/">Output</a></li>
+<li><a href="/options/comments/">Comments</a></li>
+<li><a href="/options/organization/">Organization</a></li>
+<li><a href="/options/validation/">Validation</a></li>
+<li><a href="/options/other/">Other</a></li></ul></li>
+<li><a href="/guides/doccomments/">Doc Comments</a></li>
+<li><a href="/guides/documents/">External Documents</a></li>
+<li><a href="/guides/themes/">Themes</a></li>
+<li><a href="/guides/plugins/">Plugins</a></li>
+<li><a href="/guides/declaration-references/">Declaration References</a></li>
+<li><a href="/guides/development/">Development</a></li></ul></li>
+<li><a href="/guides/tags/">Tags</a><ul><li><a href="/tags/alpha/">@alpha</a></li>
+<li><a href="/tags/beta/">@beta</a></li>
+<li><a href="/tags/category/">@category</a></li>
+<li><a href="/tags/categoryDescription/">@categoryDescription</a></li>
+<li><a href="/tags/defaultValue/">@defaultValue</a></li>
+<li><a href="/tags/deprecated/">@deprecated</a></li>
+<li><a href="/tags/document/">@document</a></li>
+<li><a href="/tags/enum/">@enum</a></li>
+<li><a href="/tags/event/">@event</a></li>
+<li><a href="/tags/eventProperty/">@eventProperty</a></li>
+<li><a href="/tags/example/">@example</a></li>
+<li><a href="/tags/experimental/">@experimental</a></li>
+<li><a href="/tags/group/">@group</a></li>
+<li><a href="/tags/groupDescription/">@groupDescription</a></li>
+<li><a href="/tags/hidden/">@hidden</a></li>
+<li><a href="/tags/hideconstructor/">@hideconstructor</a></li>
+<li><a href="/tags/ignore/">@ignore</a></li>
+<li><a href="/tags/inheritDoc/">{@inheritDoc}</a></li>
+<li><a href="/tags/interface/">@interface</a></li>
+<li><a href="/tags/internal/">@internal</a></li>
+<li><a href="/tags/label/">{@label}</a></li>
+<li><a href="/tags/link/">{@link}</a></li>
+<li><a href="/tags/module/">@module</a></li>
+<li><a href="/tags/namespace/">@namespace</a></li>
+<li><a href="/tags/overload/">@overload</a></li>
+<li><a href="/tags/override/">@override</a></li>
+<li><a href="/tags/packageDocumentation/">@packageDocumentation</a></li>
+<li><a href="/tags/param/">@param</a></li>
+<li><a href="/tags/private/">@private</a></li>
+<li><a href="/tags/privateRemarks/">@privateRemarks</a></li>
+<li><a href="/tags/property/">@property</a></li>
+<li><a href="/tags/protected/">@protected</a></li>
+<li><a href="/tags/public/">@public</a></li>
+<li><a href="/tags/readonly/">@readonly</a></li>
+<li><a href="/tags/remarks/">@remarks</a></li>
+<li><a href="/tags/returns/">@returns</a></li>
+<li><a href="/tags/satisfies/">@satisfies</a></li>
+<li><a href="/tags/sealed/">@sealed</a></li>
+<li><a href="/tags/see/">@see</a></li>
+<li><a href="/tags/template/">@template</a></li>
+<li><a href="/tags/throws/">@throws</a></li>
+<li><a href="/tags/typeParam/">@typeParam</a></li>
+<li><a href="/tags/virtual/">@virtual</a></li></ul></li></ul>
+            </nav>
+        </div>
+        <div class="typography"><h1 id="plugins" tabindex="-1">Plugins</h1>
+<p>TypeDoc supports plugins using the <code>--plugin</code> flag. There are a number of community developed
+plugins available for installation on npm.</p>
+<p>You can find more plugins on npm under the <a href="https://www.npmjs.com/search?q=keywords:typedocplugin%20keywords:typedoc-plugin">typedoc-plugin</a> tag.</p>
+<h2 id="0.27.0">v0.27.0</h2>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-vue" target="_blank">typedoc-plugin-vue</a></p>
+    <p>Improves Vue defineComponent and Pinia defineStore display in TypeDoc documentation</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.3.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-zod" target="_blank">typedoc-plugin-zod</a></p>
+    <p>TypeDoc plugin which replaces z.infer&lt;typeof x&gt; with the inferred type</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.3.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-redirect" target="_blank">typedoc-plugin-redirect</a></p>
+    <p>Add redirect pages to your generated TypeDoc site.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.1.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-missing-exports" target="_blank">typedoc-plugin-missing-exports</a></p>
+    <p>Include non-exported types in TypeDoc documentation</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 3.1.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-dt-links" target="_blank">typedoc-plugin-dt-links</a></p>
+    <p>Adds support for linking references to types declared in <code>@types</code> packages to their source code on GitHub.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.1.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-coverage" target="_blank">typedoc-plugin-coverage</a></p>
+    <p>A plugin for TypeDoc to generate a documentation coverage badge.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 3.4.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-mdn-links" target="_blank">typedoc-plugin-mdn-links</a></p>
+    <p>Adds support for linking references to global types like <code>HTMLElement</code>, <code>WebAssembly</code>, and <code>Date</code> to their documentation pages on MDN.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 4.0.1 • 3 days ago
+            </p>
+</div>
+<h2 id="0.26.11">v0.26.11</h2>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-include-example" target="_blank">typedoc-plugin-include-example</a></p>
+    <p>Typedoc plugin to include files as example</p>
+    <p>
+                <a href="https://www.npmjs.com/~ferdodo" target="_blank">ferdodo</a> published 1.4.2 • a day ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-vue" target="_blank">typedoc-plugin-vue</a></p>
+    <p>Improves Vue defineComponent and Pinia defineStore display in TypeDoc documentation</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.3.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-zod" target="_blank">typedoc-plugin-zod</a></p>
+    <p>TypeDoc plugin which replaces z.infer&lt;typeof x&gt; with the inferred type</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.3.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-redirect" target="_blank">typedoc-plugin-redirect</a></p>
+    <p>Add redirect pages to your generated TypeDoc site.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.1.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-missing-exports" target="_blank">typedoc-plugin-missing-exports</a></p>
+    <p>Include non-exported types in TypeDoc documentation</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 3.1.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-dt-links" target="_blank">typedoc-plugin-dt-links</a></p>
+    <p>Adds support for linking references to types declared in <code>@types</code> packages to their source code on GitHub.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.1.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-coverage" target="_blank">typedoc-plugin-coverage</a></p>
+    <p>A plugin for TypeDoc to generate a documentation coverage badge.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 3.4.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-mdn-links" target="_blank">typedoc-plugin-mdn-links</a></p>
+    <p>Adds support for linking references to global types like <code>HTMLElement</code>, <code>WebAssembly</code>, and <code>Date</code> to their documentation pages on MDN.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 4.0.1 • 3 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-custom-validation" target="_blank">typedoc-plugin-custom-validation</a></p>
+    <p>&lt;div align=&quot;center&quot;&gt;</p>
+    <p>
+                <a href="https://www.npmjs.com/~rebeccastevens" target="_blank">rebeccastevens</a> published 2.0.2 • 14 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40shipgirl%2Ftypedoc-plugin-versions" target="_blank">@shipgirl/typedoc-plugin-versions</a></p>
+    <p>It keeps track of your document builds and provides a select menu for versions</p>
+    <p>
+                <a href="https://www.npmjs.com/~0t4u" target="_blank">0t4u</a> published 0.2.8 • 23 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-markdown" target="_blank">typedoc-plugin-markdown</a></p>
+    <p>A plugin for TypeDoc that enables TypeScript API documentation to be generated in Markdown.</p>
+    <p>
+                <a href="https://www.npmjs.com/~tgreyuk" target="_blank">tgreyuk</a> published 4.2.10 • 25 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-valibot" target="_blank">typedoc-plugin-valibot</a></p>
+    <p>TypeDoc plugin which replaces v.InferOutput&lt;typeof x&gt; with the inferred type</p>
+    <p>
+                <a href="https://www.npmjs.com/~mkljczk" target="_blank">mkljczk</a> published 1.0.0 • a month ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-merge-modules" target="_blank">typedoc-plugin-merge-modules</a></p>
+    <p>Plugin for TypeDoc that merges the content of modules.</p>
+    <p>
+                <a href="https://www.npmjs.com/~krisztianb" target="_blank">krisztianb</a> published 6.0.3 • a month ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40typhonjs-typedoc%2Ftypedoc-pkg" target="_blank">@typhonjs-typedoc/typedoc-pkg</a></p>
+    <p>Provides a zero config CLI to create API documentation with TypeDoc from <code>package.json</code> exports conditions.</p>
+    <p>
+                <a href="https://www.npmjs.com/~typhonrt" target="_blank">typhonrt</a> published 0.1.2 • a month ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40emuanalytics%2Ftypedoc-plugin-no-inherit" target="_blank">@emuanalytics/typedoc-plugin-no-inherit</a></p>
+    <p>Typedoc plugin to exclude inherited members from a Typedoc class/interface</p>
+    <p>
+                <a href="https://www.npmjs.com/~robin.summerhill" target="_blank">robin.summerhill</a> published 1.4.2 • a month ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-md" target="_blank">typedoc-plugin-md</a></p>
+    <p>A typedoc plugin for generating markdown documentation</p>
+    <p>
+                <a href="https://www.npmjs.com/~ocavue" target="_blank">ocavue</a> published 0.3.1 • a month ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-emojify" target="_blank">typedoc-plugin-emojify</a></p>
+    <p>A plugin for TypeDoc that adds emoji parsing support</p>
+    <p>
+                <a href="https://www.npmjs.com/~mrfigg" target="_blank">mrfigg</a> published 1.0.1 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40mrfigg%2Ftypedoc-plugin-lib-utils" target="_blank">@mrfigg/typedoc-plugin-lib-utils</a></p>
+    <p>Miscellaneous utility functions for TypeDoc plugins</p>
+    <p>
+                <a href="https://www.npmjs.com/~mrfigg" target="_blank">mrfigg</a> published 1.3.1 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-document-page-headings" target="_blank">typedoc-plugin-document-page-headings</a></p>
+    <p>A plugin for TypeDoc that adds page headings to document files</p>
+    <p>
+                <a href="https://www.npmjs.com/~mrfigg" target="_blank">mrfigg</a> published 1.0.0 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-version-header" target="_blank">typedoc-plugin-version-header</a></p>
+    <p>A plugin for TypeDoc that makes the project&#39;s version appear only in the page header</p>
+    <p>
+                <a href="https://www.npmjs.com/~mrfigg" target="_blank">mrfigg</a> published 1.0.0 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-rename-documents" target="_blank">typedoc-plugin-rename-documents</a></p>
+    <p>A plugin for TypeDoc that renames documents without a yaml frontmatter section</p>
+    <p>
+                <a href="https://www.npmjs.com/~mrfigg" target="_blank">mrfigg</a> published 1.0.0 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-github-widget" target="_blank">typedoc-plugin-github-widget</a></p>
+    <p>A plugin for TypeDoc that adds a Github widget to the header</p>
+    <p>
+                <a href="https://www.npmjs.com/~mrfigg" target="_blank">mrfigg</a> published 1.0.0 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-inline-sources" target="_blank">typedoc-plugin-inline-sources</a></p>
+    <p>A plugin for TypeDoc that inlines source code into documentation.</p>
+    <p>
+                <a href="https://www.npmjs.com/~tgreyuk" target="_blank">tgreyuk</a> published 1.1.0 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-ga" target="_blank">typedoc-plugin-ga</a></p>
+    <p>A plugin for Typedoc to add Google Analytics</p>
+    <p>
+                <a href="https://www.npmjs.com/~eubereveloper" target="_blank">eubereveloper</a> published 1.0.4 • 3 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40konami-emoji-blast%2Ftypedoc" target="_blank">@konami-emoji-blast/typedoc</a></p>
+    <p>Integration for konami-emoji-blast in TypeDoc. 🗂️</p>
+    <p>
+                <a href="https://www.npmjs.com/~joshuakgoldberg" target="_blank">joshuakgoldberg</a> published 0.0.2 • 4 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-umlclass" target="_blank">typedoc-umlclass</a></p>
+    <p>Plugin for TypeDoc that generates UML class diagrams</p>
+    <p>
+                <a href="https://www.npmjs.com/~krisztianb" target="_blank">krisztianb</a> published 0.10.0 • 4 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-replace-text" target="_blank">typedoc-plugin-replace-text</a></p>
+    <p>Plugin for TypeDoc that replaces text in the documentation</p>
+    <p>
+                <a href="https://www.npmjs.com/~krisztianb" target="_blank">krisztianb</a> published 4.0.0 • 4 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-mermaid" target="_blank">typedoc-plugin-mermaid</a></p>
+    <p>A plugin for TypeDoc that generates graphs for mermaid.js diagrams by using @mermaid annotation.</p>
+    <p>
+                <a href="https://www.npmjs.com/~kamiazya" target="_blank">kamiazya</a> published 1.12.0 • 5 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-extras" target="_blank">typedoc-plugin-extras</a></p>
+    <p>A TypeDoc plugin to add extras (favicon, description, generation date...) to the output documentation</p>
+    <p>
+                <a href="https://www.npmjs.com/~drarig29" target="_blank">drarig29</a> published 3.1.0 • 5 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40zamiell%2Ftypedoc-plugin-not-exported" target="_blank">@zamiell/typedoc-plugin-not-exported</a></p>
+    <p>TypeDoc plugin that forces inclusion of non-exported symbols (variables)</p>
+    <p>
+                <a href="https://www.npmjs.com/~zamiell" target="_blank">zamiell</a> published 0.3.0 • 5 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%408hobbies%2Ftypedoc-plugin-plausible" target="_blank">@8hobbies/typedoc-plugin-plausible</a></p>
+    <p>Add Plausible Analytics tracking code to TypeDoc-generated docs.</p>
+    <p>
+                <a href="https://www.npmjs.com/~hong-xu" target="_blank">hong-xu</a> published 2.0.0 • 5 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%408hobbies%2Ftypedoc-plugin-404" target="_blank">@8hobbies/typedoc-plugin-404</a></p>
+    <p>Create a 404 page for TypeDoc-generated doc.</p>
+    <p>
+                <a href="https://www.npmjs.com/~hong-xu" target="_blank">hong-xu</a> published 3.0.0 • 5 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-rename-defaults" target="_blank">typedoc-plugin-rename-defaults</a></p>
+    <p>A TypeDoc plugin that renames the <code>default</code> exports to their original name</p>
+    <p>
+                <a href="https://www.npmjs.com/~felipecrs" target="_blank">felipecrs</a> published 0.7.1 • 5 months ago
+            </p>
+</div>
+<h2 id="0.25.13">v0.25.13</h2>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-vue" target="_blank">typedoc-plugin-vue</a></p>
+    <p>Improves Vue defineComponent and Pinia defineStore display in TypeDoc documentation</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.3.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-zod" target="_blank">typedoc-plugin-zod</a></p>
+    <p>TypeDoc plugin which replaces z.infer&lt;typeof x&gt; with the inferred type</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.3.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-dt-links" target="_blank">typedoc-plugin-dt-links</a></p>
+    <p>Adds support for linking references to types declared in <code>@types</code> packages to their source code on GitHub.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 1.1.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-coverage" target="_blank">typedoc-plugin-coverage</a></p>
+    <p>A plugin for TypeDoc to generate a documentation coverage badge.</p>
+    <p>
+                <a href="https://www.npmjs.com/~gerrit0" target="_blank">gerrit0</a> published 3.4.0 • 2 days ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-valibot" target="_blank">typedoc-plugin-valibot</a></p>
+    <p>TypeDoc plugin which replaces v.InferOutput&lt;typeof x&gt; with the inferred type</p>
+    <p>
+                <a href="https://www.npmjs.com/~mkljczk" target="_blank">mkljczk</a> published 1.0.0 • a month ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-extra-footer" target="_blank">typedoc-plugin-extra-footer</a></p>
+    <p>Add extra content to the footer of TypeDoc-generated docs.</p>
+    <p>
+                <a href="https://www.npmjs.com/~hong-xu" target="_blank">hong-xu</a> published 1.0.3 • a month ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40typhonjs-typedoc%2Fts-lib-docs" target="_blank">@typhonjs-typedoc/ts-lib-docs</a></p>
+    <p>Provides generated documentation for built-in Typescript lib declarations and a TypeDoc plugin to link symbols to the published docs.</p>
+    <p>
+                <a href="https://www.npmjs.com/~typhonrt" target="_blank">typhonrt</a> published 2024.9.18 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-inline-sources" target="_blank">typedoc-plugin-inline-sources</a></p>
+    <p>A plugin for TypeDoc that inlines source code into documentation.</p>
+    <p>
+                <a href="https://www.npmjs.com/~tgreyuk" target="_blank">tgreyuk</a> published 1.1.0 • 2 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40konami-emoji-blast%2Ftypedoc" target="_blank">@konami-emoji-blast/typedoc</a></p>
+    <p>Integration for konami-emoji-blast in TypeDoc. 🗂️</p>
+    <p>
+                <a href="https://www.npmjs.com/~joshuakgoldberg" target="_blank">joshuakgoldberg</a> published 0.0.2 • 4 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-umlclass" target="_blank">typedoc-umlclass</a></p>
+    <p>Plugin for TypeDoc that generates UML class diagrams</p>
+    <p>
+                <a href="https://www.npmjs.com/~krisztianb" target="_blank">krisztianb</a> published 0.10.0 • 4 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-mermaid" target="_blank">typedoc-plugin-mermaid</a></p>
+    <p>A plugin for TypeDoc that generates graphs for mermaid.js diagrams by using @mermaid annotation.</p>
+    <p>
+                <a href="https://www.npmjs.com/~kamiazya" target="_blank">kamiazya</a> published 1.12.0 • 5 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-rename-defaults" target="_blank">typedoc-plugin-rename-defaults</a></p>
+    <p>A TypeDoc plugin that renames the <code>default</code> exports to their original name</p>
+    <p>
+                <a href="https://www.npmjs.com/~felipecrs" target="_blank">felipecrs</a> published 0.7.1 • 5 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-script-inject" target="_blank">typedoc-plugin-script-inject</a></p>
+    <p>Adds script tag with src pointing to the javascript file of your choice:</p>
+    <p>
+                <a href="https://www.npmjs.com/~jeanlescure" target="_blank">jeanlescure</a> published 2.0.0 • 7 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-djs-links" target="_blank">typedoc-plugin-djs-links</a></p>
+    <p>Adds support for linking to discord.js.org for DiscordJS types to TypeDoc</p>
+    <p>
+                <a href="https://www.npmjs.com/~favna" target="_blank">favna</a> published 2.2.1 • 10 months ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40droppedcode%2Ftypedoc-plugin-copy-assets" target="_blank">@droppedcode/typedoc-plugin-copy-assets</a></p>
+    <p>This plugin for typedoc copies the assets found in comments to the output assets folder.</p>
+    <p>
+                <a href="https://www.npmjs.com/~droppedcode" target="_blank">droppedcode</a> published 1.0.11 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-external-resolver" target="_blank">typedoc-plugin-external-resolver</a></p>
+    <p>TypeDoc plugin that resolves references to external typed modules</p>
+    <p>
+                <a href="https://www.npmjs.com/~rafern" target="_blank">rafern</a> published 1.0.3 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-keywords" target="_blank">typedoc-plugin-keywords</a></p>
+    <p>A plugin to add <code>&lt;meta name=&quot;keywords&quot; content=&quot;...&quot;&gt;</code> tags to your generated site.</p>
+    <p>
+                <a href="https://www.npmjs.com/~matteobruni" target="_blank">matteobruni</a> published 1.6.0 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-particles" target="_blank">typedoc-plugin-particles</a></p>
+    <p>Adds <a href="https://particles.js.org" target="_blank">tsParticles</a> to your generated site.</p>
+    <p>
+                <a href="https://www.npmjs.com/~matteobruni" target="_blank">matteobruni</a> published 1.4.0 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-google-ads" target="_blank">typedoc-plugin-google-ads</a></p>
+    <p>Adds Google Adsense to your generated site.</p>
+    <p>
+                <a href="https://www.npmjs.com/~matteobruni" target="_blank">matteobruni</a> published 1.6.0 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-carbon-ads" target="_blank">typedoc-plugin-carbon-ads</a></p>
+    <p>Adds <a href="https://carbonads.net" target="_blank">Carbon Ads</a> to your generated site.</p>
+    <p>
+                <a href="https://www.npmjs.com/~matteobruni" target="_blank">matteobruni</a> published 1.6.0 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-plugin-clarity" target="_blank">typedoc-plugin-clarity</a></p>
+    <p>Adds Microsoft&#39;s <a href="https://clarity.microsoft.com/" target="_blank">Clarity</a> script to the generated documentation.</p>
+    <p>
+                <a href="https://www.npmjs.com/~matteobruni" target="_blank">matteobruni</a> published 1.6.0 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/%40droppedcode%2Ftypedoc-plugin-relative-includes" target="_blank">@droppedcode/typedoc-plugin-relative-includes</a></p>
+    <p>This plugin for typedoc allows the use of relative path in markdown includes.</p>
+    <p>
+                <a href="https://www.npmjs.com/~droppedcode" target="_blank">droppedcode</a> published 1.0.5 • a year ago
+            </p>
+</div>
+<div class="box">
+    <p class="title"><a href="https://www.npmjs.com/package/typedoc-google-tag-manager-plugin" target="_blank">typedoc-google-tag-manager-plugin</a></p>
+    <p>Typedoc plugin to add Google Tag Manager to your documentation</p>
+    <p>
+                <a href="https://www.npmjs.com/~andrew_zol" target="_blank">andrew_zol</a> published 1.0.5 • a year ago
+            </p>
+</div>
+</div>
+        <div class="toc-container"></div>
+    </div>
+</div>
+</section>
+
+        <footer class="container">
+    <div class="theme-container">
+        Theme
+        <select id="theme">
+            <option value="os">OS</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+        </select>
+    </div>
+    
+    <a
+        href="https://github.com/TypeStrong/typedoc-site/blob/master/./guides/plugins.md"
+        class="edit-github"
+        >Edit on GitHub</a
+    >
+    
+</footer>
+
+    </body>
+</html>
