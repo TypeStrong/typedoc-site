@@ -1,3 +1,10 @@
+# DEPRECATED
+
+TypeDoc's site (https://typedoc.org) is now generated with the `site` folder in the main repository.
+See https://github.com/TypeStrong/typedoc/tree/master/site
+
+---
+
 # TypeDoc homepage
 
 Holds the contents of https://typedoc.org.
